@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">분류기준</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-physical">단일물질/물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-health">단일물질/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-env">단일물질/환경유해성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-mixture-health">혼합물/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-env">혼합물/환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-acute-toxicity">급성독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-skin-corrosion">피부 부식성/자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-eye-damage">심한 눈 손상/눈 자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-sensitization">호흡기 또는 피부 과민성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-mutagenicity">생식세포 변이원성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-carcinogenicity">발암성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-reproductive-toxicity">생식독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-stot-single">특정 표적장기 독성(1회)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-stot-repeated">특정 표적장기 독성(반복)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-aspiration">흡인 유해성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">급성독성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 급성독성 자료가 있는 경우 단일물질의 분류기준과 같다.</li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    각 노출경로에 대하여 '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 의 1.2 가목부터 바목까지에 따른 가교원리를 적용하여, 해당 혼합물을 급성독성 구분 1부터 구분 4까지로 분류한다.
+                                    <p class="txt-caption">&lt;표 3.1.2&gt;</p>
+                                    <div class="data-default">
+                                        <table>
+                                            <caption class="sr-only">노출경로별 구분 또는 시험적으로 얻어진 급성독성 범위와 변환된 급성독성 추정치</caption>
+                                            <colgroup>
+                                                <col style="width:120px;">
+                                                <col style="width:120px;">
+                                                <col>
+                                                <col style="width:200px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" colspan="2">노출경로</th>
+                                                    <th scope="col">구분 또는 시험적으로 얻어진 급성독성 범위</th>
+                                                    <th scope="col">변환된 급성독성 추정치</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" rowspan="4" colspan="2">경구<br>(mg/kg 체중)</th>
+                                                    <td>0 &lt; 구분 1 ≤ 5</td>
+                                                    <td>0.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 &lt; 구분 2 ≤ 50</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50 &lt; 구분 3 ≤ 300</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>300 &lt; 구분 4 ≤ 2000</td>
+                                                    <td>500</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="4" colspan="2">경피<br>(mg/kg 체중)</th>
+                                                    <td>0 &lt; 구분 1 ≤ 50</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50 &lt; 구분 2 ≤ 200</td>
+                                                    <td>50</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>200 &lt; 구분 3 ≤ 1000</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1000 &lt; 구분 4 ≤ 2000</td>
+                                                    <td>1100</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="12">흡입</th>
+                                                    <th scope="row" rowspan="4">가스<br>(ppm)</th>
+                                                    <td>0 &lt; 구분 1 ≤ 100</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50 &lt; 구분 2 ≤ 500</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>500 &lt; 구분 3 ≤ 2500</td>
+                                                    <td>700</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2500 &lt; 구분 4 ≤ 20000</td>
+                                                    <td>4500</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="4">증기<br>(mg/L)</th>
+                                                    <td>0 &lt; 구분 1 ≤ 0.5</td>
+                                                    <td>0.05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50 &lt; 구분 2 ≤ 2.0</td>
+                                                    <td>0.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>500 &lt; 구분 3 ≤ 10.0</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2500 &lt; 구분 4 ≤ 20.0</td>
+                                                    <td>11</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="4">분진/<br>미스트<br>(mg/L)</th>
+                                                    <td>0 &lt; 구분 1 ≤ 0.05</td>
+                                                    <td>0.005</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>0.05 &lt; 구분 2 ≤ 0.5</td>
+                                                    <td>0.05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>0.5 &lt; 구분 3 ≤ 1.0</td>
+                                                    <td>0.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1.0 &lt; 구분 4 ≤ 5.0</td>
+                                                    <td>1.5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우
+                                    <ol class="list-alpha st2">
+                                        <li>
+                                            모든 구성성분에 대한 자료가 있거나 예측이 가능한 경우 [공식 1]에 따라 혼합물의 경구, 경피 또는 흡입 급성독성 추정치(ATEmix)를 계산하여 급성독성 물질의 분류기준(단일물질의 급성독성 물질 분류기준 참조)에 따라 분류한다, 다만, 혼합물의 급성독성 추정치는 혼합물의 LD50이나 LC50으로 본다.
+                                            <figure class="formula-box">
+                                                <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzUzODVfMTAyMzE2KSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzUzODVfMTAyMzE2IiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF81Mzg1XzEwMjMxNiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF81Mzg1XzEwMjMxNiIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUFEwbEVRVlI0QWV5ZHNVOFUyeGZIaFI5Q1FBS0NNZkNMeGtLeHRZSEVVZ3NwYkUza0x6QnVaNnVsSmZRMmtGK3BEU1MycjhEaTEycXdzUlVzak9aQmpJc1NsSWp2UGQ5bjkrRGxNck16TzdzN3N6TUQzODE1MTNQUE9YUHZ1ZC9sZnZmY3UvanMvYVdYRUJBQ1FxQzBDUFNlOGw1N2UzdWZQbjE2Ly83OSt2cjZXNzJFZ0JBUUFzVkFBRWFDbDJBbk9NcGpySnA2U0dGZnZuelozTno4K2ZQbm1UTm5KaVltSmljbi82dVhFQkFDUWlCdkJDWW5KMkVrZUFsMmdxTmdxaHAxL2Y3dmdNS3c3dXpzakk2T2pveU1EQTRPbnE2Lyt2cjY2bitxS1J3Q1NrZ0luQkFFK3ZvT1dBaGVncDFHUjBkaEt2anFONE9kcWxFWXRkbjI5dmJ3OFBEQXdFRGYwZGQvOUJJQ1FrQUk1SWZBVVVMcWc2TmdLdmdLMWpJV3ExSFk3dTR1anY3K2ZwZG5iMit2MDZVSUFTRWdCUEpGb0xmM2tKRmdLdmdLMWpxa01QZ01VKy9SVjQ5ZVFrQUlwSXVBUm1zWGdhUGsxQXRmd1ZxSEZMYS92dyt4V1pCTllUNjFRa0FJQ0lHQ0lHRFVaRFFGWDhGYWxsanRJUG5yMXkvcjBCSkhLeEVDUWtBSUZBMEJuNTBjYTlVb2pFUjlIMTJKRUJBQ1FxQ3dDUGg4ZFVCaDVPcGI2YVltR2tnSUNBRWhrQjRDQWFZNnBMRDBwdEJJUWtBSUNJRXVJU0FLNnhMUW1rWUlDSUVzRUJDRlpZSHFNUmhUU3hBQzVVQkFGRmFPOTBsWkNnRWgwQkNCZGlqczdkdTMvNisvcXRWcXcwRTdOM1poaXM2VDFBaENRQWpramtBN0ZQYng0OGMvNnEvUG56K2ovNi9SQ3c2eXRWbkF5NWN2cll2OTRjT0h0TmIxMjcyOVBXZm5xZm9NZnpDRkh5TmRDQWlCR0FST29Lc2RDZ09tcTFldkxpd3MwSDcvL2gzZUNRc3hKaFlBUFZrM3BvWG1JRU1MdUhuejVyMTc5MHhYS3dTRWdCQ0lRcUJOQ25QRHdXSndHUUxqUEhqd0FPWDI3ZHQ0aDRhR2FCRWpMNm9xOUJpQnZDaTdZZ0xrRWdKQ1FBaUVFZWlVd3R5SWpvUHNndXpDaFF2bWV2WHFGY3FiTjI4b3NsQmlaSHg4UE1Zcmx4QVFBa0lnakVCSEZBWmIxYS8xYXcxRGMyK0ZCaE5SaUtIZ2hkYzRZM0lxSEJ3Y2ZQNzhPVWJDR2dwRjNQWHIxeHU2bWhvVklBU0V3SWxGb0NNS2c3TTQvWm1BSUp4bHVyVjRQM3o0QUowaG5ERTVja0praEVtNmo4RDI5bmJEU2VmbTVucDZldmpVV1ZwYUNnVEV1QUtSNm9JQUNEOTY5R2htWmdZOGtkbloyWGZ2M21HL2N1VUs4S0pJTWtLZ0l3cURsYmo4ZXZ6NE1TUkZEVVdYZ2dzZEMzYTZmUG5JaVpKQ0REcTdjZU1HN3lWWFl3U2NPM2N1by9WbzJEQUNMMTY4WUVlRjdleTMxNjlmYjJ4czhObkRmdk5aTE1ZVkhrY1d5QXVxR2hzYlcxNWUvbFYvM2IxN0Z3ejVHT0JUL05hdFc0SW9Pd1E2b2pEUzRxY2Z0cUxzNHEyaUMxdWhZNEdxNkZKMmNaYjA1ZG16WndUQWFIZ2xXU01BUS9HeEFUZWhCT1phV1ZuQk9EOC9mL255WlZ3b1dGQVFsQ2dYM3RUa1dBd0U5VU5lZkVpd0VmakFOakJaMmYzNzkrbUM1Tk9uVCtFMUxKS01FT2lVd3Jpbmg2MG9yRGdxY3A5RlN5R0dCYnRsak5FWElzMnV0Z3NJVEU5UHM3VWFiaUYyRnduNEJRTEJNQmZHR0JkZWlVT0F3eU9sRnNYWDJ0cWFNenJGc0tVY2N4WXBXU0RRSm9XNTMvYTZkdTBhYVhGUGI3ZjF0SHp6U1BIRktSSTdndUlMNTBxTVRZV04xL1QzTUpvT29vQVlCQ2dmOExMOWFFM1FxU2JRWTF4NEpRNEJPNTZ2cnE0Nmk2L3drU0QrOGdISlNHK1R3dUFYam9jY0hqbW5VSGxCWkpETyt2bzZMVG9XN0Ewekhob2FndEZvdzE3S04wNmdacWVJNDd4cHV0b3NFTENDcStISU1hNkc4U2ZUU0swS1VKd1dvZjZHQ0R4NThvUVk5eVBkTUthRXhzS2wzQTZGUVZKMk5yeDQ4U0lMb3JDNmMrZU9XV2pSby9qTGdvbmhFZlFZQ1V3UkV5bVhFTWdGQWE3d21aYzdMOXF3Y01hY21KamdnR2xoNFFCWjBrS2dIUXFEb2Fpa0VBNk1hZVVSR0tjTFV3Um1WRmNJSkVlQXN6YkNVVEdxQk9NckZFNlJ4TkFtSDFhUmJTRFFEb1cxTVkwZUVRSnBJVUNCMDlQdXkyNnZPcy9FTGcxajZJa0U0UzhPa2pFeG5hZWhFVUJBRkFZSVRlVVlCcml2LzhOcmkzR0ZnN3R2b2ZEaEJzcm1SZC9ZMktqL0psYmpCaS9YN2U2NEI2M1lneDIyMEdqOENJdUxpK1FHMDRuQzRvSHEzQ3NLNnh6RFVvN0FJWWk4L2EzSTlyYmZBNGh4OFVnUlpINSszaVU1TnpjWGt4SjB6S0lnRkxnTVRtR05NY0hKWFRaN1ZIeWxVaUZEU2pDalRvZ3NLbEwyemhFUWhYV09ZU2xIc09yQTMxMTh2Mlk3TThaVm5LVXVMeTlEU2VSRDJrbXV6T0V5aUl4NG43WHB0aWZRSWdOeTRSVitIUDRpTVRERWF4U1d5b3poaVdReEJFUmhoc1B4Yk5uZVhNb2dMSThXd1lLT3NNY2dMUGFiRlNZb3R0L2lYWGdMSWpDSVVSTDVMQ3dzdUhYUmRSSlFXREpQMlhvRHJqYTZuRS9ocHBtWkdUYzFaUmQzYmN4Q0NjYUEySm1PM0xEUWxXU0VnQ2dzSTJBTE1Td2tGYmdpd3VJeTR5dC9xb2tyVjJwL0QzbDZldHBSR0FFeExyd0ZFYWdCc1dUZ0RsUGlXOVlMNzhUSEpQUkNUeHhPd1kycCtXd0FSc2dSWG1NS0d3RTgrV0xkWldoR3Rha2pJQXBMSGRJeURjaHhESTZyVnF2c3QwRGVNYTVBWkk1ZGtvUktTQUJpaXI4VUl3YUJjU2lPVUZJUkRveFVncUFIaHRDWis1TEJCamVYcFdjV3RWa2dJQXJMQWxXTjJUMEVLSHhzTXM1eFhEK1pIdFZTRTdrcUtTcEc5cHdSYUhGNlVWaUxnQ204WUFoUTV0amRFM2x4cjg5cERpVktxSnNveEtLOHNwY1JBVkZZR2Q4MTVYd0VBVTV3VmxzbFBFNGVlVmlka2lNZ0NpdjVHMWptOUxrRmp4ZnV5Qk91aitNa0ZSYkJYSFZSaTZGSVRnZ0NvckJpdk5Fbk1ndHV3ZU9GTy9Ma3dIQzFiOEgrTDd1WlJlMHhSa0FVVnF3M043NHFPVGJlTEVEbkxNazlGN0xXNkg5QUdEVmpZU0dOU2xqMkFBS2lzQUFnT1hmanE1Smo0eldVbTlKSDhvTWtBMVlxRmU3eVcrSXZuaW9zcE9RbVNZS0FLQ3dKU29ySkJJR205Skg4SUFsL3JheXNOT1V2N3Z1NUxFdHZNUm9wZndSRVlmbS9COHFnUXdRV0ZoYU12eTdYL3ltVG1ORUkwMDFaREQ1bGRJbkN5dml1blZwYVdtTGZsakwxdEpPR2xmZ0trcnY4cHZ6RnpKdzB1U3hEYVZVRWVLdUlkUzFlRk5ZMXFOT2NpRTBiTmR6Y1hPMWZ0NDI1WnBxZG5lV09LVDRnYXZBb081T09qNDlIZWJPencxOU1EWDl4bDU5a0Z1THRkeStTQlBzeFdRUE9LbklCMEY5alNmVTJLS3lrS3owK2FmUGp6cDFPdy9WZ3A5QllYVjIxYXlZVXd0amUxcVcxdjJIREhSUGJQdURDaTUwaUJjSFZrbkE2WTVhV0h1azhtRnN0b0dBaExDckphRlJTZ0pPa1dBdU14aXdBR3pCYUZ6dGpnalBvSVNqWWdRTGRoTnpvQWl4NUJsd0VZQWR0SkJjQXllY1lpQ2lzWkc4aVArc3htNUFxZzEzRW5yRlYwVVh4L3dxMyswVjJ4Z200NkRMeS9QeThleHhMUXFsV3E3WkZFOFozSGdaeFVFNnlIRGdpeVdqd25WVlNyVlpoQUFVc1VWT0FjQ3FBZHgvQXFCV1Z6aTRLSzlsYlJpa1JzMmtwQ3Z3dHlnWmplWDQ4RzVMUGZJeGhGNXNjT3lOWUFIcGhCZjZhbVpsaFhSQnVmSklzaXBWU1JoSFAwbUxJS0dvY0FSNkZURUhzb3JDQ3ZCR0owcWhVS291TGkxR2hiRkcvNElLdHNMRFBMZDVhbzZld0M0djdmc0FuUVh1cWFLM3hFZVFTYzZObkxpTGhMMWpNbHRBcWhRbHd3NjNJclNpc3lPL09rZHdvS0NDZ0dIN0JoYmhuWUNYMHdLblF1cmFsSGJ0UjFIRElzaTZibk0xdmRNYm1SK2VhMmVJRFhRWkhjQkZqOFhTZGtDMTJ2Rmc0OGFFekJYb3F3ckdMaTZRMmhFTmY4Z1JZUWhjQUp4L0FDUU9JWFpJRUFWRllFcFFLRVVQUjRSZFpUWE15K2pCaUNnUWJ1eGtsc1gvNGdwTHQ2dGdOYW9CdTRCMmVSZWV3WmwwQ1hOY0dwTXBEV1Z0Ykl3REZDWnpJZ0FRekVXbHpUVWJtNkM2Z0ZBcVprM2J5Vk5zQVBBckE1Sk1xVWhSV2pwOEJPQUlxU1o0ckpJSTBMQ0t3STdpZ0dCT29paTRWSEhZMkxTMFR1WnR5WEZqbzRzSk9sOWFFVGM2emVHbk5ZaTJiMllJWjA0VHpMMHhuM2xLMDNRRThDc0JEaUtRMVEwQVUxZ3loQXZpcGFEaG9jS0NqWWtLNDMybWFGSHVER09NUkZGL0NMZzZQRnNrczZFd0hUMUZ6MlZNTnUrWWlEQVhDQ2xDWTJYRlJlYmx4NkpaRldESlFkQUh3emMxTk1Ba0RpRkdTRUFGUldFS2c4Z3lqSXJCeXlkb2s1UXk3Z293RHpJSUZDYnZnTHdRWEZSTnRnSGZZeno0TjRYWERZdWNvNUZ0NEhNRk9pK0MxTWRGTEpGMERmR0JnQUlqQ0FKWUlxOXhURllYbC9oWTBTWUR0eENuTUQycEtDcHpzRUVxaGNDUjJKT0NpOG1KOHJzWTRMYUt3b3h3SFdaZDRGQk1ZRUFwakVBUUxYYU0vbnFMcmk4OTlZYThmV1NpOXk0REhBRmdvV0FxYlRDRXByTEJvZFQweERuMXNmcU1ZTjdrUkV3VGhMQUdGUXhBV240Ym9tckEvVWVBZ1dpZE13ZVU5d3lJVUJYQ1RlemJRWmIvWnN5aVdGUmthaFJGcEEwS0ZITUhRWFF4NlRMWjRpeU1zQnpSc2FTNHJZRUdQV1VJbmdETmpBRURta2lSSFFCU1dIS3V1UnJLUnVQYXFWQ3JzSEZvM045OGVPb0lnd05sUjJBeFlFQlM2N0N0MGQzRUdzOUNGVm5CQlpPaE80QyttczY4TFVQd05iRjNid3p3SXUrR2xkUnhIZWxpWXk2aU5HS2JBU3d3S0xSYW1zMTJLbnFtNEZablMwbHlzbEtlQW1oWFJ1bWV6QnB6cEFnQzZxYVVrUVVBVWxnU2xIR0pnQWJ2NW92VVBraHNiRzFpYytKbEJFODd1RkhkeHRyeTg3SXdORmVNcFNNZVJFWU1IdXJqZ1J3akxIUzJaRkVyRlRyQUpWQWg1UVZ1a3l1TjRpYkhCTFNDakZnSmlYUXhPaTZDMEpIa0JEamhBNUFQWVV0b0tGb1hwWitBSUFseUh3VUhPRk9oU0wxU3JWWjlTMGJGZ1AzWHE0Q0VlZ1VGZ1RQcXJxNnNCTDBhSmowQVlRTjhydlNrQ29yQ21FQ21nSEFqQW02NFFLMGZHeWpJTkJFUmhhYUNvTVFxR2dIRVpiY0h5VWpycEl5QUtTeDlUalZnRUJPQXY2cklpWkZMd0hNcWVuaWlzN08rZzhoY0NKeG9CVWRpSmZ2dVAyZUpkMllXQ0hMUFZhVGtORVJDRk5ZUkZSaUVnQk1xQndBbWxzSEs4T2NwU0NBaUJaZ2lJd3BvaEpMOFFFQUlGUmtBVVZ1QTNSNmtKQVNIUURBRlJXRE9FNUM4T0FzcEVDSVFRRUlXRklKRkJDQWlCOGlBZ0NpdlBlNlZNaFlBUUNDRWdDZ3RCSW9NUUVBSnBJcER0V0ljVXBsOEZ6QlpwalM0RWhFQWFDQVNZNm9EQ0F0WTBKdElZUWtBSUNJRk1FUEQ1cWtaaFBUMDliaDdmNTR4U2hJQVFFQUs1SStDelUwL1BBV3ZWS0t5L3YzOS9mLytmK29zZ0pQZGN5NStBVmlBRWhFQ2FDTUJMU0oybC9vR3ZZQzBidlVaaGc0T0RQMzc4TUo5cmlaWUlBU0VnQklxQWdPTWxVK0FyV091UXdvYUhoekZCYkgvL2ZoSDNXOVdmUWtBSUNJR2NFZkFaQ2FhQ3IyQ3RRd3FEejhiR3huWjNkM0g4ZGZTVmMrS2FYZ2gwRndITlZqUUVqaExTWDNBVVRBVmZ3VnFIRklaMjl1elprWkdScjErLzd1enM3TzN0L2F5L2VMaitweG9oSUFTRVFENElPQmFDbDJBbk9BcW1ncTlnTFpQYVhaaHBXQ2NuSjArZlB2M3QyN2V0cmEzTnpjMC85UklDUWtBSTVJMEFYTFMxdFFVdndVNXdGRXhsbEdYdElZWFJwelk3Zi83OHBVdVhwcWFtcnVvbEJJU0FFQ2dHQWxOVFUvQVM3QVJId1ZTKy9Bc0FBUC8vN1pKR0NRQUFBQVpKUkVGVUF3RFVTaEpzWHFrUUZnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CjwvZGVmcz4KPC9zdmc+" alt="" />
+                                            </figure>
+                                            이 공식에서 Ci는 성분 i의 농도를, ATEi는 성분 i의 급성독성 추정치를 의미하며, 성분의 수가 n개일 때, i는 1부터 n까지에 해당한다.
+                                            <p class="txt-exp-ps">※ 혼합물 구성성분의 ATE는 다음을 이용하여 유도된다. [공식 1]에 따라 혼합물의 경구, 경피 또는 흡입 급성독성 추정치(ATEmix)를 계산하여 급성독성 물질의 분류기준(단일물질의 급성독성 물질 분류기준 참조)에 따라 분류한다. 다만, 혼합물의 급성독성 추정치는 혼합물의 LD50이나 LC50으로 본다.<br>
+                                            LD50(경구, 경피)/LC50(흡입)</p>
+                                            <br>
+                                            용량범위 시험의 결과인 경우 &lt;표 3.1.2&gt;로부터 적절히 환산된 값, 또는
+                                            <br>구분을 알고 있는 경우 &lt;표 3.1.2&gt;로부터 적절히 환산된 값
+                                            <br>[공식 1]을 적용하는 경우에는 급성독성이 없다고 생각할 수 있는 구성성분(예를 들면 물, 설탕) 및 경구독성 한계 시험인 2,000 mg/kg 체중에서 급성독성이 나타나지 않는 구성성분은 무시하되, 이러한 구성성분은 ATE를 알고 있는 성분으로 간주한다. 또한 ATE를 모르는 구성성분에 대하여, 경구, 경피 및 흡입 급성독성 추정치 간의 외삽, 구조활성관계 등을 통해 예측한 독성 값을 [공식 1]에 적용할 수 있다.
+                                            <br>
+                                            <br>
+                                        </li>
+                                        <li>
+                                            일부 구성성분에 대한 자료만 있는 경우
+                                            <ol class="list-hangul">
+                                                <li>
+                                                    구성성분 중 급성독성을 모르는 성분의 총합이 10% 이하인 경우
+                                                    <br>[공식 1]에 따라 혼합물의 ATE를 계산한 다음 단일물질의 분류기준에 따라 분류하되, 급성독성을 모르는 성분의 함량을 별도 표시한다.
+                                                </li>
+                                                <li>
+                                                    구성성분 중 급성독성을 모르는 성분의 총합이 10% 초과인 경우<br>
+                                                    [공식 2]에 따라 혼합물의 ATE를 계산한 다음 단일물질의 분류기준에 따라 분류하되, 급성독성을 모르는 성분의 함량을 별도 표시한다.
+                                                    <figure class="formula-box">
+                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzUzODVfMTAyMzE2KSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzUzODVfMTAyMzE2IiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF81Mzg1XzEwMjMxNiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF81Mzg1XzEwMjMxNiIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUFEwbEVRVlI0QWV5ZHNVOFUyeGZIaFI5Q1FBS0NNZkNMeGtLeHRZSEVVZ3NwYkUza0x6QnVaNnVsSmZRMmtGK3BEU1MycjhEaTEycXdzUlVzak9aQmpJc1NsSWp2UGQ5bjkrRGxNck16TzdzN3N6TUQzODE1MTNQUE9YUHZ1ZC9sZnZmY3UvanMvYVdYRUJBQ1FxQzBDUFNlOGw1N2UzdWZQbjE2Ly83OSt2cjZXNzJFZ0JBUUFzVkFBRWFDbDJBbk9NcGpySnA2U0dGZnZuelozTno4K2ZQbm1UTm5KaVltSmljbi82dVhFQkFDUWlCdkJDWW5KMkVrZUFsMmdxTmdxaHAxL2Y3dmdNS3c3dXpzakk2T2pveU1EQTRPbnE2Lyt2cjY2bitxS1J3Q1NrZ0luQkFFK3ZvT1dBaGVncDFHUjBkaEt2anFONE9kcWxFWXRkbjI5dmJ3OFBEQXdFRGYwZGQvOUJJQ1FrQUk1SWZBVVVMcWc2TmdLdmdLMWpJV3ExSFk3dTR1anY3K2ZwZG5iMit2MDZVSUFTRWdCUEpGb0xmM2tKRmdLdmdLMWpxa01QZ01VKy9SVjQ5ZVFrQUlwSXVBUm1zWGdhUGsxQXRmd1ZxSEZMYS92dyt4V1pCTllUNjFRa0FJQ0lHQ0lHRFVaRFFGWDhGYWxsanRJUG5yMXkvcjBCSkhLeEVDUWtBSUZBMEJuNTBjYTlVb2pFUjlIMTJKRUJBQ1FxQ3dDUGg4ZFVCaDVPcGI2YVltR2tnSUNBRWhrQjRDQWFZNnBMRDBwdEJJUWtBSUNJRXVJU0FLNnhMUW1rWUlDSUVzRUJDRlpZSHFNUmhUU3hBQzVVQkFGRmFPOTBsWkNnRWgwQkNCZGlqczdkdTMvNisvcXRWcXcwRTdOM1poaXM2VDFBaENRQWpramtBN0ZQYng0OGMvNnEvUG56K2ovNi9SQ3c2eXRWbkF5NWN2cll2OTRjT0h0TmIxMjcyOVBXZm5xZm9NZnpDRkh5TmRDQWlCR0FST29Lc2RDZ09tcTFldkxpd3MwSDcvL2gzZUNRc3hKaFlBUFZrM3BvWG1JRU1MdUhuejVyMTc5MHhYS3dTRWdCQ0lRcUJOQ25QRHdXSndHUUxqUEhqd0FPWDI3ZHQ0aDRhR2FCRWpMNm9xOUJpQnZDaTdZZ0xrRWdKQ1FBaUVFZWlVd3R5SWpvUHNndXpDaFF2bWV2WHFGY3FiTjI4b3NsQmlaSHg4UE1Zcmx4QVFBa0lnakVCSEZBWmIxYS8xYXcxRGMyK0ZCaE5SaUtIZ2hkYzRZM0lxSEJ3Y2ZQNzhPVWJDR2dwRjNQWHIxeHU2bWhvVklBU0V3SWxGb0NNS2c3TTQvWm1BSUp4bHVyVjRQM3o0QUowaG5ERTVja0praEVtNmo4RDI5bmJEU2VmbTVucDZldmpVV1ZwYUNnVEV1QUtSNm9JQUNEOTY5R2htWmdZOGtkbloyWGZ2M21HL2N1VUs4S0pJTWtLZ0l3cURsYmo4ZXZ6NE1TUkZEVVdYZ2dzZEMzYTZmUG5JaVpKQ0REcTdjZU1HN3lWWFl3U2NPM2N1by9WbzJEQUNMMTY4WUVlRjdleTMxNjlmYjJ4czhObkRmdk5aTE1ZVkhrY1d5QXVxR2hzYlcxNWUvbFYvM2IxN0Z3ejVHT0JUL05hdFc0SW9Pd1E2b2pEUzRxY2Z0cUxzNHEyaUMxdWhZNEdxNkZKMmNaYjA1ZG16WndUQWFIZ2xXU01BUS9HeEFUZWhCT1phV1ZuQk9EOC9mL255WlZ3b1dGQVFsQ2dYM3RUa1dBd0U5VU5lZkVpd0VmakFOakJaMmYzNzkrbUM1Tk9uVCtFMUxKS01FT2lVd3Jpbmg2MG9yRGdxY3A5RlN5R0dCYnRsak5FWElzMnV0Z3NJVEU5UHM3VWFiaUYyRnduNEJRTEJNQmZHR0JkZWlVT0F3eU9sRnNYWDJ0cWFNenJGc0tVY2N4WXBXU0RRSm9XNTMvYTZkdTBhYVhGUGI3ZjF0SHp6U1BIRktSSTdndUlMNTBxTVRZV04xL1QzTUpvT29vQVlCQ2dmOExMOWFFM1FxU2JRWTF4NEpRNEJPNTZ2cnE0Nmk2L3drU0QrOGdISlNHK1R3dUFYam9jY0hqbW5VSGxCWkpETyt2bzZMVG9XN0Ewekhob2FndEZvdzE3S04wNmdacWVJNDd4cHV0b3NFTENDcStISU1hNkc4U2ZUU0swS1VKd1dvZjZHQ0R4NThvUVk5eVBkTUthRXhzS2wzQTZGUVZKMk5yeDQ4U0lMb3JDNmMrZU9XV2pSby9qTGdvbmhFZlFZQ1V3UkV5bVhFTWdGQWE3d21aYzdMOXF3Y01hY21KamdnR2xoNFFCWjBrS2dIUXFEb2Fpa0VBNk1hZVVSR0tjTFV3Um1WRmNJSkVlQXN6YkNVVEdxQk9NckZFNlJ4TkFtSDFhUmJTRFFEb1cxTVkwZUVRSnBJVUNCMDlQdXkyNnZPcy9FTGcxajZJa0U0UzhPa2pFeG5hZWhFVUJBRkFZSVRlVVlCcml2LzhOcmkzR0ZnN3R2b2ZEaEJzcm1SZC9ZMktqL0psYmpCaS9YN2U2NEI2M1lneDIyMEdqOENJdUxpK1FHMDRuQzRvSHEzQ3NLNnh6RFVvN0FJWWk4L2EzSTlyYmZBNGh4OFVnUlpINSszaVU1TnpjWGt4SjB6S0lnRkxnTVRtR05NY0hKWFRaN1ZIeWxVaUZEU2pDalRvZ3NLbEwyemhFUWhYV09ZU2xIc09yQTMxMTh2Mlk3TThaVm5LVXVMeTlEU2VSRDJrbXV6T0V5aUl4NG43WHB0aWZRSWdOeTRSVitIUDRpTVRERWF4U1d5b3poaVdReEJFUmhoc1B4Yk5uZVhNb2dMSThXd1lLT3NNY2dMUGFiRlNZb3R0L2lYWGdMSWpDSVVSTDVMQ3dzdUhYUmRSSlFXREpQMlhvRHJqYTZuRS9ocHBtWkdUYzFaUmQzYmN4Q0NjYUEySm1PM0xEUWxXU0VnQ2dzSTJBTE1Td2tGYmdpd3VJeTR5dC9xb2tyVjJwL0QzbDZldHBSR0FFeExyd0ZFYWdCc1dUZ0RsUGlXOVlMNzhUSEpQUkNUeHhPd1kycCtXd0FSc2dSWG1NS0d3RTgrV0xkWldoR3Rha2pJQXBMSGRJeURjaHhESTZyVnF2c3QwRGVNYTVBWkk1ZGtvUktTQUJpaXI4VUl3YUJjU2lPVUZJUkRveFVncUFIaHRDWis1TEJCamVYcFdjV3RWa2dJQXJMQWxXTjJUMEVLSHhzTXM1eFhEK1pIdFZTRTdrcUtTcEc5cHdSYUhGNlVWaUxnQ204WUFoUTV0amRFM2x4cjg5cERpVktxSnNveEtLOHNwY1JBVkZZR2Q4MTVYd0VBVTV3VmxzbFBFNGVlVmlka2lNZ0NpdjVHMWptOUxrRmp4ZnV5Qk91aitNa0ZSYkJYSFZSaTZGSVRnZ0NvckJpdk5Fbk1ndHV3ZU9GTy9Ma3dIQzFiOEgrTDd1WlJlMHhSa0FVVnF3M043NHFPVGJlTEVEbkxNazlGN0xXNkg5QUdEVmpZU0dOU2xqMkFBS2lzQUFnT1hmanE1Smo0eldVbTlKSDhvTWtBMVlxRmU3eVcrSXZuaW9zcE9RbVNZS0FLQ3dKU29ySkJJR205Skg4SUFsL3JheXNOT1V2N3Z1NUxFdHZNUm9wZndSRVlmbS9COHFnUXdRV0ZoYU12eTdYL3ltVG1ORUkwMDFaREQ1bGRJbkN5dml1blZwYVdtTGZsakwxdEpPR2xmZ0trcnY4cHZ6RnpKdzB1U3hEYVZVRWVLdUlkUzFlRk5ZMXFOT2NpRTBiTmR6Y1hPMWZ0NDI1WnBxZG5lV09LVDRnYXZBb081T09qNDlIZWJPencxOU1EWDl4bDU5a0Z1THRkeStTQlBzeFdRUE9LbklCMEY5alNmVTJLS3lrS3owK2FmUGp6cDFPdy9WZ3A5QllYVjIxYXlZVXd0amUxcVcxdjJIREhSUGJQdURDaTUwaUJjSFZrbkE2WTVhV0h1azhtRnN0b0dBaExDckphRlJTZ0pPa1dBdU14aXdBR3pCYUZ6dGpnalBvSVNqWWdRTGRoTnpvQWl4NUJsd0VZQWR0SkJjQXllY1lpQ2lzWkc4aVArc3htNUFxZzEzRW5yRlYwVVh4L3dxMyswVjJ4Z200NkRMeS9QeThleHhMUXFsV3E3WkZFOFozSGdaeFVFNnlIRGdpeVdqd25WVlNyVlpoQUFVc1VWT0FjQ3FBZHgvQXFCV1Z6aTRLSzlsYlJpa1JzMmtwQ3Z3dHlnWmplWDQ4RzVMUGZJeGhGNXNjT3lOWUFIcGhCZjZhbVpsaFhSQnVmSklzaXBWU1JoSFAwbUxJS0dvY0FSNkZURUhzb3JDQ3ZCR0owcWhVS291TGkxR2hiRkcvNElLdHNMRFBMZDVhbzZld0M0djdmc0FuUVh1cWFLM3hFZVFTYzZObkxpTGhMMWpNbHRBcWhRbHd3NjNJclNpc3lPL09rZHdvS0NDZ0dIN0JoYmhuWUNYMHdLblF1cmFsSGJ0UjFIRElzaTZibk0xdmRNYm1SK2VhMmVJRFhRWkhjQkZqOFhTZGtDMTJ2Rmc0OGFFekJYb3F3ckdMaTZRMmhFTmY4Z1JZUWhjQUp4L0FDUU9JWFpJRUFWRllFcFFLRVVQUjRSZFpUWE15K2pCaUNnUWJ1eGtsc1gvNGdwTHQ2dGdOYW9CdTRCMmVSZWV3WmwwQ1hOY0dwTXBEV1Z0Ykl3REZDWnpJZ0FRekVXbHpUVWJtNkM2Z0ZBcVprM2J5Vk5zQVBBckE1Sk1xVWhSV2pwOEJPQUlxU1o0ckpJSTBMQ0t3STdpZ0dCT29paTRWSEhZMkxTMFR1WnR5WEZqbzRzSk9sOWFFVGM2emVHbk5ZaTJiMllJWjA0VHpMMHhuM2xLMDNRRThDc0JEaUtRMVEwQVUxZ3loQXZpcGFEaG9jS0NqWWtLNDMybWFGSHVER09NUkZGL0NMZzZQRnNrczZFd0hUMUZ6MlZNTnUrWWlEQVhDQ2xDWTJYRlJlYmx4NkpaRldESlFkQUh3emMxTk1Ba0RpRkdTRUFGUldFS2c4Z3lqSXJCeXlkb2s1UXk3Z293RHpJSUZDYnZnTHdRWEZSTnRnSGZZeno0TjRYWERZdWNvNUZ0NEhNRk9pK0MxTWRGTEpGMERmR0JnQUlqQ0FKWUlxOXhURllYbC9oWTBTWUR0eENuTUQycEtDcHpzRUVxaGNDUjJKT0NpOG1KOHJzWTRMYUt3b3h3SFdaZDRGQk1ZRUFwakVBUUxYYU0vbnFMcmk4OTlZYThmV1NpOXk0REhBRmdvV0FxYlRDRXByTEJvZFQweERuMXNmcU1ZTjdrUkV3VGhMQUdGUXhBV240Ym9tckEvVWVBZ1dpZE13ZVU5d3lJVUJYQ1RlemJRWmIvWnN5aVdGUmthaFJGcEEwS0ZITUhRWFF4NlRMWjRpeU1zQnpSc2FTNHJZRUdQV1VJbmdETmpBRURta2lSSFFCU1dIS3V1UnJLUnVQYXFWQ3JzSEZvM045OGVPb0lnd05sUjJBeFlFQlM2N0N0MGQzRUdzOUNGVm5CQlpPaE80QyttczY4TFVQd05iRjNid3p3SXUrR2xkUnhIZWxpWXk2aU5HS2JBU3d3S0xSYW1zMTJLbnFtNEZablMwbHlzbEtlQW1oWFJ1bWV6QnB6cEFnQzZxYVVrUVVBVWxnU2xIR0pnQWJ2NW92VVBraHNiRzFpYytKbEJFODd1RkhkeHRyeTg3SXdORmVNcFNNZVJFWU1IdXJqZ1J3akxIUzJaRkVyRlRyQUpWQWg1UVZ1a3l1TjRpYkhCTFNDakZnSmlYUXhPaTZDMEpIa0JEamhBNUFQWVV0b0tGb1hwWitBSUFseUh3VUhPRk9oU0wxU3JWWjlTMGJGZ1AzWHE0Q0VlZ1VGZ1RQcXJxNnNCTDBhSmowQVlRTjhydlNrQ29yQ21FQ21nSEFqQW02NFFLMGZHeWpJTkJFUmhhYUNvTVFxR2dIRVpiY0h5VWpycEl5QUtTeDlUalZnRUJPQXY2cklpWkZMd0hNcWVuaWlzN08rZzhoY0NKeG9CVWRpSmZ2dVAyZUpkMllXQ0hMUFZhVGtORVJDRk5ZUkZSaUVnQk1xQndBbWxzSEs4T2NwU0NBaUJaZ2lJd3BvaEpMOFFFQUlGUmtBVVZ1QTNSNmtKQVNIUURBRlJXRE9FNUM4T0FzcEVDSVFRRUlXRklKRkJDQWlCOGlBZ0NpdlBlNlZNaFlBUUNDRWdDZ3RCSW9NUUVBSnBJcER0V0ljVXBsOEZ6QlpwalM0RWhFQWFDQVNZNm9EQ0F0WTBKdElZUWtBSUNJRk1FUEQ1cWtaaFBUMDliaDdmNTR4U2hJQVFFQUs1SStDelUwL1BBV3ZWS0t5L3YzOS9mLytmK29zZ0pQZGN5NStBVmlBRWhFQ2FDTUJMU0oybC9vR3ZZQzBidlVaaGc0T0RQMzc4TUo5cmlaWUlBU0VnQklxQWdPTWxVK0FyV091UXdvYUhoekZCYkgvL2ZoSDNXOVdmUWtBSUNJR2NFZkFaQ2FhQ3IyQ3RRd3FEejhiR3huWjNkM0g4ZGZTVmMrS2FYZ2gwRndITlZqUUVqaExTWDNBVVRBVmZ3VnFIRklaMjl1elprWkdScjErLzd1enM3TzN0L2F5L2VMaitweG9oSUFTRVFENElPQmFDbDJBbk9BcW1ncTlnTFpQYVhaaHBXQ2NuSjArZlB2M3QyN2V0cmEzTnpjMC85UklDUWtBSTVJMEFYTFMxdFFVdndVNXdGRXhsbEdYdElZWFJwelk3Zi83OHBVdVhwcWFtcnVvbEJJU0FFQ2dHQWxOVFUvQVM3QVJId1ZTKy9Bc0FBUC8vN1pKR0NRQUFBQVpKUkVGVUF3RFVTaEpzWHFrUUZnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CjwvZGVmcz4KPC9zdmc+" alt="" />
+                                                    </figure>
+                                                    이 공식에서 Ci는 성분 i의 농도를, ATEi는 성분 i의 급성독성 추정치를, 그리고 Cunknown은 급성독성을 모르는 성분을 의미한다.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>흡입독성에 대한 한계농도는 4시간 노출시험 기준이다. 1시간 노출시험에서 얻어진 기존의 시험자료를 변환해서 사용할 경우에는, 가스 및 증기는 2로 나누고 분진과 미스트는 4로 나눈다.</li>
+                                <li>흡입독성에 대한 단위는 흡입되는 물질의 형태에 따라 달라진다. 분진 및 미스트는 mg/L로 나타내며, 가스는 ppm으로 나타낸다. 액체상 및 증기상이 혼합되어 있는 증기는 시험하기 어렵기 때문에, 표에서는 값을 mg/L 단위로 나타낸다. 다만, 화학물질이 시험환경에서 거의 가스 상에 가까운 증기로 구성된 경우에는, 가스에 대한 분류기준을 따른다.</li>
+                                <li>경구 및 흡입노출에 의한 급성독성 평가에 우선 적용되는 시험동물 종은 흰쥐이며, 급성 경피독성에서는 흰쥐 또는 토끼이다.</li>
+                                <li>흡입독성 시험결과에서 부식성을 나타내는 정보가 있다면, 물질 또는 혼합물은 호흡기도에 부식성이 있는 것으로 표시한다. 호흡기도에 대한 부식성은 피부 부식성과 유사한 1회, 제한된 기간 동안 노출후의 호흡기도 조직의 파괴로 정의된다. 이는 점막의 파괴도 포함한다.</li>
+                                <li>분류된 혼합물이 다른 혼합물의 구성분으로 사용될 경우에는, 그 혼합물에 대한 실제 또는 유추된 급성독성 추정치를 [공식 1] 또는 [공식 2]에 사용하여 새로운 혼합물의 분류를 계산할 수 있다.</li>
+                                <li>「농약, 원제 및 농약활용기자재의 표시기준(농촌진흥청 고시)」에 따른 농약 및 농약원제는 급성독성 구분 5(경구, 경피)를 적용할 수 있다.</li>
+                            </ol>
+                        </div>
+                        
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

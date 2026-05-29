@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학물질 정보 공개 신청 내역 상세</h2>
+                </div>
+
+                <div class="top-line-wrap">
+                    <span class="date-label-set"><b>신청일시</b><span>2025-01-21 14:45:17</span></span>
+                    <div class="right" style="margin-left:auto;display:flex;gap:8px;">
+                        <button type="button" class="btn-md btn-white"><span>삭제</span></button>
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <div class="title-data-wrap">
+                    <h2 class="title-data">신청대상</h2>
+                </div>
+                <div class="data-detail">
+                    <table>
+                        <caption class="sr-only">신청대상 — 물질명, 화학물질 식별번호(CAS No), 정보 구분</caption>
+                        <colgroup>
+                            <col style="width:220px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">물질명</th>
+                                <td>α-(2-Aminomethylethyl)-ω-(2-aminomethylethoxy)poly[oxy(methyl-1,2-ethanediyl)]</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">화학물질 식별번호(CAS No)</th>
+                                <td>6837-96-2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">정보 구분</th>
+                                <td>유해성 정보</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="title-data-wrap">
+                    <h2 class="title-data">신청내용</h2>
+                </div>
+                <div class="data-detail">
+                    <table>
+                        <caption class="sr-only">신청내용 — 신청사항, 신청사유, 첨부파일</caption>
+                        <colgroup>
+                            <col style="width:220px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">신청사항</th>
+                                <td>정보 수정 요청</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">신청사유</th>
+                                <td>유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다. 유해성 분류 신고정보에 대해 알고 싶습니다.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일</th>
+                                <td>
+                                    <a href="javascript:void(0);" class="link-txt-base">테스트파일.pdf<i class="ico-clip"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="title-data-wrap">
+                    <h2 class="title-data">답변</h2>
+                </div>
+                <div class="data-detail">
+                    <table>
+                        <caption class="sr-only">답변 — 관리자, 첨부파일</caption>
+                        <colgroup>
+                            <col style="width:220px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">관리자</th>
+                                <td>
+                                    관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다. 관리자 답변 내용이 들어가는 영역입니다.
+                                    <br>
+                                    <br>
+                                    <p class="date-label-set"><b>답변일시</b><span>2025-01-21 15:45:17</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일</th>
+                                <td>
+                                    <a href="javascript:void(0);" class="link-txt-base"><b>테스트파일.pdf</b><i class="ico-clip"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

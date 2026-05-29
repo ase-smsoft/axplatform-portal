@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+
+
+<div class="popup-wrap" id="tempPopId">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup">
+      <div class="pop-header">
+        <h2 class="title">의견제시</h2>
+        <div class="right">
+          <button type="button" class="btn-close"><i class="ico-close"></i></button>
+        </div>
+      </div>
+      <div class="pop-body">
+        <div class="top-text">
+          <p>화학물질정보시스템 이용 시 화학물질정보에 대한 오류, 장애, 서비스 개선 사항 및 기타 의견을 보내 주시면  해당 사항을 확인하여 빠른 시일 내에 반영 할 수 있도록 하겠습니다.</p>
+        </div>
+
+        <div class="data-detail">
+          <table>
+            <caption class="sr-only">의견제시 입력 항목 — 의견 구분, 보안문자, 이름, 제목, 내용</caption>
+            <colgroup>
+              <col style="width:20%;">
+              <col style="width:auto;">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row">의견 구분</th>
+                <td>물질 정보 오류 신고 (콜타르)</td>
+              </tr>
+              <tr>
+                <th scope="row"><label for="op-captcha"><span class="required">보안문자<span class="sr-only">필수 입력항목</span></span></label></th>
+                <td>
+                  <div class="captcha-wrap">
+                        <div class="captcha-top">
+                            <div class="captcha-img">
+                                <img src="../images/temp/@captcha.jpg" alt="보안문자 이미지">
+                            </div>
+                            <button type="button" class="btn btn-md btn-bg-blue-line btn-captcha" aria-label="보안문자 새로고침">
+                                <span>새로고침</span>
+                                <svg class="ico-refresh"><use href="../images/common/simbol.svg#ico-refresh"></use></svg>
+                            </button>
+                        </div>
+                        <input type="text" id="op-captcha" class="captcha-input" placeholder="보안문자를 입력하세요.">
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><label for="op-name"><span class="required">이름<span class="sr-only">필수 입력항목</span></span></label></th>
+                <td>
+                  <input type="text" id="op-name" placeholder="이름을 입력하세요." style="width:100%;">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><label for="op-subject"><span class="required">제목<span class="sr-only">필수 입력항목</span></span></label></th>
+                <td>
+                  <input type="text" id="op-subject" placeholder="제목을 입력하세요." style="width:100%;">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><label for="op-content"><span class="required">내용<span class="sr-only">필수 입력항목</span></span></label></th>
+                <td>
+                  <textarea id="op-content" placeholder="내용을 입력하세요." ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">첨부파일</th>
+                <td>
+                    <div class="file-wrap">
+                        <div class="inp-file">
+                            <label class="file" for="file-upload-1">
+                                <input type="file" id="file-upload-1" onchange="addFile(this)" aria-describedby="file-upload-1-desc">
+                                <span id="file-upload-1-desc" class="file-placeholder">파일을 선택하세요.</span>
+                                <span class="btn"><span>파일첨부</span></span>
+                            </label>
+                        </div>
+                        <ul class="file-list" aria-label="첨부된 파일 목록">
+                            <li>
+                                <p>첨부파일12345454.pdf</p>
+                                <button type="button" class="del" onclick="fileDel(this)" aria-label="첨부파일12345454.pdf 삭제"></button>
+                            </li>
+                            <li>
+                                <p>첨부파일1234.pdf</p>
+                                <button type="button" class="del" onclick="fileDel(this)" aria-label="첨부파일1234.pdf 삭제"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <div class="pop-footer">
+        <div class="btn-wrap">
+            <button type="button" class="btn-lg btn-white" onclick="popClose('#tempPopId')">취소</button>
+            <button type="button" class="btn-lg btn-blue">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  popOpen('#tempPopId');
+</script>  
+
+</body>
+</html>

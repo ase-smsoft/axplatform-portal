@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">국내 GLP 정보</h2>
+                    <p class="txt-sub">물리적·화학적 특성 및 유해성에 관한 시험자료의 제출방법(제5조제1항제1호 관련)</p>
+                </div>
+
+                <div class="title-section-wrap">
+                    <h3 class="title-section">국내 GLP 현황</h3>
+                </div>
+                <div class="data-default">
+                    <div class="scroll">
+                        <table class="table-matrix">
+                            <caption class="sr-only">시험분야·시험항목별 기관(1~21)별 시험 수행 여부 매트릭스</caption>
+                            <colgroup>
+                                <col style="width:100px;">
+                                <col style="width:180px;">
+                                <col span="21" style="width:50px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">기관별 (아래 참고)</th>
+                                    <th scope="col" rowspan="2">1</th>
+                                    <th scope="col" rowspan="2">2</th>
+                                    <th scope="col" rowspan="2">3</th>
+                                    <th scope="col" rowspan="2">4</th>
+                                    <th scope="col" rowspan="2">5</th>
+                                    <th scope="col" rowspan="2">6</th>
+                                    <th scope="col" rowspan="2">7</th>
+                                    <th scope="col" rowspan="2">8</th>
+                                    <th scope="col" rowspan="2">9</th>
+                                    <th scope="col" rowspan="2">10</th>
+                                    <th scope="col" rowspan="2">11</th>
+                                    <th scope="col" rowspan="2">12</th>
+                                    <th scope="col" rowspan="2">13</th>
+                                    <th scope="col" rowspan="2">14</th>
+                                    <th scope="col" rowspan="2">15</th>
+                                    <th scope="col" rowspan="2">16</th>
+                                    <th scope="col" rowspan="2">17</th>
+                                    <th scope="col" rowspan="2">18</th>
+                                    <th scope="col" rowspan="2">19</th>
+                                    <th scope="col" rowspan="2">20</th>
+                                    <th scope="col" rowspan="2">21</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">시험분야</th>
+                                    <th scope="col">시험항목</th>
+                                    <th scope="col" colspan="21">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="13">물리·<br>화학적<br>성질</td>
+                                    <td class="align-l">물질의 상태</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">물용해도</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">녹는점/어는점</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">끓는점</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">증기압</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">옥탄올/물 분배계수</td>
+                                    <td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">밀도</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">입도분석</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">인화성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">폭발성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">산화성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">점도</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">해리상수</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="19">환경<br>유해성</td>
+                                    <td class="align-l">어류 급성독성</td>
+                                    <td>○</td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td></td><td></td><td></td><td>○</td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">물벼룩 급성독성</td>
+                                    <td>○</td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td></td><td>○</td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">담수조류 생장저해</td>
+                                    <td>○</td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">어류 만성독성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">물벼룩 만성독성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">육생식물 급성독성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">육생 무척추동물 급성독성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">육생식물 만성독성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">육생 무척추동물 만성독성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">활성슬러지 호흡저해</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">저서생물 만성독성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">이분해성</td>
+                                    <td>○</td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">본질적분해성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">pH에 따른 가수분해</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td></td><td></td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">분해산물의 확인</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">환경 거동 및 동태에 대한 추가 정보</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">흡착 및 탈착</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">흡착 및 탈착에 대한 추가 정보</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">생물농축성</td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="20">인체<br>유해성</td>
+                                    <td class="align-l">급성경구독성</td>
+                                    <td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">급성경피독성</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">급성흡입독성</td>
+                                    <td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">피부 자극성/부식성</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">눈 자극성/부식성</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">피부과민성</td>
+                                    <td>○</td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">복귀돌연변이</td>
+                                    <td>○</td><td>○</td><td>○</td><td>○</td><td></td><td></td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">포유류 배양세포를 이용한 염색체이상</td>
+                                    <td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">시험동물을 이용한 체세포 유전독성</td>
+                                    <td>○</td><td>○</td><td></td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">추가 유전독성</td>
+                                    <td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">반복투여독성(28일)-경구</td>
+                                    <td>○</td><td>○</td><td></td><td>○</td><td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">반복투여독성(28일)-경피</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">반복투여독성(28일)-흡입</td>
+                                    <td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">반복투여독성(90일)-경구</td>
+                                    <td>○</td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">반복투여독성(90일)-경피</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td>○</td><td>○</td><td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">반복투여독성(90일)-흡입</td>
+                                    <td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">생식 및 발달독성 스크리닝</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td>○</td><td></td><td>○</td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">최기형성</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">2세대 생식독성</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">발암성</td>
+                                    <td>○</td><td></td><td></td><td>○</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- // tab-content -->
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

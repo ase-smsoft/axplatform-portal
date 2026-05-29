@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학물질 통합조회 나노물질 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <div class="title-article-wrap">
+                    <h3 class="title-article">Fullerenes</h3>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-general">일반 정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-exposure">노출 일반 정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-env-hazard">환경 유해성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-human-hazard">인체 건강 유해성</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="title-chapter-wrap">
+                        <h2 class="title-chapter">인체 건강 유해성</h2>
+                    </div>
+
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp">Crystalline silica 폐 독성 영향은 silicosis같은 심각한 폐 병변과 관련있거나(Hamilton et al., 2008; Iyer et al., 1996)광범위한 작업장 노출로 분명하게 설명되는 반면, SAS 입자(마이크로 크기 또는 나노 크기 입자) 독성은 충분한 연구가 진행되지 않았다(Napierska et al., 2009; Merget et al., 2002; Cho et al., 2007).<br>
+                        현 자료에 따르면 흡입은 SAS 인체 노출의 주요 경로로 여겨진다. SAS 역학 자료에 대해 일부 잘못 기재된 노출 시나리오를 예외로 하면, SAS가 사람 폐에서 섬유조직 발생에 영향을 미친다는 증거는 없다. 인체에 적용 가능한 정보는 SAS에 의한 작업자에서의 섬유조직 발생 영향을 배제하기에는 충분하지 않기 때문에, 추가적인 역학 증거를 확보해야 한다(Merget et al., 2002). SAS 등 미네랄 화학물의 소화 흡수는 물질의 용해도 및 섭취된 양에 따라 달라진다. 섭취된 분진은 장 점막에 축적되며, 소화되지 않은 것은 대변을 통해 배출된다. 장기 잔류성이 적은 것으로 예상됨에도 불구하고 SAS에 특화된 연구는 부족하다. 피부 경로를 통한 SAS 흡수는 잘 이루어지지 않기 때문에 분분의 연구에서 논의되지 않는다.</p>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">인체 건강 영향</h3>
+                        </div>
+
+                        <div class="tab-type3">
+                            <ul>
+                                <li class="on"><a href="javascript:void(0);" data-tab-id="tab-toxicokinetics">독성동태</a></li>
+                                <li><a href="javascript:void(0);" data-tab-id="tab-acute">급성독성</a></li>
+                                <li><a href="javascript:void(0);" data-tab-id="tab-irritation">자극성</a></li>
+                                <li><a href="javascript:void(0);" data-tab-id="tab-sensitization">과민성</a></li>
+                                <li><a href="javascript:void(0);" data-tab-id="tab-repeated">반복투여독성</a></li>
+                                <li><a href="javascript:void(0);" data-tab-id="tab-genotoxicity">유전독성</a></li>
+                                <li><a href="javascript:void(0);" data-tab-id="tab-carcinogenicity">발암성</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="txt-exp-wrap st-box">
+                                <p class="tit-exp"><strong>독성동태</strong></p>
+
+                                <p class="txt-tit"><strong>동물 시험</strong></p>
+                                <p class="txt-exp">in vivo 시험</p>
+
+                                <p class="txt-tit"><strong>흡입</strong></p>
+                                <p class="txt-exp">에어로졸 형태의 fullerene C60 나노입자에 대한 급성 흡입독성시험을 적용할 수 없으므로 반복 흡입독성시험을 적용하였다. 그 결과 0.12 mg/m³(4.1.5 반복투여독성 참조)에서 사망은 관찰되지 않았으며, 랫드의 흡입독성 LC50은 0.12 mg/m³ 이하로 확인되었다. 또한, 랫드에 단회 기도 내 점적 투여 시험을 수행한 결과, 최대 3.3 mg/kg에서도 사망은 관찰되지 않았다(4.1.9 추가 정보 참조).</p>
+
+                                <p class="txt-tit"><strong>경피</strong></p>
+                                <p class="txt-exp">급성경피독성시험 결과는 없었으나 2가지의 피부자극성시험 결과가 있었다. 올리브 오일 0.5 g에 fullerene 0.5 g을 섞은 물질 또는 0.2 mL의 용매에 C60 0.02 g을 섞은 물질(직접 노출)을 사용한 수컷 토끼와 20% C60 분산액 0.5 mL을 노출한 수컷 토끼에서 사망 및 이상 소견은 관찰되지 않았으며(자세한 내용은 4.1.3 피부 자극성 참조), 급성 경피독성은 낮은 것으로 확인되었다.</p>
+
+                                <p class="txt-tit"><strong>인체 시험</strong></p>
+                                <p class="txt-exp">관련 자료 없음</p>
+                            </div>
+
+                            <div class="txt-exp-wrap">
+                                <p class="tit-exp"><strong>독성동태</strong></p>
+                                <p class="txt-exp">기도 내 점적 및 흡입 노출 후 수컷 Wistar 랫드의 폐, 간 및 뇌에서 C60의 축적량을 측정하였다. 폐에서 C60의 축적량은 시간 경과에 따라 감소되었고, C60 투여 농도에 비례하였다. 간 및 뇌에서 C60의 농도는 8.9 ng/g tissue이었으며, 검출 한계 이하로 확인되었다. 폐에서 기도 내 점적한 C60의 반감기는 15~28일이었다. 생체분포를 확인하기 위해 랫드 꼬리 정맥에 C60을 투여하였다. C60은 뇌, 신장, 간, 폐 및 비장과 같은 다양한 조직에서 검출되었으나, 혈액 내에서는 검출되지 않았다. 폐에서 C60 최고 농도가 관찰되었으며, 비장, 간, 신장 및 뇌 순으로 높은 농도가 관찰되었다. 이러한 결과는 꼬리 정맥을 통해 투여된 C60이 다른 조직에 분포되기 전에 폐 모세혈관에서 제거된다는 것을 확인할 수 있다.</p>
+                            </div>
+
+                            <div class="data-default">
+                                <table>
+                                    <caption class="sr-only">출처</caption>
+                                    <colgroup>
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">출처</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-l"><a href="http://library.nier.go.kr/search/DetailView.ax?cid=5608946" class="link-txt-base">http://library.nier.go.kr/search/DetailView.ax?cid=5608946</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // tab-content -->
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

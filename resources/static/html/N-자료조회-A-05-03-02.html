@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학물질 통합조회 나노물질 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <div class="title-article-wrap">
+                    <h3 class="title-article">Fullerenes</h3>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-general">일반 정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-exposure">노출 일반 정보</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-env-hazard">환경 유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-human-hazard">인체 건강 유해성</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="title-chapter-wrap">
+                        <h2 class="title-chapter">환경 유해성</h2>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">Fullerene(MER Corp. 제공)의 생물농축 시험을 위해 갑각류의 일종인 Thamnocephalus platyurus를 사용하였다. 사용한 fullerene C60 수성 분산액은 100일 동안 C60을 탈이온수(DI water)에 넣고 교반하여 제조하였다. 이때 DLS로 측정한 aqu/C60 응집체 Z-평균(평균 유체역학) 직경은 517 ± 21 nm이었다. 입체 현미경(×40배)으로 관찰한 결과, T. platyurus의 소화기관에서 검은 응집체가 관찰되었다. 1시간이 경과된 후 고성능 액체 크로마토그래피 질량분석(HPLC-MS)을 사용하여 fullerene 섭취량을 정량적으로 측정하였다. 그 결과, aqu/C60의 섭취가 0∼10분 사이에 두 농도군(3 mg/L, 6 mg/L)에서 활발하게 진행되었으며, 상기 조건 이후 1시간 동안 생체 단위 질량 당 C60 농도의 변화는 관찰되지 않았다. 1시간 동안 T. platyurus를 상기 분산액 3 mg/L 및 6 mg/L의 농도로 노출시켰을 때, aqu/C60 응집체는 각각 2.7 ± 0.4 μg/mg 및 6.8 ± 1.5 μg/mg의 습중량을 나타내었다. T. platyurus의 얇은 부위를 투과전자현미경(TEM)으로 확인해 본 결과, 분산된 fullerene 응집체보다 훨씬 큰 fullerene 응집체(5∼10 μm)가 소화관에서 관찰되었고, 배출된 fullerene 응집체(10∼70 μm)가 배양기 바닥에 부착된 형태로 관찰되었다. 대조군으로 사용한 폴리스티렌 미립구와 대조적으로 aqu/C60은 6개월까지 분산 fullerene보다 두 배 이상 큰 응집 상태를 유지하였다. 따라서 fullerene는 T. platyurus 내에서 응집체를 형성할 가능성이 있고 이로 인해 물에서 퇴적물로 이동할 수 있다(Patra et al., 2011).</p>
+                        </div>
+
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">시험물질, 방법, 결과, 참고문헌</caption>
+                                    <colgroup>
+                                        <col style="width:140px;">
+                                        <col style="width:220px;">
+                                        <col style="width:auto;min-width: 400px;">
+                                        <col style="width:120px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">시험물질</th>
+                                            <th scope="col">방법</th>
+                                            <th scope="col">결과</th>
+                                            <th scope="col">참고문헌</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>H2-AgNPs</td>
+                                            <td rowspan="4">gNPs 응집 동력학에 대한 안정화 메커니즘(EPA QA/QC 지침)</td>
+                                            <td class="align-l">NaNO3, NaCl 및 Ca(NO3)2 염 존재시 CCC는 각각 25, 30 및 3 mM</td>
+                                            <td rowspan="4">US EPA, 2012</td>
+                                        </tr>
+                                        <tr>
+                                            <td>cAgNPs</td>
+                                            <td class="align-l">H2-AgNPs와 동일 조건에서 CCC는 각각 70, 70 및 5mM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PVP-AgNPs</td>
+                                            <td rowspan="2" class="align-l">응집하지 않았으며, 해당 시험 조건에서 CCC 산출 불가</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BPEI-AgNPs</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">원양어종 영향(급/만성)</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">원양어종 영향(급/만성) — 시험물질, 방법, 결과, 참고문헌</caption>
+                                    <colgroup>
+                                        <col style="width:140px;">
+                                        <col style="width:220px;">
+                                        <col style="width:auto;min-width: 400px;">
+                                        <col style="width:120px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">시험물질</th>
+                                            <th scope="col">방법</th>
+                                            <th scope="col">결과</th>
+                                            <th scope="col">참고문헌</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>H2-AgNPs</td>
+                                            <td rowspan="4">gNPs 응집 동력학에 대한 안정화 메커니즘(EPA QA/QC 지침)</td>
+                                            <td class="align-l">NaNO3, NaCl 및 Ca(NO3)2 염 존재시 CCC는 각각 25, 30 및 3 mM</td>
+                                            <td rowspan="4">US EPA, 2012</td>
+                                        </tr>
+                                        <tr>
+                                            <td>cAgNPs</td>
+                                            <td class="align-l">H2-AgNPs와 동일 조건에서 CCC는 각각 70, 70 및 5mM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PVP-AgNPs</td>
+                                            <td rowspan="2" class="align-l">응집하지 않았으며, 해당 시험 조건에서 CCC 산출 불가</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BPEI-AgNPs</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="data-default">
+                            <table>
+                                <caption class="sr-only">출처</caption>
+                                <colgroup>
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">출처</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-l"><a href="http://library.nier.go.kr/search/DetailView.ax?cid=5608946" class="link-txt-base">http://library.nier.go.kr/search/DetailView.ax?cid=5608946</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // tab-content -->
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

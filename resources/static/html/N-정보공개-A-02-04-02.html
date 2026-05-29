@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">분류기준</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-physical">단일물질/물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-health">단일물질/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-env">단일물질/환경유해성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-mixture-health">혼합물/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-env">혼합물/환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-acute-toxicity">급성독성</a></li>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-skin-corrosion">피부 부식성/자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-eye-damage">심한 눈 손상/눈 자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-sensitization">호흡기 또는 피부 과민성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-mutagenicity">생식세포 변이원성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-carcinogenicity">발암성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-reproductive-toxicity">생식독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-stot-single">특정 표적장기 독성(1회)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-stot-repeated">특정 표적장기 독성(반복)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-aspiration">흡인 유해성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">피부 부식성/자극성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 피부 부식성 또는 자극성 자료가 있는 경우 단일물질의 분류기준과 같다.</li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 제1.2장의 가목부터 바목까지 따른 가교원리를 적용하여, 해당 혼합물을 피부 부식성(구분 1) 또는 피부 자극성(구분 2)으로 분류한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 구성성분에 대한 자료가 있는 경우
+                                    <ol class="list-alpha st2">
+                                        <li>
+                                            가산 방식을 적용할 수 있는 경우
+                                            <br>혼합물 중 피부 부식성(구분 1) 또는 피부 자극성(구분 2) 성분이 이들의 농도와 부식성 또는 자극성 강도에 비례하여 혼합물 전체의 부식성 또는 자극성에 기여하는 경우에, 혼합물의 분류기준은 아래 &lt;표 3.2.2(a)&gt;와 같다.
+                                            <p class="txt-caption">&lt;표 3.2.2(a)&gt;</p>
+                                            <div class="data-default">
+                                                <table>
+                                                    <caption class="sr-only">표 3.2.2(a) - 가산 방식이 적용되는 혼합물의 피부 부식성/자극성 구분별 분류기준</caption>
+                                                    <colgroup>
+                                                        <col style="width:160px;">
+                                                        <col>
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">구분</th>
+                                                            <th scope="col">분류기준</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1 (피부 부식성)</td>
+                                                            <td class="align-l">피부 부식성(구분 1)인 성분의 총 함량이 5% 이상인 혼합물</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2 (피부 자극성)</td>
+                                                            <td class="align-l">
+                                                                <ol class="list-decimal-circle">
+                                                                    <li>피부 부식성(구분 1)인 성분의 총 함량이 1% 이상 5% 미만인 혼합물 또는,</li>
+                                                                    <li>피부 자극성(구분 2)인 성분의 총 함량이 10% 이상인 혼합물 또는,</li>
+                                                                    <li>다음의 합이 10% 이상인 혼합물
+                                                                        <ol class="list-roman st2">
+                                                                            <li>피부 부식성(구분 1)인 성분의 총 함량(%)에 가중치 10을 곱한 값과</li>
+                                                                            <li>피부 자극성(구분 2)인 성분의 총 함량(%)</li>
+                                                                        </ol>
+                                                                    </li>
+                                                                </ol>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p class="txt-exp-ps">주: 피부 부식성 구분 1의 소구분을 사용할 때 1A, 1B 또는 1C로 혼합물의 부식성을 분류하기 위해서는 소구분 1A, 1B 또는 1C로 분류된 모든 성분들의 합이 각각 5% 이상이어야 한다. 소구분 1A로 분류된 성분들의 합이 5% 미만이지만 소구분 1A, 1B로 분류된 성분들의 합이 5% 이상일 경우 이 혼합물은 소구분 1B로 분류되어진다. 이와 유사하게 구분 1A, 1B로 분류된 성분들의 합이 5% 미만이지만 소구분 1A, 1B, 1C로 분류된 성분들의 합이 5% 이상이면 이 혼합물의 경우는 소구분 1C로 분류되어질 수 있다. 혼합물에서 적어도 한 가지 이상의 성분이 소구분 없이 구분 1로 분류되는 경우에는 그 혼합물의 모든 성분들의 피부 부식성 합이 5% 이상이면 소구분 없이 구분 1로 분류되어야 한다.</p>
+                                        </li>
+                                        <li>
+                                            가산 방식을 적용할 수 없는 경우
+                                            <br>강산이나 강염기, 기타 무기염류, 알데히드류, 페놀류, 계면활성제 또는 이와 유사한 특징을 갖는 물질 중 &lt;표 3.2.2(a)&gt;의 가산 방식을 적용할 수 없는 성분을 함유한 혼합물은 &lt;표 3.2.2(b)&gt;에 따라 피부 부식성 또는 피부 자극성을 분류한다.
+                                            <p class="txt-caption">&lt;표 3.2.2(b)&gt;</p>
+                                            <div class="data-default">
+                                                <table>
+                                                    <caption class="sr-only">표 3.2.2(b) - 가산 방식이 적용되지 않는 혼합물의 피부 부식성/자극성 구분별 분류기준</caption>
+                                                    <colgroup>
+                                                        <col style="width:160px;">
+                                                        <col>
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">구분</th>
+                                                            <th scope="col">분류기준</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1 (피부 부식성)</td>
+                                                            <td class="align-l">
+                                                                <ol class="list-decimal-circle">
+                                                                    <li>수소이온농도(pH) 2 이하인 성분의 함량이 1% 이상인 혼합물 또는,</li>
+                                                                    <li>수소이온농도(pH) 11.5 이상인 성분의 함량이 1% 이상인 혼합물 또는,</li>
+                                                                    <li>기타 가산 방식이 적용되지 않는 다른 피부 부식성(구분 1)인 성분의 함량이 1% 이상인 혼합물</li>
+                                                                </ol>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2 (피부 자극성)</td>
+                                                            <td class="align-l">산, 알칼리 등 가산 방식이 적용되지 않는 다른 피부 자극성(구분 2)인 성분의 함량이 3% 이상인 혼합물</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>피부 부식성 또는 피부 자극성 분류는 동물시험 자료 외에 단일물질의 피부 부식성/자극성 분류기준(표 참조)에 나타난 인체나 동물에 대한 경험, 수소이온농도(pH), 구조활성관계, 구조 특성관계나 in vitro 자료를 최대한 활용한다.</li>
+                                <li>수소이온농도(pH) 한계범위 이지만 피부 부식성이 아니라는 판단을 위해서는 완충력이나 시험관내 시험자료와 같은 추가 자료가 있어야 한다.</li>
+                                <li>국제적으로 승인되고 타당성이 검증된 시험관내 피부 부식성 시험방법으로는 OECD 430(피부 전기저항성시험)과 OECD 431(인체 피부 모델 시험), OECD 435(피부 부식성 평가를 위한 생체외 장벽막 시험)가 있다.</li>
+                                <li>&lt;표 3.2.1(a)&gt; 및 &lt;표 3.2.1(b)&gt;에 규정된 함량 한계를 초과하면서도 피부 부식성 또는 피부 자극성이 없다는 명백한 증거가 있는 경우는 해당 혼합물을 피부 부식성 또는 피부 자극성으로 분류하지 않아도 된다. 이 반대의 경우는 피부 부식성 또는 피부 자극성으로 분류한다.</li>
+                                <li>피부 부식성/자극성은 구분 1, 2를 원칙으로 하되, 필요에 따라 구분 1을 1A, 1B, 1C로 소구분하여 사용할 수 있다.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학물질 통합조회 정보공개 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <div class="tag-set-wrap">
+                    <div class="tag-set">
+                        <span class="tag">CAS No</span>
+                        <span class="val">11118-57-3</span>
+                    </div>
+                </div>
+                <div class="title-article-wrap">
+                    <h3 class="title-article">Cardamom, ext.</h3>
+                </div>
+
+                <!-- 고유번호 -->
+                <div class="data-default">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">고유번호 — 기존, 인체급성·인체만성·생태, 사고대비, 제한/금지/허가, 중점관리, 잔류성오염</caption>
+                            <colgroup>
+                                <col style="width:auto;min-width: 140px;">
+                                <col style="width:20%;min-width: 140px;">
+                                <col style="width:auto;min-width: 140px;">
+                                <col style="width:auto;min-width: 140px;">
+                                <col style="width:auto;min-width: 140px;">
+                                <col style="width:auto;min-width: 140px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="6">고유번호</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>기존</td>
+                                    <td>인체급성·인체만성·생태</td>
+                                    <td>사고대비</td>
+                                    <td>제한/금지/허가</td>
+                                    <td>중점관리</td>
+                                    <td>잔류성오염</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>인체만성·생태<br>2006-1-558</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-report">신고 정보</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-register" aria-disabled="true">등록 정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-hazard">유해성 심사정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-risk">위해성평가결과</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="title-section-wrap">
+                        <div class="right">
+                            <button type="button" class="btn-xsm btn-blue"><span>정보 수정·보완요청</span></button>
+                        </div>
+                    </div>
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp">※ 등록정보는 등록 신청 시, 활용할 수 없습니다.(지식재산권 고지 확인) 아래 정보는 등록 시 입력 된 자료가 그대로 공개됩니다.</p>
+                    </div>
+
+                    <!-- snb-content-wrap -->
+                    <div class="snb-content-wrap">
+                        <div class="snb-menu-wrap">
+                            <button class="mo-snb-menu-btn">메뉴선택</button>
+                            <ul class="snb-menu">
+                                <li class="on">
+                                    <a href="javascript:void(0);" data-tab-id="snb-info-form">화학물질 정보/등록의 형태</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" data-tab-id="snb-usage">용도 및 분류 표시</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" data-tab-id="snb-safety">안전사용을 위한 지침</a>
+                                </li>
+                                <li class="has-menu">
+                                    <a href="javascript:void(0);">물리적·화학적 특성</a>
+                                    <ul class="lnb-sub" style="display:block;">
+                                        <li class="active"><a href="javascript:void(0);" data-tab-id="snb-state">물질의 상태</a></li>
+                                        <li><a href="javascript:void(0);">불용해도</a></li>
+                                        <li><a href="javascript:void(0);">녹는점/어는점</a></li>
+                                        <li><a href="javascript:void(0);">끓는점</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-menu">
+                                    <a href="javascript:void(0);">인체유해성</a>
+                                    <ul class="lnb-sub">
+                                        <li><a href="javascript:void(0);">메뉴</a></li>
+                                        <li><a href="javascript:void(0);">메뉴메뉴</a></li>
+                                        <li><a href="javascript:void(0);">메뉴메뉴메뉴</a></li>
+                                        <li><a href="javascript:void(0);">메뉴</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-menu">
+                                    <a href="javascript:void(0);">환경유해성</a>
+                                    <ul class="lnb-sub">
+                                        <li><a href="javascript:void(0);">어류급성독성</a></li>
+                                        <li><a href="javascript:void(0);">벼룩급성독성</a></li>
+                                        <li><a href="javascript:void(0);">수조류생장저해</a></li>
+                                        <li><a href="javascript:void(0);">어류만성독성</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="snb-content" id="snb-info-form" style="display:block;">
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">화학물질 정보/등록의 형태</h3>
+                                </div>
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">화학물질 정보/등록의 형태 — 화학물질명, Cas No, 등록의 형태</caption>
+                                        <colgroup>
+                                            <col style="width:200px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">화학물질명</th>
+                                                <td>1,1'-(1,2-Ethanediyl)bis[4-ethenylbenzene]</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Cas No</th>
+                                                <td>48174-52-3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">등록의 형태</th>
+                                                <td>1≤Ton&lt;10</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="snb-content" id="snb-usage" style="display:none;">
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">용도</h3>
+                                </div>
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">용도 — 용도분류체계</caption>
+                                        <colgroup>
+                                            <col style="width:200px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">용도분류체계</th>
+                                                <td>2. 접착제 · 결합제 (Adhesive · Binding agents)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">분류·표시</h3>
+                                </div>
+                                <div class="data-default">
+                                    <div class="scroll">
+                                        <table>
+                                            <caption class="sr-only">분류·표시 — 유해성분류(항목, 구분), 표시사항(그림문자, 신호어, 유해·위험문구)</caption>
+                                            <colgroup>
+                                                <col style="width:auto;min-width: 180px;">
+                                                <col style="width:auto;min-width: 180px;">
+                                                <col style="width:105px;">
+                                                <col style="width:105px;">
+                                                <col style="width:105px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="colgroup" colspan="2">유해성분류</th>
+                                                    <th scope="colgroup" colspan="3">표시사항</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">항목</th>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">그림문자</th>
+                                                    <th scope="col">신호어</th>
+                                                    <th scope="col">유해·위험문구</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>수생환경 유해성-만성</td>
+                                                    <td>4</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>H413</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="snb-content" id="snb-safety" style="display:none;">
+
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">취급방법</h3>
+                                </div>
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">취급방법 — 안전한 저장 및 보관을 위한 방법 조건, 취급 시 주의사항, 취급자에 대한 응급조치 방법</caption>
+                                        <colgroup>
+                                            <col style="width:130px;">
+                                            <col style="width:180px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th rowspan="4" scope="rowgroup">안전한 저장 및<br>보관을 위한<br>방법 조건</th>
+                                                <th scope="row">저장 공간 및<br>저장 용기에 대한 재질,<br>특정한 모양 · 형태,<br>환기시설 등</th>
+                                                <td class="align-l">
+                                                    <ul class="dot-list">
+                                                        <li>밀폐하여 보관하시오.</li>
+                                                        <li>서늘하고(16°C이하) 건조한 장소에 저장하시오.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">피해야 할 물질과 조건,<br>유해한 분해 생성물 등</th>
+                                                <td class="align-l">
+                                                    <ul class="number-list">
+                                                        <li>
+                                                            <i class="num">①</i> 화학적 안정성 및 유해 반응의 가능성
+                                                            <ul class="dot-list">
+                                                                <li>권장 보관 조건에서 안정적임</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">온도, 습도, 빛 등<br>저장 · 보관 조건</th>
+                                                <td class="align-l">
+                                                    <ul class="dot-list">
+                                                        <li>서늘하고 건조하며 통풍이 잘 되는 곳에 밀폐 보관하시오.</li>
+                                                        <li>빛에 민감하여 광선을 피해 보관하시오.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">정전기 방지 조치</th>
+                                                <td class="align-l">자료없음</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2" scope="row">취급 시 주의사항</th>
+                                                <td class="align-l">
+                                                    사고 예방, 사람의 건강 및 환경 보호를 위한 적절한 작업 절차와 조치 1) 공학적 관리
+                                                    <ul class="dot-list">
+                                                        <li>공정격리, 국소배기를 사용하거나, 공기수준을 노출기준 이하로 조절하는 다른 공학적 관리를 하시오.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2" scope="row">취급자에 대한 응급조치 방법</th>
+                                                <td class="align-l">
+                                                    <ul class="number-list">
+                                                        <li>
+                                                            <i class="num">1)</i> 눈에 들어 갔을 때 - 긴급 의료조치를 받으시오.
+                                                            <ul class="dash-list">
+                                                                <li>물질과 접촉시 즉시 20분 이상 흐르는 물에 눈을 씻어내시오.</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <i class="num">2)</i> 피부에 접촉했을 때
+                                                            <ul class="dash-list">
+                                                                <li>긴급 의료조치를 받으시오.</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">폭발·화재 시 대처방법</h3>
+                                </div>
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">폭발·화재 시 대처방법 — 소화방법 및 소화 시 유의사항, 소화제 및 소화장비</caption>
+                                        <colgroup>
+                                            <col style="width:130px;">
+                                            <col style="width:180px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th rowspan="2" scope="rowgroup">소화방법 및<br>소화 시 유의사항</th>
+                                                <th scope="row">화재 진압 시에<br>착용할 보호구</th>
+                                                <td class="align-l">
+                                                    <ul class="dot-list">
+                                                        <li>구조자는 적절한 보호구를 착용하시오.</li>
+                                                        <li>위험하지 않다면 화재지역에서 용기를 옮기시오.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">화학물질 자체 또는<br>화학물질의 연소로부터<br>발생하는 위험성<br>(유해화학물질 등)</th>
+                                                <td class="align-l">
+                                                    <ul class="dot-list">
+                                                        <li>눈물샘 촉진제(눈물의 흐름을 증가시키는 물질)임.</li>
+                                                        <li>화재 조건에서 탄소 산화물과 염화수소 가스 등 유해한 분해 생성물이 형성됨.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2" scope="rowgroup">소화제 및<br>소화장비</th>
+                                                <th scope="row">적절한 소화제</th>
+                                                <td class="align-l">물분무(water spray), 내알코올포(alcohol-resistant foam)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">안전상의 이유로<br>사용하지 않아야 하는<br>소화제</th>
+                                                <td class="align-l">해당없음</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">폐기방법</h3>
+                                </div>
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">폐기방법 — 적절한 폐기방법, 인체 및 환경에 대한 노출을 적절히 제어하는 폐기물관리대책</caption>
+                                        <colgroup>
+                                            <col style="width:310px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">적절한 폐기방법</th>
+                                                <td>
+                                                    <ul class="dot-list">
+                                                        <li>폐기물관리법에 명시된 경우 규정에 따라 내용물 및 용기를 폐기하시오.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">인체 및 환경에 대한 노출을 적절히<br>제어하는 폐기물관리대책</th>
+                                                <td>
+                                                    <ul class="dot-list">
+                                                        <li>(관련 법규에 명시된 내용에 따라) 내용물과 용기를 폐기하시오.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">관련 법령에 따른 규제 정보</h3>
+                                </div>
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">관련 법령에 따른 규제 정보</caption>
+                                        <colgroup>
+                                            <col style="width:310px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">관련 법령에 따른 규제 정보</th>
+                                                <td>
+                                                    <ul class="number-list">
+                                                        <li><i class="num">가.</i> 산업안전보건법에 의한 규제: - 해당없음</li>
+                                                        <li><i class="num">나.</i> 화학물질관리법에 의한 규제: - 해당없음</li>
+                                                        <li><i class="num">다.</i> 위험물안전관리법에 의한 규제: - 해당없음</li>
+                                                        <li><i class="num">라.</i> 폐기물관리법에 의한 규제: - 해당없음</li>
+                                                        <li><i class="num">마.</i> 기타 국내 및 외국법에 의한 규제 - 국내규제 해당없음</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="snb-content" id="snb-state">
+
+                            <!-- 결론 및 요약 -->
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">시험결과값</h3>
+                                    <div class="right">
+                                        <button type="button" class="btn-toggle" data-toggle="toggle1"><span>펼치기</span></button>
+                                    </div>
+                                </div>
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">시험결과값 — 물리적 상태</caption>
+                                        <colgroup>
+                                            <col style="width:200px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">물리적 상태</th>
+                                                <td>고체</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">물리적 상태</th>
+                                                <td>흰색 고체 분말임.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- 결론 및 요약 -->
+                            <div class="section-wrap">
+                                <div class="title-section-wrap">
+                                    <h3 class="title-section">결론 및 요약</h3>
+                                </div>
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">결론 및 요약 — 결론, 요약</caption>
+                                        <colgroup>
+                                            <col style="width:200px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">결론</th>
+                                                <td>등록물질은 흰색 고체 분말이다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">요약</th>
+                                                <td>등록물질은 흰색 고체 분말이다.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- 펼치기 영역 -->
+                            <div class="toggle-content" id="toggle1" style="display: none;">
+                                <div class="section-wrap">
+                                    <!-- 자료의 성격 -->
+                                    <div class="title-section-wrap">
+                                        <h4 class="title-section">자료의 성격</h4>
+                                    </div>
+                                    <div class="data-detail">
+                                        <table>
+                                            <caption class="sr-only">자료의 성격 — 자료의 성격, 자료의 구분</caption>
+                                            <colgroup>
+                                                <col style="width:200px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">자료의 성격</th>
+                                                    <td>시험자료의전문</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">자료의 구분</th>
+                                                    <td>주요 자료</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="section-wrap">
+                                    <!-- 자료의 기본 정보 -->
+                                    <div class="title-section-wrap">
+                                        <h4 class="title-section">자료의 기본 정보</h4>
+                                    </div>
+                                    <div class="data-detail">
+                                        <table>
+                                            <caption class="sr-only">자료의 기본 정보 — 연구년도, 결과 도출 방법, 신뢰도</caption>
+                                            <colgroup>
+                                                <col style="width:200px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">연구년도</th>
+                                                    <td>2025</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">결과 도출 방법</th>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">신뢰도</th>
+                                                    <td>2(제한적인 신뢰성)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="section-wrap">
+                                    <!-- 시험방법의 정보 -->
+                                    <div class="title-section-wrap">
+                                        <h4 class="title-section">시험방법의 정보</h4>
+                                    </div>
+                                    <div class="data-detail">
+                                        <table>
+                                            <caption class="sr-only">시험방법의 정보 — 시험방법 준수 여부, 시험방법, 시험방법(기타), 시험기관 여부</caption>
+                                            <colgroup>
+                                                <col style="width:200px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">시험방법 준수 여부</th>
+                                                    <td>가이드라인을 따름</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">시험방법</th>
+                                                    <td>기타 가이드라인</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">시험방법(기타)</th>
+                                                    <td>The guidelines for the testing of chemicals-physical and chemical properties and physical hazards (2nd Edition) 105 water solubility-column elution method</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">법 제14조제2항에 따른 시험기관 여부</th>
+                                                    <td>아니오</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">법 제14조제2항에 따른 시험기관 여부(비고)</th>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="section-wrap">
+                                    <!-- 시험물질의 식별정보 -->
+                                    <div class="title-section-wrap">
+                                        <h4 class="title-section">시험물질의 식별정보</h4>
+                                    </div>
+                                    <div class="data-detail">
+                                        <table>
+                                            <caption class="sr-only">시험물질의 식별정보 — 신청물질과 시험물질이 같은지 여부, 시험물질의 식별정보, 시험물질의 식별정보(기타)</caption>
+                                            <colgroup>
+                                                <col style="width:200px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">신청물질과 시험물질이<br>같은지 여부</th>
+                                                    <td>예</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">시험물질의 식별정보</th>
+                                                    <td>CAS 번호</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">시험물질의 식별정보(기타)</th>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">시험물질의 식별정보</th>
+                                                    <td>48174-52-3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                                </div>
+                                <!-- // toggle-content -->
+                        </div>
+
+                    </div>
+                    <!-- // snb-content-wrap -->
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">물질검색</h2>
+                </div>
+
+                <form class="search-box" role="search" onsubmit="return false;">
+                    <div class="sc-block">
+                        <div class="sc-row">
+                            <span class="sc-label" id="sc-total-label">통합검색</span>
+                            <div class="sc-field">
+                                <div class="input-search inp-del">
+                                    <label for="sc-total-kw" class="sr-only">통합검색어 (PC)</label>
+                                    <input type="search" id="sc-total-kw" name="searchKeyword" class="mo-hide" placeholder="CAS No, 고유번호, 물질명을 입력하세요." aria-labelledby="sc-total-label">
+                                    <label for="sc-total-kw-mo" class="sr-only">통합검색어 (모바일)</label>
+                                    <textarea id="sc-total-kw-mo" name="searchKeywordMo" class="pc-hide" placeholder="CAS No, 고유번호, 물질명을 입력하세요." aria-labelledby="sc-total-label"></textarea>
+                                    <button type="submit" class="btn-icon-search" aria-label="검색 실행"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- 상세검색 -->
+                <div class="detail-search-wrap">
+                    <div class="ds-header">
+                        <button type="button" class="ds-toggle on" aria-expanded="true">
+                            <span class="ds-title">상세검색</span>
+                        </button>
+                    </div>
+                    <div class="ds-body">
+                        <div class="data-detail">
+                            <table>
+                                <caption class="sr-only">상세검색 입력 항목 — CAS No, 고유번호, 물질명(영문), 물질명(국문)</caption>
+                                <colgroup>
+                                    <col style="width:160px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label for="ds-cas">CAS No</label></th>
+                                        <td>
+                                            <input type="text" id="ds-cas" placeholder="CAS No를 입력하세요." style="width: 100%;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="ds-uid">고유번호</label></th>
+                                        <td>
+                                            <input type="text" id="ds-uid" placeholder="고유번호를 입력하세요." style="width: 100%;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="ds-en">물질명(영문)</label></th>
+                                        <td>
+                                            <input type="text" id="ds-en" placeholder="영문명을 입력하세요." style="width: 100%;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="ds-kr">물질명(국문)</label></th>
+                                        <td>
+                                            <input type="text" id="ds-kr" placeholder="국문명을 입력하세요." style="width: 100%;">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="ds-btn-wrap">
+                            <button type="button" class="btn-lg btn-white">초기화</button>
+                            <button type="button" class="btn-lg btn-blue">검색</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 상세검색 -->
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">검색 결과 <em>124</em>개</div>
+                    </div>
+                    <div class="right">
+                        <button class="btn-xsm btn-bg-blue-line"><span>정보공개 신청 내역</span></button>
+                        <button type="button" class="btn-xsm btn-white btn-icon" aria-label="인쇄"><svg class="ico-print" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-print"></use></svg></button>
+                        <button class="btn-xsm btn-white btn-icon-mo"><svg class="ico-excel"><use href="../images/common/simbol.svg#ico-excel"></use></svg><span class="mo-hide">엑셀 다운로드</span></button>
+                        <button class="btn-xsm btn-white btn-icon-mo"><svg class="ico-pdf"><use href="../images/common/simbol.svg#ico-pdf"></use></svg><span class="mo-hide">PDF 다운로드</span></button>
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option value="10">10개</option>
+                            <option value="20">20개</option>
+                            <option value="30">30개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div id="grid" aria-label="일반등록 전체목록"></div>
+                </div>
+
+                <div class="list-box">
+                    <ul class="dot-list">
+                        <li>"검색 결과가 없습니다." 와 검색결과가 있어도 "고시정보" 가 공란인 경우에는 "신규화학물질"로 판단하시면 됩니다.</li>
+                        <li>다만, 인체등유해성물질의 염류(salts)나 중금속 화합물은 개별 물질에 따라 인체등유해성물질 검색정보가 제공되지 않을 수 있으므로 고시내용을 고려하여 정확한 규제정보를 판단하시기 바랍니다.</li>
+                        <li>검색결과 고유번호 가운데 숫자(연도표기 다음)는 1=인체등유해성물질, 4=금지물질, 5=제한물질입니다.</li>
+                        <li>‘중점관리물질’은 환경부 고시 ｢중점관리물질의 지정｣에 따른 화학물질이며 &lt;별표1&gt;은 ’19.7.1.시행, &lt;별표2&gt;는 ’21.7.1.시행입니다.</li>
+                        <li>암‧돌연변이성 물질’은 환경부고시 ｢2021년까지 등록하여야 할 돌연변이, 생식능력 이상을 일으키거나 일으킬 우려가 있는 기존화학물질｣을 말하며, 해당 화학물질의 수화물도 등록대상에 해당함.</li>
+                        <li>검색물질이 "수화물"인 경우 수화물을 제외한 물질이 인체등유해성물질이면 수화물질도 인체등유해성물질이고, 기존화학물질에 있으면 신규화학물질이 아닙니다.</li>
+                        <li>‘등록대상’란에 ‘등록유예기간 없음’으로 표시된 물질은 2015.7월 고시된 ‘등록대상기존화학물질’이며 그 수화물‧무수화물도 등록대상기존화학물질에 포함됨.</li>
+                        <li>"인체등유해성물질등 혼합물질 함량 및 규제정보"를 클릭하면 인체등유해성물질,허가물질,제한·금지물질의 제품내 규제함량 및 규제사항을 확인할 수 있습니다.</li>
+                        <li>고유번호란의 사고대비물질에 체크되어 있는 경우, 화학물질종합정보시스템 (https://icis.mcee.go.kr)에서 확인하시기 바랍니다.</li>
+                        <li>‘잔류성오염물질’은 환경부 고시 「잔류성오염물질의 종류 및 특정면제에 관한 규정」에 따른 취급금지 또는 취급제한물질입니다.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+<script>
+var localData = [
+    { casNo: '11118-57-3', nameEn: 'Chromium copper zinc oxide [이명: Chromic acid, copper zinc salt; Copper-zinc chromate;]', nameKr: '크롬산 영류 [이명: 크로뮴 구리 아연 옥사이드; 크롬구리아연산화물; 크롬산, 구리 아연 염;]', uidExisting: 'KE-05983', uidAcute: '인체급성·인체만성·생태 97-1-271 (1)', uidAccident: '52', uidRestrict: '06-5-10', uidFocus: '별표-198', uidResidual: '', registered: '', regTarget: 'Y', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
+    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '2022-31', registered: 'Y', regTarget: '등록유예기간 없음', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
+    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '', registered: 'Y', regTarget: '', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
+    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '', registered: 'Y', regTarget: '', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
+    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '', registered: 'Y', regTarget: '', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
+    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '', registered: 'Y', regTarget: '', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
+  ];
+
+let gridConfig = {
+    dataSource: localData,
+    container: '#grid',
+    width: '100%',
+    rowHeight: 40,
+    headerHeight: [40, 40],
+    height: '400px',
+    showRowNo: false,
+    sortable: 'rotate',
+    filterable: true,
+    pageable: {
+       pageSizes: [10, 20, 30, 40, 50]
+    },
+    pagerBar: { left: 'pagerCombo', center: 'pager' },
+    columns: [
+      { field: 'casNo',       caption: 'CAS No',         width: 100 },
+      { field: 'nameEn',      caption: '물질명(영문)',    width: 200, align: 'left' },
+      { field: 'nameKr',      caption: '물질명(국문)',    width: 160, align: 'left' },
+      {
+        caption: '고유번호',
+        columns: [
+          { field: 'uidExisting', caption: '기존',            width: 90  },
+          { field: 'uidAcute',    caption: '급성·만성·생태',    width: 200 },
+          { field: 'uidAccident', caption: '사고대비물',       width: 150  },
+          { field: 'uidRestrict', caption: '제한/금지/허가',    width: 140 },
+          { field: 'uidFocus',    caption: '중점',            width: 90  },
+          { field: 'uidResidual', caption: '잔류',            width: 90  },
+        ]
+      },
+      { field: 'registered',  caption: '등록여부',        width: 150  },
+      { field: 'regTarget',   caption: '등록대상',        width: 150 },
+      { field: 'regulation',  caption: '함량 및 규제정보', width: 150, cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{regulation}}</a>' },
+      { field: 'disclosure',  caption: '정보공개',        width: 150,  cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{disclosure}}</a>' },
+      { field: 'nano',        caption: '나노물질',        width: 150,  cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{nano}}</a>' },
+    ],
+  }
+
+datagrid = SBGrid3.createGrid(gridConfig);
+</script>    
+
+</body>
+</html>

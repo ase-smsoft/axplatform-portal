@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">분류기준</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-physical">단일물질/물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-health">단일물질/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-env">단일물질/환경유해성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-mixture-health">혼합물/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-env">혼합물/환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-acute-toxicity">급성독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-skin-corrosion">피부 부식성/자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-eye-damage">심한 눈 손상/눈 자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-sensitization">호흡기 또는 피부 과민성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-mutagenicity">생식세포 변이원성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-carcinogenicity">발암성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-reproductive-toxicity">생식독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-stot-single">특정 표적장기 독성(1회)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-stot-repeated">특정 표적장기 독성(반복)</a></li>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-aspiration">흡인 유해성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">흡인 유해성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 흡인 유해성 자료가 있는 경우<br>
+                                    단일물질의 흡인 유해성 분류기준 표와 같다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    [별표1] 제1.2장의 가목부터 마목까지의 따른 가교원리를 적용하여, 해당 혼합물을 흡인 유해성 구분 1 및 구분 2로 분류한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 구성성분에 대한 자료가 있는 경우</li>
+                            </ol>
+
+                            <div class="data-default">
+                                <table>
+                                    <caption class="sr-only">흡인 유해성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:120px;">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">흡인 유해성(구분 1)인 모든 구성성분의 농도의 합이 10% 이상 이고, 동점도가 20.5㎟/s(40℃) 이하인 혼합물(두 층 또는 그 이상으로 명백하게 분리되는 혼합물의 경우, 그 중에 한 층이 해당되는 혼합물을 포함한다)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">흡인 유해성(구분 2)인 모든 구성성분의 농도의 합이 10% 이상 이고, 동점도가 14㎟/s(40℃) 이하인 혼합물(두 층 또는 그 이상으로 분명하게 분리되는 혼합물의 경우, 그 중에 한 층이 해당되는 혼합물을 포함한다)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                            
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>분류기준의 주요 요소는 물질의 동점도(Kinematic viscosity)로 나타낸다. 동적점도(Dynamic viscosity)와 동점도 사이의 변환 식은 다음과 같다.
+                                    <p class="txt-formula">동적점도(mPa·s)/밀도(g/cm²) = 동점도(㎟/s)</p>
+                                </li>
+                                <li>에어로졸/미스트 제품의 분류<br>
+                                    에어로졸 및 미스트 제품은 보통 자기가압식 용기, 방아쇠형(trigger) 분무기 및 펌프 분무기와 같은 용기로부터 분무된다. 이러한 제품을 분류하는 열쇠는, 제품이 입안에 고여 흡인될 수 있는가의 여부이다. 가압 용기로부터 나오는 미스트 또는 에어로졸이 미세하다면, 입안에 고이지 않을지도 모른다. 반면, 가압 용기가 흐름형식으로 분사된다면, 입안에 고여 흡인될 수 있다. 보통, 방아쇠형 분무기 및 펌프 분무기에 의해 생성되는 미스트는 거친 입자이기 때문에, 입안에 고여 흡인되는 경우가 있다.
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+
+
+</body>
+</html>

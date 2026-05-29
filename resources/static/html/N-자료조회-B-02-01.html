@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">활용가이드</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-guide-doc">가이드 문서</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-guide-video">활용 안내영상</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- 가이드 문서 -->
+                <div class="tab-content" id="tab-guide-doc">
+                    <ul class="guide-card-list">
+                        <li class="guide-card">
+                            <div class="guide-card-icon">
+                                <svg class="ico-guide-book" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-guide-book"></use></svg>
+                            </div>
+                            <h3 class="guide-card-title">유해성DB 활용가이드</h3>
+                            <p class="guide-card-desc">기존화학물질 등록 지원을 위해 40여 개의 <br>국내외 신뢰성 있는 정보사이트에서 수집 및 분석된 <br>유해성 정보를 확인하고 시스템을 통해 <br>활용하는 방법을 안내합니다.</p>
+                            <div class="guide-card-action">
+                                <button type="button" class="btn-md btn-white">
+                                    <span>다운로드</span>
+                                    <svg class="ico-download" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="guide-card">
+                            <div class="guide-card-icon">
+                                <svg class="ico-guide-doc" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-guide-doc"></use></svg>
+                            </div>
+                            <h3 class="guide-card-title">생략사유서 활용가이드</h3>
+                            <p class="guide-card-desc">국가·국제기구의 유해성 평가결과를 활용하여 <br>등록신청자료를 생략하고자 할 때 필요한 항목별 <br>작성 예시, 증명자료 구성 및 GHS 분류 기준 <br>등을 상세히 설명합니다.</p>
+                            <div class="guide-card-action">
+                                <button type="button" class="btn-md btn-white">
+                                    <span>다운로드</span>
+                                    <svg class="ico-download" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // tab-content -->
+
+                <!-- 활용 안내영상 -->
+                <div class="tab-content" id="tab-guide-video" style="display: none;">
+                    <ul class="video-card-list">
+                        <li class="video-card">
+                            <div class="video-card-thumb">
+                                <a href="javascript:void(0);" title="영상보러 가기">
+                                    <img src="https://www.babytimes.co.kr/news/photo/201404/20140430165212_9785.png" alt="">
+                                </a>
+                            </div>
+                            <div class="video-card-content">
+                                <h3 class="video-card-title">활용 안내영상</h3>
+                                <p class="video-card-desc">화학물질정보 공동활용 플랫폼의 핵심 기능을 한눈에 이해할 수 있도록 구성된 시연 영상입니다. 물질명, CAS 번호 검색부터 유해성 데이터 확인까지, 등록 업무에 필요한 플랫폼 활용법을 실습 중심으로 상세히 안내합니다.</p>
+                                <a href="javascript:void(0);" class="link-go">
+                                    <span>링크 바로가기</span>
+                                    <svg class="ico-outer-link" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-outer-link"></use></svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="video-card">
+                            <div class="video-card-thumb">
+                                <a href="javascript:void(0);" title="영상보러 가기">
+                                    <img src="https://www.babytimes.co.kr/news/photo/201404/20140430165212_9785.png" alt="">
+                                </a>
+                            </div>
+                            <div class="video-card-content">
+                                <h3 class="video-card-title">활용 안내영상</h3>
+                                <p class="video-card-desc">화학물질정보 공동활용 플랫폼의 핵심 기능을 한눈에 이해할 수 있도록 구성된 시연 영상입니다. 물질명, CAS 번호 검색부터 유해성 데이터 확인까지, 등록 업무에 필요한 플랫폼 활용법을 실습 중심으로 상세히 안내합니다.</p>
+                                <a href="javascript:void(0);" class="link-go">
+                                    <span>링크 바로가기</span>
+                                    <svg class="ico-outer-link" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-outer-link"></use></svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // tab-content -->
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    <!-- <script>
+    (function () {
+        // 재생 버튼 클릭 시 영상 재생 + 컨트롤 노출
+        document.addEventListener('click', function (e) {
+            var btn = e.target.closest('.video-card-thumb .btn-play');
+            if (!btn || btn.disabled) return;
+            var thumb = btn.closest('.video-card-thumb');
+            var video = thumb && thumb.querySelector('video');
+            if (!video) return;
+            var source = video.querySelector('source');
+            if (!source || !source.getAttribute('src')) return;
+            video.setAttribute('controls', 'controls');
+            video.play();
+            thumb.classList.add('is-playing');
+        });
+
+        // 일시정지/종료 시 재생 버튼 다시 노출
+        document.addEventListener('pause', function (e) {
+            var v = e.target;
+            if (!v || v.tagName !== 'VIDEO') return;
+            var thumb = v.closest('.video-card-thumb');
+            if (thumb) thumb.classList.remove('is-playing');
+        }, true);
+
+        document.addEventListener('ended', function (e) {
+            var v = e.target;
+            if (!v || v.tagName !== 'VIDEO') return;
+            var thumb = v.closest('.video-card-thumb');
+            if (thumb) {
+                thumb.classList.remove('is-playing');
+                v.removeAttribute('controls');
+                v.currentTime = 0;
+            }
+        }, true);
+    })();
+    </script> -->
+
+</body>
+</html>

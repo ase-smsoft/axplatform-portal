@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학물질 통합조회 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-white"><span>정보공개</span></button>
+                        <button type="button" class="btn-md btn-white btn-icon" aria-label="인쇄"><svg class="ico-print" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-print"></use></svg></button>
+                        <button type="button" class="btn-md btn-white btn-icon" aria-label="다운로드"><svg class="ico-download" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg></button>
+                        <button type="button" class="btn-md btn-white"><span>의견제시</span></button>
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <div class="tag-set-wrap">
+                    <div class="tag-set">
+                        <span class="tag">CAS No</span>
+                        <span class="val">11118-57-3</span>
+                    </div>
+                </div>
+                <div class="title-article-wrap">
+                    <h3 class="title-article">크로뮴산화물(Chromium oxide)</h3>
+                </div>
+                <div class="term-def-wrap">
+                    <dl class="term-def">
+                        <dt>국문 유사명</dt>
+                        <dd>산화 크로뮴; 산화 크롬; 크로뮴 크로메이트; 크롬산, 크로뮴 염</dd>
+                    </dl>
+                    <dl class="term-def">
+                        <dt>영문 유사명</dt>
+                        <dd>Chrome oxide; Chromic acid, chromium salt; Chromium chromate</dd>
+                    </dl>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-all">전체</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-basic">기본 정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-class">분류 표시</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-test">시험자료</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-etc">기타자료</a></li>
+                    </ul>
+                </div>
+
+                <!-- 전체 -->
+                <div class="tab-content">
+
+                    <!-- 일반정보 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">일반정보</h3>
+                        </div>
+    
+                        <div class="grid-wrap col3">
+                            <div class="data-default">
+                                <table>
+                                    <caption class="sr-only">물질 구조식</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구조식</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>구조식 파일</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+    
+                            <div class="data-detail">
+                                <table>
+                                    <caption class="sr-only">기본 식별 정보 — CAS No, 분자식, 기존화학물질, 분자량</caption>
+                                    <colgroup>
+                                        <col style="width:140px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">CAS No</th>
+                                            <td>71-48-7</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">분자식</th>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">기존화학물질</th>
+                                            <td>KE-06074</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">분자량</th>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+    
+                            <div class="data-detail">
+                                <table>
+                                    <caption class="sr-only">식별 번호 — RTECS, UN, EC, HS, ICSC</caption>
+                                    <colgroup>
+                                        <col style="width:120px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">RTECS 번호</th>
+                                            <td>71-48-7</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">UN번호</th>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">EC번호</th>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">HS번호</th>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">ICSC번호</th>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- 물질번호 및 함량정보 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">물질번호 및 함량정보</h3>
+                        </div>
+    
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">물질구분, 고유번호(소번호), 혼합물 함량기준(%), 비고</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:180px;">
+                                        <col style="width:auto;min-width: 200px;">
+                                        <col style="width:300px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">물질구분</th>
+                                            <th scope="col">고유번호(소번호)</th>
+                                            <th scope="col">혼합물 함량기준(%)</th>
+                                            <th scope="col">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>기존화학물질</td>
+                                            <td>KE-06074</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>인체등유해성물질</td>
+                                            <td>2024-1-1197</td>
+                                            <td>인체급성 25 인체만성 0.1 생태 25</td>
+                                            <td>(종전)유독물질의 지정고시 혼합물 함량(%) : 0.1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- 취급금지 및 취급제한 특정면제 대상 잔류성오염물질 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">취급금지 및 취급제한 특정면제 대상 잔류성오염물질</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">1. 취급금지 물질의 특정면제 국내적용 사항(법 제13조제1항제1호)</p>
+                        </div>
+    
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">고유번호, 부속서 등재정보, 혼합물 함량기준(%), 활동, 특정면제, 면제종료</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:120px;">
+                                        <col style="width:auto;min-width: 200px;">
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width: 200px;">
+                                        <col style="width:160px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">고유번호</th>
+                                            <th scope="col">부속서 등재정보</th>
+                                            <th scope="col">혼합물 함량기준(%)</th>
+                                            <th scope="col">활동</th>
+                                            <th scope="col">특정면제</th>
+                                            <th scope="col">면제종료</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2">2019-30</td>
+                                            <td rowspan="2">A</td>
+                                            <td rowspan="2">과불화옥탄산 (Perfluorooctanoic acid), 그 염류와 과불화옥탄산 관련 화합물</td>
+                                            <td>생산</td>
+                                            <td>
+                                                <ul class="dot-list">
+                                                    <li>건강과 안전에 위해가 되는 위험한 액체로부터 작업자를 보호하기 위한 방유성 및 방수성 섬유</li>
+                                                </ul>
+                                            </td>
+                                            <td>2026-06-02 00:00:00.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>사용</td>
+                                            <td>
+                                                <ul class="dot-list">
+                                                    <li>건강과 안전에 위해가 되는 위험한 액체로부터 작업자를 보호하기 위한 방유성 및 방수성 섬유</li>
+                                                    <li>반도체 제조(사진석판인쇄 또는 식각 공정)</li>
+                                                    <li>필름의 감광 코팅제</li>
+                                                </ul>
+                                            </td>
+                                            <td>2026-06-02 00:00:00.0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- 고시정보 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">고시정보</h3>
+                        </div>
+    
+                        <div class="data-default">
+                            <table>
+                                <caption class="sr-only">고시일자, 고시정보</caption>
+                                <colgroup>
+                                    <col style="width:130px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">고시일자</th>
+                                        <th scope="col">고시정보</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2014-12-30</td>
+                                        <td>기존화학물질 : 환경부고시 제2014-237호</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2025-08-07</td>
+                                        <td>체등유해성물질 : 화학물질안전원고시 제2025-19호</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+    
+                    <!-- 분류표시 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">분류표시</h3>
+                            <div class="right">
+                                <button type="button" class="btn-xsm btn-white"><span>라벨인쇄</span><svg class="ico-print" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-print"></use></svg></button>
+                            </div>
+                        </div>
+    
+                        <div class="grid-wrap col2">
+                            <div class="data-detail">
+                                <table>
+                                    <caption class="sr-only">분류표시 식별 정보 — M계수, UN No</caption>
+                                    <colgroup>
+                                        <col style="width:120px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">M계수</th>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">UN No</th>
+                                            <td>1237 1237</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+    
+                            <div class="data-default">
+                                <table>
+                                    <caption class="sr-only">신호어 (위험)</caption>
+                                    <colgroup>
+                                        <col style="width:25%;">
+                                        <col style="width:25%;">
+                                        <col style="width:25%;">
+                                        <col style="width:25%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="4">신호어 (위험)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="pictogram">
+                                                    <img src="../images/temp/@pictogram.jpg" alt="">
+                                                    <span class="name">GHS05</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="pictogram">
+                                                    <img src="../images/temp/@pictogram.jpg" alt="">
+                                                    <span class="name">GHS05</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="pictogram">
+                                                    <img src="../images/temp/@pictogram.jpg" alt="">
+                                                    <span class="name">GHS05</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="pictogram">
+                                                    <img src="../images/temp/@pictogram.jpg" alt="">
+                                                    <span class="name">GHS05</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="pictogram">
+                                                    <img src="../images/temp/@pictogram.jpg" alt="">
+                                                    <span class="name">GHS05</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="pictogram">
+                                                    <img src="../images/temp/@pictogram.jpg" alt="">
+                                                    <span class="name">GHS05</span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="data-default w-full">
+                               <table>
+                                   <caption class="sr-only">유해성분류 — 분류명, 구분</caption>
+                                   <colgroup>
+                                       <col style="width:auto;">
+                                       <col style="width:80px;">
+                                       <col style="width:auto;">
+                                       <col style="width:80px;">
+                                   </colgroup>
+                                   <thead>
+                                       <tr>
+                                           <th scope="col" colspan="2">유해성분류</th>
+                                           <th scope="col" colspan="2">유해·위험표시문구</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <td>급성독성-경구</td>
+                                           <td class="align-c">4</td>
+                                           <td>삼키면 유해함</td>
+                                           <td class="align-c">H302</td>
+                                       </tr>
+                                       <tr>
+                                           <td>피부 부식성/자극성</td>
+                                           <td class="align-c">10</td>
+                                           <td>피부에 심한 화상과 눈에 손상을 일으킴</td>
+                                           <td class="align-c">H314</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                        </div>
+    
+                    </div>
+    
+                    <!-- 시험자료 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">시험자료</h3>
+                        </div>
+    
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">시험자료 — 시험항목, 생산년도, GLP여부, 국/영문, 자료 소유자</caption>
+                                    <colgroup>
+                                        <col style="width:auto;min-width: 300px;">
+                                        <col style="width:100px;">
+                                        <col style="width:125px;">
+                                        <col style="width:100px;">
+                                        <col style="width:160px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">시험항목</th>
+                                            <th scope="col">생산년도</th>
+                                            <th scope="col">GLP여부</th>
+                                            <th scope="col">국/영문</th>
+                                            <th scope="col">자료 소유자</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="f-wrap">
+                                                    인체 유해성
+                                                    <div class="right">
+                                                        <a href="javascript:void(0);" class="link-txt-base">소핵시험(in vivo)</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>1994</td>
+                                            <td>Non-GLP</td>
+                                            <td>국문</td>
+                                            <td>국립환경과학원</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="f-wrap">
+                                                    인체 유해성
+                                                    <div class="right">
+                                                        <a href="javascript:void(0);" class="link-txt-base">소핵시험(in vivo)</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>2015</td>
+                                            <td>Non-GLP</td>
+                                            <td>영문</td>
+                                            <td>국립환경과학원</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <!-- 기타자료 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">기타자료</h3>
+                        </div>
+    
+                        <div class="data-detail">
+                            <table>
+                                <caption class="sr-only">기타자료 — 항목별 자료 보기/다운로드</caption>
+                                <colgroup>
+                                    <col style="width:300px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">인체등유해성물질</th>
+                                        <td>
+                                            <button type="button" class="btn-xsm btn-white">
+                                                <span>정보요약서</span>
+                                                <svg class="ico-download" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">알기 쉬운 화학물질</th>
+                                        <td>
+                                            <button type="button" class="btn-xsm btn-white">
+                                                <span>요약서</span>
+                                                <svg class="ico-download" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">화학물질 안전관리요령(ICSC)</th>
+                                        <td>
+                                            <button type="button" class="btn-xsm btn-white">
+                                                <span>정보보기</span>
+                                                <svg class="ico-outer-link" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-outer-link"></use></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">식품의약품안전평가원 독성정보제공시스템</th>
+                                        <td>
+                                            <button type="button" class="btn-xsm btn-white">
+                                                <span>정보보기</span>
+                                                <svg class="ico-outer-link" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-outer-link"></use></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">유출량, 배출량 정보</th>
+                                        <td>
+                                            <button class="btn-xsm btn-noline-blue"><span>바로가기</span><svg class="ico-outer-link"><use href="../images/common/simbol.svg#ico-outer-link"></use></svg></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

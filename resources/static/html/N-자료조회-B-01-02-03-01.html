@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">물질검색 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-data-analysis">데이터 확인분석</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-physical">물리화학적 특성자료</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-human">인체유해성 자료</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-environmental">환경유해성 자료</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- 전체 -->
+                <div class="tab-content">
+
+                    <div class="tag-set-wrap">
+                        <div class="tag-set">
+                            <span class="tag">CAS No</span>
+                            <span class="val">11118-57-3</span>
+                        </div>
+                        <div class="tag-set">
+                            <span class="tag">기존화학물질 고유번호</span>
+                            <span class="val">KE-20575</span>
+                        </div>
+                        <div class="tag-set">
+                            <span class="tag">UN No</span>
+                            <span class="val">1375</span>
+                        </div>
+                    </div>
+                    <div class="title-article-wrap">
+                        <h3 class="title-article">4-Amino-N-(5-methyl-3-isoxazolyl)benzenesulfonamide; Sulfamethoxazole</h3>
+                    </div>
+                    <div class="term-def-wrap">
+                        <dl class="term-def">
+                            <dt>이명 : </dt>
+                            <dd>4-Amino-N-(5-methyl-3-isoxazolyl)benzenesulfonamide,Sulfamethoxazole</dd>
+                        </dl>
+                    </div>
+
+                    <div class="top-line-wrap">
+                        <span class="date-label-set"><b>업데이트 일자</b><span>2024-12-17</span></span>
+                        <div class="right" style="margin-left:auto;display:flex;gap:8px;">
+                            <button type="button" class="btn-md btn-white"><svg class="ico-info" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info"></use></svg><span>R-DB란?</span></button>
+                            <button type="button" class="btn-md btn-blue"><span>자료 수정 요청</span></button>
+                        </div>
+                    </div>
+
+                        
+                    <!-- 탭 -->
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="tab-human-summary">인체유해성 자료 요약정보</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="tab-human-detail">인체유해성 자료 세부정보</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab-human-summary">
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">인체유해성 자료 — 시험항목, 출처(저자/제목/URL), 종말점, 값/결과, 시험종</caption>
+                                    <colgroup>
+                                        <col style="width:140px;">
+                                        <col style="width:140px;">
+                                        <col style="width:auto;min-width:140px;">
+                                        <col style="width:80px;">
+                                        <col style="width:110px;">
+                                        <col style="width:160px;">
+                                        <col style="width:120px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2" class="fixed-x">시험항목</th>
+                                            <th scope="col" colspan="3">출처</th>
+                                            <th scope="col" rowspan="2">종말점</th>
+                                            <th scope="col" rowspan="2">값/결과</th>
+                                            <th scope="col" rowspan="2">시험종</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">저자</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">URL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fixed-x">피부 과민성</td>
+                                            <td>EFSA</td>
+                                            <td class="align-l">CRC Handbook of Chemistry and</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td>LD50</td>
+                                            <td>&gt;7740 mg/kg</td>
+                                            <td>rat (male/female)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">급성경구독성</td>
+                                            <td>United States Environmental Protection Agency</td>
+                                            <td class="align-l">Conclusion on the peer review of the pesticide risk assessment of the active substance</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td>LD50</td>
+                                            <td>&gt;10g/kg</td>
+                                            <td>rat(male)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">급성경피독성</td>
+                                            <td>EFSA</td>
+                                            <td class="align-l">CRC Handbook</td>
+                                            <td>-</td>
+                                            <td>LD50</td>
+                                            <td>&gt;5000mg/kg</td>
+                                            <td>rat</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">급성흡입독성</td>
+                                            <td>ECHA CLH</td>
+                                            <td class="align-l">-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td>LD50</td>
+                                            <td>=Negative (-) with and without metaboli cactivation</td>
+                                            <td>Salmonella typhimurium</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">반복투여독성(28일)</td>
+                                            <td>ECHA CLH</td>
+                                            <td class="align-l">CRC Handbook of Chemistry</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td>LD50</td>
+                                            <td>=not mutagenic</td>
+                                            <td>rabbit</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">반복투여독성(90일)</td>
+                                            <td>ECHA CLH</td>
+                                            <td class="align-l">-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td>Eye Irritation</td>
+                                            <td>=not mutagenic</td>
+                                            <td>rabbit</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">발암성</td>
+                                            <td>W.M.Haynes</td>
+                                            <td class="align-l">CRC Handbook of Chemistry</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td>Gene Mutation</td>
+                                            <td>&gt;10g/kg</td>
+                                            <td>guinea pigsguinea pigs</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">발암성</td>
+                                            <td>ECHA CLH</td>
+                                            <td class="align-l">CRC Handbook</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>guinea pigs</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">생식 및 발달독성<br>스크리닝</td>
+                                            <td>ECHA CLH</td>
+                                            <td class="align-l">CRC Handbook</td>
+                                            <td>-</td>
+                                            <td>LD50</td>
+                                            <td>&gt;10g/kg</td>
+                                            <td>guinea pigs</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">최기형성</td>
+                                            <td>ECHA CLH</td>
+                                            <td class="align-l">CRC Handbook</td>
+                                            <td>-</td>
+                                            <td>LD50</td>
+                                            <td>&gt;10g/kg</td>
+                                            <td>guinea pigs</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">2세대 생식독성<br>시험</td>
+                                            <td>W.M.Haynes</td>
+                                            <td class="align-l">CRC Handbook</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td>LD50</td>
+                                            <td>&gt;10g/kg</td>
+                                            <td>CHO cells</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">복귀돌연변이</td>
+                                            <td>-</td>
+                                            <td class="align-l">-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>CHO cells</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">포유류 배양세포를<br>이용한 염색체 이상</td>
+                                            <td>ECHA CLH</td>
+                                            <td class="align-l">CRC Handbook</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td>LD50</td>
+                                            <td>&gt;10g/kg</td>
+                                            <td>Rat liver RL1 cells</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">시험동물을 이용한<br>체세포 유전독성</td>
+                                            <td>-</td>
+                                            <td class="align-l">-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">추가 유전독성<br>(생식세포 유전독성)</td>
+                                            <td>-</td>
+                                            <td class="align-l">-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">피부 자극성/부식성</td>
+                                            <td>-</td>
+                                            <td class="align-l">-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">눈 자극성/부식성</td>
+                                            <td>-</td>
+                                            <td class="align-l">-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">눈 자극성/부식성</td>
+                                            <td>-</td>
+                                            <td class="align-l">-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="tab-human-detail" style="display: none;">
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">인체유해성 자료 세부정보 — 시험항목, 출처(저자/제목/논문명칭/출판연도/권·호/페이지), URL, 비고, 출처발행일자</caption>
+                                    <colgroup>
+                                        <col style="width:140px;">
+                                        <col style="width:130px;">
+                                        <col style="width:auto;min-width:140px;">
+                                        <col style="width:auto;min-width:140px;">
+                                        <col style="width:90px;">
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="width:130px;">
+                                        <col style="width:130px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2" class="fixed-x">시험항목</th>
+                                            <th scope="col" colspan="6">출처</th>
+                                            <th scope="col" rowspan="2">URL</th>
+                                            <th scope="col" rowspan="2">비고</th>
+                                            <th scope="col" rowspan="2">출처발행일자</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">저자</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">논문명칭</th>
+                                            <th scope="col">출판연도</th>
+                                            <th scope="col">권/호</th>
+                                            <th scope="col">페이지</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fixed-x">피부 과민성</td>
+                                            <td><span class="ellips" title="EFSA">EFSA</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook of Chemistry and Physics">CRC Handbook of Chemistry and Physics</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook of Chemistry and Physics">CRC Handbook of Chemistry and Physics</span></td>
+                                            <td>2014</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>81</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="원문확보 안됨">원문확보 안됨</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">급성경구독성</td>
+                                            <td><span class="ellips" title="United States Environmental Protection Agency">United States Environmental Protection Agency</span></td>
+                                            <td class="align-l"><span class="ellips" title="Conclusion on the peer review of the pesticide risk assessment of the active substance">Conclusion on the peer review of the pesticide risk assessment of the active substance</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook of Chemistry and Physics">CRC Handbook of Chemistry and Physics</span></td>
+                                            <td>2014</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>255</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">급성경피독성</td>
+                                            <td><span class="ellips" title="EFSA">EFSA</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook of Chemistry and Physics">CRC Handbook of Chemistry and Physics</span></td>
+                                            <td>2014</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>1951-01-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">급성흡입독성</td>
+                                            <td><span class="ellips" title="ECHA CLH">ECHA CLH</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>2014</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>1951-01-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">반복투여독성(28일)</td>
+                                            <td><span class="ellips" title="ECHA CLH">ECHA CLH</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook of Chemistry">CRC Handbook of Chemistry</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook of Chemistry">CRC Handbook of Chemistry</span></td>
+                                            <td>2014</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td><span class="ellips" title="원문확보 안됨">원문확보 안됨</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">반복투여독성(90일)</td>
+                                            <td><span class="ellips" title="ECHA CLH">ECHA CLH</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">발암성</td>
+                                            <td><span class="ellips" title="W.M.Haynes">W.M.Haynes</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook of Chemistry">CRC Handbook of Chemistry</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook of Chemistry">CRC Handbook of Chemistry</span></td>
+                                            <td>2014</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">발암성</td>
+                                            <td><span class="ellips" title="ECHA CLH">ECHA CLH</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td>2014</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">생식 및 발달독성<br>스크리닝</td>
+                                            <td><span class="ellips" title="ECHA CLH">ECHA CLH</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td>2006</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">최기형성</td>
+                                            <td><span class="ellips" title="ECHA CLH">ECHA CLH</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td>2006</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">2세대 생식독성<br>시험</td>
+                                            <td><span class="ellips" title="W.M.Haynes">W.M.Haynes</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td>2006</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">복귀돌연변이</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>2006</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">포유류 배양세포를<br>이용한 염색체 이상</td>
+                                            <td><span class="ellips" title="ECHA CLH">ECHA CLH</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td class="align-l"><span class="ellips" title="CRC Handbook">CRC Handbook</span></td>
+                                            <td>2006</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>2014-12-17</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">시험동물을 이용한<br>체세포 유전독성</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">추가 유전독성<br>(생식세포 유전독성)</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">피부 자극성/부식성</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">눈 자극성/부식성</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">눈 자극성/부식성</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fixed-x">눈 자극성/부식성</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td class="align-l"><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="ellips" title="-">-</span></td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

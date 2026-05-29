@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">분류기준</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-physical">단일물질/물리적위험성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-single-health">단일물질/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-env">단일물질/환경유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-health">혼합물/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-env">혼합물/환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-acute-toxicity">급성독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-skin-corrosion">피부 부식성/자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-eye-damage">심한 눈 손상/눈 자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-sensitization">호흡기 또는 피부 과민성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-mutagenicity">생식세포 변이원성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-carcinogenicity">발암성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-reproductive-toxicity">생식독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-stot-single">특정 표적장기 독성(1회)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-stot-repeated">특정 표적장기 독성(반복)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-aspiration">흡인 유해성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">급성독성</h3>
+                        </div>
+                        <div class="data-default">
+                            <table>
+                                <caption class="sr-only">급성독성 구분별 노출 경로별 급성독성 값</caption>
+                                <colgroup>
+                                    <col style="width:80px;">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" rowspan="2">구분</th>
+                                        <th scope="colgroup" colspan="5">노출 경로별 급성독성 값</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">경구<br>(ATE, mg/kg)</th>
+                                        <th scope="col">경피<br>(ATE, mg/kg)</th>
+                                        <th scope="col">흡입(ATE, 4시간)<br>가스(ppm)</th>
+                                        <th scope="col">흡입(ATE, 4시간)<br>증기(mg/L)</th>
+                                        <th scope="col">흡입(ATE, 4시간)<br>분진/미스트(mg/L)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>50</td>
+                                        <td>100</td>
+                                        <td>0.5</td>
+                                        <td>0.05</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>50</td>
+                                        <td>200</td>
+                                        <td>500</td>
+                                        <td>2.0</td>
+                                        <td>0.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>300</td>
+                                        <td>1000</td>
+                                        <td>2,500</td>
+                                        <td>10</td>
+                                        <td>1.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2,000</td>
+                                        <td>2,000</td>
+                                        <td>20,000</td>
+                                        <td>20</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>
+                                    급성독성 추정치(ATE, Acute Toxicity Estimate)은 추정된 과반수 치사량을 의미하며, 다음 어느 하나로부터 구한다.
+                                    <ol class="list-alpha">
+                                        <li>이용가능하다면 LD50 또는 LC50</li>
+                                        <li>용량범위로 산출된 독성시험 결과로부터 &lt;별표1&gt;의 표3.1.2를 이용하여 도출된 변환값</li>
+                                        <li>구분을 알고 있는 경우 &lt;별표1&gt;의 표3.1.2를 이용하여 도출된 변환값</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <p class="txt-exp-ps">※ 「농약, 원제 및 농약활용기자재의 표시기준(농촌진흥청 고시)」에 따른 농약 및 농약원제는 급성독성 구분 5(경구, 경피)를 적용할 수 있다.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

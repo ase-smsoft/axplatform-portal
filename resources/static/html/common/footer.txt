@@ -1,0 +1,112 @@
+
+  
+  
+  
+  
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-site">
+      <div class="wrapper">
+        <div class="site-item">
+          <button type="button" class="site-toggle">관련 기관<i class="ico-plus"></i></button>
+          <div class="site-panel">
+            <div class="wrapper">
+              <div class="site-panel-header">
+                <strong>관련기관</strong>
+                <button type="button" class="btn-close"></button>
+              </div>
+              <ul class="site-list">
+                <li><a href="javascript:void(0);" target="_blank">기후에너지환경부</a></li>
+                <li><a href="javascript:void(0);" target="_blank">국립환경과학원</a></li>
+                <li><a href="javascript:void(0);" target="_blank">화학물질안전원</a></li>
+                <li><a href="javascript:void(0);" target="_blank">한국환경공단</a></li>
+                <li><a href="javascript:void(0);" target="_blank">화학물질정보관리지원단</a></li>
+                <li><a href="javascript:void(0);" target="_blank">한국화학물질관리협회</a></li>
+                <li><a href="javascript:void(0);" target="_blank">한강유역환경청</a></li>
+                <li><a href="javascript:void(0);" target="_blank">낙동강유역환경청</a></li>
+                <li><a href="javascript:void(0);" target="_blank">금강유역환경청</a></li>
+                <li><a href="javascript:void(0);" target="_blank">영산강유역환경청</a></li>
+                <li><a href="javascript:void(0);" target="_blank">원주지방환경청</a></li>
+                <li><a href="javascript:void(0);" target="_blank">대구지방환경청</a></li>
+                <li><a href="javascript:void(0);" target="_blank">전북지방환경청</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="site-item">
+          <button type="button" class="site-toggle">관련 사이트(국내)<i class="ico-plus"></i></button>
+          <div class="site-panel">
+            <div class="wrapper">
+              <div class="site-panel-header">
+                <strong>관련 사이트(국내)</strong>
+                <button type="button" class="btn-close"></button>
+              </div>
+              <ul class="site-list">
+                <li><a href="javascript:void(0);" target="_blank">K-CHESAR</a></li>
+                <li><a href="javascript:void(0);" target="_blank">국가위험물질정보시스템</a></li>
+                <li><a href="javascript:void(0);" target="_blank">화학물질배출·이동량정보 공개 시스템</a></li>
+                <li><a href="javascript:void(0);" target="_blank">물질안전보건자료시스템</a></li>
+                <li><a href="javascript:void(0);" target="_blank">독성정보제공시스템</a></li>
+                <li><a href="javascript:void(0);" target="_blank">국제환경규제 사전대응</a></li>
+                <li><a href="javascript:void(0);" target="_blank">화학물질종합정보시스템</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="site-item">
+          <button type="button" class="site-toggle">관련 사이트(외국)<i class="ico-plus"></i></button>
+          <div class="site-panel">
+            <div class="wrapper">
+              <div class="site-panel-header">
+                <strong>관련 사이트(외국)</strong>
+                <button type="button" class="btn-close"></button>
+              </div>
+              <ul class="site-list">
+                <li><a href="javascript:void(0);" target="_blank">ECHA</a></li>
+                <li><a href="javascript:void(0);" target="_blank">ATSDR</a></li>
+                <li><a href="javascript:void(0);" target="_blank">HSDB</a></li>
+                <li><a href="javascript:void(0);" target="_blank">International Agency for Research on Cancer</a></li>
+                <li><a href="javascript:void(0);" target="_blank">EPA</a></li>
+                <li><a href="javascript:void(0);" target="_blank">OECD Database on Research Into the Safety of Manufactured Nanomaterials</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top">
+      <div class="wrapper">
+        <div class="footer-info">
+          <h2 class="footer-logo"><img src="../images/common/logo-footer.svg" alt="기후에너지환경부"></h2>
+          <address>
+            <p>(우)30103 세종특별자치시 도움6로 11 정부세종청사 6동</p>
+            <p><b>민원실 <span class="mo-hide">:</span></b> <strong>1577-8866</strong> <br class="pc-hide">(월-금 09:00~18:00, 공휴일 제외)</p>
+          </address>
+        </div>
+        <div class="footer-link">
+          <ul class="footer-menu">
+            <li><a href="javascript:void(0);">이용안내</a></li>
+            <li><a href="javascript:void(0);">찾아오시는 길</a></li>
+          </ul>
+          <ul class="footer-sns">
+            <li><a href="javascript:void(0);" target="_blank" title="인스타그램"><svg class="ico-sns-instagram"><use href="../images/common/simbol.svg#ico-sns-instagram"></use></svg><span class="sr-only">인스타그램</span></a></li>
+            <li><a href="javascript:void(0);" target="_blank" title="유튜브"><svg class="ico-sns-youtube"><use href="../images/common/simbol.svg#ico-sns-youtube"></use></svg><span class="sr-only">유튜브</span></a></li>
+            <li><a href="javascript:void(0);" target="_blank" title="X"><svg class="ico-sns-x"><use href="../images/common/simbol.svg#ico-sns-x"></use></svg><span class="sr-only">X</span></a></li>
+            <li><a href="javascript:void(0);" target="_blank" title="페이스북"><svg class="ico-sns-facebook"><use href="../images/common/simbol.svg#ico-sns-facebook"></use></svg><span class="sr-only">페이스북</span></a></li>
+            <li><a href="javascript:void(0);" target="_blank" title="블로그"><svg class="ico-sns-blog"><use href="../images/common/simbol.svg#ico-sns-blog"></use></svg><span class="sr-only">블로그</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrapper">
+        <ul class="footer-policy">
+          <li><a href="javascript:void(0);">이용안내</a></li>
+          <li><a href="javascript:void(0);" class="bold">개인정보처리방침</a></li>
+        </ul>
+        <p class="copyright">&copy; 2022 Ministry of Climate, Energy and Environment. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- // footer -->
+

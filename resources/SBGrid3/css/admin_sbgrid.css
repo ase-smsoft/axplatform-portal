@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.cloumn-link {
+	cursor: pointer;
+	color: blue;
+}
+.link-file {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
+.hide-checkbox .sbgrid-checkboxgroup {
+	display: none !important;
+}
+
+/* 페이징 가운데 정렬 */
+.sbgrid-grid .sbgrid-panel.sbgrid-pager > .sbgrid-tools {
+	justify-content: center !important;
+}
+.sbgrid-grid .sbgrid-tool.sbgrid-pager {
+	justify-content: center !important;
+}
+
+/* 페이징 영역 스타일 */
+.sbgrid-grid .sbgrid-pager .sbgrid-page-size {
+	margin-right: 10px;
+}
+.sbgrid-grid .sbgrid-pager .sbgrid-page-size select {
+	padding: 4px 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 13px;
+}

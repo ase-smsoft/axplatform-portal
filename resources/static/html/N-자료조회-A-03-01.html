@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학물질 정보 공개 신청 내역</h2>
+                </div>
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">검색 결과 <em>124</em>개</div>
+                    </div>
+                    <div class="right">
+                        <button type="button" class="btn-xsm btn-white"><span>정보 수정·보완요청</span></button>
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option value="10">10개</option>
+                            <option value="20">20개</option>
+                            <option value="30">30개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div id="grid"></div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+<script>
+var localData = [
+    { no: 10, category: '유해성 정보', substance: 'Cardamom, ext.',           chemId: '85940-32-5', request: '화학물질 정보공개 요청을 하면서 이것도...', applyDate: '2026-01-19', status: '답변대기', statusClass: 'status-pending' },
+    { no: 9,  category: '기타 정보',  substance: 'Alkanes, (C=14~17) (90622-47-2)|| CHR(13) || CHR(10) ||(Hydrocarbons, n-alkanes(C=14~17), <2% aromatics', chemId: '85940-32-5', request: '정보 수정 요청',                 applyDate: '2026-01-19', status: '답변대기', statusClass: 'status-pending' },
+    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '화학물질 정보 보완',                       applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
+    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '화학물질 관련',                            applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
+    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '화학물질 영문명과 유사명 관련',             applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
+    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: 'CAS No',                                  applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
+    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '화학물질 정보 보완 요청',                   applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
+    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '정보 수정 요청',                           applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
+    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '정보 수정 요청',                           applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
+    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '정보 수정 요청',                           applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
+  ];
+
+let gridConfig = {
+    dataSource: localData,
+    container: '#grid',
+    width: '100%',
+    rowHeight: 40,
+    headerHeight: 40,
+    height: '400px',
+    showRowNo: false,
+    sortable: 'rotate',
+    filterable: true,
+    pageable: {
+       pageSizes: [10, 20, 30, 40, 50]
+    },
+    pagerBar: { left: 'pagerCombo', center: 'pager' },
+    columns: [
+      { field: 'no', caption: '번호', width: 60, sortable: false,
+        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
+      { field: 'category',  caption: '정보 구분',       width: 120 },
+      { field: 'substance', caption: '물질명',         width: 320, align: 'left' },
+      { field: 'chemId',    caption: '화학물질 식별번호', width: 160 },
+      { field: 'request',   caption: '신청사항',        width: 220, align: 'left' },
+      { field: 'applyDate', caption: '신청일',          width: 120 },
+      { field: 'status',    caption: '상태',           width: 100, cellTemplate: '<span class={{statusClass}}>{{status}}</span>' },
+    ],
+  }
+
+datagrid = SBGrid3.createGrid(gridConfig);
+</script>    
+
+</body>
+</html>

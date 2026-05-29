@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+
+
+<div class="popup-wrap" id="tempPopId">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup">
+      <div class="pop-header">
+        <h2 class="title">규제대상함량정보</h2>
+        <div class="right">
+          <button type="button" class="btn-close"><i class="ico-close"></i></button>
+        </div>
+      </div>
+      <div class="pop-body">
+        <div class="data-default">
+          <div class="scroll">
+              <table>
+                  <caption class="sr-only">규제대상함량정보 — 물질구분, 고유번호, 혼합물 함량기준(%), 비고</caption>
+                  <colgroup>
+                      <col style="width:100px;">
+                      <col style="width:120px;">
+                      <col style="width:auto;min-width: 250px;">
+                      <col style="width:250px;">
+                  </colgroup>
+                  <thead>
+                      <tr>
+                        <th scope="col">물질구분</th>
+                        <th scope="col">고유번호</th>
+                        <th scope="col">혼합물 함량기준(%)</th>
+                        <th scope="col">비고</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>인체등유해성물질</td>
+                        <td>97-1-271(1)</td>
+                        <td class="align-l">
+                            인체급성유해성: 25%<br>
+                            인체만성유해성: 0.1%<br>
+                            생태유해성: 25%
+                        </td>
+                        <td class="align-l"></td>
+                      </tr>
+                      <tr>
+                        <td>제한물질</td>
+                        <td>06-5-10</td>
+                        <td class="align-l">크로뮴(6+)화합물 [Chromium(6+) compounds; 18540-29-9] 및 이를 0.1% 이상 함유한 혼합물</td>
+                        <td class="align-l">1. 다음 각 호의 어느 하나에 해당하는 용도로는 제조, 수입, 판매, 보관·저장, 운반, 사용을 금지한다.</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  popOpen('#tempPopId');
+</script>  
+
+</body>
+</html>

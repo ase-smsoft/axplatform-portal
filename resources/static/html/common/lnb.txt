@@ -1,0 +1,28 @@
+<div class="lnb-wrap">
+    <div class="lnb">
+        <div class="lnb-title">
+            <h2>타이틀</h2>
+        </div>
+        <ul class="lnb-menu">
+            <li class="on">
+                <a href="javascript:void(0);">메뉴 타이틀</a>
+                <ul class="lnb-sub">
+                    <li class="active"><a href="javascript:void(0);">서브메뉴</a></li>
+                    <li><a href="javascript:void(0);">서브메뉴</a></li>
+                    <li><a href="javascript:void(0);">서브메뉴</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);">메뉴 타이틀(서브있음)</a>
+                <ul class="lnb-sub">
+                    <li><a href="javascript:void(0);">서브메뉴</a></li>
+                    <li><a href="javascript:void(0);">서브메뉴</a></li>
+                    <li><a href="javascript:void(0);">서브메뉴</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);">메뉴 타이틀(서브없음)</a>
+            </li>
+        </ul>
+    </div>
+</div>

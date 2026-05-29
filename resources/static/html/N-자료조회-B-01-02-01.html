@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">물질검색 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-data-analysis">데이터 확인분석</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-physical">물리화학적 특성자료</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-human">인체유해성 자료</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-environmental">환경유해성 자료</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- 전체 -->
+                <div class="tab-content">
+
+                    <div class="tag-set-wrap">
+                        <div class="tag-set">
+                            <span class="tag">CAS No</span>
+                            <span class="val">11118-57-3</span>
+                        </div>
+                        <div class="tag-set">
+                            <span class="tag">기존화학물질 고유번호</span>
+                            <span class="val">KE-20575</span>
+                        </div>
+                        <div class="tag-set">
+                            <span class="tag">UN No</span>
+                            <span class="val">1375</span>
+                        </div>
+                    </div>
+                    <div class="title-article-wrap">
+                        <h3 class="title-article">4-Amino-N-(5-methyl-3-isoxazolyl)benzenesulfonamide; Sulfamethoxazole</h3>
+                    </div>
+                    <div class="term-def-wrap">
+                        <dl class="term-def">
+                            <dt>이명 : </dt>
+                            <dd>4-Amino-N-(5-methyl-3-isoxazolyl)benzenesulfonamide,Sulfamethoxazole</dd>
+                        </dl>
+                    </div>
+
+                    <div class="top-line-wrap">
+                        <span class="date-label-set"><b>업데이트 일자</b><span>2024-12-17</span></span>
+                        <div class="right" style="margin-left:auto;display:flex;gap:8px;">
+                            <button type="button" class="btn-md btn-white"><svg class="ico-info" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info"></use></svg><span>R-DB란?</span></button>
+                            <button type="button" class="btn-md btn-blue"><span>자료 수정 요청</span></button>
+                        </div>
+                    </div>
+
+                    <div class="data-default">
+                        <div class="scroll">
+                            <table>
+                                <caption class="sr-only">구조식 및 물질설명</caption>
+                                <colgroup>
+                                    <col style="width:340px;">
+                                    <col style="width:auto;min-width: 400px;;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구조식(C27H46O)</th>
+                                        <th scope="col">물질설명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>16*9(비율)<br>정책필요함</td>
+                                        <td>Semi-synthetic derivative of penicillin that functions as an orally active broad-spectrum antibiotic. Ampicillin Trihydrate (CAS 7177-48-2, 수화물)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">물리화학적 특성 요약정보</h3>
+                        </div>
+
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">물리화학적 특성 요약정보 — 물질의 상태, 녹는점/어는점, 끓는점, 증기압, 물 용해도</caption>
+                                    <colgroup>
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">물질의 상태</th>
+                                            <th scope="col">녹는점/어는점</th>
+                                            <th scope="col">끓는점</th>
+                                            <th scope="col">증기압</th>
+                                            <th scope="col">물 용해도</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Monohydrate, pearly leaflets or plates from dil alcohol, Becomes anhydr at 70-80°</td>
+                                            <td>148.5(anhydrous) °C</td>
+                                            <td>233°C(0.5 mmHg), 360°C(760 mmHg)</td>
+                                            <td>0.171 mm Hg(149 °C), 7.8X10-10mm Hg(25 °C)</td>
+                                            <td>about 0.2(Practically insoluble in water) mg/100 ml H20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">물리화학적 특성 요약정보 — Log Kow, 밀도, 해리상수, 인화성/인화점, 폭발성</caption>
+                                    <colgroup>
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Log Kow</th>
+                                            <th scope="col">밀도</th>
+                                            <th scope="col">해리상수</th>
+                                            <th scope="col">인화성/인화점</th>
+                                            <th scope="col">폭발성</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>8.7(계산값)</td>
+                                            <td>1.03 g/cm3(monohydrate)<br>1.052</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">물리화학적 특성 요약정보 — 산화성, pH, 자연발화온도, 분해온도, 분해성</caption>
+                                    <colgroup>
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                        <col style="width:20%;min-width:140px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">산화성</th>
+                                            <th scope="col">pH</th>
+                                            <th scope="col">자연발화온도</th>
+                                            <th scope="col">분해온도</th>
+                                            <th scope="col">분해성</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>ThOD=27%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 유해성 분류표시 요약정보 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">유해성 분류표시 요약정보</h3>
+                            <div class="right" style="display:flex;gap:8px;">
+                                <button type="button" class="btn-xsm btn-blue"><span>유해성분류 정보</span></button>
+                                <button type="button" class="btn-xsm btn-blue"><span>유해성분류 세부 R-DB</span></button>
+                            </div>
+                        </div>
+
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">유해성 분류표시 요약정보 — 유해성 분류, IARC, CCID, 분해온도</caption>
+                                    <colgroup>
+                                        <col style="width:auto;min-width:140px;">
+                                        <col style="width:auto;min-width:140px;">
+                                        <col style="width:auto;min-width:140px;">
+                                        <col style="width:auto;min-width:140px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">유해성 분류</th>
+                                            <th scope="col">IARC</th>
+                                            <th scope="col">CCID</th>
+                                            <th scope="col">분해온도</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>피부 부식성/자극성</td>
+                                            <td>-</td>
+                                            <td>구분2</td>
+                                            <td>구분2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>심한 눈 손상/눈 자극성</td>
+                                            <td>-</td>
+                                            <td>구분2</td>
+                                            <td>구분2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 물리화학적 특성 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">물리화학적 특성</h3>
+                        </div>
+
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">물리화학적 특성 — 시험항목, 시험항목 작성 개수, 면제확인사항, 무료자료 유무, 정부생산 자료 유무, 생략사유서</caption>
+                                    <colgroup>
+                                        <col style="width:200px;">
+                                        <col style="width:130px;">
+                                        <col style="width:auto;min-width:200px;">
+                                        <col style="width:110px;">
+                                        <col style="width:130px;">
+                                        <col style="width:110px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">시험항목</th>
+                                            <th scope="col">시험항목<br>작성 개수</th>
+                                            <th scope="col">면제확인사항</th>
+                                            <th scope="col">무료자료<br>유무</th>
+                                            <th scope="col">정부생산<br>자료 유무</th>
+                                            <th scope="col">생략<br>사유서</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">물질의 상태(20 °C, 1,013 hPa)</a></td>
+                                            <td>1</td>
+                                            <td>-</td>
+                                            <td>O</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">물용해도</a></td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">녹는점/어는점</a></td>
+                                            <td>1</td>
+                                            <td>○ (면제조건) 녹는점이 -20°C 미만</td>
+                                            <td>O</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">끓는점</a></td>
+                                            <td>1</td>
+                                            <td>○ (면제조건) 기체인 물질</td>
+                                            <td>O</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">증기압</a></td>
+                                            <td>6</td>
+                                            <td>-</td>
+                                            <td>O</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">옥탄올/물 분배계수(Log Kow)</a></td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">밀도</a></td>
+                                            <td>1</td>
+                                            <td>○ (면제조건) 기체인 물질</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">입도분석</a></td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">인화성</a></td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">폭발성</a></td>
+                                            <td>0</td>
+                                            <td>○ (면제조건) 분자 내에 폭발성과 관련 있는 화학그룹이 없는 물질</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">산화성</a></td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>점도</td>
+                                            <td>1</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">해리상수</a></td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 환경유해성 -->
+                    <div class="section-wrap">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">환경유해성</h3>
+                        </div>
+
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">환경유해성 — 시험항목, 시험항목 작성 개수, 면제확인사항, 무료자료 유무, 정부생산 자료 유무, 생략 사유서</caption>
+                                    <colgroup>
+                                        <col style="width:90px;">
+                                        <col style="width:210px;">
+                                        <col style="width:120px;">
+                                        <col style="width:auto;min-width:200px;">
+                                        <col style="width:90px;">
+                                        <col style="width:90px;">
+                                        <col style="width:90px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2">시험항목</th>
+                                            <th scope="col">시험항목<br>작성 개수</th>
+                                            <th scope="col">면제확인사항</th>
+                                            <th scope="col">무료자료<br>유무</th>
+                                            <th scope="col">정부생산<br>자료 유무</th>
+                                            <th scope="col">생략<br>사유서</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- 분해 -->
+                                        <tr>
+                                            <td rowspan="4">분해</td>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">이분해성</a></td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">pH에 따른 가수분해</a></td>
+                                            <td>1</td>
+                                            <td>○ (면제조건) 녹는점이 -20°C 미만</td>
+                                            <td>O</td>
+                                            <td>X</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">본질적 분해성</a></td>
+                                            <td>2</td>
+                                            <td>○ (면제조건) 기체인 물질</td>
+                                            <td>O</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">분해산물의 확인</a></td>
+                                            <td>6</td>
+                                            <td>○ (면제조건) 이분해성 물질</td>
+                                            <td>O</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+
+                                        <!-- 수생독성 -->
+                                        <tr>
+                                            <td rowspan="5">수생독성</td>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">어류 급성/만성독성</a></td>
+                                            <td>7</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr class="disabled">
+                                            <td><a href="javascript:void(0);" class="link-txt-base">어류 만성독성</a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">물벼룩 급성/만성독성</a></td>
+                                            <td>8</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr class="disabled">
+                                            <td><a href="javascript:void(0);" class="link-txt-base">물벼룩 만성독성</a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">담수조류 생장저해</a></td>
+                                            <td>9</td>
+                                            <td>○ (면제조건) 이분해성 물질 ○ (면제조건) 무기물</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+
+                                        <!-- 육생생물에 대한 영향 -->
+                                        <tr>
+                                            <td rowspan="4">육생생물<br>에 대한<br>영향</td>
+                                            <td>육생식물 급성/만성독성</td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>X</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr class="disabled">
+                                            <td><a href="javascript:void(0);" class="link-txt-base">육생식물 만성독성</a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">육생 무척추동물 급성/만성독성</a></td>
+                                            <td>12</td>
+                                            <td>○ (면제조건) 생물농축 가능성이 낮은 물질 (예, LOGKOW &lt;3)</td>
+                                            <td>-</td>
+                                            <td>O</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr class="disabled">
+                                            <td><a href="javascript:void(0);" class="link-txt-base">육생 무척추동물 만성독성</a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+
+                                        <!-- 침전물 독성 -->
+                                        <tr>
+                                            <td rowspan="2">침전물<br>독성</td>
+                                            <td>활성슬러지 호흡저해</td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">저서생물 만성독성</a></td>
+                                            <td>2</td>
+                                            <td>○ (면제조건) 생물농축 가능성이 낮은 물질 (예, LOGKOW &lt;3)</td>
+                                            <td>-</td>
+                                            <td>O</td>
+                                            <td>-</td>
+                                        </tr>
+
+                                        <!-- 환경에서의 거동과 동태 -->
+                                        <tr>
+                                            <td rowspan="4">환경에서<br>의 거동<br>과 동태</td>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">흡착 및 탈착</a></td>
+                                            <td>4</td>
+                                            <td>○ (면제조건) 생물농축 가능성이 낮은 물질 (예, LOGKOW &lt;3)</td>
+                                            <td>-</td>
+                                            <td>O</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">환경 거동·동태에 대한 추가정보</a></td>
+                                            <td>7</td>
+                                            <td>○ (면제조건) 생물농축 가능성이 낮은 물질 (예, LOGKOW &lt;3)</td>
+                                            <td>-</td>
+                                            <td>O</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">흡착 및 탈착에 대한 추가정보</a></td>
+                                            <td>0</td>
+                                            <td>○ (면제조건) 생물농축 가능성이 낮은 물질 (예, LOGKOW &lt;3)</td>
+                                            <td>-</td>
+                                            <td>O</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="link-txt-base">생물농축성</a></td>
+                                            <td>12</td>
+                                            <td>○ (면제조건) 생물농축 가능성이 낮은 물질 (예, LOGKOW &lt;3)</td>
+                                            <td>O</td>
+                                            <td>O</td>
+                                            <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

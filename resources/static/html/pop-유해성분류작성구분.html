@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+
+
+<div class="popup-wrap" id="tempPopId">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup">
+      <div class="pop-header">
+        <h2 class="title">유해성 분류 작성 구분</h2>
+        <div class="right">
+          <button type="button" class="btn-close"><i class="ico-close"></i></button>
+        </div>
+      </div>
+      <div class="pop-body">
+        <div class="data-default">
+          <div class="scroll">
+            <table>
+              <caption class="sr-only">유해성 분류 작성 구분 — 구분, 상세 설명</caption>
+              <colgroup>
+                <col style="width:150px;">
+                <col style="width:auto;min-width: 570px;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">구분</th>
+                  <th scope="col">상세 설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>분류 구분값</td>
+                  <td class="align-l">분류 항목에 따른 구분값(구분1, 구분2, 등)</td>
+                </tr>
+                <tr>
+                  <td>분류할 수 없음</td>
+                  <td class="align-l">
+                    <ul class="dash-list">
+                      <li>분류를 위한 제한적 자료만 있어 구분 정할 수 없음</li>
+                      <li>자료의 신뢰성을 확인 할 수 없어 구분 정할 수 없음</li>
+                      <li>구조 또는 성상이 명확하지 않아 특정 화학그룹의 존재나 성상 판단 못함으로 구분 정할 수 없음</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>분류되지 않음</td>
+                  <td class="align-l">
+                    유해성 분류 기준 대상이 아님<br>
+                    화학물질의 분류 및 표시 등에 관한 규정[별표1]<br>
+                    예시) 급성경구 시험값 LD50 = 20000mg/kg
+                  </td>
+                </tr>
+                <tr>
+                  <td>해당없음</td>
+                  <td class="align-l">
+                    <p>유해성 분류 적용불가</p>
+                    <ul class="dash-list">
+                      <li>물리·화학적특성 (예시) 고체 성상일 경우 액체,기체 항목 적용불가</li>
+                      <li>시험제외 (예시) 분자 내 폭발성 관련 있는 화학그룹이 없는 물질일 경우, 폭발성 적용불가</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  popOpen('#tempPopId');
+</script>  
+
+</body>
+</html>

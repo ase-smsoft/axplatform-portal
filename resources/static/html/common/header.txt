@@ -1,0 +1,205 @@
+  <!-- header -->
+  <header class="header">
+    <div class="header-menu">
+      <h1 class="logo"><a href="/"><img src="../images/common/logo.svg" alt="기후에너지환경부 화학물질정보 공동활용 플랫폼"></a></h1>
+      <button class="btn-m-menu">전체메뉴</button>
+      <ul class="member-menu">
+
+        <li>
+          <div class="dropdown">
+              <button type="button" class="selected">
+                <span class="fix"><svg class="ico-sns-instagram"><use href="../images/common/simbol.svg#ico-lang"></use></svg></span>
+                <span class="value">For Foreigners</span>
+              </button>
+              <div class="menu-layer lang-dropdown">
+                <ul>
+                  <li><button type="button">korea</button></li>
+                  <li><button type="button">English</button></li>
+                </ul>
+              </div>
+          </div>
+        </li>
+        <li><a href="javascript:void(0);">사이트맵</a></li>
+      </ul>
+    </div>
+    <div class="gnb-menu-wrap">
+      <div class="wrapper">
+        <ul class="gnb-menu">
+          <li><a href="javascript:void(0);" id="gnbMenu">시스템소개</a>
+            <div class="depth-wrap">
+              <dl>
+                <dt><span class="tit-menu">시스템소개</span></dt>
+                <dd>
+                  <ul>
+                    <li><a href="javascript:void(0);">구축 배경 및 목적</a></li>
+                    <li><a href="javascript:void(0);">공동활용플랫폼 소개</a></li>
+                    <li><span class="tit-menu">화학 3법 소개</span>
+                      <ul>
+                        <li><a href="javascript:void(0);">화평법</a></li>
+                        <li><a href="javascript:void(0);">화관법</a></li>
+                        <li><a href="javascript:void(0);">제품법</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">자료조회</a>
+            <div class="depth-wrap">
+              <dl>
+                <dt><span class="tit-menu">자료조회</span></dt>
+                <dd>
+                  <ul>
+                    <li><a href="javascript:void(0);">화학물질 통합조회</a></li>
+                    <li><span class="tit-menu">화학물질 유해성 정보검색</span>
+                      <ul>
+                        <li><a href="javascript:void(0);">물질검색</a></li>
+                        <li><a href="javascript:void(0);">활용가이드</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0);">보유시험 자료</a></li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">정보공개</a>
+            <div class="depth-wrap">
+              <dl>
+                <dt><span class="tit-menu">정보공개</span></dt>
+                <dd>
+                  <ul>
+                    <li><span class="tit-menu">화학물질 정보제공</span>
+                      <ul>
+                        <li><a href="javascript:void(0);">분류·표시 검색</a></li>
+                        <li><a href="javascript:void(0);">분류기준</a></li>
+                        <li><a href="javascript:void(0);">표시사항</a></li>
+                        <li><a href="javascript:void(0);">유해·위험 문구</a></li>
+                        <li><a href="javascript:void(0);">예방조치 문구</a></li>
+                        <li><a href="javascript:void(0);">국내 GLP 정보</a></li>
+                      </ul>
+                    </li>
+                    <li><span class="tit-menu">화학제품 정보제공</span>
+                      <ul>
+                        <li><a href="javascript:void(0);">생활화학제품</a></li>
+                        <li><a href="javascript:void(0);">생활화학제품 위반정보</a></li>
+                        <li><a href="javascript:void(0);">해외직구 위해제품</a></li>
+                        <li><a href="javascript:void(0);">전성분 공개 제품 조회</a></li>
+                        <li><a href="javascript:void(0);">자율안전정보 제품 조회</a></li>
+                        <li><a href="javascript:void(0);">화학물질저감 우수제품 조회</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0);">나노 안전성 정보</a></li>
+                    <li><a href="javascript:void(0);">화학물질 사고·사례</a></li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">지원사업</a>
+            <div class="depth-wrap">
+              <dl>
+                <dt><span class="tit-menu">지원사업</span></dt>
+                <dd>
+                  <ul>
+                    <li><a href="javascript:void(0);">화학3법 지원사업 안내</a></li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">알림마당</a>
+            <div class="depth-wrap">
+              <dl>
+                <dt><span class="tit-menu">알림마당</span></dt>
+                <dd>
+                  <ul>
+                    <li><a href="javascript:void(0);">공지사항</a></li>
+                    <li><a href="javascript:void(0);">법령정보</a></li>
+                    <li><a href="javascript:void(0);">보도자료</a></li>
+                    <li><span class="tit-menu">홍보자료</span>
+                      <ul>
+                        <li><a href="javascript:void(0);">영상</a></li>
+                        <li><a href="javascript:void(0);">카드뉴스</a></li>
+                        <li><a href="javascript:void(0);">간행물</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0);">화학안전주간</a></li>
+                    <li><a href="javascript:void(0);">교육안내</a></li>
+                    <li><a href="javascript:void(0);">주요일정</a></li>
+                    <li><span class="tit-menu">화학안전정책포럼</span>
+                      <ul>
+                        <li><a href="javascript:void(0);">화학안전정책포럼 소개</a></li>
+                        <li><a href="javascript:void(0);">정책포럼 정보</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">자료마당</a>
+            <div class="depth-wrap">
+              <dl>
+                <dt><span class="tit-menu">자료마당</span></dt>
+                <dd>
+                  <ul>
+                    <li><a href="javascript:void(0);">자료실</a></li>
+                    <li><a href="javascript:void(0);">국외 동향</a></li>
+                    <li><span class="tit-menu">중대 시민재해 자료실</span>
+                      <ul>
+                        <li><a href="javascript:void(0);">전자책</a></li>
+                        <li><a href="javascript:void(0);">교육영상</a></li>
+                      </ul>
+                    </li>
+                    <li><span class="tit-menu">위해성자료 작성도구</span>
+                      <ul>
+                        <li><a href="javascript:void(0);">위해성자료 작성도구 안내</a></li>
+                        <li><a href="javascript:void(0);">K-Chesar 소개</a></li>
+                        <li><a href="javascript:void(0);">ESD&amp;T 소개</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0);">FAQ</a></li>
+                    <li><a href="javascript:void(0);">용어사전</a></li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">안내 및 상담</a>
+            <div class="depth-wrap">
+              <dl>
+                <dt><span class="tit-menu">안내 및 상담</span></dt>
+                <dd>
+                  <ul>
+                    <li><a href="javascript:void(0);">온라인 상담</a></li>
+                    <li><a href="javascript:void(0);">화학제품 관련 상담·신고</a></li>
+                    <li><a href="javascript:void(0);">허가물질 의견수렴</a></li>
+                    <li><a href="javascript:void(0);">제도별 담당자 연락처</a></li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
+        <div class="side-menu">
+          <a href="javascript:void(0);">민원서비스 <i class="ico-outer-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- gnb-menu-sub -->
+    <div class="gnb-menu-sub"> 
+      <div class="menu-header">
+        <span class="logo"><a href="/"><img src="../images/common/logo.svg" alt="기후에너지환경부 화학물질정보 공동활용 플랫폼"></a></span>
+        <button class="btn-close"></button>
+      </div>
+      <div class="wrapper">
+        <!-- script copy본 사용 -->
+      </div>
+     </div>    
+     <!-- // gnb-menu-sub -->
+  </header>
+  <!-- // header -->
+
+<button type="button" class="btn-chatbot"><span class="sr-only"></span></button>

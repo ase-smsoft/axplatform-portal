@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+
+
+<div class="popup-wrap" id="tempPopId">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup">
+      <div class="pop-header">
+        <h2 class="title">자료수정 요청</h2>
+        <div class="right">
+          <button type="button" class="btn-close"><i class="ico-close"></i></button>
+        </div>
+      </div>
+      <div class="pop-body">
+        <div class="data-detail">
+          <table>
+            <caption class="sr-only">자료수정 요청 입력 항목 — CAS NO, 물질명, 수정 요청 내용, 첨부파일</caption>
+            <colgroup>
+              <col style="width:160px;">
+              <col style="width:auto;">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row">CAS NO</th>
+                <td>557-48-2</td>
+              </tr>
+              <tr>
+                <th scope="row">물질명</th>
+                <td>(E,Z)-2,6-Nonadienal</td>
+              </tr>
+              <tr>
+                <th scope="row"><label for="rq-content"><span class="required">수정 요청 내용<span class="sr-only">필수 입력항목</span></span></label></th>
+                <td>
+                  <textarea id="rq-content" placeholder="수정 요청 내용을 입력하세요." required aria-required="true"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">첨부파일</th>
+                <td>
+                  <div class="file-wrap">
+                      <div class="inp-file">
+                          <label class="file" for="file-upload-1">
+                              <input type="file" id="file-upload-1" onchange="addFile(this)" aria-describedby="file-upload-1-desc">
+                              <span id="file-upload-1-desc" class="file-placeholder">파일을 선택하세요.</span>
+                              <span class="btn"><span>파일첨부</span></span>
+                          </label>
+                      </div>
+                      <ul class="file-list" aria-label="첨부된 파일 목록">
+                          <li>
+                              <p>첨부파일12345454.pdf</p>
+                              <button type="button" class="del" onclick="fileDel(this)" aria-label="첨부파일12345454.pdf 삭제"></button>
+                          </li>
+                          <li>
+                              <p>첨부파일1234.pdf</p>
+                              <button type="button" class="del" onclick="fileDel(this)" aria-label="첨부파일1234.pdf 삭제"></button>
+                          </li>
+                      </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="pop-footer">
+        <div class="btn-wrap">
+          <button type="button" class="btn-lg btn-white">취소</button>
+          <button type="button" class="btn-lg btn-blue">제출</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  popOpen('#tempPopId');
+</script>  
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no"/>
+<title>title</title>
+
+<script src="script/jquery-3.7.1.min.js"></script>
+
+<!-- style -->
+<style type="text/css">
+  *{margin:0;padding:0;}
+  body {padding:20px; font-family:Tahoma, Sans-Serif; color:#333; font-size:11px; background-color:#fff;}
+  h1 {color:#000; letter-spacing:-2px;}
+  h2 {margin-top:20px;padding-left:10px;letter-spacing:-2px;position:relative;font-size:18px;}
+  h2:before{content:'';display:block;position:absolute;top:50%;left:0;width:5px;height:5px;background:#333;transform:translateY(-50%);-webkit-transform:translateY(-50%);}
+  .currentsite {display:block; position:absolute; right:40px; top:20px;}
+  .mwork table {width:100%; border-collapse:collapse; border:0px solid #666;margin-top:10px;}
+  .mwork caption {text-align:left; font-size:200%; color:#999;}
+  .mwork th {padding:6px; border:1px solid #fff; color:#fff; font-size:110%; background-color:#1F5DBE;}
+  .mwork td {height:16px; padding:4px; padding-left:10px; border:1px solid #666;}
+  .mwork a,
+  .mwork a:link, #mwork a:visited {color:#009; text-decoration:none;}
+  .mwork a:hover, #mwork a:active {color:#00f; text-decoration:underline;}
+  .mwork td:hover {background-color:#ddd !important;}
+  
+
+  .title td{background:#eee;}
+
+</style>
+<!-- //style -->
+
+<script>
+  $(function(){
+    let data = [
+      // 공통
+      ["공통", "title", "", "", ""],
+      ["", "로딩(호출용)", "", "", "", "html/loading.html", "", "", ""],
+      ["", "alert", "", "", "", "html/alert.html", "", "", ""],
+      ["", "form", "", "", "", "html/form.html", "", "", ""],
+
+      ["공통페이지", "title", "", "", ""],
+      ["", "메인", "", "", "", "html/N-공통-A.html", "", "", ""],
+      ["", "사이트맵", "", "", "", "html/N-공통-B.html", "", "", ""],
+      ["", "이용안내", "", "", "", "html/N-공통-C-02.html", "", "", ""],
+      ["", "개인정보 처리방침", "", "", "", "html/N-공통-C-03.html", "", "", ""],
+
+      ["자료조회", "title", "", "", "", ""],
+      ["", "화학물질 통합조회", "", "", "", "", "", "", ""],
+      ["", "", "검색", "", "", "html/N-자료조회-A-01.html", "", "", ""],
+      ["", "", "통합조회 상세", "", "", "html/N-자료조회-A-02.html", "", "", ""],
+      ["", "", "정보 공개 신청 내역", "", "", "html/N-자료조회-A-03-01.html", "", "", ""],
+      ["", "", "정보 공개 신청 상세", "", "", "html/N-자료조회-A-03-02.html", "", "", ""],
+      ["", "", "정보공개 상세", "신고 정보", "", "html/N-자료조회-A-04-01.html", "", "", ""],
+      ["", "", "", "등록 정보", "", "html/N-자료조회-A-04-02.html", "", "", ""],
+      ["", "", "", "유해성 심사정보", "", "html/N-자료조회-A-04-06.html", "", "", ""],
+      ["", "", "", "위해성평가결과", "", "html/N-자료조회-A-04-07.html", "", "", ""],
+      ["", "", "나노물질 상세", "일반 정보", "", "html/N-자료조회-A-05-01.html", "", "", ""],
+      ["", "", "", "노출 일반 정보", "", "html/N-자료조회-A-05-02.html", "", "", ""],
+      ["", "", "", "환경 유해성", "탭있는 경우", "html/N-자료조회-A-05-03-01.html", "", "", ""],
+      ["", "", "", "", "탭없는 경우", "html/N-자료조회-A-05-03-02.html", "", "", ""],
+      ["", "", "", "인체 건강 유해성", "", "html/N-자료조회-A-05-04.html", "", "", ""],
+      ["", "팝업", "규제대상함량정보", "", "", "html/pop-규제대상함량정보.html", "", "", ""],
+      ["", "", "정보공개", "", "", "html/pop-정보공개.html", "", "", ""],
+      ["", "", "의견제시", "", "", "html/pop-의견제시.html", "", "", ""],
+      ["", "", "라벨인쇄", "", "", "html/pop-라벨인쇄.html", "", "", ""],
+      ["", "", "UN No 정보", "", "", "html/pop-UNNo정보.html", "", "", ""],
+      ["", "", "시험자료정보", "", "", "html/pop-시험자료정보.html", "", "", ""],
+      ["", "", "화학물질안전관리요령", "", "", "html/pop-화학물질안전관리요령.html", "", "", ""],
+      ["", "", "유해성분류작성구분", "", "", "html/pop-유해성분류작성구분.html", "", "", ""],
+      ["", "", "공개된화학물질정보수정보완요청서작성", "", "", "html/pop-공개된화학물질정보수정보완요청서작성.html", "", "", ""],
+
+      ["", "화학물질 유해성 정보 검색", "", "", "", "", "", "", ""],
+      ["", "", "물질검색", "", "", "html/N-자료조회-B-01-01.html", "", "", ""],
+      ["", "", "물질검색 상세", "데이터 확인분석", "", "html/N-자료조회-B-01-02-01.html", "", "", ""],
+      ["", "", "", "물리화학적 특성자료", "", "html/N-자료조회-B-01-02-02-01.html", "", "", ""],
+      ["", "", "", "인체유해성 자료", "", "html/N-자료조회-B-01-02-03-01.html", "", "", ""],
+      ["", "", "", "환경유해성 자료", "", "html/N-자료조회-B-01-02-04-01.html", "", "", ""],
+      ["", "", "활용가이드", "", "", "html/N-자료조회-B-02-01.html", "", "", ""],
+      ["", "", "보유시험 자료", "", "", "html/N-자료조회-C-01-01.html", "", "", ""],
+      ["", "팝업", "주의사항", "", "", "html/pop-주의사항.html", "", "", ""],
+      ["", "", "안내", "", "", "html/pop-안내.html", "", "", ""],
+      ["", "", "자료수정 요청", "", "", "html/pop-자료수정요청.html", "", "", ""],
+      ["", "", "R-DB란?", "", "", "html/pop-R-DB란.html", "", "", ""],
+      ["", "", "유해성분류 정보", "", "", "html/pop-유해성분류정보.html", "", "", ""],
+      ["", "", "유해성분류 세부 R-DB", "", "", "html/pop-유해성분류세부R-DB.html", "", "", ""],
+      ["", "", "물질의 상태", "", "", "html/pop-물질의상태.html", "", "", ""],
+
+      ["정보공개", "title", "", "", "", ""],
+      ["", "화학물질 정보제공", "", "", "", "", "", "", ""],
+      ["", "", "분류/표시 검색", "", "", "html/N-정보공개-A-01.html", "", "", ""],
+      ["", "", "분류기준", "단일물질/물리적위험성", "", "html/N-정보공개-A-02.html", "", "", ""],
+      ["", "", "", "단일물질/건강유해성", "", "html/N-정보공개-A-02-02.html", "", "", ""],
+      ["", "", "", "단일물질/환경유해성", "", "html/N-정보공개-A-02-03.html", "", "", ""],
+      ["", "", "", "혼합물/건강유해성", "", "html/N-정보공개-A-02-04.html", "", "", ""],
+      ["", "", "", "", "피부 부식성/자극성", "html/N-정보공개-A-02-04-02.html", "", "", ""],
+      ["", "", "", "", "심한 눈 손상/눈 자극성", "html/N-정보공개-A-02-04-03.html", "", "", ""],
+      ["", "", "", "", "호흡기 또는 피부 과민성", "html/N-정보공개-A-02-04-04.html", "", "", ""],
+      ["", "", "", "", "발암성", "html/N-정보공개-A-02-04-05.html", "", "", ""],
+      ["", "", "", "", "발암성", "html/N-정보공개-A-02-04-06.html", "", "", ""],
+      ["", "", "", "", "생식독성", "html/N-정보공개-A-02-04-07.html", "", "", ""],
+      ["", "", "", "", "특정 표적장기 독성(1회)", "html/N-정보공개-A-02-04-08.html", "", "", ""],
+      ["", "", "", "", "특정 표적장기 독성(반복)", "html/N-정보공개-A-02-04-09.html", "", "", ""],
+      ["", "", "", "", "흡인 유해성", "html/N-정보공개-A-02-04-10.html", "", "", ""],
+      ["", "", "", "혼합물/환경유해성", "수생환경 유해성", "html/N-정보공개-A-02-05.html", "", "", ""],
+      ["", "", "", "", "오존층 유해성", "html/N-정보공개-A-02-05-02.html", "", "", ""],
+      ["", "", "표시사항", "", "", "html/N-정보공개-A-03.html", "", "", ""],
+      ["", "", "유해·위험 문구", "", "", "html/N-정보공개-A-04.html", "", "", ""],
+      ["", "", "예방조치 문구", "", "", "html/N-정보공개-A-05.html", "", "", ""],
+      ["", "", "국내 GLP 정보", "", "", "html/N-정보공개-A-06.html", "", "", ""],
+      
+    ];
+
+
+
+    for(var i = 0 ; i<= data.length -1 ; i++){
+      if(data[i][1] == 'title'){
+        $('tbody').append('<tr class="title">'+
+          '<td>'+data[i][0]+'</td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+        '</tr>')
+      }else{
+        function cell(v){
+          var v2 = v == null ? '' : String(v);
+          var rightAlign = v2.indexOf('팝업') !== -1;
+          return '<td' + (rightAlign ? ' style="text-align:right;"' : '') + '>' + v2 + '</td>';
+        }
+        $('tbody').append('<tr>'+
+          cell(data[i][0]) +
+          cell(data[i][1]) +
+          cell(data[i][2]) +
+          cell(data[i][3]) +
+          cell(data[i][4]) +
+          ((data[i][5]).includes('html') ? '<td><a href="'+data[i][5]+'">'+data[i][5]+'</a></td>' :'<td>'+ data[i][5] +'</td>') +
+          cell(data[i][7]) +
+        '</tr>')
+      }
+    }
+
+  });
+
+
+
+
+</script>
+
+</head>
+<!-- html body -->
+<body>
+<!-- sheet -->
+<h1>Publishing Work Sheet </h1>
+
+<div class="mwork">
+  <table>
+    <colgroup>
+			<col style="width:120px" />
+			<col style="width:150px" />
+			<col style="width:150px" />
+			<col style="width:150px" />
+			<col style="width:150px" />
+			<col style="width:200px" />
+			<col style="width:auto" />
+    </colgroup>
+
+    <thead>
+      <tr>
+				<th>Category</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>3Depth</th>
+				<th>4Depth</th>
+				<th>FileName/Link</th>
+				<th>Memo</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+</div>
+<!-- //sheet -->
+
+</body>
+</html>

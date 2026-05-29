@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">표시사항</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-physical">물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-health">건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-env">환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-explosive">폭발성 물질</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-gas">인화성가스</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-aerosol">에어로졸</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-gas">산화성가스</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-pressurized-gas">고압가스</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-liquid">인화성액체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-solid">인화성고체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-self-reactive">자기반응성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-pyrophoric-liquid">자연발화성 액체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-pyrophoric-solid">자연발화성 고체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-self-heating">자기발열성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-water-reactive">물반응성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-liquid">산화성액체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-solid">산화성고체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-organic-peroxide">유기과산화물</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-metal-corrosive">금속부식성 물질</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">폭발성 물질</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">폭발성 물질 구분별 그림문자, 운송 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:90px;">
+                                        <col style="width:70px;">
+                                        <col style="min-width:110px;">
+                                        <col style="min-width:110px;">
+                                        <col style="min-width:110px;">
+                                        <col style="min-width:110px;">
+                                        <col style="min-width:110px;">
+                                        <col style="min-width:110px;">
+                                        <col style="min-width:110px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2">구분</th>
+                                            <th scope="col">불안정한<br>폭발성물질<br>(구분 1)</th>
+                                            <th scope="col">등급1.1<br>(구분 2)</th>
+                                            <th scope="col">등급1.2<br>(구분 3)</th>
+                                            <th scope="col">등급1.3<br>(구분 4)</th>
+                                            <th scope="col">등급1.4<br>(구분 5)</th>
+                                            <th scope="col">등급1.5<br>(구분 6)</th>
+                                            <th scope="col">등급1.6<br>(구분 7)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="폭발성 그림문자" class="pictogram"></td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="폭발성 그림문자" class="pictogram"></td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="폭발성 그림문자" class="pictogram"></td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="폭발성 그림문자" class="pictogram"></td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="폭발성 그림문자" class="pictogram"></td>
+                                            <td>주황색 바탕에<br>숫자 1.5</td>
+                                            <td>주황색 바탕에<br>숫자 1.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">운송 그림문자</td>
+                                            <td>운송 허용안됨</td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="운송 폭발성 그림문자" class="pictogram"></td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="운송 폭발성 그림문자" class="pictogram"></td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="운송 폭발성 그림문자" class="pictogram"></td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="운송 폭발성 그림문자" class="pictogram"></td>
+                                            <td><img src="../images/temp/@pictogram.jpg" alt="운송 폭발성 그림문자" class="pictogram"></td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>위험</td>
+                                            <td>위험</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                            <td>위험</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>불안정한<br>폭발성 물질<br>(H200)</td>
+                                            <td>폭발성 물질;<br>대폭발 위험<br>(H201)</td>
+                                            <td>폭발성 물질;<br>심한 분출 위험<br>(H202)</td>
+                                            <td>폭발성 물질;<br>화재, 폭풍<br>또는 분출 위험<br>(H203)</td>
+                                            <td>화재 또는<br>분출 위험<br>(H204)</td>
+                                            <td>화재 시 대폭발<br>할 수 있음<br>(H205)</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방조치문구</td>
+                                            <td>예방</td>
+                                            <td>P201<br>P250<br>P280</td>
+                                            <td>P210<br>P230<br>P234<br>P240<br>P250<br>P280</td>
+                                            <td>P210<br>P230<br>P234<br>P240<br>P250<br>P280</td>
+                                            <td>P210<br>P230<br>P234<br>P240<br>P250<br>P280</td>
+                                            <td>P210<br>P234<br>P240<br>P250<br>P280</td>
+                                            <td>P210<br>P230<br>P234<br>P240<br>P250<br>P280</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P370<br>+P372<br>+P380<br>+P373</td>
+                                            <td>P370<br>+P372<br>+P380<br>+P373</td>
+                                            <td>P370<br>+P372<br>+P380<br>+P373</td>
+                                            <td>P370<br>+P372<br>+P380<br>+P373</td>
+                                            <td>P370<br>+P380<br>+P375<br><br>P370<br>+P372<br>+P380<br>+P373</td>
+                                            <td>P370<br>+P372<br>+P380<br>+P373</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P401</td>
+                                            <td>P401</td>
+                                            <td>P401</td>
+                                            <td>P401</td>
+                                            <td>P401</td>
+                                            <td>P401</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>없음</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

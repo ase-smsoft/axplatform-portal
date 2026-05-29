@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">물질검색</h2>
+                </div>
+
+                <div class="search-box">
+                    <div class="sc-block">
+                        <div class="sc-row">
+                            <select class="sc-sel" aria-label="검색 구분">
+                                <option>구분</option>
+                                <option>제목</option>
+                                <option>내용</option>
+                            </select>
+                            <div class="input-search-wrap">
+                                <div class="input-search inp-del">
+                                    <input type="text" placeholder="검색어를 입력해주세요." aria-label="검색어">
+                                </div>
+                                <button type="button" class="btn-search">
+                                    <span>검색</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sc-row line-t">
+                            <div class="input-choice">
+                                <input id="sc-opt-related" type="checkbox">
+                                <label for="sc-opt-related">생략사유서 물질만 보기</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상세검색 -->
+                <div class="detail-search-wrap">
+                    <div class="ds-header">
+                        <button type="button" class="ds-toggle on" aria-expanded="true">
+                            <span class="ds-title">상세검색</span>
+                        </button>
+                    </div>
+                    <div class="ds-body">
+                        <div class="multiple-selec-box-wrap">
+                            <div class="multiple-selec-box">
+                                <div class="tab-type3">
+                                    <ul>
+                                        <li class="on"><a href="javascript:void(0);" data-tab-id="hz-tab1">유해성 분류</a></li>
+                                        <li><a href="javascript:void(0);" data-tab-id="hz-tab2">시험항목</a></li>
+                                        <li><a href="javascript:void(0);" data-tab-id="hz-tab3">생략사유서</a></li>
+                                        <li><a href="javascript:void(0);" data-tab-id="hz-tab4">label</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="box-cols">
+                                    <section class="box-col">
+                                        <ul class="box-col-list">
+                                            <li class="head">
+                                                <div class="input-choice">
+                                                    <input id="hz-phy" type="checkbox">
+                                                    <label for="hz-phy">물리적 위험성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-phy-explosive" type="checkbox">
+                                                    <label for="hz-phy-explosive">폭발성 물질 또는 화약류</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-phy-flammable" type="checkbox">
+                                                    <label for="hz-phy-flammable">인화성물질</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-phy-oxidizing" type="checkbox">
+                                                    <label for="hz-phy-oxidizing">산화성물질</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-phy-gas" type="checkbox">
+                                                    <label for="hz-phy-gas">고압가스</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-phy-selfreact" type="checkbox">
+                                                    <label for="hz-phy-selfreact">자기반응성물질</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-phy-pyrophoric" type="checkbox">
+                                                    <label for="hz-phy-pyrophoric">자연발화성물질</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-phy-selfheat" type="checkbox">
+                                                    <label for="hz-phy-selfheat">자기발열성물질</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                            
+                                    <section class="box-col">
+                                        <ul class="box-col-list">
+                                            <li class="head">
+                                                <div class="input-choice">
+                                                    <input id="hz-hth" type="checkbox">
+                                                    <label for="hz-hth">건강유해성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-hth-acute" type="checkbox">
+                                                    <label for="hz-hth-acute">급성독성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-hth-skin" type="checkbox">
+                                                    <label for="hz-hth-skin">피부부식성/자극성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-hth-eye" type="checkbox">
+                                                    <label for="hz-hth-eye">심한 눈손상/눈자극성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-hth-sens" type="checkbox">
+                                                    <label for="hz-hth-sens">호흡기 또는 피부과민성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-hth-mut" type="checkbox">
+                                                    <label for="hz-hth-mut">생식세포 변이원성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-hth-carc" type="checkbox">
+                                                    <label for="hz-hth-carc">발암성성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-hth-repr" type="checkbox">
+                                                    <label for="hz-hth-repr">생식독성</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                            
+                                    <section class="box-col">
+                                        <ul class="box-col-list">
+                                            <li class="head">
+                                                <div class="input-choice">
+                                                    <input id="hz-env" type="checkbox">
+                                                    <label for="hz-env">환경유해성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-env-aqua" type="checkbox">
+                                                    <label for="hz-env-aqua">수생환경유해성</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-choice">
+                                                    <input id="hz-env-ozone" type="checkbox">
+                                                    <label for="hz-env-ozone">오존층유해성</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-lg btn-white">
+                                    <span>초기화</span>
+                                    <svg class="ico-refresh" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-refresh"></use></svg>
+                                </button>
+                                <button type="button" class="btn btn-lg btn-blue">
+                                    <span>검색</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 상세검색 -->
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">검색 결과 <em>124</em>개</div>
+                    </div>
+                    <div class="right">
+                        <button class="btn-xsm btn-white btn-icon-mo"><svg class="ico-excel"><use href="../images/common/simbol.svg#ico-excel"></use></svg><span class="mo-hide">엑셀 다운로드</span></button>
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option value="10">10개</option>
+                            <option value="20">20개</option>
+                            <option value="30">30개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div id="grid" aria-label="물질검색 전체목록"></div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+<script>
+var localData = [
+    { no: 10, casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Ethyl acetate', echa: 'Y', omit: 23 },
+    { no: 9,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
+    { no: 8,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: "2,2'-[[3-Acetamido-4-[(2-chloro-4-nitrophenyl)azo]phenyl]imino]diethyl diacetate", echa: 'Y', omit: 23 },
+    { no: 7,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: '2-(Acetyloxy)-1,2,3-propanetricarboxylic acid tributyl ester', echa: 'N', omit: 0 },
+    { no: 6,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
+    { no: 6,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
+    { no: 6,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
+    { no: 6,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
+  ];
+
+// ECHA / 생략사유서 셀 HTML 미리 가공
+localData.forEach(function(r){
+  r.echaCell = r.echa === 'Y'
+    ? '<button type="button" class="btn-xsm btn-white"><span>ECHA</span></button>'
+    : '-';
+  r.omitCell = Number(r.omit) > 0
+    ? '<button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(' + r.omit + '개)</span></button>'
+    : '-';
+});
+
+let gridConfig = {
+    dataSource: localData,
+    container: '#grid',
+    width: '100%',
+    rowHeight: 50,
+    headerHeight: 50,
+    height: '400px',
+    showRowNo: false,
+    // sortable: 'rotate',
+    // filterable: true,
+    pageable: {
+       pageSizes: [10, 20, 30, 40, 50]
+    },
+    pagerBar: { left: 'pagerCombo', center: 'pager' },
+    columns: [
+      { field: 'no',          caption: '번호',               width: 60  },
+      { field: 'casNo',       caption: 'CAS No',             width: 120 },
+      { field: 'uidExisting', caption: '기존화학물질 고유번호', width: 150 },
+      { field: 'name',        caption: '화학물질명',          width: 310, align: 'left' },
+      {
+        field: 'echaCell',
+        caption: 'ECHA 등록여부',
+        width: 130,
+        cellTemplate: '{{{echaCell}}}'
+      },
+      {
+        field: 'omitCell',
+        caption: '생략사유서',
+        width: 130,
+        cellTemplate: '{{{omitCell}}}'
+      },
+    ],
+  }
+
+datagrid = SBGrid3.createGrid(gridConfig);
+</script>    
+
+</body>
+</html>

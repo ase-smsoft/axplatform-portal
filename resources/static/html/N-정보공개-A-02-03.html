@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">분류기준</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-physical">단일물질/물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-health">단일물질/건강유해성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-single-env">단일물질/환경유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-health">혼합물/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-env">혼합물/환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-aquatic">수생환경 유해성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-ozone">오존층 유해성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">수생환경 유해성</h3>
+                        </div>
+                        <div class="data-default">
+                            <table>
+                                <caption class="sr-only">수생환경 유해성 구분별 분류기준</caption>
+                                <colgroup>
+                                    <col style="width:120px;">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">분류기준</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>급성 1</td>
+                                        <td class="align-l">
+                                            <p>급성 수생생태독성이 다음에 해당되는 물질</p>
+                                            <ol class="list-decimal-circle">
+                                                <li>어류에 대한 LC50(96hr)이 1 mg/L 이하 또는</li>
+                                                <li>갑각류에 대한 EC50(48hr)이 1 mg/L 이하 또는</li>
+                                                <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 이하</li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>만성 1</td>
+                                        <td class="align-l">
+                                            <ol class="list-decimal-circle">
+                                                <li>만성 수생생태독성이 다음 ① 또는 ②에 해당되거나, 급성 수생생태독성이 다음 ③에 해당되는 물질</li>
+                                                <li>빠르게 분해되지 않으며 다음에 해당되는 물질
+                                                    <ol class="list-roman st2">
+                                                        <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 이하 또는</li>
+                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 이하 또는</li>
+                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 이하</li>
+                                                    </ol>
+                                                </li>
+                                                <li>빠르게 분해되며 다음에 해당되는 물질
+                                                    <ol class="list-roman st2">
+                                                        <li>어류에 대한 NOEC 또는 ECx이 0.01 mg/L 이하 또는</li>
+                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.01 mg/L 이하 또는</li>
+                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.01 mg/L 이하</li>
+                                                    </ol>
+                                                </li>
+                                                <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
+                                                    <ol class="list-roman st2">
+                                                        <li>어류에 대한 LC50(96hr)이 1 mg/L 이하 또는</li>
+                                                        <li>갑각류에 대한 EC50(48hr)이 1 mg/L 이하 또는</li>
+                                                        <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 이하</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>만성 2</td>
+                                        <td class="align-l">
+                                            <p>만성 수생생태독성이 다음 ① 또는 ②에 해당되거나, 급성 수생생태독성이 다음 ③에 해당되는 물질</p>
+                                            <ol class="list-decimal-circle">
+                                                <li>빠르게 분해되지 않으며 다음에 해당되는 물질
+                                                    <ol class="list-roman st2">
+                                                        <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
+                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
+                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하</li>
+                                                    </ol>
+                                                </li>
+                                                <li>빠르게 분해되며 다음에 해당되는 물질
+                                                    <ol class="list-roman st2">
+                                                        <li>어류에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하 또는</li>
+                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하 또는</li>
+                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하</li>
+                                                    </ol>
+                                                </li>
+                                                <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
+                                                    <ol class="list-roman st2">
+                                                        <li>어류에 대한 LC50(96hr)이 1 mg/L 초과 10 mg/L 이하 또는</li>
+                                                        <li>갑각류에 대한 EC50(48hr)이 1 mg/L 초과 10 mg/L 이하 또는</li>
+                                                        <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 초과 10 mg/L 이하</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>만성 3</td>
+                                        <td class="align-l">
+                                            <p>만성 수생생태독성이 다음 ①에 해당되거나, 급성 수생생태독성이 다음 ②에 해당되는 물질</p>
+                                            <ol class="list-decimal-circle">
+                                                <li>빠르게 분해되며 다음에 해당되는 물질
+                                                    <ol class="list-roman st2">
+                                                        <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
+                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
+                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하</li>
+                                                    </ol>
+                                                </li>
+                                                <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
+                                                    <ol class="list-roman st2">
+                                                        <li>어류에 대한 LC50(96hr)이 10mg/L 초과 100 mg/L 이하 또는</li>
+                                                        <li>갑각류에 대한 EC50(48hr)이 10 mg/L 초과 100 mg/L 이하 또는</li>
+                                                        <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 10 mg/L 초과 100 mg/L 이하</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>만성 4</td>
+                                        <td class="align-l">
+                                            <p>수용해도 한계까지 급성독성이 없는 난용성 물질로서 다음에 해당하는 물질.<br>
+                                            다만, 시험적으로 결정된 생물농축계수(BCF)가 500 미만 또는 만성독성 NOEC가 1mg/L 초과인 경우는 제외</p>
+                                            <ol class="list-decimal-circle">
+                                                <li>물질이 빠르게 분해되지 않음. 그리고</li>
+                                                <li>옥탄올물분배계수(log Kow)가 4 이상</li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp-ps">※ 급성 2, 3 분류기준은 만성 2, 3 분류기준을 위한 것이므로, 수생환경 유해성 구분에 급성 2, 3은 포함되지 않음.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

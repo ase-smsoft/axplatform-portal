@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">분류기준</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-single-physical">단일물질/물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-health">단일물질/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-env">단일물질/환경유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-health">혼합물/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-env">혼합물/환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-explosive">폭발성 물질</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-gas">인화성가스</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-aerosol">에어로졸</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-gas">산화성가스</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-pressurized-gas">고압가스</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-liquid">인화성액체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-solid">인화성고체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-self-reactive">자기반응성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-pyrophoric-liquid">자연발화성 액체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-pyrophoric-solid">자연발화성 고체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-self-heating">자기발열성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-water-reactive">물반응성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-liquid">산화성액체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-solid">산화성고체</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-organic-peroxide">유기과산화물</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-metal-corrosive">금속부식성 물질</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">폭발성 물질</h3>
+                        </div>
+                        <div class="data-default">
+                            <table>
+                                <caption class="sr-only">폭발성 물질 구분별 분류기준</caption>
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">분류기준</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 (불안정한 폭발성 물질)</td>
+                                        <td class="align-l">일반적인 취급, 운송, 사용에 있어서 열적으로 불안정하거나 너무 민감한 폭발성 물질</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 (등급 1.1)</td>
+                                        <td class="align-l">대폭발 위험성이 있는 물질, 혼합물과 제품</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 (등급 1.2)</td>
+                                        <td class="align-l">대폭발 위험성은 없으나 분출 위험성(projection hazard)이 있는 물질, 혼합물과 제품</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 (등급 1.3)</td>
+                                        <td class="align-l">대폭발 위험성은 없으나, 화재 위험성이 있고, 약한 폭풍 위험성(blast hazard) 또는 약한 분출 위험성이 있는 다음과 같은 물질, 혼합물과 제품<br>① 대량의 복사열을 발산하면서 연소하는 것. 또는<br>② 약한 폭풍 또는 약한 분출의 효과를 일으키면서 순차적으로 연소하는 것.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 (등급 1.4)</td>
+                                        <td class="align-l">심각한 위험성은 없으나, 다음과 같이 발화 또는 기폭에 의해 약간의 위험성이 있는 물질, 혼합물과 제품<br>① 영향은 주로 포장품에 국한되고, 주의할 정도의 크기 또는 범위의 파편의 분출은 일어나지 않음. 그리고<br>② 외부 화재에 의해 포장품의 거의 모든 내용물이 실질적으로 동시에 폭발을 일으키지 않아야 함.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 (등급 1.5)</td>
+                                        <td class="align-l">대폭발 위험성은 있지만 매우 둔감하여 정상적인 상태에서는 기폭의 가능성 또는 연소가 폭굉으로 전이될 가능성이 거의 없는 물질과 혼합물</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7 (등급 1.6)</td>
+                                        <td class="align-l">극히 둔감한 물질 또는 혼합물만을 포함하여 대폭발 위험성이 없으며, 우발적인 기폭 또는 전파의 가능성이 거의 없는 제품</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

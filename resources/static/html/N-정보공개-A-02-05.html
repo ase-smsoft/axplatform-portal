@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">분류기준</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-physical">단일물질/물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-health">단일물질/건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-single-env">단일물질/환경유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-mixture-health">혼합물/건강유해성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-mixture-env">혼합물/환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-aquatic">수생환경 유해성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-ozone">오존층 유해성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">수생환경 유해성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>다음의 원칙에 따라 혼합물을 분류한다.
+                                    <ol class="list-alpha st2">
+                                        <li>고독성 성분이 포함된 혼합물
+                                            <ol class="list-hangul">
+                                                <li>곱셈계수(M) 적용: 급성독성(L(E)C50)이 1 mg/L보다 훨씬 낮거나, 만성독성(NOEC)이 0.1 mg/L(빠르게 분해되지 않은 물질) 및 0.01 mg/L(빠르게 분해되는 물질)보다 훨씬 낮은 성분은 혼합물 전체의 독성에 많은 영향을 주기 때문에 &lt;표4.1.2(a)&gt;와 같이 곱셈계수(M)를 적용한다.(화학물질의 분류 및 표시 등에 관한 규정 [별표 4]의 분류·표시 목록 참고)</li>
+                                                <li>혼합물 중에서 모든 고독성 성분에 대해서 독성 데이터를 입수할 수 있고, 그 밖의 모든 성분에 대해서는 독성이 낮거나 그 혼합물의 유해성에 영향을 주지 않는 경우, 아래 (b)의 가산식을 사용한다.</li>
+                                            </ol>
+                                            <p class="txt-caption">&lt;표 4.1.2(a)&gt;</p>
+                                            <div class="data-default">
+                                                <table>
+                                                    <caption class="sr-only">표 4.1.2(a) - 급성/만성 독성별 곱셈계수(M)</caption>
+                                                    <colgroup>
+                                                        <col>
+                                                        <col style="width:90px;">
+                                                        <col>
+                                                        <col style="width:90px;">
+                                                        <col style="width:90px;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">급성 독성<br>L(E)C50 (단위: mg/L)</th>
+                                                            <th scope="col">M 계수</th>
+                                                            <th scope="col">만성 독성<br>NOEC (단위: mg/L)</th>
+                                                            <th scope="col" colspan="2">M 계수</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col">성분 a</th>
+                                                            <th scope="col">성분 b</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="align-l">0.1 &lt; L(E)C50 ≤ 1</td>
+                                                            <td>1</td>
+                                                            <td class="align-l">0.01 &lt; NOEC ≤ 0.1</td>
+                                                            <td>1</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="align-l">0.01 &lt; L(E)C50 ≤ 0.1</td>
+                                                            <td>10</td>
+                                                            <td class="align-l">0.001 &lt; NOEC ≤ 0.01</td>
+                                                            <td>10</td>
+                                                            <td>1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="align-l">0.001 &lt; L(E)C50 ≤ 0.01</td>
+                                                            <td>100</td>
+                                                            <td class="align-l">0.0001 &lt; NOEC ≤ 0.001</td>
+                                                            <td>100</td>
+                                                            <td>10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="align-l">0.0001 &lt; L(E)C50 ≤ 0.001</td>
+                                                            <td>1000</td>
+                                                            <td class="align-l">0.00001 &lt; NOEC ≤ 0.0001</td>
+                                                            <td>1000</td>
+                                                            <td>100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="align-l">0.00001 &lt; L(E)C50 ≤ 0.0001</td>
+                                                            <td>10000</td>
+                                                            <td class="align-l">0.000001 &lt; NOEC ≤ 0.00001</td>
+                                                            <td>10000</td>
+                                                            <td>1000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="align-l">(이하 10배씩 계속)</td>
+                                                            <td></td>
+                                                            <td class="align-l">(이하 10배씩 계속)</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p class="txt-exp-ps">※ a: 빠르게 분해되지 않는 성분 / b: 빠르게 분해되는 성분</p>
+                                        </li>
+                                        <li>가산식 적용: 혼합물의 구성성분 중에 독성 구분(급성 1 또는 만성 1, 2, 3, 4)이 아닌 적절한 시험 데이터가 있는 성분이 두 종류 이상인 경우에는, 시험 데이터의 성격에 따라 [공식 3] 또는 [공식 4]의 방법에 따라 이러한 성분의 조합에 대한 독성치를 계산한다.
+                                            이 독성 계산치를 사용하여 단일물질의 수생환경유해성 분류기준 표에 따라 조합된 성분에 대한 독성 구분을 정하며, 그 다음에 이것을 (c)의 합산방법에 적용한다. 다만, 혼합물의 만성독성 구분을 위해서는 만성독성으로 분류되지 않는 성분은 가산식에 적용하지 않는다.
+                                            <ol class="list-hangul">
+                                                <li>급성수생생태독성에 근거한 가산식:
+                                                    <figure class="formula-box">
+                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzUzODVfMTAyMzE2KSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzUzODVfMTAyMzE2IiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF81Mzg1XzEwMjMxNiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF81Mzg1XzEwMjMxNiIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUFEwbEVRVlI0QWV5ZHNVOFUyeGZIaFI5Q1FBS0NNZkNMeGtLeHRZSEVVZ3NwYkUza0x6QnVaNnVsSmZRMmtGK3BEU1MycjhEaTEycXdzUlVzak9aQmpJc1NsSWp2UGQ5bjkrRGxNck16TzdzN3N6TUQzODE1MTNQUE9YUHZ1ZC9sZnZmY3UvanMvYVdYRUJBQ1FxQzBDUFNlOGw1N2UzdWZQbjE2Ly83OSt2cjZXNzJFZ0JBUUFzVkFBRWFDbDJBbk9NcGpySnA2U0dGZnZuelozTno4K2ZQbm1UTm5KaVltSmljbi82dVhFQkFDUWlCdkJDWW5KMkVrZUFsMmdxTmdxaHAxL2Y3dmdNS3c3dXpzakk2T2pveU1EQTRPbnE2Lyt2cjY2bitxS1J3Q1NrZ0luQkFFK3ZvT1dBaGVncDFHUjBkaEt2anFONE9kcWxFWXRkbjI5dmJ3OFBEQXdFRGYwZGQvOUJJQ1FrQUk1SWZBVVVMcWc2TmdLdmdLMWpJV3ExSFk3dTR1anY3K2ZwZG5iMit2MDZVSUFTRWdCUEpGb0xmM2tKRmdLdmdLMWpxa01QZ01VKy9SVjQ5ZVFrQUlwSXVBUm1zWGdhUGsxQXRmd1ZxSEZMYS92dyt4V1pCTllUNjFRa0FJQ0lHQ0lHRFVaRFFGWDhGYWxsanRJUG5yMXkvcjBCSkhLeEVDUWtBSUZBMEJuNTBjYTlVb2pFUjlIMTJKRUJBQ1FxQ3dDUGg4ZFVCaDVPcGI2YVltR2tnSUNBRWhrQjRDQWFZNnBMRDBwdEJJUWtBSUNJRXVJU0FLNnhMUW1rWUlDSUVzRUJDRlpZSHFNUmhUU3hBQzVVQkFGRmFPOTBsWkNnRWgwQkNCZGlqczdkdTMvNisvcXRWcXcwRTdOM1poaXM2VDFBaENRQWpramtBN0ZQYng0OGMvNnEvUG56K2ovNi9SQ3c2eXRWbkF5NWN2cll2OTRjT0h0TmIxMjcyOVBXZm5xZm9NZnpDRkh5TmRDQWlCR0FST29Lc2RDZ09tcTFldkxpd3MwSDcvL2gzZUNRc3hKaFlBUFZrM3BvWG1JRU1MdUhuejVyMTc5MHhYS3dTRWdCQ0lRcUJOQ25QRHdXSndHUUxqUEhqd0FPWDI3ZHQ0aDRhR2FCRWpMNm9xOUJpQnZDaTdZZ0xrRWdKQ1FBaUVFZWlVd3R5SWpvUHNndXpDaFF2bWV2WHFGY3FiTjI4b3NsQmlaSHg4UE1Zcmx4QVFBa0lnakVCSEZBWmIxYS8xYXcxRGMyK0ZCaE5SaUtIZ2hkYzRZM0lxSEJ3Y2ZQNzhPVWJDR2dwRjNQWHIxeHU2bWhvVklBU0V3SWxGb0NNS2c3TTQvWm1BSUp4bHVyVjRQM3o0QUowaG5ERTVja0praEVtNmo4RDI5bmJEU2VmbTVucDZldmpVV1ZwYUNnVEV1QUtSNm9JQUNEOTY5R2htWmdZOGtkbloyWGZ2M21HL2N1VUs4S0pJTWtLZ0l3cURsYmo4ZXZ6NE1TUkZEVVdYZ2dzZEMzYTZmUG5JaVpKQ0REcTdjZU1HN3lWWFl3U2NPM2N1by9WbzJEQUNMMTY4WUVlRjdleTMxNjlmYjJ4czhObkRmdk5aTE1ZVkhrY1d5QXVxR2hzYlcxNWUvbFYvM2IxN0Z3ejVHT0JUL05hdFc0SW9Pd1E2b2pEUzRxY2Z0cUxzNHEyaUMxdWhZNEdxNkZKMmNaYjA1ZG16WndUQWFIZ2xXU01BUS9HeEFUZWhCT1phV1ZuQk9EOC9mL255WlZ3b1dGQVFsQ2dYM3RUa1dBd0U5VU5lZkVpd0VmakFOakJaMmYzNzkrbUM1Tk9uVCtFMUxKS01FT2lVd3Jpbmg2MG9yRGdxY3A5RlN5R0dCYnRsak5FWElzMnV0Z3NJVEU5UHM3VWFiaUYyRnduNEJRTEJNQmZHR0JkZWlVT0F3eU9sRnNYWDJ0cWFNenJGc0tVY2N4WXBXU0RRSm9XNTMvYTZkdTBhYVhGUGI3ZjF0SHp6U1BIRktSSTdndUlMNTBxTVRZV04xL1QzTUpvT29vQVlCQ2dmOExMOWFFM1FxU2JRWTF4NEpRNEJPNTZ2cnE0Nmk2L3drU0QrOGdISlNHK1R3dUFYam9jY0hqbW5VSGxCWkpETyt2bzZMVG9XN0Ewekhob2FndEZvdzE3S04wNmdacWVJNDd4cHV0b3NFTENDcStISU1hNkc4U2ZUU0swS1VKd1dvZjZHQ0R4NThvUVk5eVBkTUthRXhzS2wzQTZGUVZKMk5yeDQ4U0lMb3JDNmMrZU9XV2pSby9qTGdvbmhFZlFZQ1V3UkV5bVhFTWdGQWE3d21aYzdMOXF3Y01hY21KamdnR2xoNFFCWjBrS2dIUXFEb2Fpa0VBNk1hZVVSR0tjTFV3Um1WRmNJSkVlQXN6YkNVVEdxQk9NckZFNlJ4TkFtSDFhUmJTRFFEb1cxTVkwZUVRSnBJVUNCMDlQdXkyNnZPcy9FTGcxajZJa0U0UzhPa2pFeG5hZWhFVUJBRkFZSVRlVVlCcml2LzhOcmkzR0ZnN3R2b2ZEaEJzcm1SZC9ZMktqL0psYmpCaS9YN2U2NEI2M1lneDIyMEdqOENJdUxpK1FHMDRuQzRvSHEzQ3NLNnh6RFVvN0FJWWk4L2EzSTlyYmZBNGh4OFVnUlpINSszaVU1TnpjWGt4SjB6S0lnRkxnTVRtR05NY0hKWFRaN1ZIeWxVaUZEU2pDalRvZ3NLbEwyemhFUWhYV09ZU2xIc09yQTMxMTh2Mlk3TThaVm5LVXVMeTlEU2VSRDJrbXV6T0V5aUl4NG43WHB0aWZRSWdOeTRSVitIUDRpTVRERWF4U1d5b3poaVdReEJFUmhoc1B4Yk5uZVhNb2dMSThXd1lLT3NNY2dMUGFiRlNZb3R0L2lYWGdMSWpDSVVSTDVMQ3dzdUhYUmRSSlFXREpQMlhvRHJqYTZuRS9ocHBtWkdUYzFaUmQzYmN4Q0NjYUEySm1PM0xEUWxXU0VnQ2dzSTJBTE1Td2tGYmdpd3VJeTR5dC9xb2tyVjJwL0QzbDZldHBSR0FFeExyd0ZFYWdCc1dUZ0RsUGlXOVlMNzhUSEpQUkNUeHhPd1kycCtXd0FSc2dSWG1NS0d3RTgrV0xkWldoR3Rha2pJQXBMSGRJeURjaHhESTZyVnF2c3QwRGVNYTVBWkk1ZGtvUktTQUJpaXI4VUl3YUJjU2lPVUZJUkRveFVncUFIaHRDWis1TEJCamVYcFdjV3RWa2dJQXJMQWxXTjJUMEVLSHhzTXM1eFhEK1pIdFZTRTdrcUtTcEc5cHdSYUhGNlVWaUxnQ204WUFoUTV0amRFM2x4cjg5cERpVktxSnNveEtLOHNwY1JBVkZZR2Q4MTVYd0VBVTV3VmxzbFBFNGVlVmlka2lNZ0NpdjVHMWptOUxrRmp4ZnV5Qk91aitNa0ZSYkJYSFZSaTZGSVRnZ0NvckJpdk5Fbk1ndHV3ZU9GTy9Ma3dIQzFiOEgrTDd1WlJlMHhSa0FVVnF3M043NHFPVGJlTEVEbkxNazlGN0xXNkg5QUdEVmpZU0dOU2xqMkFBS2lzQUFnT1hmanE1Smo0eldVbTlKSDhvTWtBMVlxRmU3eVcrSXZuaW9zcE9RbVNZS0FLQ3dKU29ySkJJR205Skg4SUFsL3JheXNOT1V2N3Z1NUxFdHZNUm9wZndSRVlmbS9COHFnUXdRV0ZoYU12eTdYL3ltVG1ORUkwMDFaREQ1bGRJbkN5dml1blZwYVdtTGZsakwxdEpPR2xmZ0trcnY4cHZ6RnpKdzB1U3hEYVZVRWVLdUlkUzFlRk5ZMXFOT2NpRTBiTmR6Y1hPMWZ0NDI1WnBxZG5lV09LVDRnYXZBb081T09qNDlIZWJPencxOU1EWDl4bDU5a0Z1THRkeStTQlBzeFdRUE9LbklCMEY5alNmVTJLS3lrS3owK2FmUGp6cDFPdy9WZ3A5QllYVjIxYXlZVXd0amUxcVcxdjJIREhSUGJQdURDaTUwaUJjSFZrbkE2WTVhV0h1azhtRnN0b0dBaExDckphRlJTZ0pPa1dBdU14aXdBR3pCYUZ6dGpnalBvSVNqWWdRTGRoTnpvQWl4NUJsd0VZQWR0SkJjQXllY1lpQ2lzWkc4aVArc3htNUFxZzEzRW5yRlYwVVh4L3dxMyswVjJ4Z200NkRMeS9QeThleHhMUXFsV3E3WkZFOFozSGdaeFVFNnlIRGdpeVdqd25WVlNyVlpoQUFVc1VWT0FjQ3FBZHgvQXFCV1Z6aTRLSzlsYlJpa1JzMmtwQ3Z3dHlnWmplWDQ4RzVMUGZJeGhGNXNjT3lOWUFIcGhCZjZhbVpsaFhSQnVmSklzaXBWU1JoSFAwbUxJS0dvY0FSNkZURUhzb3JDQ3ZCR0owcWhVS291TGkxR2hiRkcvNElLdHNMRFBMZDVhbzZld0M0djdmc0FuUVh1cWFLM3hFZVFTYzZObkxpTGhMMWpNbHRBcWhRbHd3NjNJclNpc3lPL09rZHdvS0NDZ0dIN0JoYmhuWUNYMHdLblF1cmFsSGJ0UjFIRElzaTZibk0xdmRNYm1SK2VhMmVJRFhRWkhjQkZqOFhTZGtDMTJ2Rmc0OGFFekJYb3F3ckdMaTZRMmhFTmY4Z1JZUWhjQUp4L0FDUU9JWFpJRUFWRllFcFFLRVVQUjRSZFpUWE15K2pCaUNnUWJ1eGtsc1gvNGdwTHQ2dGdOYW9CdTRCMmVSZWV3WmwwQ1hOY0dwTXBEV1Z0Ykl3REZDWnpJZ0FRekVXbHpUVWJtNkM2Z0ZBcVprM2J5Vk5zQVBBckE1Sk1xVWhSV2pwOEJPQUlxU1o0ckpJSTBMQ0t3STdpZ0dCT29paTRWSEhZMkxTMFR1WnR5WEZqbzRzSk9sOWFFVGM2emVHbk5ZaTJiMllJWjA0VHpMMHhuM2xLMDNRRThDc0JEaUtRMVEwQVUxZ3loQXZpcGFEaG9jS0NqWWtLNDMybWFGSHVER09NUkZGL0NMZzZQRnNrczZFd0hUMUZ6MlZNTnUrWWlEQVhDQ2xDWTJYRlJlYmx4NkpaRldESlFkQUh3emMxTk1Ba0RpRkdTRUFGUldFS2c4Z3lqSXJCeXlkb2s1UXk3Z293RHpJSUZDYnZnTHdRWEZSTnRnSGZZeno0TjRYWERZdWNvNUZ0NEhNRk9pK0MxTWRGTEpGMERmR0JnQUlqQ0FKWUlxOXhURllYbC9oWTBTWUR0eENuTUQycEtDcHpzRUVxaGNDUjJKT0NpOG1KOHJzWTRMYUt3b3h3SFdaZDRGQk1ZRUFwakVBUUxYYU0vbnFMcmk4OTlZYThmV1NpOXk0REhBRmdvV0FxYlRDRXByTEJvZFQweERuMXNmcU1ZTjdrUkV3VGhMQUdGUXhBV240Ym9tckEvVWVBZ1dpZE13ZVU5d3lJVUJYQ1RlemJRWmIvWnN5aVdGUmthaFJGcEEwS0ZITUhRWFF4NlRMWjRpeU1zQnpSc2FTNHJZRUdQV1VJbmdETmpBRURta2lSSFFCU1dIS3V1UnJLUnVQYXFWQ3JzSEZvM045OGVPb0lnd05sUjJBeFlFQlM2N0N0MGQzRUdzOUNGVm5CQlpPaE80QyttczY4TFVQd05iRjNid3p3SXUrR2xkUnhIZWxpWXk2aU5HS2JBU3d3S0xSYW1zMTJLbnFtNEZablMwbHlzbEtlQW1oWFJ1bWV6QnB6cEFnQzZxYVVrUVVBVWxnU2xIR0pnQWJ2NW92VVBraHNiRzFpYytKbEJFODd1RkhkeHRyeTg3SXdORmVNcFNNZVJFWU1IdXJqZ1J3akxIUzJaRkVyRlRyQUpWQWg1UVZ1a3l1TjRpYkhCTFNDakZnSmlYUXhPaTZDMEpIa0JEamhBNUFQWVV0b0tGb1hwWitBSUFseUh3VUhPRk9oU0wxU3JWWjlTMGJGZ1AzWHE0Q0VlZ1VGZ1RQcXJxNnNCTDBhSmowQVlRTjhydlNrQ29yQ21FQ21nSEFqQW02NFFLMGZHeWpJTkJFUmhhYUNvTVFxR2dIRVpiY0h5VWpycEl5QUtTeDlUalZnRUJPQXY2cklpWkZMd0hNcWVuaWlzN08rZzhoY0NKeG9CVWRpSmZ2dVAyZUpkMllXQ0hMUFZhVGtORVJDRk5ZUkZSaUVnQk1xQndBbWxzSEs4T2NwU0NBaUJaZ2lJd3BvaEpMOFFFQUlGUmtBVVZ1QTNSNmtKQVNIUURBRlJXRE9FNUM4T0FzcEVDSVFRRUlXRklKRkJDQWlCOGlBZ0NpdlBlNlZNaFlBUUNDRWdDZ3RCSW9NUUVBSnBJcER0V0ljVXBsOEZ6QlpwalM0RWhFQWFDQVNZNm9EQ0F0WTBKdElZUWtBSUNJRk1FUEQ1cWtaaFBUMDliaDdmNTR4U2hJQVFFQUs1SStDelUwL1BBV3ZWS0t5L3YzOS9mLytmK29zZ0pQZGN5NStBVmlBRWhFQ2FDTUJMU0oybC9vR3ZZQzBidlVaaGc0T0RQMzc4TUo5cmlaWUlBU0VnQklxQWdPTWxVK0FyV091UXdvYUhoekZCYkgvL2ZoSDNXOVdmUWtBSUNJR2NFZkFaQ2FhQ3IyQ3RRd3FEejhiR3huWjNkM0g4ZGZTVmMrS2FYZ2gwRndITlZqUUVqaExTWDNBVVRBVmZ3VnFIRklaMjl1elprWkdScjErLzd1enM3TzN0L2F5L2VMaitweG9oSUFTRVFENElPQmFDbDJBbk9BcW1ncTlnTFpQYVhaaHBXQ2NuSjArZlB2M3QyN2V0cmEzTnpjMC85UklDUWtBSTVJMEFYTFMxdFFVdndVNXdGRXhsbEdYdElZWFJwelk3Zi83OHBVdVhwcWFtcnVvbEJJU0FFQ2dHQWxOVFUvQVM3QVJId1ZTKy9Bc0FBUC8vN1pKR0NRQUFBQVpKUkVGVUF3RFVTaEpzWHFrUUZnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CjwvZGVmcz4KPC9zdmc+" alt="" />
+                                                    </figure>
+                                                    이 공식에서 Ci는 성분 i의 농도(중량 백분율)를, L(E)C50i 는 성분 i의 LC50 또는 EC50(mg/L)을, 그리고 L(E)C50m은 혼합물 중에서 시험 데이터가 있는 부분의 L(E)C50 을 의미 한다.
+                                                </li>
+                                                <li>만성수생생태독성에 근거한 가산식:
+                                                    <figure class="formula-box">
+                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzUzODVfMTAyMzE2KSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzUzODVfMTAyMzE2IiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF81Mzg1XzEwMjMxNiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF81Mzg1XzEwMjMxNiIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUFEwbEVRVlI0QWV5ZHNVOFUyeGZIaFI5Q1FBS0NNZkNMeGtLeHRZSEVVZ3NwYkUza0x6QnVaNnVsSmZRMmtGK3BEU1MycjhEaTEycXdzUlVzak9aQmpJc1NsSWp2UGQ5bjkrRGxNck16TzdzN3N6TUQzODE1MTNQUE9YUHZ1ZC9sZnZmY3UvanMvYVdYRUJBQ1FxQzBDUFNlOGw1N2UzdWZQbjE2Ly83OSt2cjZXNzJFZ0JBUUFzVkFBRWFDbDJBbk9NcGpySnA2U0dGZnZuelozTno4K2ZQbm1UTm5KaVltSmljbi82dVhFQkFDUWlCdkJDWW5KMkVrZUFsMmdxTmdxaHAxL2Y3dmdNS3c3dXpzakk2T2pveU1EQTRPbnE2Lyt2cjY2bitxS1J3Q1NrZ0luQkFFK3ZvT1dBaGVncDFHUjBkaEt2anFONE9kcWxFWXRkbjI5dmJ3OFBEQXdFRGYwZGQvOUJJQ1FrQUk1SWZBVVVMcWc2TmdLdmdLMWpJV3ExSFk3dTR1anY3K2ZwZG5iMit2MDZVSUFTRWdCUEpGb0xmM2tKRmdLdmdLMWpxa01QZ01VKy9SVjQ5ZVFrQUlwSXVBUm1zWGdhUGsxQXRmd1ZxSEZMYS92dyt4V1pCTllUNjFRa0FJQ0lHQ0lHRFVaRFFGWDhGYWxsanRJUG5yMXkvcjBCSkhLeEVDUWtBSUZBMEJuNTBjYTlVb2pFUjlIMTJKRUJBQ1FxQ3dDUGg4ZFVCaDVPcGI2YVltR2tnSUNBRWhrQjRDQWFZNnBMRDBwdEJJUWtBSUNJRXVJU0FLNnhMUW1rWUlDSUVzRUJDRlpZSHFNUmhUU3hBQzVVQkFGRmFPOTBsWkNnRWgwQkNCZGlqczdkdTMvNisvcXRWcXcwRTdOM1poaXM2VDFBaENRQWpramtBN0ZQYng0OGMvNnEvUG56K2ovNi9SQ3c2eXRWbkF5NWN2cll2OTRjT0h0TmIxMjcyOVBXZm5xZm9NZnpDRkh5TmRDQWlCR0FST29Lc2RDZ09tcTFldkxpd3MwSDcvL2gzZUNRc3hKaFlBUFZrM3BvWG1JRU1MdUhuejVyMTc5MHhYS3dTRWdCQ0lRcUJOQ25QRHdXSndHUUxqUEhqd0FPWDI3ZHQ0aDRhR2FCRWpMNm9xOUJpQnZDaTdZZ0xrRWdKQ1FBaUVFZWlVd3R5SWpvUHNndXpDaFF2bWV2WHFGY3FiTjI4b3NsQmlaSHg4UE1Zcmx4QVFBa0lnakVCSEZBWmIxYS8xYXcxRGMyK0ZCaE5SaUtIZ2hkYzRZM0lxSEJ3Y2ZQNzhPVWJDR2dwRjNQWHIxeHU2bWhvVklBU0V3SWxGb0NNS2c3TTQvWm1BSUp4bHVyVjRQM3o0QUowaG5ERTVja0praEVtNmo4RDI5bmJEU2VmbTVucDZldmpVV1ZwYUNnVEV1QUtSNm9JQUNEOTY5R2htWmdZOGtkbloyWGZ2M21HL2N1VUs4S0pJTWtLZ0l3cURsYmo4ZXZ6NE1TUkZEVVdYZ2dzZEMzYTZmUG5JaVpKQ0REcTdjZU1HN3lWWFl3U2NPM2N1by9WbzJEQUNMMTY4WUVlRjdleTMxNjlmYjJ4czhObkRmdk5aTE1ZVkhrY1d5QXVxR2hzYlcxNWUvbFYvM2IxN0Z3ejVHT0JUL05hdFc0SW9Pd1E2b2pEUzRxY2Z0cUxzNHEyaUMxdWhZNEdxNkZKMmNaYjA1ZG16WndUQWFIZ2xXU01BUS9HeEFUZWhCT1phV1ZuQk9EOC9mL255WlZ3b1dGQVFsQ2dYM3RUa1dBd0U5VU5lZkVpd0VmakFOakJaMmYzNzkrbUM1Tk9uVCtFMUxKS01FT2lVd3Jpbmg2MG9yRGdxY3A5RlN5R0dCYnRsak5FWElzMnV0Z3NJVEU5UHM3VWFiaUYyRnduNEJRTEJNQmZHR0JkZWlVT0F3eU9sRnNYWDJ0cWFNenJGc0tVY2N4WXBXU0RRSm9XNTMvYTZkdTBhYVhGUGI3ZjF0SHp6U1BIRktSSTdndUlMNTBxTVRZV04xL1QzTUpvT29vQVlCQ2dmOExMOWFFM1FxU2JRWTF4NEpRNEJPNTZ2cnE0Nmk2L3drU0QrOGdISlNHK1R3dUFYam9jY0hqbW5VSGxCWkpETyt2bzZMVG9XN0Ewekhob2FndEZvdzE3S04wNmdacWVJNDd4cHV0b3NFTENDcStISU1hNkc4U2ZUU0swS1VKd1dvZjZHQ0R4NThvUVk5eVBkTUthRXhzS2wzQTZGUVZKMk5yeDQ4U0lMb3JDNmMrZU9XV2pSby9qTGdvbmhFZlFZQ1V3UkV5bVhFTWdGQWE3d21aYzdMOXF3Y01hY21KamdnR2xoNFFCWjBrS2dIUXFEb2Fpa0VBNk1hZVVSR0tjTFV3Um1WRmNJSkVlQXN6YkNVVEdxQk9NckZFNlJ4TkFtSDFhUmJTRFFEb1cxTVkwZUVRSnBJVUNCMDlQdXkyNnZPcy9FTGcxajZJa0U0UzhPa2pFeG5hZWhFVUJBRkFZSVRlVVlCcml2LzhOcmkzR0ZnN3R2b2ZEaEJzcm1SZC9ZMktqL0psYmpCaS9YN2U2NEI2M1lneDIyMEdqOENJdUxpK1FHMDRuQzRvSHEzQ3NLNnh6RFVvN0FJWWk4L2EzSTlyYmZBNGh4OFVnUlpINSszaVU1TnpjWGt4SjB6S0lnRkxnTVRtR05NY0hKWFRaN1ZIeWxVaUZEU2pDalRvZ3NLbEwyemhFUWhYV09ZU2xIc09yQTMxMTh2Mlk3TThaVm5LVXVMeTlEU2VSRDJrbXV6T0V5aUl4NG43WHB0aWZRSWdOeTRSVitIUDRpTVRERWF4U1d5b3poaVdReEJFUmhoc1B4Yk5uZVhNb2dMSThXd1lLT3NNY2dMUGFiRlNZb3R0L2lYWGdMSWpDSVVSTDVMQ3dzdUhYUmRSSlFXREpQMlhvRHJqYTZuRS9ocHBtWkdUYzFaUmQzYmN4Q0NjYUEySm1PM0xEUWxXU0VnQ2dzSTJBTE1Td2tGYmdpd3VJeTR5dC9xb2tyVjJwL0QzbDZldHBSR0FFeExyd0ZFYWdCc1dUZ0RsUGlXOVlMNzhUSEpQUkNUeHhPd1kycCtXd0FSc2dSWG1NS0d3RTgrV0xkWldoR3Rha2pJQXBMSGRJeURjaHhESTZyVnF2c3QwRGVNYTVBWkk1ZGtvUktTQUJpaXI4VUl3YUJjU2lPVUZJUkRveFVncUFIaHRDWis1TEJCamVYcFdjV3RWa2dJQXJMQWxXTjJUMEVLSHhzTXM1eFhEK1pIdFZTRTdrcUtTcEc5cHdSYUhGNlVWaUxnQ204WUFoUTV0amRFM2x4cjg5cERpVktxSnNveEtLOHNwY1JBVkZZR2Q4MTVYd0VBVTV3VmxzbFBFNGVlVmlka2lNZ0NpdjVHMWptOUxrRmp4ZnV5Qk91aitNa0ZSYkJYSFZSaTZGSVRnZ0NvckJpdk5Fbk1ndHV3ZU9GTy9Ma3dIQzFiOEgrTDd1WlJlMHhSa0FVVnF3M043NHFPVGJlTEVEbkxNazlGN0xXNkg5QUdEVmpZU0dOU2xqMkFBS2lzQUFnT1hmanE1Smo0eldVbTlKSDhvTWtBMVlxRmU3eVcrSXZuaW9zcE9RbVNZS0FLQ3dKU29ySkJJR205Skg4SUFsL3JheXNOT1V2N3Z1NUxFdHZNUm9wZndSRVlmbS9COHFnUXdRV0ZoYU12eTdYL3ltVG1ORUkwMDFaREQ1bGRJbkN5dml1blZwYVdtTGZsakwxdEpPR2xmZ0trcnY4cHZ6RnpKdzB1U3hEYVZVRWVLdUlkUzFlRk5ZMXFOT2NpRTBiTmR6Y1hPMWZ0NDI1WnBxZG5lV09LVDRnYXZBb081T09qNDlIZWJPencxOU1EWDl4bDU5a0Z1THRkeStTQlBzeFdRUE9LbklCMEY5alNmVTJLS3lrS3owK2FmUGp6cDFPdy9WZ3A5QllYVjIxYXlZVXd0amUxcVcxdjJIREhSUGJQdURDaTUwaUJjSFZrbkE2WTVhV0h1azhtRnN0b0dBaExDckphRlJTZ0pPa1dBdU14aXdBR3pCYUZ6dGpnalBvSVNqWWdRTGRoTnpvQWl4NUJsd0VZQWR0SkJjQXllY1lpQ2lzWkc4aVArc3htNUFxZzEzRW5yRlYwVVh4L3dxMyswVjJ4Z200NkRMeS9QeThleHhMUXFsV3E3WkZFOFozSGdaeFVFNnlIRGdpeVdqd25WVlNyVlpoQUFVc1VWT0FjQ3FBZHgvQXFCV1Z6aTRLSzlsYlJpa1JzMmtwQ3Z3dHlnWmplWDQ4RzVMUGZJeGhGNXNjT3lOWUFIcGhCZjZhbVpsaFhSQnVmSklzaXBWU1JoSFAwbUxJS0dvY0FSNkZURUhzb3JDQ3ZCR0owcWhVS291TGkxR2hiRkcvNElLdHNMRFBMZDVhbzZld0M0djdmc0FuUVh1cWFLM3hFZVFTYzZObkxpTGhMMWpNbHRBcWhRbHd3NjNJclNpc3lPL09rZHdvS0NDZ0dIN0JoYmhuWUNYMHdLblF1cmFsSGJ0UjFIRElzaTZibk0xdmRNYm1SK2VhMmVJRFhRWkhjQkZqOFhTZGtDMTJ2Rmc0OGFFekJYb3F3ckdMaTZRMmhFTmY4Z1JZUWhjQUp4L0FDUU9JWFpJRUFWRllFcFFLRVVQUjRSZFpUWE15K2pCaUNnUWJ1eGtsc1gvNGdwTHQ2dGdOYW9CdTRCMmVSZWV3WmwwQ1hOY0dwTXBEV1Z0Ykl3REZDWnpJZ0FRekVXbHpUVWJtNkM2Z0ZBcVprM2J5Vk5zQVBBckE1Sk1xVWhSV2pwOEJPQUlxU1o0ckpJSTBMQ0t3STdpZ0dCT29paTRWSEhZMkxTMFR1WnR5WEZqbzRzSk9sOWFFVGM2emVHbk5ZaTJiMllJWjA0VHpMMHhuM2xLMDNRRThDc0JEaUtRMVEwQVUxZ3loQXZpcGFEaG9jS0NqWWtLNDMybWFGSHVER09NUkZGL0NMZzZQRnNrczZFd0hUMUZ6MlZNTnUrWWlEQVhDQ2xDWTJYRlJlYmx4NkpaRldESlFkQUh3emMxTk1Ba0RpRkdTRUFGUldFS2c4Z3lqSXJCeXlkb2s1UXk3Z293RHpJSUZDYnZnTHdRWEZSTnRnSGZZeno0TjRYWERZdWNvNUZ0NEhNRk9pK0MxTWRGTEpGMERmR0JnQUlqQ0FKWUlxOXhURllYbC9oWTBTWUR0eENuTUQycEtDcHpzRUVxaGNDUjJKT0NpOG1KOHJzWTRMYUt3b3h3SFdaZDRGQk1ZRUFwakVBUUxYYU0vbnFMcmk4OTlZYThmV1NpOXk0REhBRmdvV0FxYlRDRXByTEJvZFQweERuMXNmcU1ZTjdrUkV3VGhMQUdGUXhBV240Ym9tckEvVWVBZ1dpZE13ZVU5d3lJVUJYQ1RlemJRWmIvWnN5aVdGUmthaFJGcEEwS0ZITUhRWFF4NlRMWjRpeU1zQnpSc2FTNHJZRUdQV1VJbmdETmpBRURta2lSSFFCU1dIS3V1UnJLUnVQYXFWQ3JzSEZvM045OGVPb0lnd05sUjJBeFlFQlM2N0N0MGQzRUdzOUNGVm5CQlpPaE80QyttczY4TFVQd05iRjNid3p3SXUrR2xkUnhIZWxpWXk2aU5HS2JBU3d3S0xSYW1zMTJLbnFtNEZablMwbHlzbEtlQW1oWFJ1bWV6QnB6cEFnQzZxYVVrUVVBVWxnU2xIR0pnQWJ2NW92VVBraHNiRzFpYytKbEJFODd1RkhkeHRyeTg3SXdORmVNcFNNZVJFWU1IdXJqZ1J3akxIUzJaRkVyRlRyQUpWQWg1UVZ1a3l1TjRpYkhCTFNDakZnSmlYUXhPaTZDMEpIa0JEamhBNUFQWVV0b0tGb1hwWitBSUFseUh3VUhPRk9oU0wxU3JWWjlTMGJGZ1AzWHE0Q0VlZ1VGZ1RQcXJxNnNCTDBhSmowQVlRTjhydlNrQ29yQ21FQ21nSEFqQW02NFFLMGZHeWpJTkJFUmhhYUNvTVFxR2dIRVpiY0h5VWpycEl5QUtTeDlUalZnRUJPQXY2cklpWkZMd0hNcWVuaWlzN08rZzhoY0NKeG9CVWRpSmZ2dVAyZUpkMllXQ0hMUFZhVGtORVJDRk5ZUkZSaUVnQk1xQndBbWxzSEs4T2NwU0NBaUJaZ2lJd3BvaEpMOFFFQUlGUmtBVVZ1QTNSNmtKQVNIUURBRlJXRE9FNUM4T0FzcEVDSVFRRUlXRklKRkJDQWlCOGlBZ0NpdlBlNlZNaFlBUUNDRWdDZ3RCSW9NUUVBSnBJcER0V0ljVXBsOEZ6QlpwalM0RWhFQWFDQVNZNm9EQ0F0WTBKdElZUWtBSUNJRk1FUEQ1cWtaaFBUMDliaDdmNTR4U2hJQVFFQUs1SStDelUwL1BBV3ZWS0t5L3YzOS9mLytmK29zZ0pQZGN5NStBVmlBRWhFQ2FDTUJMU0oybC9vR3ZZQzBidlVaaGc0T0RQMzc4TUo5cmlaWUlBU0VnQklxQWdPTWxVK0FyV091UXdvYUhoekZCYkgvL2ZoSDNXOVdmUWtBSUNJR2NFZkFaQ2FhQ3IyQ3RRd3FEejhiR3huWjNkM0g4ZGZTVmMrS2FYZ2gwRndITlZqUUVqaExTWDNBVVRBVmZ3VnFIRklaMjl1elprWkdScjErLzd1enM3TzN0L2F5L2VMaitweG9oSUFTRVFENElPQmFDbDJBbk9BcW1ncTlnTFpQYVhaaHBXQ2NuSjArZlB2M3QyN2V0cmEzTnpjMC85UklDUWtBSTVJMEFYTFMxdFFVdndVNXdGRXhsbEdYdElZWFJwelk3Zi83OHBVdVhwcWFtcnVvbEJJU0FFQ2dHQWxOVFUvQVM3QVJId1ZTKy9Bc0FBUC8vN1pKR0NRQUFBQVpKUkVGVUF3RFVTaEpzWHFrUUZnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CjwvZGVmcz4KPC9zdmc+" alt="" />
+                                                    </figure>
+                                                    이 공식에서 Ci는 빠르게 분해되는 성분 i의 농도(중량 백분율)를, Cj는 빠르게 분해되지 않는 성분 j의 농도(중량 백분율)를, NOECi는 빠르게 분해되는 성분 i의 NOEC 또는 ECx(mg/L)를, NOECj 는 빠르게 분해되지 않는 성분 j의 NOEC 또는 ECx(mg/L)를, 그리고 EqNOECm은 혼합물 중에서 시험 데이터가 있는 부분의 NOEC를 의미 한다.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>성분의 합산방법 적용: 혼합물 자체에 대한 분해성이나 생물 농축성 자료가 있을 수 없기 때문에 구성성분 또는 조합된 성분에 대한 독성 구분별로 함량을 고려하여 분류한다(표 4.1.2(b) 및 4.1.2(c) 참고)</li>
+                                    </ol>
+                                </li>
+                                <li>혼합물 자체에 대한 수생환경 유해성 자료가 있는 경우<br>
+                                    혼합물 자체에 대한 급성독성 시험 데이터(LC50 또는 EC50) 및 만성독성 시험 데이터(NOEC 또는 ECx)가 있는 경우의 분류기준은 아래 &lt;표 4.1.2(b)&gt;와 같다. 만성독성 분류의 경우 혼합물 자체에 대한 분해성과 생물 축적성에 대한 자료가 있을 수 없기 때문에, 각 구성성분에 대한 분해성과 경우에 따라 생물축적성에 대한 정보가 필요하다. 다만 혼합물 자체에 대한 급성독성 시험 데이터만 있고 만성 유해성을 분류할 시험 데이터는 구성성분별로 있을 경우에는 급성 유해성은 혼합물 자체의 급성독성 시험 데이터로 평가하고 만성 유해성을 &lt;표 4.1.2(c)&gt;에 따라 성분의 합산방법을 이용하여 분류한다.
+                                    <p class="txt-caption">&lt;표 4.1.2(b)&gt;</p>
+                                    <div class="data-default">
+                                        <table>
+                                            <caption class="sr-only">표 4.1.2(b) - 혼합물 자체의 수생환경 유해성 분류기준</caption>
+                                            <colgroup>
+                                                <col style="width:120px;">
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">분류기준</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>급성 1</td>
+                                                    <td class="align-l">물질에 대한 급성 구분 1과 같음</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>만성 1</td>
+                                                    <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 1의 분류기준 ②와 같음. 그 밖의 경우는 물질에 대한 만성 구분 1의 분류기준 ①과 같음</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>만성 2</td>
+                                                    <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 2의 분류기준 ②와 같음. 그 밖의 경우는 물질에 대한 만성 구분 2의 분류기준 ①과 같음</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>만성 3</td>
+                                                    <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 3의 ①과 같음</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>만성 4</td>
+                                                    <td class="align-l">급성 수생생태독성이 구분 1 또는 만성 수생생태독성이 구분 1부터 구분 3까지에 해당하지 않거나 수용해도 한계 이상이고, 다음의 합(%)이 25% 이상인 혼합물<br>
+                                                        ① 만성 1인 성분의 총 함량(%)<br>
+                                                        ② 만성 2인 성분의 총 함량(%)<br>
+                                                        ③ 만성 3인 성분의 총 함량(%)<br>
+                                                        ④ 만성 4인 성분의 총 함량(%)
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원칙을 적용할 수 있는 경우
+                                    <ol class="list-alpha st2">
+                                        <li>희석
+                                            <ol class="list-hangul">
+                                                <li>새로운 혼합물이, 어떤 시험된 다른 혼합물 또는 물질(수생환경 유해성으로 분류된)과 희석제(유해성이 가장 낮은 성분 보다 동등 이하의 수생 환경 유해성으로 분류되는)를 희석하여 만들어지고, 희석제가 다른 성분의 수생환경 유해성에 영향을 미치지 않을 것으로 예상되는 경우에는, 그 혼합물은 원래의 혼합물 또는 물질과 동일하게 분류될 수 있다.</li>
+                                                <li>혼합물이, 다른 분류된 혼합물 또는 물질과 물 등 완전히 독성이 없는 물질로 희석하여 만든 경우에는, 그 혼합물의 독성은 원래의 혼합물 또는 물질로부터 계산할 수 있다.</li>
+                                            </ol>
+                                        </li>
+                                        <li>그 밖에 '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 제1.2장의 나목부터 마목까지에 따른 가교원리를 적용해 해당 혼합물을 수생환경 유해성 급성 구분 1 또는 만성 구분 1부터 구분 4까지로 분류한다.</li>
+                                    </ol>
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 관련 구성성분에 대한 자료가 있는 경우</li>
+                                <li>혼합물의 관련 구성성분에 대하여 급성 1과 곱셈계수, 만성 1과 곱셈계수, 만성 2, 만성 3 또는 만성 4의 정보가 있는 경우에는 아래 &lt;표 4.1.2(c)&gt;의 합산방법에 따라 분류한다. 다만, 독성 데이터가 있는 성분이 두 종류 이상인 경우에는, [공식 3]의 가산식을 적용하여 조합된 성분의 L(E)C50, NOEC, 그에 따른 독성 구분과 곱셈계수를 결정한 다음 &lt;표 4.1.2(c)&gt;에 따라 분류한다.
+                                    <p class="txt-caption">&lt;표 4.1.2(c)&gt;</p>
+                                    <div class="data-default">
+                                        <table>
+                                            <caption class="sr-only">표 4.1.2(c) - 구성성분 합산방법에 의한 분류기준</caption>
+                                            <colgroup>
+                                                <col style="width:120px;">
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">분류기준</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>급성 1</td>
+                                                    <td class="align-l">급성 1인 성분의 총 함량(%)과 곱셈계수와의 곱이 25% 이상인 혼합물</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>만성 1</td>
+                                                    <td class="align-l">만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱이 25%이상인 혼합물</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>만성 2</td>
+                                                    <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
+                                                        ① 만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱의 가중치 10배<br>
+                                                        ② 만성 2인 성분의 총 함량(%)
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>만성 3</td>
+                                                    <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
+                                                        ① 만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱의 가중치 100배<br>
+                                                        ② 만성 2인 성분의 총 함량(%)의 가중치 10배<br>
+                                                        ③ 만성 3인 성분의 총 함량(%)
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>만성 4</td>
+                                                    <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
+                                                        ① 만성 1인 성분의 총 함량(%)<br>
+                                                        ② 만성 2인 성분의 총 함량(%)<br>
+                                                        ③ 만성 3인 성분의 총 함량(%)<br>
+                                                        ④ 만성 4인 성분의 총 함량(%)
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>다음의 기본 요소가 수생환경 유해성을 분류하는데 사용된다.
+                                    <ol class="list-alpha st2">
+                                        <li>급성수생생태독성</li>
+                                        <li>만성수생생태독성</li>
+                                        <li>잠재적인 또는 실제의 생물축적성, 및</li>
+                                        <li>유기 화학물질의 (생물적 또는 비생물적) 분해성</li>
+                                    </ol>
+                                </li>
+                                <li>수생생태독성
+                                    <ol class="list-alpha st2">
+                                        <li>일련의 영향 단계 및 분류군을 나타내는 대표 종으로, 어류, 갑각류 및 조류가 사용되고 있고, 그 시험방법은 매우 표준화되어 있다. 그 시험 방법에 대한 데이터도 고려할 수 있지만, 다만 동등한 생물 종 및 종말점에 의한 시험의 경우에 한한다. 조류성장저해 시험은 만성시험이지만, 분류목적상 EC50은 급성 값으로 간주된다.</li>
+                                        <li>수생생태독성 시험은 본래, 대상 물질을 시험 배지에 녹여 생물학적 이용성이 있는 노출 농도로 시험기간 동안 안정되게 유지하는 것을 필요로 한다.</li>
+                                        <li>급성수생생태독성은 보통, 어류에 대한 96시간 LC50(OECD 시험지침 203 또는 이에 상당하는 시험), 갑각류에 대한 48시간 EC50(OECD 시험지침서 202 또는 이에 상당하는 시험) 또는 조류에 대한 72시간 혹은 96시간 ErC50(OECD 시험지침서 201 또는 이에 상당하는 시험)에 의해 결정된다. 이러한 생물 종은 수생생물에 대신하는 것으로 생각되지만, 예를 들면 Lemna 등 그 밖에 생물 종에 관한 데이터도, 시험 방법이 적절한 것이면 또한 고려된다.</li>
+                                        <li>분류 목적에 맞는 만성수생생태독성을 결정하기 위해, OECD 시험지침서 210(어류 초기생장단계 독성시험) 또는 211(물벼룩류 생식능시험)과 201(조류 생장저해 시험)에 따라 생산된 데이터가 인정된다. 그 밖에 국제적으로 타당성이 검정되어 승인된 시험방법도 사용할 수 있다. 무영향농도인 NOECs 또는 이에 상당하는 x% 반응과 관련된 농도인 ECx를 사용한다.</li>
+                                    </ol>
+                                </li>
+                                <li>생물축적성
+                                    <ol class="list-alpha st2">
+                                        <li>실제 물질의 수중 농도는 낮아도, 장기간에 걸쳐 독성영향을 일으킬 수 있는 것이, 수생생물에 대한 생물축적성이다. 생물축적 가능성은 옥탄올/물분배계수를 이용하여 결정되며, 일반적으로 log Kow로 보고된다. 유기물질의 log Kow와 어류에서의 BCF를 측정한 유기물질의 생물농축성과의 관련성은, 많은 과학 문헌에 의해 뒷받침된다.</li>
+                                        <li>한계 값으로서 logKow ≥ 4를 사용하는 것은, 현실적으로 생물농축 가능성이 있는 물질만을 확인하기 위해서이다. log Kow는 단지 실측 BCF의 불완전한 대체 값이라는 점이 인정되므로, BCF 실측값이 항상 우선한다. 어류에서의 BCF &lt; 500 이라고 하는 값은 생물농축성이 낮은 수준이라는 것을 의미한다.</li>
+                                    </ol>
+                                </li>
+                                <li>빠른 분해성
+                                    <ol class="list-alpha st2">
+                                        <li>빠르게 분해되는 물질은 환경으로부터 신속하게 제거된다. 특히 누출이나 사고 등의 사건이 일어난 경우, 이러한 물질에 의한 영향이 일어날 수 있지만, 이것은 국소적이고 단기간이 될 것이다. 환경에서 빠른 분해를 나타내지 않는다는 것은, 수중에서 물질이 시간적, 공간적으로 넓은 범위에서 독성을 발현할 가능성이 있다는 것을 의미한다.</li>
+                                        <li>빠른 분해를 나타내는 하나의 방법으로, 물질이 "이분해성"인지를 결정하도록 고안된 생분해성 스크리닝 시험을 이용하고 있다. 이분해성은 OECD 시험지침서 301(A-F)을 이용하여 매우 쉽게 정의될 수 있다. 이것은 담수계의 시험이므로, 해수 환경에서 보다 적절한 OECD 시험지침서 306을 이용하여 얻을 수 있는 결과 또한 포함된다. 이러한 데이터를 이용할 수 있는 경우에는, 생물화학적산소요구량(BOD, 5일간)/화학적산소요구량(COD) 비가 &gt;0.5는 빠른 분해의 지표라고 간주된다. 이 스크리닝 시험에 통과하는 물질은 수중 환경에서 "빠르게" 생분해할 가능성이 있는 물질이며, 따라서 잔류할 가능성은 적다. 그러나 스크리닝 시험에 통과하지 않았다 하더라도, 반드시 그 물질이 환경에서 빠르게 분해되지 않는 것을 의미하는 것은 아니다. 이 때문에 그 물질이 수생 환경에서 생물적 또는 비생물적으로 28일간에 70% 이상, 실제로 분해된 것을 나타내는 데이터를 이용하는 분류기준이 추가되었다. 따라서 현실적인 환경조건하에서 분해가 입증된다면, "빠른 분해"의 정의에 부합한다.</li>
+                                        <li>많은 분해 데이터는 분해 반감기 형태로 입수되지만, 그 물질이 궁극적인 생분해성, 즉 완전한 무기화되는 경우에만 빠른 분해를 정의하는데 사용될 수 있다. 일차 생분해성이 수생환경 유해성 분류기준을 만족하지 않는다고 입증되지 않는 한, 빠른 분해를 평가하는데 있어, 일반적으로 일차 생분해성은 부적절하다.</li>
+                                        <li>환경에서의 분해는 생물적인 분해 외에도 비생물적(예를 들면, 가수분해)인 분해도 있어, 사용된 판정기준은 이 사실을 반영하고 있다. 가수분해뿐만이 아니라 다른 비생물적인 분해 과정도, 그것이 빠른 분해를 나타내고 있는 경우만, 가수분해도 고려할 수 있다.</li>
+                                        <li>다음의 판정기준을 만족하는 경우, 물질은 환경에서 빠르게 분해된다고 간주된다
+                                            <ol class="list-hangul">
+                                                <li>28일간의 이분해성 시험에서 아래와 같은 분해수준에 도달한 경우
+                                                    <ul class="dot-list">
+                                                        <li>용존 유기탄소에 의한 시험: 70%</li>
+                                                        <li>산소 소비량 또는 이산화탄소 생성량에 의한 시험: 이론적 최고치의 60%
+                                                            이러한 생분해 수준은, 분해 개시(물질의 10%가 분해된 시점) 후의 10일 이내에 도달되어야 한다. 다만, 구조적으로 유사한 성분으로 구성된 복합 다성분 물질인 경우에는, 충분히 입증할 만한 정당한 이유가 있다면, 10-day window 조건을 적용하지 않고, 위의 28일에서의 통과수준을 적용할 수 있다.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>단지 생물화학적산소요구량(BOD) 및 화학적산소요구량(COD) 데이터만 이용할 수 있는 경우에는, BOD5/COD의 비율이 &gt;0.5인 경우 또는</li>
+                                                <li>28일간 이내에 &gt;70% 수준으로 수생환경에서 분해(생물학적 또는 비생물적으로)되는 것을 증명하는 다른 유력한 과학적 증거가 입수되는 경우</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>무기화합물 및 금속
+                                    <ol class="list-alpha st2">
+                                        <li>무기화합물 및 금속에 대해서는, 유기화합물에 적용되는 분해성의 개념은 제한된 의미를 가지거나 또는 전혀 의미가 없다. 이러한 물질은 오히려 보통의 환경 과정에 의해 변환되어 유독한 화학물질의 생물학적 이용성을 증가 또는 감소시킬 수 있다. 이와 같이 생물축적성 데이터도 주의해서 취급한다.</li>
+                                        <li>난용성 무기화합물과 금속은, 생물학적으로 이용 가능한 무기 화학종 고유의 독성 및 이 무기 화학종이 용액에 용해하는 속도와 양에 따라, 수생환경에서 급성독성 또는 만성독성이 있을 수 있다.</li>
+                                    </ol>
+                                </li>
+                                <li>혼합물 중의 일부에 대해서만 가산식을 적용하는 경우, 동일한 생물 종(어류, 물벼룩 또는 조류)과 관계된 각 물질의 독성 값을 이용하여 혼합물 중 해당 부분의 독성을 계산한 다음, 얻어진 계산치 중 가장 높은 독성 값(3가지 중 가장 민감한 생물에서 얻은 값)을 채택하는 것이 바람직하다. 다만, 동일 생물 종에서 각 성분의 독성 데이터를 입수할 수 없는 경우에는, 물질의 분류를 위해 독성 값을 선택하는 것과 같은 방식으로 각 성분의 독성 값을 선택한다. 즉, 독성이 높은 쪽의 값(가장 민감한 시험 생물 종으로부터 얻을 수 있는 값)을 선택한다.</li>
+                                <li>혼합물의 분류가 1종류 이상의 방법으로 행해지는 경우, 보다 보수적인 결과가 되는 방법을 채용한다.</li>
+                            </ol>
+                        </div>
+                        
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

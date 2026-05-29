@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+</head>
+<body>
+
+
+
+<div class="popup-wrap" id="tempPopId">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup">
+      <div class="pop-header">
+        <h2 class="title">물질의 상태</h2>
+        <div class="right">
+          <button type="button" class="btn-close"><i class="ico-close"></i></button>
+        </div>
+      </div>
+      <div class="pop-body">
+          <!-- 탭 -->
+          <div class="tab-type1">
+              <ul>
+                  <li class="on"><a href="javascript:void(0);" data-tab-id="tab-summary">요약정보</a></li>
+                  <li><a href="javascript:void(0);" data-tab-id="tab-detail">물질의 상태 세부정보</a></li>
+              </ul>
+          </div>   
+
+          <!-- 요약정보 -->
+          <div class="tab-content" id="tab-summary">
+
+            <div class="data-default">
+              <div class="scroll">
+                <table>
+                  <caption class="sr-only">시험항목, 출처(저자, 제목, URL), 특성값, 시험 조건, 시험 지침, Reference DB 확인결과</caption>
+                  <colgroup>
+                    <col style="width:110px;">
+                    <col style="width:130px;">
+                    <col style="width:160px;">
+                    <col style="width:90px;">
+                    <col style="width:100px;">
+                    <col style="width:90px;">
+                    <col style="width:90px;">
+                    <col style="width:160px;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col" rowspan="2" class="fixed-x">시험항목</th>
+                      <th scope="col" colspan="3">출처</th>
+                      <th scope="col" rowspan="2">특성값</th>
+                      <th scope="col" rowspan="2">시험<br>조건</th>
+                      <th scope="col" rowspan="2">시험<br>지침</th>
+                      <th scope="col" rowspan="2">Reference<br>DB 확인결과</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">저자</th>
+                      <th scope="col">제목</th>
+                      <th scope="col">URL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fixed-x">물질의 상태</td>
+                      <td>US Chemview</td>
+                      <td>Supporting Doc...</td>
+                      <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                      <td>liquid</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><a href="javascript:void(0);" class="link-txt-base">US_CHEMVIEW</a></td>
+                    </tr>
+                    <tr>
+                      <td class="fixed-x">물질의 상태</td>
+                      <td>US Chemview</td>
+                      <td>Supporting Doc...</td>
+                      <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                      <td>liquid</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><a href="javascript:void(0);" class="link-txt-base">US_CHEMVIEW</a></td>
+                    </tr>
+                    <tr>
+                      <td class="fixed-x">물질의 상태</td>
+                      <td>US Chemview</td>
+                      <td>Supporting Doc...</td>
+                      <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                      <td>liquid</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><a href="javascript:void(0);" class="link-txt-base">US_CHEMVIEW</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+  
+          <!-- 물질의 상태 세부정보 -->
+          <div class="tab-content" id="tab-detail" style="display: none;">
+            <div class="detail-search-wrap">
+              <div class="ds-header">
+                  <button type="button" class="ds-toggle on" aria-expanded="true">
+                      <span class="ds-title">상세검색</span>
+                  </button>
+              </div>
+              <div class="ds-body">
+                <div class="input-choice-wrap st-line">
+                    <div class="input-choice">
+                        <input id="ds-col-all" type="checkbox" name="ds-col">
+                        <label for="ds-col-all">전체</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-srcName" type="checkbox" name="ds-col">
+                        <label for="ds-col-srcName">출처명</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-url" type="checkbox" name="ds-col">
+                        <label for="ds-col-url">URL</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-memo" type="checkbox" name="ds-col">
+                        <label for="ds-col-memo">비고</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-pubDate" type="checkbox" name="ds-col">
+                        <label for="ds-col-pubDate">출처발행일자</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-reliability" type="checkbox" name="ds-col">
+                        <label for="ds-col-reliability">신뢰도</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-value" type="checkbox" name="ds-col">
+                        <label for="ds-col-value">특성값</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-unit" type="checkbox" name="ds-col">
+                        <label for="ds-col-unit">단위</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-cond" type="checkbox" name="ds-col">
+                        <label for="ds-col-cond">시험조건</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-substance" type="checkbox" name="ds-col">
+                        <label for="ds-col-substance">시험물질</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-derivation" type="checkbox" name="ds-col">
+                        <label for="ds-col-derivation">결과도출방법</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-guide" type="checkbox" name="ds-col">
+                        <label for="ds-col-guide">시험지침</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-etcMethod" type="checkbox" name="ds-col">
+                        <label for="ds-col-etcMethod">기타 시험방법</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-col-etcInfo" type="checkbox" name="ds-col">
+                        <label for="ds-col-etcInfo">기타 정보</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-merck" type="checkbox" name="ds-db">
+                        <label for="ds-db-merck">Merck Index</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-crc" type="checkbox" name="ds-db">
+                        <label for="ds-db-crc">CRC Handbook</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-eubiocidal" type="checkbox" name="ds-db">
+                        <label for="ds-db-eubiocidal">EU Biocidal Assessment Report</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-iarc" type="checkbox" name="ds-db">
+                        <label for="ds-db-iarc">IARC Monograph</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-ntp" type="checkbox" name="ds-db">
+                        <label for="ds-db-ntp">NTP</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-usred" type="checkbox" name="ds-db">
+                        <label for="ds-db-usred">미국 RED</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-nite" type="checkbox" name="ds-db">
+                        <label for="ds-db-nite">일본 NITE 유해성 위해성 평가보고서</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-atsdr" type="checkbox" name="ds-db">
+                        <label for="ds-db-atsdr">ATSDR</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-aicis" type="checkbox" name="ds-db">
+                        <label for="ds-db-aicis">AICIS</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-oecdsids" type="checkbox" name="ds-db">
+                        <label for="ds-db-oecdsids">OECD SIDS</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-iris" type="checkbox" name="ds-db">
+                        <label for="ds-db-iris">IRIS</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-hsdb" type="checkbox" name="ds-db">
+                        <label for="ds-db-hsdb">HSDB</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-ipcs" type="checkbox" name="ds-db">
+                        <label for="ds-db-ipcs">IPCS</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-efsa" type="checkbox" name="ds-db">
+                        <label for="ds-db-efsa">EFSA</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-casac" type="checkbox" name="ds-db">
+                        <label for="ds-db-casac">캐나다 SAC</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-cacesar" type="checkbox" name="ds-db">
+                        <label for="ds-db-cacesar">캐나다 CESAR</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-envichem" type="checkbox" name="ds-db">
+                        <label for="ds-db-envichem">핀란드 EnviChem</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-corap" type="checkbox" name="ds-db">
+                        <label for="ds-db-corap">ECHA CoRAP</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-clh" type="checkbox" name="ds-db">
+                        <label for="ds-db-clh">ECHA CLH</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-uschemview" type="checkbox" name="ds-db">
+                        <label for="ds-db-uschemview">US ChemView</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-euhera" type="checkbox" name="ds-db">
+                        <label for="ds-db-euhera">EU HERA</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-usdashboard" type="checkbox" name="ds-db">
+                        <label for="ds-db-usdashboard">US DASHBOARD</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-db-googlescholar" type="checkbox" name="ds-db">
+                        <label for="ds-db-googlescholar">GOOGLE SCHOLAR</label>
+                    </div>
+                    <div class="input-choice">
+                        <input id="ds-opt-free" type="checkbox" name="ds-opt">
+                        <label for="ds-opt-free">무료사용여부</label>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="title-data-wrap">
+              <div class="right">
+                  <button class="btn-xsm btn-bg-blue-line">설정</button>
+              </div>    
+            </div>
+            <div class="data-default">
+              <div class="scroll">
+                <table>
+                  <caption class="sr-only">시험항목, 출처, 출처발행일자, 비고, 종말점, 부등호, 값/결과, 단위</caption>
+                  <colgroup>
+                    <col style="width:110px;">
+                    <col style="width:200px;">
+                    <col style="width:90px;">
+                    <col style="width:130px;">
+                    <col style="width:130px;">
+                    <col style="width:100px;">
+                    <col style="width:90px;">
+                    <col style="width:80px;">
+                    <col style="width:100px;">
+                    <col style="width:80px;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col" rowspan="2" class="fixed-x">시험항목</th>
+                      <th scope="col" colspan="3">출처</th>
+                      <th scope="col" rowspan="2">출처발행일자</th>
+                      <th scope="col" rowspan="2">비고</th>
+                      <th scope="col" rowspan="2">종말점</th>
+                      <th scope="col" rowspan="2">부등호</th>
+                      <th scope="col" rowspan="2">값/결과</th>
+                      <th scope="col" rowspan="2">단위</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">출처명</th>
+                      <th scope="col">URL</th>
+                      <th scope="col">비고</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fixed-x">물질의 상태</td>
+                      <td class="align-l">M.J.O'Neil(Editor-in-Cheif.</td>
+                      <td><button type="button" class="btn-xsm btn-white"><span>URL</span></button></td>
+                      <td>원문확보 안됨</td>
+                      <td>2008-09-01</td>
+                      <td>liquid</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  popOpen('#tempPopId');
+</script>  
+
+
+</body>
+</html>

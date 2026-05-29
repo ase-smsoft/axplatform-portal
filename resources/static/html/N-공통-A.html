@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="main-container" id="content">
+            <div class="main-contents">
+                <!-- 메인 비주얼 -->
+                <section class="main-visual">
+                    <div class="main-visual-inner wrapper">
+                        <!-- 좌측: 검색 영역 -->
+                        <div class="main-visual-left">
+                            <p class="visual-desc">화학물질, 화학제품으로부터 국민의 건강 그리고 환경을 보호하겠습니다.</p>
+                            <h2 class="visual-title"><strong>화학물질정보</strong> 공동활용 플랫폼</h2>
+                            <form class="main-search" onsubmit="return false;">
+                                <input type="text" class="main-search-input mo-hide" placeholder="어떤 화학물질 관련 정보를 찾으시나요?" />
+                                <textarea class="main-search-input pc-hide" placeholder="어떤 화학물질 관련 정보를 찾으시나요?"></textarea>
+                                <button type="submit" class="btn-main-search" aria-label="검색"></button>
+                            </form>
+                            <a href="#" class="link-detail-search"><em>통합 상세검색 서비스</em>를 사용할게요 <span aria-hidden="true">→</span></a>
+                        </div>
+
+                        <!-- 우측: 이미지 슬라이드 -->
+                        <div class="main-visual-right">
+                            <div class="visual-slider" id="visualSlider">
+                                <ul class="slider-list">
+                                    <li class="slider-item is-active">
+                                        <a href="javascript:void(0);"><img src="../images/temp/@banner-mainvisual.jpg" alt=""></a>
+                                    </li>
+                                    <li class="slider-item">
+                                        <a href="javascript:void(0);"><img src="../images/temp/@banner-mainvisual2.jpg" alt=""></a>
+                                    </li>
+                                    <li class="slider-item">
+                                        <a href="javascript:void(0);"><img src="../images/temp/@banner-mainvisual.jpg" alt=""></a>
+                                    </li>
+                                    <li class="slider-item">
+                                        <a href="javascript:void(0);"><img src="../images/temp/@banner-mainvisual2.jpg" alt=""></a>
+                                    </li>
+                                    <li class="slider-item">
+                                        <a href="javascript:void(0);"><img src="../images/temp/@banner-mainvisual.jpg" alt=""></a>
+                                    </li>
+                                    <li class="slider-item">
+                                        <a href="javascript:void(0);"><img src="../images/temp/@banner-mainvisual2.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                                <div class="slider-controls">
+                                    <button type="button" class="btn-slide-prev" aria-label="이전 슬라이드"></button>
+                                    <span class="slider-paging">
+                                        <em class="current">1</em>
+                                        <span class="divider">/</span>
+                                        <span class="total"></span>
+                                    </span>
+                                    <button type="button" class="btn-slide-next" aria-label="다음 슬라이드"></button>
+                                    <button type="button" class="btn-slide-toggle is-playing" aria-label="슬라이드 정지"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 화학 3법 서비스 + 자주찾는 메뉴 -->
+                <section class="main-section">
+                    <div class="wrapper main-grid main-grid--laws">
+                        <div class="laws-area">
+                            <div class="title-main-section-wrap">
+                                <h2 class="title-main-section">화학 3법 서비스</h2>
+                            </div>
+                            <ul class="laws-list">
+                                <li class="law-card law-card--blue">
+                                    <div class="law-icon"><img src="../images/common/law-flask.svg" alt=""></div>
+                                    <span class="law-sub">화학물질관리법</span>
+                                    <strong class="law-name">화관법</strong>
+                                    <p class="law-desc">유해화학물질의 체계적 관리 및 화학사고 예방·대응을 통해 국민의 건강과 환경을 보호합니다.</p>
+                                </li>
+                                <li class="law-card law-card--green">
+                                    <div class="law-icon"><img src="../images/common/law-microscope.svg" alt=""></div>
+                                    <span class="law-sub">화학물질 등록 및 평가</span>
+                                    <strong class="law-name">화평법</strong>
+                                    <p class="law-desc">화학물질 등록 및 유해성·위해성 평가를 통해 화학물질 정보를 사전에 파악하고 안전하게 관리합니다.</p>
+                                </li>
+                                <li class="law-card law-card--purple">
+                                    <div class="law-icon"><img src="../images/common/law-spray.svg" alt=""></div>
+                                    <span class="law-sub">생활화학제품 및 살생물제의 안전관리</span>
+                                    <strong class="law-name">제품법</strong>
+                                    <p class="law-desc">생활화학제품 및 살생물제의 안전 기준 준수와 승인 절차를 통해 소비자의 건강과 안전을 보호합니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="quick-area">
+                            <div class="title-main-section-wrap">
+                                <h2 class="title-main-section">자주찾는 메뉴</h2>
+                            </div>
+                            <ul class="quick-list">
+                                <li><a href="#"><svg class="ico-quick-intro" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-quick-intro"></use></svg><span class="quick-name">플랫폼 소개</span></a></li>
+                                <li><a href="#"><svg class="ico-quick-guide" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-quick-guide"></use></svg><span class="quick-name">시스템 이용안내</span></a></li>
+                                <li><a href="#"><svg class="ico-quick-call" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-quick-call"></use></svg><span class="quick-name">상담 · 신고</span></a></li>
+                                <li><a href="#"><svg class="ico-quick-faq" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-quick-faq"></use></svg><span class="quick-name">FAQ · 기타</span></a></li>
+                                <li><a href="#"><svg class="ico-quick-contact" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-quick-contact"></use></svg><span class="quick-name">제도별 담당자 연락처</span></a></li>
+                                <li><a href="#"><svg class="ico-quick-online" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-quick-online"></use></svg><span class="quick-name">온라인 상담</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 주요 민원 서비스 -->
+                <section class="main-section main-section--gray">
+                    <div class="wrapper">
+                        <div class="title-main-section-wrap">
+                            <h2 class="title-main-section">주요 민원 서비스</h2>
+                        </div>
+                        <ul class="civil-list">
+                            <li><a href="javascript:void(0);"><span class="civil-ico"><img src="../images/common/civil-doc-info.svg" alt=""></span><span class="civil-name">사전신고</span></a></li>
+                            <li><a href="javascript:void(0);"><span class="civil-ico"><img src="../images/common/civil-doc-exempt.svg" alt=""></span><span class="civil-name">등록 등 면제</span></a></li>
+                            <li><a href="javascript:void(0);"><span class="civil-ico"><img src="../images/common/civil-flask-info.svg" alt=""></span><span class="civil-name">화학물질 신고</span></a></li>
+                            <li><a href="javascript:void(0);"><span class="civil-ico"><img src="../images/common/civil-flask-add.svg" alt=""></span><span class="civil-name">화학물질 등록</span></a></li>
+                            <li><a href="javascript:void(0);"><span class="civil-ico"><img src="../images/common/civil-group.svg" alt=""></span><span class="civil-name">공동등록 협의체</span></a></li>
+                            <li><a href="javascript:void(0);"><span class="civil-ico"><img src="../images/common/civil-flask-priority.svg" alt=""></span><span class="civil-name">중점관리물질 신고</span></a></li>
+                            <li><a href="javascript:void(0);"><span class="civil-ico"><img src="../images/common/civil-user-check.svg" alt=""></span><span class="civil-name">선임/해임</span></a></li>
+                            <li><a href="javascript:void(0);"><span class="civil-ico"><img src="../images/common/civil-doc-spec.svg" alt=""></span><span class="civil-name">화학물질 확인명세서</span></a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 정책홍보 + 화학물질/제품 정보 조회 -->
+                <section class="main-section">
+                    <div class="wrapper main-grid main-grid--promo">
+                        <div class="promo-area">
+                            <div class="main-head">
+                                <div class="title-main-section-wrap">
+                                    <h2 class="title-main-section">정책홍보</h2>
+                                </div>
+                                <a href="#" class="btn-more">더보기 <svg class="ico-plus" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-plus"></use></svg></a>
+                            </div>
+                            <div class="main-tabs">
+                                <ul>
+                                    <li><button type="button" data-tab-id="promo-all" class="tab on">전체</button></li>
+                                    <li><button type="button" data-tab-id="promo-video" class="tab">영상</button></li>
+                                    <li><button type="button" data-tab-id="promo-news" class="tab">카드뉴스</button></li>
+                                    <li><button type="button" data-tab-id="promo-publication" class="tab">간행물</button></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="promo-all" style="display: block;">
+                                <div class="promo-slider">
+                                    <div class="slider-arrows">
+                                        <button type="button" class="arrow-prev" aria-label="이전"></button>
+                                        <button type="button" class="arrow-next" aria-label="다음"></button>
+                                    </div>
+                                    <div class="promo-track-wrap">
+                                        <ul class="promo-list">
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                        <span class="promo-cat">영상뉴스</span>
+                                                        <p class="promo-desc">우리 집 안전습관 생활화학제품 오사용 Zero | EP3. 생활화학제품  우리 집 안전습관 생활화학제품 오사용 Zero | EP3. 생활화학제품 </p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">카드뉴스</span>
+                                                    <p class="promo-desc">[KEITI 생활화학제품안전센터] 알기쉬운 쓸모있는 생활화학제품</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">카드뉴스</span>
+                                                    <p class="promo-desc">살생물제품관리전환</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">영상뉴스</span>
+                                                    <p class="promo-desc">우리 집 안전습관 생활화학제품 오사용 Zero | EP3. 생활화학제품  우리 집 안전습관 생활화학제품 오사용 Zero | EP3. 생활화학제품 </p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">카드뉴스</span>
+                                                    <p class="promo-desc">[KEITI 생활화학제품안전센터] 알기쉬운 쓸모있는 생활화학제품</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">카드뉴스</span>
+                                                    <p class="promo-desc">살생물제품관리전환</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-content" id="promo-video" style="display: none;">
+                                <div class="promo-slider">
+                                    <div class="slider-arrows">
+                                        <button type="button" class="arrow-prev" aria-label="이전"></button>
+                                        <button type="button" class="arrow-next" aria-label="다음"></button>
+                                    </div>
+                                    <div class="promo-track-wrap">
+                                        <ul class="promo-list">
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">영상뉴스</span>
+                                                    <p class="promo-desc">우리 집 안전습관 생활화학제품 오사용 Zero | EP1.</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">영상뉴스</span>
+                                                    <p class="promo-desc">우리 집 안전습관 생활화학제품 오사용 Zero | EP2.</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">영상뉴스</span>
+                                                    <p class="promo-desc">우리 집 안전습관 생활화학제품 오사용 Zero | EP3.</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">영상뉴스</span>
+                                                    <p class="promo-desc">우리 집 안전습관 생활화학제품 오사용 Zero | EP1.</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">영상뉴스</span>
+                                                    <p class="promo-desc">우리 집 안전습관 생활화학제품 오사용 Zero | EP1.</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-content" id="promo-news" style="display: none;">
+                                <div class="promo-slider">
+                                    <div class="slider-arrows">
+                                        <button type="button" class="arrow-prev" aria-label="이전"></button>
+                                        <button type="button" class="arrow-next" aria-label="다음"></button>
+                                    </div>
+                                    <div class="promo-track-wrap">
+                                        <ul class="promo-list">
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">카드뉴스</span>
+                                                    <p class="promo-desc">[KEITI] 알기쉬운 쓸모있는 생활화학제품</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">카드뉴스</span>
+                                                    <p class="promo-desc">살생물제품관리전환</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-content" id="promo-publication" style="display: none;">
+                                <div class="promo-slider">
+                                    <div class="slider-arrows">
+                                        <button type="button" class="arrow-prev" aria-label="이전"></button>
+                                        <button type="button" class="arrow-next" aria-label="다음"></button>
+                                    </div>
+                                    <div class="promo-track-wrap">
+                                        <ul class="promo-list">
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">간행물</span>
+                                                    <p class="promo-desc">2026년 화학물질 안전관리 백서</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">간행물</span>
+                                                    <p class="promo-desc">생활화학제품 안전기준 가이드북</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">간행물</span>
+                                                    <p class="promo-desc">화학물질 등록 매뉴얼</p>
+                                                </a>
+                                            </li>
+                                            <li class="promo-card">
+                                                <a href="javascript:void(0);">
+                                                    <div class="promo-thumb"><img src="../images/temp/@banner-promo.jpg" alt=""></div>
+                                                    <span class="promo-cat">간행물</span>
+                                                    <p class="promo-desc">화학물질 등록 매뉴얼</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-area">
+                            <div class="title-main-section-wrap">
+                                <h2 class="title-main-section">화학물질/제품 정보 조회</h2>
+                            </div>
+                            <div class="slider-arrows">
+                                <button type="button" class="arrow-prev" aria-label="이전"></button>
+                                <button type="button" class="arrow-next" aria-label="다음"></button>
+                            </div>
+                            <div class="info-list-wrap">
+                                <ul class="info-list">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="info-ico">
+                                                <svg class="ico-info-safecheck" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-safecheck"></use></svg>
+                                            </span>
+                                            <span class="info-name">안전확인대상 생활화학제품</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="info-ico">
+                                                <svg class="ico-info-violation" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-violation"></use></svg>
+                                            </span>
+                                            <span class="info-name">생활화학제품 위반정보</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="info-ico">
+                                                <svg class="ico-info-overseas" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-overseas"></use></svg>
+                                            </span>
+                                            <span class="info-name">해외직구 위해제품</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="info-ico">
+                                                <svg class="ico-info-ingredients" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-ingredients"></use></svg>
+                                            </span>
+                                            <span class="info-name">전성분 공개 제품 조회</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="info-ico">
+                                                <svg class="ico-info-voluntary" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-voluntary"></use></svg>
+                                            </span>
+                                            <span class="info-name">자율안전정보 제품 조회</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="info-ico">
+                                                <svg class="ico-info-reduction" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-reduction"></use></svg>
+                                            </span>
+                                            <span class="info-name">화학물질저감 우수제품 조회</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="info-ico">
+                                                <svg class="ico-info-accident" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-accident"></use></svg>
+                                            </span>
+                                            <span class="info-name">화학물질 사고·사례</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 지원사업 + 공지사항 -->
+                <section class="main-section">
+                    <div class="wrapper main-grid main-grid--board">
+                        <div class="board-area">
+                            <div class="main-head">
+                                <div class="title-main-section-wrap">
+                                    <h2 class="title-main-section">지원사업</h2>
+                                </div>
+                                <a href="#" class="btn-more">더보기 <svg class="ico-plus" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-plus"></use></svg></a>
+                            </div>
+                            <div class="board-list-box">
+                                <div class="main-tabs">
+                                    <button type="button" class="tab is-active">전체</button>
+                                    <button type="button" class="tab">지원사업</button>
+                                    <button type="button" class="tab">교육</button>
+                                </div>
+                                <ul class="board-list">
+                                    <li><span class="board-badge bg-gray">지원사업</span><a href="#" class="board-title">등록 전과정 컨설팅 지원</a><span class="board-date">2025-10-17</span></li>
+                                    <li><span class="board-badge bg-gray">지원사업</span><a href="#" class="board-title">2026년 신규화학물질 신고 무상 컨설팅 지원</a><span class="board-date">2025-10-17</span></li>
+                                    <li><span class="board-badge bg-blue">교육</span><a href="#" class="board-title">위해성자료 작성지원그램(K-Chesar) 동영상 교육자 프로그램(K-Chesar) 동영상 교육자료…</a>
+                                        <svg class="ico-note" width="24" height="24" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-note"></use></svg>
+                                        <span class="board-date">2025-10-17</span></li>
+                                    <li><span class="board-badge bg-blue">교육</span><a href="#" class="board-title">화평법 등록이행 교육 (위해성자료 작성 전문과정) 교육…</a><span class="board-date">2025-10-17</span></li>
+                                    <li><span class="board-badge bg-blue">교육</span><a href="#" class="board-title">취약시설 특별 안전교육 지원사업</a><span class="board-date">2025-10-17</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="board-area">
+                            <div class="main-head">
+                                <div class="title-main-section-wrap">
+                                    <h2 class="title-main-section">공지사항</h2>
+                                </div>
+                                <a href="#" class="btn-more">더보기 <svg class="ico-plus" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-plus"></use></svg></a>
+                            </div>
+                            <div class="board-list-box">
+                                <div class="main-tabs">
+                                    <button type="button" class="tab is-active">전체</button>
+                                    <button type="button" class="tab">kreach</button>
+                                    <button type="button" class="tab">산업계도움센터</button>
+                                    <button type="button" class="tab">화학물질종합정보시스템</button>
+                                    <button type="button" class="tab">k-chesar</button>
+                                    <button type="button" class="tab">초록누리</button>
+                                </div>
+                                <ul class="board-list">
+                                    <li><span class="board-badge bg-blue">kreach</span><a href="#" class="board-title">2026-02-20 오후 시스템 점검 안내</a><span class="board-date">2025-10-17</span></li>
+                                    <li><span class="board-badge bg-pink">산업계</span><a href="#" class="board-title">[영문] 안전확인대상생활화학제품 지정 및 안전·표시기준 영…</a><span class="board-date">2025-10-17</span></li>
+                                    <li><span class="board-badge bg-orange">화학물질</span><a href="#" class="board-title">국가정보자원관리원 화재 관련 서비스</a><span class="board-date">2025-10-17</span></li>
+                                    <li><span class="board-badge bg-purple">k-chesar</span><a href="#" class="board-title">2026년도 안전확인신고제도</a><span class="board-date">2025-10-17</span></li>
+                                    <li><span class="board-badge bg-green">초록누리</span><a href="#" class="board-title">생활화학제품 등의 표시·광고에 관한 규정 시행 안내</a><span class="board-date">2025-10-17</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+    <script>
+    // 메인 비주얼 슬라이더
+    (function(){
+        var $slider = $('#visualSlider');
+        if(!$slider.length) return;
+
+        var $items = $slider.find('.slider-item');
+        var total = $items.length;
+        var current = 0;
+        var timer = null;
+        var interval = 4500;
+        var playing = true;
+
+        $slider.find('.total').text(total);
+
+        function go(idx){
+            if(idx < 0) idx = total - 1;
+            if(idx >= total) idx = 0;
+            $items.removeClass('is-active').eq(idx).addClass('is-active');
+            $slider.find('.current').text(idx + 1);
+            current = idx;
+        }
+        function play(){
+            stop();
+            timer = setInterval(function(){ go(current + 1); }, interval);
+            playing = true;
+            $slider.find('.btn-slide-toggle').addClass('is-playing').attr('aria-label', '슬라이드 정지');
+        }
+        function stop(){
+            if(timer){ clearInterval(timer); timer = null; }
+            playing = false;
+            $slider.find('.btn-slide-toggle').removeClass('is-playing').attr('aria-label', '슬라이드 재생');
+        }
+
+        $slider.on('click', '.btn-slide-prev', function(){ go(current - 1); if(playing) play(); });
+        $slider.on('click', '.btn-slide-next', function(){ go(current + 1); if(playing) play(); });
+        $slider.on('click', '.btn-slide-toggle', function(){
+            if(playing) stop();
+            else play();
+        });
+        $slider.on('mouseenter', function(){ if(playing) clearInterval(timer); });
+        $slider.on('mouseleave', function(){ if(playing) play(); });
+
+        go(0);
+        play();
+    })();
+
+    // 정책홍보 — 좌/우 화살표 무한루프 슬라이더 (수동 구현)
+    (function(){
+        var BREAKPOINT = 1025;
+        var GAP = 16;
+        var DESKTOP_PER_VIEW = 3;
+        var AUTOPLAY_DELAY = 4500;
+
+        function initPromoSlider($slider){
+            var $list = $slider.find('.promo-list');
+            var $origCards = $list.children('.promo-card');
+            var n = $origCards.length;
+            if(n < 2) return; // 최소 2장 이상이어야 슬라이드 의미 있음
+
+            // 좌/우에 perView 만큼 복제 — 끝-처음 사이를 자연스럽게 잇기 위함
+            var cloneCount = Math.min(DESKTOP_PER_VIEW, n);
+            var $heads = $origCards.slice(-cloneCount).clone(true).addClass('is-clone').attr('aria-hidden', 'true');
+            var $tails = $origCards.slice(0, cloneCount).clone(true).addClass('is-clone').attr('aria-hidden', 'true');
+            $list.prepend($heads);
+            $list.append($tails);
+
+            var current = cloneCount; // 첫 실제 카드를 시작 위치로
+            var timer = null;
+
+            function isDesktop(){ return window.innerWidth >= BREAKPOINT; }
+            function perView(){ return isDesktop() ? DESKTOP_PER_VIEW : 1; }
+            function itemStep(){
+                var w = $origCards.first().outerWidth();
+                return w ? w + GAP : 0;
+            }
+
+            function setTransform(animate){
+                if(animate === false){ $list.css('transition', 'none'); }
+                $list.css('transform', 'translateX(' + (-current * itemStep()) + 'px)');
+                if(animate === false){
+                    $list[0].offsetHeight; // 강제 리플로우
+                    $list.css('transition', '');
+                }
+            }
+
+            function isActive(){ return n > perView(); }
+
+            function snapIfClone(){
+                if(current >= cloneCount + n){
+                    current -= n;
+                    setTransform(false);
+                } else if(current < cloneCount){
+                    current += n;
+                    setTransform(false);
+                }
+            }
+
+            function go(dir){
+                if(!isActive()) return; // 슬라이드 비활성 모드에서는 무시
+                snapIfClone(); // 빠른 연타로 clone 영역에 머물러 있을 때 안전망
+                current += dir;
+                setTransform(true);
+                if(timer) start();
+            }
+
+            function start(){
+                stop();
+                if(isActive()){
+                    timer = setInterval(function(){ go(1); }, AUTOPLAY_DELAY);
+                }
+            }
+            function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+
+            function applyMode(){
+                if(isActive()){
+                    if($slider.hasClass('is-static')){
+                        $slider.removeClass('is-static');
+                        current = cloneCount;
+                        setTransform(false);
+                    }
+                } else {
+                    stop();
+                    if(!$slider.hasClass('is-static')){
+                        $slider.addClass('is-static');
+                    }
+                }
+            }
+
+            $list.on('transitionend', function(e){
+                if(e.target !== $list[0]) return;
+                if(e.propertyName !== 'transform') return;
+                snapIfClone(); // 트랜지션 종료 시 clone 영역이면 실제 영역으로 무음 점프
+            });
+
+            $slider.find('.arrow-prev').on('click', function(e){ e.preventDefault(); go(-1); });
+            $slider.find('.arrow-next').on('click', function(e){ e.preventDefault(); go(1); });
+            $slider.on('mouseenter', stop).on('mouseleave', function(){ if(isActive()) start(); });
+
+            // 모바일 터치 스와이프 — 좌/우 방향 감지하여 슬라이드 이동
+            (function(){
+                var SWIPE_THRESHOLD = 40;
+                var startX = 0, startY = 0, active = false;
+                var trackEl = $list[0];
+                trackEl.addEventListener('touchstart', function(e){
+                    if(!isActive()) return;
+                    var t = e.touches[0];
+                    startX = t.clientX;
+                    startY = t.clientY;
+                    active = true;
+                    stop();
+                }, { passive: true });
+                trackEl.addEventListener('touchend', function(e){
+                    if(!active) return;
+                    active = false;
+                    var t = e.changedTouches[0];
+                    var dx = t.clientX - startX;
+                    var dy = t.clientY - startY;
+                    if(Math.abs(dx) >= SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)){
+                        go(dx < 0 ? 1 : -1);
+                    }
+                    if(isActive()) start();
+                }, { passive: true });
+                trackEl.addEventListener('touchcancel', function(){
+                    active = false;
+                    if(isActive()) start();
+                }, { passive: true });
+            })();
+
+            $slider.data('promoSlider', {
+                update: function(){
+                    applyMode();
+                    if(isActive()){
+                        setTransform(false);
+                        if(!timer && $slider.closest('.tab-content').css('display') !== 'none'){ start(); }
+                    }
+                },
+                start: function(){ if(isActive()) start(); },
+                stop: stop,
+                applyMode: applyMode
+            });
+
+            applyMode();
+            if(isActive()) setTransform(false);
+            if(isActive() && $slider.closest('.tab-content').css('display') !== 'none'){ start(); }
+        }
+
+        $('.promo-area').each(function(){
+            var $area = $(this);
+            $area.find('.promo-slider').each(function(){ initPromoSlider($(this)); });
+
+            $area.on('click', '.main-tabs .tab', function(){
+                var $btn = $(this);
+                var targetId = $btn.attr('data-tab-id');
+                if(!targetId) return;
+                $area.find('.main-tabs .tab').removeClass('on');
+                $btn.addClass('on');
+                $area.find('.tab-content').hide();
+                var $visible = $area.find('#' + targetId).show();
+
+                $visible.find('.promo-slider').each(function(){
+                    var d = $(this).data('promoSlider');
+                    if(d){ d.update(); d.start(); }
+                });
+                $area.find('.tab-content:not(:visible) .promo-slider').each(function(){
+                    var d = $(this).data('promoSlider');
+                    if(d){ d.stop(); }
+                });
+            });
+        });
+
+        $(window).on('resize.promoSlider', function(){
+            $('.promo-slider').each(function(){
+                var d = $(this).data('promoSlider');
+                if(d){ d.update(); }
+            });
+        });
+    })();
+
+    // 화학물질/제품 정보 조회 — 우측 상단 화살표로 세로 슬라이드
+    (function(){
+        var BREAKPOINT = 1025;
+        var PER_PAGE = 4;
+        var GAP = 8; // .info-list gap (style.css)
+
+        $('.info-area').each(function(){
+            var $area = $(this);
+            var $list = $area.find('.info-list');
+            var $items = $list.children('li');
+            if(!$items.length) return;
+
+            var $prev = $area.find('.slider-arrows .arrow-prev');
+            var $next = $area.find('.slider-arrows .arrow-next');
+            var current = 0;
+
+            function isDesktop(){ return window.innerWidth >= BREAKPOINT; }
+            function maxIndex(){ return Math.max(0, $items.length - PER_PAGE); }
+            function itemStep(){ return $items.first().outerHeight() + GAP; }
+
+            function update(animate){
+                var maxIdx = maxIndex();
+                if(current < 0) current = 0;
+                if(current > maxIdx) current = maxIdx;
+
+                if(animate === false){
+                    $list.css('transition', 'none');
+                    $list[0].offsetHeight;
+                    $list.css('transform', 'translateY(' + (-current * itemStep()) + 'px)');
+                    $list[0].offsetHeight;
+                    $list.css('transition', '');
+                } else {
+                    $list.css('transform', 'translateY(' + (-current * itemStep()) + 'px)');
+                }
+
+                var canSlide = isDesktop() && $items.length > PER_PAGE;
+                $prev.prop('disabled', !canSlide || current === 0);
+                $next.prop('disabled', !canSlide || current >= maxIdx);
+            }
+
+            $prev.on('click', function(e){ e.preventDefault(); current -= PER_PAGE; update(); });
+            $next.on('click', function(e){ e.preventDefault(); current += PER_PAGE; update(); });
+
+            $(window).on('resize.infoSlider', function(){
+                if(!isDesktop()){ current = 0; }
+                update(false);
+            });
+
+            update(false);
+        });
+    })();
+    </script>
+
+    <!-- 공동활용플랫폼 AI 챗봇 패널 -->
+    <aside class="chatbot-panel" id="chatbotPanel" aria-label="공동활용플랫폼 AI 챗봇" hidden>
+        <div class="chatbot-header">
+            <h2 class="chatbot-logo">
+                <img src="../images/common/logo.svg" alt="기후에너지환경부 화학물질정보 공동활용 플랫폼">
+            </h2>
+            <div class="chatbot-tools">
+                <button type="button" class="chatbot-icon-btn" data-action="resize" aria-label="크기 조절">
+                    <svg class="ico-view-mode" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-view-mode"></use></svg>
+                </button>
+                <button type="button" class="chatbot-icon-btn" data-action="help" aria-label="도움말">
+                    <svg class="ico-help" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-help"></use></svg>
+                </button>
+                <button type="button" class="chatbot-icon-btn chatbot-close" data-action="close" aria-label="챗봇 닫기">
+                    <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="chatbot-body">
+            <article class="chatbot-msg chatbot-msg--bot">
+                <div class="chatbot-msg-head">
+                    <span class="chatbot-avatar"></span>
+                    <strong class="chatbot-name">공동활용플랫폼 AI 챗봇</strong>
+                </div>
+                <div class="chatbot-bubble">
+                    <p class="chatbot-text">
+                        안녕하세요.<br>
+                        저는 공동활용플랫폼 AI 챗봇 입니다.<br>
+                        화학제품 등록, 안전관리 및 신고, 관련 법규 안내 등 궁금하신 내용을 빠르게 찾아드릴게요.
+                    </p>
+                    <ul class="chatbot-dash-list">
+                        <li>AI 챗봇 특성상 부정확한 정보를 포함할 수 있습니다.</li>
+                        <li>중요한 사항은 반드시 공지사항이나 담당자를 통해 확인해주세요.</li>
+                    </ul>
+                    <div class="chatbot-chips">
+                        <button type="button" class="chatbot-chip">온라인 모니터링</button>
+                        <button type="button" class="chatbot-chip">민원2</button>
+                        <button type="button" class="chatbot-chip">민원3</button>
+                        <button type="button" class="chatbot-chip">민원4</button>
+                        <button type="button" class="chatbot-chip">민원5</button>
+                        <button type="button" class="chatbot-chip">민원6</button>
+                    </div>
+                </div>
+            </article>
+
+            <div class="chatbot-msg chatbot-msg--user">
+                <span class="chatbot-time">오후 12:30</span>
+                <div class="chatbot-bubble">온라인 모니터링</div>
+            </div>
+
+            <article class="chatbot-msg chatbot-msg--bot">
+                <div class="chatbot-msg-head">
+                    <span class="chatbot-avatar"></span>
+                    <strong class="chatbot-name">공동활용플랫폼 AI 챗봇</strong>
+                </div>
+                <div class="chatbot-bubble">
+                    <section class="chatbot-section">
+                        <h3 class="chatbot-section-title">온라인 모니터링</h3>
+                        <p class="chatbot-text">생활화학제품과 살생물제의 안전관리를 위해 제품 신고·승인 현황을 실시간으로 확인하고, 법적 기준 준수 여부를 추적하는 기능입니다. 즉, 기업과 정부가 제품의 등록·승인·유통 과정을 온라인에서 관리·감독할 수 있도록 지원하는 시스템입니다.</p>
+                    </section>
+                    <section class="chatbot-section">
+                        <h3 class="chatbot-section-title">온라인 모니터링 주요기능</h3>
+                        <ul class="chatbot-dot-list">
+                            <li>
+                                제품 신고·승인 현황 관리<br>
+                                안전확인대상 생활화학제품, 살생물물질·제품의 신고 및 승인 절차를 온라인으로 처리
+                            </li>
+                            <li>실시간 데이터베이스 관리</li>
+                        </ul>
+                        <p class="chatbot-text">생활화학제품과 살생물제의 안전관리를 위해 제품 신고·승인 현황을 실시간으로 확인하고, 법적 기준 준수 여부를 추적하는 기능입니다. 즉, 기업과 정부가 제품의 등록·승인·유통 과정을 온라인에서 관리·감독할 수 있도록 지원하는 시스템입니다.</p>
+                    </section>
+                    <div class="chatbot-helper">
+                        <p>도움이 되셨길 바랍니다. <span class="chatbot-emoji" aria-hidden="true">☺️</span></p>
+                        <p>더 궁금한 사항이 있으시면 콜센터<strong>(0000-0000)</strong>로 문의해 주세요.</p>
+                        <p><span class="chatbot-emoji" aria-hidden="true">☎️</span> 평일 오전 9시부터 오후 6시까지 상담이 가능합니다.</p>
+                        <p><span class="chatbot-emoji" aria-hidden="true">🔗</span> 자세한 내용은 공동활용플랫폼 홈페이지(<a href="https://kreach.mcee.go.kr" target="_blank" rel="noopener">https://kreach.mcee.go.kr</a>)에서도 확인하실 수 있습니다.</p>
+                    </div>
+                    <div class="chatbot-related">
+                        <h4 class="chatbot-related-title">관련 질문</h4>
+                        <div class="chatbot-chips">
+                            <button type="button" class="chatbot-chip">모니터링 결과 보여줘</button>
+                            <button type="button" class="chatbot-chip">조사완료 내역 어디서 확인해?</button>
+                            <button type="button" class="chatbot-chip">모니터링 정보등록 방법 알려줘</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbot-msg-foot">
+                    <span class="chatbot-time">12:30</span>
+                    <div class="chatbot-reactions">
+                        <button type="button" class="chatbot-reaction" data-action="like" aria-label="좋아요">
+                            <svg class="ico-face-smile" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-face-smile"></use></svg>
+                        </button>
+                        <button type="button" class="chatbot-reaction" data-action="dislike" aria-label="싫어요">
+                            <svg class="ico-face-sad" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-face-sad"></use></svg>
+                        </button>
+                        <button type="button" class="chatbot-reaction" data-action="copy" aria-label="복사">
+                            <svg class="ico-copy" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-copy"></use></svg>
+                        </button>
+                        <button type="button" class="chatbot-reaction" data-action="edit" aria-label="다시 입력">
+                            <svg class="ico-edit" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-edit"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <div class="chatbot-msg chatbot-msg--user">
+                <span class="chatbot-time">오후 12:30</span>
+                <div class="chatbot-bubble">모니터링 정보등록 방법 알려줘 모니터링 정보등록 방법 알려줘</div>
+            </div>
+
+            <article class="chatbot-msg chatbot-msg--bot">
+                <div class="chatbot-msg-head">
+                    <span class="chatbot-avatar"></span>
+                    <strong class="chatbot-name">공동활용플랫폼 AI 챗봇</strong>
+                </div>
+                <div class="chatbot-bubble">
+                    <p class="chatbot-text">공동활용플랫폼 홈페이지의 [홈 &gt; 온라인 모니터링 &gt; 조사완료 내역] 메뉴를 클릭하시면 확인하실 수 있습니다.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="chatbot-footer">
+            <form class="chatbot-form" onsubmit="return false;">
+                <input type="text" class="chatbot-input" placeholder="질문을 입력해주세요." aria-label="질문 입력">
+                <button type="submit" class="chatbot-submit" aria-label="질문 보내기">
+                    <svg class="chatbot-send-arr" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#chatbot-send-arr"></use></svg>
+                </button>
+                <button type="button" class="chatbot-stop" aria-label="질문 멈추기" hidden>
+                    <svg aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#chatbot-stop"></use></svg>
+                </button>
+            </form>
+            <p class="chatbot-disclaimer">AI의 답변은 부정확한 정보를 포함 할 수 있습니다.</p>
+        </div>
+
+        <!-- 첫 진입 가이드 팝업 (2단계: 글씨 크기 → 가이드 버튼) -->
+        <div class="chatbot-guide" id="chatbotGuide" data-step="1" hidden>
+            <div class="chatbot-guide-dim" aria-hidden="true"></div>
+            <span class="chatbot-guide-spot chatbot-guide-spot--resize" aria-hidden="true"></span>
+            <span class="chatbot-guide-spot chatbot-guide-spot--help" aria-hidden="true"></span>
+
+            <div class="chatbot-guide-tip chatbot-guide-tip--resize" data-step="1" role="dialog" aria-labelledby="chatbotGuideTitle1">
+                <span class="chatbot-guide-arrow" aria-hidden="true"></span>
+                <div class="chatbot-guide-tip-inner">
+                    <div class="chatbot-guide-text">
+                        <strong id="chatbotGuideTitle1">글씨 크기 선택</strong>
+                        <span>크기를 조절할 수 있습니다.</span>
+                    </div>
+                    <button type="button" class="chatbot-guide-x" data-action="next-guide" aria-label="다음 가이드">
+                        <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="chatbot-guide-tip chatbot-guide-tip--help" data-step="2" role="dialog" aria-labelledby="chatbotGuideTitle2">
+                <span class="chatbot-guide-arrow" aria-hidden="true"></span>
+                <div class="chatbot-guide-tip-inner">
+                    <div class="chatbot-guide-text">
+                        <strong id="chatbotGuideTitle2">가이드 버튼</strong>
+                        <span>클릭 시 가이드가 제공됩니다.</span>
+                    </div>
+                    <button type="button" class="chatbot-guide-x" data-action="next-guide" aria-label="가이드 닫기">
+                        <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="chatbot-guide-action" data-action="next-guide" aria-label="다음 가이드">
+                <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+            </button>
+        </div>
+
+        <!-- 피드백 사유 팝업(바텀 시트) -->
+        <div class="chatbot-dim" data-action="close-feedback" hidden></div>
+        <div class="chatbot-sheet" id="chatbotFeedback" data-step="1" role="dialog" aria-modal="true" aria-labelledby="chatbotFeedbackTitle" hidden>
+            <div class="chatbot-sheet-handle" aria-hidden="true"></div>
+            <div class="chatbot-sheet-head">
+                <h3 class="chatbot-sheet-title" id="chatbotFeedbackTitle">피드백 사유</h3>
+                <button type="button" class="chatbot-sheet-close" data-action="close-feedback" aria-label="피드백 사유 닫기">
+                    <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+                </button>
+            </div>
+
+            <!-- Step 1: 사유 선택 -->
+            <div class="chatbot-sheet-step" data-step="1">
+                <div class="chatbot-sheet-body">
+                    <p class="chatbot-sheet-label">사유선택</p>
+                    <ul class="chatbot-check-list">
+                        <li>
+                            <label class="chatbot-check">
+                                <input type="checkbox" class="chatbot-check-input" name="feedback-reason" value="wrong-answer" checked>
+                                <span class="chatbot-check-box" aria-hidden="true"></span>
+                                <span class="chatbot-check-text">전혀 다른 답변이 나옴</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="chatbot-check">
+                                <input type="checkbox" class="chatbot-check-input" name="feedback-reason" value="not-understood">
+                                <span class="chatbot-check-box" aria-hidden="true"></span>
+                                <span class="chatbot-check-text">질문을 이해하지 못함</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="chatbot-check">
+                                <input type="checkbox" class="chatbot-check-input" name="feedback-reason" value="other">
+                                <span class="chatbot-check-box" aria-hidden="true"></span>
+                                <span class="chatbot-check-text">기타</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chatbot-sheet-foot">
+                    <button type="button" class="chatbot-btn-primary" data-action="next-feedback">다음</button>
+                </div>
+            </div>
+
+            <!-- Step 2: 추가 피드백 -->
+            <div class="chatbot-sheet-step" data-step="2">
+                <div class="chatbot-sheet-body">
+                    <textarea class="chatbot-textarea" placeholder="답변의 문제점은 무엇이었나요?&#10;추가 피드백을 제공해주세요." aria-label="추가 피드백"></textarea>
+                </div>
+                <div class="chatbot-sheet-foot">
+                    <button type="button" class="chatbot-btn-primary" data-action="submit-feedback">제출</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 폰트 크기 설정 팝업(바텀 시트) -->
+        <div class="chatbot-sheet chatbot-sheet--font" id="chatbotFontSheet" role="dialog" aria-modal="true" aria-labelledby="chatbotFontSheetTitle" hidden>
+            <div class="chatbot-sheet-handle" aria-hidden="true"></div>
+            <div class="chatbot-sheet-head">
+                <h3 class="chatbot-sheet-title" id="chatbotFontSheetTitle">폰트 크기 설정</h3>
+                <button type="button" class="chatbot-sheet-close" data-action="close-sheet" aria-label="폰트 크기 설정 닫기">
+                    <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+                </button>
+            </div>
+            <div class="chatbot-sheet-body">
+                <div class="chatbot-font-slider">
+                    <input type="range" class="chatbot-range" id="chatbotFontRange" min="1" max="10" step="1" value="1" aria-label="폰트 크기 조절">
+                    <div class="chatbot-font-labels" aria-hidden="true">
+                        <span class="chatbot-font-min">가</span>
+                        <span class="chatbot-font-max">가</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <script>
+    // 챗봇 패널 토글
+    (function(){
+        var $panel = $('#chatbotPanel');
+        if(!$panel.length) return;
+
+        var chatbotGuideShown = false;
+        function setChatbotOpen(open){
+            $panel.prop('hidden', !open);
+            $('body').toggleClass('mo-hidden', !!open);
+            if(open && !chatbotGuideShown){
+                chatbotGuideShown = true;
+                openChatbotGuide();
+            }
+        }
+        function openChatbotGuide(){
+            $('#chatbotGuide').attr('data-step', '1').prop('hidden', false);
+        }
+        function closeChatbotGuide(){
+            $('#chatbotGuide').prop('hidden', true).attr('data-step', '1');
+        }
+
+        $(document).on('click', '.btn-chatbot', function(e){
+            e.preventDefault();
+            var isOpen = !$panel.prop('hidden');
+            setChatbotOpen(!isOpen);
+        });
+
+        $panel.on('click', '.chatbot-close', function(){
+            setChatbotOpen(false);
+        });
+
+        // 가이드: 1단계 다음 → 2단계, 2단계 다음 → 닫기
+        $panel.on('click', '[data-action="next-guide"]', function(){
+            var $guide = $('#chatbotGuide');
+            if($guide.attr('data-step') === '1'){
+                $guide.attr('data-step', '2');
+            } else {
+                closeChatbotGuide();
+            }
+        });
+        // 가이드 툴팁의 X 버튼 → 가이드 전체 닫기 (건너뛰기)
+        $panel.on('click', '[data-action="close-guide"]', function(){
+            closeChatbotGuide();
+        });
+
+        // 칩 활성화 토글 (예시 동작)
+        $panel.on('click', '.chatbot-chip', function(){
+            $(this).siblings('.chatbot-chip').removeClass('is-active');
+            $(this).addClass('is-active');
+        });
+
+        // 좋아요/싫어요 반응 토글 (같은 그룹 내 한 개만 활성)
+        $panel.on('click', '.chatbot-reaction[data-action="like"], .chatbot-reaction[data-action="dislike"]', function(){
+            var $btn = $(this);
+            var $group = $btn.closest('.chatbot-reactions');
+            var wasActive = $btn.hasClass('is-active');
+            $group.find('.chatbot-reaction[data-action="like"], .chatbot-reaction[data-action="dislike"]').removeClass('is-active');
+            if(!wasActive){ $btn.addClass('is-active'); }
+        });
+
+        // 바텀 시트 공통 open/close
+        function openSheet($sheet){
+            if(!$sheet || !$sheet.length) return;
+            $panel.find('.chatbot-sheet').not($sheet).prop('hidden', true).removeClass('is-closing');
+            $sheet.removeClass('is-closing').prop('hidden', false);
+            $panel.find('.chatbot-dim').prop('hidden', false);
+            $panel.addClass('is-sheet-open');
+        }
+        function closeSheet($sheet){
+            if(!$sheet || !$sheet.length){
+                $sheet = $panel.find('.chatbot-sheet').not('[hidden]').first();
+            }
+            if(!$sheet.length || $sheet.prop('hidden')) return;
+            var $dim = $panel.find('.chatbot-dim');
+            $sheet.addClass('is-closing').one('animationend', function(){
+                $sheet.prop('hidden', true).removeClass('is-closing');
+                if($sheet.is('#chatbotFeedback')){
+                    $sheet.attr('data-step', '1');
+                    $sheet.find('.chatbot-textarea').val('');
+                    $sheet.find('.chatbot-check-input').prop('checked', false);
+                }
+                $dim.prop('hidden', true);
+                $panel.removeClass('is-sheet-open');
+            });
+        }
+        // 편집(피드백 사유) 버튼 → 피드백 시트 열기
+        $panel.on('click', '.chatbot-reaction[data-action="edit"]', function(e){
+            e.preventDefault();
+            var $sheet = $('#chatbotFeedback');
+            $sheet.attr('data-step', '1');
+            openSheet($sheet);
+        });
+        // 크기 조절 버튼 → 폰트 크기 시트 열기
+        $panel.on('click', '.chatbot-icon-btn[data-action="resize"]', function(e){
+            e.preventDefault();
+            openSheet($('#chatbotFontSheet'));
+        });
+        // 시트 닫기 (close 버튼/dim 공통)
+        $panel.on('click', '[data-action="close-sheet"], [data-action="close-feedback"]', function(){ closeSheet(); });
+
+        // 폰트 크기 슬라이더 (10단계, 1px씩 증가)
+        function applyChatbotFontStep(step){
+            step = Math.max(1, Math.min(10, parseInt(step, 10) || 1));
+            var addPx = (step - 1); // 1단계: +0px ~ 10단계: +9px
+            $panel.find('.chatbot-body').css('--chatbot-font-add', addPx + 'px');
+            var $range = $('#chatbotFontRange');
+            var pct = ((step - 1) / 9) * 100;
+            $range.css('--chatbot-range-fill', pct + '%').attr('aria-valuetext', step + '단계');
+        }
+        $panel.on('input change', '#chatbotFontRange', function(){
+            applyChatbotFontStep(this.value);
+        });
+        applyChatbotFontStep($('#chatbotFontRange').val());
+
+        $panel.on('click', '[data-action="next-feedback"]', function(){
+            var reasons = $panel.find('.chatbot-check-input:checked').map(function(){ return this.value; }).get();
+            if(reasons.length === 0){
+                alert('사유를 한 가지 이상 선택해주세요.');
+                return;
+            }
+            $('#chatbotFeedback').attr('data-step', '2');
+        });
+        $panel.on('click', '[data-action="submit-feedback"]', function(){
+            var reasons = $panel.find('.chatbot-check-input:checked').map(function(){ return this.value; }).get();
+            var detail = $panel.find('.chatbot-textarea').val();
+            // 실제 전송 로직은 여기서 처리. 데모에서는 콘솔 출력 후 닫기
+            if(window.console){ console.log('피드백 사유:', reasons, '추가 피드백:', detail); }
+            closeSheet($('#chatbotFeedback'));
+        });
+
+        // 입력창에 텍스트가 있으면 stop 버튼 노출, submit 버튼 숨김
+        $panel.on('input', '.chatbot-input', function(){
+            var hasText = $(this).val().length > 0;
+            var $form = $(this).closest('.chatbot-form');
+            $form.find('.chatbot-submit').prop('hidden', hasText);
+            $form.find('.chatbot-stop').prop('hidden', !hasText);
+        });
+    })();
+    </script>
+
+
+
+
+    
+</body>
+</html>
