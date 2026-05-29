@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">해외직구 위해제품 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <div class="tag-set-wrap">
+                    <div class="tag-set">
+                        <span class="tag">기본정보</span>
+                    </div>
+                </div>
+                <div class="title-article-wrap">
+                    <h3 class="title-article">{제품명}</h3>
+                </div>
+                            
+
+                <div class="data-detail-section">
+                    <!-- product-description -->
+                    <div class="product-description">
+                    <div class="product-images">
+                        <div class="images">
+                        <img src="../images/temp/temp-product.jpg" alt="">
+                        </div>
+                        <div class="img-list-wrap" data-evt="thumb-slider">
+                        <button type="button" class="swiper-button-prev"></button>
+                        <button type="button" class="swiper-button-next"></button>              
+                        <div class="img-list">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide on"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li><b>제품분류/종류</b><div class="txt">인쇄 및 문서관련 제품 / 인쇄용 잉크·토너</div></li>
+                            <li><b>모델명</b><div class="txt">REPLACE FOR LC431XL(YELLOW)</div></li>
+                            <li><b>업체명</b><div class="txt">제조: - / 판매: Dongguan Wanli Transformer Inverter Technology Co., Ltd.</div></li>
+                            <li><b>업체주소</b><div class="txt">-</div></li>
+                            <li><b>생산지</b><div class="txt">-</div></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- // product-description -->
+                </div>
+                <!-- // data-detail-section -->                
+
+
+                <div class="title-data-wrap">
+                    <h2 class="title-data">결함 및 위반내용</h2>
+                </div>
+                <div class="data-detail">
+                    <table>
+                        <caption class="sr-only">결함 및 위반내용</caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">관련법령 및 출처</th>
+                                <td>생활화학제품 및 살생물제의 안전관리에 관한 법률</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">결함(위반)내용</th>
+                                <td>안전기준 위반[확인을 받은 내용과 다르게 수입 *함유금지물질(아조염료) 검출]</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일</th>
+                                <td>첨부파일 없음</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일</th>
+                                <td><a href="javascript:void(0);" class="link-txt-base">테스트파일.pdf<i class="ico-clip"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="title-data-wrap">
+                    <h2 class="title-data">제품 URL</h2>
+                </div>
+
+                <div class="txt-exp-wrap">
+                    <a href="javascript:void(0);" class="link-go">
+                        <span>{URL 링크}</span>
+                        <svg class="ico-outer-link" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-outer-link"></use></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+</body>
+</html>

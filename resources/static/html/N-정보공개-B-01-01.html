@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+
+                <div class="title-main-wrap">
+                    <h2 class="title-main">생활화학제품</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-report">안전확인대상 생활화학제품(신고)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-approval">안전확인대상 생활화학제품(승인)</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp">가정, 사무실, 다중이용시설 등 일상적인 생활공간에서 사용되는 화학제품으로, 사람이나 환경에 화학물질의 노출을 유발하는 제품입니다. 이 중 위해성이 있다고 인정되는 품목은 환경부장관이 안전확인대상 생활화학제품(前 위해우려제품)으로 지정하여 관리하고 있습니다.</p>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn-md btn-bg-blue-line">
+                                <span>신고대상 안전확인대상 <br class="pc-hide">생활화학제품 종류 확인</span>
+                                <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="search-box">
+                        <div class="sc-block">
+                            <div class="sc-row">
+                                <select class="sc-sel" aria-label="검색 구분">
+                                    <option>구분</option>
+                                    <option>제목</option>
+                                    <option>내용</option>
+                                </select>
+                                <div class="input-search-wrap">
+                                    <div class="input-search inp-del">
+                                        <input type="text" placeholder="검색어를 입력해주세요." aria-label="검색어">
+                                    </div>
+                                    <button type="button" class="btn-search">
+                                        <span>검색</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 상세검색 -->
+                    <div class="detail-search-wrap">
+                        <div class="ds-header">
+                            <button type="button" class="ds-toggle on" aria-expanded="true">
+                                <span class="ds-title">상세검색</span>
+                            </button>
+                        </div>
+                        <div class="ds-body">
+                            <div class="tab-type3">
+                                <ul>
+                                    <li class="on"><a href="javascript:void(0);" data-tab-id="ds-tab-import">제조/수입</a></li>
+                                    <li><a href="javascript:void(0);" data-tab-id="ds-tab-state">제품상태</a></li>
+                                    <li><a href="javascript:void(0);" data-tab-id="ds-tab-type">제품구분(대표/파생)</a></li>
+                                    <li><a href="javascript:void(0);" data-tab-id="ds-tab-form">제형</a></li>
+                                    <li><a href="javascript:void(0);" data-tab-id="ds-tab-use">품목·용도</a></li>
+                                    <li><a href="javascript:void(0);" data-tab-id="ds-tab-childpkg">어린이보호포장 대상</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content" id="ds-tab-import">
+                                <div class="data-detail">
+                                    <table>
+                                        <caption class="sr-only">상세검색 — 제조/수입 구분 및 분류 선택, 선택한 검색조건</caption>
+                                        <colgroup>
+                                            <col style="width:140px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <td>
+                                                    <div class="input-choice-wrap">
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-mfg-1" name="ds-mfg" checked>
+                                                            <label for="ds-mfg-1">제조</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-mfg-2" name="ds-mfg">
+                                                            <label for="ds-mfg-2">수입</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">분류</th>
+                                                <td>
+                                                    <div class="input-choice-wrap">
+                                                        <div class="input-choice">
+                                                            <input type="checkbox" id="ds-cls-all">
+                                                            <label for="ds-cls-all">전체선택</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-1" name="ds-cls" checked>
+                                                            <label for="ds-cls-1">분무기형</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-2" name="ds-cls">
+                                                            <label for="ds-cls-2">스프레이형</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-3" name="ds-cls">
+                                                            <label for="ds-cls-3">훈증형</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-4" name="ds-cls">
+                                                            <label for="ds-cls-4">연소형</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-5" name="ds-cls">
+                                                            <label for="ds-cls-5">연무형</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-6" name="ds-cls">
+                                                            <label for="ds-cls-6">필터형</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-7" name="ds-cls">
+                                                            <label for="ds-cls-7">보충형</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-8" name="ds-cls">
+                                                            <label for="ds-cls-8">지속방출형</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-9" name="ds-cls">
+                                                            <label for="ds-cls-9">분무기형(품형)</label>
+                                                        </div>
+                                                        <div class="input-choice">
+                                                            <input type="radio" id="ds-cls-10" name="ds-cls">
+                                                            <label for="ds-cls-10">기타</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">선택한 검색조건</th>
+                                                <td>
+                                                    <div class="selected-cond">
+                                                        <span class="selected">
+                                                            <span class="txt">제조/수입 &gt; 제조/수입병행</span>
+                                                            <button type="button" class="btn-del" aria-label="제조/수입, 제조/수입병행 조건 삭제">
+                                                                <svg class="ico-system-danger" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-system-danger"></use></svg>
+                                                            </button>
+                                                        </span>
+                                                        <span class="selected">
+                                                            <span class="txt">제품상태 &gt; 유효</span>
+                                                            <button type="button" class="btn-del" aria-label="제품상태, 유효 조건 삭제">
+                                                                <svg class="ico-system-danger" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-system-danger"></use></svg>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="ds-btn-wrap">
+                                    <button type="button" class="btn-lg btn-white">초기화</button>
+                                    <button type="button" class="btn-lg btn-blue">검색</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-content" id="ds-tab-state" style="display: none;">
+                                제품상태
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 상세검색 -->
+                </div>
+
+
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">검색 결과 <em>124</em>개</div>
+                    </div>
+                    <div class="right">
+                        <select name="sortOrder" id="sortOrder" class="no-line xsm" aria-label="정렬 순서">
+                            <option value="latest">최신등록순</option>
+                            <option value="productName">제품명순</option>
+                            <option value="category">제품분류순</option>
+                            <option value="productForm">제품제형순</option>
+                            <option value="company">업체명순</option>
+                        </select>
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option value="10">10개</option>
+                            <option value="20">20개</option>
+                            <option value="30">30개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div id="grid" aria-label="안전확인대상 생활화학제품(신고) 목록"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    <script>
+var localData = [
+    { no: 10, productName: '차량용 디퓨저 퓨어솝 100ml',                                       disclose: '-', category: '탈취제',               productForm: '비분사형 > 에멀션형(젤형)', company: '이래에프엔씨 (주)',                 reportNo: 'CB25-13-0126', expireDate: '2028-10-27', status: '유효' },
+    { no: 9,  productName: '클라 라이프케어 파워클린 미니 캡슐세제 플러스 스윗 페어 프리지아', disclose: '-', category: '세탁세제',             productForm: '비분사형 > 캡슐형',         company: '주식회사 테이칼튼',                 reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+    { no: 8,  productName: '카트리지 335 (소용량 검정색)',                                     disclose: '-', category: '인쇄용 잉크·토너',      productForm: '비분사형 > 카트리지형',     company: '주식회사 리트컴',                   reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+    { no: 7,  productName: '페니체화이트스포트',                                               disclose: '-', category: '물체 염색제',          productForm: '분사형 > 기타',             company: '에이스마케팅',                       reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+    { no: 6,  productName: '코멧 레몬라벤더 캔들',                                             disclose: '-', category: '초',                   productForm: '비분사형 > 캡슐형',         company: '주식회사 아이비스 (IBYS Co., Ltd.)', reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+    { no: 5,  productName: '말표 인덕션클리너',                                                disclose: '-', category: '광택코팅제',           productForm: '비분사형 > 캡슐형',         company: '말표산업(주)',                       reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+    { no: 4,  productName: '네로(NERO) 세라믹 타이어 드레싱',                                  disclose: '-', category: '광택코팅제',           productForm: '비분사형 > 캡슐형',         company: '말표산업(주)',                       reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+    { no: 3,  productName: '자라홈 디퓨저 이터널 우드 2473/703/724',                           disclose: '-', category: '세탁세제',             productForm: '분사형 > 보충형 외 5제형',  company: '아이티엑스코리아 유한회사',          reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+    { no: 2,  productName: '필터형 보존처리 제품',                                             disclose: '-', category: '필터형 보존처리 제품', productForm: '분사형 > 필터형',           company: '제로텍',                             reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+    { no: 1,  productName: '그랜드 홀(Grand Hall)',                                            disclose: '-', category: '세탁세제',             productForm: '분사형 > 필터형',           company: '센트랩',                             reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
+  ];
+
+let gridConfig = {
+    dataSource: localData,
+    container: '#grid',
+    width: '100%',
+    rowHeight: 40,
+    headerHeight: 40,
+    height: '600px',
+    showRowNo: false,
+    sortable: 'rotate',
+    filterable: true,
+    pageable: {
+       pageSizes: [10, 20, 30, 40, 50]
+    },
+    pagerBar: { left: 'pagerCombo', center: 'pager' },
+    columns: [
+      { field: 'no', caption: '번호', width: 60, sortable: false,
+        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
+      { field: 'productName', caption: '제품명',              width: 280, align: 'left' },
+      { field: 'disclose',    caption: '전성품 공개여부', width: 180 },
+      { field: 'category',    caption: '제품분류',            width: 130 },
+      { field: 'productForm', caption: '제형',                width: 160 },
+      { field: 'company',     caption: '업체명',              width: 180 },
+      { field: 'reportNo',    caption: '신고번호',            width: 130 },
+      { field: 'expireDate',  caption: '유효기간 만료일', width: 180 },
+      { field: 'status',      caption: '제품상태',            width: 100 },
+    ],
+  }
+
+datagrid = SBGrid3.createGrid(gridConfig);
+</script>
+
+</body>
+</html>
+

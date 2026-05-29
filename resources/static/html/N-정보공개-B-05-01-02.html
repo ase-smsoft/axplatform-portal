@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">자율안전정보 제품 조회 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <div class="tag-set-wrap">
+                    <div class="tag-set">
+                        <span class="tag">기본정보</span>
+                    </div>
+                </div>
+                <div class="title-article-wrap">
+                    <h3 class="title-article">{제품명}</h3>
+                </div>
+                            
+
+                <div class="data-detail-section">
+                    <!-- product-description -->
+                    <div class="product-description">
+                    <div class="product-images">
+                        <div class="images">
+                        <img src="../images/temp/temp-product.jpg" alt="">
+                        </div>
+                        <div class="img-list-wrap" data-evt="thumb-slider">
+                        <button type="button" class="swiper-button-prev"></button>
+                        <button type="button" class="swiper-button-next"></button>              
+                        <div class="img-list">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide on"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li><b>품목</b><div class="txt">섬유유연제</div></li>
+                            <li><b>업체명</b><div class="txt">라이온코리아 주식회사</div></li>
+                            <li><b>용도</b><div class="txt">섬유용, 신발용</div></li>
+                            <li><b>제형</b><div class="txt">비분사형 - 액체형</div></li>
+                            <li><b>신고번호</b><div class="txt">EB19-05-0089</div></li>
+                            <li><b>업체연락처</b><div class="txt">080-858-1000</div></li>
+                            <li><b>업체주소</b><div class="txt">인천광역시 중구 서해대로 140번지 23(신흥동3가)</div></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- // product-description -->
+                </div>
+                <!-- // data-detail-section -->                
+
+
+                <div class="title-data-wrap">
+                    <h2 class="title-data">자율안전정보 공개결과</h2>
+                </div>
+                <div class="txt-exp-wrap">
+                    <ul class="dot-list">
+                        <li>제품 내 0.1% 함량 미만 물질(규제 대상물질 제외)은 자율 안전정보 공개 대상에서 제외됩니다.</li>
+                        <li>화학물질의 유해성 정보 및 “자율 안전정보 공개” 관리등급은 화학물질 자체가 지니는 독성정보에 관한 정보로서 제품 자체의 독성을 의미하는 것이 아니며, 각 물질의 사용방법(제형, 노출정보)에 따라 다르게 나타날 수 있습니다.</li>
+                    </ul>
+                </div>
+                
+                <div class="autonomous-safety-schematic">
+                    <div class="data-default">
+                        <div class="scroll">
+                            <table>
+                            <caption>자율안전정보공개 관리등급 - 자율안전정보공개 관리등급, 물질명, 기능으로구성</caption>
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col style="width:auto;min-width: 300px;">
+                                    <col style="width:300px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                    <th scope="col">자율안전정보공개 관리등급</th>
+                                    <th scope="col">물질명</th>
+                                    <th scope="col">기능</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td rowspan="2">
+                                    <div class="grade-icon grade4">
+                                        <div class="icon"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+                                        <span class="txt">유해우려 없음</span>
+                                    </div>
+                                    </td>
+                                    <td>물</td>
+                                    <td>용매제</td>
+                                </tr>
+                                <tr>
+                                    <td>물</td>
+                                    <td>킬레이트제 구성성분</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">
+                                    <div class="grade-icon grade3">
+                                        <div class="icon"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+                                        <span class="txt">유해우려 낮음</span>
+                                    </div>
+                                    </td>
+                                    <td>2-프로판올</td>
+                                    <td>계면활성제 양이온계 구성성분</td>
+                                </tr>
+                                <tr>
+                                    <td>에스터 쿼터너리 암모늄 염</td>
+                                    <td>계면활성제 양이온계 구성성분</td>
+                                </tr>
+                                <tr>
+                                    <td>프로필렌글리콜</td>
+                                    <td>안정제 구성성분</td>
+                                </tr>
+                                <tr>
+                                    <td>아주까리 기름, 수소첨가, 에톡실레이티드</td>
+                                    <td>안정제(보존제 제외)</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                    <div class="grade-icon grade2">
+                                        <div class="icon"><i class="on"></i><i class="on"></i></div>
+                                        <span class="txt">용도·제형에 따라 사용 가능</span>
+                                    </div>
+                                    </td>
+                                    <td>옥타메틸사이클로테트라실록산</td>
+                                    <td>소포제 구성성분</td>
+                                </tr>
+                                <tr>
+                                    <td>리모넨</td>
+                                    <td>착향제 구성성분</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="autonomous-safety-desc">
+                        <ul class="grade-legend-bar">
+                            <li class="grade1">
+                                <div class="grade-icon">
+                                    <div class="icon"><i></i></div>
+                                </div>
+                                <div class="legend-txt">
+                                    <i aria-hidden="true"></i>
+                                    <span class="txt">안전한 원료로 <br class="mo-hide">대체권장</span>
+                                </div>
+                            </li>
+                            <li class="grade2">
+                                <div class="grade-icon">
+                                    <div class="icon"><i></i><i></i></div>
+                                </div>
+                                <div class="legend-txt">
+                                    <i aria-hidden="true"></i>
+                                    <span class="txt">용도·제형에 <br class="mo-hide">따라 사용 가능</span>
+                                </div>
+                            </li>
+                            <li class="grade3">
+                                <div class="grade-icon">
+                                    <div class="icon"><i></i><i></i><i></i></div>
+                                </div>
+                                <div class="legend-txt">
+                                    <i aria-hidden="true"></i>
+                                    <span class="txt">유해우려 낮음</span>
+                                </div>
+                            </li>
+                            <li class="grade4">
+                                <div class="grade-icon">
+                                    <div class="icon"><i></i><i></i><i></i><i></i></div>
+                                </div>
+                                <div class="legend-txt">
+                                    <i aria-hidden="true"></i>
+                                    <span class="txt">유해우려 없음</span>
+                                </div>
+                            </li>
+                            <li class="grade5">
+                                <div class="grade-icon is-empty" aria-hidden="true"></div>
+                                <div class="legend-txt">
+                                    <i aria-hidden="true"></i>
+                                    <span class="txt">평가유보</span>
+                                </div>
+                            </li>
+                        </ul>
+                        
+
+                        <ul class="grade-bar" id="grade-bar"></ul>
+
+                    </div>
+                    <!-- // autonomous-safety-desc -->
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+
+    <script>
+        setBarDesc([10, 40, 10, 30, 10]);
+
+        function setBarDesc(arr){
+        const color = ['#00244E', '#003675', '#245892', '#1C4CBF', '#A8C2FF'];
+        arr.forEach((per, i) => {
+            if(per != 0) {
+            $('#grade-bar').append('<li style="width:'+per+'%;background:'+color[i]+';"><button type="button" onclick="bardescShow('+(i+1)+')" ></button></li>')
+            }
+        });
+
+        $('.grade-bar li button').on('click', function(){
+            $('.grade-bar li').removeClass('on');
+            $(this).parent('li').addClass('on');
+            setTimeout(setArrPos)
+        });                
+        }
+
+        function setArrPos(){
+            let arrW = parseInt($('.grade-bar-desc i').css('border-left-width'));
+            let left = $('.grade-bar li.on').length > 0 ? $('.grade-bar li.on').position().left + $('.grade-bar li.on').width() / 2 - arrW : 0;
+            $('.grade-bar-desc > i').css({left:left})
+        }
+
+        function bardescShow(num){
+        $('.grade-bar-desc').removeClass('on');
+        $('.grade-bar-desc.desc-'+num).addClass('on');
+        }
+
+        $(window).on('resize', setArrPos);
+
+    </script>
+</body>
+</html>

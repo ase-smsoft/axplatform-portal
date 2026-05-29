@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">나노 안전성 정보</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-what">나노란?</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-tech">나노기술정보</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-nano-product">나노제품정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-hazard">나노위해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-exposure">나노관리(노출)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-waste">나노관리(폐기물)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-ehs">나노EHS동향</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h3 class="title-chapter">나노제품 응용사례</h3>
+                        </div>
+
+                        <ul class="nano-product-grid">
+                            <li class="nano-product-card">
+                                <div class="nano-product-card__head">
+                                    <svg class="ico-nano-product-cosmetic" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-nano-product-cosmetic"></use></svg>
+                                    <p class="nano-product-card__title">화장품/의약품</p>
+                                </div>
+                                <ul class="dot-list">
+                                    <li>자외선 차단제</li>
+                                    <li>치약</li>
+                                    <li>은 반창고</li>
+                                    <li>금 임신 진단기</li>
+                                </ul>
+                            </li>
+                            <li class="nano-product-card">
+                                <div class="nano-product-card__head">
+                                    <svg class="ico-nano-product-textile" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-nano-product-textile"></use></svg>
+                                    <p class="nano-product-card__title">섬유제품</p>
+                                </div>
+                                <ul class="dot-list">
+                                    <li>SiO₂ 코팅섬유(방수)</li>
+                                    <li>은 나노섬유</li>
+                                    <li>TiO₂ 코팅섬유(방수)</li>
+                                </ul>
+                            </li>
+                            <li class="nano-product-card">
+                                <div class="nano-product-card__head">
+                                    <svg class="ico-nano-product-sports" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-nano-product-sports"></use></svg>
+                                    <p class="nano-product-card__title">스포츠용품</p>
+                                </div>
+                                <ul class="dot-list">
+                                    <li>테니스, 라켓, 공</li>
+                                    <li>골프채, 골프공</li>
+                                    <li>야구방망이</li>
+                                    <li>운동복</li>
+                                </ul>
+                            </li>
+                            <li class="nano-product-card">
+                                <div class="nano-product-card__head">
+                                    <svg class="ico-nano-product-electronics" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-nano-product-electronics"></use></svg>
+                                    <p class="nano-product-card__title">전자제품</p>
+                                </div>
+                                <ul class="dot-list">
+                                    <li>냉장고</li>
+                                    <li>세탁기</li>
+                                    <li>TV</li>
+                                    <li>에어컨</li>
+                                </ul>
+                            </li>
+                            <li class="nano-product-card">
+                                <div class="nano-product-card__head">
+                                    <svg class="ico-nano-product-construction" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-nano-product-construction"></use></svg>
+                                    <p class="nano-product-card__title">건축용 제품</p>
+                                </div>
+                                <ul class="dot-list">
+                                    <li>광촉매 판유리, 지붕소재</li>
+                                    <li>나노 실리카 에어로 젤</li>
+                                    <li>나노 페인트(방수)</li>
+                                    <li>나노 코팅 목재(방수)</li>
+                                </ul>
+                            </li>
+                            <li class="nano-product-card">
+                                <div class="nano-product-card__head">
+                                    <svg class="ico-nano-product-energy" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-nano-product-energy"></use></svg>
+                                    <p class="nano-product-card__title">환경·에너지 제품</p>
+                                </div>
+                                <ul class="dot-list">
+                                    <li>Monitoring Air Pollution Hot Sopts</li>
+                                    <li>Detecting Water</li>
+                                    <li>Detecting Water Contaminants</li>
+                                    <li>LED, OLED 조명</li>
+                                    <li>태양, 연료 전지</li>
+                                </ul>
+                            </li>
+                            <li class="nano-product-card">
+                                <div class="nano-product-card__head">
+                                    <svg class="ico-nano-product-bio" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-nano-product-bio"></use></svg>
+                                    <p class="nano-product-card__title">바이오 제품</p>
+                                </div>
+                                <ul class="dot-list">
+                                    <li>바이오 침</li>
+                                    <li>바이오 테러경보</li>
+                                    <li>단백질 칩 분석시스템</li>
+                                    <li>난치병 조기진단</li>
+                                </ul>
+                            </li>
+                            <li class="nano-product-card">
+                                <div class="nano-product-card__head">
+                                    <svg class="ico-nano-product-it" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-nano-product-it"></use></svg>
+                                    <p class="nano-product-card__title">IT 제품</p>
+                                </div>
+                                <ul class="dot-list">
+                                    <li>하드디스크</li>
+                                    <li>플래시 메모리</li>
+                                    <li>탄소나노튜브 메모리</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <!-- // tab-content -->
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

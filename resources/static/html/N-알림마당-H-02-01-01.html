@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+
+
+                <div class="title-main-wrap"> 
+                    <h2 class="title-main">정책포럼 정보 상세(2025)</h2>
+                </div>
+
+
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-planning">기획위원회</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-1-1">주제별토론(1-1주제)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-1-2">주제별토론(1-2주제)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-2-1">주제별토론(2-1주제)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-2-2">주제별토론(2-2주제)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-3">주제별토론(3주제)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-general">종합토론회</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-stakeholder-day">이해당사자의 날</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-report">포럼보고서</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-youth">청년포럼</a></li>
+                    </ul>
+                </div>
+                
+                <div class="view-detail-wrap">
+                    <div class="view-header">
+                        <h3 class="view-header-tit">기획위원회 - 1차 정기회의</h3>
+                    </div>
+                    <div class="view-detail-meta">
+                        <div class="view-detail-meta__item">
+                            <b>개최일시 </b>
+                            <span>2026-02-12 13:00 ~ 15:00</span>
+                        </div>
+                    </div>
+                    <div class="view-detail-body">
+                        <div class="view-content">
+                            <strong class="view-content-tit">참석자</strong>
+                            <div class="data-detail">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:100px">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>사회자</th>
+                                            <td>이경석 (발암물질없는 사회만들기국민행동, 운영위원장)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>기획 위원</th>
+                                            <td class="align-l">김병훈 (환경부 화학물질정책과, 과장), 이연진 (환경부 화학물질정책과, 사무관), 심광현 (환경부 화학물질정책과, 사무관), 이장언 (환경부 화학물질정책과, 과장), 이준한 (환경부 화학물질정책과, 사무관), 김용근 (환경부 화학물질정책과, 사무관), 윤이 (환경부 화학물질정책과, 과장), 김경현 (환경부 화학물질정책과, 사무관), 김은영 (환경부 화학물질정책과, 사무관)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>운영기관</th>
+                                            <td>김신번 (노동환경건강연구소, 부소장), 이연진 (환경부 화학물질정책과, 사무관), 심광현 (환경부 화학물질정책과, 사무관)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="view-detail-files">
+                        <p class="title">첨부파일</p>
+                        <ul class="files">
+                            <li><a href="javascript:void(0);"><i class="ico-clip"></i><span>신규화학물질 신고 컨설팅 모집 공고.pdf</span></a></li>
+                            <li><a href="javascript:void(0);"><i class="ico-clip"></i><span>신규화학물질 신고 컨설팅 지원신청서.hwp</span></a></li>
+                            <li><a href="javascript:void(0);"><i class="ico-clip"></i><span>신규화학물질 신고 컨설팅 지원사업 신청 첨부파일.zip</span></a></li>
+                        </ul>
+                    </div>
+
+                     <div class="prev-next">
+                        <dl>
+                        <dt>이전글</dt>
+                        <dd>
+                            <div class="title"><a href="javascript:void(0);" class="link">생활환경안전정보시스템 서버 증설 작업으로 인한 서비스 중단 안내생활환경안전정보시스템 서버 증설 작업으로 인한 서비스 중단 안내생활환경안전정보시스템 서버 증설 작업으로 인한 서비스 중단 안내</a></div>
+                            <div class="info">
+                            <span>2024.02.19</span>
+                            </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt>다음글</dt>
+                        <dd>
+                            <div class="title"><a href="javascript:void(0);" class="link">살생물처리제품 안전관리 안내(소비자 및 기업)</a></div>
+                            <div class="info">
+                            <span>2024.02.19</span>
+                            </div>
+                        </dd>
+                        </dl>
+                    </div>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn-md btn-blue"><span>목록</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+
+</body>
+</html>

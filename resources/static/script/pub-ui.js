@@ -686,6 +686,156 @@ function setupFocusTrap($popup) {
 }
 
 
+function thumbProductEvt(){
+	if($(window).width() <= 1024) return;
+	if($(".product-description .product-images .images").length <= 0) return;
+	let swiper = new Swiper('[data-evt=thumb-slider] .img-list', {
+		speed:800,
+		navigation: {
+			nextEl: "[data-evt=thumb-slider] .swiper-button-next",
+			prevEl: "[data-evt=thumb-slider] .swiper-button-prev",
+		},
+		slidesPerView: 'auto',
+	});
+	$(".product-description .product-images .images > img").imagezoomsl({
+		zoomrange: [3, 3],
+	});
+
+	$('.product-description .product-images .img-list .swiper-slide a').on('click', function(){
+		let $img = $(this).parents('.product-images').find('.images > img');
+		$img.attr('src', $(this).find('img').attr('src'))
+		$('.product-description .product-images .img-list .swiper-slide').removeClass('on');
+		$(this).parents('.swiper-slide').addClass('on');
+	});
+}
+
+function productSlider(){
+	if($("[ data-evt=product-slider] .swiper-slide").length <= 0) return;
+	let swiper = new Swiper('[data-evt=product-slider] .product-list', {
+		speed:800,
+		spaceBetween:16,
+		navigation: {
+			nextEl: "[data-evt=product-slider] .swiper-button-next",
+			prevEl: "[data-evt=product-slider] .swiper-button-prev",
+		},
+		slidesPerView:1,
+		slidesPerGroup:1,
+		pagination: {
+			el: "[data-evt=product-slider] .swiper-pagination",
+			type: "fraction",
+		},
+		breakpoints: {
+			641: {
+				slidesPerView:2,
+				slidesPerGroup:2,
+			},
+			1025: {
+				slidesPerView:3,
+				slidesPerGroup:3,
+			}
+		}
+	});
+}
+
+
+  // DATE
+  function datepicker(){
+    if($(".datepicker").length <= 0) return;
+    $(".datepicker").datepicker({
+      showOn: 'focus', 
+      dateFormat:"yy.mm.dd",
+      changeYear:true,
+      changeMonth:true,
+      showMonthAfterYear:true,
+      monthNames:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+      monthNamesShort:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+      dayNames:['일','월','화','수','목','금','토'],
+      dayNamesShort:['일','월','화','수','목','금','토'],
+      dayNamesMin:['일','월','화','수','목','금','토'],
+      minDate: '',
+      maxDate: '',
+      // yearSuffix: '년',
+      onClose: function( selectedDate ) {
+        //add on event 
+      }	,
+      beforeShow: function(input, inst) {
+        
+        if($(input).data('min')) $(input).datepicker('option', 'minDate', $(input).data('min'));
+        if($(input).data('max')) $(input).datepicker('option', 'maxDate', $(input).data('max'));
+  
+        setTimeout(function(){
+          if($('.ui-datepicker-year option').text().indexOf('년') == -1) $('.ui-datepicker-year option').append('년')
+        }, 10)
+        },
+        onChangeMonthYear: function(input, inst) {
+        setTimeout(function(){
+          if($('.ui-datepicker-year option').text().indexOf('년') == -1) $('.ui-datepicker-year option').append('년')
+        }, 10)
+        },
+    });
+  }
+
+
+// ico-tooltip : $('.ico-tooltip').tooltip('내용')
+function initTooltip() {
+  $.fn.tooltip = function(msg) {
+    return this.each(function() {
+      $(this).data('tooltip', msg);
+    });
+  };
+
+  $(document).on('click', '.ico-tooltip', function(e) {
+    e.stopPropagation();
+    $('.tooltip-box').remove();
+    var msg = $(this).data('tooltip')
+           || $(this).find('.sr-only').html()
+           || $(this).closest('.tooltip-wrap').find('.sr-only').html();
+    if (!msg) return;
+    var offset = $(this).offset();
+    var $box = $('<div class="tooltip-box on">'
+      + '<button type="button" class="btn-tooltip-close"></button>'
+      + '<p>' + msg + '</p>'
+      + '</div>');
+    $('body').append($box);
+    var boxW = $box.outerWidth();
+    var btnW = $(this).outerWidth();
+    $box.css({
+      top: offset.top + $(this).outerHeight() + 14,
+      left: offset.left + (btnW / 2) - (boxW / 2)
+    });
+  });
+
+  $(document).on('click', '.btn-tooltip-close', function(e) {
+    e.stopPropagation();
+    $(this).closest('.tooltip-box').remove();
+  });
+
+  $(document).on('click', function() {
+    $('.tooltip-box').remove();
+  });
+
+  $(document).on('mouseenter', '.tooltip-wrap.st-hover', function() {
+    $('.tooltip-box').remove();
+    var msg = $(this).find('.sr-only').html();
+    if (!msg) return;
+    var $trigger = $(this);
+    var offset = $trigger.offset();
+    var $box = $('<div class="tooltip-box on"><p>' + msg + '</p></div>');
+    $('body').append($box);
+    var boxW = $box.outerWidth();
+    var trigW = $trigger.outerWidth();
+    $box.css({
+      top: offset.top + $trigger.outerHeight() + 14,
+      left: offset.left + (trigW / 2) - (boxW / 2)
+    });
+  });
+
+  $(document).on('mouseleave', '.tooltip-wrap.st-hover', function() {
+    $('.tooltip-box').remove();
+  });
+}
+
+
 // ready
 $(function(){
   function tryGnbMenu() {
@@ -705,5 +855,10 @@ $(function(){
   dataToggle();
   tabEvt();
   inputDel();
+  datepicker();
+  initTooltip();
+  
+  thumbProductEvt();
+  productSlider();
   
 });

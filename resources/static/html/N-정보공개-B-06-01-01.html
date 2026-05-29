@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학물질저감 우수제품 조회 상세</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <div class="relative-product">
+                    <div class="tag-set-wrap">
+                        <div class="tag-set">
+                            <span class="tag">기본정보</span>
+                        </div>
+                    </div>
+                    <div class="title-article-wrap">
+                        <h3 class="title-article">{제품명}</h3>
+                    </div>
+                </div>
+                <div class="data-detail-section">
+                    <!-- product-description -->
+                    <div class="product-description">
+                    <div class="product-images">
+                        <div class="images">
+                        <img src="../images/temp/temp-product.jpg" alt="">
+                        </div>
+                        <div class="img-list-wrap" data-evt="thumb-slider">
+                        <button type="button" class="swiper-button-prev"></button>
+                        <button type="button" class="swiper-button-next"></button>              
+                        <div class="img-list">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide on"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product2.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0);"><img src="../images/temp/temp-product3.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li><b>품목/용도/중량</b><div class="txt">세정제 / 일반용·가타표면세정용·창틈기, 전자레인지, 레인지주변타일, 주방바닥, 냉장고, 조리대 등 외 9종 / 600mL</div></li>
+                            <li><b>업체명</b><div class="txt">주식회사 월드랩</div></li>
+                            <li><b>업체연락처</b><div class="txt">0313525388</div></li>
+                            <li><b>업체주소</b><div class="txt">(18543) 경기도 화성시 마도면 청원산단5길 165</div></li>
+                            <li><b>생산/수입 업체</b><div class="txt">주식회사 월드랩</div></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- // product-description -->
+                </div>
+                <!-- // data-detail-section -->      
+                 
+
+                <!-- 탭 -->
+                <div class="tab-type3">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-ingredient">주요 함유성분 정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-safety">안전사용정보</a></li>
+                    </ul>
+                </div>
+
+                <!-- 주요 함유성분 정보 -->
+                <div class="tab-content" id="tab-ingredient">
+                    <div class="data-default">
+                        <table>
+                            <caption class="sr-only">주요 함유성분 정보</caption>
+                            <colgroup>
+                                <col style="width:auto;">
+                                <col style="width:200px;">
+                                <col style="width:120px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">성분명(한글/영문명)</th>
+                                    <th scope="col">용도</th>
+                                    <th scope="col">화학물질 정보</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align-l">다이프로필렌글리콜메틸에테르</td>
+                                    <td>향료</td>
+                                    <td><button type="button" class="btn-icon-search"><i class="ico-search"></i><span class="sr-only">화학물질 정보 조회</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">향료(리나릴 아세트산 등)</td>
+                                    <td></td>
+                                    <td><button type="button" class="btn-icon-search"><i class="ico-search"></i><span class="sr-only">화학물질 정보 조회</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">에탄올</td>
+                                    <td></td>
+                                    <td><button type="button" class="btn-view st2"></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">2,6-다이-터트-뷰틸-p-크레졸</td>
+                                    <td>용매제</td>
+                                    <td><button type="button" class="btn-view st2"></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">향료(초산부틸사이클로헥실 등)</td>
+                                    <td>안정제(보존제 제외)</td>
+                                    <td><button type="button" class="btn-icon-search"><i class="ico-search"></i><span class="sr-only">화학물질 정보 조회</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">리나릴 아세트산</td>
+                                    <td>향료</td>
+                                    <td><button type="button" class="btn-icon-search"><i class="ico-search"></i><span class="sr-only">화학물질 정보 조회</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-l">리날로올</td>
+                                    <td>계면활성제</td>
+                                    <td><button type="button" class="btn-icon-search"><i class="ico-search"></i><span class="sr-only">화학물질 정보 조회</span></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 안전사용정보 -->
+                <div class="tab-content" id="tab-safety" style="display: none;">
+                    <div class="data-detail">
+                        <table>
+                            <caption class="sr-only">안전사용정보 상세</caption>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">사용량</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">어린이보호포장대상</th>
+                                    <td>비대상 (비대상)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신고번호</th>
+                                    <td>CB25-12-0051</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사용상 주의사항</th>
+                                    <td>
+                                        <p>제품의 내용물을 분무기 등에 담아 분사하지 마시오.</p>
+                                        <ul class="dot-list">
+                                            <li>피부가 민감하거나 손상된 사람은 제품을 장기간 접촉하지 않도록 주의하시오.</li>
+                                            <li>용기를 던지거나 떨어뜨리지 마시오.</li>
+                                            <li>알레르기 반응을 일으킬 수 있음. 만일 알레르기 반응이 생겼을 경우, 사용을 즉시 중단하시오.</li>
+                                            <li>표시된 사용방법을 지켜 사용하시오.</li>
+                                            <li>내용물이 눈이나 피부에 접촉되지 않도록 하시오.</li>
+                                            <li>밀폐된 공간에서 사용시 환기를 충분히 하시오.</li>
+                                            <li>표시사항에 기재된 제품의 용도 외에는 사용하지 마시오.</li>
+                                            <li>직사광선이나 열기에 노출시키지 마시오.</li>
+                                            <li>제품을 기울이면 액이 흘러 나올 수 있으니, 제품을 눕히거나 거꾸로 세우지 마시오.</li>
+                                            <li>제품이 견고하게 부착되지 않았을 시 사고의 우려가 있으니 반드시 평평한 곳에 밀착하여 부착하시오.</li>
+                                            <li>함에 젖은 우드볼이 플라스틱, 가죽, 섬유에 닿을 경우 훼손될 수 있으니 내용물이 담기거나 흘렸을 경우 젖은 수건으로 즉시 닦아주시오.</li>
+                                            <li>누액의 위험이 있으니, 우드볼이 유리 용기에 닿지 않도록 주의 하시오.</li>
+                                            <li>어린이나 반려동물의 손에 닿지 않는 곳에 보관하시오.열원, 인화물질(불) 가까이에서 사용하지 마시오.</li>
+                                            <li>대시보드 위, 에어백 위치에 두고 사용하지 마시오.</li>
+                                        </ul>
+                                        <p>※사용기간은 환경(급격한 온도변화, 계절 등)에 따라 차이가 발생할 수 있음</p>
+                                        <ul class="dot-list">
+                                            <li>제품의 내용물을 분무기 등에 담아 분사하지 마시오.</li>
+                                            <li>피부가 민감하거나 손상된 사람은 제품을 장기간 접촉하지 않도록 주의하시오.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 변경이력정보 -->
+                <div class="tab-content" id="tab-history" style="display: none;">
+                    <div class="data-table">
+                        <div id="grid" aria-label="안전확인대상 생활화학제품(신고) 목록"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    <script>
+var localData = [
+    { no: 1, productName: '에프지 대표제품(액체형) 2',                       category: '방향제', company: '(주)에프지인터네셔널', issueType: '대표',     issueResult: '증명서 발급완료', issueDate: '2023-10-07' },
+    { no: 2, productName: '잠자기전 편백숲 숨결',                            category: '방향제', company: '(주)에프지인터네셔널', issueType: '대표변경', issueResult: '증명서 발급완료', issueDate: '' },
+    { no: 3, productName: '베르가못 상쾌한 숲 숨결',                         category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생',     issueResult: '증명서 발급완료', issueDate: '' },
+    { no: 4, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생변경', issueResult: '증명서 발급완료', issueDate: '' },
+    { no: 5, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생변경', issueResult: '증명서 발급완료', issueDate: '' },
+    { no: 6, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '대표변경', issueResult: '증명서 발급완료', issueDate: '' },
+    { no: 7, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '대표',     issueResult: '증명서 발급완료', issueDate: '' },
+  ];
+
+let gridConfig = {
+    dataSource: localData,
+    container: '#grid',
+    width: '100%',
+    rowHeight: 40,
+    headerHeight: 40,
+    height: '400px',
+    showRowNo: false,
+    sortable: 'rotate',
+    filterable: true,
+    pageable: {
+       pageSizes: [10, 20, 30, 40, 50]
+    },
+    pagerBar: { left: 'pagerCombo', center: 'pager' },
+    columns: [
+      { field: 'no', caption: '번호', width: 60, sortable: false,
+        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
+      { field: 'productName', caption: '제품명',             width: 360, align: 'left', cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{productName}}</a>' },
+      { field: 'category',    caption: '품목',               width: 120 },
+      { field: 'company',     caption: '업체명',             width: 200 },
+      { field: 'issueType',   caption: '발급구분',           width: 120 },
+      { field: 'issueResult', caption: '성적발급구분',       width: 150 },
+      { field: 'issueDate',   caption: '신고증명서 발급일',  width: 160 },
+    ],
+  }
+
+datagrid = SBGrid3.createGrid(gridConfig);
+</script>
+
+</body>
+</html>

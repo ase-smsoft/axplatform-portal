@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">나노 안전성 정보</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-what">나노란?</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-tech">나노기술정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-product">나노제품정보</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-nano-hazard">나노위해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-exposure">나노관리(노출)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-waste">나노관리(폐기물)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-ehs">나노EHS동향</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="tab-hazard">위해성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="tab-impact-case">영향사례</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 위해성 -->
+                    <div class="tab-content" id="tab-hazard">
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">‘00년 이후 나노기술의 급속한 발전이 있었지만 나노물질 및 나노제품의 잠재적 위해성에 대한 연구는 상대적으로 배제된 채 진행되어 왔다. 그러나 최근 다양한 대중 매체에서 나노물질 노출 위해성 논란이 일면서 국제기구 및 주요 국가를 중심으로 독성 및 환경거동 평가 등에 관한 연구가 진행되고 있다. 몇몇 유럽 주요 국가의 산업체들은 나노물질의 안전한 생산과 사용을 위해 ‘NANOSAFE’라는 공동 연구체를 만들어’ 05년부터 4년 동안의 계획으로 진행 중이다. 본 연구는 1) 검출 모니터링과 특성화 기술, 2) 건강과 위험성 접근, 3) 안전한 산업 생산 체계와 적용 개발, 4) 환경적 사회적 관점의 4개 분야로 진행되며 2) 건강과 위험성 접근 분야에서 나노물질 위해성을 연구하고 있다.</p>
+                        </div>
+                        <div class="title-chapter-wrap">
+                            <h3 class="title-chapter">나노물질의 유해성 평가항목</h3>
+                        </div>
+                        <div class="data-default">
+                            <table>
+                                <caption class="sr-only">나노물질 물리화학적 특성 평가항목</caption>
+                                <colgroup>
+                                    <col style="width:60px;">
+                                    <col style="width:auto;">
+                                    <col style="width:50%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr><th scope="row">1</th><td>용집/침적</td><td>Agglomeration/Aggregation</td></tr>
+                                    <tr><th scope="row">2</th><td>수용해도</td><td>Water solubility</td></tr>
+                                    <tr><th scope="row">3</th><td>결정상</td><td>Crystalline phase</td></tr>
+                                    <tr><th scope="row">4</th><td>분진성</td><td>Dustiness</td></tr>
+                                    <tr><th scope="row">5</th><td>결정크기</td><td>Crystallite size</td></tr>
+                                    <tr><th scope="row">6</th><td>TEM 사진</td><td>Representative TEM picture(s)</td></tr>
+                                    <tr><th scope="row">7</th><td>입자 크기 분포</td><td>Particle size distribution</td></tr>
+                                    <tr><th scope="row">8</th><td>표면적</td><td>Specific surface area</td></tr>
+                                    <tr><th scope="row">9</th><td>제타 전위/표면 전하</td><td>Zeta potential; surface charge</td></tr>
+                                    <tr><th scope="row">10</th><td>계면 화학</td><td>Surface chemistry, where appropriate</td></tr>
+                                    <tr><th scope="row">11</th><td>광촉매 활성</td><td>Photocatalytic activity</td></tr>
+                                    <tr><th scope="row">12</th><td>유동 밀도</td><td>Pour density</td></tr>
+                                    <tr><th scope="row">13</th><td>다공성</td><td>Porosity</td></tr>
+                                    <tr><th scope="row">14</th><td>물·옥탄올 분배계수</td><td>Octanol-water partition coefficient</td></tr>
+                                    <tr><th scope="row">15</th><td>산화환원전위</td><td>Redox potential</td></tr>
+                                    <tr><th scope="row">16</th><td>라디칼 형성 가능성</td><td>Radical formation potential</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="data-default">
+                            <table>
+                                <caption class="sr-only">나노물질 환경거동 평가항목</caption>
+                                <colgroup>
+                                    <col style="width:60px;">
+                                    <col style="width:auto;">
+                                    <col style="width:50%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr><th scope="row">1</th><td>분산 안정성</td><td>Dispersion stability in water</td></tr>
+                                    <tr><th scope="row">2</th><td>생물학적 분해</td><td>Biotic degradability</td></tr>
+                                    <tr><th scope="row">3</th><td>이분해성</td><td>Ready biodegradability</td></tr>
+                                    <tr><th scope="row">4</th><td>지표수에서의 분해성 모의시험</td><td>Simulation testing in ultimate degradation in surface water</td></tr>
+                                    <tr><th scope="row">5</th><td>토양 모의시험</td><td>Soil simulation testing</td></tr>
+                                    <tr><th scope="row">6</th><td>침전물 모의시험</td><td>Sediment simulation testing</td></tr>
+                                    <tr><th scope="row">7</th><td>하수처리 모의시험</td><td>Sewage treatment simulation testing</td></tr>
+                                    <tr><th scope="row">8</th><td>분해산물 확인</td><td>Identification of degradation product(s)</td></tr>
+                                    <tr><th scope="row">9</th><td>분해산물 확인시험</td><td>Further testing of degradation product(s) as required</td></tr>
+                                    <tr><th scope="row">10</th><td>비생물적 분해 및 거동</td><td>Abiotic degradability and fate</td></tr>
+                                    <tr><th scope="row">11</th><td>표면 변형 나노물질 가수분해</td><td>Hydrolysis, for surface modified nanomaterials</td></tr>
+                                    <tr><th scope="row">12</th><td>흡착-탈착</td><td>Absorption-desorption</td></tr>
+                                    <tr><th scope="row">13</th><td>토양 또는 저질에 대한 흡착</td><td>Absorption to soil or sediment</td></tr>
+                                    <tr><th scope="row">14</th><td>생물축적 가능성</td><td>Bioaccumulation potential</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <!-- 영향사례 -->
+                    <div class="tab-content" id="tab-impact-case" style="display: none;">
+                        <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">나노입자 물질의 in vitro 영향 사례</h3>
+                            </div>
+                            <div class="data-default">
+                                <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">나노입자 물질의 in vitro 영향 사례</caption>
+                                    <colgroup>
+                                        <col style="width:120px;">
+                                        <col style="width:120px;">
+                                        <col style="width:160px;">
+                                        <col style="width:120px;">
+                                        <col style="width:auto;min-width: 150px;">
+                                        <col style="width:200px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">나노물질</th>
+                                            <th scope="col">형태(크기)</th>
+                                            <th scope="col">노출용량 및 시간</th>
+                                            <th scope="col">노출경로</th>
+                                            <th scope="col">독성영향</th>
+                                            <th scope="col">저자</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>AgNPs</td>
+                                            <td>15~100 nm</td>
+                                            <td>5.0~50.0 μg/mL<br>24 시간</td>
+                                            <td>랫드 간세포</td>
+                                            <td>미토콘드리아 기능 저하<br>활성 산소종 생성<br>LDH 결여</td>
+                                            <td>Hussain et al. (2005)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AgNPs</td>
+                                            <td>~15 nm</td>
+                                            <td>5.0~100 μg/mL</td>
+                                            <td>마우스정자세포</td>
+                                            <td>LDH 결여 증가<br>미토콘드리아 기능 저하</td>
+                                            <td>Braydich-Stolle et al. (2005)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SWCNT</td>
+                                            <td>-</td>
+                                            <td>0.78~200 μg/mL<br>24 시간</td>
+                                            <td>태아 신장세포</td>
+                                            <td>세포 확산 억제<br>세포자살 유도<br>집착력 저하</td>
+                                            <td>Cui et al. (2005)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MWCNT</td>
+                                            <td>-</td>
+                                            <td>0.1, 0.2, 0.4 mg/mL<br>1~48 시간</td>
+                                            <td>인체 각질세포</td>
+                                            <td>염증반응<br>IL-8 방출</td>
+                                            <td>Monteiro-Riviere et al. (2005)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SWCNT, MWCNT</td>
+                                            <td>-</td>
+                                            <td>0.8~100 μg/mL</td>
+                                            <td>인체 섬유세포</td>
+                                            <td>세포 생존율 저하<br>세포자살 및 괴사 유도</td>
+                                            <td>Tian et al. (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>카본블랙</td>
+                                            <td>초미세입자</td>
+                                            <td>5~10 mg/mL</td>
+                                            <td>소식세포 전이법</td>
+                                            <td>소식세포 이동 유도<br>항산화 제거</td>
+                                            <td>Barlow et al. (2005)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>에추석 10~20 nm</td>
+                                            <td>10 μg/mL<br>1 시간</td>
+                                            <td>인체 기도 상피세포</td>
+                                            <td>DNA 손상<br>과산화수소 발생<br>스택 형성</td>
+                                            <td>Gurr et al. (2005)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>금홍석 및 에추석</td>
+                                            <td>3~30 mg/mL<br>48 시간</td>
+                                            <td>인체 폐포 상피세포</td>
+                                            <td>농도와 비례해 생존율 저하<br>고농도군 LDH 방출<br>고농도군 염증반응 유도</td>
+                                            <td>Sayes et al. (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>초음파처리(2분)</td>
+                                            <td>5 μg/mL<br>24 시간</td>
+                                            <td>적혈구세포</td>
+                                            <td>세포 내 나노입자 결집</td>
+                                            <td>Rothen-Rutishauser et al. (2006)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">나노입자 물질의 in vitro 연구 사례</h3>
+                            </div>
+
+                            <div class="txt-exp-wrap">
+                                <p class="txt-exp">나노물질 관리에 있어 독성과 함께 작업환경이나 제품의 종류, 유통량 및 사용량 등 인체 및 환경으로의 노출가능성에 대한 고려가 필요하다. Lorenz et al.(2011)에서 언급된 바와 같이, 소비자는 메이크업 화장품 등을 사용하면서 제품에 포함된 나노물질에 다양한 경로로 노출될 수 있기 때문에 이러한 제품을 자주 사용하는 여성과 노출 시 상대적으로 위험성 정도가 커지는 영유아들과 관련된 나노제품의 위해성에 우선적으로 관심을 기울일 필요가 있다.
+                                    <br>나노물질의 위해성 평가는 일반화학물질에 대한 기존의 평가 체계 및 방법을 따라야 할 것으로 보이나 독성, 노출 등에 대한 자료의 부족과 위해성 평가 결과의 불확실성이 문제가 될 것으로 예상된다. Aschberger et al.(2011)은 현재 유럽연합이 제시한 REACH의 위해성 평가 가이드라인이 나노물질의 독특한 특성을 반영하지 못하고 있으며, 위해성 평가에 필요한 자료의 생산과 함께 위해성 평가 방법론의 개발이 필요하다고 지적한 바 있다. 이에 신뢰할 수 있는 나노독성 자료 및 나노물질 노출 자료의 구축과 인체 독성 및 생태 독성과 관련된 연구 등이 추진되어야 할 것이다.
+                                </p>
+                            </div>
+
+                            <div class="data-default">
+                                <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">나노물질 환경 독성 연구 사례</caption>
+                                    <colgroup>
+                                        <col style="width:120px;">
+                                        <col style="width:120px;">
+                                        <col style="width:160px;">
+                                        <col style="width:120px;">
+                                        <col style="width:auto;min-width:150px;">
+                                        <col style="width:200px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">나노물질</th>
+                                            <th scope="col">생물종</th>
+                                            <th scope="col">시험 농도 및 시간</th>
+                                            <th scope="col">크기</th>
+                                            <th scope="col">결과</th>
+                                            <th scope="col">참고문헌</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Fullerene C60</td>
+                                            <td>D. Magna</td>
+                                            <td>0.2~9 mg/L<br>48 시간</td>
+                                            <td>20~100 nm</td>
+                                            <td>9 mg/L 높은 치사율</td>
+                                            <td>Lovern and Kpaper (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fullerene C60</td>
+                                            <td>D. Magna</td>
+                                            <td>0.5~5.0 mg/L<br>21 일</td>
+                                            <td>10~200 nm</td>
+                                            <td>생식기능 저하<br>높은 치사율</td>
+                                            <td>Oberdorster et al. (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fullerene C60</td>
+                                            <td>H. Azteca</td>
+                                            <td>7 mg/L<br>96 시간</td>
+                                            <td>10~200 nm</td>
+                                            <td>독성 영향 없음</td>
+                                            <td>Oberdorster et al. (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fullerene C60</td>
+                                            <td>H. Copepod</td>
+                                            <td>22.5 mg/L<br>96 시간</td>
+                                            <td>10~200 nm</td>
+                                            <td>독성 영향 없음</td>
+                                            <td>Oberdorster et al. (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>D. Magna</td>
+                                            <td>0.2~10 mg/L<br>48 시간</td>
+                                            <td>10~20 nm</td>
+                                            <td>농도 비례 치사율 증가<br>10 mg/L 100% 치사율</td>
+                                            <td>Lovern and Kpaper (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>D. Magna</td>
+                                            <td>50~500 mg/L<br>48 시간</td>
+                                            <td>100~500 nm</td>
+                                            <td>유의한 결과 없음</td>
+                                            <td>Lovern and Kpaper (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fullerene C60</td>
+                                            <td>D. Rerio</td>
+                                            <td>0.1~5 mg/L<br>96 시간</td>
+                                            <td>-</td>
+                                            <td>배아 발달 지연<br>부화 성공률 감소</td>
+                                            <td>Zhu et al. (2007)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ZnO</td>
+                                            <td>D. Magna</td>
+                                            <td>50~70 nm<br>48 시간</td>
+                                            <td>-</td>
+                                            <td>벌크 물질에 비해 급성독성 증가</td>
+                                            <td>Heinlaan et al. (2008)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CuO</td>
+                                            <td>D. Magna</td>
+                                            <td>48 시간</td>
+                                            <td>~30 nm</td>
+                                            <td>벌크 물질에 비해 높은 급성독성 관찰</td>
+                                            <td>Heinlaan et al. (2008)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>D. Magna</td>
+                                            <td>48 시간</td>
+                                            <td>25~70 nm</td>
+                                            <td>독성 영향 없음</td>
+                                            <td>Heinlaan et al. (2008)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CuO</td>
+                                            <td>P. Subcapitata</td>
+                                            <td>72 시간</td>
+                                            <td>30 nm</td>
+                                            <td>벌크 물질에 비해 생장이 저해됨</td>
+                                            <td>Aruoja et al. (2009)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ZnO</td>
+                                            <td>P. Subcapitata</td>
+                                            <td>72 시간</td>
+                                            <td>50~70 nm</td>
+                                            <td>벌크 물질과 유사 독성 관찰</td>
+                                            <td>Aruoja et al. (2009)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>P. Subcapitata</td>
+                                            <td>72 시간</td>
+                                            <td>25~70 nm</td>
+                                            <td>벌크 물질에 비해 높은 급성독성 관찰</td>
+                                            <td>Aruoja et al. (2009)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>D. Subspicatus</td>
+                                            <td>72 시간</td>
+                                            <td>25~70 nm</td>
+                                            <td>독성 영향 없음</td>
+                                            <td>Hund-Rinke et al. (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TiO₂ NPs</td>
+                                            <td>D. Magna</td>
+                                            <td>72 시간</td>
+                                            <td>25~70 nm</td>
+                                            <td>독성 영향 없음</td>
+                                            <td>Hund-Rinke et al. (2006)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fullerene C60</td>
+                                            <td>Battery test2</td>
+                                            <td>-</td>
+                                            <td>비특정</td>
+                                            <td>독성 영향 있음</td>
+                                            <td>Blaise et al. (2008)</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Battery test2</td>
+                                            <td>-</td>
+                                            <td>&lt; 100 nm</td>
+                                            <td>독성 영향 있음</td>
+                                            <td>Blaise et al. (2008)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                            <div class="txt-exp-wrap">
+                                <p class="txt-exp-ps">
+                                    <b>※출처</b><br>
+                                    나노물질 위해성 관리체계 구축을 위한 최적의 나노물질 용량척도 선정에 관한 연구, 2011, 환경부<br>
+                                    나노물질 유통량 조사 지침서(안) 마련 및 국내 나노물질 유통량 조사보고서, 2011, 환경부/화학물질관리협회<br>
+                                    나노물질의 안전관리를 위한 제도화 방안, 2011, 한국환경정책·평가연구원<br>
+                                    NNI(National Nanotechnology Initiative), http://www.nano.gov<br>
+                                    Developments in nanotechnologies regulation &amp; standards, 2012, Observatory Nano<br>
+                                    OECD, Guidance for the testing of manufactured nanomaterials: OECD' Sponsorship programme: 1st ver, 2010
+                                </p>
+                            </div>                            
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- // tab-content -->
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

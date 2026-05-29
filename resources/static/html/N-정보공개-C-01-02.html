@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">나노 안전성 정보</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-what">나노란?</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-nano-tech">나노기술정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-product">나노제품정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-hazard">나노위해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-exposure">나노관리(노출)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-waste">나노관리(폐기물)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-ehs">나노EHS동향</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h3 class="title-chapter">나노기술이란?</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">나노기술(nanotechnology)이란 ‘나노미터(nm)’ 수준에서 모양과 크기를 제어하여 특성을 파악하고 생산 및 적용하는 기술을 정의(Royal Society, 2004)한다. 또한, ‘구성하는 요소의 크기가 100 나노미터(nm) 이내를 제조하는 기술’과 그 구조를 갖는 소재가 나타내는 특이한 물성을 이해하고 활용하는 과학기술로 정의한다.</p>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h3 class="title-chapter">나노제품 응용사례</h3>
+                        </div>
+
+                        <div class="nano-tech-field">
+                            <div class="nano-tech-field__head">
+                                <div class="nano-tech-field__head-icon" aria-hidden="true">
+                                    <svg class="ico-nano-field-main" width="28" height="27" viewBox="0 0 28 27" focusable="false"><use href="../images/common/simbol.svg#ico-nano-field-main"></use></svg>
+                                </div>
+                                <p class="nano-tech-field__head-title">나노기술분야</p>
+                            </div>
+                            <ul class="nano-tech-field__list">
+                                <li class="nano-tech-field__item">
+                                    <div class="nano-tech-field__item-icon" aria-hidden="true">
+                                        <svg class="ico-nano-field-env" width="28" height="28" viewBox="0 0 28 28" focusable="false"><use href="../images/common/simbol.svg#ico-nano-field-env"></use></svg>
+                                    </div>
+                                    <p class="nano-tech-field__item-title">나노소재 환경/에너지</p>
+                                </li>
+                                <li class="nano-tech-field__item">
+                                    <div class="nano-tech-field__item-icon" aria-hidden="true">
+                                        <svg class="ico-nano-field-device" width="28" height="28" viewBox="0 0 28 28" focusable="false"><use href="../images/common/simbol.svg#ico-nano-field-device"></use></svg>
+                                    </div>
+                                    <p class="nano-tech-field__item-title">나노소자</p>
+                                </li>
+                                <li class="nano-tech-field__item">
+                                    <div class="nano-tech-field__item-icon" aria-hidden="true">
+                                        <svg class="ico-nano-field-bio" width="28" height="28" viewBox="0 0 28 28" focusable="false"><use href="../images/common/simbol.svg#ico-nano-field-bio"></use></svg>
+                                    </div>
+                                    <p class="nano-tech-field__item-title">나노바이오</p>
+                                </li>
+                                <li class="nano-tech-field__item">
+                                    <div class="nano-tech-field__item-icon" aria-hidden="true">
+                                        <svg class="ico-nano-field-equip" width="28" height="28" viewBox="0 0 28 28" focusable="false"><use href="../images/common/simbol.svg#ico-nano-field-equip"></use></svg>
+                                    </div>
+                                    <p class="nano-tech-field__item-title">나노공정 장비/측정</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="txt-exp-wrap st2">
+                            <p class="tit-exp"><strong>나노소재 환경/에너지</strong></p>
+                            <p>나노기술(nanotechnology)이란 &#39;나노미터(nm)&#39; 수준에서 모양과 크기를 제어하여 특성을 파악하고 생산 및 적용하는 기술을 정의(Royal Society, 2004)한다. 또한, &#39;구성하는 요소의 크기가 100 나노미터(nm) 이내를 제조하는 기술&#39;과 그 구조를 갖는 소재가 나타내는 특이한 물성을 이해하고 활용하는 과학기술로 정의한다.</p>
+          
+                            <p class="tit-exp"><strong>나노소자</strong></p>
+                            <p>nm 크기의 물질이나 구조가 갖는 독특한 성질과 현상을 이용해 특수목적 소자를 개발하는 기술<br>나노 기억소자, 분자 메모리, PC 광소자, 양자전산 소자, 스핀 FET/LED 등</p>
+          
+                            <p class="tit-exp"><strong>나노바이오</strong></p>
+                            <p>바이오 시스템과 나노구조와 결합된 융합 시스템을 나노크기의 수준에서 조작, 분석, 제어하는 기술<br>안전성, 영향 평가 및 표준화, 농림, 수산, 종합전략, 생필품, 에너지, 극한 제어 및 분석 등</p>
+ 
+                            <p class="tit-exp"><strong>나노공정 장비/측정</strong></p>
+                            <p>나노 소재 및 나노 소자의 기본 요소를 합성, 증착 및 패터닝하는 공정기술<br>물성, 소자 특성 측정 기술을 바탕으로 나노기술 전반에 활용되는 장비 등을 연구 개발하는 기술<br>나노 화학/구조 분석, 나노 광학 특성 분석, 자기조립 기반 공정, 나노선 합성 등</p>
+                            
+                            <p class="txt-exp-ps"><b>※ 출처</b><br>국가 나노기술 지도, 2008, 교육부</p>
+                        </div>
+                    </div>
+
+                    
+
+                    
+                    
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

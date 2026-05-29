@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">나노 안전성 정보</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-what">나노란?</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-tech">나노기술정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-product">나노제품정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-hazard">나노위해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-exposure">나노관리(노출)</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-nano-waste">나노관리(폐기물)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-ehs">나노EHS동향</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="tab-waste-aspect">폐기물 양상</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="tab-treatment">처리방법</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="tab-issues">문제점</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 폐기물 양상 -->
+                    <div class="tab-content" id="tab-waste-aspect">
+                        <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">나노폐기물 양상</h3>
+                            </div>
+                            <div class="txt-exp-wrap st2">
+                                <p class="txt-exp">나노소비재는 필연적으로 사용자로 하여금 나노폐기물을 양산하게 만드는 특징이 있다. 자동차 연료 첨가제, 매연 저감제 등 다양하게 사용되는 나노물질은 자동차 운행 중에도 대기, 토양, 수계 등으로 노출되며 추후 제품을 교환하게 되는 경우 나노폐기물을 양산한다.
+                                    <br>또한, 나노물질을 취급하는 전과정(생산, 이송, 저장, 폐기 등)에서 비의도적인 폐기물 발생을 야기한다. 발생된 나노폐기물은 매립, 폐수를 거쳐 수계 및 토양 노출을 유발하며, 이는 인체 및 생태계에 영향을 미친다. 나노물질이 환경 중에 어떻게 노출되는지 모니터링하고, 이를 바탕으로 나노폐기물을 정량화하는 방향의 연구가 진행 중이다.</p>
+
+                                <p class="tit-exp"><strong>2008년 영국 왕립환경오염위원회 보고서</strong></p>
+                                <p class="txt-exp">Fullerenes 생산 제조공정에서 약 10 %의 Fullerenes이 소비재 생산에 사용되고 나머지는 폐기물로 처리되어 매립되고 있다. 제조되는 나노물질의 상당수는 소비재 생산 과정에서 약 90 %까지 폐기물을 양산하며, 그 양은 현재 나노물질 생산량이 10 ~ 103 톤임을 감안하여 연간 1 ~ 100 톤에 이를 것으로 추정하고 있다.</p>
+                                
+                                <p class="tit-exp"><strong>2009년 영국 Lancaster Environment Centre 보고서</strong></p>
+                                <p class="txt-exp">AgNP는 의료, 건강 보건, 가정용품 등 다양한 산업분야에 사용되고 있으나 대부분이 폐수처리장이나 매립으로 폐기물을 처리하고 있다. 이와 관련한 적절한 규제 정책이 갖춰져 있지 않아 환경에 노출될 가능성이 매우 높으며, 우선적으로 인체 및 환경에 큰 영향을 미치는 노출 경로에 대한 정보를 파악하는 것이 중요하다.</p>
+
+
+                                <p class="txt-exp-ps">
+                                    <b>※출처</b>
+                                    <br>수계 배출원 중심의 나노물질 환경노출평가 기법 연구, 2013, 국립환경과학원
+                                    <br>제조나노물질의 환경거동 및 생태독성 평가, 2011, 국립환경과학원
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <!-- 처리방법 -->
+                    <div class="tab-content" id="tab-treatment" style="display: none;">
+                         <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">나노폐기물 처리방법: 하수, 폐수 처리</h3>
+                            </div>
+
+                            <div class="txt-exp-wrap st2">
+                                <p class="tit-exp"><strong>국외 수계 중 나노물질 제거 및 관리 방안 - 기존 하수 처리방법 그대로 처리</strong></p>
+                                <ol>
+                                    <li>① 사용 및 제조과정에서 발생된 나노폐수가 하, 폐수 처리장으로 이동</li>
+                                    <li>②, ③ 큰 고형물에 나노물질이 흡착되어 1차 제거</li>
+                                    <li>④ 1차 침전조에서 나노물질 제거</li>
+                                    <li>⑤ 활성슬러지를 이용해 생물학적 제거 및슬러지 내 흡착</li>
+                                    <li>⑥ 2차 침전조에서는 침전과 응집과정을 거쳐 나노물질 제거</li>
+                                    <li>⑦ 폐슬러지 탈수 과정에서 나노물질 농축, 미생물에 의한 일부 소화, 유기물과 상호작용, 매립시 토양에 흡착, 토양내 침출로 인한 표층수 오염 가능</li>
+                                    <li>⑧ 방류전 소독</li>
+                                    <li>⑨ 최종 방류</li>
+                                </ol>
+
+                                <div class="img-box">
+                                    <img src="../images/content/nano-waste-water-treatment.jpg" alt="나노폐기물 처리방법: 하수, 폐수 처리 흐름도">
+                                </div>
+
+                                <p class="tit-exp"><strong>기존 하, 폐수 처리장의 나노물질 제거 효율: 90-95 % 정도로 파악</strong></p>
+                                <ul class="dot-list">
+                                <li>물리적 처리 &lt; 35 %, 생물학적 처리 &lt; 72 %: total &lt; 95 %</li>
+                                <li>하, 폐수 처리장의 최종 방류수로 저농도의 나노물질이 노출될 수 있으나 심각한 수준은 아니라고 판단</li>
+                                <li>활성 슬러지의 생장에 악영향을 주어 전체 하, 폐수 처리장의 운전 방해 가능성 제기</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                         <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">나노폐기물 처리 방법: 소각, 매립 처리</h3>
+                            </div>
+
+                            <div class="txt-exp-wrap st2">
+                                <p class="tit-exp"><strong>국외 수계 중 나노물질 제거 및 관리 방안 - 기존 하수 처리방법 그대로 처리</strong></p>
+                                <ul class="dot-list">
+                                    <li>다양한 공정 처리를 통해 폐 슬러지의 자원화를 진행 중이다.</li>
+                                    <li>재활용이 불가하거나, 재활용 과정에서 발생된 잔류물은 매립 및 소각하는 방법으로 처리한다.</li>
+                                </ul>
+
+                                <p class="tit-exp"><strong>국내 폐기물 처리법에 의해 해양투기가 ’12년부터 전면 금지되며 매립이나 소각으로 처리하고 있다.</strong></p>
+                                <ul class="dot-list">
+                                    <li>나노물질을 함유한 폐나노 소비재, 폐활성 슬러지도 소각에 의존하고 있으며, 전세계적으로 매립을 금지하고 소각율을 높이려는 노력이 진행되고 있다. 유럽연합은 매립을 금지하는 법안을 공표하고 미처리된 폐기물에 대한 매립을 억제하고 있다.</li>
+                                    <li>소각시설은 burning과 동시에 대기 집진필터를 작동해 1차적으로 비산먼지가 걸러지고 추가적으로 acid washing을 이용해 비산 먼지를 모두 제거하고 있다.</li>
+                                </ul>
+
+                                <ul class="nano-waste-card-list">
+                                    <li class="nano-waste-card">
+                                        <div class="nano-waste-card__head">
+                                            <span class="nano-waste-card__icon" aria-hidden="true">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" focusable="false"><use href="../images/common/simbol.svg#ico-nano-waste-landfill"></use></svg>
+                                            </span>
+                                            <p class="nano-waste-card__title">매립</p>
+                                        </div>
+                                        <ul class="dot-list">
+                                            <li>하수처리장에서 나오는 활성슬러지를 처리하는 가장 일반적 방법</li>
+                                            <li>나노입자의 경우 토양내 장기 체류 가능하여 지속적 환경 노출원으로 작용</li>
+                                        </ul>
+                                    </li>
+                                    <li class="nano-waste-card">
+                                        <div class="nano-waste-card__head">
+                                            <span class="nano-waste-card__icon" aria-hidden="true">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" focusable="false"><use href="../images/common/simbol.svg#ico-nano-waste-incineration"></use></svg>
+                                            </span>
+                                            <p class="nano-waste-card__title">소각</p>
+                                        </div>
+                                        <ul class="dot-list">
+                                            <li>활성슬러지를 소화, 탈수 및 건조하여 부피를 감소시키는 방법</li>
+                                            <li>활성슬러지의 안정화를 위해 가압 또는 가압과 가열을 병용</li>
+                                            <li>소각로의 나노입자가 비산먼지와 섞여 대기에서 2차 오염유발</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+
+                                <div class="txt-exp-ps">
+                                    <b></b>
+                                    <b>※ 참고</b>
+                                    <br>수계 배출원 중심의 나노물질 환경노출평가 기법 연구, 2013, 국립환경과학원
+                                    <br>제조나노물질의 환경거동 및 생태독성 평가, 2011, 국립환경과학원
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <!-- 문제점 -->
+                    <div class="tab-content" id="tab-issues" style="display: none">
+                        <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">문제점</h3>
+                            </div>
+                            <div class="txt-exp-wrap st2">
+                                <p class="tit-exp"><strong>하, 폐수처리시설을 이용한 처리방법의 문제점</strong></p>
+                                <p class="txt-exp">현재 나노물질을 함유한 폐수는 기존 하, 폐수 처리시설을 그대로 이용하여 처리하고 있으며, 유입수 대비 방류수 내 존재하는 대상 나노물질의 농도는 약 90 ~ 95 %, 최대 99 % 제거 효율을 보이고 있다.
+                                    <br>하수처리장 폐 슬러지에 나노물질이 대부분 흡착된 상태이며, 이를 재사용(퇴비 등)시에 비의도적인 환경오염원으로 작용할 수 있다.
+                                    <br>극미량 존재하게 될 대상 물질의 농도 분석이 일반적인 모니터링 기법으로는 용이하지 않아 새로운 분석법이 필요하다.
+                                </p>
+                                
+                                <p class="tit-exp"><strong>소각시설을 이용한 처리방법의 문제점</strong></p>
+                                <p class="txt-exp">
+                                    나노입자의 분산안정제가 소각 시에 유독한 화학물질로 변할 수 있음이 보고되었다.
+                                    <br>다양한 나노입자를 포함하는 종이나 플라스틱 폐기물을 소각했을 때, PAH(Polycyclic Atmatic Hydrocarbon) 및 PCDD(Polychloicated-dibenzo-p-dioxin)등이 배출될 수 있다.
+                                    <br>현재 나노폐기물, 나노물질을 포함한 폐 슬러지를 상당부분 소각에 의존하고 있지만, 소각 후 발생되는 유해 화학물질에 대한 검증 연구가 필요하다.
+                                    <br>소각에 의한 효율은 하수처리장의 효율만큼 높은 것으로 파악되지만, 소각시설의 각 공정 별로 나노입자가 지속적으로 발견되며 대부분 슬래그, 비산재 형태로 최종 처리되는 것으로 파악된다.
+                                </p>
+
+                                <p class="tit-exp"><strong>매립을 이용한 처리방법의 문제점</strong></p>
+                                <p class="txt-exp">
+                                    나노입자의 분산안정제가 소각 시에 유독한 화학물질로 변할 수 있음이 보고되었다.
+                                    <br>하수처리장 내 발생되는 폐 슬러지는 1 %가 매립, 74 %가 복토, 퇴비 등으로 재사용되고 있다.
+                                    <br>소각장에서 발생되는 재는 매립을 실시하고 있다.
+                                    <br>매립은 토양 내 나노물질의 체류시간을 지연시켜 지속적인 노출원으로 작용하고, 이는 토양 내 생물종에게 악영향을 미칠 수 있다.
+                                </p>
+                                <p class="txt-exp-ps">
+                                    <b>※출처</b>
+                                    <br>수계 배출원 중심의 나노물질 환경노출평가 기법 연구, 2013, 국립환경과학원
+                                    <br>제조나노물질의 환경거동 및 생태독성 평가, 2011, 국립환경과학원
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // tab-content -->
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">나노 안전성 정보</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-what">나노란?</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-tech">나노기술정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-product">나노제품정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-hazard">나노위해성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-nano-exposure">나노관리(노출)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-waste">나노관리(폐기물)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-ehs">나노EHS동향</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="tab-human-exposure">인체노출</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="tab-env-exposure">환경노출</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 인체노출 -->
+                    <div class="tab-content" id="tab-human-exposure">
+                        <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">인체노출 사례</h3>
+                            </div>
+                            <div class="txt-exp-wrap">
+                                <p class="txt-exp">나노기술이 적용된 제품과 나노소비재가 시장에 등장하면서 나노물질에 대한 잠재적 위해성 논란이 일고 있다.</p>
+                            </div>
+                            <div class="data-default">
+                                <table>
+                                    <caption class="sr-only">나노제품 인체 위해성 사례</caption>
+                                    <colgroup>
+                                        <col style="width:160px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">제품 및 물질</th>
+                                            <th scope="col">사례</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Magic Nano<br>('06년)</td>
+                                            <td>욕실용품에 오염물질이 고착화되는 것을 방지하는 제품으로 판매되고 있으나, 사용자의 호흡기 질환 유발이 보고되었다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>은나노 세탁기<br>('07년)</td>
+                                            <td>미국 수출 준비 중 은 나노물질을 사용한 이유로 살충제 관련 법에 의해 해당 제품의 인체 무해성을 입증하기 전까지는 수출 금지 조치를 내렸다.<br>이를 계기로 국내 나노 소비재에 관한 위해성 논란이 있었다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>콜로이드 은 치료<br>('09년)</td>
+                                            <td>콜로이드 은나노 입자가 포함된 약품을 피부 질환 치료용으로 사용하여 피부가 푸르게 변하는 은피증(Argyria)에 걸린 사례가 보고되었다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">인체노출 경로</h3>
+                            </div>
+                            <div class="txt-exp-wrap">
+                                <p class="txt-exp">
+                                    나노물질은 특성에 따라 다양한 노출 경로를 가지며, 인체 및 환경에서의 거동 또한 기존의 화학물질과 다른 특성을 갖는다.
+                                    <br>생산단계에서부터 조절이 가능하고 폐기법이 정해진 화학물질과 달리 나노물질은 규제 정책이 갖춰져 있지 않아 다양한 경로로 환경에 노출된다.
+                                    <br>우선적으로 여러 경로 중 의도적/비의도적으로 인체 및 환경에 큰 위험을 미치는 노출 경로 파악이 중요하다.
+                                    <br>나노물질 노출도를 정성/정량적으로 파악하기 위해 실제 나노물질을 원료 또는 중간생산물로 취급하고 있는 현장(기업체, 연구소 등) 내 노출량을 파악하는 것이 필요하다.</p>
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+
+                    <!-- 환경노출 -->
+                    <div class="tab-content" id="tab-env-exposure" style="display: none;">
+                        <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">환경노출 사례</h3>
+                            </div>
+
+                            <div class="txt-exp-wrap">
+                                <p class="txt-exp">나노물질은 Ag 나노입자를 함유한 항균 의복이나 TiO₂ 나노입자가 포함된 자외선 차단제 등의 세탁 및 사용 등의 경로로 수계에 노출된다. 실제 나노물질을 함유한 제품을 사용하면서 발생되는 폐수를 추적한 사례가 보고되었으며, 제품들에 대한 환경노출 농도를 분석 시험했을 때, 세척수 내에 나노입자가 존재함을 현미경으로 관찰할 수 있었다.</p>
+                            </div>
+
+                            <div class="img-box">
+                                <img src="../images/temp/temp-env-exposure.jpg" alt="">
+                            </div>
+                            <div class="txt-exp-wrap">
+                                <p class="txt-exp-ps">※ 유입 폐수 내 은 나노입자가 EPA 음용수 기준을 넘는 것으로 분석되었다.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="section-wrap">
+                            <div class="title-chapter-wrap">
+                                <h3 class="title-chapter">환경노출 경로</h3>
+                            </div>
+
+                            <div class="txt-exp-wrap">
+                                <div class="txt-exp">나노물질은 다양한 경로, 예를 들어 산업공정과 실험실에서의 폐기물, 약품 저장 및 이송과정, 농/축산업에 적용되는 과정, 사용 후 폐기과정 등에서 수계 매질(지하수, 표층수, 음용수 등)로 노출될 가능성이 높다.</div>
+                                <p class="txt-exp-ps">
+                                    <b>※ 출처</b><br>
+                                    수계 배출원 중심의 나노물질 환경노출평가 기법 연구, 2013, 국립환경과학원
+                                    <br>제조나노물질의 환경거동 및 생태독성 평가, 2011, 국립환경과학원
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- // tab-content -->
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

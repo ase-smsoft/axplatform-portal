@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">교육안내</h2>
+                    <p class="txt-sub">화학사고로부터 국민의 안전을 지키겠습니다.</p>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h2 class="title-chapter">배경</h2>
+                    </div>
+
+
+                    <div class="img-visual-box">
+                        <div class="img"><img src="../images/content/img-visual-safety.jpg" alt=""></div>
+                        <div class="img"><img src="../images/content/img-visual-safety2.jpg" alt=""></div>
+                    </div>
+
+                    <ul class="list-check-icon">
+                        <li>국내에서 최근 화학물질 사고로 국가와 국민의 안전을 위협하고 국제적으로는 대량살상효과가 큰 화학물질을 이용한 테러가 발생</li>
+                        <li>구미 불화수소 유출사고('12.9.27) 이후, 화학물질에 대한 국민적 관심과 우려가 높아짐</li>
+                        <li>화학물질 유통의 증가와 신규 화학물질의 지속적인 양산으로 대형 화학사고 발생 가능성 농후</li>
+                        <li>화학물질 사고 시 초기대응이 미숙할 경우 인명·재산 및 치명적인 환경재난으로 확대될 우려가 커 현장 대응능력 역량강화 필요</li>
+                    </ul>
+                </div>
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h2 class="title-chapter">교육목적</h2>
+                    </div>
+
+                    <ol class="info-card-list">
+                        <li class="info-card-item">
+                        <span class="info-card-icon">
+                            <svg width="24" height="28" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-list-shield2"></use></svg>
+                        </span>
+                        <div class="info-card-content">
+                            <strong class="info-card-title">화학사고·테러로 인한 국가와 국민의 재산 및 인명 보호</strong>
+                            <p class="info-card-desc">화학사고·테러 예방·대응 환경전문 인재양성</p>
+                        </div>
+                        </li>
+                        <li class="info-card-item">
+                        <span class="info-card-icon">
+                            <svg width="28" height="28" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-list-set"></use></svg>
+                        </span>
+                        <div class="info-card-content">
+                            <strong class="info-card-title">실무자의 완벽한 사고예방·대응과 안전관리체계 확립</strong>
+                            <p class="info-card-desc">전문·실무 능력 향상을 위한 역량강화 교육운영 / 표준화된 교육·훈련 체계 마련</p>
+                        </div>
+                        </li>
+                        <li class="info-card-item">
+                        <span class="info-card-icon">
+                            <svg><use href="../images/common/simbol.svg#ico-list-clipboard"></use></svg>
+                        </span>
+                        <div class="info-card-content">
+                            <strong class="info-card-title">유해화학물질관리자에 대한 실무능력 배양을 통해 화학사고 사전예방</strong>
+                            <p class="info-card-desc">화학물질 취급 담당자에 대한 화학사고 예방·대응 능력 향상 교육실시<br>화학물질의 취급시설 관리법 및 특성에 따른 방제기법 습득 등</p>
+                        </div>
+                        </li>
+                    </ol>
+                    
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h2 class="title-chapter">기본방향</h2>
+                    </div>
+
+                    <ul class="list-check-icon">
+                        <li>화학사고 관련법규의 이해와 현장실습 교육을 통해 사고예방·대응 전문가양성</li>
+                        <li>화학테러 정보수집, 화학물질의 위험성 평가·분석·탐지 역량 강화</li>
+                        <li>화학재난 대응방법과 시나리오 개발로 현장에서 신속 정확한 판단능력 향상</li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+
+</body>
+</html>

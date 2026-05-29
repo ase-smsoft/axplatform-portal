@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">나노 안전성 정보</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-nano-what">나노란?</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-tech">나노기술정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-product">나노제품정보</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-hazard">나노위해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-exposure">나노관리(노출)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-waste">나노관리(폐기물)</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-nano-ehs">나노EHS동향</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h3 class="title-chapter">나노</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p>바닷가나 사막에 있는 모래알은 크기가 매우 작아 손에서 쉽게 빠져 나간다. 눈으로 보기에는 다 작은 크기의 모래알이지만 현미경으로 자세히 관찰해보면 각기 다른 모양과 색상을 띄는 것을 알 수 있다. 이처럼 작은 <b>모래알보다 6000분의 1이나 작은 크기가 ‘나노(nano)’</b>이다.</p>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h3 class="title-chapter">나노의 특징</h3>
+                        </div>
+
+                        <div class="txt-exp-wrap st2">
+                            <p class="tit-exp"><strong>벽면에 수직으로 걷는 것이 가능한 게코도마뱀을 이용해 접착제를 개발하였다.</strong></p>
+                            <p>애완용으로도 선호되는 파충류 ‘게코도마뱀’은 벽에 수직으로 달라붙어 자유자재로 이동이 가능하다. 대부분의 생물체가 중력의 영향으로 기구나 도구의 도움 없이 수직으로 걷는 것이 불가능하지만 ‘게코도마뱀’에겐 가능하다. 게코도마뱀은 발바닥 표면에 촘촘히 박혀 있는 미세 털의 끝부분이 구부러져 있는 ‘나노(nano) 헤어’구조를 갖는다. 벽에 매달려 있을 때는 미끄러지지 않지만 걸음을 옮길 때는 쉽게 떨어지는 원리를 이용해 접착력이 강하지만 수직이 아닌 방향으로 떼어내면 쉽게 떨어지고 접착 물질을 남기지 않고 깨끗이 붙였다 뗄 수 있는 탄소나노튜브를 개발하였다.</p>
+
+                            <p class="tit-exp"><strong>바닥면이 초소수성을 띄면 물방울은 거의 구 모양을 형성한다.</strong></p>
+                            <p>연 잎 위에 물방울들은 바람이 불면 조금씩 굴러다니거나 큰 물방울을 만든다. 연 잎 위 미세한 먼지를 닦아내는 이 과정에서 표면에 어떤 비밀이 숨어있는지 알아내었다. 물방울이 연 잎 위에서 잎에 젖지 않고 더러워지지 않는 현상을 ‘연 잎 효과(Lotus Effect)’라 한다. 이 원리의 핵심적 요소는 바로 연 잎 표면에 있는 무수한 미세 ‘나노(nano) 돌기’이다. 전자현미경을 이용해 표면을 나노미터(nm) 수준으로 관찰한 결과 약 50nm의 직경을 갖는 ‘나노(nano) 돌기’로 인해 연 잎 표면은 물에 젖지 않는 ‘소수성’을 띄는 것을 발견하였다. 또한, 이를 응용한 방수 의류, 코팅제 등이 개발되어 실생활에 널리 사용되고 있다.</p>
+
+                            <p class="tit-exp"><strong>진폐는 보는 방향에 따라 광 결정에 의한 특정한 색을 나타낸다.</strong></p>
+                            <p>화폐가 진폐인지 위폐인지를 가려낼 때 쓰이는 방법은 빛의 간섭에 의해 보는 각도에 따라 색이 변하는 원리를 모방한 ‘편광 효과’이다. 위폐를 만들기 위해 복사하는 과정에서 진폐의 광 결정 미세 입자들은 복사되지 않고 빛에 비춰보았을 때 광 결정에 의한 특정한 색을 나타내기 때문에 구분이 가능하다. 이는 비단벌레, 진주조개 껍데기, 공작의 날개 등과 같은 원리이다.</p>
+                        </div>
+                    </div>
+
+                    
+
+                    
+                    
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

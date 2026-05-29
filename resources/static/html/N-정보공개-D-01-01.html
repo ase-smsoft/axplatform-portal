@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../script/jquery-ui/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui/jquery-ui.min.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학물질 사고·사례</h2>
+                    <p class="txt-sub">지역별 화학물질 사고현황 및 사고사례를 확인하실 수 있습니다.</p>
+                </div>
+
+                <div class="search-area">
+                    <div class="data-detail">
+                        <table>
+                            <caption class="sr-only">화학물질 사고·사례 검색 조건</caption>
+                            <colgroup>
+                                <col style="width:120px">
+                                <col style="width:auto">
+                                <col style="width:120px">
+                                <col style="width:auto">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">사고일자</th>
+                                    <td>
+                                        <div class="input-date">
+                                            <input type="text" class="datepicker auto start-date" title="시작일">
+                                            <span class="dash">-</span>
+                                            <input type="text" class="datepicker auto end-date" title="종료일">
+                                        </div>
+                                    </td>
+                                    <th scope="row">사고지역</th>
+                                    <td>
+                                        <div class="fm">
+                                            <select class="auto" aria-label="전체지역">
+                                                <option value="">전체지역</option>
+                                            </select>
+                                            <select class="auto" aria-label="전체시군구">
+                                                <option value="">전체시군구</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사고물질</th>
+                                    <td><input type="text" class="w-full" placeholder="사고물질을 입력하세요." aria-label="사고물질"></td>
+                                    <th scope="row">사고원인</th>
+                                    <td>
+                                        <select class="w-full" aria-label="사고원인">
+                                            <option value="">전체</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사고유형</th>
+                                    <td>
+                                        <select class="w-full" aria-label="사고유형">
+                                            <option value="">전체</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row">사고업체</th>
+                                    <td><input type="text" class="w-full" placeholder="사고업체를 입력하세요." aria-label="사고업체"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn-wrap">
+                            <button type="reset" class="btn-md btn-white btn-icon"><svg class="ico-refresh" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-refresh"></use></svg><span>초기화</span></button>
+                            <button type="button" class="btn-md btn-blue"><span>검색</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">검색 결과 <em>124</em>개</div>
+                    </div>
+                    <div class="right">
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option value="10">10개</option>
+                            <option value="20">20개</option>
+                            <option value="30">30개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div id="grid" aria-label="일반등록 전체목록"></div>
+                </div>
+
+                <div class="txt-exp-wrap">
+                    <p class="txt-exp-ps">※ 화학물질 사고현황·사례는 사고판단 의견 및 사고조사 결과에 따라 변경될 수 있음</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    <script>
+var localData = [
+    { accidentDate: '2025-04-28', address: '울산광역시 울주군 서생면 해맞이로 658-91',    substance: '황산(95~99%)', cause: '시설 결함',     type: '누출', company: '에코파크'               },
+    { accidentDate: '2025-04-25', address: '경기도 안산시 단원구 강촌로 149',              substance: '황산(95~99%)', cause: '시설 결함',     type: '화재', company: '㈜연일특운'             },
+    { accidentDate: '2025-04-20', address: '충청북도 청주시 흥덕구 대신로146번길 174',     substance: '황산(95~99%)', cause: '안전기준 미준수', type: '폭발', company: '엘지이노텍㈜ 구미1공장' },
+    { accidentDate: '2025-04-20', address: '경상북도 구미시 수출대로 7길 50-9',            substance: '황산(95~99%)', cause: '운송차량',      type: '기타', company: '㈜켐이'                },
+    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '자연재해',      type: '누출', company: '㈜켐이'                },
+    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '화재', company: '㈜켐이'                },
+    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '폭발', company: '㈜켐이'                },
+    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '기타', company: '㈜켐이'                },
+    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '누출', company: '㈜켐이'                },
+    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '누출', company: '㈜켐이'                },
+];
+
+let gridConfig = {
+    dataSource: localData,
+    container: '#grid',
+    width: '100%',
+    rowHeight: 48,
+    headerHeight: [40, 40],
+    height: '600px',
+    showRowNo: false,
+    sortable: 'rotate',
+    filterable: true,
+    pageable: {
+       pageSizes: [10, 20, 30, 40, 50]
+    },
+    pagerBar: { left: 'pagerCombo', center: 'pager' },
+    columns: [
+        { caption: 'No',      width: 60,  cellTemplate: '1' },
+        { field: 'accidentDate', caption: '사고일자', width: 110 },
+        { field: 'address',      caption: '주소',     width: 250, align: 'left' },
+        { field: 'substance',    caption: '사고물질', width: 130 },
+        { field: 'cause',        caption: '사고원인', width: 120 },
+        { field: 'type',         caption: '사고유형', width: 90 },
+        { field: 'company',      caption: '사고업체', width: 160, align: 'left' },
+        { caption: '상세정보',   width: 90,  cellTemplate: '<a href="javascript:void(0);" class="btn-xsm btn-bg-blue-line">상세</a>' },
+    ],
+};
+
+datagrid = SBGrid3.createGrid(gridConfig);
+</script>
+
+</body>
+</html>

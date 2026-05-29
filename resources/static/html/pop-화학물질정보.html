@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+
+
+<div class="popup-wrap" id="tempPopId">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup">
+      <div class="pop-header">
+        <h2 class="title">화학물질정보</h2>
+        <div class="right">
+          <button type="button" class="btn-close"><i class="ico-close"></i></button>
+        </div>
+      </div>
+      <div class="pop-body">
+        <div class="title-data-wrap">
+            <h3 class="title-data">기본 정보</h3>
+        </div>
+        <div class="data-detail">
+            <table>
+                <caption class="sr-only">기본 정보 — 물질명, CAS No</caption>
+                <colgroup>
+                    <col style="width:180px;">
+                    <col style="width:auto;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">물질명(국문/영문)</th>
+                        <td class="align-l">에탄올 / Ethanol</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">CAS No</th>
+                        <td class="align-l">64-17-5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="title-data-wrap">
+            <h3 class="title-data">유해성·위험성 분류 및 예방조치 <span class="txt-sub">(그림문자에 마우스를 올리면 설명이 표시됩니다.)</span></h3>
+        </div>
+        <div class="data-detail">
+            <table>
+                <caption class="sr-only">유해성·위험성 분류 및 예방조치 — 그림문자, 신호어, 유해·위험문구, 예방/대응/저장/폐기</caption>
+                <colgroup>
+                    <col style="width:140px;">
+                    <col style="width:auto;">
+                    <col style="width:120px;">
+                    <col style="width:auto;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">그림문자</th>
+                        <td>
+                            <div class="tooltip-wrap st-hover">
+                                <div class="pictogram">
+                                    <img src="../images/temp/@pictogram.jpg" alt="">
+                                    <span class="name">GHS05</span>
+                                </div>
+                                <div class="sr-only">장기간 또는 반복 노출되면 장기(또는, 영향을 받은 알려진 모든 장기를 명시)에 손상을 일으킴 (노출되어도 특정 표적장기 독성을 일으키지 않는다는 결정적인 증거가 있는 노출경로가 있다면 노출경로를 기재) </div>
+                            </div>
+                        </td>
+                        <th scope="row">신호어</th>
+                        <td class="align-l">-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">유해·위험문구</th>
+                        <td class="align-l" colspan="3">
+                            <p>눈에 심한 자극을 일으킴</p>
+                            <p>호흡 자극성을 일으킬 수 있음</p>
+                            <p>장기간 또는 반복 노출되면 장기(또는, 영향을 받은 알려진 모든 장기를 명시)에 손상을 일으킴 (노출되어도 특정 표적장기 독성을 일으키지 않는다는 결정적인 증거가 있는 노출경로가 있다면 노출경로를 기재)</p>
+                            <p>피부에 자극을 일으킴</p>
+                            <p>태아 또는 생식능력에 손상을 일으킬 것으로 의심됨(알려진 특정한 영향을 명시) (노출되어도 생식독성을 일으키지 않는다는 결정적인 증거가 있는 노출경로가 있다면 노출경로를 기재)</p>
+                            <p>졸음 또는 현기증을 일으킬 수 있음</p>
+                            <p>태아 또는 생식능력에 손상을 일으킬 수 있음 (알려진 특정한 영향을 명시) (노출되어도 생식독성을 일으키지 않는다는 결정적인 증거가 있는 노출경로가 있다면 노출경로를 기재)</p>
+                            <p>삼키면 유독함</p>
+                            <p>피부와 접촉하면 유독함</p>
+                            <p>흡입하면 유독함</p>
+                            <p>유전적인 결함을 일으킬 수 있음 (노출되어도 생식세포 유전독성을 일으키지 않는다는 결정적인 증거가 있는 노출경로가 있다면 노출경로 기재)</p>
+                            <p>장기(또는, 영향을 받은 알려진 모든 장기를 명시)에 손상을 일으킴 (노출되어도 특정 표적 장기 독성을 일으키지 않는다는 결정적인 노출경로가 있다면 노출경로를 기재)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="4">예방조치문구</th>
+                        <th scope="row">예방</th>
+                        <td class="align-l" colspan="2">해당하지 않음</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">대응</th>
+                        <td class="align-l" colspan="2">해당하지 않음</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">저장</th>
+                        <td class="align-l" colspan="2">해당하지 않음</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">폐기</th>
+                        <td class="align-l" colspan="2">해당하지 않음</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  popOpen('#tempPopId');
+</script>  
+
+</body>
+</html>

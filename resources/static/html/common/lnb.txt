@@ -9,7 +9,12 @@
                 <ul class="lnb-sub">
                     <li class="active"><a href="javascript:void(0);">서브메뉴</a></li>
                     <li><a href="javascript:void(0);">서브메뉴</a></li>
-                    <li><a href="javascript:void(0);">서브메뉴</a></li>
+                    <li><a href="javascript:void(0);">서브메뉴</a>
+                        <ul>
+                            <li class="active"><a href="javascript:void(0);">서브메뉴</a></li>
+                            <li><a href="javascript:void(0);">서브메뉴</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li>

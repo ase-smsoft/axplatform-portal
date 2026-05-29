@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+
+                <div class="title-main-wrap">
+                    <h2 class="title-main">생활화학제품</h2>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-report">안전확인대상 생활화학제품(신고)</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-approval">안전확인대상 생활화학제품(승인)</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp">‘승인대상 안전확인대상생활화학제품’을 구매하기 전 승인번호를 꼭 확인하세요. <br>※ 안전확인대상생활화학제품 중 살생물제품은 화학제품안전법 부칙 제3조에 따른 경과조치 적용기간 동안에만 승인대상 안전확인대상생활화학제품으로 관리될 예정이므로, 경과조치 적용기간 내에 살생물제품 승인을 획득하여야 계속해서 제조·수입이 가능합니다.</p>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn-md btn-bg-blue-line">
+                                <span>승인대상 안전확인 <br class="pc-hide">생활화학제품 종류 확인</span>
+                                <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="search-box">
+                        <div class="sc-block">
+                            <div class="sc-row">
+                                <select class="sc-sel" aria-label="검색 구분">
+                                    <option>구분</option>
+                                    <option>제목</option>
+                                    <option>내용</option>
+                                </select>
+                                <div class="input-search-wrap">
+                                    <div class="input-search inp-del">
+                                        <input type="text" placeholder="검색어를 입력해주세요." aria-label="검색어">
+                                    </div>
+                                    <button type="button" class="btn-search">
+                                        <span>검색</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">검색 결과 <em>124</em>개</div>
+                    </div>
+                    <div class="right">
+                        <select name="sortOrder" id="sortOrder" class="no-line xsm" aria-label="정렬 순서">
+                            <option value="approvalDate">승인일자순</option>
+                            <option value="productName">제품명순</option>
+                            <option value="category">제품분류순</option>
+                            <option value="company">업체명순</option>
+                        </select>
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option value="10">10개</option>
+                            <option value="20">20개</option>
+                            <option value="30">30개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div id="grid" aria-label="안전확인대상 생활화학제품(신고) 목록"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    <script>
+var localData = [
+    { no: 10, productName: '동아참메드이디와입스에이치피(과산화수소(50%))',                                category: '7. 감염병예방용 방역 살균·소독제', company: '동아참메드 주식회사',  approvalNo: '2725-0001', approvalDate: '2025-01-05' },
+    { no: 9,  productName: '비티그래뉼(Bti활성결정성단백질 및 불활성농축고형물, H-14, Strain BMP 144...', category: '4. 감염병예방용 살충제',            company: '주식회사 지텍',         approvalNo: '2725-0002', approvalDate: '2024-11-11' },
+    { no: 8,  productName: '세이프컴퍼니피프로젤(피프로닐)',                                              category: '2. 보건용 살충제',                  company: '(주)세이프컴퍼니',     approvalNo: '2725-0003', approvalDate: '2024-07-09' },
+    { no: 7,  productName: '세이프컴퍼니벤주론트라블렛(디플루벤주론)',                                   category: '4. 감염병예방용 살충제',            company: '(주)세이프컴퍼니',     approvalNo: '2421-0001', approvalDate: '2024-02-19' },
+    { no: 6,  productName: '동아참메드이디와입스플러스 (염화벤잘코늄액(50%))',                            category: '7. 감염병예방용 방역 살균·소독제', company: '동아참메드 주식회사',  approvalNo: '2723-0008', approvalDate: '2023-12-12' },
+    { no: 5,  productName: '세이프컴퍼니벤주론과립(디플루벤주론)',                                       category: '4. 감염병예방용 살충제',            company: '(주)세이프컴퍼니',     approvalNo: '2423-0007', approvalDate: '2023-12-11' },
+    { no: 4,  productName: '세이프컴퍼니페노유제(d-페노트린)',                                            category: '4. 감염병예방용 살충제',            company: '(주)세이프컴퍼니',     approvalNo: '2223-000',  approvalDate: '2023-11-10' },
+    { no: 3,  productName: '수퍼레이살균소독액',                                                          category: '7. 감염병예방용 방역 살균·소독제', company: '(주)중원테크',         approvalNo: '2723-0005', approvalDate: '2023-10-24' },
+    { no: 2,  productName: '메가피프로젤(피프로닐)',                                                      category: '2. 보건용 살충제',                  company: '(주) 비오팜',          approvalNo: '2224-0001', approvalDate: '2023-10-06' },
+    { no: 1,  productName: '세이프컴퍼니페노킬유제(d-페노트린)',                                          category: '4. 감염병예방용 살충제',            company: '(주)세이프컴퍼니',     approvalNo: '2424-0005', approvalDate: '2023-09-30' },
+  ];
+
+let gridConfig = {
+    dataSource: localData,
+    container: '#grid',
+    width: '100%',
+    rowHeight: 40,
+    headerHeight: 40,
+    height: '600px',
+    showRowNo: false,
+    sortable: 'rotate',
+    filterable: true,
+    pageable: {
+       pageSizes: [10, 20, 30, 40, 50]
+    },
+    pagerBar: { left: 'pagerCombo', center: 'pager' },
+    columns: [
+      { field: 'no',           caption: 'No',        width: 70 },
+      { field: 'productName',  caption: '제품명',     width: 380, align: 'left', cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{productName}}</a>' },
+      { field: 'category',     caption: '품목',       width: 240, align: 'left' },
+      { field: 'company',      caption: '업체명',     width: 200 },
+      { field: 'approvalNo',   caption: '승인번호',   width: 130 },
+      { field: 'approvalDate', caption: '승인일자',   width: 130 },
+    ],
+  }
+
+datagrid = SBGrid3.createGrid(gridConfig);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+
+                <div class="title-main-wrap">
+                    <h2 class="title-main">자율안전정보 제품 조회</h2>
+                    <p class="txt-sub">'자율안전정보 공개'는 제조·수입·유통사가 소비자 알권리 및 선택권 확대를 위하여 제품에 함유된 원료의 안전성 평가 결과를 기업이 자발적으로 공개한 정보입니다.</p>
+                </div>
+
+                <div class="txt-exp-wrap">
+                    <div class="btn-wrap">
+                        <button type="button" class="btn-md btn-bg-blue-line">
+                            <span>자율안전정보 공개 참여 기업 확인</span>
+                            <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="search-box">
+                    <div class="sc-block">
+                        <div class="sc-row">
+                            <select class="sc-sel" aria-label="검색 구분">
+                                <option>구분</option>
+                                <option>제목</option>
+                                <option>내용</option>
+                            </select>
+                            <div class="input-search-wrap">
+                                <div class="input-search inp-del">
+                                    <input type="text" placeholder="검색어를 입력해주세요." aria-label="검색어">
+                                </div>
+                                <button type="button" class="btn-search">
+                                    <span>검색</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">검색 결과 <em>124</em>개</div>
+                    </div>
+                    <div class="right">
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option>최신등록순</option>
+                            <option>제품명순</option>
+                            <option>제품분류순</option>
+                            <option>제품형태순</option>
+                            <option>업체명순</option>
+                        </select>
+                    </div>
+                </div>
+
+                <ul class="product-board-list" aria-label="생활화학제품 위반정보 목록">
+                    <li class="product-board-card">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap">
+                                        <span class="badge badge-new">NEW</span>
+                                        <span class="badge badge-new">NEW</span>
+                                        <span class="badge badge-new">NEW</span>
+                                    </div>
+                                    <div class="thumb is-empty" role="img" aria-label="이미지 없음">
+                                        <svg class="ico-no-image" width="40" height="34" viewBox="0 0 40 34" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-no-image"></use></svg>
+                                        <span class="empty-txt">이미지 없음</span>
+                                    </div>
+                                </div>
+                                <p class="company-info">[판매] ㈜피죤<br>(02-0000-0000)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">스프레이 피죤 섬유탈취제 강력탈취 오리지널 블루</p>
+                                <div class="product-meta">
+                                    <p>탈취제</p>
+                                    <p>분무기형</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2024-08-05</p>
+                        </a>
+                    </li>
+                    <li class="product-board-card">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap"><span class="badge badge-new">NEW</span></div>
+                                    <div class="thumb"><img src="../images/temp/temp-product.jpg" alt=""></div>
+                                </div>
+                                <p class="company-info">[판매] 오피스문구협동조합 (010-3780-2909)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">미니 수정테이프</p>
+                                <div class="product-meta">
+                                    <p>수정액 및 수정테이프</p>
+                                    <p>인쇄 및 문서관련 제품</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2026-01-21</p>
+                        </a>
+                    </li>
+                    <li class="product-board-card is-active">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap"><span class="badge badge-new">NEW</span></div>
+                                    <div class="thumb"><img src="../images/temp/temp-product2.jpg" alt=""></div>
+                                </div>
+                                <p class="company-info">[제조] 주식회사 나눔랩<br>(033-912-1004)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">Lavander Fragrance Coil Stick _ 17HD-20PCS...</p>
+                                <div class="product-meta">
+                                    <p>제거제</p>
+                                    <p>세정제품</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2026-01-21</p>
+                        </a>
+                    </li>
+                    <li class="product-board-card is-disabled">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap"><span class="badge badge-new">NEW</span></div>
+                                    <div class="thumb"><img src="../images/temp/temp-product3.jpg" alt=""></div>
+                                </div>
+                                <p class="company-info">[제조] 주식회사 나눔랩<br>033-912-1004)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">듀라코트 리빙클리너</p>
+                                <div class="product-meta">
+                                    <p>수정액 및 수정테이프</p>
+                                    <p>인쇄 및 문서관련 제품</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2026-01-21</p>
+                        </a>
+                    </li>
+                    <li class="product-board-card">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap"><span class="badge badge-new">NEW</span></div>
+                                    <div class="thumb is-empty" role="img" aria-label="이미지 없음">
+                                        <svg class="ico-no-image" width="40" height="34" viewBox="0 0 40 34" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-no-image"></use></svg>
+                                        <span class="empty-txt">이미지 없음</span>
+                                    </div>
+                                </div>
+                                <p class="company-info">[판매] 오피스문구협동조합 (010-3780-2909)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">미니 수정테이프</p>
+                                <div class="product-meta">
+                                    <p>수정액 및 수정테이프</p>
+                                    <p>인쇄 및 문서관련 제품</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2026-01-21</p>
+                        </a>
+                    </li>
+                    <li class="product-board-card">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap"><span class="badge badge-new">NEW</span></div>
+                                    <div class="thumb"><img src="../images/temp/temp-product.jpg" alt=""></div>
+                                </div>
+                                <p class="company-info">[제조] 주식회사 나눔랩<br>(033-912-1004)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">Lavander Fragrance Coil Stick _ 17HD-20PCS...</p>
+                                <div class="product-meta">
+                                    <p>제거제</p>
+                                    <p>세정제품</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2026-01-21</p>
+                        </a>
+                    </li>
+                    <li class="product-board-card">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap"><span class="badge badge-new">NEW</span></div>
+                                    <div class="thumb"><img src="../images/temp/temp-product2.jpg" alt=""></div>
+                                </div>
+                                <p class="company-info">[판매] 오피스문구협동조합 (010-3780-2909)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">미니 수정테이프</p>
+                                <div class="product-meta">
+                                    <p>수정액 및 수정테이프</p>
+                                    <p>인쇄 및 문서관련 제품</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2026-01-21</p>
+                        </a>
+                    </li>
+                    <li class="product-board-card">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap"><span class="badge badge-new">NEW</span></div>
+                                    <div class="thumb"><img src="../images/temp/temp-product3.jpg" alt=""></div>
+                                </div>
+                                <p class="company-info">[판매] 오피스문구협동조합 (010-3780-2909)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">미니 수정테이프</p>
+                                <div class="product-meta">
+                                    <p>수정액 및 수정테이프</p>
+                                    <p>인쇄 및 문서관련 제품</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2026-01-21</p>
+                        </a>
+                    </li>
+                    <li class="product-board-card">
+                        <a href="javascript:void(0);" class="card-link">
+                            <div class="card-head">
+                                <div class="card-head-top">
+                                    <div class="badge-wrap"><span class="badge badge-new">NEW</span></div>
+                                    <div class="thumb is-empty" role="img" aria-label="이미지 없음">
+                                        <svg class="ico-no-image" width="40" height="34" viewBox="0 0 40 34" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-no-image"></use></svg>
+                                        <span class="empty-txt">이미지 없음</span>
+                                    </div>
+                                </div>
+                                <p class="company-info">[제조] 주식회사 나눔랩<br>(033-912-1004)</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="product-name">Lavander Fragrance Coil Stick _ 17HD-20PCS...</p>
+                                <div class="product-meta">
+                                    <p>제거제</p>
+                                    <p>세정제품</p>
+                                </div>
+                            </div>
+                            <p class="card-date">조치일 2026-01-21</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                      <button class="btn-first" aria-label="첫 페이지"></button>
+                      <button class="btn-prev" aria-label="이전 페이지"></button>
+                      <ul>
+                        <li class="on"><button type="button">1</button></li>
+                        <li><button type="button">2</button></li>
+                        <li><button type="button">3</button></li>
+                        <li><button type="button">4</button></li>
+                        <li><button type="button">5</button></li>
+                      </ul>
+                      <button class="btn-next" aria-label="다음 페이지"></button>
+                      <button class="btn-last" aria-label="마지막 페이지"></button>
+                    </div>
+                    <!-- // pagination -->
+                  </div>
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>
+
