@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">중대시민재해 자료실</h2>
+                </div>
+ 
+               <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-ebook">전자책</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-edu-video">교육 영상</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content" id="tab-ebook">
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">원료·제조물 중대시민재해 통합 자료집</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">기후에너지환경부가 제공하는 <b>원료·제조물 중대시민재해 통합 자료집</b>으로 중대재해처벌법 <b>해설서와 리플릿, 소상공인 간편요약가이드</b> 다운로드 및 이북(eBook) 바로보기를 한 곳에서 제공합니다.</p>
+                        </div>
+                        <ul class="archive-list">
+                            <li>
+                                <div class="cont">
+                                    <h3 class="tit">중대재해처벌법의 이해 | 해설서</h3>
+                                    <p class="sub">원료·제조물 분야 중대시민재해 관련&nbsp;가장 자세한 내용을 담은 해설</p>
+                                    <div class="txt">
+                                        <p>본 해설서는 「중대재해 처벌 등에 관한 법률(법률 제17907호, 2021.1.26 제정)」 주요 내용을 알기 쉽고 자세하게 정리한 것으로서, 법령의 골자와 주요 제도들에 대한 개요 및 제도 해설 등을 담았습니다.</p>
+                                        <p>안전·보건관리체계를 구축하고 이행하는 데 참고할 내용을 정리한 것으로 법적인 효력이 있는 것은 아닙니다. 사업 또는 사업장의 특성과 환경에 맞는 안전·보건관리체계 구축 및 이행에 활용하시기 바랍니다.</p>
+                                        <p>본 해설서는 2023년 12월 기준으로 작성되었습니다.</p>
+                                    </div>
+                                    <div class="btns">
+                                        <button type="button" class="btn-xsm btn-white"><svg class="ico-down" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg><span>다운로드</span></button>
+                                        <button type="button" class="btn-xsm btn-white"><span>바로가기</span></button>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="../images/temp/ebook-cover-manual.png" alt="중대재해처벌법의 이해 해설서 표지">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <h3 class="tit">중대재해처벌법의 이해 | 리플릿</h3>
+                                    <p class="sub">원료·제조물 분야 중대시민재해 관련&nbsp;가장 자세한 내용을 담은 해설서</p>
+                                    <div class="txt">
+                                        <p>중대재해처벌법의 목적과 구조, (원료·제조물 분야) 중대시민재해 정의 및 범위, 적용대상과 시기, 안전·보건 확보의무와 처벌 관련 내용까지 꼭 알아야 하는 주요 사항만을 담았습니다.</p>
+                                        <p>본 리플릿의 내용은 원료·제조물 분야 중대시민재해 해설서의 내용을 기반으로 작성되었습니다.</p>
+                                    </div>
+                                    <div class="btns">
+                                        <button type="button" class="btn-xsm btn-white"><svg class="ico-down" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg><span>다운로드</span></button>
+                                        <button type="button" class="btn-xsm btn-white"><span>바로가기</span></button>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="../images/temp/ebook-cover-leaflet.png" alt="중대재해처벌법의 이해 리플릿 표지">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <h3 class="tit">중대재해처벌법 이행 안전·보건관리체계 구축 | 소상공인 간편요약가이드</h3>
+                                    <p class="sub">소상공인 대상 안전·보건관리체계 구축 핵심 내용을 한눈에 확인할 수 있는 요약 가이드</p>
+                                    <div class="txt">
+                                        <p>소상공인이 원료·제조물 분야 중대시민재해 예방을 위한 안전·보건관리체계를 구축할 때 참고할 수 있는 핵심 정보를 간략하게 정리하여 제공하기 위해 발간하였습니다.</p>
+                                        <p>본 가이드는 2025년 2월 기준으로 작성되었습니다.</p>
+                                    </div>
+                                    <div class="btns">
+                                        <button type="button" class="btn-xsm btn-white"><svg class="ico-down" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg><span>다운로드</span></button>
+                                        <button type="button" class="btn-xsm btn-white"><span>바로가기</span></button>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="../images/temp/ebook-cover-guide.png" alt="소상공인 간편요약가이드 표지">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">생활화학제품 및 살생물제 취급 사업장 자료집</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">기후에너지환경부가 제공하는 생활화학제품 및 살생물제 취급 사업장 대상 중대시민재해 예방 자료로, 안전·보건관리체계 구축 <b>우수사례집과 중대재해처벌법 해설 리플릿</b> 다운로드 및 이북(eBook) 바로보기를 한 곳에서 제공합니다.</p>
+                        </div>
+                        <ul class="archive-list">
+                            <li>
+                                <div class="cont">
+                                    <h3 class="tit">중대재해처벌법의 이해 | 해설서</h3>
+                                    <p class="sub">원료·제조물 분야 중대시민재해 관련&nbsp;가장 자세한 내용을 담은 해설</p>
+                                    <div class="txt">
+                                        <p>본 해설서는 「중대재해 처벌 등에 관한 법률(법률 제17907호, 2021.1.26 제정)」 주요 내용을 알기 쉽고 자세하게 정리한 것으로서, 법령의 골자와 주요 제도들에 대한 개요 및 제도 해설 등을 담았습니다.</p>
+                                        <p>안전·보건관리체계를 구축하고 이행하는 데 참고할 내용을 정리한 것으로 법적인 효력이 있는 것은 아닙니다. 사업 또는 사업장의 특성과 환경에 맞는 안전·보건관리체계 구축 및 이행에 활용하시기 바랍니다.</p>
+                                        <p>본 해설서는 2023년 12월 기준으로 작성되었습니다.</p>
+                                    </div>
+                                    <div class="btns">
+                                        <button type="button" class="btn-xsm btn-white"><svg class="ico-down" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg><span>다운로드</span></button>
+                                        <button type="button" class="btn-xsm btn-white"><span>바로가기</span></button>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="../images/temp/ebook-cover-manual.png" alt="중대재해처벌법의 이해 해설서 표지">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="tab-content" id="tab-edu-video" style="display:none;">
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">원료·제조물 중대시민재해 통합 자료집</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">기후에너지환경부가 제공하는 <b>원료·제조물 중대시민재해 통합 자료집 중 교육 영상</b>은 중대재해처벌법의 이해와 안전·보건 확보의무 이행 및 주요 Q&A로 관련 내용을 쉽게 학습할 수 있도록 제작되었습니다.</p>
+                        </div>
+                        <ul class="archive-list">
+                            <li class="is-video">
+                                <div class="cont">
+                                    <h3 class="tit">1편 중대재해처벌법 알아보기</h3>
+                                    <p class="sub">중대시민재해의 개념과 주요 내용</p>
+                                    <div class="txt">
+                                        <p>원료·제조물 분야 중대시민재해에 대한 기본적인 개념과 중대재해처벌법 적용 범위, 관련 사례를 알기 쉽게 설명한 영상입니다.</p>
+                                        <p>이 영상은 중대시민재해의 정의, 발생 유형, 예방 필요성 등을 중심으로 구성되었으며, 원료·제조물 취급 사업장 관계자가 꼭 알아야 할 핵심 내용을 담고 있습니다.</p>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <a href="https://www.youtube.com/watch?v=a6nvqawA4ZM&list=PLURk49N86tEeTrhcYiHWy3GHDZvcC9pPL" target="_blank" rel="noopener noreferrer" title="영상 보기">
+                                        <img src="../images/temp/archive-thumb-01.jpg" alt="안전한 화학물질은 없다 - 챕터1 프롤로그">
+                                        <svg class="ico-youtube-play" width="20" height="20" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-youtube-play"></use></svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="is-video">
+                                <div class="cont">
+                                    <h3 class="tit">2편 안전·보건 확보의무 노하우</h3>
+                                    <p class="sub">안전·보건 확보의무의 내용과 이행 방안</p>
+                                    <div class="txt">
+                                        <p>원료·제조물 분야 중대시민재해에 대한 기본적인 개념과 중대재해처벌법 적용 범위, 관련 사례를 알기 쉽게 설명한 영상입니다.</p>
+                                        <p>이 영상은 중대시민재해의 정의, 발생 유형, 예방 필요성 등을 중심으로 구성되었으며, 원료·제조물 취급 사업장 관계자가 꼭 알아야 할 핵심 내용을 담고 있습니다.</p>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <a href="https://www.youtube.com/watch?v=dtUtN2Ntot4&list=PLURk49N86tEeTrhcYiHWy3GHDZvcC9pPL" target="_blank" rel="noopener noreferrer" title="영상 보기">
+                                        <img src="../images/temp/archive-thumb-02.jpg" alt="[풀영상]다큐멘터리 안전한 화학물질은 없다">
+                                        <svg class="ico-youtube-play" width="20" height="20" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-youtube-play"></use></svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+</body>
+</html>

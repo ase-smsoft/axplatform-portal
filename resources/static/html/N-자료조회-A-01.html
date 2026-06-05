@@ -129,7 +129,7 @@
                         <div class="total">검색 결과 <em>124</em>개</div>
                     </div>
                     <div class="right">
-                        <button class="btn-xsm btn-bg-blue-line"><span>정보공개 보완 신청 내역</span></button>
+                        <button class="btn-xsm btn-white"><span>정보공개 보완 신청 내역</span></button>
                         <button type="button" class="btn-xsm btn-white btn-icon" aria-label="인쇄"><svg class="ico-print" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-print"></use></svg></button>
                         <button class="btn-xsm btn-white btn-icon-mo"><svg class="ico-excel"><use href="../images/common/simbol.svg#ico-excel"></use></svg><span class="mo-hide">엑셀 다운로드</span></button>
                         <button class="btn-xsm btn-white btn-icon-mo"><svg class="ico-pdf"><use href="../images/common/simbol.svg#ico-pdf"></use></svg><span class="mo-hide">PDF 다운로드</span></button>
@@ -141,8 +141,183 @@
                     </div>
                 </div>
 
-                <div class="data-table">
-                    <div id="grid" aria-label="일반등록 전체목록"></div>
+                <div class="data-default">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">물질검색 결과 — CAS No, 물질명, 고유번호, 등록정보</caption>
+                            <colgroup>
+                                <col style="width:110px">
+                                <col style="width:200px">
+                                <col style="width:160px">
+                                <col style="width:100px">
+                                <col style="width:180px">
+                                <col style="width:150px">
+                                <col style="width:160px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                                <col style="width:110px">
+                                <col style="width:110px">
+                                <col style="width:150px">
+                                <col style="width:100px">
+                                <col style="width:90px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" data-field="casNo">
+                                        <div class="th-wrap">
+                                            <span class="th-label">CAS No</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="casNo" aria-label="CAS No 정렬"><i class="th-sort-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th rowspan="2" data-field="nameEn">
+                                        <div class="th-wrap">
+                                            <span class="th-label">물질명(영문)</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="nameEn" aria-label="물질명(영문) 정렬"><i class="th-sort-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th rowspan="2" data-field="nameKr">
+                                        <div class="th-wrap">
+                                            <span class="th-label">물질명(국문)</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="nameKr" aria-label="물질명(국문) 정렬"><i class="th-sort-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th colspan="6">고유번호</th>
+                                    <th rowspan="2" data-field="registered">
+                                        <div class="th-wrap">
+                                            <span class="th-label">등록여부</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="registered" aria-label="등록여부 정렬"><i class="th-sort-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th rowspan="2" data-field="regTarget">
+                                        <div class="th-wrap">
+                                            <span class="th-label">등록대상</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="regTarget" aria-label="등록대상 정렬"><i class="th-sort-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th rowspan="2">함량 및 규제</th>
+                                    <th rowspan="2">정보공개</th>
+                                    <th rowspan="2">나노물질</th>
+                                </tr>
+                                <tr>
+                                    <th data-field="uidExisting">
+                                        <div class="th-wrap">
+                                            <span class="th-label">기존</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="uidExisting" aria-label="기존 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="uidExisting" aria-label="기존 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th data-field="uidAcute">
+                                        <div class="th-wrap">
+                                            <span class="th-label">급성·만성·생태</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="uidAcute" aria-label="급성·만성·생태 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="uidAcute" aria-label="급성·만성·생태 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th data-field="uidAccident">
+                                        <div class="th-wrap">
+                                            <span class="th-label">사고대비물</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="uidAccident" aria-label="사고대비물 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="uidAccident" aria-label="사고대비물 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th data-field="uidRestrict">
+                                        <div class="th-wrap">
+                                            <span class="th-label">제한/금지/허가</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="uidRestrict" aria-label="제한/금지/허가 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="uidRestrict" aria-label="제한/금지/허가 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th data-field="uidFocus">
+                                        <div class="th-wrap">
+                                            <span class="th-label">중점</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="uidFocus" aria-label="중점 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="uidFocus" aria-label="중점 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th data-field="uidResidual">
+                                        <div class="th-wrap">
+                                            <span class="th-label">잔류</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="uidResidual" aria-label="잔류 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="uidResidual" aria-label="잔류 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="chem-tbody">
+                                <tr>
+                                    <td>11118-57-3</td>
+                                    <td class="align-l">Chromium copper zinc oxide [이명: Chromic acid, copper zinc salt; Copper-zinc chromate;]</td>
+                                    <td class="align-l">크롬산 영류 [이명: 크로뮴 구리 아연 옥사이드; 크롬구리아연산화물; 크롬산, 구리 아연 염;]</td>
+                                    <td>KE-05983</td>
+                                    <td class="align-l">인체급성·인체만성·생태 97-1-271 (1)</td>
+                                    <td>52</td>
+                                    <td>06-5-10</td>
+                                    <td>별표-198</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Y</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>11118-57-3</td>
+                                    <td class="align-l">Citric acid iron(3+) salt</td>
+                                    <td class="align-l">메틸 에틸 케톤</td>
+                                    <td>KE-06020</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2022-31</td>
+                                    <td>Y</td>
+                                    <td>등록유예기간 없음</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>11118-57-3</td>
+                                    <td class="align-l">Citric acid iron(3+) salt</td>
+                                    <td class="align-l">메틸 에틸 케톤</td>
+                                    <td>KE-06020</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Y</td>
+                                    <td></td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
 
                 <div class="list-box">
@@ -171,55 +346,6 @@
     </div>
 
 
-<script>
-var localData = [
-    { casNo: '11118-57-3', nameEn: 'Chromium copper zinc oxide [이명: Chromic acid, copper zinc salt; Copper-zinc chromate;]', nameKr: '크롬산 영류 [이명: 크로뮴 구리 아연 옥사이드; 크롬구리아연산화물; 크롬산, 구리 아연 염;]', uidExisting: 'KE-05983', uidAcute: '인체급성·인체만성·생태 97-1-271 (1)', uidAccident: '52', uidRestrict: '06-5-10', uidFocus: '별표-198', uidResidual: '', registered: '', regTarget: 'Y', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
-    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '2022-31', registered: 'Y', regTarget: '등록유예기간 없음', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
-    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '', registered: 'Y', regTarget: '', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
-    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '', registered: 'Y', regTarget: '', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
-    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '', registered: 'Y', regTarget: '', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
-    { casNo: '11118-57-3', nameEn: 'Citric acid iron(3+) salt', nameKr: '메틸 에틸 케톤', uidExisting: 'KE-06020', uidAcute: '', uidAccident: '', uidRestrict: '', uidFocus: '', uidResidual: '', registered: 'Y', regTarget: '', regulation: '정보보기', disclosure: '정보보기', nano: '상세보기' },
-  ];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 40,
-    headerHeight: [40, 40],
-    height: '400px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-      { field: 'casNo',       caption: 'CAS No',         width: 100 },
-      { field: 'nameEn',      caption: '물질명(영문)',    width: 200, align: 'left' },
-      { field: 'nameKr',      caption: '물질명(국문)',    width: 160, align: 'left' },
-      {
-        caption: '고유번호',
-        columns: [
-          { field: 'uidExisting', caption: '기존',            width: 90  },
-          { field: 'uidAcute',    caption: '급성·만성·생태',    width: 200 },
-          { field: 'uidAccident', caption: '사고대비물',       width: 150  },
-          { field: 'uidRestrict', caption: '제한/금지/허가',    width: 140 },
-          { field: 'uidFocus',    caption: '중점',            width: 90  },
-          { field: 'uidResidual', caption: '잔류',            width: 90  },
-        ]
-      },
-      { field: 'registered',  caption: '등록여부',        width: 150  },
-      { field: 'regTarget',   caption: '등록대상',        width: 150 },
-      { field: 'regulation',  caption: '함량 및 규제정보', width: 150, cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{regulation}}</a>' },
-      { field: 'disclosure',  caption: '정보공개',        width: 150,  cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{disclosure}}</a>' },
-      { field: 'nano',        caption: '나노물질',        width: 150,  cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{nano}}</a>' },
-    ],
-  }
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>    
 
 </body>
 </html>

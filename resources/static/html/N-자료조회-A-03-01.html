@@ -12,10 +12,6 @@
 <script src="../script/jquery-ui.js"></script>
 <script src="../script/pub-ui.js"></script>
 
-<script type="text/javascript" src="../../SBGrid3/license.js"></script>
-<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
-<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
-<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
 
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
@@ -70,8 +66,183 @@
                     </div>
                 </div>
 
-                <div class="data-table">
-                    <div id="grid"></div>
+                <div class="data-default">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">화학물질 정보 공개 신청 내역 목록</caption>
+                            <colgroup>
+                                <col style="width:60px">
+                                <col style="width:150px">
+                                <col style="width:auto;min-width:300px">
+                                <col style="width:200px">
+                                <col style="width:150px">
+                                <col style="width:160px">
+                                <col style="width:100px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col" data-field="category">
+                                        <div class="th-wrap">
+                                            <span class="th-label">정보 구분</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="category" aria-label="정보 구분 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="category" aria-label="정보 구분 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" data-field="substance">
+                                        <div class="th-wrap">
+                                            <span class="th-label">물질명</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="substance" aria-label="물질명 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="substance" aria-label="물질명 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" data-field="chemId">
+                                        <div class="th-wrap">
+                                            <span class="th-label">화학물질 식별번호</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="chemId" aria-label="화학물질 식별번호 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="chemId" aria-label="화학물질 식별번호 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" data-field="request">
+                                        <div class="th-wrap">
+                                            <span class="th-label">신청사항</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="request" aria-label="신청사항 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="request" aria-label="신청사항 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" data-field="applyDate">
+                                        <div class="th-wrap">
+                                            <span class="th-label">신청일</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="applyDate" aria-label="신청일 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="applyDate" aria-label="신청일 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" data-field="status">
+                                        <div class="th-wrap">
+                                            <span class="th-label">상태</span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Cardamom, ext.</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">화학물질 정보공개 요청을 하면서 이것도...</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-pending">답변대기</span></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>기타 정보</td>
+                                    <td class="align-l"><span class="ellips">Alkanes, (C=14~17) (90622-47-2) (Hydrocarbons, n-alkanes(C=14~17), &lt;2% aromatics</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">정보 수정 요청</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-pending">답변대기</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Benzyl butyl phthalate</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">화학물질 정보 보완</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-done">답변완료</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Benzyl butyl phthalate</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">화학물질 관련</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-done">답변완료</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Benzyl butyl phthalate</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">화학물질 영문명과 유사명 관련</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-done">답변완료</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Benzyl butyl phthalate</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">CAS No</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-done">답변완료</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Benzyl butyl phthalate</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">화학물질 정보 보완 요청</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-done">답변완료</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Benzyl butyl phthalate</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">정보 수정 요청</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-done">답변완료</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Benzyl butyl phthalate</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">정보 수정 요청</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-done">답변완료</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>유해성 정보</td>
+                                    <td class="align-l"><span class="ellips">Benzyl butyl phthalate</span></td>
+                                    <td>85940-32-5</td>
+                                    <td class="align-l"><span class="ellips">정보 수정 요청</span></td>
+                                    <td>2026-01-19</td>
+                                    <td><span class="status-done">답변완료</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                        <button class="btn-first" aria-label="첫 페이지"></button>
+                        <button class="btn-prev" aria-label="이전 페이지"></button>
+                        <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                        </ul>
+                        <button class="btn-next" aria-label="다음 페이지"></button>
+                        <button class="btn-last" aria-label="마지막 페이지"></button>
+                    </div>
                 </div>
 
             </div>
@@ -85,49 +256,7 @@
     </div>
 
 
-    
-<script>
-var localData = [
-    { no: 10, category: '유해성 정보', substance: 'Cardamom, ext.',           chemId: '85940-32-5', request: '화학물질 정보공개 요청을 하면서 이것도...', applyDate: '2026-01-19', status: '답변대기', statusClass: 'status-pending' },
-    { no: 9,  category: '기타 정보',  substance: 'Alkanes, (C=14~17) (90622-47-2)|| CHR(13) || CHR(10) ||(Hydrocarbons, n-alkanes(C=14~17), <2% aromatics', chemId: '85940-32-5', request: '정보 수정 요청',                 applyDate: '2026-01-19', status: '답변대기', statusClass: 'status-pending' },
-    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '화학물질 정보 보완',                       applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
-    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '화학물질 관련',                            applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
-    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '화학물질 영문명과 유사명 관련',             applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
-    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: 'CAS No',                                  applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
-    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '화학물질 정보 보완 요청',                   applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
-    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '정보 수정 요청',                           applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
-    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '정보 수정 요청',                           applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
-    { no: 8,  category: '유해성 정보', substance: 'Benzyl butyl phthalate',    chemId: '85940-32-5', request: '정보 수정 요청',                           applyDate: '2026-01-19', status: '답변완료', statusClass: 'status-done' },
-  ];
 
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 40,
-    headerHeight: 40,
-    height: '400px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-      { field: 'no', caption: '번호', width: 60, sortable: false,
-        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
-      { field: 'category',  caption: '정보 구분',       width: 120 },
-      { field: 'substance', caption: '물질명',         width: 320, align: 'left' },
-      { field: 'chemId',    caption: '화학물질 식별번호', width: 160 },
-      { field: 'request',   caption: '신청사항',        width: 220, align: 'left' },
-      { field: 'applyDate', caption: '신청일',          width: 120 },
-      { field: 'status',    caption: '상태',           width: 100, cellTemplate: '<span class={{statusClass}}>{{status}}</span>' },
-    ],
-  }
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>    
 
 </body>
 </html>

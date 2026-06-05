@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">위해성자료 작성도구 안내</h2>
+                </div>
+ 
+               <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-hazard-about">위해성자료란?</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-hazard-tool">위해성자료 작성도구 소개</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content" id="tab-hazard-about">
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">위해성의 개념</h2>
+                        </div>
+                        <ul class="dot-list">
+                            <li>특정 화학물질이 사람의 건강이나 환경 중 생물에게 바람직하지 않은 영향을 줄 가능성</li>
+                            <li>위해성의 크기는 화학물질의 <strong>[유해성]</strong> 정도와 <strong>[노출량]</strong>으로 정해짐</li>
+                        </ul>
+                        <div class="diagram-wrap">
+                            <img src="../images/content/hazard-concept-diagram.png" alt="화학물질의 위해성: 유해성과 노출량의 관계를 저울 도식으로 설명. 유해성이 강해도 노출량이 적으면 위해성은 작고, 유해성이 약해도 노출량이 많으면 위해성은 커짐">
+                        </div>
+                        <div class="txt-exp-wrap hazard-summary-wrap">
+                            <p class="txt-exp">→ 유해성이 강한 화학물질이어도 노출량이 적으면 위해성은 작음</p>
+                            <p class="txt-exp">→ 유해성이 약한 화학물질이어도 노출량이 많으면 위해성은 커짐</p>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">위해성자료란?</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">화학물질 제조·수입자가 해당 화학물질의 위해성을 제조 또는 사용 과정에서 적절한 방법으로 안전하게 통제하고 있는가를 평가하여 작성한 것</p>
+                            <ul class="dot-list">
+                                <li>화학물질의 용도에 따른 전 생애 단계를 고려하고, 잠재적 위해성과 권고하는 위해성관리대책 및 취급조건을 고려하여 합리적으로 예상할 수 있는 사람 또는 환경에 대한 노출 수준이 비교된 자료</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">위해성자료 작성 제출 대상</h2>
+                        </div>
+                        <ul class="dot-list">
+                            <li>화학물질을 연간 10톤 이상 제조·수입하는 경우</li>
+                        </ul>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">위해성자료 작성에 관한 일반 원칙 (시행규칙 별표2)</h2>
+                        </div>
+                        <ul class="dot-list hazard-principle-list">
+                            <li>화학물질의 제조 및 하위 사용자로부터 확인한 용도를 포함한 모든 용도에 따른 화학물질의 전 생애 단계를 고려하여 작성하여야 한다.</li>
+                            <li>위해성 자료는 화학물질의 잠재적 유해성과 권고되는 위해관리수단 · 취급조건 등을 고려하면서 이미 알고 있거나 합리적으로 예상할 수 있는 사람 또는 환경에 대한 노출 수준을 비교하여 작성하여야 한다.</li>
+                            <li>구조 유사성으로 인해 물리적 · 화학적 특성, 인체 및 환경의 유해성이 유사하거나 규칙적인 경향을 가지는 하나의 그룹이나 물질 카테고리로 간주되어 어떤 화학물질에 대한 위해성 자료가 다른 화학물질에 대한 위해성 자료의 작성에 충분하다고 판단되는 경우 그 자료를 이용하여 위해성 자료를 작성할 수 있다. 이 경우 그 타당성에 대한 증거를 함께 제시하여야 한다.</li>
+                            <li>
+                                위해성 자료를 작성하는데 있어서 시험계획서에 따른 추가적인 시험 정보가 필요한 경우에는, 해당 정보의 필요성을 함께 적어야 한다.
+                                <p class="hazard-nested-list">1) 물리적ㆍ화학적 위험성평가<br>2) 환경에 대한 유해성(분해성 및 농축성 등 거동)평가<br>3) 환경에 대한 유해성(생태영향)평가<br>4) 인체 건강에 대한 유해성평가<br>5) 잔류성ㆍ축적성 평가<br>6) 노출평가(노출시나리오 개발 및 노출예측)<br>7) 안전성 확인</p>
+                            </li>
+                            <li>노출평가는 화학물질 제조자 자신의 용도와 하위사용자의 용도를 확인하여 해당 화학물질이 전 생애 동안 제조 · 사용되는 방법과, 사람과 환경에 대한 노출을 통제하거나 하위사용자에게 통제하도록 권고하는 방법에 관한 일련의 세부 조건인 노출시나리오를 상세히 기술하는 것을 말한다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">위해성자료 작성 절차</h2>
+                        </div>
+                        <div class="title-data-wrap">
+                            <h2 class="title-data">화학물질의 위해성에 관한 자료 작성</h2>
+                        </div>
+                        <div class="diagram-wrap hazard-procedure-wrap">
+                            <img src="../images/content/hazard-procedure-flow.png" alt="화학물질의 위해성에 관한 자료 작성 절차: 자료수집, 기본정보 확인, 분류·표시 확인, 유해성평가, 잔류성·축적성 평가, 노출평가, 안전성 확인, 자료작성">
+                            <p class="hazard-diagram-caption">화학물질의 위해성에 관한 자료 작성지침(2021, 국립환경과학원) 발췌</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-hazard-tool" style="display:none;">
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">위해성자료 작성도구</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">산업계의 위해성자료 작성을 지원하기 위하여 작성도구(K-Chesar 및 ESD&amp;T) 제공</p>
+                        </div>
+                        <div class="data-default hazard-tool-table">
+                            <div class="scroll">
+                            <table>
+                                <caption class="sr-only">위해성자료 작성도구 소개</caption>
+                                <colgroup>
+                                    <col style="width:50%">
+                                    <col style="width:50%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">위해성자료 작성도구 소개</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="hazard-tool-cell">
+                                            <div class="hazard-tool-brand">
+                                                <img src="../images/content/hazard-logo-kchesar.png" alt="K-Chesar">
+                                                <p class="hazard-tool-en">Korea Chemical Safety Assessment and Reporting Tool</p>
+                                            </div>
+                                            <p class="hazard-tool-desc">한국형 노출평가 모델이 탑재된<br>'위해성자료 작성' 지원 프로그램</p>
+                                        </td>
+                                        <td class="hazard-tool-cell">
+                                            <div class="hazard-tool-brand">
+                                                <img src="../images/content/hazard-logo-esdt.png" alt="ESD&amp;T">
+                                                <p class="hazard-tool-en">Exposure Scenario Document and Tool</p>
+                                            </div>
+                                            <p class="hazard-tool-desc">위해성자료 작성을 위한 양질의 노출시나리오 조사와<br>공급망 내 정보 전달을 지원하는 웹 기반의 프로그램</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">위해성자료 작성도구간 호환성</h2>
+                        </div>
+                        <div class="diagram-wrap">
+                            <img src="../images/content/hazard-tool-compat.png" alt="위해성자료 작성도구간 호환성: K-Chesar Web·StandAlone, ESD&amp;T Web, 양방향 동기화, 통합 홈페이지, 노출시나리오, 위해성에 관한 자료 생성">
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">위해성자료 입력 방법</h2>
+                        </div>
+                        <div class="diagram-wrap">
+                            <img src="../images/content/hazard-tool-input.png" alt="위해성자료 입력 방법: 화학물질 정보 입력, 위해성자료 작성도구, 제출 및 출력, 국립환경과학원 제출">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+</body>
+</html>

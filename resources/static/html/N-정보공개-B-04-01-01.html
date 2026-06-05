@@ -364,13 +364,7 @@
                     </div>
                 </div>
 
-                <!-- 변경이력정보 -->
-                <div class="tab-content" id="tab-history" style="display: none;">
-                    <div class="data-table">
-                        <div id="grid" aria-label="안전확인대상 생활화학제품(신고) 목록"></div>
-                    </div>
-                </div>
-
+    
 
 
             </div>
@@ -383,46 +377,6 @@
         </script>
     </div>
 
-
-    <script>
-var localData = [
-    { no: 1, productName: '에프지 대표제품(액체형) 2',                       category: '방향제', company: '(주)에프지인터네셔널', issueType: '대표',     issueResult: '증명서 발급완료', issueDate: '2023-10-07' },
-    { no: 2, productName: '잠자기전 편백숲 숨결',                            category: '방향제', company: '(주)에프지인터네셔널', issueType: '대표변경', issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 3, productName: '베르가못 상쾌한 숲 숨결',                         category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생',     issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 4, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생변경', issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 5, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생변경', issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 6, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '대표변경', issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 7, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '대표',     issueResult: '증명서 발급완료', issueDate: '' },
-  ];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 40,
-    headerHeight: 40,
-    height: '400px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-      { field: 'no', caption: '번호', width: 60, sortable: false,
-        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
-      { field: 'productName', caption: '제품명',             width: 360, align: 'left', cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{productName}}</a>' },
-      { field: 'category',    caption: '품목',               width: 120 },
-      { field: 'company',     caption: '업체명',             width: 200 },
-      { field: 'issueType',   caption: '발급구분',           width: 120 },
-      { field: 'issueResult', caption: '성적발급구분',       width: 150 },
-      { field: 'issueDate',   caption: '신고증명서 발급일',  width: 160 },
-    ],
-  }
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>
 
 </body>
 </html>

@@ -90,10 +90,129 @@
                     </div>
                 </div>
 
-                <div class="data-table">
-                    <div id="grid" aria-label="일반등록 전체목록"></div>
+                <div class="data-default">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">물질검색 결과 목록</caption>
+                            <colgroup>
+                                <col style="width:110px">
+                                <col style="width:auto;min-width:260px">
+                                <col style="width:auto;min-width:260px">
+                                <col style="width:160px">
+                                <col style="width:130px">
+                                <col style="width:100px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">CAS No</th>
+                                    <th scope="col" data-field="nameEn">
+                                        <div class="th-wrap">
+                                            <span class="th-label">물질명(영문)</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="nameEn" aria-label="물질명(영문) 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="nameEn" aria-label="물질명(영문) 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" data-field="nameKr">
+                                        <div class="th-wrap">
+                                            <span class="th-label">물질명(국문)</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="nameKr" aria-label="물질명(국문) 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="nameKr" aria-label="물질명(국문) 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col">시험항목</th>
+                                    <th scope="col">GLP/Non-GLP</th>
+                                    <th scope="col">자료보기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(1-Hydroxycyclohexyl)phenylmethanone</span></td>
+                                    <td class="align-l"><span class="ellips">(1-하이드록시사이클로헥실)페닐메타논</span></td>
+                                    <td>피부자극성/부식성</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(2-Hydroxyethyl)ammonium mercaptoacetate</span></td>
+                                    <td class="align-l"></td>
+                                    <td>피부자극성/부식성</td>
+                                    <td>Non-GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(1-Hydroxycyclohexyl)phenylmethanone</span></td>
+                                    <td class="align-l"><span class="ellips">(1-하이드록시사이클로헥실)페닐메타논</span></td>
+                                    <td>복귀돌연변이</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(1-Hydroxycyclohexyl)phenylmethanone</span></td>
+                                    <td class="align-l"><span class="ellips">(1-하이드록시사이클로헥실)페닐메타논</span></td>
+                                    <td>포유류 배양세포를 이용한 염색세이상</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(Z)-9-Octadecenoic acid 1,2,3-propanenitryl ester; 1,2,3-Propanenitryl trioleate, Glycerin trioleate</span></td>
+                                    <td class="align-l"></td>
+                                    <td>복귀돌연변이</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(Z)-9-Octadecenoic acid zinc salt</span></td>
+                                    <td class="align-l"></td>
+                                    <td>복귀돌연변이</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(Epoxithyl)benzene</span></td>
+                                    <td class="align-l"><span class="ellips">(11β)-21-(아세틸옥시)-11,17-다이하이드록시프레-4-엔-3,20-다이온</span></td>
+                                    <td>복귀돌연변이</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(1-Hydroxycyclohexyl)phenylmethanone</span></td>
+                                    <td class="align-l"><span class="ellips">(11β)-21-(아세틸옥시)-11,17-다이하이드록시프레-4-엔-3,20-다이온</span></td>
+                                    <td>담수조류 생장저해</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(1-Hydroxycyclohexyl)phenylmethanone</span></td>
+                                    <td class="align-l"></td>
+                                    <td>담수조류 생장저해</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>947-19-3</td>
+                                    <td class="align-l"><span class="ellips">(Carbonato)hexadecahydroxydialuminum-hexamagnesium; [Carbonato(2-)]hexadecahydroxybis(aluminium)hexamagnesium</span></td>
+                                    <td class="align-l"><span class="ellips">(11β)-21-(아세틸옥시)-11,17-다이하이드록시프레-4-엔-3,20-다이온</span></td>
+                                    <td>담수조류 생장저해</td>
+                                    <td>GLP</td>
+                                    <td><button type="button" class="btn-xsm btn-white">상세보기</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-
                 
                 
             </div>
@@ -106,47 +225,7 @@
         </script>
     </div>
 
-
-<script>
-var localData = [
-    { casNo: '947-19-3', nameEn: '(1-Hydroxycyclohexyl)phenylmethanone', nameKr: '(1-하이드록시사이클로헥실)페닐메타논', testItem: '피부자극성/부식성', glp: 'GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(2-Hydroxyethyl)ammonium mercaptoacetate', nameKr: '', testItem: '피부자극성/부식성', glp: 'Non-GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(1-Hydroxycyclohexyl)phenylmethanone', nameKr: '(1-하이드록시사이클로헥실)페닐메타논', testItem: '복귀돌연변이', glp: 'GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(1-Hydroxycyclohexyl)phenylmethanone', nameKr: '(1-하이드록시사이클로헥실)페닐메타논', testItem: '포유류 배양세포를 이용한 염색체이상', glp: 'GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(Z)-9-Octadecenoic acid 1,2,3-propanetriyl ester; 1,2,3-Propanetriyl trioleate, Glycerin trioleate', nameKr: '', testItem: '복귀돌연변이', glp: 'GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(Z)-9-Octadecenoic acid zinc salt', nameKr: '', testItem: '복귀돌연변이', glp: 'GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(Epoxithyl)benzene', nameKr: '(11β)-21-(아세틸옥시)-11,17-다이하이드록시프레근-4-엔-3,20-다이온', testItem: '복귀돌연변이', glp: 'GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(1-Hydroxycyclohexyl)phenylmethanone', nameKr: '(11β)-21-(아세틸옥시)-11,17-다이하이드록시프레근-4-엔-3,20-다이온', testItem: '담수조류 생장저해', glp: 'GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(1-Hydroxycyclohexyl)phenylmethanone', nameKr: '', testItem: '담수조류 생장저해', glp: 'GLP', detail: '상세보기' },
-    { casNo: '947-19-3', nameEn: '(Carbonato)hexadecahydroxydialuminum-hexamagnesium; [Carbonato(2-)]hexadecahydroxybis(aluminium)hexamagnesium', nameKr: '(11β)-21-(아세틸옥시)-11,17-다이하이드록시프레근-4-엔-3,20-다이온', testItem: '담수조류 생장저해', glp: 'GLP', detail: '상세보기' },
-  ];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 40,
-    headerHeight: 40,
-    height: '400px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-      { field: 'casNo',    caption: 'CAS No',        width: 120 },
-      { field: 'nameEn',   caption: '물질명(영문)',   width: 280, align: 'left' },
-      { field: 'nameKr',   caption: '물질명(국문)',   width: 280,    align: 'left' },
-      { field: 'testItem', caption: '시험항목',       width: 180 },
-      { field: 'glp',      caption: 'GLP/Non-GLP',  width: 110 },
-      { field: 'detail',   caption: '자료보기',       width: 110, cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{detail}}</a>' },
-    ],
-  }
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>    
+    
 
 </body>
 </html>

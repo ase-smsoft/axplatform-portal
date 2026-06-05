@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,10 +12,6 @@
 <script src="../script/jquery-ui.js"></script>
 <script src="../script/pub-ui.js"></script>
 
-<script type="text/javascript" src="../../SBGrid3/license.js"></script>
-<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
-<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
-<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
 
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
@@ -260,11 +256,121 @@
                     </div>
                 </div>
 
-                <div class="data-table">
-                    <div id="grid" aria-label="물질검색 전체목록"></div>
+                <div class="data-default">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">물질검색 결과 목록</caption>
+                            <colgroup>
+                                <col style="width:60px">
+                                <col style="width:140px">
+                                <col style="width:150px">
+                                <col style="width:auto;min-width:300px">
+                                <col style="width:110px">
+                                <col style="width:130px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">CAS No</th>
+                                    <th scope="col">기존화학물질 고유번호</th>
+                                    <th scope="col" data-field="name">
+                                        <div class="th-wrap">
+                                            <span class="th-label">화학물질명</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="name" aria-label="화학물질명 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="name" aria-label="화학물질명 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col">ECHA 등록여부</th>
+                                    <th scope="col">생략사유서</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>1259-478-55</td>
+                                    <td>1259-478-55</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">Ethyl acetate</span></a></td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>ECHA</span></button></td>
+                                    <td><button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(23개)</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>1259-478-55</td>
+                                    <td>1259-478-55</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">Acetic acid; Glacial acetic acid</span></a></td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>ECHA</span></button></td>
+                                    <td><button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(23개)</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>1259-478-55</td>
+                                    <td>1259-478-55</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2,2'-[[3-Acetamido-4-[(2-chloro-4-nitrophenyl)azo]phenyl]imino]diethyl diacetate</span></a></td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>ECHA</span></button></td>
+                                    <td><button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(23개)</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>1259-478-55</td>
+                                    <td>1259-478-55</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2-(Acetyloxy)-1,2,3-propanetricarboxylic acid tributyl ester</span></a></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>1259-478-55</td>
+                                    <td>1259-478-55</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">Acetic acid; Glacial acetic acid</span></a></td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>ECHA</span></button></td>
+                                    <td><button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(23개)</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>1259-478-55</td>
+                                    <td>1259-478-55</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">Acetic acid; Glacial acetic acid</span></a></td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>ECHA</span></button></td>
+                                    <td><button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(23개)</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>1259-478-55</td>
+                                    <td>1259-478-55</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">Acetic acid; Glacial acetic acid</span></a></td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>ECHA</span></button></td>
+                                    <td><button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(23개)</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>1259-478-55</td>
+                                    <td>1259-478-55</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">Acetic acid; Glacial acetic acid</span></a></td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>ECHA</span></button></td>
+                                    <td><button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(23개)</span></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                
-                
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                        <button class="btn-first" aria-label="첫 페이지"></button>
+                        <button class="btn-prev" aria-label="이전 페이지"></button>
+                        <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                        </ul>
+                        <button class="btn-next" aria-label="다음 페이지"></button>
+                        <button class="btn-last" aria-label="마지막 페이지"></button>
+                    </div>
+                </div>
+
             </div>
         </div>
         <script>
@@ -276,64 +382,7 @@
     </div>
 
 
-<script>
-var localData = [
-    { no: 10, casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Ethyl acetate', echa: 'Y', omit: 23 },
-    { no: 9,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
-    { no: 8,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: "2,2'-[[3-Acetamido-4-[(2-chloro-4-nitrophenyl)azo]phenyl]imino]diethyl diacetate", echa: 'Y', omit: 23 },
-    { no: 7,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: '2-(Acetyloxy)-1,2,3-propanetricarboxylic acid tributyl ester', echa: 'N', omit: 0 },
-    { no: 6,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
-    { no: 6,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
-    { no: 6,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
-    { no: 6,  casNo: '1259-478-55', uidExisting: '1259-478-55', name: 'Acetic acid; Glacial acetic acid', echa: 'Y', omit: 23 },
-  ];
 
-// ECHA / 생략사유서 셀 HTML 미리 가공
-localData.forEach(function(r){
-  r.echaCell = r.echa === 'Y'
-    ? '<button type="button" class="btn-xsm btn-white"><span>ECHA</span></button>'
-    : '-';
-  r.omitCell = Number(r.omit) > 0
-    ? '<button type="button" class="btn-xsm btn-bg-blue-line"><span>확인(' + r.omit + '개)</span></button>'
-    : '-';
-});
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 50,
-    headerHeight: 50,
-    height: '400px',
-    showRowNo: false,
-    // sortable: 'rotate',
-    // filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-      { field: 'no',          caption: '번호',               width: 60  },
-      { field: 'casNo',       caption: 'CAS No',             width: 120 },
-      { field: 'uidExisting', caption: '기존화학물질 고유번호', width: 150 },
-      { field: 'name',        caption: '화학물질명',          width: 310, align: 'left' },
-      {
-        field: 'echaCell',
-        caption: 'ECHA 등록여부',
-        width: 130,
-        cellTemplate: '{{{echaCell}}}'
-      },
-      {
-        field: 'omitCell',
-        caption: '생략사유서',
-        width: 130,
-        cellTemplate: '{{{omitCell}}}'
-      },
-    ],
-  }
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>    
 
 </body>
 </html>

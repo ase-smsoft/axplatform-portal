@@ -12,11 +12,6 @@
 <script src="../script/jquery-ui.js"></script>
 <script src="../script/pub-ui.js"></script>
 
-<script type="text/javascript" src="../../SBGrid3/license.js"></script>
-<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
-<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
-<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
-
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
 <script src="../script/jquery-swiper.js"></script>
@@ -56,22 +51,41 @@
                     <h2 class="title-main">2025 정책포럼 정보</h2>
                 </div>
 
-               <!-- 탭 -->
-                <div class="tab-type1">
-                    <ul>
-                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-planning">기획위원회</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-1-1">주제별토론(1-1주제)</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-1-2">주제별토론(1-2주제)</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-2-1">주제별토론(2-1주제)</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-2-2">주제별토론(2-2주제)</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-topic-3">주제별토론(3주제)</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-general">종합토론회</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-stakeholder-day">이해당사자의 날</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-report">포럼보고서</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-youth">청년포럼</a></li>
+                <div class="forum-topic-nav">
+                    <h3 class="nav-title">2025</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item is-active">
+                            <a href="javascript:void(0);" class="nav-link">기획위원회</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">주제별토론(1-1주제)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">주제별토론(1-2주제)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">주제별토론(2-1주제)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">주제별토론(2-2주제)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">주제별토론(3주제)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">종합토론회</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">이해당사자의 날</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">포럼보고서</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">청년포럼</a>
+                        </li>
                     </ul>
                 </div>
-
 
                 <div class="tab-content">
     
@@ -109,8 +123,99 @@
                         </div>
                     </div>
 
-                    <div class="data-table">
-                        <div id="grid" aria-label="일반등록 전체목록"></div>
+                    <div class="data-default">
+                        <div class="scroll">
+                            <table>
+                                <caption class="sr-only">2025 정책포럼 목록</caption>
+                                <colgroup>
+                                    <col style="width:60px">
+                                    <col style="width:auto;min-width:200px">
+                                    <col style="width:200px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col" data-field="title">
+                                            <div class="th-wrap">
+                                                <span class="th-label">제목</span>
+                                                <div class="th-btns">
+                                                    <button type="button" class="btn-th-sort" data-field="title" aria-label="제목 정렬"><i class="th-sort-icon"></i></button>
+                                                    <button type="button" class="btn-th-filter" data-field="title" aria-label="제목 필터"><i class="th-filter-icon"></i></button>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th scope="col">개최일시</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">기획위원회 - 1차 정기회의 </span><i class="ico-clip"></i></a></td>
+                                        <td>2026-02-20 15:00 ~ 17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2026년 제2-1주제 준비회의</span></a></td>
+                                        <td>2026-02-19 14:00 ~ 16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2025년 기획위원회 제6차 정기회의 </span><i class="ico-clip"></i></a></td>
+                                        <td>2026-02-17 13:30 ~ 15:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2025년 이해당사자의 날</span></a></td>
+                                        <td>2026-02-12 14:00 ~ 16:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2025년 종합토론회</span></a></td>
+                                        <td>2026-02-10 10:00 ~ 12:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2025년 제3차 화관법 기본계획 준비회의 </span><i class="ico-clip"></i></a></td>
+                                        <td>2026-02-02 13:30 ~ 15:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2025년 제4차 공개토론회(제2-2주제) </span><i class="ico-clip"></i></a></td>
+                                        <td>2026-02-01 10:00 ~ 12:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2025년 제1-2주제 준비회의 </span><i class="ico-clip"></i></a></td>
+                                        <td>2026-01-20 15:00 ~ 17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2025년 제2-1주제 준비회의 </span><i class="ico-clip"></i></a></td>
+                                        <td>2026-01-20 10:00 ~ 12:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">2025년 제2-2주제 준비회의</span></a></td>
+                                        <td>2026-01-04 15:00 ~ 17:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="pagination-wrap">
+                        <div class="pagination">
+                            <button class="btn-first" aria-label="첫 페이지"></button>
+                            <button class="btn-prev" aria-label="이전 페이지"></button>
+                            <ul>
+                                <li class="on"><button type="button">1</button></li>
+                                <li><button type="button">2</button></li>
+                                <li><button type="button">3</button></li>
+                                <li><button type="button">4</button></li>
+                                <li><button type="button">5</button></li>
+                            </ul>
+                            <button class="btn-next" aria-label="다음 페이지"></button>
+                            <button class="btn-last" aria-label="마지막 페이지"></button>
+                        </div>
                     </div>
                 </div>
 
@@ -124,44 +229,5 @@
         </script>
     </div>
     
-<script>
-
-var localData = [
-    { no: 10, title: '기획위원회 - 1차 정기회의',              hasFile: true,  meetingDate: '2026-02-20 15:00 ~ 17:00' },
-    { no: 9,  title: '2026년 제2-1주제 준비회의',              hasFile: false, meetingDate: '2026-02-19 14:00 ~ 16:00' },
-    { no: 8,  title: '2025년 기획위원회 제6차 정기회의',        hasFile: true,  meetingDate: '2026-02-17 13:30 ~ 15:00' },
-    { no: 7,  title: '2025년 이해당사자의 날',                  hasFile: false, meetingDate: '2026-02-12 14:00 ~ 16:30' },
-    { no: 6,  title: '2025년 종합토론회',                      hasFile: false, meetingDate: '2026-02-10 10:00 ~ 12:00' },
-    { no: 5,  title: '2025년 제3차 화관법 기본계획 준비회의',    hasFile: true,  meetingDate: '2026-02-02 13:30 ~ 15:30' },
-    { no: 4,  title: '2025년 제4차 공개토론회(제2-2주제)',       hasFile: true,  meetingDate: '2026-02-01 10:00 ~ 12:00' },
-    { no: 3,  title: '2025년 제1-2주제 준비회의',               hasFile: true,  meetingDate: '2026-01-20 15:00 ~ 17:00' },
-    { no: 2,  title: '2025년 제2-1주제 준비회의',               hasFile: true,  meetingDate: '2026-01-20 10:00 ~ 12:00' },
-    { no: 1,  title: '2025년 제2-2주제 준비회의',               hasFile: false, meetingDate: '2026-01-04 15:00 ~ 17:00' },
-];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 48,
-    headerHeight: [40],
-    height: '560px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-        { field: 'no',          caption: 'No',    width: 60, sortable: false,
-        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
-        { field: 'title',       caption: '제목',  width: '1', unit:'%', align: 'left', cellTemplate: '<a href="javascript:void(0);" class="link-txt"><span class="ellips">{{title}}</span>{{#hasFile}}<i class="ico-clip"></i>{{/hasFile}}</a>' },
-        { field: 'meetingDate', caption: '개최일시', width: 200 },
-    ],
-};
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>
 </body>
 </html>

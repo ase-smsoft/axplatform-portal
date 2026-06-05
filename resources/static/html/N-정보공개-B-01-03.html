@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,11 +11,6 @@
 <script src="../script/jquery-3.7.1.min.js"></script>
 <script src="../script/jquery-ui.js"></script>
 <script src="../script/pub-ui.js"></script>
-
-<script type="text/javascript" src="../../SBGrid3/license.js"></script>
-<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
-<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
-<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
 
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
@@ -118,8 +113,135 @@
                     </div>
                 </div>
 
-                <div class="data-table">
-                    <div id="grid" aria-label="안전확인대상 생활화학제품(신고) 목록"></div>
+                <div class="data-default">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">안전확인대상 생활화학제품(승인) 목록</caption>
+                            <colgroup>
+                                <col style="width:60px">
+                                <col style="width:auto;min-width:200px">
+                                <col style="width:220px">
+                                <col style="width:160px">
+                                <col style="width:110px">
+                                <col style="width:120px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col" data-field="productName">
+                                        <div class="th-wrap">
+                                            <span class="th-label">제품명</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="productName" aria-label="제품명 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="productName" aria-label="제품명 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col">품목</th>
+                                    <th scope="col">업체명</th>
+                                    <th scope="col">승인번호</th>
+                                    <th scope="col">승인일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">동아참메드이디와입스에이치피(과산화수소(50%))</span></a></td>
+                                    <td class="align-l">7. 감염병예방용 방역 살균·소독제</td>
+                                    <td>동아참메드 주식회사</td>
+                                    <td>2725-0001</td>
+                                    <td>2025-01-05</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">비티그래뉼(Bti활성결정성단백질 및 불활성농축고형물, H-14, Strain BMP 144...)</span></a></td>
+                                    <td class="align-l">4. 감염병예방용 살충제</td>
+                                    <td>주식회사 지텍</td>
+                                    <td>2725-0002</td>
+                                    <td>2024-11-11</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">세이프컴퍼니피프로젤(피프로닐)</span></a></td>
+                                    <td class="align-l">2. 보건용 살충제</td>
+                                    <td>(주)세이프컴퍼니</td>
+                                    <td>2725-0003</td>
+                                    <td>2024-07-09</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">세이프컴퍼니벤주론트라블렛(디플루벤주론)</span></a></td>
+                                    <td class="align-l">4. 감염병예방용 살충제</td>
+                                    <td>(주)세이프컴퍼니</td>
+                                    <td>2421-0001</td>
+                                    <td>2024-02-19</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">동아참메드이디와입스플러스 (염화벤잘코늄액(50%))</span></a></td>
+                                    <td class="align-l">7. 감염병예방용 방역 살균·소독제</td>
+                                    <td>동아참메드 주식회사</td>
+                                    <td>2723-0008</td>
+                                    <td>2023-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">세이프컴퍼니벤주론과립(디플루벤주론)</span></a></td>
+                                    <td class="align-l">4. 감염병예방용 살충제</td>
+                                    <td>(주)세이프컴퍼니</td>
+                                    <td>2423-0007</td>
+                                    <td>2023-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">세이프컴퍼니페노유제(d-페노트린)</span></a></td>
+                                    <td class="align-l">4. 감염병예방용 살충제</td>
+                                    <td>(주)세이프컴퍼니</td>
+                                    <td>2223-000</td>
+                                    <td>2023-11-10</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">수퍼레이살균소독액</span></a></td>
+                                    <td class="align-l">7. 감염병예방용 방역 살균·소독제</td>
+                                    <td>(주)중원테크</td>
+                                    <td>2723-0005</td>
+                                    <td>2023-10-24</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">메가피프로젤(피프로닐)</span></a></td>
+                                    <td class="align-l">2. 보건용 살충제</td>
+                                    <td>(주) 비오팜</td>
+                                    <td>2224-0001</td>
+                                    <td>2023-10-06</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">세이프컴퍼니페노킬유제(d-페노트린)</span></a></td>
+                                    <td class="align-l">4. 감염병예방용 살충제</td>
+                                    <td>(주)세이프컴퍼니</td>
+                                    <td>2424-0005</td>
+                                    <td>2023-09-30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                        <button class="btn-first" aria-label="첫 페이지"></button>
+                        <button class="btn-prev" aria-label="이전 페이지"></button>
+                        <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                        </ul>
+                        <button class="btn-next" aria-label="다음 페이지"></button>
+                        <button class="btn-last" aria-label="마지막 페이지"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,46 +254,6 @@
     </div>
 
 
-    <script>
-var localData = [
-    { no: 10, productName: '동아참메드이디와입스에이치피(과산화수소(50%))',                                category: '7. 감염병예방용 방역 살균·소독제', company: '동아참메드 주식회사',  approvalNo: '2725-0001', approvalDate: '2025-01-05' },
-    { no: 9,  productName: '비티그래뉼(Bti활성결정성단백질 및 불활성농축고형물, H-14, Strain BMP 144...', category: '4. 감염병예방용 살충제',            company: '주식회사 지텍',         approvalNo: '2725-0002', approvalDate: '2024-11-11' },
-    { no: 8,  productName: '세이프컴퍼니피프로젤(피프로닐)',                                              category: '2. 보건용 살충제',                  company: '(주)세이프컴퍼니',     approvalNo: '2725-0003', approvalDate: '2024-07-09' },
-    { no: 7,  productName: '세이프컴퍼니벤주론트라블렛(디플루벤주론)',                                   category: '4. 감염병예방용 살충제',            company: '(주)세이프컴퍼니',     approvalNo: '2421-0001', approvalDate: '2024-02-19' },
-    { no: 6,  productName: '동아참메드이디와입스플러스 (염화벤잘코늄액(50%))',                            category: '7. 감염병예방용 방역 살균·소독제', company: '동아참메드 주식회사',  approvalNo: '2723-0008', approvalDate: '2023-12-12' },
-    { no: 5,  productName: '세이프컴퍼니벤주론과립(디플루벤주론)',                                       category: '4. 감염병예방용 살충제',            company: '(주)세이프컴퍼니',     approvalNo: '2423-0007', approvalDate: '2023-12-11' },
-    { no: 4,  productName: '세이프컴퍼니페노유제(d-페노트린)',                                            category: '4. 감염병예방용 살충제',            company: '(주)세이프컴퍼니',     approvalNo: '2223-000',  approvalDate: '2023-11-10' },
-    { no: 3,  productName: '수퍼레이살균소독액',                                                          category: '7. 감염병예방용 방역 살균·소독제', company: '(주)중원테크',         approvalNo: '2723-0005', approvalDate: '2023-10-24' },
-    { no: 2,  productName: '메가피프로젤(피프로닐)',                                                      category: '2. 보건용 살충제',                  company: '(주) 비오팜',          approvalNo: '2224-0001', approvalDate: '2023-10-06' },
-    { no: 1,  productName: '세이프컴퍼니페노킬유제(d-페노트린)',                                          category: '4. 감염병예방용 살충제',            company: '(주)세이프컴퍼니',     approvalNo: '2424-0005', approvalDate: '2023-09-30' },
-  ];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 40,
-    headerHeight: 40,
-    height: '600px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-      { field: 'no',           caption: 'No',        width: 70 },
-      { field: 'productName',  caption: '제품명',     width: 380, align: 'left', cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{productName}}</a>' },
-      { field: 'category',     caption: '품목',       width: 240, align: 'left' },
-      { field: 'company',      caption: '업체명',     width: 200 },
-      { field: 'approvalNo',   caption: '승인번호',   width: 130 },
-      { field: 'approvalDate', caption: '승인일자',   width: 130 },
-    ],
-  }
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>
 
 </body>
 </html>

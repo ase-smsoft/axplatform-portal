@@ -836,6 +836,99 @@ function initTooltip() {
 }
 
 
+// 테이블 컬럼 정렬·필터 팝업 공통 처리
+function initTableFilter() {
+  // 팝업이 이미 생성된 경우 중복 방지
+  if (document.getElementById('tbl-filter-popup')) return;
+
+  var popup = document.createElement('div');
+  popup.id = 'tbl-filter-popup';
+  popup.className = 'tbl-filter-popup';
+  popup.hidden = true;
+  popup.innerHTML =
+    '<p class="filter-popup-label">다음과 같음</p>' +
+    '<input type="text" class="filter-popup-input" id="tbl-filter-input" placeholder="값 입력">' +
+    '<div class="filter-popup-logic">' +
+      '<label><input type="radio" name="filter-logic" value="none" checked> none</label>' +
+      '<label><input type="radio" name="filter-logic" value="and"> and</label>' +
+      '<label><input type="radio" name="filter-logic" value="or"> or</label>' +
+    '</div>' +
+    '<div class="filter-popup-btns">' +
+      '<button type="button" class="btn-xsm btn-blue" id="btn-filter-apply">적용</button>' +
+      '<button type="button" class="btn-xsm btn-white" id="btn-filter-clear">해제</button>' +
+    '</div>';
+  document.body.appendChild(popup);
+
+  var activeBtn = null;
+
+  function closePopup() {
+    popup.hidden = true;
+    if (activeBtn) { activeBtn.classList.remove('is-open'); activeBtn = null; }
+  }
+
+  document.addEventListener('click', function(e) {
+    var filterBtn = e.target.closest('.btn-th-filter');
+    if (filterBtn) {
+      e.stopPropagation();
+      if (activeBtn === filterBtn && !popup.hidden) { closePopup(); return; }
+      closePopup();
+      activeBtn = filterBtn;
+      activeBtn.classList.add('is-open');
+      popup.hidden = false;
+      popup.dataset.field = filterBtn.dataset.field || '';
+      document.getElementById('tbl-filter-input').value = filterBtn.dataset.filterValue || '';
+      document.querySelector('input[name="filter-logic"][value="none"]').checked = true;
+      var rect = filterBtn.getBoundingClientRect();
+      popup.style.position = 'fixed';
+      popup.style.top  = (rect.bottom + 4) + 'px';
+      popup.style.left = rect.left + 'px';
+      popup.style.zIndex = 1000;
+      return;
+    }
+    if (!e.target.closest('#tbl-filter-popup')) closePopup();
+  }, true);
+
+  document.getElementById('btn-filter-apply').addEventListener('click', function() {
+    if (!activeBtn) return;
+    var val = document.getElementById('tbl-filter-input').value.trim();
+    activeBtn.dataset.filterValue = val;
+    activeBtn.classList.toggle('is-active', !!val);
+    activeBtn.dispatchEvent(new CustomEvent('tablefilter:apply', {
+      bubbles: true,
+      detail: { field: popup.dataset.field, value: val }
+    }));
+    closePopup();
+  });
+
+  document.getElementById('btn-filter-clear').addEventListener('click', function() {
+    if (!activeBtn) return;
+    activeBtn.dataset.filterValue = '';
+    activeBtn.classList.remove('is-active');
+    activeBtn.dispatchEvent(new CustomEvent('tablefilter:clear', {
+      bubbles: true,
+      detail: { field: popup.dataset.field }
+    }));
+    closePopup();
+  });
+}
+
+
+// btn-th-sort 가 있는 테이블은 자동으로 화살표 토글 처리
+document.addEventListener('click', function (e) {
+  var btn = e.target.closest('.btn-th-sort');
+  if (!btn) return;
+  var table = btn.closest('table');
+  if (!table) return;
+  var wasAsc  = btn.classList.contains('is-asc');
+  var wasDesc = btn.classList.contains('is-desc');
+  table.querySelectorAll('.btn-th-sort').forEach(function (b) {
+    b.classList.remove('is-asc', 'is-desc');
+  });
+  if (!wasAsc && !wasDesc) btn.classList.add('is-asc');
+  else if (wasAsc)          btn.classList.add('is-desc');
+});
+
+
 // ready
 $(function(){
   function tryGnbMenu() {
@@ -857,7 +950,8 @@ $(function(){
   inputDel();
   datepicker();
   initTooltip();
-  
+  initTableFilter();
+
   thumbProductEvt();
   productSlider();
   

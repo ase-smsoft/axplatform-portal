@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">용어사전</h2>
+                </div>
+
+                <div class="search-box">
+                    <div class="sc-block">
+                        <div class="sc-row">
+                            <select class="sc-sel" aria-label="검색 구분">
+                                <option>제목 + 내용</option>
+                                <option>제목</option>
+                                <option>내용</option>
+                            </select>
+                            <div class="input-search-wrap">
+                                <div class="input-search inp-del">
+                                    <input type="text" placeholder="검색어를 입력해주세요." aria-label="검색어">
+                                </div>
+                                <button type="button" class="btn-search">
+                                    <span>검색</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dict-char-box">
+                    <h3 class="dict-char-title">철자로 빠르게 검색하기</h3>
+                    <div class="dict-char-list" role="group" aria-label="철자 검색">
+                        <button type="button" class="dict-char-btn on" aria-pressed="true">가</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">나</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">다</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">라</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">마</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">사</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">아</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">자</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">차</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">카</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">타</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">파</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">하</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">A</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">B</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">C</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">D</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">E</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">F</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">G</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">I</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">J</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">K</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">L</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">M</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">N</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">O</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">P</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">Q</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">R</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">S</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">T</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">U</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">V</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">W</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">X</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">Y</button>
+                        <button type="button" class="dict-char-btn" aria-pressed="false">Z</button>
+                    </div>
+                </div>
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">검색 결과 <em>124</em>개</div>
+                    </div>
+                    <div class="right">
+                        <button type="button" class="btn-xsm btn-white"><svg class="ico-excel" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-excel"></use></svg><span>엑셀 다운로드</span></button>
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option value="10">10개</option>
+                            <option value="20">20개</option>
+                            <option value="30">30개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="data-default dict-list">
+                    <table>
+                        <caption class="sr-only">용어사전 목록</caption>
+                        <colgroup>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr class="dict-term">
+                                <th scope="row">1단계 검색법</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">시험법자문위원회(EDSTAC) 에서 권고하는 내분비계 교란물질 평가체계 중 한 단계인 1단계 검색을 말함. 에스트로겐, 안드로겐 및 갑상선 호르몬계와 상호작용할 가능성이 있는 화학물질을 검색하기 위해 고안된 시험법. 1단계 시험법은 in vivo와 in vitro 및 비포유동물 시험법을 포함함.</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">2단계 시험법</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">시험법자문위원회(EDSTAC) 에서 권고하는 내분비계 교란물질 평가체계 중 한 단계인 2단계 시험을 말함. 내분비계 장애물질이 사람이나 야생동물에게서 에스트로겐, 안드로겐, 갑상선 호르몬에 대한 장애와 용량의존성 등의 특징이 나타나는지 알기 위한 검색법으로 내분비계 장애작용을 일으키는 농도와 위해도평가를 위한 내분비계 장애결과를 평가함.</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">2차 오염</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">2차적 오염의 총칭. 오염물질이 대기나 물 속에서 다른 유해물질로 변화하는 것을 말함. 대표적인 2차적 오염물질로는 자동차 배기 가스의 일산화탄소, 탄화수소, 일산화질소 등의 광화학반응으로 생성되는 광화학 스모그의 옥시던트가 있음.</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">99 Percentile</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">전체 측정수를 100개로 환산해 그 99번째의 수 (상위 1%)</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">99백분위수</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">전체 측정수를 100개로 환산해 그 99번째의 수 (상위 1%)</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">AAALAC (Association For Assessment And Accreditation Of Laboratory Animal Care)</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">1965년 국제적으로 실험동물에 대한 평가·인증과 윤리적인 문제를 다루기 위해 설립된 비영리 단체. 전세계 28개국에 300여개의 기관을 두고 국제적인 실험동물 표준화 작업을 진행하고 있음. 실험동물의 관리와 사용에 있어 이 협회의 기준을 충족 및 유지시킬 경우 AAALAC인증을 발급함.</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">ABS (Alkyl Benzene Sulfonate) Detergent</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">음이온계 합성세제의 세정 성분 중 하나로 초기 합성세제의 주류를 차지함. 분해성이 낮고 물오염 및 손이 거칠어지며 건강 장애를 일으키는 등의 문제가 있음.</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">ABS 세제</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">음이온계 합성세제의 세정 성분 중 하나로 초기 합성세제의 주류를 차지함. 분해성이 낮고 물오염 및 손이 거칠어지며 건강 장애를 일으키는 등의 문제가 있음.</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">ACGIH (American Conference of Governmental Industrial Hygienists)</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">1938년 당시 미국의 정부기관에서 산업위생관계의 작업에 종사하고 있던 직원간의 정보교환을 목적으로 한 사적인 모임으로 시작됨. 이 협회는 산업보건관계의 업무에 종사하고 있는 자에 한하여 정회원의 입회자격으로 한 사단법인 이며 정부기관은 아님. 현재 미국, 캐나다를 비롯하여 세계 각국에 약 3,000명의 회원이 있음. ACGIH의 활동내용은 산업보건에 관한 아이디어와 경험의 교환, 기준작성을 하는 것이며, 현재 하부 조직으로 각종 위원회를 설치하여 작업환경분석, 허용농도 및 국소 배기 등에 대해 연구를 실시하고 있고, 특히 유해한 분진, 가스의 허용농도 등에 대한 권고치는 국제적으로 인정되고 있음.</td>
+                            </tr>
+                            <tr class="dict-term">
+                                <th scope="row">ADI (Acceptable daily intake)</th>
+                            </tr>
+                            <tr class="dict-desc">
+                                <td class="align-l">사람이 평생 동안 매일 섭취하여도 건강상의 위해를 일으키지 않는 잔류물질의 추정치. 체중(kg)당 mg 또는 μg으로 나타냄.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                        <button class="btn-first" aria-label="첫 페이지"></button>
+                        <button class="btn-prev" aria-label="이전 페이지"></button>
+                        <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                        </ul>
+                        <button class="btn-next" aria-label="다음 페이지"></button>
+                        <button class="btn-last" aria-label="마지막 페이지"></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+<script>
+document.querySelectorAll('.dict-char-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.dict-char-btn').forEach(function(el) {
+            el.classList.remove('on');
+            el.setAttribute('aria-pressed', 'false');
+        });
+        this.classList.add('on');
+        this.setAttribute('aria-pressed', 'true');
+    });
+});
+</script>
+
+</body>
+</html>

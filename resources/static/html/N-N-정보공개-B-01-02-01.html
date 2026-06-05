@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,11 +11,6 @@
 <script src="../script/jquery-3.7.1.min.js"></script>
 <script src="../script/jquery-ui.js"></script>
 <script src="../script/pub-ui.js"></script>
-
-<script type="text/javascript" src="../../SBGrid3/license.js"></script>
-<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
-<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
-<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
 
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
@@ -263,8 +258,120 @@
 
                 <!-- 변경이력정보 -->
                 <div class="tab-content" id="tab-history" style="display: none;">
-                    <div class="data-table">
-                        <div id="grid" aria-label="안전확인대상 생활화학제품(신고) 목록"></div>
+                    <div class="data-default">
+                        <div class="scroll">
+                            <table>
+                                <caption class="sr-only">변경이력정보 목록</caption>
+                                <colgroup>
+                                    <col style="width:60px">
+                                    <col style="width:auto;min-width:200px">
+                                    <col style="width:100px">
+                                    <col style="width:180px">
+                                    <col style="width:100px">
+                                    <col style="width:130px">
+                                    <col style="width:140px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col" data-field="productName">
+                                            <div class="th-wrap">
+                                                <span class="th-label">제품명</span>
+                                                <div class="th-btns">
+                                                    <button type="button" class="btn-th-sort" data-field="productName" aria-label="제품명 정렬"><i class="th-sort-icon"></i></button>
+                                                    <button type="button" class="btn-th-filter" data-field="productName" aria-label="제품명 필터"><i class="th-filter-icon"></i></button>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th scope="col">품목</th>
+                                        <th scope="col">업체명</th>
+                                        <th scope="col">발급구분</th>
+                                        <th scope="col">성적발급구분</th>
+                                        <th scope="col">신고증명서 발급일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">에프지 대표제품(액체형) 2</span></a></td>
+                                        <td>방향제</td>
+                                        <td>(주)에프지인터네셔널</td>
+                                        <td>대표</td>
+                                        <td>증명서 발급완료</td>
+                                        <td>2023-10-07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">잠자기전 편백숲 숨결</span></a></td>
+                                        <td>방향제</td>
+                                        <td>(주)에프지인터네셔널</td>
+                                        <td>대표변경</td>
+                                        <td>증명서 발급완료</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">베르가못 상쾌한 숲 숨결</span></a></td>
+                                        <td>세정제</td>
+                                        <td>(주)에프지인터네셔널</td>
+                                        <td>파생</td>
+                                        <td>증명서 발급완료</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄</span></a></td>
+                                        <td>세정제</td>
+                                        <td>(주)에프지인터네셔널</td>
+                                        <td>파생변경</td>
+                                        <td>증명서 발급완료</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄</span></a></td>
+                                        <td>세정제</td>
+                                        <td>(주)에프지인터네셔널</td>
+                                        <td>파생변경</td>
+                                        <td>증명서 발급완료</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄</span></a></td>
+                                        <td>세정제</td>
+                                        <td>(주)에프지인터네셔널</td>
+                                        <td>대표변경</td>
+                                        <td>증명서 발급완료</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄</span></a></td>
+                                        <td>세정제</td>
+                                        <td>(주)에프지인터네셔널</td>
+                                        <td>대표</td>
+                                        <td>증명서 발급완료</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="pagination-wrap">
+                        <div class="pagination">
+                            <button class="btn-first" aria-label="첫 페이지"></button>
+                            <button class="btn-prev" aria-label="이전 페이지"></button>
+                            <ul>
+                                <li class="on"><button type="button">1</button></li>
+                                <li><button type="button">2</button></li>
+                                <li><button type="button">3</button></li>
+                                <li><button type="button">4</button></li>
+                                <li><button type="button">5</button></li>
+                            </ul>
+                            <button class="btn-next" aria-label="다음 페이지"></button>
+                            <button class="btn-last" aria-label="마지막 페이지"></button>
+                        </div>
                     </div>
                 </div>
 
@@ -281,45 +388,6 @@
     </div>
 
 
-    <script>
-var localData = [
-    { no: 1, productName: '에프지 대표제품(액체형) 2',                       category: '방향제', company: '(주)에프지인터네셔널', issueType: '대표',     issueResult: '증명서 발급완료', issueDate: '2023-10-07' },
-    { no: 2, productName: '잠자기전 편백숲 숨결',                            category: '방향제', company: '(주)에프지인터네셔널', issueType: '대표변경', issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 3, productName: '베르가못 상쾌한 숲 숨결',                         category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생',     issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 4, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생변경', issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 5, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '파생변경', issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 6, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '대표변경', issueResult: '증명서 발급완료', issueDate: '' },
-    { no: 7, productName: '에이치 H_다롬 제로컬렉션 음식물처리기 전용 활성탄', category: '세정제', company: '(주)에프지인터네셔널', issueType: '대표',     issueResult: '증명서 발급완료', issueDate: '' },
-  ];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 40,
-    headerHeight: 40,
-    height: '400px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-      { field: 'no', caption: '번호', width: 60, sortable: false,
-        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
-      { field: 'productName', caption: '제품명',             width: 360, align: 'left', cellTemplate: '<a href="javascript:void(0);" class="link-txt">{{productName}}</a>' },
-      { field: 'category',    caption: '품목',               width: 120 },
-      { field: 'company',     caption: '업체명',             width: 200 },
-      { field: 'issueType',   caption: '발급구분',           width: 120 },
-      { field: 'issueResult', caption: '성적발급구분',       width: 150 },
-      { field: 'issueDate',   caption: '신고증명서 발급일',  width: 160 },
-    ],
-  }
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>
 
 </body>
 </html>

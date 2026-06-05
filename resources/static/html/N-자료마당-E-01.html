@@ -12,6 +12,11 @@
 <script src="../script/jquery-ui.js"></script>
 <script src="../script/pub-ui.js"></script>
 
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
 <script src="../script/jquery-swiper.js"></script>
@@ -48,27 +53,29 @@
                     <li><a href="javascript:"><span>CURRENT</span></a></li>
                 </ol>
                 <div class="title-main-wrap">
-                    <h2 class="title-main">홍보자료</h2>
-                    <p class="txt-sub">안전한 화학제품의 사용을 위한 화학제품 안전정보 및 관련 정책·법령 등 영상자료를 제공하고 있습니다.</p>
+                    <h2 class="title-main">FAQ</h2>
                 </div>
 
-
-                <!-- 탭 -->
+               <!-- 탭 -->
                 <div class="tab-type1">
                     <ul>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-video">영상</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-card">카드뉴스</a></li>
-                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-publication">간행물</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-all">전체</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-kreach">kreach</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-industry">산업계도움센터</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-chem-info">화학물질종합정보시스템</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-kchaser">k-chaser</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-green">초록누리</a></li>
                     </ul>
                 </div>
 
+
                 <div class="tab-content">
-    
+
                     <div class="search-box">
                         <div class="sc-block">
                             <div class="sc-row">
                                 <select class="sc-sel" aria-label="검색 구분">
-                                    <option>구분</option>
+                                    <option>제목 + 내용</option>
                                     <option>제목</option>
                                     <option>내용</option>
                                 </select>
@@ -87,7 +94,7 @@
 
                     <div class="data-util">
                         <div class="left">
-                            <div class="total">검색 결과 <em>124</em>개</div>
+                            <div class="total">총 <em>7189</em>건</div>
                         </div>
                         <div class="right">
                             <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
@@ -101,89 +108,81 @@
                     <div class="data-default">
                         <div class="scroll">
                             <table>
-                                <caption class="sr-only">홍보자료 간행물 목록</caption>
+                                <caption class="sr-only">FAQ 목록</caption>
                                 <colgroup>
-                                    <col style="width:60px">
-                                    <col style="width:auto;min-width:200px">
-                                    <col style="width:120px">
                                     <col style="width:80px">
+                                    <col style="width:180px">
+                                    <col>
+                                    <col style="width:120px">
                                 </colgroup>
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col" data-field="title">
-                                            <div class="th-wrap">
-                                                <span class="th-label">제목</span>
-                                                <div class="th-btns">
-                                                    <button type="button" class="btn-th-sort" data-field="title" aria-label="제목 정렬"><i class="th-sort-icon"></i></button>
-                                                    <button type="button" class="btn-th-filter" data-field="title" aria-label="제목 필터"><i class="th-filter-icon"></i></button>
-                                                </div>
-                                            </div>
-                                        </th>
+                                        <th scope="col">분류</th>
+                                        <th scope="col">제목</th>
                                         <th scope="col">등록일</th>
-                                        <th scope="col">조회수</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>10</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">유해화학물질 취급시설기준 합리화로 현장 안전을 높인다 </span><i class="ico-clip"></i></a></td>
+                                        <td>kreach</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">화학안전관리번호 확인은 어디에서 가능한가요?</span></a></td>
                                         <td>2026-02-12</td>
-                                        <td>379</td>
                                     </tr>
                                     <tr>
                                         <td>9</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">화학사고 대응 물질정보 97종에서 150종으로 확대… 현장대응 역량 높여</span></a></td>
+                                        <td>산업계도움센터</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">화학물질의 등록 및 평가 등에 관한 법률에서 시장에 출시되는 물질의 의미가 정확히 어...</span></a></td>
                                         <td>2026-02-06</td>
-                                        <td>81</td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">화학물질안전원-서울아리수본부, 화학물질 피해 예방 위한 협약체결</span></a></td>
+                                        <td>화학물질종합정보시스템</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">단순 물 추출 및 농축 과정을 거친 제품에 있는 화학물질을 수입하는 경우에도 사전신고...</span></a></td>
                                         <td>2026-02-03</td>
-                                        <td>861</td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">화학사고로 인한 주민 건강영향조사 10년간의 경험, 세계에 알린다</span></a></td>
+                                        <td>k-chesar</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">K-Chesar 프로그램의 원활한 구동을 위한 PC사양은 어떻게 되나요?</span></a></td>
                                         <td>2026-01-07</td>
-                                        <td>346</td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">제3회 화학사고예방관리계획 이행 우수사례… 기업 6곳, 지자체 2곳 선정</span></a></td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">신규화학물질 등록등서를 받은 후 화평법 시행규칙 25조에 의한 유해성심사에 필요한...</span></a></td>
                                         <td>2026-01-06</td>
-                                        <td>446</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">화학물질 불법 온라인 정보, 국민이 지켜본다…12기 감시단 모집</span></a></td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">위해성자료는 반드시 K-Chesar를 이용해서 작성해야 하나요?</span></a></td>
                                         <td>2026-01-02</td>
-                                        <td>882</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">[25.12.17 우리원 보도자료] 화학물질안전원·새만금개발·군산시, 새만금산단 화학사고 예방체계 강화...</span></a></td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">K-Chesar를 활용한 위해성자료 출력 시 바로 화학물질안전원에 제출이 되나요?</span></a></td>
                                         <td>2025-12-17</td>
-                                        <td>525</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">화학사고 건강영향조사 국내 경험, 서태평양 지역에 알린다</span></a></td>
+                                        <td>kreach</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">위해성자료의 작성 및 제출 대상은 누구인가요?</span></a></td>
                                         <td>2025-12-10</td>
-                                        <td>1754</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원고시 제2022-1호) 「유해화학물질 안전교육 전문기관의 지정」</span></a></td>
+                                        <td>kreach</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">화관법 관련 민원(운반계획서, 인허가 등)에 대한 문의사항은 어디로 연락하나요?</span></a></td>
                                         <td>2025-11-29</td>
-                                        <td>1089</td>
                                     </tr>
                                     <tr>
                                         <td>1</td>
-                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">[화학물질안전원지침 제2021-2호]사고 영향범위 산정에 관한 기술지침</span></a></td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">운반계획서 및 인허가 신청은 어디에서 하나요?</span></a></td>
                                         <td>2025-11-12</td>
-                                        <td>1017</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -205,8 +204,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
             </div>
         </div>

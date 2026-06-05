@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,11 +11,6 @@
 <script src="../script/jquery-3.7.1.min.js"></script>
 <script src="../script/jquery-ui.js"></script>
 <script src="../script/pub-ui.js"></script>
-
-<script type="text/javascript" src="../../SBGrid3/license.js"></script>
-<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
-<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
-<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
 
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
@@ -248,8 +243,171 @@
                     </div>
                 </div>
 
-                <div class="data-table">
-                    <div id="grid" aria-label="안전확인대상 생활화학제품(신고) 목록"></div>
+                <div class="data-default">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">안전확인대상 생활화학제품(신고) 목록</caption>
+                            <colgroup>
+                                <col style="width:60px">
+                                <col style="width:auto;min-width:200px">
+                                <col style="width:130px">
+                                <col style="width:130px">
+                                <col style="width:180px">
+                                <col style="width:180px">
+                                <col style="width:140px">
+                                <col style="width:120px">
+                                <col style="width:100px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col" data-field="productName">
+                                        <div class="th-wrap">
+                                            <span class="th-label">제품명</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="productName" aria-label="제품명 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="productName" aria-label="제품명 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col">전성품 공개여부</th>
+                                    <th scope="col">제품분류</th>
+                                    <th scope="col">제형</th>
+                                    <th scope="col">업체명</th>
+                                    <th scope="col">신고번호</th>
+                                    <th scope="col">유효기간 만료일</th>
+                                    <th scope="col">제품상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">차량용 디퓨저 퓨어솝 100ml</span></a></td>
+                                    <td>-</td>
+                                    <td>탈취제</td>
+                                    <td>비분사형 &gt; 에멀션형(젤형)</td>
+                                    <td>이래에프엔씨 (주)</td>
+                                    <td>CB25-13-0126</td>
+                                    <td>2028-10-27</td>
+                                    <td>유효</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">클라 라이프케어 파워클린 미니 캡슐세제 플러스 스윗 페어 프리지아</span></a></td>
+                                    <td>-</td>
+                                    <td>세탁세제</td>
+                                    <td>비분사형 &gt; 캡슐형</td>
+                                    <td>주식회사 테이칼튼</td>
+                                    <td>FA23-03-0211</td>
+                                    <td>2026-08-08</td>
+                                    <td>유효</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">카트리지 335 (소용량 검정색)</span></a></td>
+                                    <td>-</td>
+                                    <td>인쇄용 잉크·토너</td>
+                                    <td>비분사형 &gt; 카트리지형</td>
+                                    <td>주식회사 리트컴</td>
+                                    <td>CB21-18-0122</td>
+                                    <td>2026-12-22</td>
+                                    <td>유효</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">페니체화이트스포트</span></a></td>
+                                    <td>-</td>
+                                    <td>물체 염색제</td>
+                                    <td>분사형 &gt; 기타</td>
+                                    <td>에이스마케팅</td>
+                                    <td>GB24-14-0011</td>
+                                    <td>2027-05-27</td>
+                                    <td>유효</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">코멧 레몬라벤더 캔들</span></a></td>
+                                    <td>-</td>
+                                    <td>초</td>
+                                    <td>비분사형 &gt; 기타</td>
+                                    <td>주식회사 아이비스 (IBYS Co., Ltd.)</td>
+                                    <td>CB20-26-0398</td>
+                                    <td>2026-01-22</td>
+                                    <td>만료</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">말표 인덕션클리너</span></a></td>
+                                    <td>-</td>
+                                    <td>광택코팅제</td>
+                                    <td>비분사형 &gt; 액체형</td>
+                                    <td>말표산업(주)</td>
+                                    <td>FB20-06-0144</td>
+                                    <td>2023-03-26</td>
+                                    <td>취하</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">네로(NERO) 세라믹 타이어 드레싱</span></a></td>
+                                    <td>-</td>
+                                    <td>광택코팅제</td>
+                                    <td>비분사형 &gt; 기타</td>
+                                    <td>말표산업(주)</td>
+                                    <td>HB25-12-0055</td>
+                                    <td>2028-06-03</td>
+                                    <td>유효</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">자라홈 디퓨저 이터널 우드 2473/703/724</span></a></td>
+                                    <td>-</td>
+                                    <td>방향제</td>
+                                    <td>분사형 &gt; 보충형 외 5제형</td>
+                                    <td>아이티엑스코리아 유한회사</td>
+                                    <td>HB25-12-0055</td>
+                                    <td>2027-12-19</td>
+                                    <td>유효</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">488 공기청정기 교환 필터</span></a></td>
+                                    <td>-</td>
+                                    <td>필터형 보존처리 제품</td>
+                                    <td>분사형 &gt; 필터형</td>
+                                    <td>제로텍</td>
+                                    <td>GB26-25-0001</td>
+                                    <td>2028-12-29</td>
+                                    <td>유효</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">그랜드 홀(Grand Hall)</span></a></td>
+                                    <td>-</td>
+                                    <td>방향제</td>
+                                    <td>분사형 &gt; 필터형</td>
+                                    <td>센트랩</td>
+                                    <td>EB25-12-0440</td>
+                                    <td>2028-06-03</td>
+                                    <td>유효</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                        <button class="btn-first" aria-label="첫 페이지"></button>
+                        <button class="btn-prev" aria-label="이전 페이지"></button>
+                        <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                        </ul>
+                        <button class="btn-next" aria-label="다음 페이지"></button>
+                        <button class="btn-last" aria-label="마지막 페이지"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -262,50 +420,6 @@
     </div>
 
 
-    <script>
-var localData = [
-    { no: 10, productName: '차량용 디퓨저 퓨어솝 100ml',                                       disclose: '-', category: '탈취제',               productForm: '비분사형 > 에멀션형(젤형)', company: '이래에프엔씨 (주)',                 reportNo: 'CB25-13-0126', expireDate: '2028-10-27', status: '유효' },
-    { no: 9,  productName: '클라 라이프케어 파워클린 미니 캡슐세제 플러스 스윗 페어 프리지아', disclose: '-', category: '세탁세제',             productForm: '비분사형 > 캡슐형',         company: '주식회사 테이칼튼',                 reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-    { no: 8,  productName: '카트리지 335 (소용량 검정색)',                                     disclose: '-', category: '인쇄용 잉크·토너',      productForm: '비분사형 > 카트리지형',     company: '주식회사 리트컴',                   reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-    { no: 7,  productName: '페니체화이트스포트',                                               disclose: '-', category: '물체 염색제',          productForm: '분사형 > 기타',             company: '에이스마케팅',                       reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-    { no: 6,  productName: '코멧 레몬라벤더 캔들',                                             disclose: '-', category: '초',                   productForm: '비분사형 > 캡슐형',         company: '주식회사 아이비스 (IBYS Co., Ltd.)', reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-    { no: 5,  productName: '말표 인덕션클리너',                                                disclose: '-', category: '광택코팅제',           productForm: '비분사형 > 캡슐형',         company: '말표산업(주)',                       reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-    { no: 4,  productName: '네로(NERO) 세라믹 타이어 드레싱',                                  disclose: '-', category: '광택코팅제',           productForm: '비분사형 > 캡슐형',         company: '말표산업(주)',                       reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-    { no: 3,  productName: '자라홈 디퓨저 이터널 우드 2473/703/724',                           disclose: '-', category: '세탁세제',             productForm: '분사형 > 보충형 외 5제형',  company: '아이티엑스코리아 유한회사',          reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-    { no: 2,  productName: '필터형 보존처리 제품',                                             disclose: '-', category: '필터형 보존처리 제품', productForm: '분사형 > 필터형',           company: '제로텍',                             reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-    { no: 1,  productName: '그랜드 홀(Grand Hall)',                                            disclose: '-', category: '세탁세제',             productForm: '분사형 > 필터형',           company: '센트랩',                             reportNo: 'FA23-03-0211', expireDate: '2028-10-27', status: '유효' },
-  ];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 40,
-    headerHeight: 40,
-    height: '600px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-      { field: 'no', caption: '번호', width: 60, sortable: false,
-        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
-      { field: 'productName', caption: '제품명',              width: 280, align: 'left' },
-      { field: 'disclose',    caption: '전성품 공개여부', width: 180 },
-      { field: 'category',    caption: '제품분류',            width: 130 },
-      { field: 'productForm', caption: '제형',                width: 160 },
-      { field: 'company',     caption: '업체명',              width: 180 },
-      { field: 'reportNo',    caption: '신고번호',            width: 130 },
-      { field: 'expireDate',  caption: '유효기간 만료일', width: 180 },
-      { field: 'status',      caption: '제품상태',            width: 100 },
-    ],
-  }
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>
 
 </body>
 </html>

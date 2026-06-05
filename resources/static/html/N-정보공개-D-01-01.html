@@ -12,11 +12,6 @@
 <script src="../script/jquery-ui/jquery-ui.min.js"></script>
 <script src="../script/pub-ui.js"></script>
 
-<script type="text/javascript" src="../../SBGrid3/license.js"></script>
-<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
-<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
-<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
-
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
 <script src="../script/jquery-swiper.js"></script>
@@ -131,8 +126,175 @@
                     </div>
                 </div>
 
-                <div class="data-table">
-                    <div id="grid" aria-label="일반등록 전체목록"></div>
+                <div class="data-default">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">화학물질 사고·사례 목록</caption>
+                            <colgroup>
+                                <col style="width:60px">
+                                <col style="width:120px">
+                                <col style="width:auto;min-width:200px">
+                                <col style="width:130px">
+                                <col style="width:130px">
+                                <col style="width:90px">
+                                <col style="width:160px">
+                                <col style="width:90px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">사고일자</th>
+                                    <th scope="col" data-field="address">
+                                        <div class="th-wrap">
+                                            <span class="th-label">주소</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="address" aria-label="주소 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="address" aria-label="주소 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" data-field="substance">
+                                        <div class="th-wrap">
+                                            <span class="th-label">사고물질</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="substance" aria-label="사고물질 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="substance" aria-label="사고물질 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" data-field="cause">
+                                        <div class="th-wrap">
+                                            <span class="th-label">사고원인</span>
+                                            <div class="th-btns">
+                                                <button type="button" class="btn-th-sort" data-field="cause" aria-label="사고원인 정렬"><i class="th-sort-icon"></i></button>
+                                                <button type="button" class="btn-th-filter" data-field="cause" aria-label="사고원인 필터"><i class="th-filter-icon"></i></button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col">사고유형</th>
+                                    <th scope="col">사고업체</th>
+                                    <th scope="col">상세정보</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>2025-04-28</td>
+                                    <td class="align-l">울산광역시 울주군 서생면 해맞이로 658-91</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>시설 결함</td>
+                                    <td>누출</td>
+                                    <td class="align-l">에코파크</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>2025-04-25</td>
+                                    <td class="align-l">경기도 안산시 단원구 강촌로 149</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>시설 결함</td>
+                                    <td>화재</td>
+                                    <td class="align-l">㈜연일특운</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>2025-04-20</td>
+                                    <td class="align-l">충청북도 청주시 흥덕구 대신로146번길 174</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>안전기준 미준수</td>
+                                    <td>폭발</td>
+                                    <td class="align-l">엘지이노텍㈜ 구미1공장</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>2025-04-20</td>
+                                    <td class="align-l">경상북도 구미시 수출대로 7길 50-9</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>운송차량</td>
+                                    <td>기타</td>
+                                    <td class="align-l">㈜켐이</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>2025-04-20</td>
+                                    <td class="align-l">충청남도 당진시 송악읍 북부산광역시업로</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>자연재해</td>
+                                    <td>누출</td>
+                                    <td class="align-l">㈜켐이</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>2025-04-20</td>
+                                    <td class="align-l">충청남도 당진시 송악읍 북부산광역시업로</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>시설 결함</td>
+                                    <td>화재</td>
+                                    <td class="align-l">㈜켐이</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>2025-04-20</td>
+                                    <td class="align-l">충청남도 당진시 송악읍 북부산광역시업로</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>시설 결함</td>
+                                    <td>폭발</td>
+                                    <td class="align-l">㈜켐이</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2025-04-20</td>
+                                    <td class="align-l">충청남도 당진시 송악읍 북부산광역시업로</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>시설 결함</td>
+                                    <td>기타</td>
+                                    <td class="align-l">㈜켐이</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2025-04-20</td>
+                                    <td class="align-l">충청남도 당진시 송악읍 북부산광역시업로</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>시설 결함</td>
+                                    <td>누출</td>
+                                    <td class="align-l">㈜켐이</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-04-20</td>
+                                    <td class="align-l">충청남도 당진시 송악읍 북부산광역시업로</td>
+                                    <td>황산(95~99%)</td>
+                                    <td>시설 결함</td>
+                                    <td>누출</td>
+                                    <td class="align-l">㈜켐이</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>상세</span></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                        <button class="btn-first" aria-label="첫 페이지"></button>
+                        <button class="btn-prev" aria-label="이전 페이지"></button>
+                        <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                        </ul>
+                        <button class="btn-next" aria-label="다음 페이지"></button>
+                        <button class="btn-last" aria-label="마지막 페이지"></button>
+                    </div>
                 </div>
 
                 <div class="txt-exp-wrap">
@@ -149,48 +311,6 @@
     </div>
 
 
-    <script>
-var localData = [
-    { accidentDate: '2025-04-28', address: '울산광역시 울주군 서생면 해맞이로 658-91',    substance: '황산(95~99%)', cause: '시설 결함',     type: '누출', company: '에코파크'               },
-    { accidentDate: '2025-04-25', address: '경기도 안산시 단원구 강촌로 149',              substance: '황산(95~99%)', cause: '시설 결함',     type: '화재', company: '㈜연일특운'             },
-    { accidentDate: '2025-04-20', address: '충청북도 청주시 흥덕구 대신로146번길 174',     substance: '황산(95~99%)', cause: '안전기준 미준수', type: '폭발', company: '엘지이노텍㈜ 구미1공장' },
-    { accidentDate: '2025-04-20', address: '경상북도 구미시 수출대로 7길 50-9',            substance: '황산(95~99%)', cause: '운송차량',      type: '기타', company: '㈜켐이'                },
-    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '자연재해',      type: '누출', company: '㈜켐이'                },
-    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '화재', company: '㈜켐이'                },
-    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '폭발', company: '㈜켐이'                },
-    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '기타', company: '㈜켐이'                },
-    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '누출', company: '㈜켐이'                },
-    { accidentDate: '2025-04-20', address: '충청남도 당진시 송악읍 북부산광역시업로',      substance: '황산(95~99%)', cause: '시설 결함',     type: '누출', company: '㈜켐이'                },
-];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 48,
-    headerHeight: [40, 40],
-    height: '600px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-        { caption: 'No',      width: 60,  cellTemplate: '1' },
-        { field: 'accidentDate', caption: '사고일자', width: 110 },
-        { field: 'address',      caption: '주소',     width: 250, align: 'left' },
-        { field: 'substance',    caption: '사고물질', width: 130 },
-        { field: 'cause',        caption: '사고원인', width: 120 },
-        { field: 'type',         caption: '사고유형', width: 90 },
-        { field: 'company',      caption: '사고업체', width: 160, align: 'left' },
-        { caption: '상세정보',   width: 90,  cellTemplate: '<a href="javascript:void(0);" class="btn-xsm btn-bg-blue-line">상세</a>' },
-    ],
-};
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>
 
 </body>
 </html>

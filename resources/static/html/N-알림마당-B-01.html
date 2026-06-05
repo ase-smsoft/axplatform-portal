@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,11 +11,6 @@
 <script src="../script/jquery-3.7.1.min.js"></script>
 <script src="../script/jquery-ui.js"></script>
 <script src="../script/pub-ui.js"></script>
-
-<script type="text/javascript" src="../../SBGrid3/license.js"></script>
-<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
-<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
-<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
 
 <link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
 <script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
@@ -103,8 +98,123 @@
                         </div>
                     </div>
 
-                    <div class="data-table">
-                        <div id="grid" aria-label="일반등록 전체목록"></div>
+                    <div class="data-default">
+                        <div class="scroll">
+                            <table>
+                                <caption class="sr-only">법령정보 목록</caption>
+                                <colgroup>
+                                    <col style="width:60px">
+                                    <col style="width:160px">
+                                    <col style="width:auto;min-width:200px">
+                                    <col style="width:120px">
+                                    <col style="width:80px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">분류</th>
+                                        <th scope="col" data-field="title">
+                                            <div class="th-wrap">
+                                                <span class="th-label">제목</span>
+                                                <div class="th-btns">
+                                                    <button type="button" class="btn-th-sort" data-field="title" aria-label="제목 정렬"><i class="th-sort-icon"></i></button>
+                                                    <button type="button" class="btn-th-filter" data-field="title" aria-label="제목 필터"><i class="th-filter-icon"></i></button>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th scope="col">등록일</th>
+                                        <th scope="col">조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>kreach</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원고시 제2024-42호) 화학물질의 유해성심사결과 일부개정 </span><i class="ico-clip"></i></a></td>
+                                        <td>2026-02-12</td>
+                                        <td>379</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>화학물질종합정보시스템</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원고시 제2024-41호) 유해화학물질 소량 취급시설에 관한 고시</span></a></td>
+                                        <td>2026-02-06</td>
+                                        <td>81</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>화학물질종합정보시스템</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원고시 제2024-40호) 반도체·디스플레이 제조업종 유해화학물질 취</span></a></td>
+                                        <td>2026-02-03</td>
+                                        <td>861</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원고시 제2024-39호) 유해화학물질 실외 보관시설 설치 및 ...</span></a></td>
+                                        <td>2026-01-07</td>
+                                        <td>346</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원고시 제2024-31호) 위해성이 낮은 살생물물질</span></a></td>
+                                        <td>2026-01-06</td>
+                                        <td>446</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원고시 제2024-13호) 반도체·디스플레이 제조업종 유해화학물질 취</span></a></td>
+                                        <td>2026-01-02</td>
+                                        <td>882</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원예규-111호) 화학물질안전원 교육 평가 관리 규정</span></a></td>
+                                        <td>2025-12-17</td>
+                                        <td>525</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원지침 제2019-3호) 위해관리계획서 1수준 사업자 이행점검...</span></a></td>
+                                        <td>2025-12-10</td>
+                                        <td>1754</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>초록누리</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">(화학물질안전원고시 제2022-1호) 「유해화학물질 안전교육 전문기관의 ...</span></a></td>
+                                        <td>2025-11-29</td>
+                                        <td>1089</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>화학물질종합정보시스템</td>
+                                        <td class="align-l"><a href="javascript:void(0);" class="link-txt-hover"><span class="ellips">[화학물질안전원지침 제2021-2호]사고 영향범위 산정에 관한 기술지침</span></a></td>
+                                        <td>2025-11-12</td>
+                                        <td>1017</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="pagination-wrap">
+                        <div class="pagination">
+                            <button class="btn-first" aria-label="첫 페이지"></button>
+                            <button class="btn-prev" aria-label="이전 페이지"></button>
+                            <ul>
+                                <li class="on"><button type="button">1</button></li>
+                                <li><button type="button">2</button></li>
+                                <li><button type="button">3</button></li>
+                                <li><button type="button">4</button></li>
+                                <li><button type="button">5</button></li>
+                            </ul>
+                            <button class="btn-next" aria-label="다음 페이지"></button>
+                            <button class="btn-last" aria-label="마지막 페이지"></button>
+                        </div>
                     </div>
                 </div>
 
@@ -118,46 +228,5 @@
         </script>
     </div>
     
-<script>
-
-var localData = [
-    { no: 10, category: 'kreach',               title: '신규화학물질 신고(변경신고) 접수건 종결처리 안내', regDate: '2026-02-12', views: 379  },
-    { no: 9,  category: '산업계도움센터',        title: '정부 소유 유해성 시험자료 사용 승인 신청 매뉴얼 및 정부 소유 유해성...', regDate: '2026-02-06', views: 81   },
-    { no: 8,  category: '화학물질종합정보시스템', title: '유해화학물질 함량 확인 시험법 안내서(Ⅰ) 및 해설서(Ⅱ) 의견수렴', regDate: '2026-02-03', views: 861  },
-    { no: 7,  category: 'k-chesar',             title: '화학물질종합정보시스템 지도서비스 제한 안내',                         regDate: '2026-01-07', views: 346  },
-    { no: 6,  category: '초록누리',              title: '국가정보자원관리원 화재 관련 서비스 재개 일정 안내',                  regDate: '2026-01-06', views: 446  },
-    { no: 5,  category: '산업계도움센터',        title: '화학물질종합정보시스템 서비스 일시중단 안내',                         regDate: '2026-01-02', views: 882  },
-    { no: 4,  category: '산업계도움센터',        title: '정부 소유 유해성 시험자료 사용 승인 신청 매뉴얼 및 시험자료 목록 안내', regDate: '2025-12-17', views: 525  },
-    { no: 3,  category: '산업계도움센터',        title: '화학물질 유해성시험자료 신규화학물질 수요조사 공지문',                 regDate: '2025-12-10', views: 1754 },
-    { no: 2,  category: 'k-chesar',             title: '기존화학물질 등록 전 과정 컨설팅 지원사업 대상 물질 수요조사',          regDate: '2025-11-29', views: 1089 },
-    { no: 1,  category: '화학물질종합정보시스템', title: '유해성미확인물질 안전사용가이드 배포',                                regDate: '2025-11-12', views: 1017 },
-];
-
-let gridConfig = {
-    dataSource: localData,
-    container: '#grid',
-    width: '100%',
-    rowHeight: 48,
-    headerHeight: [40],
-    height: '560px',
-    showRowNo: false,
-    sortable: 'rotate',
-    filterable: true,
-    pageable: {
-       pageSizes: [10, 20, 30, 40, 50]
-    },
-    pagerBar: { left: 'pagerCombo', center: 'pager' },
-    columns: [
-        { field: 'no', caption: '번호', width: 60, sortable: false,
-        captionLayout: { left: ['check'], center: ['caption', 'sort'], right: ['menu'], rightFlex: { flexGrow: 0 }, leftFlex: { flexGrow: 0 } } },
-        { field: 'category', caption: '분류',  width: 160 },
-        { field: 'title',    caption: '제목',  width: '1', unit:'%', align: 'left', cellTemplate: '<a href="javascript:void(0);" class="link-txt"><span class="ellips">{{title}}</span><i class="ico-clip"></i> </a>' },
-        { field: 'regDate',  caption: '등록일', width: 110 },
-        { field: 'views',    caption: '조회수', width: 80  },
-    ],
-};
-
-datagrid = SBGrid3.createGrid(gridConfig);
-</script>
 </body>
 </html>

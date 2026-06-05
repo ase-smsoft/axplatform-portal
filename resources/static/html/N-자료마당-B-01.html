@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">국외동향</h2>
+                </div>
+ 
+               <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-intl-trend">국외동향 자료</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-eu-reach">EU REACH Guidance</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content" id="tab-intl-trend">
+                    <div class="forum-topic-nav">
+                        <ul class="nav-list st2">
+                            <li class="nav-item is-active">
+                                <a href="javascript:void(0);" class="nav-link">전체</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">2026</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">2025</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">2024</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">2023</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">2022</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contact-info-bar">
+                        <div class="ci-item">
+                            <b class="ci-label">담당자</b>
+                            <span class="ci-value">환경부 화학물질정책과</span>
+                        </div>
+                        <span class="ci-divider" aria-hidden="true"></span>
+                        <div class="ci-item">
+                            <b class="ci-label">연락처</b>
+                            <span class="ci-value">( 044-201-6779 )</span>
+                        </div>
+                    </div>                    
+
+                    <div class="data-util">
+                        <div class="left">
+                            <div class="total">총 <em>7189</em>건</div>
+                        </div>
+                        <div class="right">
+                            <select name="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                                <option value="10">10개</option>
+                                <option value="20">20개</option>
+                                <option value="30">30개</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="data-default ">
+                        <div class="scroll">
+                            <table>
+                                <caption class="sr-only">국외동향 자료 목록</caption>
+                                <colgroup>
+                                    <col style="width:60px">
+                                    <col style="width:100px">
+                                    <col style="width:auto;min-width:400px">
+                                    <col style="width:120px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">등록연월</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">첨부파일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>2026-02</td>
+                                        <td class="align-l"><span class="ellips">2026년 2월 2차 국외 화학물질 규제 최신 동향2026년 2월 2차 국외 화학물질 규제 최신 동향2026년 2월 2차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>2026-02</td>
+                                        <td class="align-l"><span class="ellips">2026년 2월 1차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>2026-01</td>
+                                        <td class="align-l"><span class="ellips">2026년 1월 4차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>2026-01</td>
+                                        <td class="align-l"><span class="ellips">2026년 1월 3차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>2026-01</td>
+                                        <td class="align-l"><span class="ellips">2026년 1월 2차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>2026-01</td>
+                                        <td class="align-l"><span class="ellips">2026년 1월 1차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2025-12</td>
+                                        <td class="align-l"><span class="ellips">2025년 12월 2차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>2025-12</td>
+                                        <td class="align-l"><span class="ellips">2025년 12월 1차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2025-11</td>
+                                        <td class="align-l"><span class="ellips">2025년 11월 1차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2025-10</td>
+                                        <td class="align-l"><span class="ellips">2025년 10월 1차 국외 화학물질 규제 최신 동향</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">다운로드</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="pagination-wrap">
+                        <div class="pagination">
+                            <button class="btn-first" aria-label="첫 페이지"></button>
+                            <button class="btn-prev" aria-label="이전 페이지"></button>
+                            <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                            </ul>
+                            <button class="btn-next" aria-label="다음 페이지"></button>
+                            <button class="btn-last" aria-label="마지막 페이지"></button>
+                        </div>
+                        <!-- // pagination -->
+                    </div>
+
+
+                </div>
+
+                <div class="tab-content" id="tab-eu-reach">
+                    <div class="contact-info-bar">
+                        <div class="ci-item">
+                            <b class="ci-label">담당자</b>
+                            <span class="ci-value">환경부 화학물질정책과</span>
+                        </div>
+                        <span class="ci-divider" aria-hidden="true"></span>
+                        <div class="ci-item">
+                            <b class="ci-label">연락처</b>
+                            <span class="ci-value">( 044-201-6779 )</span>
+                        </div>
+                    </div>                    
+
+                    <div class="data-util">
+                        <div class="left">
+                            <div class="total">총 <em>7189</em>건</div>
+                        </div>
+                        <div class="right">
+                            <select name="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                                <option value="10">10개</option>
+                                <option value="20">20개</option>
+                                <option value="30">30개</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="data-default">
+                        <div class="scroll">
+                            <table>
+                                <caption class="sr-only">EU REACH Guidance 목록</caption>
+                                <colgroup>
+                                    <col style="width:50px">
+                                    <col style="width:auto;min-width:300px">
+                                    <col style="width:110px">
+                                    <col style="width:120px">
+                                    <col style="width:170px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">원본</th>
+                                        <th scope="col">번역</th>
+                                        <th scope="col">원본 개정버전</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="align-l">Guidance for monomers and polymers<br><span class="txt-sub2">단량체(Monomer) 및 고분자(Polymer) 지침</span></td>
+                                        <td> <button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td> <button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 2.0(2012. 4)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="align-l">Guidance on data sharing<br><span class="txt-sub2">자료공유에 대한 지침</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 3.1(2017. 1)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="align-l">Guidance on registration<br><span class="txt-sub2">등록 관련 지침</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 3.0(2016. 11)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="align-l">Guidance on the preparation of an Annex XV dossier for the identification of substances of very high concern<br><span class="txt-sub2">고위험성우려물질 식별에 대한 Annex XV 서류 준비 지침</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 2.1(2018. 10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="align-l">Guidance on information requirements and chemical safety assessment Part A: Introduction to the Guidance document<br><span class="txt-sub2">정보 요건 및 화학물질 안전성 평가에 대한 지침 PartA:지침서개요</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 2.1(2018. 10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="align-l">Guidance on information requirements and chemical safety assessment Part B: Hazard assessment<br><span class="txt-sub2">정보 요건 및 화학물질 안전성 평가에 대한 지침 PartB:유해성평가</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 2.1(2018. 10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="align-l">Guidance on Information Requirements and Chemical Safety Assessment Part C: PBT/vPvB assessment<br><span class="txt-sub2">정보요건 및 화학물질 안전성 평가에 대한 지침 PartC:PBT/vPvB평가</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 2.1(2018. 10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td class="align-l">Guidance on Information Requirements and Chemical Safety Assessment Part D: Framework for exposure assessment<br><span class="txt-sub2">정보 요건 및 화학물질 안전성 평가에 대한 지침 PartD:노출평가체계</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 2.1(2018. 10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="align-l">Guidance on Information Requirements and Chemical Safety Assessment Part E: Risk Characterisation<br><span class="txt-sub2">정보 요건 및 화학물질 안전성 평가에 대한 지침 PartE:위해도결정</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 2.1(2018. 10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td class="align-l">Guidance on the compilation of safety data sheets<br><span class="txt-sub2">안전보건자료작성에 관한 지침</span></td>
+                                        <td><button type="button" class="btn-xsm btn-white">원본보기</button></td>
+                                        <td><button type="button" class="btn-xsm btn-white">번역본 보기</button></td>
+                                        <td>Ver 2.1(2018. 10)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="pagination-wrap">
+                        <div class="pagination">
+                            <button class="btn-first" aria-label="첫 페이지"></button>
+                            <button class="btn-prev" aria-label="이전 페이지"></button>
+                            <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                            </ul>
+                            <button class="btn-next" aria-label="다음 페이지"></button>
+                            <button class="btn-last" aria-label="마지막 페이지"></button>
+                        </div>
+                        <!-- // pagination -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+</body>
+</html>
