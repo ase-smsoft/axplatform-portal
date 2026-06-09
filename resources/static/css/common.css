@@ -64,7 +64,7 @@ table{width:100%;border-collapse:collapse;border-spacing:0;}
 
 .ellips{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.3em;height:1.3em;}
 .link-txt{ color:var(--c-primary);text-decoration: underline;}
-.link-txt-base{text-decoration: underline !important;display:inline-flex;align-items:center;gap:4px;}
+.link-txt-base{text-decoration: underline !important;display:inline-flex;align-items:center;gap:4px;vertical-align:baseline;}
 .link-txt-base b{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.3em;height:1.3em;}
 .link-txt-hover{display:flex !important;align-items:center;gap:4px;}
 @media (min-width: 1025px) {
@@ -336,6 +336,8 @@ html .ui-datepicker.month .ui-datepicker-buttonpane{margin-top:0;border-top:none
     .btn-xsm.btn-icon-mo{min-width: 32px;}
 }
 
+.btn-wrap{display:flex;align-items:center;}
+.btn-wrap .right{margin-left:auto;display:flex;align-items:center;gap:8px;}
 [class*=btn]{border:1px solid transparent;}
 [class*=btn] .ico-doc{width:20px;height:20px;}
 [class*=btn]:disabled{opacity: 1;}
@@ -635,7 +637,7 @@ li > .list-hangul{padding-left:15px !important;}
     .img-box img{min-width: 600px;}
 }
 
-.diagram-box{padding:30px;border: 1px solid #DEE2E6; border-radius: 12px; gap: 10px;display:flex;}
+.diagram-box{padding:40px;border: 1px solid #DEE2E6; border-radius: 12px; gap: 10px;display:flex;}
 .diagram-box img{max-width: 100%;}
 @media all and (max-width:1024px){
     .diagram-box{overflow-x:auto;padding:24px;}

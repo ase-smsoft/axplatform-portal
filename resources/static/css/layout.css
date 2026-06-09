@@ -121,7 +121,7 @@
     .footer .site-panel .site-panel-header .btn-close::before, .site-panel .site-panel-header .btn-close::after { content: ''; position: absolute; top: 50%; left: 50%; width: 21.34px; height: 2px; background-color: #343a40; }
     .footer .site-panel .site-panel-header .btn-close::before { transform: translate(-50%, -50%) rotate(45deg); }
     .footer .site-panel .site-panel-header .btn-close::after { transform: translate(-50%, -50%) rotate(-45deg); }
-    .footer .site-panel .site-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+    .footer .site-panel .site-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
     .footer .site-panel .site-list li { display: flex; padding: 10px 8px; background-color: transparent; border-radius: 6px; margin-bottom: 8px; }
     .footer .site-panel .site-list li::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background-color: #343a40; margin-right: 8px; flex-shrink: 0; transform:translateY(10px);}
     .footer .site-panel .site-list li a {   font-size: 17px; line-height: 1.5; color: #212529; text-decoration: none; flex: 1; }
@@ -246,7 +246,7 @@
     .footer .site-panel .wrapper .site-panel-header .btn-close::after { transform: translate(-50%, -50%) rotate(-45deg); }
     .footer .site-panel .wrapper .site-list { display: flex; flex-direction: column; list-style: none; padding: 0; margin: 0; }
     .footer .site-panel .wrapper .site-list li { width: 100%; }
-    .footer .site-panel .wrapper .site-list li a { display: flex; gap: 4px; padding: 10px 8px; border-radius: 6px; background-color: rgba(255, 255, 255, 0); text-decoration: none; color: #212529; font-family: 'Pretendard GOV', sans-serif; font-size: 17px; line-height: 1.5; transition: background-color 0.2s; }
+    .footer .site-panel .wrapper .site-list li a { display: flex; gap: 4px; padding: 8px; border-radius: 6px; background-color: rgba(255, 255, 255, 0); text-decoration: none; color: #212529; font-family: 'Pretendard GOV', sans-serif; font-size: 17px; line-height: 1.5; transition: background-color 0.2s; }
     .footer .site-panel .wrapper .site-list li a:hover { background-color: rgba(255, 255, 255, 0.5); }
     .footer .site-panel .wrapper .site-list li a::before { content: ''; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background-color: #343a40; flex-shrink: 0; margin-right: 8px; transform:translateY(10px);}
 
@@ -292,12 +292,3 @@
 .breadcrumb li:not(:last-child):not(:first-child){display:none;}
 .breadcrumb li:first-child ~ li ~ li:last-child:before{content: '';display:block; width: 44px;height:24px;background: url("data:image/svg+xml,%3Csvg width='44' height='24' viewBox='0 0 44 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.60059 11.0674C8.11605 11.0674 8.53418 11.4855 8.53418 12.001C8.53395 12.5162 8.11591 12.9336 7.60059 12.9336C7.08544 12.9334 6.6682 12.5161 6.66797 12.001C6.66797 11.4856 7.0853 11.0676 7.60059 11.0674ZM12.002 11.0674C12.5174 11.0674 12.9355 11.4855 12.9355 12.001C12.9353 12.5162 12.5173 12.9336 12.002 12.9336C11.4867 12.9336 11.0686 12.5162 11.0684 12.001C11.0684 11.4855 11.4865 11.0674 12.002 11.0674ZM16.4004 11.0674C16.9159 11.0674 17.334 11.4855 17.334 12.001C17.3338 12.5162 16.9157 12.9336 16.4004 12.9336C15.8851 12.9336 15.467 12.5162 15.4668 12.001C15.4668 11.4855 15.885 11.0674 16.4004 11.0674Z' fill='%23343A40'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M33.6018 17.1572C33.7988 17.3762 34.136 17.3939 34.355 17.1969L39.6883 12.3971C39.8007 12.2959 39.8648 12.1519 39.8648 12.0007C39.8649 11.8495 39.8007 11.7054 39.6883 11.6042L34.355 6.80392C34.136 6.60687 33.7988 6.6246 33.6018 6.84354C33.4047 7.06247 33.4225 7.39969 33.6414 7.59674L38.5343 12.0006L33.6414 16.404C33.4225 16.6011 33.4047 16.9383 33.6018 17.1572Z' fill='%23343A40'/%3E%3C/svg%3E") no-repeat 50% 50%;background-size:auto 100%;}
 }
-
-/* ===========================================
-    login
-=========================================== */
-
-
-/* ===========================================
-    content
-=========================================== */

@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학제품 관련 상담·신고</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-report">부적합 의심제품 신고</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-damage">생활화학제품 피해상담</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="tab-report" style="display:none;"></div>
+
+                <div class="tab-content" id="tab-damage">
+
+                    <div class="section-wrap">
+                        <div class="damage-intro">
+                            <div class="damage-intro-img">
+                                <img src="../images/content/damage-counsel-intro.png" alt="생활화학제품 피해상담 안내">
+                            </div>
+                            <ul class="dot-list dot-list--lg damage-intro__list">
+                                <li>생활화학제품(안전확인대상생활화학제품 및 살생물제) 사용중 발생하는 피해사례를 신속히 파악하고 예방하기 위하여 생활화학제품 피해상담 센터를 운영합니다.</li>
+                                <li>안전확인대상생활화학제품(세정제, 방향제, 탈취제 등) 및 살생물제(살균제, 살충제, 기피제 등)의 사용으로 피해를 입은 소비자 누구나 상담 가능하며, 해당 상담센터를 통해 접수된 피해사례는 철저한 검토를 거쳐 제품의 안전성평가, 피해 원인 분석 및 추가 피해 방지 대책 수립에 활용됩니다.</li>
+                                <li>본 상담센터에 접수된 내용은 「개인정보 보호법」 등 관련 법령에 따라 엄격하게 관리되며, 수집된 내용은 상담 처리, 사고 예방, 피해사례 수집의 목적 외에는 사용되지 않습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">유선상담 안내</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">생활화학제품 사용으로 인한 피해 접수, 대응 및 후속조치 사항을 유선으로 신속하게 안내해 드리며, 상담내용은 피해사례 분석에 활용됩니다.</p>
+                        </div>
+                        <div class="counsel-phone-card">
+                            <span class="counsel-phone-card-icon" aria-hidden="true">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                    <path d="M21.668 3.33398C25.6462 3.33398 29.4615 4.91434 32.2746 7.72738C35.0876 10.5404 36.668 14.3557 36.668 18.334" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.668 10C23.8781 10 25.9977 10.878 27.5605 12.4408C29.1233 14.0036 30.0013 16.1232 30.0013 18.3333" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23.052 27.614C23.3962 27.7721 23.784 27.8082 24.1515 27.7164C24.519 27.6246 24.8443 27.4104 25.0737 27.109L25.6654 26.334C25.9759 25.92 26.3785 25.584 26.8413 25.3526C27.3042 25.1211 27.8145 25.0007 28.332 25.0007H33.332C34.2161 25.0007 35.0639 25.3518 35.6891 25.977C36.3142 26.6021 36.6654 27.4499 36.6654 28.334V33.334C36.6654 34.218 36.3142 35.0659 35.6891 35.691C35.0639 36.3161 34.2161 36.6673 33.332 36.6673C25.3755 36.6673 17.7449 33.5066 12.1188 27.8805C6.49274 22.2544 3.33203 14.6238 3.33203 6.66732C3.33203 5.78326 3.68322 4.93542 4.30834 4.31029C4.93346 3.68517 5.78131 3.33398 6.66536 3.33398H11.6654C12.5494 3.33398 13.3973 3.68517 14.0224 4.31029C14.6475 4.93542 14.9987 5.78326 14.9987 6.66732V11.6673C14.9987 12.1848 14.8782 12.6952 14.6468 13.158C14.4154 13.6209 14.0794 14.0235 13.6654 14.334L12.8854 14.919C12.5794 15.1526 12.3637 15.485 12.275 15.8596C12.1863 16.2342 12.23 16.6279 12.3987 16.974C14.6765 21.6004 18.4227 25.342 23.052 27.614Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="counsel-phone-card-info">
+                                <p class="counsel-phone-card-label">유선 상담센터 운영</p>
+                                <p class="counsel-phone-card-num">1800-7614</p>
+                                <p class="counsel-phone-card-time">10:00 ~ 16:00 (주말, 공휴일 제외)</p>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ul class="dot-list dot-list--lg">
+                                <li>피해 상황을 구체적으로 설명하기 어렵거나, 긴급한 상담이 필요한 경우 전문 상담원을 통해 유선 상담이 가능합니다.</li>
+                                <li>제품명, 사용 후 증상, 표시사항 등 기본적인 정보만으로도 상담이 가능하오니 부담 없이 연락해주시기 바랍니다.</li>
+                                <li>상담 시 조치 필요 사항 등에 대해 신속하고 정확하게 안내해드립니다.</li>
+                                <li>상담 내용은 피해사례 수집 목적으로만 활용됩니다.</li>
+                                <li>개인정보와 상담 내용은 관련 법령에 따라 안전하게 보호되며, 처리 결과는 상담 시 접수하신 휴대전화 정보로 발송됩니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">자주 묻는 질문(FAQ)</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">생활화학제품 피해상담 시 자주 접수되는 상담 유형, 후속조치 사항 등 궁금해하는 내용을 정리하여 게시하였으니, 상담 전에 참고 부탁드립니다.</p>
+                        </div>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <button type="button" class="faq-head on" data-toggle="faq-damage-1">
+                                    <span class="faq-q">Q. 어떤 경우에 상담이 필요한가요?</span>
+                                    <span class="faq-arrow" aria-hidden="true"></span>
+                                </button>
+                                <div class="faq-body" id="faq-damage-1">
+                                    <p class="faq-a"><b>A</b> 생활화학제품으로 인해 다음과 같은 건강 이상 또는 안전사고가 발생했을 때 상담할 수 있어요.</p>
+                                    <ul class="faq-a-list">
+                                        <li>피부 발진, 호흡곤란, 두통 등 건강 이상</li>
+                                        <li>눈 따가움, 기침 등 자극 증상</li>
+                                        <li>제품에 장시간 노출되어 발생한 이상 증상</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="faq-head" data-toggle="faq-damage-2">
+                                    <span class="faq-q">Q. 피해사례 상담 대상 제품은 무엇인가요?</span>
+                                    <span class="faq-arrow" aria-hidden="true"></span>
+                                </button>
+                                <div class="faq-body" id="faq-damage-2" style="display:none;">
+                                    <p class="faq-a"><b>A</b> 안전확인대상생활화학제품과 살생물제품 사용으로 피해가 발생한 경우 상담할 수 있어요.</p>
+                                    <ul class="faq-a-list">
+                                        <li><a href="javascript:void(0);" class="link">안전확인대상생활화학제품 종류 바로가기</a></li>
+                                        <li><a href="javascript:void(0);" class="link">살생물제품유형 바로가기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="faq-head" data-toggle="faq-damage-3">
+                                    <span class="faq-q">Q. 해외에서 구매한 생활화학제품에 의한 피해도 상담 가능한가요?</span>
+                                    <span class="faq-arrow" aria-hidden="true"></span>
+                                </button>
+                                <div class="faq-body" id="faq-damage-3" style="display:none;"></div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="faq-head" data-toggle="faq-damage-4">
+                                    <span class="faq-q">Q. 피해사례 상담 시 준비해야 할 사항이 있나요?</span>
+                                    <span class="faq-arrow" aria-hidden="true"></span>
+                                </button>
+                                <div class="faq-body" id="faq-damage-4" style="display:none;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">피해상담 범위</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">생활화학제품 피해란? <br>안전확인대상생활화학제품 혹은 살생물제의 제조·설계 또는 표시상 결함 또는 제품의 기술상·구조상 특성으로 인하여, 소비자의 생명·신체 또는 재산에 위해가 발생하는 상황</p>
+                        </div>
+
+                        <div class="title-data-wrap">
+                            <h3 class="title-data">안전확인대상 생활화학제품</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">안전확인대상생활화학제품: 일상생활에서 사용하는 화학제품 중 건강 또는 환경상의 위해성이 우려되어 지정·고시한 제품</p>
+                            <div class="report-link-wrap">
+                                <a href="javascript:void(0);" class="btn-md btn-blue">
+                                    <span>안전확인대상 생활화학제품 종류 보기</span>
+                                    <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="title-data-wrap">
+                            <h3 class="title-data">살생물제</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ul class="damage-def-list">
+                                <li>
+                                    <b>살생물물질</b>
+                                    <span>유해생물을 제거, 무해화 또는 억제하는 기능으로 사용하는 화학물질, 천연물질 또는 미생물</span>
+                                </li>
+                                <li>
+                                    <b>살생물제품</b>
+                                    <span>유해생물등의 제거등을 주된 목적으로 하는 제품</span>
+                                </li>
+                                <li>
+                                    <b>살생물처리제품</b>
+                                    <span>제품의 주된 목적 외에 유해생물 제거등의 부수적인 목적을 위하여 살생물제품을 사용한 제품</span>
+                                </li>
+                            </ul>
+                            <div class="report-link-wrap">
+                                <a href="javascript:void(0);" class="btn-md btn-blue">
+                                    <span>살생물제품유형 보기</span>
+                                    <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">허가물질 의견수렴 상세</h2>
+                    <div class="right">
+                      <button type="button" class="btn-lg btn-bg-blue-line"><span>목록</span></button>
+                  </div>
+                </div>
+
+                <div class="data-util">
+                    <div class="right">
+                        <button type="button" class="btn-sm btn-white"><span>위해성검토 결과서 이해하기 다운로드</span><svg class="ico-download" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-download"></use></svg></button>
+                    </div>
+                </div>
+
+                <div class="data-detail permit-detail-table">
+                    <table>
+                        <caption class="sr-only">허가물질 의견수렴 상세 정보</caption>
+                        <colgroup>
+                            <col style="width:120px">
+                            <col style="width:130px">
+                            <col style="width:240px">
+                            <col style="width:auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="rowgroup" rowspan="7">물질정보</th>
+                                <th scope="row" colspan="2">화학물질명</th>
+                                <td>Di-(2-ethylhexyl)phthalate; DEHP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">CAS No</th>
+                                <td>117-81-7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">유해성</th>
+                                <td>EDC, CMR</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">유통량</th>
+                                <td>10,000톤 이상</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">사용용도</th>
+                                <td>일반 국민</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">국외규제현황</th>
+                                <td>EU REACH 규정에 따른 허가물질, EU REACH 규정에 따른 SVHC물질</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">위해성검토 결과서</th>
+                                <td>
+                                    <a href="javascript:void(0);" class="link"><i class="ico-clip"></i><span>6. Di-(2-ethylhexyl)phthalate; DEHP_위해성검토 결과서(개정)_Ver2.pdf</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="rowgroup" rowspan="3">허가후보물질</th>
+                                <th scope="row" colspan="2">의견수렴기간</th>
+                                <td>2022-12-15 ~ 2023-02-28</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">의견제출</th>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">의견수렴 검토결과</th>
+                                <td><a href="javascript:void(0);" class="link">확인</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="rowgroup" rowspan="4">진행상태</th>
+                                <th scope="rowgroup" rowspan="4">허가물질(안)</th>
+                                <th scope="row">의견수렴 및 산업계 검토회의 신청기간</th>
+                                <td>2023-10-06 ~ 2023-12-04</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">의견제출</th>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">산업계 검토회의</th>
+                                <td>미가입</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">의견수렴 및 산업계 검토회의 결과</th>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="txt-exp-wrap permit-detail-guide">
+                    <p class="tit-exp">작성요령</p>
+                    <ul class="dot-list">
+                        <li>자료 제출 시 비공개를 원할 경우, 해당 내용에 "비공개 요청"으로 표시하고 비공개 사유(지적재산권 침해, 영업비밀 훼손, 시장경쟁력 약화 등 구체적인 사유)를 반드시 기재합니다.</li>
+                        <li>비공개 요청하지 않은 자료의 정보공개로 인한 손해 및 책임은 제출자에게 있습니다.</li>
+                        <li>항목별(유해성, 용도 등) 의견 제출이 가능하며 4000byte를 초과하는 내용은 근거자료 첨부파일에 기재하여 주시기 바랍니다.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+</body>
+</html>

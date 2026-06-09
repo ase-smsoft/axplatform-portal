@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap"> 
+                    <h2 class="title-main">온라인 상담 등록</h2>
+                </div>
+
+                <div class="regist-wrap">
+
+                    <div class="data-detail">
+                        <table>
+                            <caption class="sr-only">온라인 상담 등록 양식</caption>
+                            <colgroup>
+                                <col style="width:160px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="q-category"><span class="required">분류<span class="sr-only">필수 입력항목</span></span></label></th>
+                                    <td>
+                                        <select id="q-category" class="w-full" aria-required="true">
+                                            <option value="">선택</option>
+                                            <option value="hwagwan">화관법</option>
+                                            <option value="hwapyeong">화평법</option>
+                                            <option value="product">제품법</option>
+                                            <option value="system">시스템</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="q-writer"><span class="required">작성자<span class="sr-only">필수 입력항목</span></span></label></th>
+                                    <td>
+                                        <input type="text" id="q-writer" class="w-full" value="홍길동" aria-required="true">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="q-email">이메일</label></th>
+                                    <td>
+                                        <div class="fm">
+                                            <input type="email" id="q-email" class="auto" placeholder="이메일을 입력하세요.">
+                                            <div class="input-choice">
+                                                <input id="q-email-notify" type="checkbox">
+                                                <label for="q-email-notify">답변 알림받기</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="q-title"><span class="required">제목<span class="sr-only">필수 입력항목</span></span></label></th>
+                                    <td>
+                                        <div class="fm">
+                                            <input type="text" id="q-title" class="auto" placeholder="제목을 입력하세요." maxlength="50" aria-required="true">
+                                            <span class="inp-count"><em>0</em><span>/50</span></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="q-content"><span class="required">내용<span class="sr-only">필수 입력항목</span></span></label></th>
+                                    <td>
+                                        <div class="editor-wrap" id="q-content">
+                                            에디터 영역
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">첨부파일</th>
+                                    <td>
+                                        <div class="file-wrap">
+                                            <div class="inp-file">
+                                                <label class="file" for="file-upload-1">
+                                                    <input type="file" id="file-upload-1" onchange="addFile(this)" aria-describedby="file-upload-1-desc">
+                                                    <span id="file-upload-1-desc" class="file-placeholder">파일을 선택하세요.</span>
+                                                    <span class="btn"><span>파일첨부</span></span>
+                                                </label>
+                                            </div>
+                                            <ul class="file-list" aria-label="첨부된 파일 목록">
+                                                <li>
+                                                    <p>첨부파일12345454.pdf</p>
+                                                    <button type="button" class="del" onclick="fileDel(this)" aria-label="첨부파일12345454.pdf 삭제"></button>
+                                                </li>
+                                                <li>
+                                                    <p>첨부파일1234.pdf</p>
+                                                    <button type="button" class="del" onclick="fileDel(this)" aria-label="첨부파일1234.pdf 삭제"></button>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-dot">
+                                            <li>* 50MB 이하의 jpg, png, docx, doc, zip, pdf 파일로 업로드 가능합니다.</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp-ps">※ 해당글은 비밀글로만 작성됩니다.</p>
+                    </div>
+
+
+                    <div class="btn-wrap">
+                        <div class="right">
+                            <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                            <button type="button" class="btn-md btn-blue"><span>등록</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+
+</body>
+</html>

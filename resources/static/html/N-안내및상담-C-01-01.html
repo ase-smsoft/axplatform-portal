@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">허가물질 의견수렴</h2>
+                </div>
+
+
+                <div class="search-area">
+                    <div class="data-detail">
+                        <table>
+                            <caption class="sr-only">허가물질 의견수렴 검색 조건</caption>
+                            <colgroup>
+                                <col style="width:120px">
+                                <col style="width:auto">
+                                <col style="width:120px">
+                                <col style="width:auto">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="permit-cas">CAS No</label></th>
+                                    <td><input type="text" id="permit-cas" class="w-full" placeholder="CAS No를 입력하세요."></td>
+                                    <th scope="row"><label for="permit-name-en">물질명(영문)</label></th>
+                                    <td><input type="text" id="permit-name-en" class="w-full" placeholder="물질명을 입력하세요."></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">지정단계</th>
+                                    <td colspan="3">
+                                        <div class="input-choice-wrap">
+                                            <div class="input-choice">
+                                                <input type="checkbox" id="permit-stage-candidate">
+                                                <label for="permit-stage-candidate">허가후보물질</label>
+                                            </div>
+                                            <div class="input-choice">
+                                                <input type="checkbox" id="permit-stage-draft">
+                                                <label for="permit-stage-draft">허가물질(안)</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn-wrap">
+                            <button type="reset" class="btn-md btn-white"><span>초기화</span></button>
+                            <button type="button" class="btn-md btn-blue"><span>검색</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-util">
+                    <div class="left">
+                        <div class="total">총 <em>7189</em>건</div>
+                    </div>
+                    <div class="right">
+                        <div class="input-choice">
+                            <input type="checkbox" id="permit-exclude-expired">
+                            <label for="permit-exclude-expired">의견수렴 기간만료 물질은 제외하고 보기</label>
+                        </div>
+                        <select name="pageSize" id="pageSize" class="no-line xsm" aria-label="페이지당 표시 개수">
+                            <option value="10">10개</option>
+                            <option value="20">20개</option>
+                            <option value="30">30개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="data-default permit-opinion-table">
+                    <div class="scroll">
+                        <table>
+                            <caption class="sr-only">허가물질 의견수렴 목록</caption>
+                            <colgroup>
+                                <col style="width:60px">
+                                <col style="width:auto;min-width:220px">
+                                <col style="width:110px">
+                                <col style="width:110px">
+                                <col style="width:180px">
+                                <col style="width:80px">
+                                <col style="width:90px">
+                                <col style="width:140px">
+                                <col style="width:160px">
+                                <col style="width:220px">
+                                <col style="width:90px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">No</th>
+                                    <th scope="col" rowspan="2">물질명(영문)</th>
+                                    <th scope="col" rowspan="2">CAS No</th>
+                                    <th scope="col" rowspan="2">지정단계<br>현황</th>
+                                    <th scope="colgroup" colspan="2">의견수렴</th>
+                                    <th scope="col" rowspan="2">의견제출</th>
+                                    <th scope="col" rowspan="2">허가물질(안)<br>산업계 검토회의</th>
+                                    <th scope="col" rowspan="2">허가후보물질<br>의견수렴 검토결과</th>
+                                    <th scope="col" rowspan="2">허가물질(안) 의견수렴 및<br>산업계 검토회의 결과</th>
+                                    <th scope="col" rowspan="2">세부정보</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">기간</th>
+                                    <th scope="col">잔여일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td class="align-l">Di-(2-ethylhexyl)phthalate; DEHP</td>
+                                    <td>117-81-7</td>
+                                    <td>허가물질(안)</td>
+                                    <td>2023-10-06 ~ 2023-12-04</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><a href="javascript:void(0);" class="link">확인</a></td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td class="align-l">Bis(2-ethylhexyl) adipate; DEHA</td>
+                                    <td>103-23-1</td>
+                                    <td>허가후보물질</td>
+                                    <td>2023-09-01 ~ 2023-10-31</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="align-l">1,4-Dioxane</td>
+                                    <td>123-91-1</td>
+                                    <td>허가물질(안)</td>
+                                    <td>2023-08-15 ~ 2023-10-14</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><a href="javascript:void(0);" class="link">확인</a></td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="align-l">Nonylphenol ethoxylates; NPE</td>
+                                    <td>9016-45-9</td>
+                                    <td>허가후보물질</td>
+                                    <td>2023-07-10 ~ 2023-09-08</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="align-l">Tris(2-chloroethyl) phosphate; TCEP</td>
+                                    <td>115-96-8</td>
+                                    <td>허가물질(안)</td>
+                                    <td>2023-06-05 ~ 2023-08-04</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="align-l">Cadmium and its compounds</td>
+                                    <td>7440-43-9</td>
+                                    <td>허가후보물질</td>
+                                    <td>2023-05-01 ~ 2023-06-30</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><a href="javascript:void(0);" class="link">확인</a></td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="align-l">Lead and its compounds</td>
+                                    <td>7439-92-1</td>
+                                    <td>허가물질(안)</td>
+                                    <td>2023-04-03 ~ 2023-06-02</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="align-l">Hexabromocyclododecane; HBCDD</td>
+                                    <td>25637-99-4</td>
+                                    <td>허가후보물질</td>
+                                    <td>2023-03-07 ~ 2023-05-06</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="align-l">Perfluorooctanoic acid; PFOA</td>
+                                    <td>335-67-1</td>
+                                    <td>허가물질(안)</td>
+                                    <td>2023-02-01 ~ 2023-04-02</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><a href="javascript:void(0);" class="link">확인</a></td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="align-l">Perfluorooctane sulfonic acid; PFOS</td>
+                                    <td>1763-23-1</td>
+                                    <td>허가후보물질</td>
+                                    <td>2023-01-02 ~ 2023-03-03</td>
+                                    <td>마감</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><button type="button" class="btn-xsm btn-white"><span>확인</span></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                        <button class="btn-first" aria-label="첫 페이지"></button>
+                        <button class="btn-prev" aria-label="이전 페이지"></button>
+                        <ul>
+                            <li class="on"><button type="button">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                        </ul>
+                        <button class="btn-next" aria-label="다음 페이지"></button>
+                        <button class="btn-last" aria-label="마지막 페이지"></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+</body>
+</html>

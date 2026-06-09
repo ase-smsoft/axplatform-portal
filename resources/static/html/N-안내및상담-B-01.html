@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학제품 관련 상담·신고</h2>
+                    <div class="right">
+                        <button type="button" class="btn-md btn-bg-blue-line"><span>목록</span></button>
+                    </div>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-report">부적합 의심제품 신고</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-damage">생활화학제품 피해상담</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="tab-report">
+
+                    <div class="section-wrap">
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">소비자가 생활 환경 주변(마트, 백화점, 온라인 쇼핑몰 등)에서 불법적인 생활화학제품을 발견할 경우, 이를 신고할 수 있도록 마련된 제도입니다. 소비자는 생활화학제품의 신고번호 미기재, 안전기준확인마크 미표시, 필수 표시사항 누락 등의 위반 사례를 발견하면, 국민신문고 웹사이트나 앱을 통해 신고할 수 있습니다. 신고 시에는 제품 사진, 라벨 정보 등 증거를 함께 제출해야 하며, 신고가 인정될 경우 포상금도 받을 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">신고 절차</h2>
+                        </div>
+                        <div class="diagram-box diagram-report-procedure">
+                            <img src="../images/content/report-procedure-diagram.png" alt="부적합 의심제품 신고 절차: 부적합의심제품 발견, 위반제품 구매 또는 사진 촬영, 국민신문고 로그인, 민원신청 일반민원, 신고구분(신고포상금/일반민원), 위반행위 신고서 작성, 민원내용등록, 종료">
+                        </div>
+                    </div>
+
+                    <div class="section-wrap">
+                        <div class="title-chapter-wrap">
+                            <h2 class="title-chapter">신고포상금 지급</h2>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp">「생활화학제품 및 살생물제의 안전관리에 관한 법률(이하 &quot;화학제품안전법&quot;)」에 따라 위반 제품을 판매·유통한 자를 신고하는 경우 포상금을 지급하고 있습니다.</p>
+                        </div>
+
+                        <div class="title-data-wrap">
+                            <h3 class="title-data is-brand">포상금 지급대상</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="tit-exp">다음의 사업자를 신고한 자</p>
+                            <ul class="dot-list dot-list--lg">
+                                <li>「화학제품안전법」 제35조를 위반하여 안전기준 적합 확인·승인을 받지 않고 제조·수입한 안전확인대상생활화학제품을 판매한 자</li>
+                                <li>「화학제품안전법」 제35조를 위반하여 표시기준을 위반한 안전확인대상생활화학제품을 판매한 자</li>
+                                <li>「화학제품안전법」 제37조제1항을 위반하여 제품의 회수, 폐기 등 조치명령을 받은 위반제품을 제조·수입·판매·유통한 자</li>
+                            </ul>
+                        </div>
+
+                        <div class="title-data-wrap">
+                            <h3 class="title-data is-brand">포상금 신청방법</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="tit-exp">다음의 서류를 갖추어 국민신문고(<a href="https://www.epeople.go.kr" target="_blank" rel="noopener noreferrer" class="link">https://www.epeople.go.kr</a>)를 통해 민원 신청</p>
+                            <ul class="dot-list dot-list--lg">
+                                <li>안전확인대상생활화학제품 및 살생물제 위반행위 신고서<br>※ 「안전확인대상생활화학제품 및 살생물제 신고포상금 지급에 관한 규정」 별지 제1호(공지사항 27번 게시글 &apos;안전확인대상생활화학제품 및 살생물제 신고포상금 지급에 관한 규정(환경부 고시 제2020-290호)&apos; 참고)</li>
+                                <li>위반행위 증거 자료</li>
+                            </ul>
+                        </div>
+
+                        <div class="title-data-wrap">
+                            <h3 class="title-data is-brand">포상금 지급금액</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ul class="dot-list dot-list--lg">
+                                <li>위반행위에 따라 건당 5만~30만 원</li>
+                                <li>1인당 연간(1.1.~12.31. 기준) 최대 지급금액: 300만 원<br>※ 1인당 연간 지급한도를 초과하였거나, 포상금 지급 예산이 소진된 경우에는 포상금 지급 불가</li>
+                            </ul>
+                        </div>
+
+                        <div class="title-data-wrap">
+                            <h3 class="title-data is-brand">지급 예외</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="tit-exp">다음 중 하나에 해당되는 경우, 포상금 미지급함</p>
+                            <ul class="dot-list dot-list--lg">
+                                <li>타 법령 등에 따라 같은 내용으로 포상금이 지급된 경우</li>
+                                <li>신고내용이 언론 등 사전에 공개된 내용이거나, 이미 조사 또는 행정처분이 진행 중인 경우(조사, 행정처분이 완료된 경우 포함)</li>
+                                <li>익명 또는 타인의 명의로 신고한 경우</li>
+                                <li>단순히 인터넷 검색 결과를 신고하여 위반행위의 정확성이나 증거자료의 신빙성이 떨어지는 경우</li>
+                                <li>의도적으로 법규 위반을 조장, 유인하여 위반행위자를 신고한 경우</li>
+                                <li>한국환경산업기술원 임직원, 안전확인대상생활화학제품 시장감시 업무 관련자(시장감시단 포함), 관련 공무원 등이 직무상 인지하여 신고한 경우</li>
+                                <li>포상금을 목적으로 미리 공모하는 등 부정한 방법으로 신고한 경우</li>
+                                <li>위법 또는 부당한 방법으로 증거자료 등을 수집하여 신고한 경우</li>
+                            </ul>
+                        </div>
+
+                        <div class="title-data-wrap">
+                            <h3 class="title-data is-brand">관련 법령</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ul class="dot-list dot-list--lg">
+                                <li>「화학제품안전법」제52조의2(포상금)</li>
+                                <li>「화학제품안전법」시행령 제37조의2(포상금)</li>
+                                <li>「안전확인대상생활화학제품 및 살생물제 신고포상금 지급에 관한 규정」(환경부 고시 제2020-290호)</li>
+                            </ul>
+                            <div class="report-link-wrap">
+                                <a href="https://www.epeople.go.kr" target="_blank" rel="noopener noreferrer" class="btn-md btn-blue">
+                                    <span>국민신문고 바로가기</span>
+                                    <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>
