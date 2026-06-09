@@ -1723,6 +1723,8 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
 .forum-topic-nav + .contact-info-bar{margin-top:0;}
 .nav-title{margin:0;font-size:20px;font-weight:700;line-height:1.5;color:#1d1d1d;}
 .nav-list{display:flex;flex-wrap:wrap;gap:12px 24px;margin:0;padding:0;list-style:none;}
+.nav-list.st3{flex-wrap:nowrap;}
+.nav-list.st3 .nav-item{flex:1;width:auto;min-width:0;}
 .nav-item{position:relative;display:flex;align-items:flex-start;gap:8px;width:calc((100% - 72px) / 4);min-width:187px;}
 .nav-item::before{content:'';flex:none;width:24px;height:24px;background:radial-gradient(circle,#343a40 2px,transparent 2px);background-position:center;background-repeat:no-repeat;}
 .nav-link{flex:1;min-width:0;font-size:17px;font-weight:400;line-height:1.5;color:#343a40;text-decoration:none;word-break:keep-all;}
