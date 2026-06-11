@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화학 3법 소개</h2>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">화학물질관리법</h3>
+                    </div>
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp">이 법은 화학물질을 체계적으로 관리하고 화학사고를 예방하여 국민 건강 및 환경을 보호하는 것을 목적으로 합니다.</p>
+                        <p class="txt-exp">모든 유해화학물질 취급시설에 대한 설치·운영 기준을 강화하고, 엄격한 영업허가 및 신고 제도를 통해 유해물질이 전 과정에서 안전하게 취급될 수 있도록 관리 체계를 구축하고 있습니다.</p>
+                        <p class="txt-exp">또한, 화학물질의 배출량 및 유통량을 투명하게 파악하여 잠재적 위험을 사전에 차단하고, 사고 발생 시 즉각적인 대응 시스템을 마련하여 화학물질로부터 안전한 사회를 만드는 것을 핵심으로 하고 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="chem-law-guide-panel">
+                    <div class="guide-block">
+                        <strong class="guide-block-title">이행 가이드</strong>
+                        <div class="guide-block-row">
+                            <p class="guide-block-desc">물질별 영업허가 절차와 시설 관리 기준을 확인해 보세요.</p>
+                            <a href="javascript:void(0);" class="guide-block-link">
+                                <span>이행 절차 확인하기</span>
+                                <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">화관법 주요 의무사항</h3>
+                    </div>
+                    <ul class="support-business-card-list support-business-card-list--law" aria-label="화관법 주요 의무사항">
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges">
+                                    <span class="sort-badge bg-green">지원사업 제공</span>
+                                </div>
+                                <p class="support-business-card-title">화학물질 취급시설 관리</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">설치 전 화학사고예방관리계획서를 제출하고, 주기적인 안전 검사를 통해 시설 적합성을 유지하는 절차</p>
+                            </div>
+                        </li>
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges">
+                                    <span class="sort-badge bg-green">지원사업 제공</span>
+                                </div>
+                                <p class="support-business-card-title">영업허가 및 신고</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">인력·시설 등 법적 요건을 갖추어 관할 기관으로부터 유해화학물질 취급 권한을 부여받는 절차</p>
+                            </div>
+                        </li>
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges">
+                                    <span class="sort-badge bg-green">지원사업 제공</span>
+                                </div>
+                                <p class="support-business-card-title">배출량 조사 및 보고</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">제조·사용 과정에서 환경으로 배출되는 양을 스스로 파악하여 매년 정부에 실적을 보고하는 절차</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                      <div class="flow-map-section">
+                        <div class="flow-map">
+                        <div class="flow-map-inner">
+                            <div class="flow-map-head">
+                            <strong class="flow-map-root">화관법
+                                <span class="tooltip-wrap st-hover">
+                                        <span class="pictogram">
+                                            <span class="flow-map-tooltip-icon"></span>
+                                        </span>
+                                        <span class="sr-only">툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다.툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다.본문을 가리지 않도록 주의합니다.</span>
+                                    </span>
+                            </strong>
+                            </div>
+                            <ul class="flow-map-branches flow-map-branches--top">
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">화학물질 확인</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질<br>확인명세서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질<br>증명신청서</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">화학물질 허가</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질<br>허가 신청서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 재허가<br>신청서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 허가의<br>변경허가서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 허가의<br>변경신고서</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">화학물질 신고</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 신고서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 신고의<br>변경신고서</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">화학물질 신고</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 신고서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 신고의<br>변경신고서</span></li>
+                                </ul>
+                            </li>
+                            </ul>
+                            <ul class="flow-map-branches flow-map-branches--bottom">
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label flow-map-label--action">화학물질 취급시설관리</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">화학사고예방<br>관리계획서</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">화학사고예방<br>관리계획서 변경</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">취급시설 검사<br>(설치, 정기, 수시)</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">취급시설 안전진단</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">진열보관 계획서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">운반계획서</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">영업허가 및 신고</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">영업허가신청 및<br>신고서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">영업허가<br>변경허가 신청서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">영업허가<br>변경신고서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">영업신고<br>변경신고서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">판매업 신고서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">판매업 변경신고서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">도급신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">도급 변경 신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">유해화학물질 관리자<br>선임, 해임, 퇴임</span></span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">조사 및 보고</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 통계조사</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">화학물질<br>배출량 조사</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">화학물질<br>배출저감 계획서</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">화학물질 실적보고서</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch flow-map-branch--ghost"></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+
+</body>
+</html>

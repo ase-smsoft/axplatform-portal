@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">공동활용플랫폼 소개</h2>
+                </div>
+
+                <div class="section-wrap platform-intro-section">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">화학 3법 정보의 통합∙연계를 통한 국민∙산업계 서비스 제공</h3>
+                    </div>
+                    <div class="diagram-box platform-overview-diagram">
+                        <img src="../images/content/platform-overview-diagram.png" alt="화학 3법 정보의 통합∙연계를 통한 국민∙산업계 서비스 제공 다이어그램">
+                    </div>
+                    <p class="platform-intro-lead">신뢰받는 화학 안전을 확보하고, 기업과 함께 성장하는 선진화된 규제 이행 환경을 조성합니다.</p>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">구축 배경</h3>
+                    </div>
+                    <div class="platform-intro-desc">
+                        <p>민원 절차의 간소화, 규제 대응 부담 완화 및 국민의 알권리 보장을 위해 분산된 화학 3법 정보를 통합·연계·제공합니다.</p>
+                        <p>  * 화학물질등록평가법·화학물질관리법·화학제품안전법</p>
+                    </div>
+                    <ul class="info-card-list">
+                        <li class="info-card-item">
+                            <span class="info-card-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                    <path d="M14.9679 2.54245C14.6639 2.40379 14.3337 2.33203 13.9996 2.33203C13.6654 2.33203 13.3352 2.40379 13.0312 2.54245L3.03288 7.09245C2.82586 7.18373 2.64984 7.33325 2.52627 7.52278C2.4027 7.71231 2.33691 7.93369 2.33691 8.15995C2.33691 8.38621 2.4027 8.60758 2.52627 8.79712C2.64984 8.98665 2.82586 9.13616 3.03288 9.22745L13.0429 13.7891C13.3469 13.9278 13.6771 13.9995 14.0112 13.9995C14.3453 13.9995 14.6756 13.9278 14.9796 13.7891L24.9896 9.23911C25.1966 9.14783 25.3726 8.99832 25.4962 8.80878C25.6197 8.61925 25.6855 8.39787 25.6855 8.17161C25.6855 7.94536 25.6197 7.72398 25.4962 7.53445C25.3726 7.34491 25.1966 7.1954 24.9896 7.10411L14.9679 2.54245Z" stroke="#212529" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.33301 14C2.33246 14.2231 2.39591 14.4418 2.51585 14.6299C2.63578 14.8181 2.80717 14.9679 3.00968 15.0617L13.043 19.6233C13.3454 19.7603 13.6736 19.8311 14.0055 19.8311C14.3375 19.8311 14.6656 19.7603 14.968 19.6233L24.978 15.0733C25.1845 14.9805 25.3596 14.8296 25.4818 14.639C25.604 14.4484 25.6681 14.2264 25.6663 14" stroke="#212529" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.33301 19.834C2.33246 20.0571 2.39591 20.2758 2.51585 20.4639C2.63578 20.6521 2.80717 20.8019 3.00968 20.8957L13.043 25.4573C13.3454 25.5943 13.6736 25.6651 14.0055 25.6651C14.3375 25.6651 14.6656 25.5943 14.968 25.4573L24.978 20.9073C25.1845 20.8145 25.3596 20.6636 25.4818 20.473C25.604 20.2824 25.6681 20.0604 25.6663 19.834" stroke="#212529" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="info-card-content">
+                                <strong class="info-card-title">1. 정보통합 및 연계</strong>
+                                <p class="info-card-desc">화학3법 규제 대응을 위해 필요한 민원인 및 화학물질 정보를 각각 통합하고 중복 입력 정보 연계를 통해 민원 절차 간소화 및 규제 대응 부담을 완화시키고자 합니다.</p>
+                            </div>
+                        </li>
+                        <li class="info-card-item">
+                            <span class="info-card-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                    <path d="M14 15.166H14.0117" stroke="#212529" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 7V10.5" stroke="#212529" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.66699 22.7507V5.25065C4.66699 4.4771 4.97428 3.73524 5.52126 3.18826C6.06825 2.64128 6.81011 2.33398 7.58366 2.33398H22.167C22.4764 2.33398 22.7732 2.4569 22.992 2.67569C23.2107 2.89449 23.3337 3.19123 23.3337 3.50065V24.5007C23.3337 24.8101 23.2107 25.1068 22.992 25.3256C22.7732 25.5444 22.4764 25.6673 22.167 25.6673H7.58366C6.81011 25.6673 6.06825 25.36 5.52126 24.813C4.97428 24.2661 4.66699 23.5242 4.66699 22.7507ZM4.66699 22.7507C4.66699 21.9771 4.97428 21.2352 5.52126 20.6883C6.06825 20.1413 6.81011 19.834 7.58366 19.834H23.3337" stroke="#212529" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="info-card-content">
+                                <strong class="info-card-title">2. 정보 제공</strong>
+                                <p class="info-card-desc">민원인을 포함한 일반인이 화학물질의 유해성·위해성에 관한 정보를 쉽게 활용할 수 있도록 화학물질 정보를 제공합니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">구축 목적</h3>
+                    </div>
+                    <div class="platform-intro-desc">
+                        <p>화학물질정보의 체계적 관리와 유관 기관*·시스템**과의 정보 공동활용 기반을 마련합니다.</p>
+                        <p>  * 기후환경에너지부·한국환경공단·화학물질안전원 등</p>
+                        <p>  ** 화관법 민원24(화관법 시스템)·초록누리(제품법 시스템)</p>
+                    </div>
+                    <ul class="info-card-group" aria-label="구축 목적">
+                        <li class="card">
+                            <div class="card-icon" aria-hidden="true">
+                                <svg width="28" height="28" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-workflow"></use></svg>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">화학물질정보 공동활용<br>업무모델 정립</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card-icon" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                    <path d="M24.5003 18.666H19.8337C19.1893 18.666 18.667 19.1884 18.667 19.8327V24.4993C18.667 25.1437 19.1893 25.666 19.8337 25.666H24.5003C25.1447 25.666 25.667 25.1437 25.667 24.4993V19.8327C25.667 19.1884 25.1447 18.666 24.5003 18.666Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.16634 18.666H3.49967C2.85534 18.666 2.33301 19.1884 2.33301 19.8327V24.4993C2.33301 25.1437 2.85534 25.666 3.49967 25.666H8.16634C8.81067 25.666 9.33301 25.1437 9.33301 24.4993V19.8327C9.33301 19.1884 8.81067 18.666 8.16634 18.666Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.3333 2.33398H11.6667C11.0223 2.33398 10.5 2.85632 10.5 3.50065V8.16732C10.5 8.81165 11.0223 9.33398 11.6667 9.33398H16.3333C16.9777 9.33398 17.5 8.81165 17.5 8.16732V3.50065C17.5 2.85632 16.9777 2.33398 16.3333 2.33398Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.83301 18.6667V15.1667C5.83301 14.8572 5.95592 14.5605 6.17472 14.3417C6.39351 14.1229 6.69026 14 6.99967 14H20.9997C21.3091 14 21.6058 14.1229 21.8246 14.3417C22.0434 14.5605 22.1663 14.8572 22.1663 15.1667V18.6667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 14.0007V9.33398" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">화학물질관리 시스템 간<br>정보교환·공유 플랫폼 설계</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card-icon" aria-hidden="true">
+                                <svg width="28" height="28" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-user"></use></svg>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">사용자 중심 화학물질 정보<br>등록, 공유, 활용 서비스 제공</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card-icon" aria-hidden="true">
+                                <svg width="28" height="28" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-info-server"></use></svg>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">최신 기술 적용 및<br>인프라 도입</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">주요 특징</h3>
+                    </div>
+                    <p class="platform-intro-desc">핵심 가치와 차별화된 특징을 통해 통합 서비스의 방향성을 제시합니다.</p>
+                    <ul class="info-card-group info-card-group--cols-3" aria-label="주요 특징">
+                        <li class="card card-feature">
+                            <div class="card-icon" aria-hidden="true">
+                                <svg width="28" height="28" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-effect-rocket"></use></svg>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">1. K-유클리드 도입</p>
+                                <p class="card-desc">화학 3법 민원인 이행 의무사항 입력정보를 통합 DB를 기반으로 연계하여, 민원 업무를 더욱 빠르고 정확하게 처리할 수 있습니다.</p>
+                            </div>
+                        </li>
+                        <li class="card card-feature">
+                            <div class="card-icon" aria-hidden="true">
+                                <svg width="28" height="28" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-effect-db"></use></svg>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">2. 화학물질/화학제품 정보 통합 제공</p>
+                                <p class="card-desc">분산된 화학물질 및 생활화학제품 정보를 하나의 플랫폼으로 통합함으로써, 효율적인 정보 접근성을 제공합니다.</p>
+                            </div>
+                        </li>
+                        <li class="card card-feature">
+                            <div class="card-icon" aria-hidden="true">
+                                <svg width="28" height="28" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-effect-people"></use></svg>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">3. 국민 중심 통합 서비스 제공</p>
+                                <p class="card-desc">국민이 쉽고 직관적으로 화학물질 정보 및 의무사항을 이해하고 활용할 수 있도록 사용자 중심의 편의 서비스를 제공합니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">K-유클리드란?</h3>
+                    </div>
+                    <div class="platform-intro-desc">
+                        <p></p>
+                        <p>
+                          K-유클리드는 EU·국제 화학물질 관련규제 대응을 위해 활용되고 있는 ‘I-UCLID’ 정보 전달 양식에서 착안하여 개발된 화학물질정보 공동활용 플랫폼 환경에 적합하도록 설계한 국내 최초의 화학물질 정보전달양식입니다.
+                          <br>
+                          <br>
+                          K-유클리드를 통하여 화학 3법 의무사항을 이행해야 하는 민원인은, 통합 DB 기반의 화학물질 정보들을 이행해야 하는 법령 및 법령에 따라 용이하게 전달·연계가 가능해지며, 반복적인 정보 입력 업무를 최소화해 보다 높은 정확성과 편의성을 확보합니다.</p>
+                    </div>
+                    <a href="N-시스템소개-B-01.html" class="btn-md btn-blue platform-intro-link">
+                        <span>K-UCLID에 대한 자세한 설명 보기</span>
+                        <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                    </a>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">공동활용플랫폼 주요 서비스 안내</h3>
+                    </div>
+                    <p class="platform-intro-desc">화학물질의 안전 정보를 통합 제공하여 국민이 쉽고 편리하게 확인할 수 있도록 지원합니다.</p>
+                    <ul class="info-card-list">
+                        <li class="info-card-item">
+                            <span class="info-card-icon">
+                                <svg aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-list-search"></use></svg>
+                            </span>
+                            <div class="info-card-content">
+                                <strong class="info-card-title">1. 화학물질 특성 통합검색 및 정보공개</strong>
+                                <p class="info-card-desc">화학물질의 물성, 유해성, 분류·표시, 규제정보 등을 관련 법령에 따른 정보공개 의무에 기반하여 제공하며, 통합검색·정보공개·물질검색 등을 단 한 번의 검색으로 모두 해결할 수 있도록 지원합니다.</p>
+                            </div>
+                        </li>
+                        <li class="info-card-item">
+                            <span class="info-card-icon">
+                                <svg aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-list-clipboard"></use></svg>
+                            </span>
+                            <div class="info-card-content">
+                                <strong class="info-card-title">2. 화학물질의 등록 및 평가 등에 관한 법률(화평법) 의무사항 이행</strong>
+                                <p class="info-card-desc">법적 관리 체계에 따라 등록 및 평가된 정보를 기반으로 국민이 안전하게 관리되는 화학물질 정보를 확인할 수 있도록 제공합니다. (향후 화관법 및 제품법 의무사항까지 단계적으로 확대 적용 예정)</p>
+                            </div>
+                        </li>
+                        <li class="info-card-item">
+                            <span class="info-card-icon">
+                                <svg aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-list-link"></use></svg>
+                            </span>
+                            <div class="info-card-content">
+                                <strong class="info-card-title">3. 화학3법 지원사업 확인·바로가기 서비스</strong>
+                                <p class="info-card-desc">화학물질 안전과 관련된 정부 지원사업, 교육, 정책 정보를 제공하고, 관련 서비스를 이용할 수 있도록 안내합니다.</p>
+                            </div>
+                        </li>
+                        <li class="info-card-item">
+                            <span class="info-card-icon">
+                                <svg aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-list-shield"></use></svg>
+                            </span>
+                            <div class="info-card-content">
+                                <strong class="info-card-title">4. 화학물질 유해성 및 위해 정보 제공</strong>
+                                <p class="info-card-desc">화학물질의 유해성, 위해성 및 분류·표시 정보를 제공하여 국민이 화학물질의 위험성을 이해하고 안전하게 활용할 수 있도록 지원합니다.</p>
+                            </div>
+                        </li>
+                        <li class="info-card-item">
+                            <span class="info-card-icon">
+                                <svg aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-list-check"></use></svg>
+                            </span>
+                            <div class="info-card-content">
+                                <strong class="info-card-title">5. 화학안전 정보 및 사고 예방 콘텐츠 제공</strong>
+                                <p class="info-card-desc">화학물질의 올바른 사용 방법과 사고 예방을 위한 안전 정보를 제공하여 일상생활 속 화학사고를 예방할 수 있도록 지원합니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+
+</body>
+</html>

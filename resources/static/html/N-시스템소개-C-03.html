@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">제품법 소개</h2>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">생활화학제품 및 살생물물질의 안전관리에 관한 법률</h3>
+                    </div>
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp">이 법은 생활화학제품과 살생물물질의 안전관리에 필요한 사항을 규정하여 국민의 건강과 환경을 보호하는 것을 목적으로 합니다.</p>
+                        <p class="txt-exp">일상생활에서 빈번하게 사용하는 화학제품의 위해성을 사전에 검증하고, 살생물질 및 제품에 대한 엄격한 승인 제도를 통해 유해한 화학물질 노출로부터 안전한 생활환경을 조성하는 것을 핵심으로 하고 있습니다.</p>
+                        <p class="txt-exp">또한, 기업이 스스로 제품의 안전성을 확인하고 정부에 신고하도록 함으로써, 제조부터 유통까지 전 과정에 걸쳐 화학제품의 안전관리 책임을 강화하고 정보를 투명하게 공개하고 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">살생물제 산업계 지원</h3>
+                    </div>
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp">살생물질과 제품의 효능 및 안전성을 정확히 확인하는 것은 국민의 건강과 안전을 지키기 위해 매우 중요한 일입니다. 그러나 제조사 입장에서는 기존에 확인하지 않은 물질과 제품의 독성 및 효능 자료를 준비하는 데 큰 비용이 소요됩니다. 특히 중소기업의 경우 이러한 자료 준비는 큰 부담으로 다가올 수 있습니다.</p>
+                        <p class="txt-exp">이를 돕기 위해 정부는 중소기업 살생물제 승인 전과정 지원사업을 통해 중소기업에 대한 컨설팅 지원, 비용 지원, 승인 자료 준비 지원 등을 제공하고 있습니다. 이를 통해 중소기업이 살생물제 제도를 이행하면서 겪는 부담을 줄이고, 원활하게 규제를 준수할 수 있도록 돕고 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="chem-law-guide-panel">
+                    <div class="guide-block">
+                        <strong class="guide-block-title">승인 절차 안내</strong>
+                        <div class="guide-block-row">
+                            <p class="guide-block-desc">살생물제 승인을 위한 단계별 절차를 확인해 보세요.</p>
+                            <a href="javascript:void(0);" class="guide-block-link">
+                                <span>승인 절차 확인하기</span>
+                                <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">제품법 주요 의무사항</h3>
+                    </div>
+                    <ul class="support-business-card-list support-business-card-list--law" aria-label="제품법 주요 의무사항">
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges">
+                                    <span class="sort-badge bg-green">지원사업 제공</span>
+                                </div>
+                                <p class="support-business-card-title">살생물질 승인·신고</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">미생물, 해충 등 유해생물을 제거하는 효과를 가진 '살생물질'의 유해성과 위해성을 사전에 검증받는 절차</p>
+                            </div>
+                        </li>
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges">
+                                    <span class="sort-badge bg-green">지원사업 제공</span>
+                                </div>
+                                <p class="support-business-card-title">살생물제품/살생물처리제품 승인·신고</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">승인된 살생물질을 함유한 '살생물제품(살충제, 소독제 등)'이나, 제품의 보존을 위해 살생물질을 사용한 '살생물처리제품'을 관리하는 절차</p>
+                            </div>
+                        </li>
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges">
+                                    <span class="sort-badge bg-green">지원사업 제공</span>
+                                </div>
+                                <p class="support-business-card-title">안전확인대상 생활화학제품 승인·신고</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">세정제, 방향제 등 일상생활에서 사용하는 화학제품 중 위해성이 우려되어 지정된 제품군에 대해 안전기준 준수 여부를 확인받는 절차</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                      <div class="flow-map-section">
+                        <div class="flow-map flow-map--product-law">
+                        <div class="flow-map-inner">
+                            <div class="flow-map-head">
+                            <strong class="flow-map-root">제품법
+                                <span class="tooltip-wrap st-hover">
+                                        <span class="pictogram">
+                                            <span class="flow-map-tooltip-icon"></span>
+                                        </span>
+                                        <span class="sr-only">툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다.툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다.본문을 가리지 않도록 주의합니다.</span>
+                                    </span>
+                            </strong>
+                            </div>
+                            <ul class="flow-map-branches flow-map-branches--top">
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">살생물물질 승인·신고</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">기존 살생물물질 신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">승인 신청 계획서</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">살생물물질 승인 신청</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">물질 동등성 인정신청</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">살생물물질 재승인 신청</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">살생물물질 공동 승인 신청</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">살생물물질 변경승인 신청</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">살생물물질 변경신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">살생물물질 선임 및 해임</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">살생물제품·살생물처리제품 승인·신고</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">제품 승인 신청</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">제품 유사성 인정신청</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">제품승인 특례신청</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">제품 재승인 신청</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">제품 변경승인</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">제품 변경신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">살생물제품·살생물처리제품<br>선임 및 해임</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">안전확인대상 생활화학제품 승인·신고</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">안전기준 적합 확인신고</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">안전기준 적합확인 변경신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">안전기준 적합 갱신신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">안전확인대상<br>생활화학제품 승인 신청</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">안전확인대상<br>생활화학제품 변경승인</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">안전확인대상<br>생활화학제품 변경신고</span></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+
+</body>
+</html>

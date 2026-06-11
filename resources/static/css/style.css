@@ -114,7 +114,7 @@
 .section-wrap + *,
 .section-wrap ~ .section-wrap{margin-top:64px;}
 .pagination-wrap + .txt-exp-wrap{margin-top:40px;}
-.txt-exp-wrap{margin-top:16px;display:flex;flex-direction: column;gap:8px;font-size:17px;}
+.txt-exp-wrap{margin-top:16px;display:flex;flex-direction: column;gap:8px;font-size:16.5px;}
 .txt-exp-wrap + *{margin-top:24px;}
 .txt-exp-wrap + .title-data-wrap{margin-top:48px;}
 .txt-exp-wrap + .data-default{margin-top:20px;}
@@ -419,11 +419,15 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 
 .title-chapter-wrap + .support-business-card-list{margin-top:24px;}
 .support-business-card-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;list-style:none;padding:0;margin:0;}
-.support-business-card{display:flex;flex-direction:column;gap:16px;min-height:258px;padding:20px;border:1px solid #dee2e6;border-radius:8px;background:#fff;box-sizing:border-box;text-decoration:none;}
-.support-business-card:not(.is-disabled):hover{border:2px solid #1c4cbf;padding:19px;}
-.support-business-card.is-disabled{background:#f1f3f5;}
+.support-business-card-list > li{min-width:0;}
+.support-business-card-list > li > .support-business-card,
+.support-business-card-list > li.support-business-card,
+.support-business-card-list > .support-business-card{display:flex;flex-direction:column;gap:16px;min-height:258px;height:100%;padding:20px;border:1px solid #dee2e6;border-radius:8px;background:#fff;box-sizing:border-box;text-decoration:none;color:inherit;}
+.support-business-card:not(.is-static):not(.is-disabled):hover{border:2px solid #1c4cbf;padding:19px;}
+.support-business-card.is-disabled{background:#f1f3f5;cursor:default;}
 .support-business-card-head{display:flex;flex-direction:column;gap:8px;padding-bottom:16px;border-bottom:1px solid #e9ecef;}
-.sort-badges{display:flex;flex-wrap:wrap;gap:4px;align-items:flex-start;}
+.sort-badges{display:flex;flex-wrap:wrap;gap:4px;align-items:flex-start;min-height:24px;}
+.sort-badges:empty{min-height:24px;}
 .sort-badge{display:inline-flex;align-items:center;justify-content:center;height:24px;padding:4px 8px;border-radius:4px;font-size:14px;font-weight:400;line-height:1.5;white-space:nowrap;}
 .sort-badge.bg-green{background:#e3f5e9;color:#2e7d32;}
 .sort-badge.bg-blue{background:#e1efff;color:#1c4cbf;}
@@ -441,6 +445,31 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 }
 @media (max-width:768px){
     .support-business-card-list{grid-template-columns:1fr;}
+}
+
+/* 화평법 주요 의무이행 사항 카드 */
+.support-business-card-list--law{gap:16px;align-items:stretch;}
+.support-business-card-list--law > li > .support-business-card,
+.support-business-card-list--law > li.support-business-card,
+.support-business-card-list--law > .support-business-card{min-height:auto;}
+.support-business-card.is-static{cursor:default;}
+.support-business-card.is-static:hover{border:1px solid #dee2e6;padding:20px;}
+.support-business-card-list--law .support-business-card-head{border-bottom:none;}
+.support-business-card-list--law .support-business-card-title,
+.support-business-card-list--law .support-business-card-desc{min-height:auto;}
+.support-business-card-list--law .support-business-card-body{gap:0;}
+
+/* 화학 3법 소개 */
+.chem-law-guide-panel{margin-top:24px;padding:40px;border-radius:12px;background:#f8f9fa;}
+.guide-block + .guide-block{margin-top:24px;padding-top:24px;border-top:1px solid #e9ecef;}
+.guide-block-title{display:block;margin-bottom:20px;font-size:19px;font-weight:700;line-height:1.5;color:#212529;}
+.guide-block-row{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.guide-block-desc{margin:0;font-size:17px;line-height:1.5;color:#495057;}
+.guide-block-link{display:inline-flex;align-items:center;gap:4px;flex-shrink:0;font-size:17px;font-weight:700;line-height:1.5;color:#212529;text-decoration:underline;white-space:nowrap;}
+.guide-block-link .ico-arrow-r{width:24px;height:24px;fill:#212529;}
+@media all and (max-width:768px){
+  .chem-law-guide-panel{padding:24px;}
+  .guide-block-row{flex-direction:column;align-items:flex-start;gap:12px;}
 }
 
 
@@ -1548,7 +1577,7 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
 
 .flow-map-section{margin-top:48px;}
 .flow-map{overflow-x:auto;padding-bottom:8px;}
-.flow-map-inner{padding:40px 24px 24px;}
+.flow-map-inner{padding:40px 24px 24px;min-width: 900px;}
 .flow-map-head{position:relative;display:flex;justify-content:center;width:100%;padding-bottom:28px;}
 .flow-map-head::after{content:'';position:absolute;left:50%;bottom:0;width:1px;height:30px;background:#dee2e6;transform:translateX(-50%);}
 .flow-map-root{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:160px;min-width:160px;min-height:46px;margin:0 auto;padding:10px 16px;border-radius:4px;background:#1c4cbf;font-size:17px;font-weight:700;line-height:1.5;color:#fff;}
@@ -1574,7 +1603,7 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
 .flow-map-item::after{content:'';position:absolute;bottom:50%;left:-20px;width:1px;height:calc(100% + 30%);background:#dee2e6;}
 .flow-map-card{display:flex;align-items:center;justify-content:center;width:calc(100% - 1px);min-height:48px;padding:8px 10px;border:1px solid #dee2e6;border-radius:4px;background:#fff;font-size:14px;font-weight:400;line-height:1.5;color:#495057;text-align:center;word-break:keep-all;}
 .flow-map-card--action{gap:8px;justify-content:space-between;border-color:#adb5bd;font-size:15px;color:#212529;}
-.flow-map-card-text{flex:1;display:block;}
+.flow-map-card-text{flex:1;display:block;letter-spacing: -0.03em;}
 
 
 @media all and (max-width:1024px){
@@ -1585,7 +1614,6 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
   .flow-map-inner{padding:32px 16px 20px;}
 }
 
-.flow-map--product-law .flow-map-inner{}
 .flow-map--product-law .flow-map-head{width:100%;}
 .flow-map--product-law .flow-map-head::after{left:50%;height:29px;}
 .flow-map--product-law .flow-map-root{width:226px;min-width:226px;margin:0 auto;}
@@ -1593,7 +1621,6 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
 .flow-map--product-law .flow-map-branches--top::before{left:calc((100% - 116px) / 6);width:calc((200% + 116px) / 3);}
 .flow-map--product-law .flow-map-items::before{top:-28px;}
 
-.flow-map--chem-law .flow-map-inner{}
 .flow-map--chem-law .flow-map-head{width:100%;}
 .flow-map--chem-law .flow-map-head::after{left:50%;height:29px;}
 .flow-map--chem-law .flow-map-root{width:160px;min-width:160px;margin:0 auto;}
@@ -1603,7 +1630,7 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
 
 .chem-operator-section{margin-top:24px;}
 .chem-operator-scroll{overflow-x:auto;padding-bottom:8px;}
-.chem-operator-diagram{min-width:718px;padding-top:24px;}
+.chem-operator-diagram{min-width:726px;padding-top:24px;}
 .chem-operator-top{display:flex;align-items:flex-start;gap:24px;min-height:516px;}
 .chem-operator-left{position:relative;flex:none;width:164px;min-height:516px;}
 .chem-operator-left::before{content:'';position:absolute;left:82px;top:62px;width:1px;height:454px;background:#dee2e6;}
@@ -1612,22 +1639,32 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
 .chem-operator-flag::after{content:'';position:absolute;top:50%;right:-24px;width:24px;height:1px;background:#dee2e6;}
 .chem-operator-flag-title{font-size:15px;font-weight:600;line-height:1.5;letter-spacing:-0.3px;color:#1c4cbf;}
 .chem-operator-flag-note{margin-top:2px;font-size:12px;line-height:1.5;color:#495057;}
-.chem-operator-rows{position:relative;flex:none;margin-top:64px;padding-left:32px;}
-.chem-operator-rows::before{content:'';position:absolute;left:0;top:31px;width:1px;height:393px;background:#dee2e6;}
-.chem-operator-row{position:relative;display:grid;grid-template-columns:153px 12px 160px 12px 192px;column-gap:8px;align-items:center;min-height:62px;}
-.chem-operator-row + .chem-operator-row{margin-top:16px;}
-.chem-operator-row::before{content:'';position:absolute;left:-32px;top:50%;width:24px;height:1px;background:#dee2e6;transform:translateY(-50%);}
-/* .chem-operator-row:after{content:'';display:block;} */
+.chem-operator-flow{position:relative;display:flex;align-items:flex-start;flex:none;margin-top:64px;padding-left:0;}
+.chem-operator-flow-main{position:relative;display:flex;gap:8px;}
+.chem-operator-flow-main::before{content:'';position:absolute;left:0;top:31px;width:1px;height:390px;background:#dee2e6;}
+.chem-operator-primary-col{display:flex;flex-direction:column;gap:16px;width:153px;}
+.chem-operator-secondary-col{display:flex;flex-direction:column;gap:16px;width:160px;}
+.chem-operator-tertiary-col{flex:none;}
+.chem-operator-primary-wrap{display:flex;align-items:center;width:100%;min-height:62px;}
+.chem-operator-secondary-wrap{display:flex;align-items:center;gap:8px;min-height:62px;}
+.chem-operator-secondary-wrap.is-multiline{min-height:auto;}
+.chem-operator-tertiary-wrap{display:flex;align-items:flex-start;}
+.chem-operator-tertiary-wrap .chem-operator-line{margin-top:31px;}
+.chem-operator-tertiary-group{display:flex;flex-direction:column;align-items:center;gap:4px;}
+.chem-operator-tertiary-note{font-size:12px;line-height:1.5;color:#495057;white-space:nowrap;}
+.chem-operator-line{flex:none;width:24px;height:1px;background:#dee2e6;}
 .chem-operator-primary,
 .chem-operator-secondary,
-.chem-operator-tertiary{display:flex;align-items:center;justify-content:center;min-height:62px;padding:10px 16px;border-radius:4px;text-align:center;word-break:keep-all;}
-.chem-operator-primary{border:1px solid rgba(0,86,208,0.5);background:#fff;font-size:14px;font-weight:400;line-height:1.5;color:#1c4cbf;}
-.chem-operator-secondary,
-.chem-operator-tertiary{border:1px solid #dee2e6;background:#f8f9fa;font-size:14px;font-weight:400;line-height:1.5;color:#343a40;}
-.chem-operator-arrow{position:relative;display:block;width:12px;height:12px;opacity:.3;}
+.chem-operator-tertiary{display:flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:4px;text-align:center;word-break:keep-all;}
+.chem-operator-primary{flex:1;min-height:62px;border:1px solid rgba(0,86,208,0.5);background:#fff;font-size:14px;font-weight:400;line-height:1.5;color:#1c4cbf;}
+.chem-operator-secondary{flex:1;min-height:62px;border:1px solid #dee2e6;background:#fff;font-size:14px;font-weight:400;line-height:1.5;color:#343a40;}
+.chem-operator-secondary.is-subtle{background:#f8f9fa;}
+.chem-operator-secondary-wrap.is-multiline .chem-operator-secondary{min-height:auto;}
+.chem-operator-tertiary{min-height:62px;border:1px solid #dee2e6;background:#fff;font-size:14px;font-weight:400;line-height:1.5;color:#343a40;white-space:nowrap;}
+.chem-operator-arrow{position:relative;flex:none;display:block;width:12px;height:12px;opacity:.3;}
 .chem-operator-arrow::before{content:'';position:absolute;top:50%;left:50%;width:12px;height:12px;background:url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.89809 6.00016L5.14679 3.24898C4.95153 3.05372 4.95153 2.73713 5.14679 2.54187C5.34205 2.34661 5.65863 2.34661 5.8539 2.54187L8.95889 5.64667C9.15417 5.84193 9.15417 6.15848 8.95889 6.35374L5.8539 9.45854C5.65863 9.6538 5.34205 9.6538 5.14679 9.45854C4.95153 9.26328 4.95153 8.94669 5.14679 8.75143L7.89809 6.00016Z' fill='%231C4CBF'/%3E%3C/svg%3E") no-repeat 50% 50%;background-size:12px auto;transform:translate(-50%,-50%);}
 .chem-operator-cards{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:24px;padding-top:24px;}
-.chem-operator-cards::before{content:'';position:absolute;top:0;left:82px;right:calc((100% - 32px) / 6);height:1px;background:#dee2e6;}
+.chem-operator-cards::before{content:'';position:absolute;top:0;left:82px;right:16%;max-width:calc(100% - 94px);height:1px;background:#dee2e6;}
 .chem-operator-cards::after{content:'';position:absolute;top:-24px;left:82px;width:1px;height:24px;background:#dee2e6;}
 .chem-operator-card{position:relative;display:flex;flex-direction:column;gap:16px;padding:24px;border:1px solid #dee2e6;border-radius:8px;background:#fff;}
 .chem-operator-card::before{content:'';position:absolute;top:-24px;left:50%;width:1px;height:24px;background:#dee2e6;transform:translateX(-50%);}
@@ -2028,4 +2065,58 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
   .counsel-answer-wait{padding:40px 24px;}
   .counsel-answer-wait-title{font-size:26px;}
   .counsel-answer-wait-desc{font-size:15px;}
+}
+
+/* 살생물제 승인 제도 이행 절차 팝업 */
+.biocide-approval-pop{display:flex;flex-direction:column;gap:40px;padding-top:24px;}
+.biocide-approval-intro{margin:0;font-size:17px;line-height:1.5;color:#343a40;}
+.biocide-approval-summary{display:flex;gap:48px;}
+.biocide-approval-summary-col{flex:1;min-width:0;}
+.biocide-approval-summary-col:first-child{border-right:1px solid #e9ecef;}
+.biocide-approval-summary-title{display:block;margin-bottom:20px;font-size:20px;font-weight:700;line-height:1.5;color:#000;}
+.biocide-approval-summary-desc{margin:0;font-size:17px;line-height:1.5;color:#343a40;}
+.biocide-approval-summary-desc strong{font-weight:700;display:block;}
+.biocide-approval-summary-desc .is-blue{color:#1c4cbf;}
+.biocide-approval-summary-desc .is-green{color:#2e7d32;}
+.biocide-approval-timeline-box{padding:24px;border:1px solid #dee2e6;border-radius:8px;overflow-x:auto;}
+.biocide-approval-timeline-chart{display:flex;flex-direction:column;gap:32px;}
+.biocide-approval-timeline-badges{display:flex;align-items:center;width:100%;}
+.biocide-approval-badge-spacer{flex:none;}
+.biocide-approval-badge-slot{flex:2;min-width:0;}
+.biocide-approval-badge-slot.is-green{padding-left:70px;}
+.biocide-approval-badge{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:10px 16px;border-radius:4px;font-size:17px;font-weight:700;line-height:1.5;color:#fff;white-space:nowrap;}
+.biocide-approval-badge.is-blue{background:#1c4cbf;}
+.biocide-approval-badge.is-green{background:#2e7d32;}
+.biocide-approval-step-track{display:flex;align-items:flex-start;width:100%;}
+.biocide-approval-step{display:flex;flex:1;flex-direction:column;gap:8px;min-width:0;}
+.biocide-approval-step.is-start{flex:none;width:70px;}
+.biocide-approval-step-indicator{display:flex;align-items:center;height:20px;}
+.biocide-approval-step-dot{position:relative;z-index:2;flex:none;width:20px;height:20px;margin-right:-1px;border-radius:50%;}
+.biocide-approval-step-dot.is-done{background:#adb5bd;}
+.biocide-approval-step-dot.is-blue{background:#0056d0;}
+.biocide-approval-step-dot.is-blue::after{content:'';position:absolute;top:50%;left:50%;width:14px;height:14px;border:1.6px solid #fff;border-radius:50%;background:#0056d0;transform:translate(-50%,-50%);}
+.biocide-approval-step-dot.is-green{background:#2e7d32;}
+.biocide-approval-step-dot.is-green::after{content:'';position:absolute;top:50%;left:50%;width:14px;height:14px;border:1.6px solid #fff;border-radius:50%;background:#2e7d32;transform:translate(-50%,-50%);}
+.biocide-approval-step-line{position:relative;z-index:1;flex:1;min-width:0;height:2px;background:#dee2e6;}
+.biocide-approval-step-label{display:flex;flex-direction:column;gap:2px;padding-right:24px;white-space:nowrap;}
+.biocide-approval-step-label.is-muted .biocide-approval-step-date{font-size:13px;line-height:1.5;color:#464c53;}
+.biocide-approval-step-label.is-blue{color:#1c4cbf;}
+.biocide-approval-step-label.is-green{color:#2e7d32;}
+.biocide-approval-step-date{font-size:13px;line-height:1.5;}
+.biocide-approval-step-name{font-size:15px;font-weight:700;line-height:1.5;}
+.biocide-approval-support{display:flex;flex-direction:column;}
+.biocide-approval-support-head{display:flex;flex-direction:column;gap:20px;padding-bottom:32px;}
+.biocide-approval-support-title{font-size:20px;font-weight:700;line-height:1.5;color:#000;}
+.biocide-approval-support-desc{margin:0;font-size:17px;line-height:1.5;color:#343a40;}
+.biocide-approval-formula{display:flex;align-items:center;gap:16px;}
+.biocide-approval-formula-item{flex:1;min-width:0;}
+.biocide-approval-formula-box{display:flex;align-items:center;justify-content:center;width:100%;min-height:72px;padding:8px 16px;border:1px solid #dee2e6;border-radius:4px;background:#fff;font-size:14px;font-weight:700;line-height:1.5;color:#495057;text-align:center;word-break:keep-all;}
+.biocide-approval-formula-box.is-result{border-color:#0056d0;background:#0056d0;color:#fff;}
+.biocide-approval-formula-symbol{flex:none;font-size:19px;line-height:1.5;color:#000;}
+@media all and (max-width:768px){
+  .biocide-approval-summary{flex-direction:column;gap:24px;}
+  .biocide-approval-summary-col:first-child{padding-right:0;border-right:0;padding-bottom:24px;border-bottom:1px solid #e9ecef;}
+  .biocide-approval-timeline-chart{overflow-x:auto;padding-bottom:8px;min-width:640px;}
+  .biocide-approval-formula{flex-wrap:wrap;justify-content:center;}
+  .biocide-approval-formula-item{flex:1 1 calc(50% - 24px);}
 }

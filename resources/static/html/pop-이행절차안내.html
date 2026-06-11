@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+
+
+<div class="popup-wrap" id="tempPopId">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup" style="width: 820px;">
+      <div class="pop-header">
+        <h2 class="title">이행 절차 안내</h2>
+        <div class="right">
+          <button type="button" class="btn-close"><i class="ico-close"></i></button>
+        </div>
+      </div>
+      <div class="pop-body">
+          <div class="chem-operator-section">
+            <div class="chem-operator-scroll">
+              <div class="chem-operator-diagram" role="region" aria-label="화학물질 영업자 이행절차 안내">
+                <p class="sr-only">화학물질 영업자는 화학물질 확인(제조 및 수입 시) 후, 물질 유형에 따라 금지물질·제한물질·허가물질·인체등유해성물질·사고대비 물질·그 외의 화학물질로 구분하여 각각의 절차를 이행합니다.</p>
+                <div class="chem-operator-top">
+                  <div class="chem-operator-left">
+                    <div class="chem-operator-root">화학물질 영업자</div>
+                    <div class="chem-operator-flag">
+                      <strong class="chem-operator-flag-title">화학물질 확인</strong>
+                      <span class="chem-operator-flag-note">* 제조 및 수입 시</span>
+                    </div>
+                  </div>
+
+                  <div class="chem-operator-flow" aria-label="화학물질 유형별 이행 절차">
+                    <div class="chem-operator-flow-main">
+                      <div class="chem-operator-primary-col" role="list">
+                        <div class="chem-operator-primary-wrap" role="listitem">
+                          <span class="chem-operator-line" aria-hidden="true"></span>
+                          <div class="chem-operator-primary">금지물질</div>
+                        </div>
+                        <div class="chem-operator-primary-wrap" role="listitem">
+                          <span class="chem-operator-line" aria-hidden="true"></span>
+                          <div class="chem-operator-primary">제한물질</div>
+                        </div>
+                        <div class="chem-operator-primary-wrap" role="listitem">
+                          <span class="chem-operator-line" aria-hidden="true"></span>
+                          <div class="chem-operator-primary">허가물질</div>
+                        </div>
+                        <div class="chem-operator-primary-wrap" role="listitem">
+                          <span class="chem-operator-line" aria-hidden="true"></span>
+                          <div class="chem-operator-primary">인체등유해성물질</div>
+                        </div>
+                        <div class="chem-operator-primary-wrap" role="listitem">
+                          <span class="chem-operator-line" aria-hidden="true"></span>
+                          <div class="chem-operator-primary">사고대비 물질</div>
+                        </div>
+                        <div class="chem-operator-primary-wrap" role="listitem">
+                          <span class="chem-operator-line" aria-hidden="true"></span>
+                          <div class="chem-operator-primary">그 외의 화학물질</div>
+                        </div>
+                      </div>
+                      <div class="chem-operator-secondary-col">
+                        <div class="chem-operator-secondary-wrap">
+                          <span class="chem-operator-arrow" aria-hidden="true"></span>
+                          <div class="chem-operator-secondary is-subtle">시험·검사·연구용</div>
+                        </div>
+                        <div class="chem-operator-secondary-wrap is-multiline">
+                          <span class="chem-operator-arrow" aria-hidden="true"></span>
+                          <div class="chem-operator-secondary">영업허가,수입허가,<br>수출승인</div>
+                        </div>
+                        <div class="chem-operator-secondary-wrap">
+                          <span class="chem-operator-arrow" aria-hidden="true"></span>
+                          <div class="chem-operator-secondary">제조·수입·사용 허가</div>
+                        </div>
+                        <div class="chem-operator-secondary-wrap">
+                          <span class="chem-operator-arrow" aria-hidden="true"></span>
+                          <div class="chem-operator-secondary">영업허가,수입신고</div>
+                        </div>
+                        <div class="chem-operator-secondary-wrap">
+                          <span class="chem-operator-arrow" aria-hidden="true"></span>
+                          <div class="chem-operator-secondary">영업허가</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chem-operator-tertiary-col">
+                      <div class="chem-operator-tertiary-wrap">
+                        <span class="chem-operator-line" aria-hidden="true"></span>
+                        <div class="chem-operator-tertiary-group">
+                          <div class="chem-operator-tertiary">제조·수입·취급허가 수출 승인</div>
+                          <span class="chem-operator-tertiary-note">* 제한된 용도</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chem-operator-cards">
+                  <article class="chem-operator-card" aria-labelledby="card-title-1">
+                    <strong id="card-title-1" class="chem-operator-card-title" role="heading" aria-level="4">화학사고<br>예방관리계획서</strong>
+                    <ul class="chem-operator-card-list">
+                      <li>유해화학물질 취급시설을 설치·운영하려는자</li>
+                      <li>지역사회 고지(위해관리계획 지역사회 고지 포함)</li>
+                    </ul>
+                  </article>
+                  <article class="chem-operator-card" aria-labelledby="card-title-2">
+                    <strong id="card-title-2" class="chem-operator-card-title" role="heading" aria-level="4">유해화학물질<br>취급시설 설치 운영</strong>
+                    <ul class="chem-operator-card-list">
+                      <li>설치·관리·취급기준 및 기술인력 확보</li>
+                      <li>취급시설 점검·안전진단</li>
+                      <li>취급시설자체 점검</li>
+                    </ul>
+                  </article>
+                  <article class="chem-operator-card" aria-labelledby="card-title-3">
+                    <strong id="card-title-3" class="chem-operator-card-title" role="heading" aria-level="4">화학물질 통계조사<br>화학물질 배출량 조사</strong>
+                    <ul class="chem-operator-card-list">
+                      <li>사업장 별 공개원칙</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  popOpen('#tempPopId');
+</script>  
+
+</body>
+</html>

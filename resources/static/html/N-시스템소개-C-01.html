@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head>
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">화평법 소개</h2>
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">화학물질의 등록 및 평가 등에 관한 법률</h3>
+                    </div>
+                    <div class="txt-exp-wrap">
+                        <p class="txt-exp">이 법은 화학물질의 등록ㆍ신고 및 유해성(有害性)ㆍ위해성(危害性)에 관한 심사ㆍ평가, 유해성ㆍ위해성이 있는 화학물질의 지정에 관한 사항을 규정하고, 화학물질에 대한 정보를 생산ㆍ활용하도록 함으로써 국민건강 및 환경을 보호하는 것을 목적으로 합니다.</p>
+                        <p class="txt-exp">모든 신규화학물질과 연간 1톤 이상 제조·수입되는 기존화학물질에 대한 등록 및 신고 의무를 부여하여 화학물질 정보를 체계적으로 수집하며, 이를 바탕으로 해당 물질이 인체나 환경에 노출될 때 나타나는 독성을 심사하고 위험도를 평가하는 유해성 심사 및 위해성 평가 체계를 담고 있습니다.</p>
+                        <p class="txt-exp">또한, 화학물질을 양도할 때 관련 정보를 하위 사용자에게 전달하도록 하여 정보의 투명성을 높이고, 발암성 등이 높은 중점관리물질이 함유된 제품에 대한 신고 및 관리, 유해성에 따른 유독물질·제한물질 지정 등 화학물질의 전 과정을 사전에 예방하고 관리하는 내용을 핵심으로 하고 있습니다.</p>
+                    </div>
+
+                </div>
+
+                <div class="section-wrap">
+                    <div class="title-chapter-wrap">
+                        <h3 class="title-chapter">화평법 주요 의무이행 사항</h3>
+                    </div>
+                    <ul class="support-business-card-list support-business-card-list--law" aria-label="화평법 주요 의무이행 사항">
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges" aria-hidden="true"></div>
+                                <p class="support-business-card-title">등록 등 면제</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">수출용, 연구개발용 등 특수한 용도로 사용되는 물질에 한해 엄격한 등록 절차를 생략하거나 간소화해 주는 제도</p>
+                            </div>
+                        </li>
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges">
+                                    <span class="sort-badge bg-green">지원사업 제공</span>
+                                </div>
+                                <p class="support-business-card-title">등록</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">연간 1톤 이상 제조·수입되는 기존물질이나 모든 신규물질의 유해성 정보를 사전에 정부에 제출하고 확인받는 절차</p>
+                            </div>
+                        </li>
+                        <li class="support-business-card is-static">
+                            <div class="support-business-card-head">
+                                <div class="sort-badges">
+                                    <span class="sort-badge bg-green">지원사업 제공</span>
+                                </div>
+                                <p class="support-business-card-title">신고</p>
+                            </div>
+                            <div class="support-business-card-body">
+                                <p class="support-business-card-desc">법에서 정한 소량의 물질이나 특정 조건에 해당할 경우, 물질의 기본 정체 정보를 간단히 알리고 관리받는 절차</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="chem-law-guide-panel">
+                        <div class="guide-block">
+                            <strong class="guide-block-title">시험자료 제출기준</strong>
+                            <div class="guide-block-row">
+                                <p class="guide-block-desc">제조·수입별 시험자료 제출기준을 확인해 보세요.</p>
+                                <a href="javascript:void(0);" class="guide-block-link">
+                                    <span>제출기준 확인하기</span>
+                                    <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="guide-block">
+                            <strong class="guide-block-title">수수료 안내</strong>
+                            <div class="guide-block-row">
+                                <p class="guide-block-desc">화학물질 등록·신고 수수료를 확인해 보세요.</p>
+                                <a href="javascript:void(0);" class="guide-block-link">
+                                    <span>수수료 확인하기</span>
+                                    <svg class="ico-arrow-r" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-arrow-r"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-map-section">
+                        <div class="flow-map flow-map--chem-law">
+                        <div class="flow-map-inner">
+                            <div class="flow-map-head">
+                            <strong class="flow-map-root">화평법
+                                <span class="tooltip-wrap st-hover">
+                                        <span class="pictogram">
+                                            <span class="flow-map-tooltip-icon"></span>
+                                        </span>
+                                        <span class="sr-only">툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다.툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다.본문을 가리지 않도록 주의합니다.</span>
+                                    </span>
+                            </strong>
+                            </div>
+                            <ul class="flow-map-branches flow-map-branches--top">
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">등록등면제</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">신고면제</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">등록면제</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">신고면제의 변경신청</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">등록면제의 변경신청</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">등록</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">기존·신규화학물질 등록</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">기존화학물질 공동등록</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">등록의 변경등록</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">등록의 변경신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">등록의 선임/해임 신청</span></li>
+                                </ul>
+                            </li>
+                            <li class="flow-map-branch">
+                                <strong class="flow-map-label">신고</strong>
+                                <ul class="flow-map-items">
+                                <li class="flow-map-item"><span class="flow-map-card">기존화학물질의<br>사전신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">기존화학물질<br>사전신고의 변경신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card flow-map-card--action"><span class="flow-map-card-text">신규화학물질 신고</span></span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">중점관리물질 예비신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">중점관리물질의 신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">신고의 변경신고</span></li>
+                                <li class="flow-map-item"><span class="flow-map-card">신고의 선임/해임 신청</span></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+    
+
+</body>
+</html>
