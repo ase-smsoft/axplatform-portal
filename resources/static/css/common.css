@@ -598,6 +598,7 @@ td .dash-list li ~ li{margin-top:3px;}
 * + .list-decimal-circle{margin-top:5px; }
 
 .list-alpha{list-style:lower-alpha inside !important;display:flex;flex-direction:column;gap:0;color:#343A40;line-height:1.5;}
+.list-alpha > li:not(:last-child) .txt-exp-ps:last-child{padding-bottom:15px;}
 .list-alpha.st2{list-style:none;counter-reset:alpha;}
 .list-alpha.st2 > li{counter-increment:alpha;}
 .list-alpha.st2 > li::marker{content:"(" counter(alpha, lower-alpha) ") ";}

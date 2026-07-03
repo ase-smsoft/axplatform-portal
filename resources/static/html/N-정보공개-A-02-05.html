@@ -77,7 +77,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content">
+                    <div class="tab-content" id="haz-aquatic">
                         <div class="title-section-wrap">
                             <h3 class="title-section">수생환경 유해성</h3>
                         </div>
@@ -92,75 +92,73 @@
                                             </ol>
                                             <p class="txt-caption">&lt;표 4.1.2(a)&gt;</p>
                                             <div class="data-default">
-                                                <table>
-                                                    <caption class="sr-only">표 4.1.2(a) - 급성/만성 독성별 곱셈계수(M)</caption>
-                                                    <colgroup>
-                                                        <col>
-                                                        <col style="width:90px;">
-                                                        <col>
-                                                        <col style="width:90px;">
-                                                        <col style="width:90px;">
-                                                    </colgroup>
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">급성 독성<br>L(E)C50 (단위: mg/L)</th>
-                                                            <th scope="col">M 계수</th>
-                                                            <th scope="col">만성 독성<br>NOEC (단위: mg/L)</th>
-                                                            <th scope="col" colspan="2">M 계수</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="col"></th>
-                                                            <th scope="col"></th>
-                                                            <th scope="col"></th>
-                                                            <th scope="col">성분 a</th>
-                                                            <th scope="col">성분 b</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="align-l">0.1 &lt; L(E)C50 ≤ 1</td>
-                                                            <td>1</td>
-                                                            <td class="align-l">0.01 &lt; NOEC ≤ 0.1</td>
-                                                            <td>1</td>
-                                                            <td>-</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="align-l">0.01 &lt; L(E)C50 ≤ 0.1</td>
-                                                            <td>10</td>
-                                                            <td class="align-l">0.001 &lt; NOEC ≤ 0.01</td>
-                                                            <td>10</td>
-                                                            <td>1</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="align-l">0.001 &lt; L(E)C50 ≤ 0.01</td>
-                                                            <td>100</td>
-                                                            <td class="align-l">0.0001 &lt; NOEC ≤ 0.001</td>
-                                                            <td>100</td>
-                                                            <td>10</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="align-l">0.0001 &lt; L(E)C50 ≤ 0.001</td>
-                                                            <td>1000</td>
-                                                            <td class="align-l">0.00001 &lt; NOEC ≤ 0.0001</td>
-                                                            <td>1000</td>
-                                                            <td>100</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="align-l">0.00001 &lt; L(E)C50 ≤ 0.0001</td>
-                                                            <td>10000</td>
-                                                            <td class="align-l">0.000001 &lt; NOEC ≤ 0.00001</td>
-                                                            <td>10000</td>
-                                                            <td>1000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="align-l">(이하 10배씩 계속)</td>
-                                                            <td></td>
-                                                            <td class="align-l">(이하 10배씩 계속)</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                <div class="scroll">
+                                                    <table>
+                                                        <caption class="sr-only">표 4.1.2(a) - 급성/만성 독성별 곱셈계수(M)</caption>
+                                                        <colgroup>
+                                                            <col style="width:auto;min-width:260px">
+                                                            <col style="width:90px;">
+                                                            <col style="width:auto;min-width:250px">
+                                                            <col style="width:90px;">
+                                                            <col style="width:90px;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">급성 독성</th>
+                                                                <th scope="col" rowspan="2">M 계수</th>
+                                                                <th scope="col">만성 독성</th>
+                                                                <th scope="col" colspan="2">M 계수</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="col">L(E)C50 (단위: mg/L)</th>
+                                                                <th scope="col">NOEC (단위: mg/L)</th>
+                                                                <th scope="col">성분 a</th>
+                                                                <th scope="col">성분 b</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="align-l">0.1 &lt; L(E)C50 ≤ 1</td>
+                                                                <td>1</td>
+                                                                <td class="align-l">0.01 &lt; NOEC ≤ 0.1</td>
+                                                                <td>1</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="align-l">0.01 &lt; L(E)C50 ≤ 0.1</td>
+                                                                <td>10</td>
+                                                                <td class="align-l">0.001 &lt; NOEC ≤ 0.01</td>
+                                                                <td>10</td>
+                                                                <td>1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="align-l">0.001 &lt; L(E)C50 ≤ 0.01</td>
+                                                                <td>100</td>
+                                                                <td class="align-l">0.0001 &lt; NOEC ≤ 0.001</td>
+                                                                <td>100</td>
+                                                                <td>10</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="align-l">0.0001 &lt; L(E)C50 ≤ 0.001</td>
+                                                                <td>1000</td>
+                                                                <td class="align-l">0.00001 &lt; NOEC ≤ 0.0001</td>
+                                                                <td>1000</td>
+                                                                <td>100</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="align-l">0.00001 &lt; L(E)C50 ≤ 0.0001</td>
+                                                                <td>10000</td>
+                                                                <td class="align-l">0.000001 &lt; NOEC ≤ 0.00001</td>
+                                                                <td>10000</td>
+                                                                <td>1000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="align-c" colspan="2">(이하 10배씩 계속)</td>
+                                                                <td class="align-c" colspan="2">(이하 10배씩 계속)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                             <p class="txt-exp-ps">※ a: 빠르게 분해되지 않는 성분 / b: 빠르게 분해되는 성분</p>
                                         </li>
@@ -169,13 +167,13 @@
                                             <ol class="list-hangul">
                                                 <li>급성수생생태독성에 근거한 가산식:
                                                     <figure class="formula-box">
-                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzUzODVfMTAyMzE2KSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzUzODVfMTAyMzE2IiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF81Mzg1XzEwMjMxNiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF81Mzg1XzEwMjMxNiIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUFEwbEVRVlI0QWV5ZHNVOFUyeGZIaFI5Q1FBS0NNZkNMeGtLeHRZSEVVZ3NwYkUza0x6QnVaNnVsSmZRMmtGK3BEU1MycjhEaTEycXdzUlVzak9aQmpJc1NsSWp2UGQ5bjkrRGxNck16TzdzN3N6TUQzODE1MTNQUE9YUHZ1ZC9sZnZmY3UvanMvYVdYRUJBQ1FxQzBDUFNlOGw1N2UzdWZQbjE2Ly83OSt2cjZXNzJFZ0JBUUFzVkFBRWFDbDJBbk9NcGpySnA2U0dGZnZuelozTno4K2ZQbm1UTm5KaVltSmljbi82dVhFQkFDUWlCdkJDWW5KMkVrZUFsMmdxTmdxaHAxL2Y3dmdNS3c3dXpzakk2T2pveU1EQTRPbnE2Lyt2cjY2bitxS1J3Q1NrZ0luQkFFK3ZvT1dBaGVncDFHUjBkaEt2anFONE9kcWxFWXRkbjI5dmJ3OFBEQXdFRGYwZGQvOUJJQ1FrQUk1SWZBVVVMcWc2TmdLdmdLMWpJV3ExSFk3dTR1anY3K2ZwZG5iMit2MDZVSUFTRWdCUEpGb0xmM2tKRmdLdmdLMWpxa01QZ01VKy9SVjQ5ZVFrQUlwSXVBUm1zWGdhUGsxQXRmd1ZxSEZMYS92dyt4V1pCTllUNjFRa0FJQ0lHQ0lHRFVaRFFGWDhGYWxsanRJUG5yMXkvcjBCSkhLeEVDUWtBSUZBMEJuNTBjYTlVb2pFUjlIMTJKRUJBQ1FxQ3dDUGg4ZFVCaDVPcGI2YVltR2tnSUNBRWhrQjRDQWFZNnBMRDBwdEJJUWtBSUNJRXVJU0FLNnhMUW1rWUlDSUVzRUJDRlpZSHFNUmhUU3hBQzVVQkFGRmFPOTBsWkNnRWgwQkNCZGlqczdkdTMvNisvcXRWcXcwRTdOM1poaXM2VDFBaENRQWpramtBN0ZQYng0OGMvNnEvUG56K2ovNi9SQ3c2eXRWbkF5NWN2cll2OTRjT0h0TmIxMjcyOVBXZm5xZm9NZnpDRkh5TmRDQWlCR0FST29Lc2RDZ09tcTFldkxpd3MwSDcvL2gzZUNRc3hKaFlBUFZrM3BvWG1JRU1MdUhuejVyMTc5MHhYS3dTRWdCQ0lRcUJOQ25QRHdXSndHUUxqUEhqd0FPWDI3ZHQ0aDRhR2FCRWpMNm9xOUJpQnZDaTdZZ0xrRWdKQ1FBaUVFZWlVd3R5SWpvUHNndXpDaFF2bWV2WHFGY3FiTjI4b3NsQmlaSHg4UE1Zcmx4QVFBa0lnakVCSEZBWmIxYS8xYXcxRGMyK0ZCaE5SaUtIZ2hkYzRZM0lxSEJ3Y2ZQNzhPVWJDR2dwRjNQWHIxeHU2bWhvVklBU0V3SWxGb0NNS2c3TTQvWm1BSUp4bHVyVjRQM3o0QUowaG5ERTVja0praEVtNmo4RDI5bmJEU2VmbTVucDZldmpVV1ZwYUNnVEV1QUtSNm9JQUNEOTY5R2htWmdZOGtkbloyWGZ2M21HL2N1VUs4S0pJTWtLZ0l3cURsYmo4ZXZ6NE1TUkZEVVdYZ2dzZEMzYTZmUG5JaVpKQ0REcTdjZU1HN3lWWFl3U2NPM2N1by9WbzJEQUNMMTY4WUVlRjdleTMxNjlmYjJ4czhObkRmdk5aTE1ZVkhrY1d5QXVxR2hzYlcxNWUvbFYvM2IxN0Z3ejVHT0JUL05hdFc0SW9Pd1E2b2pEUzRxY2Z0cUxzNHEyaUMxdWhZNEdxNkZKMmNaYjA1ZG16WndUQWFIZ2xXU01BUS9HeEFUZWhCT1phV1ZuQk9EOC9mL255WlZ3b1dGQVFsQ2dYM3RUa1dBd0U5VU5lZkVpd0VmakFOakJaMmYzNzkrbUM1Tk9uVCtFMUxKS01FT2lVd3Jpbmg2MG9yRGdxY3A5RlN5R0dCYnRsak5FWElzMnV0Z3NJVEU5UHM3VWFiaUYyRnduNEJRTEJNQmZHR0JkZWlVT0F3eU9sRnNYWDJ0cWFNenJGc0tVY2N4WXBXU0RRSm9XNTMvYTZkdTBhYVhGUGI3ZjF0SHp6U1BIRktSSTdndUlMNTBxTVRZV04xL1QzTUpvT29vQVlCQ2dmOExMOWFFM1FxU2JRWTF4NEpRNEJPNTZ2cnE0Nmk2L3drU0QrOGdISlNHK1R3dUFYam9jY0hqbW5VSGxCWkpETyt2bzZMVG9XN0Ewekhob2FndEZvdzE3S04wNmdacWVJNDd4cHV0b3NFTENDcStISU1hNkc4U2ZUU0swS1VKd1dvZjZHQ0R4NThvUVk5eVBkTUthRXhzS2wzQTZGUVZKMk5yeDQ4U0lMb3JDNmMrZU9XV2pSby9qTGdvbmhFZlFZQ1V3UkV5bVhFTWdGQWE3d21aYzdMOXF3Y01hY21KamdnR2xoNFFCWjBrS2dIUXFEb2Fpa0VBNk1hZVVSR0tjTFV3Um1WRmNJSkVlQXN6YkNVVEdxQk9NckZFNlJ4TkFtSDFhUmJTRFFEb1cxTVkwZUVRSnBJVUNCMDlQdXkyNnZPcy9FTGcxajZJa0U0UzhPa2pFeG5hZWhFVUJBRkFZSVRlVVlCcml2LzhOcmkzR0ZnN3R2b2ZEaEJzcm1SZC9ZMktqL0psYmpCaS9YN2U2NEI2M1lneDIyMEdqOENJdUxpK1FHMDRuQzRvSHEzQ3NLNnh6RFVvN0FJWWk4L2EzSTlyYmZBNGh4OFVnUlpINSszaVU1TnpjWGt4SjB6S0lnRkxnTVRtR05NY0hKWFRaN1ZIeWxVaUZEU2pDalRvZ3NLbEwyemhFUWhYV09ZU2xIc09yQTMxMTh2Mlk3TThaVm5LVXVMeTlEU2VSRDJrbXV6T0V5aUl4NG43WHB0aWZRSWdOeTRSVitIUDRpTVRERWF4U1d5b3poaVdReEJFUmhoc1B4Yk5uZVhNb2dMSThXd1lLT3NNY2dMUGFiRlNZb3R0L2lYWGdMSWpDSVVSTDVMQ3dzdUhYUmRSSlFXREpQMlhvRHJqYTZuRS9ocHBtWkdUYzFaUmQzYmN4Q0NjYUEySm1PM0xEUWxXU0VnQ2dzSTJBTE1Td2tGYmdpd3VJeTR5dC9xb2tyVjJwL0QzbDZldHBSR0FFeExyd0ZFYWdCc1dUZ0RsUGlXOVlMNzhUSEpQUkNUeHhPd1kycCtXd0FSc2dSWG1NS0d3RTgrV0xkWldoR3Rha2pJQXBMSGRJeURjaHhESTZyVnF2c3QwRGVNYTVBWkk1ZGtvUktTQUJpaXI4VUl3YUJjU2lPVUZJUkRveFVncUFIaHRDWis1TEJCamVYcFdjV3RWa2dJQXJMQWxXTjJUMEVLSHhzTXM1eFhEK1pIdFZTRTdrcUtTcEc5cHdSYUhGNlVWaUxnQ204WUFoUTV0amRFM2x4cjg5cERpVktxSnNveEtLOHNwY1JBVkZZR2Q4MTVYd0VBVTV3VmxzbFBFNGVlVmlka2lNZ0NpdjVHMWptOUxrRmp4ZnV5Qk91aitNa0ZSYkJYSFZSaTZGSVRnZ0NvckJpdk5Fbk1ndHV3ZU9GTy9Ma3dIQzFiOEgrTDd1WlJlMHhSa0FVVnF3M043NHFPVGJlTEVEbkxNazlGN0xXNkg5QUdEVmpZU0dOU2xqMkFBS2lzQUFnT1hmanE1Smo0eldVbTlKSDhvTWtBMVlxRmU3eVcrSXZuaW9zcE9RbVNZS0FLQ3dKU29ySkJJR205Skg4SUFsL3JheXNOT1V2N3Z1NUxFdHZNUm9wZndSRVlmbS9COHFnUXdRV0ZoYU12eTdYL3ltVG1ORUkwMDFaREQ1bGRJbkN5dml1blZwYVdtTGZsakwxdEpPR2xmZ0trcnY4cHZ6RnpKdzB1U3hEYVZVRWVLdUlkUzFlRk5ZMXFOT2NpRTBiTmR6Y1hPMWZ0NDI1WnBxZG5lV09LVDRnYXZBb081T09qNDlIZWJPencxOU1EWDl4bDU5a0Z1THRkeStTQlBzeFdRUE9LbklCMEY5alNmVTJLS3lrS3owK2FmUGp6cDFPdy9WZ3A5QllYVjIxYXlZVXd0amUxcVcxdjJIREhSUGJQdURDaTUwaUJjSFZrbkE2WTVhV0h1azhtRnN0b0dBaExDckphRlJTZ0pPa1dBdU14aXdBR3pCYUZ6dGpnalBvSVNqWWdRTGRoTnpvQWl4NUJsd0VZQWR0SkJjQXllY1lpQ2lzWkc4aVArc3htNUFxZzEzRW5yRlYwVVh4L3dxMyswVjJ4Z200NkRMeS9QeThleHhMUXFsV3E3WkZFOFozSGdaeFVFNnlIRGdpeVdqd25WVlNyVlpoQUFVc1VWT0FjQ3FBZHgvQXFCV1Z6aTRLSzlsYlJpa1JzMmtwQ3Z3dHlnWmplWDQ4RzVMUGZJeGhGNXNjT3lOWUFIcGhCZjZhbVpsaFhSQnVmSklzaXBWU1JoSFAwbUxJS0dvY0FSNkZURUhzb3JDQ3ZCR0owcWhVS291TGkxR2hiRkcvNElLdHNMRFBMZDVhbzZld0M0djdmc0FuUVh1cWFLM3hFZVFTYzZObkxpTGhMMWpNbHRBcWhRbHd3NjNJclNpc3lPL09rZHdvS0NDZ0dIN0JoYmhuWUNYMHdLblF1cmFsSGJ0UjFIRElzaTZibk0xdmRNYm1SK2VhMmVJRFhRWkhjQkZqOFhTZGtDMTJ2Rmc0OGFFekJYb3F3ckdMaTZRMmhFTmY4Z1JZUWhjQUp4L0FDUU9JWFpJRUFWRllFcFFLRVVQUjRSZFpUWE15K2pCaUNnUWJ1eGtsc1gvNGdwTHQ2dGdOYW9CdTRCMmVSZWV3WmwwQ1hOY0dwTXBEV1Z0Ykl3REZDWnpJZ0FRekVXbHpUVWJtNkM2Z0ZBcVprM2J5Vk5zQVBBckE1Sk1xVWhSV2pwOEJPQUlxU1o0ckpJSTBMQ0t3STdpZ0dCT29paTRWSEhZMkxTMFR1WnR5WEZqbzRzSk9sOWFFVGM2emVHbk5ZaTJiMllJWjA0VHpMMHhuM2xLMDNRRThDc0JEaUtRMVEwQVUxZ3loQXZpcGFEaG9jS0NqWWtLNDMybWFGSHVER09NUkZGL0NMZzZQRnNrczZFd0hUMUZ6MlZNTnUrWWlEQVhDQ2xDWTJYRlJlYmx4NkpaRldESlFkQUh3emMxTk1Ba0RpRkdTRUFGUldFS2c4Z3lqSXJCeXlkb2s1UXk3Z293RHpJSUZDYnZnTHdRWEZSTnRnSGZZeno0TjRYWERZdWNvNUZ0NEhNRk9pK0MxTWRGTEpGMERmR0JnQUlqQ0FKWUlxOXhURllYbC9oWTBTWUR0eENuTUQycEtDcHpzRUVxaGNDUjJKT0NpOG1KOHJzWTRMYUt3b3h3SFdaZDRGQk1ZRUFwakVBUUxYYU0vbnFMcmk4OTlZYThmV1NpOXk0REhBRmdvV0FxYlRDRXByTEJvZFQweERuMXNmcU1ZTjdrUkV3VGhMQUdGUXhBV240Ym9tckEvVWVBZ1dpZE13ZVU5d3lJVUJYQ1RlemJRWmIvWnN5aVdGUmthaFJGcEEwS0ZITUhRWFF4NlRMWjRpeU1zQnpSc2FTNHJZRUdQV1VJbmdETmpBRURta2lSSFFCU1dIS3V1UnJLUnVQYXFWQ3JzSEZvM045OGVPb0lnd05sUjJBeFlFQlM2N0N0MGQzRUdzOUNGVm5CQlpPaE80QyttczY4TFVQd05iRjNid3p3SXUrR2xkUnhIZWxpWXk2aU5HS2JBU3d3S0xSYW1zMTJLbnFtNEZablMwbHlzbEtlQW1oWFJ1bWV6QnB6cEFnQzZxYVVrUVVBVWxnU2xIR0pnQWJ2NW92VVBraHNiRzFpYytKbEJFODd1RkhkeHRyeTg3SXdORmVNcFNNZVJFWU1IdXJqZ1J3akxIUzJaRkVyRlRyQUpWQWg1UVZ1a3l1TjRpYkhCTFNDakZnSmlYUXhPaTZDMEpIa0JEamhBNUFQWVV0b0tGb1hwWitBSUFseUh3VUhPRk9oU0wxU3JWWjlTMGJGZ1AzWHE0Q0VlZ1VGZ1RQcXJxNnNCTDBhSmowQVlRTjhydlNrQ29yQ21FQ21nSEFqQW02NFFLMGZHeWpJTkJFUmhhYUNvTVFxR2dIRVpiY0h5VWpycEl5QUtTeDlUalZnRUJPQXY2cklpWkZMd0hNcWVuaWlzN08rZzhoY0NKeG9CVWRpSmZ2dVAyZUpkMllXQ0hMUFZhVGtORVJDRk5ZUkZSaUVnQk1xQndBbWxzSEs4T2NwU0NBaUJaZ2lJd3BvaEpMOFFFQUlGUmtBVVZ1QTNSNmtKQVNIUURBRlJXRE9FNUM4T0FzcEVDSVFRRUlXRklKRkJDQWlCOGlBZ0NpdlBlNlZNaFlBUUNDRWdDZ3RCSW9NUUVBSnBJcER0V0ljVXBsOEZ6QlpwalM0RWhFQWFDQVNZNm9EQ0F0WTBKdElZUWtBSUNJRk1FUEQ1cWtaaFBUMDliaDdmNTR4U2hJQVFFQUs1SStDelUwL1BBV3ZWS0t5L3YzOS9mLytmK29zZ0pQZGN5NStBVmlBRWhFQ2FDTUJMU0oybC9vR3ZZQzBidlVaaGc0T0RQMzc4TUo5cmlaWUlBU0VnQklxQWdPTWxVK0FyV091UXdvYUhoekZCYkgvL2ZoSDNXOVdmUWtBSUNJR2NFZkFaQ2FhQ3IyQ3RRd3FEejhiR3huWjNkM0g4ZGZTVmMrS2FYZ2gwRndITlZqUUVqaExTWDNBVVRBVmZ3VnFIRklaMjl1elprWkdScjErLzd1enM3TzN0L2F5L2VMaitweG9oSUFTRVFENElPQmFDbDJBbk9BcW1ncTlnTFpQYVhaaHBXQ2NuSjArZlB2M3QyN2V0cmEzTnpjMC85UklDUWtBSTVJMEFYTFMxdFFVdndVNXdGRXhsbEdYdElZWFJwelk3Zi83OHBVdVhwcWFtcnVvbEJJU0FFQ2dHQWxOVFUvQVM3QVJId1ZTKy9Bc0FBUC8vN1pKR0NRQUFBQVpKUkVGVUF3RFVTaEpzWHFrUUZnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CjwvZGVmcz4KPC9zdmc+" alt="" />
+                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzE3NTdfMTA1OTE4KSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzE3NTdfMTA1OTE4IiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF8xNzU3XzEwNTkxOCIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF8xNzU3XzEwNTkxOCIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUUFFbEVRVlI0QWV5ZEIzaFV4ZGZHLzRRUURBa1FDRWlrU1FuU2xhWTBDVUpBZ1NBc0tGSWZGRVEvaWlCZElJb2dDdVRCb0NLZ1dHZ0tJaUlkRkpKSUVjWHcwR3NvMGt0Q0o0UVdFTDVmZHVEbWNuY1RkamU3YVh2dWM1eWNtVGxUN2p2M3Z2Zk1tUkE5N3NrbENBZ0Nna0NXUmNEamY3cnJ4bzBiNTg2ZE8zNzgrS0ZEaHc3S0pRZ0lBb0pBNWtBQVJvS1hZQ2M0U3NkWVNXb3loVjIrZkRrMk52YjI3ZHMrUGo1RmloUUpDQWg0UWk1QlFCQVFCRElhZ1lDQUFCZ0pYb0tkNENpWUtvbTZIdngzbjhJb2pZK1B6NTgvZjc1OCtieTl2WE9aTDA5UFQvTlBTVElkQWpJaFFjQk5FUEQwdk05QzhCTHNsRDkvZnBnS3ZuckFZUDlMb2pCOHMwdVhMdm42K3ViT25kdno0U3VuWElLQUlDQUlaQndDRHhPU0p4d0ZVOEZYc0paaXNTUUtTMGhJb01MTHkwdWJwNGVIaDZhTElnZ0lBb0pBeGlMZzRaSE1TREFWZkFWckpWTVlmRWFSeDhOWERya0VBVUhBdVFoSWI0NGk4REE1ZWNCWHNGWXloU1VtSmtKc3lrZ05vZW9rRlFRRUFVRWdreUNncUVuUkZId0ZhNm1KSlcwazc5MjdwektrMkpHS0NBS0NnQ0NRMlJEUXM1UEdXa2tVeGtUMWRXUkZCQUZCUUJESXRBam8rZW8raFRGWGZTbFpwNGwwSkFnSUFvS0E4eEF3TUZVeWhUbHZDT2xKRUJBRUJJRjBRa0FvTEoyQWxtRUVBVUhBRlFnSWhia0MxV3pRcDl5Q0lKQTFFQkFLeXhyckpMTVVCQVFCcXdnNFFtRUhEeDVjYTc0dVhyeG90ZE8wRjZiREVHbWZwUFFnQ0FnQ0dZNkFJeFIyNnRTcDM4elhoUXNYMEwremRzRkI2dDZVUVhSMHRNcFMvdDU3NzVHcXJENmxFRkcvZEVzcjh3aS9NWVRlUm5SQlFCQklCUUUzckhLRXdvQ3BYTGx5WVdGaHBOZXZYNGQzTEFVYkpjcEFFWk1xc1V5cG5UUnBrbUpDRkxJdnZQQkNqeDQ5TEMybFJCQVFCQVFCUFFJT1VwaldCU3dHbHlFd1RyOSsvVkNhTjI5T2JaNDhlVWdSK0lnVXI0bzBKY0ZIdzZDeitXSnp5aVkxSlVzcEZ3UUVBVUZBajBCYUtVenJDeCtLclI5Wk9JaTBXTEZpcE1pbVRadElkKzdjQ1UraFdCV01JYjZuelZmQmdnVlZEMVl0cFZBUUVBUUVBVDBDYWFJd3VBYVBTUW1kRXJkQ2g0UGdJeFJxNFRYMm1Pd0t2YjI5Rnk1Y1NDRm1sb0lyaHcyVzJOT3FhdFdxbGphcGxFaVZJQ0FJdUMwQ2FhSXdPQXZQU3drSXdqNUtWeW0xSjArZWhNNFE5cGp3RkVTR1dVckNYaElXdzhiZjN6OGxHeWtYQkFRQlFVQ1BRSm9vREZZaStEVnExQ2hJcW5idDJtUnhwdEFwb1p3c2g0OXNFaUVtNkt4aHc0WTRhSVRHTUxCS1VyU2xJUlFHQStxbm1PMTFNTm03ZCsrYU5XditlSEN0TVY4UGNuK1FVL3FCQXdleVBScHlnNEtBWFFpa2ljSVlDYzhMdG9KMGNMakl3bGJvbFBCYWtvV1AyQnZxWmM2Y09SakFhTlJxUWdsQ0ZudUlqMDdRM1VjNHRDVlFPSHIwNkFrVEppeGZ2andpSW1MMTZ0V3JWcTJLaUloQVFkRG56WnZYdjMvL1gzLzkxWFpZYnQyNkJUUFNIQUhTeE1URW1KZ1l0VXkyZCtKQ1MrbGFFSEFHQW1tbE1PTDBzQldPRlZ0RmRTaUpNMFVKNVdwNkZPb0ZTMVd1VDJFdXdtU3dHTUxMVEZoZlg1dnRkWHpTVnExYTllM2J0MlhMbHQyN2QvL3d3dy9IalJzM2Z2eDRsYUlnSTBlT3hFYjdHMG1wWXdJbjd0aXhnK0FqRWhVVkZSRVJBZmN0V3JTSVQ4dkdqUnRUYnl1MWdrRFdRc0JCQ3VNbDRjTU9WU202Z1lCNFcxUUtCMEZKT0ZNS0NCUzlzSzlVNWZwVWJVSnBqbURRdG0xYm5EdENZM3FiN0szRFlvMGFOZUxlOGNMV3IxOFB2SWI3TFZ5NGNJVUtGUXgvWnNSZ28yVjM3ZHExYk5reWZLNTY5ZXF4TjBjNElaa3hZOGJObXpjREF3TTFNMUdjZ2dEZTd1N2R1OVZIWXZ2MjdZQU04dnYzNzNkSzU5TEpJeEZ3a01MZ0Y3YUg3RW9JYi9YcjF3OGlnM1FPSFRwRWlrNEo1VmJIenBNbkQ0eEdxcStGOHZEVUNKd2h0Q1dMRTRkSHByZko5anFJQlFVRkZTOWVmUEhpeFFTL0RDeVdPM2Z1NnRXcncvV1B4SUZYQ0ZlTDNrSkRReHMzYmd5WVBqNCtJU0VoVFpvMGFkT21EWjA4c2djeHNCRUJQdUhidG0yYk8zZnUwcVZMWVRGa3hZb1ZaTVBEd3pkczJHQmpKMW5OTE5QTjF4RUtnNlJnSElUM2pSdkNkOEJ2SXFzRW5mZUhjcXVDTVdha2xyVzBRbFM1WVFoVm1PMVRicCs5Skx5emJ0MDZOb0RYcmwzVDMzTGx5cFdwMHBkWTFkbEMwdkNaWjU3eDh2TFNHOVN0VzdkU3BVcjZFdEhUaU1DZVBYdFdybHhKWUxkT25UcERoZ3daUEhqdzg4OC9UK1F4UGo2K1dyVnFhZXhjbXR1SWdDTVV4cHVHSjRYd2hiZHhHSHZOMG1FSWU2ZVVQdlorZm42RUMvR1kvdnJycjhqSVNNakkzbkdoc0h6NTh0V29VY1BRc0g3OStsV3FWREVVU3RaaEJQQjJjY0Z5NWNwRkVKTlBDeHNMWGdlTzNZT0RnNXMyYlZxelprMkhlNWFHZGlIZ0NJWFpOWUFZMjRzQSt6N29obE9SdzRjUG56dDN6dDdteE10NGx4QjdHNHE5WFFpd2JUeDc5aXhiZS9iNCtvYlBtaTk5aWVndVJVQW96Qlo0MDl2bXNjY2VLMTI2TkRGNFgxOWZlOGZtMUpJQWMySmlvdFlRZjRIZ0dxK2NWcUlwZi96eGh3U2VOVFRzVW9qODhyVjQ3cm5uREszWVFyS0xOeFJLMW5VSUNJVzVEbHNIZTc1ejU4N3AwNmNURWhMWTl4VXFWTWplWGdqWVg3MTZsWEN5WWpIRlgyeDVQRHlzckhYZXZIa05Ub1M5dzdtelBWOGFXN3hkMWdMODNSa29sOTY3bGNmYXBlTko1NDlFNE5LbFN4ejErdnY3QndRRVBOTFkwZ0RmclVHREJ0SFIwV1BIamgwM2JseFlXQmpIdThSb25ucnFLWU14Z2VmSXlFakQwYWZCSnAyemYvLzlOM05HeHV0K0xZNHNRb2tta3lkUFR1ZUpXUjBPYjVjdmhGWkZkdTNhdFJ3SGF5Vks4ZlB6NDFPaGRFbWRqb0JRbU5NaFRWT0hGeTllUEhIaXhCUG15N0dPY0EySUpZZUVoSkRpeHhIWGI5V3FGYnptNmVscDZCQ0tKUFovOU9oUlEza0daZ3NYTHN6dDQ3WTgrZVNUekpsRFdJUzdVSUxPSWRMQmd3ZS8rdW9yV3licFVoc096WFBtek1sblFMR1k0cS9ObXpjYjJJb3QvSUlGQzFoV2wwN0duVHNYQ3N0RXE4OWhQUDRYOGEvaXhZdGIzZCt4UStRSS81RXpoc1Y0d1Y1K2NGV3NXTkh3Q3hhcWgxS2xTaFV0V3BTQWpzcG1oaFNHR2pSb1VGQlFFTHZnZXZYcVBiaURwSjh0Vzdia1IrdldyVHQyN0pnWjVseTJiRmxPSG1OaVlrSkRRNGNQSDA2NlpjdVdSbzBhVmFoUVFZOGtTeGtiRy92dnYvL3FDMFYzSWdKQ1lVNEVNMDFkM2JoeGcyZWRpQlVPaUtYSFJOZnMrSTRmUHg0WEY0ZnVGRm14WWtXeFlzWEtseS92bE42YzFRblUwSzVkTzZENDRJTVBMRzhXWkRMSmI3ZnhqY0VyYk51MmJZc1dMZUN5NXMyYnYvTEtLM2lMekZBUEJhNHVJSFBHb2k4VTNZa0lDSVU1RVV6SHU4THBVQ0Y4UENQZURjdU80QzlDV2tTRkRXK0lwYVh0Slp4RkxsKysvUHo1ODdZM1NSL0xNbVhLdEcvZkhsOXl4SWdSbGl6R0VjZjA2ZFBUWnlhcGo0SnZHeGdZR0J3YzNMaHg0K0RnWUQ0R2xtc1hGUldGV2ExYXRWTHZTbXFURWJCVEV3cXpFekFYbUhNRWVlVElrUmt6Wm93Wk00WnRWTStlUGY5UGQ2bHNuejU5Um80Y3VXL2ZQcmFaenBwQzE2NWRDWlBERjg3cTBJbjlRT1g5Ky9ldlZxM2EwS0ZERFN3R0kxaitLb01UaDNadVY0VDJGaTVjU09yY2JxVTNEUUdoTUEyS0RGUE9uajA3Zi81OEtHeng0c1hmZlBQTnRHblRTRFZSMlprelowWkVSRUIyUGo0K3pwb281RlduVGgyY0dtZDE2TngraUNKMTZ0UUp0aG80Y09DWk0yZWMyM202OWNidWtzTUhRcFBwTnFLN0RTUVVsdkVyWHFCQWdTNWR1dnoyMjIrY0Q2WWt1M2J0b3FwdjM3NU85TUpjZmVlREJ3OG05TjZoUXdkU1RXei9KMVBFN1AzOS9UdDA2RkM5ZXZWang0NjVlcll1NnA4REV3NkZPV2wxVWYvU3JWQ1ljNTRCUEtrMjVzdGtNcGwvMnBId2VnOGNPUEREQnhjYlJxWHFGV0xiRkVKaHI3NzZxdFd1VFNhYnhqV1prc3hNcHFUVWFqOFVta3pHV3BNcHFjUmtTa3F0R2xESVdhb0J5bDY5ZWpIblVhTkdrV3BDaE10Z2xucVdRSGlKRWlVSW5LZHVacldXN1JzVFMwVk1waFR2eUdTeVhtVXkzUzgzZEdzeVdTazNtYXdVcW9ZbTAvMHFrK20rb3NvdFU1TXB5Y0JrU2txcE5abnVLK2dHT1hYcWxGVWNzbmVoVUpoejF0ZlB6KzlUOHhVZUhzN1A4UEQ3YVhoNGtrS0pKdUhoanlnSkQwOHlDRGRmcWhXcVVxeW1xbmJpeElsV2F5bFVCbFpUQ3ZXQ01VSUpLV0pRdENHMGNtdzBlZnp4eHcxUVVrVThDeGt3WUFBcE1tREFBQTVlRFdhcFpQa3diTnEwcVZtelpvWmZ0a3FsaWI2S0tURUhKY3daMFhTOVFya1NWYWhTU3ZTS1BxdDBsV28yK2l5RlpKV2dhMEtKUWFjRVZFa3R5L1VsR0NDcVJGTlVWcCs2cDY4bkZLWi81aDNYaVRHWDFWMkVtY2lSSWloNnNTelIxMnE2aldiWUswdVZrclVVVmFWU2ZTMGxCdEhYb2xOTHFva2hxNVVyQlFRTThPRTVFc2hEdnY3NjYyL05GMHFlQi8rRFVZT3haZmJ1M2J2UjBkRVZLMWJNbnorL1phMHRKWndQcXJtUk1ua0VCZEVVZEVSbFZVcldxdWhybGE1U1phelh0UktyaGFwV1M3RlJvaTlCcDVCVUUwTldLemNvbGt0Z0MwcFozVVlvTEt1dllPYWRQMkdnSng5Y2JBWVJjaDdXL3FtbTVUM0FYeXRYcnF4VnF4Wk5MR3N6VFlsTUpPTVJFQXJMeURWSVRFeU1qSXpFVzNGZ0VrdVhMdjNpaXk5c2o0NDdNRVFHTnRtNGNXTmdZR0NSSWtXc1V0NS8vLzBYRXhQam91bmR2SGx6K2ZMbDQ4ZVBkNkQvbjM3NmlhUGs3TG9vRGdDU0RrMkV3bHdDOHRHalI1OHlYMisrK1daS0F4QVZXcjE2OWZ6NTgzdjM3bTJ3V2JkdW5ibDFja0xFeEdBVEZCVGs2ZWs1YWRLa2xQNzlIZVZoWVdHcUM5NnIrUGo0eVpNbkwxdTJ6TkJQSnN6dTM3K2Y0OGh5NWNwWjVTOGN0TU9IRHg4NmRNamVtZS9idDAraFFWUXVwYmF3ejVJbFMvaXV2UEhHR3dZYmpveFZjeTFsajJ5d2VlbWxsNjVldmNxbStmTGx5NFlxbGIxdzRRTG5HNnFIMmJObkp5UWtzRVlNcDJvbGRRQUJvVEFIUUh0MGs0Q0FnTTgrKzR5WGNNcVVLU2xaNzltelo5R2lSUjk5OU5FVFR6eGhzS2xXcmRxZ1FZTmF0MjY5M1h4OThza252QmdHR3lKRVhicDBJYzROQ1JxcVltTmp4NHdaVTZWS0ZTaGc3ZHExVVZGUlI0NGNxVkNod3JCaHcyN2R1bVV3em16WjA2ZFBRMDkxNnRUSm1UT241ZHlVL3pWejVrd2NOTXZhMUV2WWs0NGRPNWJOYVNvZTF0YXRXLy84ODg4UkkwWUVXUHlaa05xMWEvZnAwNmR6NTg3bU5ka2VHaHA2L2ZwMXc0Z0ZDeGJzMXEzYjdkdTM4WkVOVldmT25BRi9qbFlMRlNxMGZ2MzZpSWdJK29ITE9LdTljK2VPd1ZpeXRpUGdBSVhaM3JuN1d2SWVmdjc1NTNnOUtmME9BVTgvUi82NFVWWmZ4YzJiTisvWXNZUHpPMTRuVHFEb0JESXlvSW1mQW9zaGpNVzNYVitMcXdXMTdkMjdkK0RBZ1FTa0NFSjkvUEhINzc3N0x0NUIyN1p0OVphWlRiOXk1Y3FFQ1JQYXRHbkRDVzgrYTFlQkFnVnExcXk1WU1FQ2J0emV5ZU83elprelo5eTRjZUJwdFMwdUdJdkNJWURWbzcwTkd6WWNPM2FzWjgrZXVHT2NTMkJtdFJOWWpJbERXQVpIYk42OGVhVkxsejV3NEVDdlhyMVk5SklsUzNLbk9PbDhnVjU4OFVXclhVbWhMUWdJaGRtQ2t0MDI5KzdkNHhIbmtVMnBKUzRZY1JQMkZEQ1JwUTE3SlY0RDJBZUZUL3JMTDcvOC92dnZXNXBSUWhXV3ZCN29TdGcvNG9WUkNBdG9qZ3lLRWtzcVZLMHlTVHAxNmxTb24xdkc2MHhKaUZVeFc1aUMxQzRCVE01RDhjVlNhc1dYZ3ozZDRNR0RyUzRLYTRvREJmdlFEODVnaHc0ZCtNWlk3YXBkdTNaTUVoZGJxejEvL254Y1hCejh5N3F3RVBTUG9MQWNLdFVzUmJFWEFhRXdleEY3dEQyYk5UNzR1WExsU3NXVUp4Zy93bklMTEJpQTVBQUFDTlZKUkVGVVNSTTRpSjBVYnpKbjVDMWJ0bFQ5WUUrVnBjQlRqei84QzFsNEtEU3g5TFo0TTE5NzdUWExIakpWeWZEaHcyR0tSd3JCTXRqRXJwa1RlY1NId3UxTnBSWGpncWZWUlRsMzdoeHJ5dlljYkR0MTZnVHZwTklQOUFyVDZRMSsrT0VIdWlWU3BpOUVIejE2ZEVoSUNJcUl3d2dJaFRrTVhZb05UNTA2eGNhTlhXU0tGcWxXYk51MmpTZ0pPeHJpS2J6U2p6eXY1TVV6OU1jK2lGZlJVT2ptV1FpSU00MVVvbURnazlKM2dxcC8vdm5udVBuQzRTVTB5UTZkUXR1Rk5ZTFUrR2paM2tRc2JVUkFLTXhHb093d1k2UEJocVZZc1dLMFFTZkNnbUtqOEt6VGhHY2RHdUtENytQamcwK0hCNUZLYzhPTFI1Wk9EUGIwa0tqN0g0Sm90WXhGVkk3RFNtbzFuUkV0ZTlDYVpGR0ZyWit2cnkrdUVQTkh0N29vcWR3MTRQajcrN01veEFjUTlva0lYZGt1aHM3SnBySW9USTlGSWN6UHVKeGFvck1vaHJHdzRVWU1oVzZZRlFwejhxTHpYTWJFeEdqYkhNSzNYYnQydFRvR0R6RVBxS0hxMHFWTGZPeUptRkFlSEJ6ODl0dHZUNTgrL2F1VS84NHluUmllWTI5dmI1NTROajVVMFFsREVCcjc5Tk5QZi8vOWQ3SUdPWGp3NE5DaFErdlhyNzl4NDBaMlp3UjNPQXBrUkRhekJzc016M0prZ1hCVERzeU50NTA3WlgrbjdvS2prcjU5K3lyZGtBSVhZaWdra25YeTVFa1lrSEsyOW13a3AwMmJObXZXTExKV2hSNFF2aVZhTFo4aVZwWitWQW0xTEFxSDBldldyVk1sK3BUbmg3TVhGZ1YvbkRNWmprRlpGQTRpT092UW0zRytLWDhNRmtDRXdnREJhUUtiN042OW00aEovLzc5Q2Q4aXZIVldleWNvdzlzSXdlbHIrZEt1V2JNbUtpcktaREx4aUNPclZxMGlMdmJXVzIvcHpmUTZOckNWZXJ0VU9RRitJalUvL3ZqamtTTkhxR1VEOWQxMzMzR3cwTFJwVTJXZ1Qza3hLbFdxeEtBTkdqU1lNV05HczJiTmVLbTJiOS9PWGVqTllBMjZ3bE5EVVNrT2d0N0ExVG9mQmdKSk5XclVBSTE2OWVyWk5Sd1QzcnAxS3djRlBYcjBZRVc0a1pRV2haTktUaElNdk1EUUsxZXVCQlBPRFdtTExGbXlCQnc2ZCs2YzBqUTRqbVFJdmlXYUFRRituS21mZi81Wlc1UXBVNlp3dEFyc21vMm1zRjd3Rnd1QndkU3BVenQyN0toK013WVcxbXlZUUdob2FLbFNwYlFTdDFXRXdweTU5THdoUTRZTVlSYzVhTkNnOXUzYmMyaVYwbk5Xdm54NWVHcml4SW13bmphRG5UdDNFa0U3ZmZyME8rKzhRMXVFOEUyWk1tWHk1czJyMmVnVlNIRDE2dFc4WTNTbGxiTUpmZjMxMTluc2RPL2VuUjU0YjB1VUtORzZkV3Y5RzZVWkU2Q1pPM2N1Uk1iTUtXUWc5a3JNSDEwdlgzNzU1ZE5QUHgwWkdRbVp3bmYwaktlZ04zQzF6dVFabloxMWt5Wk45TjZOTGVQaVFJMGNPUktjQ1dDcFJTR1lwYmI1aHViY1kxQlFFRDR2WHBKV3RXblRKdHhTNktOMzc5N2dpZkI1Z0R2MG53M05HSVcyQkRHWmNQUG16Y2txd1FIRW9ZWk11M1hyQmlXeEtGV3JWdVdEQVdrcUEzM0tiaGNXSStnR0QzS3poRFU1c2FGRHZVMVlXQmpmSGdoZFgraWV1bENZTTllOWFOR2lmREI1eVVrUnBZU0hoMXVPd1JOWnNtUkppSWFua0lkZUdUejc3TE9xQ1cwMVlSK2hhZzBwL01YWC92TGx5MlhMbG9XMjlMVTg5THh2V2c4d0d0eWtOOUIwT21lRGVmVG8wVjI3ZHZHMklLcUt3MzZscUJRaXh1bmdUSFBmdm4xc3dmQU5WWG02cFRoOVc3WnNZYy9MZlZXdVhObXVjZmtHS0ZSVnFtREJVN2JzQk82R203aDNIREZ0VVJvMmJLaWE2Rk9ZeUxJNUpiVGlDNFREaGR1cm9nRVVLbUZSMktmVGlab0daSm9TQ2ZJVlpGSHcrM0RTV1dYVm5GUmJIWFRtMzdoeFl4UVJvYkFNZXdhVUkwWlVoU0NVQTVOZ1I3Tmd3UUpJa09pTUE4MjFKcEFwbmFnc3JncGt3V3ZEcTZoS1ZBckJzWW5qRFVTZ01KdytyWWt5Y0hYS0ZwdDNIZytSdWVHaXVtNDRuQ09vNGZ2dnYrZlQ0c0FvOEJlN1JTS2g3RG9kYUs0MWdVdzFoTldpc0NMY3UyWkFPQTlPOVBMeTBrcmNWc21VRk9ZZXE4RW1naTg4VVJLMlNBN2M4WjQ5ZTNpSU9Tc2dkYUE1VFhqZmlIbXhVVUxIVFdOdnhVbkNoZzBiQ0tVWkhBUUNTWVNpY1M0b0oxb0VoY0VtdEVvM3dUTnEwNllONFRCOGsxOSsrY1YxNDhJZG5LSXdFS0VvQjBhQldZb1hMODVtRXp3ZGFFNlRFeWRPc0NqUjBkSHNtcGtNcmpwa3lxS0FQRmtNbEJDQ0lGSUdWNnFzTzZkQ1lSbTUrZ1QxNjlhdGkxL2p3Q1NJQ3NGZitzZmEzazdZMFV5WU1JSFFEOEhqS2xXcTRPWnc1a1ZRbjU3eEVQVzk0WnUwYU5HQ2pReGJYWHdCd3R1Y3Ira05YSzNqS243NzdiZmNMQkVpQXVFdUhRNzNwMUdqUmtUOUhCZ2xKQ1FFR0ptdEEyMVZFemJwTEFxK09YNGNxMEFRZ0hBQmkwSTBrMDJ1c2lIRktlWVFtVEFDdXB1TFVKajdQZ0NFdDJiTm1qVjc5bXdPTWZFYUNPMXpDa0VKY1dpKytYcGMrdlhyeCt2RU1XdGdZS0N5SWRhak54RGRXUWdRNldjSkVJTDlVRGFoL1dIRGhwSEZOeVNyalVLOGpJWFRrNXBXNVc2S1VKaTdyYmpyN2xkNkZnUXlBQUdoc0F3QVhZWVVCQVFCWnlFZ0ZPWXNKS1VmUVVBUXlBQUVoTUl5QUhRWlVoRElQQWhrOVprSWhXWDFGWlQ1Q3dKdWpZQlFtRnN2djl5OElKRFZFUkFLeStvcktQTVhCTndhQVRlbE1MZGVjN2w1UVNBYklTQVVsbzBXVTI1RkVIQS9CSVRDM0cvTjVZNEZnV3lFZ0ZCWU5sck1iSDhyY29PQ2dBVUNRbUVXa0VpQklDQUlaQjBFaE1LeXpsckpUQVVCUWNBQ0FhRXdDMGlrUUJBUUJKeUpnR3Y3U3Fhd2UvZnV1WFlvNlYwUUVBUUVnVFFqWUdDcSt4Um1LRTN6S05LQklDQUlDQUt1UWtEUFYwa1VsaU5IRG0wb2ZaMVdLSW9nSUFnSUFobU9nSjZkY3VTNHoxcEpGT2JsNVpXWW1IalhmR0dFWlBoY3MvNEU1QTRFQVVIQW1RakFTNGlacGU3Q1Y3Q1c2ajJKd3J5OXZXL2R1cVhxdEJSckVVRkFFQkFFTWdNQ0dpOHBCYjZDdFpJcHpOZlhseUtJN2I4SEYzWVBWUGtwQ0FnQ2drQUdJNkJuSkpnS3ZvSzFraWtNUGl0UW9FQkNRZ0lWZHg2K01uamlNcndna0w0SXlHaVpEWUdIQ2VrT0hBVlR3VmV3VmpLRm9mbjUrZVhMbCsvS2xTdng4ZkUzYnR5NGJiNW9iUDRwaVNBZ0NBZ0NHWU9BeGtMd0V1d0VSOEZVOEJXc3BTUXBGcVkwU2dNQ0FuTGx5blh0MnJXNHVMalkyTmd6Y2drQ2dvQWdrTkVJd0VWeGNYSHdFdXdFUjhGVWlySlVta3hoNVBITkNoY3VYTEpreWNEQXdISnlDUUtDZ0NDUU9SQUlEQXlFbDJBbk9BcW0wc3YvQXdBQS8vOW9SczlLQUFBQUJrbEVRVlFEQUx1THI0cTFnNXlNQUFBQUFFbEZUa1N1UW1DQyIvPgo8L2RlZnM+Cjwvc3ZnPg==" alt="" />
                                                     </figure>
                                                     이 공식에서 Ci는 성분 i의 농도(중량 백분율)를, L(E)C50i 는 성분 i의 LC50 또는 EC50(mg/L)을, 그리고 L(E)C50m은 혼합물 중에서 시험 데이터가 있는 부분의 L(E)C50 을 의미 한다.
                                                 </li>
                                                 <li>만성수생생태독성에 근거한 가산식:
                                                     <figure class="formula-box">
-                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzUzODVfMTAyMzE2KSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzUzODVfMTAyMzE2IiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF81Mzg1XzEwMjMxNiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF81Mzg1XzEwMjMxNiIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUFEwbEVRVlI0QWV5ZHNVOFUyeGZIaFI5Q1FBS0NNZkNMeGtLeHRZSEVVZ3NwYkUza0x6QnVaNnVsSmZRMmtGK3BEU1MycjhEaTEycXdzUlVzak9aQmpJc1NsSWp2UGQ5bjkrRGxNck16TzdzN3N6TUQzODE1MTNQUE9YUHZ1ZC9sZnZmY3UvanMvYVdYRUJBQ1FxQzBDUFNlOGw1N2UzdWZQbjE2Ly83OSt2cjZXNzJFZ0JBUUFzVkFBRWFDbDJBbk9NcGpySnA2U0dGZnZuelozTno4K2ZQbm1UTm5KaVltSmljbi82dVhFQkFDUWlCdkJDWW5KMkVrZUFsMmdxTmdxaHAxL2Y3dmdNS3c3dXpzakk2T2pveU1EQTRPbnE2Lyt2cjY2bitxS1J3Q1NrZ0luQkFFK3ZvT1dBaGVncDFHUjBkaEt2anFONE9kcWxFWXRkbjI5dmJ3OFBEQXdFRGYwZGQvOUJJQ1FrQUk1SWZBVVVMcWc2TmdLdmdLMWpJV3ExSFk3dTR1anY3K2ZwZG5iMit2MDZVSUFTRWdCUEpGb0xmM2tKRmdLdmdLMWpxa01QZ01VKy9SVjQ5ZVFrQUlwSXVBUm1zWGdhUGsxQXRmd1ZxSEZMYS92dyt4V1pCTllUNjFRa0FJQ0lHQ0lHRFVaRFFGWDhGYWxsanRJUG5yMXkvcjBCSkhLeEVDUWtBSUZBMEJuNTBjYTlVb2pFUjlIMTJKRUJBQ1FxQ3dDUGg4ZFVCaDVPcGI2YVltR2tnSUNBRWhrQjRDQWFZNnBMRDBwdEJJUWtBSUNJRXVJU0FLNnhMUW1rWUlDSUVzRUJDRlpZSHFNUmhUU3hBQzVVQkFGRmFPOTBsWkNnRWgwQkNCZGlqczdkdTMvNisvcXRWcXcwRTdOM1poaXM2VDFBaENRQWpramtBN0ZQYng0OGMvNnEvUG56K2ovNi9SQ3c2eXRWbkF5NWN2cll2OTRjT0h0TmIxMjcyOVBXZm5xZm9NZnpDRkh5TmRDQWlCR0FST29Lc2RDZ09tcTFldkxpd3MwSDcvL2gzZUNRc3hKaFlBUFZrM3BvWG1JRU1MdUhuejVyMTc5MHhYS3dTRWdCQ0lRcUJOQ25QRHdXSndHUUxqUEhqd0FPWDI3ZHQ0aDRhR2FCRWpMNm9xOUJpQnZDaTdZZ0xrRWdKQ1FBaUVFZWlVd3R5SWpvUHNndXpDaFF2bWV2WHFGY3FiTjI4b3NsQmlaSHg4UE1Zcmx4QVFBa0lnakVCSEZBWmIxYS8xYXcxRGMyK0ZCaE5SaUtIZ2hkYzRZM0lxSEJ3Y2ZQNzhPVWJDR2dwRjNQWHIxeHU2bWhvVklBU0V3SWxGb0NNS2c3TTQvWm1BSUp4bHVyVjRQM3o0QUowaG5ERTVja0praEVtNmo4RDI5bmJEU2VmbTVucDZldmpVV1ZwYUNnVEV1QUtSNm9JQUNEOTY5R2htWmdZOGtkbloyWGZ2M21HL2N1VUs4S0pJTWtLZ0l3cURsYmo4ZXZ6NE1TUkZEVVdYZ2dzZEMzYTZmUG5JaVpKQ0REcTdjZU1HN3lWWFl3U2NPM2N1by9WbzJEQUNMMTY4WUVlRjdleTMxNjlmYjJ4czhObkRmdk5aTE1ZVkhrY1d5QXVxR2hzYlcxNWUvbFYvM2IxN0Z3ejVHT0JUL05hdFc0SW9Pd1E2b2pEUzRxY2Z0cUxzNHEyaUMxdWhZNEdxNkZKMmNaYjA1ZG16WndUQWFIZ2xXU01BUS9HeEFUZWhCT1phV1ZuQk9EOC9mL255WlZ3b1dGQVFsQ2dYM3RUa1dBd0U5VU5lZkVpd0VmakFOakJaMmYzNzkrbUM1Tk9uVCtFMUxKS01FT2lVd3Jpbmg2MG9yRGdxY3A5RlN5R0dCYnRsak5FWElzMnV0Z3NJVEU5UHM3VWFiaUYyRnduNEJRTEJNQmZHR0JkZWlVT0F3eU9sRnNYWDJ0cWFNenJGc0tVY2N4WXBXU0RRSm9XNTMvYTZkdTBhYVhGUGI3ZjF0SHp6U1BIRktSSTdndUlMNTBxTVRZV04xL1QzTUpvT29vQVlCQ2dmOExMOWFFM1FxU2JRWTF4NEpRNEJPNTZ2cnE0Nmk2L3drU0QrOGdISlNHK1R3dUFYam9jY0hqbW5VSGxCWkpETyt2bzZMVG9XN0Ewekhob2FndEZvdzE3S04wNmdacWVJNDd4cHV0b3NFTENDcStISU1hNkc4U2ZUU0swS1VKd1dvZjZHQ0R4NThvUVk5eVBkTUthRXhzS2wzQTZGUVZKMk5yeDQ4U0lMb3JDNmMrZU9XV2pSby9qTGdvbmhFZlFZQ1V3UkV5bVhFTWdGQWE3d21aYzdMOXF3Y01hY21KamdnR2xoNFFCWjBrS2dIUXFEb2Fpa0VBNk1hZVVSR0tjTFV3Um1WRmNJSkVlQXN6YkNVVEdxQk9NckZFNlJ4TkFtSDFhUmJTRFFEb1cxTVkwZUVRSnBJVUNCMDlQdXkyNnZPcy9FTGcxajZJa0U0UzhPa2pFeG5hZWhFVUJBRkFZSVRlVVlCcml2LzhOcmkzR0ZnN3R2b2ZEaEJzcm1SZC9ZMktqL0psYmpCaS9YN2U2NEI2M1lneDIyMEdqOENJdUxpK1FHMDRuQzRvSHEzQ3NLNnh6RFVvN0FJWWk4L2EzSTlyYmZBNGh4OFVnUlpINSszaVU1TnpjWGt4SjB6S0lnRkxnTVRtR05NY0hKWFRaN1ZIeWxVaUZEU2pDalRvZ3NLbEwyemhFUWhYV09ZU2xIc09yQTMxMTh2Mlk3TThaVm5LVXVMeTlEU2VSRDJrbXV6T0V5aUl4NG43WHB0aWZRSWdOeTRSVitIUDRpTVRERWF4U1d5b3poaVdReEJFUmhoc1B4Yk5uZVhNb2dMSThXd1lLT3NNY2dMUGFiRlNZb3R0L2lYWGdMSWpDSVVSTDVMQ3dzdUhYUmRSSlFXREpQMlhvRHJqYTZuRS9ocHBtWkdUYzFaUmQzYmN4Q0NjYUEySm1PM0xEUWxXU0VnQ2dzSTJBTE1Td2tGYmdpd3VJeTR5dC9xb2tyVjJwL0QzbDZldHBSR0FFeExyd0ZFYWdCc1dUZ0RsUGlXOVlMNzhUSEpQUkNUeHhPd1kycCtXd0FSc2dSWG1NS0d3RTgrV0xkWldoR3Rha2pJQXBMSGRJeURjaHhESTZyVnF2c3QwRGVNYTVBWkk1ZGtvUktTQUJpaXI4VUl3YUJjU2lPVUZJUkRveFVncUFIaHRDWis1TEJCamVYcFdjV3RWa2dJQXJMQWxXTjJUMEVLSHhzTXM1eFhEK1pIdFZTRTdrcUtTcEc5cHdSYUhGNlVWaUxnQ204WUFoUTV0amRFM2x4cjg5cERpVktxSnNveEtLOHNwY1JBVkZZR2Q4MTVYd0VBVTV3VmxzbFBFNGVlVmlka2lNZ0NpdjVHMWptOUxrRmp4ZnV5Qk91aitNa0ZSYkJYSFZSaTZGSVRnZ0NvckJpdk5Fbk1ndHV3ZU9GTy9Ma3dIQzFiOEgrTDd1WlJlMHhSa0FVVnF3M043NHFPVGJlTEVEbkxNazlGN0xXNkg5QUdEVmpZU0dOU2xqMkFBS2lzQUFnT1hmanE1Smo0eldVbTlKSDhvTWtBMVlxRmU3eVcrSXZuaW9zcE9RbVNZS0FLQ3dKU29ySkJJR205Skg4SUFsL3JheXNOT1V2N3Z1NUxFdHZNUm9wZndSRVlmbS9COHFnUXdRV0ZoYU12eTdYL3ltVG1ORUkwMDFaREQ1bGRJbkN5dml1blZwYVdtTGZsakwxdEpPR2xmZ0trcnY4cHZ6RnpKdzB1U3hEYVZVRWVLdUlkUzFlRk5ZMXFOT2NpRTBiTmR6Y1hPMWZ0NDI1WnBxZG5lV09LVDRnYXZBb081T09qNDlIZWJPencxOU1EWDl4bDU5a0Z1THRkeStTQlBzeFdRUE9LbklCMEY5alNmVTJLS3lrS3owK2FmUGp6cDFPdy9WZ3A5QllYVjIxYXlZVXd0amUxcVcxdjJIREhSUGJQdURDaTUwaUJjSFZrbkE2WTVhV0h1azhtRnN0b0dBaExDckphRlJTZ0pPa1dBdU14aXdBR3pCYUZ6dGpnalBvSVNqWWdRTGRoTnpvQWl4NUJsd0VZQWR0SkJjQXllY1lpQ2lzWkc4aVArc3htNUFxZzEzRW5yRlYwVVh4L3dxMyswVjJ4Z200NkRMeS9QeThleHhMUXFsV3E3WkZFOFozSGdaeFVFNnlIRGdpeVdqd25WVlNyVlpoQUFVc1VWT0FjQ3FBZHgvQXFCV1Z6aTRLSzlsYlJpa1JzMmtwQ3Z3dHlnWmplWDQ4RzVMUGZJeGhGNXNjT3lOWUFIcGhCZjZhbVpsaFhSQnVmSklzaXBWU1JoSFAwbUxJS0dvY0FSNkZURUhzb3JDQ3ZCR0owcWhVS291TGkxR2hiRkcvNElLdHNMRFBMZDVhbzZld0M0djdmc0FuUVh1cWFLM3hFZVFTYzZObkxpTGhMMWpNbHRBcWhRbHd3NjNJclNpc3lPL09rZHdvS0NDZ0dIN0JoYmhuWUNYMHdLblF1cmFsSGJ0UjFIRElzaTZibk0xdmRNYm1SK2VhMmVJRFhRWkhjQkZqOFhTZGtDMTJ2Rmc0OGFFekJYb3F3ckdMaTZRMmhFTmY4Z1JZUWhjQUp4L0FDUU9JWFpJRUFWRllFcFFLRVVQUjRSZFpUWE15K2pCaUNnUWJ1eGtsc1gvNGdwTHQ2dGdOYW9CdTRCMmVSZWV3WmwwQ1hOY0dwTXBEV1Z0Ykl3REZDWnpJZ0FRekVXbHpUVWJtNkM2Z0ZBcVprM2J5Vk5zQVBBckE1Sk1xVWhSV2pwOEJPQUlxU1o0ckpJSTBMQ0t3STdpZ0dCT29paTRWSEhZMkxTMFR1WnR5WEZqbzRzSk9sOWFFVGM2emVHbk5ZaTJiMllJWjA0VHpMMHhuM2xLMDNRRThDc0JEaUtRMVEwQVUxZ3loQXZpcGFEaG9jS0NqWWtLNDMybWFGSHVER09NUkZGL0NMZzZQRnNrczZFd0hUMUZ6MlZNTnUrWWlEQVhDQ2xDWTJYRlJlYmx4NkpaRldESlFkQUh3emMxTk1Ba0RpRkdTRUFGUldFS2c4Z3lqSXJCeXlkb2s1UXk3Z293RHpJSUZDYnZnTHdRWEZSTnRnSGZZeno0TjRYWERZdWNvNUZ0NEhNRk9pK0MxTWRGTEpGMERmR0JnQUlqQ0FKWUlxOXhURllYbC9oWTBTWUR0eENuTUQycEtDcHpzRUVxaGNDUjJKT0NpOG1KOHJzWTRMYUt3b3h3SFdaZDRGQk1ZRUFwakVBUUxYYU0vbnFMcmk4OTlZYThmV1NpOXk0REhBRmdvV0FxYlRDRXByTEJvZFQweERuMXNmcU1ZTjdrUkV3VGhMQUdGUXhBV240Ym9tckEvVWVBZ1dpZE13ZVU5d3lJVUJYQ1RlemJRWmIvWnN5aVdGUmthaFJGcEEwS0ZITUhRWFF4NlRMWjRpeU1zQnpSc2FTNHJZRUdQV1VJbmdETmpBRURta2lSSFFCU1dIS3V1UnJLUnVQYXFWQ3JzSEZvM045OGVPb0lnd05sUjJBeFlFQlM2N0N0MGQzRUdzOUNGVm5CQlpPaE80QyttczY4TFVQd05iRjNid3p3SXUrR2xkUnhIZWxpWXk2aU5HS2JBU3d3S0xSYW1zMTJLbnFtNEZablMwbHlzbEtlQW1oWFJ1bWV6QnB6cEFnQzZxYVVrUVVBVWxnU2xIR0pnQWJ2NW92VVBraHNiRzFpYytKbEJFODd1RkhkeHRyeTg3SXdORmVNcFNNZVJFWU1IdXJqZ1J3akxIUzJaRkVyRlRyQUpWQWg1UVZ1a3l1TjRpYkhCTFNDakZnSmlYUXhPaTZDMEpIa0JEamhBNUFQWVV0b0tGb1hwWitBSUFseUh3VUhPRk9oU0wxU3JWWjlTMGJGZ1AzWHE0Q0VlZ1VGZ1RQcXJxNnNCTDBhSmowQVlRTjhydlNrQ29yQ21FQ21nSEFqQW02NFFLMGZHeWpJTkJFUmhhYUNvTVFxR2dIRVpiY0h5VWpycEl5QUtTeDlUalZnRUJPQXY2cklpWkZMd0hNcWVuaWlzN08rZzhoY0NKeG9CVWRpSmZ2dVAyZUpkMllXQ0hMUFZhVGtORVJDRk5ZUkZSaUVnQk1xQndBbWxzSEs4T2NwU0NBaUJaZ2lJd3BvaEpMOFFFQUlGUmtBVVZ1QTNSNmtKQVNIUURBRlJXRE9FNUM4T0FzcEVDSVFRRUlXRklKRkJDQWlCOGlBZ0NpdlBlNlZNaFlBUUNDRWdDZ3RCSW9NUUVBSnBJcER0V0ljVXBsOEZ6QlpwalM0RWhFQWFDQVNZNm9EQ0F0WTBKdElZUWtBSUNJRk1FUEQ1cWtaaFBUMDliaDdmNTR4U2hJQVFFQUs1SStDelUwL1BBV3ZWS0t5L3YzOS9mLytmK29zZ0pQZGN5NStBVmlBRWhFQ2FDTUJMU0oybC9vR3ZZQzBidlVaaGc0T0RQMzc4TUo5cmlaWUlBU0VnQklxQWdPTWxVK0FyV091UXdvYUhoekZCYkgvL2ZoSDNXOVdmUWtBSUNJR2NFZkFaQ2FhQ3IyQ3RRd3FEejhiR3huWjNkM0g4ZGZTVmMrS2FYZ2gwRndITlZqUUVqaExTWDNBVVRBVmZ3VnFIRklaMjl1elprWkdScjErLzd1enM3TzN0L2F5L2VMaitweG9oSUFTRVFENElPQmFDbDJBbk9BcW1ncTlnTFpQYVhaaHBXQ2NuSjArZlB2M3QyN2V0cmEzTnpjMC85UklDUWtBSTVJMEFYTFMxdFFVdndVNXdGRXhsbEdYdElZWFJwelk3Zi83OHBVdVhwcWFtcnVvbEJJU0FFQ2dHQWxOVFUvQVM3QVJId1ZTKy9Bc0FBUC8vN1pKR0NRQUFBQVpKUkVGVUF3RFVTaEpzWHFrUUZnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CjwvZGVmcz4KPC9zdmc+" alt="" />
+                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzE3NTdfMTA1OTIxKSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzE3NTdfMTA1OTIxIiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF8xNzU3XzEwNTkyMSIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF8xNzU3XzEwNTkyMSIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUUFFbEVRVlI0QWV6ZEMvelgweGtIY0dzdFN5bDN1ZVpTN3ZlNU03ZTVsZG5jeStaT0xpTjNvVEVoUm9tVmFrUW1veVlhYzRuTnBlYVdhWVJpSzJWaEtHbGRGSk5MZS9kLzV0dTMzNysvL3BmZnYvLy9WK2YzZXB5ZTg1em4zSjV6enVmN25PZUVCblBUTDFrZ1dTQlpvR1F0MEdDWjNPK3p6ejZiTW1YS3UrKytPMzc4K0xmU0wxa2dXU0Jab0g1WUFDTEJKZWdFbzNLSU5ZK2REMkhUcDArZk5HblNGMTk4MGFSSms5VlhYNzFGaXhacnBGK3lRTEpBc2tCZFc2QkZpeFlRQ1M1Qkp4Z0ZxZVpCMXpmLy9CL0NTR2ZPbk5tOGVmTm16Wm8xYnR6NGUyVy9oZzBibHYyWmtucG5nVFNnWklHbHhBSU5HLzRmaGVBU2RHcmV2RG1rZ2xmZklOZ3k4eUNNYnpadDJyU21UWnN1dSt5eURSZjhmVGY5a2dXU0JaSUY2czRDQ3dKU1F4Z0ZxZUFWMUFvVW13ZGhzMmJOVXRDb1VhTnNuQTBhTk1qNHhDUUxKQXNrQzlTdEJSbzBtSTlJa0FwZVFhMzVFQWJQaUJvcytQdE8raVVMSkFzVTF3S3B0ZXBhWUVGd2FnQ3ZvTlo4Q0pzelp3NWdDNlhvSXNwU21peVFMSkFzVUU4c0VOQVVNQVd2b0ZZTWJONUZjdTdjdVpHUjBwTW1TaFpJRmtnV3FHOFd5S05UaGxyeklNeEE4Mld5aVpJRmtnV1NCZXF0QmZKNDlYOElNOWE4Vkxab2xCcEtGa2dXU0JZb25nVUtrR28raEJXdmk5UlNza0N5UUxMQVlySkFnckRGWk9qVVRiSkFza0J0V0NCQldHMVlkUWxvTTAwaFdhQTBMSkFnckRUV0tZMHlXU0JaWUtFV3FBNkV2ZlhXVzhQTGZ2LzV6MzhXMm1qTmhZdWhpMG9PMHR0dG9tU0JwZHdDbFR3c2RhSldIUWg3Ly8zM0h5djdUWjA2RlgvN3duNHdLT1lUQ24vNzI5OGlTMzd4eFJkTEkxdFJxbFpaRDQvcG9pS2RKRThXU0JZb3NNQlNtSzBPaERGVDY5YXRyNy8rZXVtbm4zNEtqOG9UbmFCUXlQNXRnQkJXbEdadTNWNTc3WFhLS2FkVXBKYmt5UUxKQXNrQ1lZRnFRbGhVbGtJeFdJWWd6dGxubjQxcDA2WU4rWExMTFNkRkFWNjhLdnkzMHgvLytFZlZNeFQ3ZHVWVW1peVFMSkFzd0FJMWhUQk5CTGxOdXZyaEE0UFdXbXN0UEhycHBaZWtyNy8rZW5hWGxDMVBpMVFvWHlWSmtnV1NCWklGYWdSaDBLb3NyRDh2WVVweEs5eEtLNjNFRWNNb2hXdnVtRzZGalJzMzVtUVJVaXRQTkpWeTZNb1hWVWFTZEpJRmtnV1dXZ3ZVQ01KZ0ZzOHJpQVVoVWZDUkt2MzN2LzhOenBBN0pvUUNaTlRLRS8yMTExNTd5eTIzTEYrVUpNa0N5UUxKQXQ5aWdScEJHRlFTdmVyU3BRdVEybW1ubldRNVhIZ1NjbG1QajI2VUhERnd0dWVlZTNMUWhNWW9yTHp5eXRtWVhEQXBISGJZWVpta0ZKbnZWTzQzWjg2Y3I3Lyt1cmdUL09xcnI2TE5SUTZodVAybTFwSUY2b01GYWdSaEpzRHpnbGJjS0E2WExERENrNEFxV1c2WHUyU2U3cm5uSGdvUVRTbFNYUmJ3UVRmWjBpWFlOR3ZXTE9rbm4zenk4Y0orTTJiTStPS0xMeG8wYUFCb2lqVk55S1ZOcVdmZi8vNzN2MnpPbmdXZFQ1a3loYlVWRmF2VG9yV1RHa29XS0lZRmFncGh3dkNPQjhmS1ZURWVKZUVSQ1hrTWp6QlBORU1lS2NpanpCR0RlaEVwdSsyMjI3SzZvVlAvVTZqMHpqdnZkT3pZOGN3eno3ejY2cXQ3OU9oaE9nVjB3UVVYWEg3NTVUTm56b1JpQzUyUlJ0QkNpeW9TYXFwUm8wWU1xQzlHN3RTcFU2OWV2VzY0NFlacnJybm0ybXV2SmJ6dXV1c01obE5zYksrOTlscFYyNitvM3lSUEZxZy9GcWdtaFBuc0IvcHN0ZFZXSmdOOXhPTWpoVWVjTDdkSWNvVEprM3NsWVVhdW55NmJIY3ArZVBKampqbEdtN3lKeXZ3OURQcjFoRnlOZVVQOHpTZWVlQUtJUStvRGN6L1pyYmZlZXNLRUNSOSsrR0g1QVFleThLYzRjUnFSUmE2SDVUWExTK2JPbmR1a1NaT1dMVnNPR1RLa1g3OStMVnEwYU51MnJaNFBPT0FBS2RLMVZPT3Z2dnBxK2VvNkNvcnVncGRHdHJ4K2tpUUwxRGNMVkJQQzRJdmo2dkxvQXNqL0N0QVpQMzQ4Nk1HVGtDOTBxc3N0dHh4RWsyYWxOQXRJRVVmTUJSTlRFZ1JIVE9IbW0yOXUxNjdkMkxGamVXVDc3TFBQajNLL2ZmYlpoeDkwMldXWExidnNzakVqVmI3ODhrdGdnVWlrOGYvVTRsaXBQbTdjT0JMeVJSSTE1Qk9nOSs5Kzk3dkRoZzN6SllCZlNQLzc3cnV2RU9SQkJ4M1V0V3ZYalRiYXFLQTFGWUVteDlCSUdqWnNLUHY1NTUvRDJZOCsrc2d3Q3BSVE5sbWd6QUwxTHFrT2hBRXAxeGJrR2RHRU9GYUM4YkpCZU9lWmZLRkVtWnEwZktsbWVXUThPRVY0YWlpNklLbm54SHRxMXF3WkhJRldaNTExMXEyMzNncWtDZ2gycjc3NjZqVE5CVjdBckduVHBnMGFOT2lNTTg2NDZxcXIvdnpuUC9zR2tBUEJvVU9IOHB2d05QTkVndklTWFlUazVKTlB2dUtLS3dZUEhuelNTU2Y1a05CUmxKRit0OWxtRzFseUZGVkdqUnJWclZ1M2l5NjZ5QmllZWVZWlFUU2Q2dnJOTjk4RVlhRkRPVkd5UUgyMlFIVWdERUk1alNqZ3BqYW10eGk2S082d0hYZ0FzZXFxcS9KMzFsbG5IVmo4NElNUEVxS3NJK1phZnZubFF5TGw3SWhiOFdTaHoxRkhIZlhCQng4OC92ampibkJjcCtPT080NW5sRlVNQnZieG1QaE5rYzFTVFlFZW9BTUtqei8rK0lFREIzYnYzbDA3NUprT3VOUjdsc1c0ZUE0WU1JRExkdTY1NTI2d3dRYWVXU0JhMDZaTlR6enh4QjEzM05GY2RFZXQvcER4bUZGUWpDclBoMlRKUzgzUnBLUUlneXdOSHVFVHNVQjFJRXkxUkJWWmdMTWpqdTVHMXJsejV6ZmVlR09oYXZZZmlPbmR1emZZNHJKdHYvMzJtMnl5eVU5LytsTys1L1RwMDk5OTkxMFJlbWhpczJiVlZZRlRVRVlWZkNZUHhqV1FNamRRSUgvMzNYY1h4ZmNxb2lpdlNZRUVFYjc5OXR0MzNYWFgzbnZ2dmQ5KysyMjY2YWE3N2JhYkVHVHo1czMxTzNueVpJT25CaktrZFU2R1llVEd6R0xtSGc2bXJJRXgxRC8vK1UvTWtrb3hUVy9ONGpaZXRHVVJPN3ozM251Q3FzeXlwRTY4U3ZOS0VGWVpjMVZXSjNiVjRZY2Y3a0Z3NHNTSllvTEF3cmJMNnVPZFNWbW4wUU1JNU9JY2NheHNVd0MwODg0NzI2bHEvZVkzdjRtbWFDSzFwUHdzRU1PZndwTWdUSjYwN0liZXAwK2ZMYmZjMHV0aytXQ2lLblJVNFlKcEg0VGhNUWF3d3c0N2VIQVlNMmJNYWFlZDVrV0NKbGhVV3Jka0dBWmc0bnhWZmlKb3Z1V1dXeDU5OUZIZ1JlNk45ZW1ubjRic29VYXlKRkZNNmwvLytsZi8vdjFOL082Nzd4WnFBRjQyZ0VqeDMvLytkNU1OSGN6U1RBbkNpcno2RU1IR2Nqc1R2QmRnZXZqaGgzVkFJa1ZLcFFoVWNTaTRXbmhnZ2VnSTludFNoR3VPWmFaSlBtWEtsRmRlZWNWVHIxZmcwYU5IZTFzVXJvSjZpbFRQRTRUaXlnbkpyYkxLS2oxNzl1VFQ1WFcwR2RtUkkwZUNyVWFOR2tWZDd3QjR2YSsyMm1wOE1XT2pHVVYxbTM3MTFWZkdadTV3R2NRZmZmVFJYbnM5V1VBeFJWNHFYTUFCWE4wT3NqWjZqMlh5TFJGVTNYREREWC8rODU5dnUrMjJ2a2t2di95eTduNVk5dk05cXlmTFpFaDFTQW5DaW05OEc4c1dQUFRRUTl1MmJldGVxUU1TYVZBY3VSVlhYQkZZZ0NwQ3lnNHFvdWF0VmhVaE0zd1VZUVQ0bjN6eXlhZWVlZ3FLUGYvODg3N0d0dktubjM1S0lVL2EwYml6N1dKbzA3ZHAwNlpKa3laNUJUd2RLYURVSFVialVDOTRXYkc4TmRkY1V5T2hSbEszWkNTUW1rL0tJT3k1eXk2NzdMcnJyci80eFMvV1gzOTkwNTg5ZS9Zbm4zeFN0eU9zdmQ1OTRVUUR2TU5ZUis2NWlZdDF5a0l1Y3pmeGVySkd0V2VCU3JhY0lLeVNocXFzR2xDd3R6Z3l3dmxlVkhrS0pGbGxSU0JHcUg3bGxWY1d0SElqZ0dLRXlGa1Y0S0FKVUlMd1VWZDh2V1BIam5hdzExNUJLemZOSTQ4OGNvVVZWb2hTYW5sUzE1M0xkZVBNTTgvazNPVjE5S0pyeXUzYnQ5ZmRTeSs5UkVLZnhOdW9NWU16dkZyU0twRjJLa05WYXBPeU5xRTJzempHNEl5dENOZGJiejNQdnE2V1J4eHhoTmdmT2VGQ3FkcEMvVmFHcXQxK1pTcU9HREVDVkIxMDBFR1VyWnAxM0dpampiYmJianV2UUpidnhodHZ0TVFHcVhRcHB3Umh4ZHdBdHBTdDVvNDJhTkFnanNPUGZ2U2pmT3VLWUFUSWdCSGYvLzczSVJGOXdSMUIrcmZlZW12OCtQRXFDcVVMY3ppM0gzLzhjVmJYTFUvSVRJTXFxbzVYWGQxTUljKzgrT0tMQWlqdDJyV2pEQzRMMUdRSlBVUWVjc2doa001VnhaMTAzTGh4RUlHK2RvelFnY0ZVaVZRWDlST3BFVjkzMVJXbEtpQ09KTWVoU20wYUt2MEllNjIwMGtwNGg5YmdqWkJCWEs4Z3UyeHRRTmpVcVZPdGlFbFpGSjhaSWNMOGRGemt6ZEc3aHdVMXFsb2lVR1doSTlSZzBmVUN3VjMyVzdaczZmMkhFV3ExZDkyVkNqVW9sWUdXeERqdEtydHQrUERoYmdISEgzLzhjc3N0UjVJZnVmUG1aQklpUWZkTEw3M1VJZXpWcXhmSXMwSDVGNUNMMDhGRitzYy8va0dIc3VvWUtkNDl3cmJHaHdTVEp3cE8zU09QUEhMd3dRZHZ2UEhHZEF4R0dqcEs4UVpBaUFEb2dRY2UrTkJERC9YcjE4LzVGQVZ6Njh4MGFFYXRSYWFxSU8rYisrNjc3ODkrOWpOaHVEdnZ2Rk1FNTdlNVg5KytmVG1rZ3djUHBybklCak9GR0lPN3JlUEtIeUVuTVhJRVpLSFk1cHR2N2pKT3FLaUlaSkJBeXZJeFkrZk9uZSs0NDQ3YmI3ODlQeVAzdXk1ZHV2enlsNy9rdDFJdVl0ZjVwa1F6Z2I1ZGtRbGo0ckpycjcwMk5DLzZ4TFZjaXBRZ3JHaXJaamNqVHRDenp6NTd3Z2tuQ0Q4N2FTVFJBY2FlRTc0SklSNTR0V3JWeWczeDZxdXY3dENoQTBRalZFdm81Nzc3N2hNUm94QjFwWXA0WG1LNmZMRm9nVEJQMm9lYjRNTTdJelg2K1ZKWjUwM3ZoSm9GQ2xMUnBTdXZ2UExDQ3k4VXN3TmhvSFBTcEVsaVladHR0cG5XVktHOFNLS0dQTUo2aFhqdXVlY2N2RXN1dWNSVHhxOFcvSjExMWxrNjFacVdwWlVuRGlPYndHVlZvaTVIRlZJekF0SjFDSlVXaTdUNWd4Lzh3RlVka1BIQ2dLOFpBYXhzUXBkZmZqa0lXMk9OTmJ5V0ZLdlQ4dTE0SXdiY1E0Y09WV1NPQ0tLOS8vNzdzaXdwaTFreXFZcXpTaEJXUllOVm9HN2ZLM25ublhmRTJuazNnRURXWjFOcXR5SE1CMlYvZWRWR3hKTndpTlNpNDZQcVBMakh5WEtGb0FBQ1ZZcElLQWVwd3ZYZzJVWEZFRWFxeUhhLzk5NTduWFlRUm9Fa1NBc1ltNTdENVRhWEZhbW95QVZON3pyRlV4QmgyV09QUFNDZzBpb1JwNCtydGZQT08vTzlnTGpwNTJtdHRkWnlzZlhJQUgycTFLeFJlZmM0OWRSVFhhNzc5KzgvYXRTb045NTRnOC9vUGdXQ0NUMXIxQWFPaURONlUrN2F0YXRiTnIvU0dFd2htNUhIRU44YkxtZDR4RldhVVNXVlRWd3ZQbXd2dlBEQ3dJRUR6ZHJGMXZLWnVCYVlFZEhCSjBvUVZwdzlBQnI0T1BmZmYvK21tMjdxR3g3UFJwRUNGd3prRW5qaVBoVHNleHN4STFpRDh0bjg0RUlPNmVqazVjRjdxWFNZQmZ0ZFBmU1lrVHZwckZtekJOY0U3OTArS0VkMUE4WkhtMUxOOHFTQWhZQXhvQ1JSV25uU3FWdHd6NTQ5Tlh2ZWVlYzk4OHd6NmdydGNaUXdXa090VzdlT3Jra3FTZlMxdlAvKysvTjZSTmw2OU9qeDVKTlBnaExIVzR6TU1jWnpIaXZaV25rMXlLNTlaSGo1VW5KZFF6RyttSXUyM3ZWRmdWcEdHMnl3Z1V1dUxIbHRrSlk5SzU5enpqaytDZDI2ZGJPQ2VqUnhmZm0yaVpFeE5UNVJnckFpN0FIYkhWSzR4RjEzM1hWdUhKd1JrV1kzb0R3SjNOaU92dWZ1Z3pYcDBzNHVxSzUzTnppeHJkNjlleDl3d0FFQU5PdlhNTHg3U3FHQThMTkljRUhkTEt0WnJ0L1dXMi9OSTNPQU0za3d1aWhQV1JHY2NxaGtkV1FNYnFNbm4zeXlKd1ZRU0s1bFJYUXdHcEhLVnA1VTRYRDVNUENKQktGT1AvMTB4eGpvbU11QUFRTTRuaHpBS3JXWlY0WUNidC9nSHBNTktYcGtCS1lBbW54cXl3cklLQ2lTSXRQQkd4aStsa2dYcHNranZ1bW1tM2lDbmw4dEVMeDJsd1NkbHRoWHA1YTZMcTFtRTRUVmFMMmNoOWpIeXBOQkNnQUFFQUJKUkVGVUV5Wk1lT0NCQnlDVTVyaGpQdHA1QW5DdUFCN0ZYUmdwTElTcUpkSzdlbHc4M2grWHg1ZFp3QXVUZFkzbmdqa003a0V3MUpta1h4RkZhNmFqdXRRWkRrMXlXVTJSNjh0Y2VKVGF6RXFkSmVjNTFMaHk1NTkvdmhDU0VCdlFKTmVPSWpwOFFFZ2hTeGgxRjVtcUNBUlZ4QUJFNkMrTnBqRFJUcVNMYkNvVWdFSTJBQlhSeElrVFhmK1Y0cVZJWDdxUXhRZ1JpbFJ5ZndRTjQyOHBVMEFVak1wMDhCbHBPZU5yenVoQys4YkFBdUlENXE1TnZuYjM3dDFsM2NxamxMRG1aT1E2c3NxWW1yZTJtRnRJRUZaOWc4Y3V0OVUwNFkxZk1NaFYwVTNucVlYOXlHRmM5dGNzMUswNTJjUWFjVE05ODh3enY2VnJ3eEdoZ3l3eFZGVXFJaE9obzBHcHhtVnBTdDFpeEpWMThYVFpEeTgwRTBWS2c3SXowS2xUSitQNVk5bi9VbytERTZXUmFoUGgxYTBUQW54Nnp4OVVTQVRYQ0pFaFNUTXlJMGk5L2ZiYkMvQVpOaWRhOUkyTzZvcW9BUmNwSWtTeTBpS1NzVmtJN1FkcCthQ0REbkxaYjlPbURZK01rS1FvWk9RbXFLK1lsNVpMaUJLRVZYK3hyTGUxZDVqLzhwZS9qQmd4NHFPUFBoS2dRYjdxRTh2OVFqNXMyRERLeFNYSTR1NzJ3UWNmbE90enZzRHR3L0dyZkwrUFBmYlkxS2xUSFEvV2NXS0YvTGZLL2R5VVYxOTlkY2RiYVVhVVdZT3p4aGtVdS9ueGozL01KdncxUWtWNU5hNmlZTm5qano5ZStmRVVSUlB5NnBjdmFUek1CV1FmZmZUUk1reCsybnd4UnFzb0d5b0d1dkZOWE1NOUU4K2NPVk5ZaXBERTBtT0NWSUhVdzRjUDk1MG95amdyYXNSb21kUzYrS0xndmRKV3BGbFZ1UzJrTlk4R1VDd21WVUpwZ3JDYUxwWkRDN3plZSs4OTBaLzVtRkVCNStTNFhoV1g0SmZldnIxM3BWNFNLdCt2TmgzTE1JMGo2bXJzNUtoT2pzQXhDV3dLaFN6MUpYZGZsc1VJcTRucmN4YnlwMTBSSXBrMmJacldGak1adVJjUEF6QWpnL2UyQzIwZFdqenZqTXRqWUVvem9tWTY1a0tDNmRpeDQ2R0hIb3BYSllUTExDTTNqeUNkR1duZlR2ajQ0NDh4dFRFMUxmc1VXV3RMaVk4VnFYbEhSanRseWhReFFSZzliektsOWsrQ3NCcXRtRTB2MHR5dVhUdFA3RWN2RWIvMjdkdWJ4N0hISHN2ek1qdldFZng2ODgwMytTL2VORWVPSENubEJUaEZ2RE9sQmVSczg4NkdEQmtpNVB5VG4vd0VPaFFvcUxYODhzdTdFSGx1MDlIaXBPT09PNjV0MjdhQ1N1YkZpOXh2di8zMjNITlBUeEI3N0xISFB2dnNJN3BrWUlvS0JneklPTnJQUHZ2c0lZY2NJcVJJZ1NTdlE2S2l5WnBSKy9idGp6cnFxRnJhRE5yUHpJVkhXYlltak5FYXN4WjIyR0VIcTVPZldrbndDY0pxdWt3Mk5ISldLME0rNEtneW1ua2R1SkRQYWdIbEpSWHhLcUtLU3N2TE5Xc3VVUVVUcHVHQThENHV1T0FDRWE1ZmxQM3d1K3l5QzdWUUtFamRZbHlsZ1NEWGhvdWF0VU1OdW5GWW5KT0ZkcDBKRFFQSjZpS1lTUE1TZko0b29Md2s0OG1Sck5ZTUFMa0pHZ1BvTVNUREk1RXFsUTFTR2d3aHgrZWVlKzV4enJmWVlndUREM2xCR3RWMWdmU2xGcVlpb2xCUlVTYXZqRTRvNnd2UnowZ1dSYWswNUppS0tCUk13YXhacG1CcTlUK2JJS3dJYTJSekxMUVYyNktBSEJ2SFFKclh6M1JDbUdVeEliRzM4RUVramh5SzdFSlRPaUczbFlNaHFRd1ptTG1va2ltSFJEc2srQ0FLR0JLRXQrOGppMy8xMVZlNWJDQnZwWlZXZ2w5YW94T2tWTlo5RFJYTWlJSkdLQVFwOWZSSkdQMFNLcFVsbHlLU1BKRXdDQ29Ra3BOSVZZOFJ4Z0FJTmVYb1NqbWI2NisvUHAyTWxGSkdHSGVyaHg1NmlLTzk3YmJieXNaNFFsTVdCVitRVXN0NnpCZlJSeVFzbzMxTVJhUTZ6YURRQ1Q3U2tFaGw5WVhvbTR1VVVCWXBDaUlKT1NZa2tjb2l2RlJkbHZISllSUFowcUpxUUZocFRiQnVSbXRuMkRjKzRDSVg0OGVQZDZxUmdKUVFraUlVd3dwR0hJMmErNW9zY25yZmZ2dnRjZVBHQ1hiSUlodExFRzNNbURFZmZ2aWhyQTJxY1dFWHpnN05mNVQ5eG80ZFMrSnNnRWc2MmxjMFljSUUwV3Q4RGNsNVExa2pCWHgwSnhVamUvREJCN2ZiYmp0bm5qS29NdFJRbHBxQ21FdEl3STNSbXVPc1diTlVSSVpOZ1pXWWdnV29FUXJUakJvMXlxVlZhN0lhRWZwaFJqYzdrNmJNdG1KMmloQXJhZTIxMTE3VExFMFNwQVZYWUhJOE1pU3B4akdoQThKYXRHaUJSM3BCR09lWmprRU9IRGpRdWtCaytsR1JBc0tML1l0L1d3ZzhDY0tvcTBmcmprZUVHY2xDQ3NFNGd6RlUyYXlvZ0ZGa0hSa1RtWjFTRW9PeG11YXJmYjJRSVB6bzBhUEZ4UXhZMWxxem5sbzB3ejRZS0t3b3lJNnlpOVNLTnFVdnYveXl0M0lEbzZCWmtwS2pCR0cxdFdUMjNBTVBQSERFRVVlY2R0cHBQWHYydlA3NjZ5KzU1QktueS9hTkxoMWFtMGJxMkI5MjJHSFhYWGRkeUozemE2Kzk5cXl6emhKL0liR2JQZDdkY3NzdGhEZmRkTk1MTDd5Z2xzWXhaNXh4eHNrbm42eGxMNEFYWG5oaC8vNzlOZTZ3MmFNREJnem8zcjE3bno1OTdyNzdiamM3dmRpaldxc05jdG9SM0RFUlVmeTk5dG9yZW9senBWOWt6STRLOU1tS3hOU09PZVlZTm5Ha0NaMmlQL3poRHgwNmRCZzhlREJsdDFjTzNSMTMzTkdqUncrV1lRRmdZWGJDY081MFRHcksxMXh6VGVmT25WOTU1UlhWOVFYWGJyLzlkdnAzM25ublhYZmRCYm5JSFdESG5ybU1RVmJMVW9SQjJ0U3ZVcEx5NUEzWHBFNDg4VVR1aVZJdFpDVHIrMkcrSm83UGlPWDc5dTE3d3cwM1FGN0sybzhpdkNYd1pPa2lybG1qemVTS0ZzcDdNUFdxYXpxaFlDSzlldlU2NVpSVHZFWHFGTFI1M2U3WHI5L1ZWMTl0QTdBVk5YTVJoUlJudERHTWdYMHV2dmhpM2RIWEJZTjRWNzN4eGh2dnZmZmUzLzN1ZCt5dkNyVDlaNG4veDdzVGhGbmM0cFBqNFJBS0FHKzQ0WVlDcFRhWkxYWFpaWmU1WGprd3RrNXNib3pkN0pDSXAvNys5NytITllheXhocHJpRHFSeEY4aXUvbm1tLy82MTc4S1JmZnUzZnZJSTQ5MFFpQmpreVpORGpqZ2dOMTMzMzNqalRmdTJyV3JmVWxOV05wbTlVMG0wY3NWVjF6eHExLzlhdjMxMXg4NWNxU2pxT1hhSS9QOTA1Lys1SnUvMm1xck9VNTZ6RWdXM1hycnJjODk5OXdLSzZ3UVl6RHJmZmZkdDB1WExnNmswUko2SHp6ODhNUFBQZmRjdU9haEVBU2JrUStBVk9qdHFhZWVBay9VOXQ5L2Y5TTBkeERHSU9vS3BldmRnVHovL1BOYnRXcmx6SGZxMUluRTBhVy8wVVliaWNycGwwUTJUNHpQWEVhQzhuSzhJb0JvUlRob1BOOXNMc0dZenROUFAyMUJqVk1MOUJING1ERmpCaFRlZWVlZHpRSmU4SU95bHZXdVRWQUlNcmh2eXl5empBV0MzV1BHaklGTmltUVJsNHFqcE5UbThYSHlZWU0xNEp2RUZBQTNFN1Z0MjFacjdNa21kb1Z2R3l2WkFJODg4b2p4VVBCU0FjVU1qK2t1dXVpaU5kZGNVL1g3Nzc5ZlJFOWQ5dkVPd0VOLy92bm5qZGtyaEdZMUdCdVNac2xSZ3JEYVdqTDdFdERZZVk2QmRPV1ZWMjdac3FYOVJHN1gybisreVU0MXo5L08yM1hYWFhmYWFTZHVsQ3czQ29xdHM4NDZEdWVMTDc1b0I5dDVEaWY0ODJZa0tBUENlR3FOR3pmMlFHYS9VbDV4eFJXOUFHckJaR3g2eDRDckV2M0N3VFp0MnN5ZE8xZFJrQUhrS1lUVlRqVmw5ei84OE1QT0xUY0JxdWIvRFNkRGNxOUVRQm5BR1hCMHhDWHhNcWpVOFhQYUhUOXlFMlFpdG5MSVlZRXBBeUJUZzhJSEgzd3dqK3oxMTErSGRDeEQwM3dWbWFOTHF3SHdXZGpCMFNYWGdtWTlNc0lJb09OcXFUc0FvWXNDTXZnQ2lTeWhLeTMwOTdVQWY1dHZ2cmx4NXNrRVdSWEl4blNjZjdXZ2xZNEFId2d6QzVmZnh4NTdURk9LZ3JpUVcyNjVaZXZXcldtU0JQYUJNSE4zQWJUb0kwYU00R05HYXhTc1BwUzNNYmplMU9pYkxGT1lKZ3g5NG9rbjJHUzk5ZFpqQ21QYmFxdXQ3cnZ2UG1HSzVzMmJNNHR0SmxXa3gwMDIyWVJ2R1BqbEVZWnhWbGxsRlNobVVkeVIyUWZVNmk1R2hTazVTaEJXaTB0bTI5bVJQbmNBeTRVT1l4ODdiekRJOWJCWnMyYVhYMzY1ZTVNUjhKSk9QZlZVVzU4cjRlQlI4NFVrOTdYSGI3YlpabmdiVGdyRnhvOGZEOXJ3dGgyZSs4T1g0VEpRY0JqMFpkY0NDRjNIdWJXUGdhbXNFNFV3TUVLcUl3b2ttcW9KYWNvWmN6aGRJZmZjYzAvSE94aDhSZ0FGa29MZDZJaGxNTk9tVFd2WHJwMHBYM1hWVlc1ZWhPeGdVczZWVWxXa0pOcmZacHR0d0JDd0k1SGxZUTBkT3RTRjBibDErTjFQWFNlaGRzekZwSGd4VGpXR3AvYmIzLzVXWFdaVXQ1SmtPbHdxQ1BMREgvN1FGUGJlZSsvOGpMaUJlKys5TnhUWVlJTU5va0dMWlZRZ3pPSUNEa0lPbDdBZElUNGphaFFpYTVwQXlzZEpUTkFWVzF6UDdIUUhna1BCNEtkUG4rN211TnR1dThGVGF1eGppWlZ5MWt5UUE0Nm5Kb1YwN29NUWtEV1FuVFo4K0hBWFJrTlNxbjJmUmdiQk00VmgyQ0g2OGlrVmYrRFFxYUtvUkNsQldLMHZITFR5ZWJUVmJFSGs0eXlNZGVDQkJ6b2J6b0JTSTFCcUczRmtuR3BYQUR1VkpybmRacS9IU1loRDZLYW0xRzFScVZxT0JOZ0NSazR2WlFmUGVWWlhGa1ZkTFNOWjJ4ZkFpUlB4YUVBZTlPUUpha0dSMXFwSHhxYVhqaDA3OGlZODNtWEVMOHNUbkJYZG8wbGZSeGdwTWhmQjh2MzIyKytLSzY1d3UrR3JPcHlCc0J3dUNrZ1YrcVl2QUNRYmhEZHgxak40VHBNWU5waFdGTXJteXdnOERuNFpmOFRFcVNtdERHa0JJbkJiZUhiWkZNd3I0ekdtYzl0dHR3RUZ5dEV5SmxZaDY4SUlNNzQ4WSsxVThSazc2YVNUSUk1NFgvdjI3YUdTNWNpVURaczF6anZ2UEZoejVaVlhXbDlGVXJObUVDUWJLVWVlME9ZaFFYaGJUb3BrZVdFR0U1cXdOUWJNUHF6dFNxNUJPcVZMQ2NKcWNlMXNEanZTelVMRXdRYmx1dXZNRjk3WmN5RHhYUG80cUxMMkhQLy8xNy8rdFR1Q2h6QVNDaTVORGdaUEJHL0hTNTFWMzNsZlVieTl5RUVUTWVITDZFSVZ6cGU3aHYwYXlxSGp0QmdKM3E0Vk0rTHY2TmNYMjVWRVg2SXppbXBDaHNHaGNJV1JPcE5tNUVTVkoyTXI2RVZGVTNPMExyMzBVb09IM2NDTHhVeUJpVnc4NlR0eWhnMmFuY1oxMTEyWHhIUlkwbFZSdEFqOGtZQjFSWUpXK0l5bzRSbVE2eGZUbDYwa0dUemdNeDBNS2o4alJabzFaZzB5dFJHaWNLQ2lMK2lqb2drR1VTdWdUTTVaQTdVQ0F0NEgxQ0xYSUdVTXk4eWVQVnRmQWxpZXJYMTQ5S0tJcVRsb1RJUVA0cVBaRmU2OFpxMFJFQXk3N1FwM1hncnVtekJkRVY3aldtWmtXVUlvRm0wcUtsRktFRmFMQzJjTDJpVU9vVDRjQTd5NGd4MXA5eUJDUG9nempFRktwZkR1bkhQT0VjL2lrc2k2czNBdU9HNTRDbXB4RFlURFltczZMVWd2U3VFUjE0eUNqZXRPRWRWdFZuRG1iTnZ1OWk1TmpnUDRFMk55NW4zejlRNDZWYThoYVR5amdxWXlPU1lyTWs2ODhaZ1V4bW4zZk1aLzVQc1k4eFpiYk5HeVpVdE9vcE5HaDRJSERmaSs0NDQ3NGprbWRMUUdRUngrb0F6Q3hJUGNtOEM5SWdUeUFoR2NaMVdpRVV3bFNlTUZsSytZTDhyTFJacXNzbjRKVGREbEYyTUFlQXdDRnVwaVVQQld5cFRCalpDQ1Q0czNhSU5YaWpCMkRzSjc1L1dVMmE5ZlA4dXFvdFZuTjg2Z0ltcmF4K3ZkZ3BLZzZFVmR5a0lON09hcmtQZTRiUld1SzAwZkJtbEpVNEt3MmxvKzRBS3d4RGpjM1R3MWl0MjRldkNoUERYNllBcEEyTDYrcFh3VEIwOWNuMDdzS2dwY0tvZlF5T3k4czg4K1cwUkRlSnZINUZXT20rUEozTmIwV1JZUkV3TjJ4OUc0NjZGWEoxV0VoSVE1dkVZNUc0NkV1a1lTeHg0anE0cGdrOUE0SG1xSS9hdFZGTkkrMEhHaXZEWUliUE0zNHl3dHRISHdEWmdNbm9sVUZKVjNHNlhwVUptZFd5ZFFGa0JrR2FqTkkrdmN1Yk43TjZPSkR3cnVDUDlKUFlDSWkzR0lPblRvd0RJOWUvWjBtTTFhYU15VTlXNnlER3VhZUtUOWFwQkpXU25ZQkdWQWtxd0I1OXZSTXZMK0FFbGRxSUV2L0hKSG94RmRMUjRBQUFidVNVUkJWR3lFZ3dZTm9veFgzV2laM2R5MUlEVWRJVUxlazhGYmR4NFpna3JJdWdnNEdEd1BTM1dCT1RiUkNQT3lnKzhjN0I0eVpJamQ1WVBIWWllY2NJSXhhSHpzMkxGY2JGYXlLeGlFS1h5dVJOTXN1cGNCbjBNMk1SZWZEYzJxZ2pDbFN3bkNhbVh0YkVHN3pVYnh3WFRBbkVOYnlqSGdYTGd5dUFFNTVMSnVLMXdKWGxMb0U5clpUb2dOS3RCcmIrSDMzMy8vVHAwNjJjY0N0UFM3ZE9raWNBN2c3RlNIbkVkbUt6dTBJSW1md2l2eGZmYjg1OE51N3lweTZkQ3BMYTVsNkFBOTNhM01lY01OTndTZFRwb2lXUU9RMXBBMFlqb2U0N3p4KytZRFhHTW1MTitzVGprQ2lIc0l3a3dUaVpGRElyTTIxTzIzMy82eXl5N2pSMEFFWnZIVzRhMVRFVnVaamltQWJ4QUc5UG10TE95VVhuLzk5UkJmWEFuZWNUTTlGN0t3Nlp1aklKSGwwR3o1a1N4U1l2d2NWYUU2dDN1T0h0QXhSK1BQS2xMUXNva0FUYXVHOTZIQ1dBdHFQRVJqZ0RzZ0NaSnlxN21FZ1ZOS1RSbnFLVVdXRDV3MWJkbzBXalpUWTlZc2hrU25KNTU0SWdXTHFBdXgxSXN2dnRpdUdEWnNtSTVFeWdDb0JlV21hVk9QTEkvc0U3ZEl0dlVLRlBZRWVVSUhsTzBFemVyWGVEQ2xTL1VTd2tyWG5OK00zR0Z6L0k0NjZpamZQVWZMaTV0QWo3dVNTNXhONDE1Z3owbnRhZWNOSklXQ3AwTzdFOW5OdkpJNEcvYXhROHNYVTkwbDBWVkZDM2F0enpJNEV3WkdJbWphRjI2eldaR3pKRUF1Z0hMQkJSY0lsbW5RZUxSR2Z2cnBwM2Z0MnRXdFJJL0hIbnRzdDI3ZHhFMk1tb0swNXFRdk9PdHd3aUFXZ0szYUpDeG9ud0lvTjd3K2Zmb2Njc2doZEp4TVYyWTJjVmFkVzFYY3VJOCsrbWl6TysyMDA0QzFlV25FK1RRdlpCYUsyRVJjakRLUGhpUERBeVU4NFlRVDRKYzJoZnpNbDhQcmNWUGRhcDlWSTdGUzFzNENPZjlhMXBvMENLOWxYdzdEQUVBK1A1NzV6RTZwYVlwVThxa1ozNUlaVE4rK2ZYMlExbDU3YlJJRWE2STZaZFZad1ByaUNWMzVMV3YzN3QzWkpDU0dnZGVSRFVBQk52SEgyZUhJSTQ4MGQwSlFEdVo0WHN4aWZTMHVhN2hGYXRrdTRydlpSZmFKTUNMODhnbjBaV1Z0azlKKzZWS0NzTVc2ZG5hZUxSaGQ4dmtkUzN4OFpqRjJmQndHYXJhZE5MS2hSb0dFbkJESmxpZU5JMm9vU3VrSFUxRktFMVZVV2cyNVl5bXc3U2dhcEJNU0xUaXV3V1NwVXJ5dU1jWU03eUFzaVN5ZVBwSU5vc1k0ZVVuSXBWR2tCUXdpUWNGaytyTFpTSlJXbFhRTlhBeFBnNXBTSFNQTkV4MUNGRUpxS0hpcFNZa1laR3NoRzhKTWg4UUlvNUVRTGpRbERFMGRaYnRDVXlGbkJId0JLU0xYTWlZcndrK2NPTkVORjY3NUxwS1RTRXVSRW9UVjRxclpGZ1drczB3aUFpSlE0bXZwazVnSlEwRnF6MG50VkNrK0ZQQWhpV3hGS1RVVXBmU1JiRkFJODJuSWk1THF5RkRGajBlUEhpM280eGJET2RLeVV5Y3RJTXFHRVVLTWlpR1I0c21sNUVHeVFaSE5weUduSEV3VUJTK05iTlltU1RYSVRaWVh3MS8yMVhGaDkwS2l3WXJhaVI2ejBpeUxVVXNhUkNFYk16Nm9RRUtUUEZJTTBrSVFJV1Zwa0NJVWZFRWFjc3JCS01WdzJWek12U0h3MW4xeThtaW90TFFvUVZpZHJaZExCMi9GdFl2VFVXZURLR2JIeS9BeTNBZEZmOXhXM0c3Y1lzNDc3endIbnJ5by9TenV4aHh5RjBEMzA0c3V1a2pLWFNycEdVRXhVK0JYdG1qUnd0NXpiVi9jQmkxcWZ3bkNpbXJPS2pZV1g5UXFWcXEvNmo3MTdpemlNbkJaNENZWUFSclRyTCtEWHRUSUhIaVRnc3RtSkxnbXlDVmIwak9LR1pzWHdrTXhDNGNwVVVvUVZxSUxWMytIN1dEa3FmNE90Q29qVy9KbVZKWFoxMnZkQkdIMWVublM0SklGYXRzQ3BkNStnckJTWDhFMC9tU0JwZG9DQ2NLVzZ1VlBrMDhXS0hVTEpBZ3I5UlZNNDA4V1dLb3RzSlJDMkZLOTVtbnl5UUpMa0FVU2hDMUJpNW1ta2l5dzlGa2dRZGpTdCtacHhza0NTNUFGRW9RdFFZdTV4RThsVFRCWm9Kd0ZFb1NWTTBrU0pBc2tDNVNPQlJLRWxjNWFwWkVtQ3lRTGxMTkFnckJ5SmxsUThKMzBTeFpZNmkydzRKbW9hcTUyOWVkRDJOeTVjMnUzcTlSNnNrQ3lRTEpBalMxUWdGVC9oN0FDYVkxN1NRMGtDeVFMSkF2VWxnWHllRFVQd3JqSldWZjVza3lZbUdTQlpJRmtnVHEzUUI2ZE10U2FCMkdOR2pXYU0yZk8xMlUvU3FqT3gxcjZBMGd6U0JaSUZpaW1CZUFTS2tPcHIrRVYxSXJXNTBGWTQ4YU5QLy84OHlqTFV0cUprZ1dTQlpJRjZvTUZNbHdLQmw1QnJma1ExclJwVXlMQTl0VTNQM3Jmc09uUFpJRmtnV1NCT3JaQUhwRWdGYnlDV3ZNaERKNnR1T0tLczJiTlV2RGxncjg2SG5qcVBsbGc4Vm9nOVZiZkxMQWdJSDBKb3lBVnZJSmE4eUVNdDhJS0t6UnIxbXpHakJrelo4Nzg3TFBQdmlqN3FWejJaMHFTQlpJRmtnWHF4Z0laQ3NFbDZBU2pJQlc4Z2xwQjgySmh3WkcyYU5IaWU5LzczdXpac3lkUG5qeHAwcVFQMHk5WklGa2dXYUN1TFFDTEprK2VESmVnRTR5Q1ZBRlprYzZITUhtKzJhcXJycnJ1dXV1MmF0V3FkZm9sQ3lRTEpBdlVEd3UwYXRVS0xrRW5HQVdwOHZRL0FBQUEvLzkxekNRZEFBQUFCa2xFUVZRREFDOE5yS2NNNjRMN0FBQUFBRWxGVGtTdVFtQ0MiLz4KPC9kZWZzPgo8L3N2Zz4=" alt="" />
                                                     </figure>
                                                     이 공식에서 Ci는 빠르게 분해되는 성분 i의 농도(중량 백분율)를, Cj는 빠르게 분해되지 않는 성분 j의 농도(중량 백분율)를, NOECi는 빠르게 분해되는 성분 i의 NOEC 또는 ECx(mg/L)를, NOECj 는 빠르게 분해되지 않는 성분 j의 NOEC 또는 ECx(mg/L)를, 그리고 EqNOECm은 혼합물 중에서 시험 데이터가 있는 부분의 NOEC를 의미 한다.
                                                 </li>
@@ -188,46 +186,48 @@
                                     혼합물 자체에 대한 급성독성 시험 데이터(LC50 또는 EC50) 및 만성독성 시험 데이터(NOEC 또는 ECx)가 있는 경우의 분류기준은 아래 &lt;표 4.1.2(b)&gt;와 같다. 만성독성 분류의 경우 혼합물 자체에 대한 분해성과 생물 축적성에 대한 자료가 있을 수 없기 때문에, 각 구성성분에 대한 분해성과 경우에 따라 생물축적성에 대한 정보가 필요하다. 다만 혼합물 자체에 대한 급성독성 시험 데이터만 있고 만성 유해성을 분류할 시험 데이터는 구성성분별로 있을 경우에는 급성 유해성은 혼합물 자체의 급성독성 시험 데이터로 평가하고 만성 유해성을 &lt;표 4.1.2(c)&gt;에 따라 성분의 합산방법을 이용하여 분류한다.
                                     <p class="txt-caption">&lt;표 4.1.2(b)&gt;</p>
                                     <div class="data-default">
-                                        <table>
-                                            <caption class="sr-only">표 4.1.2(b) - 혼합물 자체의 수생환경 유해성 분류기준</caption>
-                                            <colgroup>
-                                                <col style="width:120px;">
-                                                <col>
-                                            </colgroup>
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">구분</th>
-                                                    <th scope="col">분류기준</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>급성 1</td>
-                                                    <td class="align-l">물질에 대한 급성 구분 1과 같음</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>만성 1</td>
-                                                    <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 1의 분류기준 ②와 같음. 그 밖의 경우는 물질에 대한 만성 구분 1의 분류기준 ①과 같음</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>만성 2</td>
-                                                    <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 2의 분류기준 ②와 같음. 그 밖의 경우는 물질에 대한 만성 구분 2의 분류기준 ①과 같음</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>만성 3</td>
-                                                    <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 3의 ①과 같음</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>만성 4</td>
-                                                    <td class="align-l">급성 수생생태독성이 구분 1 또는 만성 수생생태독성이 구분 1부터 구분 3까지에 해당하지 않거나 수용해도 한계 이상이고, 다음의 합(%)이 25% 이상인 혼합물<br>
-                                                        ① 만성 1인 성분의 총 함량(%)<br>
-                                                        ② 만성 2인 성분의 총 함량(%)<br>
-                                                        ③ 만성 3인 성분의 총 함량(%)<br>
-                                                        ④ 만성 4인 성분의 총 함량(%)
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">표 4.1.2(b) - 혼합물 자체의 수생환경 유해성 분류기준</caption>
+                                                <colgroup>
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:500px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">분류기준</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>급성 1</td>
+                                                        <td class="align-l">물질에 대한 급성 구분 1과 같음</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만성 1</td>
+                                                        <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 1의 분류기준 ②와 같음. 그 밖의 경우는 물질에 대한 만성 구분 1의 분류기준 ①과 같음</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만성 2</td>
+                                                        <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 2의 분류기준 ②와 같음. 그 밖의 경우는 물질에 대한 만성 구분 2의 분류기준 ①과 같음</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만성 3</td>
+                                                        <td class="align-l">혼합물의 모든 구성성분이 빠르게 분해되는 경우는 물질에 대한 만성 구분 3의 ①과 같음</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만성 4</td>
+                                                        <td class="align-l">급성 수생생태독성이 구분 1 또는 만성 수생생태독성이 구분 1부터 구분 3까지에 해당하지 않거나 수용해도 한계 이상이고, 다음의 합(%)이 25% 이상인 혼합물<br>
+                                                            ① 만성 1인 성분의 총 함량(%)<br>
+                                                            ② 만성 2인 성분의 총 함량(%)<br>
+                                                            ③ 만성 3인 성분의 총 함량(%)<br>
+                                                            ④ 만성 4인 성분의 총 함량(%)
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>혼합물 자체에 대한 자료는 없으나 가교원칙을 적용할 수 있는 경우
@@ -245,53 +245,55 @@
                                 <li>혼합물의 관련 구성성분에 대하여 급성 1과 곱셈계수, 만성 1과 곱셈계수, 만성 2, 만성 3 또는 만성 4의 정보가 있는 경우에는 아래 &lt;표 4.1.2(c)&gt;의 합산방법에 따라 분류한다. 다만, 독성 데이터가 있는 성분이 두 종류 이상인 경우에는, [공식 3]의 가산식을 적용하여 조합된 성분의 L(E)C50, NOEC, 그에 따른 독성 구분과 곱셈계수를 결정한 다음 &lt;표 4.1.2(c)&gt;에 따라 분류한다.
                                     <p class="txt-caption">&lt;표 4.1.2(c)&gt;</p>
                                     <div class="data-default">
-                                        <table>
-                                            <caption class="sr-only">표 4.1.2(c) - 구성성분 합산방법에 의한 분류기준</caption>
-                                            <colgroup>
-                                                <col style="width:120px;">
-                                                <col>
-                                            </colgroup>
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">구분</th>
-                                                    <th scope="col">분류기준</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>급성 1</td>
-                                                    <td class="align-l">급성 1인 성분의 총 함량(%)과 곱셈계수와의 곱이 25% 이상인 혼합물</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>만성 1</td>
-                                                    <td class="align-l">만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱이 25%이상인 혼합물</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>만성 2</td>
-                                                    <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
-                                                        ① 만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱의 가중치 10배<br>
-                                                        ② 만성 2인 성분의 총 함량(%)
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>만성 3</td>
-                                                    <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
-                                                        ① 만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱의 가중치 100배<br>
-                                                        ② 만성 2인 성분의 총 함량(%)의 가중치 10배<br>
-                                                        ③ 만성 3인 성분의 총 함량(%)
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>만성 4</td>
-                                                    <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
-                                                        ① 만성 1인 성분의 총 함량(%)<br>
-                                                        ② 만성 2인 성분의 총 함량(%)<br>
-                                                        ③ 만성 3인 성분의 총 함량(%)<br>
-                                                        ④ 만성 4인 성분의 총 함량(%)
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">표 4.1.2(c) - 구성성분 합산방법에 의한 분류기준</caption>
+                                                <colgroup>
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:500px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">분류기준</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>급성 1</td>
+                                                        <td class="align-l">급성 1인 성분의 총 함량(%)과 곱셈계수와의 곱이 25% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만성 1</td>
+                                                        <td class="align-l">만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱이 25%이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만성 2</td>
+                                                        <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
+                                                            ① 만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱의 가중치 10배<br>
+                                                            ② 만성 2인 성분의 총 함량(%)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만성 3</td>
+                                                        <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
+                                                            ① 만성 1인 성분의 총 함량(%)과 곱셈계수와의 곱의 가중치 100배<br>
+                                                            ② 만성 2인 성분의 총 함량(%)의 가중치 10배<br>
+                                                            ③ 만성 3인 성분의 총 함량(%)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>만성 4</td>
+                                                        <td class="align-l">다음의 합(%)이 25% 이상인 혼합물<br>
+                                                            ① 만성 1인 성분의 총 함량(%)<br>
+                                                            ② 만성 2인 성분의 총 함량(%)<br>
+                                                            ③ 만성 3인 성분의 총 함량(%)<br>
+                                                            ④ 만성 4인 성분의 총 함량(%)
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </li>
                             </ol>
@@ -353,6 +355,46 @@
                             </ol>
                         </div>
                         
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-ozone" style="display:none">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">오존층 유해성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p>혼합물에 대한 오존층 유해성 분류기준은 아래 표와 같다.</p>
+                            <div class="data-default">
+                                <div class="scroll">
+                                    <table>
+                                        <caption class="sr-only">오존층 유해성 분류기준</caption>
+                                        <colgroup>
+                                            <col style="width:120px;">
+                                            <col style="width:auto;min-width:500px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">분류기준</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="align-l">몬트리올 의정서의 부속서에 등재된 물질을 적어도 한가지 이상 0.1%이상 포함하는 혼합물</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>"오존파괴지수(ODP, Ozone Depletion Potential)"란 할로겐화탄소를 보유한 각각의 종과 구분되는 통합량으로, 질량-대-질량 기준으로 CFC-11와 비교하여 성층권에서 예상되는 그 할로겐화탄소의 오존파괴 정도를 의미한다. 공식적인 정의는 총 오존에 대한 통합된 교란 비 즉, CFC-11의 방출량과 비교한 특정화합물의 상대적인 방출량이다.</li>
+                                <li>"몬트리올 의정서"란 파리회의에서 조정되어 개정된 오존층 파괴 물질에 대한 몬트리올 의정서를 의미한다.</li>
+                            </ol>
+                        </div>
+
                     </div>
                     <!-- // tab-content -->
 

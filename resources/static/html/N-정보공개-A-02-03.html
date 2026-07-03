@@ -77,131 +77,163 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content">
+                    <div class="tab-content" id="haz-aquatic">
                         <div class="title-section-wrap">
                             <h3 class="title-section">수생환경 유해성</h3>
                         </div>
                         <div class="data-default">
-                            <table>
-                                <caption class="sr-only">수생환경 유해성 구분별 분류기준</caption>
-                                <colgroup>
-                                    <col style="width:120px;">
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">구분</th>
-                                        <th scope="col">분류기준</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>급성 1</td>
-                                        <td class="align-l">
-                                            <p>급성 수생생태독성이 다음에 해당되는 물질</p>
-                                            <ol class="list-decimal-circle">
-                                                <li>어류에 대한 LC50(96hr)이 1 mg/L 이하 또는</li>
-                                                <li>갑각류에 대한 EC50(48hr)이 1 mg/L 이하 또는</li>
-                                                <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 이하</li>
-                                            </ol>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>만성 1</td>
-                                        <td class="align-l">
-                                            <ol class="list-decimal-circle">
-                                                <li>만성 수생생태독성이 다음 ① 또는 ②에 해당되거나, 급성 수생생태독성이 다음 ③에 해당되는 물질</li>
-                                                <li>빠르게 분해되지 않으며 다음에 해당되는 물질
-                                                    <ol class="list-roman st2">
-                                                        <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 이하 또는</li>
-                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 이하 또는</li>
-                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 이하</li>
-                                                    </ol>
-                                                </li>
-                                                <li>빠르게 분해되며 다음에 해당되는 물질
-                                                    <ol class="list-roman st2">
-                                                        <li>어류에 대한 NOEC 또는 ECx이 0.01 mg/L 이하 또는</li>
-                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.01 mg/L 이하 또는</li>
-                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.01 mg/L 이하</li>
-                                                    </ol>
-                                                </li>
-                                                <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
-                                                    <ol class="list-roman st2">
-                                                        <li>어류에 대한 LC50(96hr)이 1 mg/L 이하 또는</li>
-                                                        <li>갑각류에 대한 EC50(48hr)이 1 mg/L 이하 또는</li>
-                                                        <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 이하</li>
-                                                    </ol>
-                                                </li>
-                                            </ol>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>만성 2</td>
-                                        <td class="align-l">
-                                            <p>만성 수생생태독성이 다음 ① 또는 ②에 해당되거나, 급성 수생생태독성이 다음 ③에 해당되는 물질</p>
-                                            <ol class="list-decimal-circle">
-                                                <li>빠르게 분해되지 않으며 다음에 해당되는 물질
-                                                    <ol class="list-roman st2">
-                                                        <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
-                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
-                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하</li>
-                                                    </ol>
-                                                </li>
-                                                <li>빠르게 분해되며 다음에 해당되는 물질
-                                                    <ol class="list-roman st2">
-                                                        <li>어류에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하 또는</li>
-                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하 또는</li>
-                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하</li>
-                                                    </ol>
-                                                </li>
-                                                <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
-                                                    <ol class="list-roman st2">
-                                                        <li>어류에 대한 LC50(96hr)이 1 mg/L 초과 10 mg/L 이하 또는</li>
-                                                        <li>갑각류에 대한 EC50(48hr)이 1 mg/L 초과 10 mg/L 이하 또는</li>
-                                                        <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 초과 10 mg/L 이하</li>
-                                                    </ol>
-                                                </li>
-                                            </ol>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>만성 3</td>
-                                        <td class="align-l">
-                                            <p>만성 수생생태독성이 다음 ①에 해당되거나, 급성 수생생태독성이 다음 ②에 해당되는 물질</p>
-                                            <ol class="list-decimal-circle">
-                                                <li>빠르게 분해되며 다음에 해당되는 물질
-                                                    <ol class="list-roman st2">
-                                                        <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
-                                                        <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
-                                                        <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하</li>
-                                                    </ol>
-                                                </li>
-                                                <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
-                                                    <ol class="list-roman st2">
-                                                        <li>어류에 대한 LC50(96hr)이 10mg/L 초과 100 mg/L 이하 또는</li>
-                                                        <li>갑각류에 대한 EC50(48hr)이 10 mg/L 초과 100 mg/L 이하 또는</li>
-                                                        <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 10 mg/L 초과 100 mg/L 이하</li>
-                                                    </ol>
-                                                </li>
-                                            </ol>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>만성 4</td>
-                                        <td class="align-l">
-                                            <p>수용해도 한계까지 급성독성이 없는 난용성 물질로서 다음에 해당하는 물질.<br>
-                                            다만, 시험적으로 결정된 생물농축계수(BCF)가 500 미만 또는 만성독성 NOEC가 1mg/L 초과인 경우는 제외</p>
-                                            <ol class="list-decimal-circle">
-                                                <li>물질이 빠르게 분해되지 않음. 그리고</li>
-                                                <li>옥탄올물분배계수(log Kow)가 4 이상</li>
-                                            </ol>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">수생환경 유해성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:120px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>급성 1</td>
+                                            <td class="align-l">
+                                                <p>급성 수생생태독성이 다음에 해당되는 물질</p>
+                                                <ol class="list-decimal-circle">
+                                                    <li>어류에 대한 LC50(96hr)이 1 mg/L 이하 또는</li>
+                                                    <li>갑각류에 대한 EC50(48hr)이 1 mg/L 이하 또는</li>
+                                                    <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 이하</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>만성 1</td>
+                                            <td class="align-l">
+                                                <ol class="list-decimal-circle">
+                                                    <li>만성 수생생태독성이 다음 ① 또는 ②에 해당되거나, 급성 수생생태독성이 다음 ③에 해당되는 물질</li>
+                                                    <li>빠르게 분해되지 않으며 다음에 해당되는 물질
+                                                        <ol class="list-roman st2">
+                                                            <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 이하 또는</li>
+                                                            <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 이하 또는</li>
+                                                            <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 이하</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>빠르게 분해되며 다음에 해당되는 물질
+                                                        <ol class="list-roman st2">
+                                                            <li>어류에 대한 NOEC 또는 ECx이 0.01 mg/L 이하 또는</li>
+                                                            <li>갑각류에 대한 NOEC 또는 ECx이 0.01 mg/L 이하 또는</li>
+                                                            <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.01 mg/L 이하</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
+                                                        <ol class="list-roman st2">
+                                                            <li>어류에 대한 LC50(96hr)이 1 mg/L 이하 또는</li>
+                                                            <li>갑각류에 대한 EC50(48hr)이 1 mg/L 이하 또는</li>
+                                                            <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 이하</li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>만성 2</td>
+                                            <td class="align-l">
+                                                <p>만성 수생생태독성이 다음 ① 또는 ②에 해당되거나, 급성 수생생태독성이 다음 ③에 해당되는 물질</p>
+                                                <ol class="list-decimal-circle">
+                                                    <li>빠르게 분해되지 않으며 다음에 해당되는 물질
+                                                        <ol class="list-roman st2">
+                                                            <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
+                                                            <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
+                                                            <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>빠르게 분해되며 다음에 해당되는 물질
+                                                        <ol class="list-roman st2">
+                                                            <li>어류에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하 또는</li>
+                                                            <li>갑각류에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하 또는</li>
+                                                            <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.01 mg/L 초과 0.1 mg/L 이하</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
+                                                        <ol class="list-roman st2">
+                                                            <li>어류에 대한 LC50(96hr)이 1 mg/L 초과 10 mg/L 이하 또는</li>
+                                                            <li>갑각류에 대한 EC50(48hr)이 1 mg/L 초과 10 mg/L 이하 또는</li>
+                                                            <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 1 mg/L 초과 10 mg/L 이하</li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>만성 3</td>
+                                            <td class="align-l">
+                                                <p>만성 수생생태독성이 다음 ①에 해당되거나, 급성 수생생태독성이 다음 ②에 해당되는 물질</p>
+                                                <ol class="list-decimal-circle">
+                                                    <li>빠르게 분해되며 다음에 해당되는 물질
+                                                        <ol class="list-roman st2">
+                                                            <li>어류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
+                                                            <li>갑각류에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하 또는</li>
+                                                            <li>조류 또는 기타 수생식물에 대한 NOEC 또는 ECx이 0.1 mg/L 초과 1 mg/L 이하</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>빠르게 분해되지 않거나 시험적으로 결정된 생물농축계수(BCF)가 500이상(BCF가 없다면 log Kow가 4이상)으로 다음에 해당되는 물질 (만성 수생생태독성 자료가 없는 경우)
+                                                        <ol class="list-roman st2">
+                                                            <li>어류에 대한 LC50(96hr)이 10mg/L 초과 100 mg/L 이하 또는</li>
+                                                            <li>갑각류에 대한 EC50(48hr)이 10 mg/L 초과 100 mg/L 이하 또는</li>
+                                                            <li>조류 또는 기타 수생식물에 대한 ErC50(72 또는 96hr)이 10 mg/L 초과 100 mg/L 이하</li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>만성 4</td>
+                                            <td class="align-l">
+                                                <p>수용해도 한계까지 급성독성이 없는 난용성 물질로서 다음에 해당하는 물질.<br>
+                                                다만, 시험적으로 결정된 생물농축계수(BCF)가 500 미만 또는 만성독성 NOEC가 1mg/L 초과인 경우는 제외</p>
+                                                <ol class="list-decimal-circle">
+                                                    <li>물질이 빠르게 분해되지 않음. 그리고</li>
+                                                    <li>옥탄올물분배계수(log Kow)가 4 이상</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="txt-exp-wrap">
                             <p class="txt-exp-ps">※ 급성 2, 3 분류기준은 만성 2, 3 분류기준을 위한 것이므로, 수생환경 유해성 구분에 급성 2, 3은 포함되지 않음.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-ozone" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">오존층 유해성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">오존층 유해성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">몬트리올 의정서의 부속서에 등재된 모든 관리대상 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <!-- // tab-content -->

@@ -85,69 +85,74 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content">
+                    <div class="tab-content" id="haz-acute-toxicity">
                         <div class="title-section-wrap">
                             <h3 class="title-section">급성독성</h3>
                         </div>
                         <div class="data-default">
-                            <table>
-                                <caption class="sr-only">급성독성 구분별 노출 경로별 급성독성 값</caption>
-                                <colgroup>
-                                    <col style="width:80px;">
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col" rowspan="2">구분</th>
-                                        <th scope="colgroup" colspan="5">노출 경로별 급성독성 값</th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">경구<br>(ATE, mg/kg)</th>
-                                        <th scope="col">경피<br>(ATE, mg/kg)</th>
-                                        <th scope="col">흡입(ATE, 4시간)<br>가스(ppm)</th>
-                                        <th scope="col">흡입(ATE, 4시간)<br>증기(mg/L)</th>
-                                        <th scope="col">흡입(ATE, 4시간)<br>분진/미스트(mg/L)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>5</td>
-                                        <td>50</td>
-                                        <td>100</td>
-                                        <td>0.5</td>
-                                        <td>0.05</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>50</td>
-                                        <td>200</td>
-                                        <td>500</td>
-                                        <td>2.0</td>
-                                        <td>0.5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>300</td>
-                                        <td>1000</td>
-                                        <td>2,500</td>
-                                        <td>10</td>
-                                        <td>1.0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>2,000</td>
-                                        <td>2,000</td>
-                                        <td>20,000</td>
-                                        <td>20</td>
-                                        <td>5</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">급성독성 구분별 노출 경로별 급성독성 값</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:150px">
+                                        <col style="width:auto;min-width:150px">
+                                        <col style="width:auto;min-width:150px">
+                                        <col style="width:auto;min-width:150px">
+                                        <col style="width:auto;min-width:150px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="3">구분</th>
+                                            <th scope="colgroup" colspan="5">노출 경로별 급성독성 값</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col" rowspan="2">경구<br>(ATE, mg/kg)</th>
+                                            <th scope="col" rowspan="2">경피<br>(ATE, mg/kg)</th>
+                                            <th scope="col" colspan="3">흡입(ATE, 4시간)</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">가스(ppm)</th>
+                                            <th scope="col">증기(mg/L)</th>
+                                            <th scope="col">분진/미스트(mg/L)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>5</td>
+                                            <td>50</td>
+                                            <td>100</td>
+                                            <td>0.5</td>
+                                            <td>0.05</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>50</td>
+                                            <td>200</td>
+                                            <td>500</td>
+                                            <td>2.0</td>
+                                            <td>0.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>300</td>
+                                            <td>1000</td>
+                                            <td>2,500</td>
+                                            <td>10</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>2,000</td>
+                                            <td>2,000</td>
+                                            <td>20,000</td>
+                                            <td>20</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="txt-exp-wrap">
                             <ol class="list-decimal">
@@ -161,6 +166,390 @@
                                 </li>
                             </ol>
                             <p class="txt-exp-ps">※ 「농약, 원제 및 농약활용기자재의 표시기준(농촌진흥청 고시)」에 따른 농약 및 농약원제는 급성독성 구분 5(경구, 경피)를 적용할 수 있다.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-skin-corrosion" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">피부 부식성/자극성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">피부 부식성/자극성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:120px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">1<br>(피부 부식성)</td>
+                                            <td class="align-l">실험동물을 노출시킨 후 4시간 안에 적어도 한 마리라도 피부조직 파괴현상, 즉 표피를 지나 진피까지 가시적인 괴사를 일으키는 경우</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1A: 3분 이하의 노출 후 1시간의 관찰시간 동안에 적어도 한 마리의 동물에서 부식성 반응을 일으키는 경우</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1B: 3분 초과, 1시간 이하 노출 후 14일 동안의 관찰기간 동안에 적어도 한 마리의 동물에서 부식성 반응을 일으키는 경우</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1C: 1시간 초과, 4시간 이하 노출 후 14일 동안의 관찰기간 동안에 적어도 한 마리의 동물에서 부식성 반응을 일으키는 경우</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2<br>(피부 자극성)</td>
+                                            <td class="align-l tbl-detail-cell">
+                                                ① 패치 제거 후 24, 48, 72 시간에 따라 또는 반응이 지연될 경우 피부 반응 시작일부터 3일 연속으로 관찰하였을 때, 시험동물 3마리 중 적어도 2마리에서 홍반, 가피 또는 부종의 증상을 나타내는 피부자극 평균값이 2.3 이상 4.0 이하
+                                                <br>② 14일의 관찰기간 종료일까지 최소 2마리의 시험동물에서 염증, 특히 (제한된 부위에 대한)탈모증, 각화증, 비후(증식), 피부각질화 증상이 지속적으로 관찰
+                                                <br>③ 시험동물 간 반응의 차이가 있어, 한 마리에서 화학물질의 노출과 관련된 아주 명확한 양성반응이 관찰되지만, 위의 분류구분에는 못 미치는 경우
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>
+                                    피부 부식성/자극성 물질은 다음과 같은 단계적 접근법이 검토되어야한다.
+                                    <ol class="list-alpha">
+                                        <li>사람 또는 동물에 대한 경험으로부터 피부 부식성/자극성이라는 근거가 있는 물질. 또는,</li>
+                                        <li>구조활성관계 또는 구조특성관계로부터 피부 부식성/자극성이라는 근거가 있는 물질. 또는,</li>
+                                        <li>국제적으로 타당성이 검증된 시험관내(in vitro) 피부 부식성/자극성 시험결과가 양성인 물질. 또는,</li>
+                                        <li>수소이온농도(pH) 2 이하 또는 수소이온농도(pH) 11.5 이상인 물질(피부부식성에만 한한다)</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-eye-damage" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">심한 눈 손상/눈 자극성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">심한 눈 손상/눈 자극성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:150px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1<br>(심한 눈 손상)</td>
+                                            <td class="align-l">동물시험결과 다음 중 어느 하나에 해당되는 물질
+                                                <br>(ⅰ) 최소한 1마리의 동물에서 각막, 홍채 또는 결막에 대한 영향이 회복되지 않을 것이라 예상되거나 일반적으로 관찰기간 21일 내에 완전히 회복되지 않는 경우. 또는,
+                                                <br>(ⅱ) 시험동물 3마리 중 최소한 2마리에서, 시험물질 점적 후 24, 48 및 72시간에서의 평균 점수로서 계산된 수치가 3이상(각막 혼탁) 또는 1.5 초과(홍채염)인 경우
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">2<br>(눈 자극성)</td>
+                                            <td class="align-l">시험동물 3마리 중 적어도 2마리가 다음의 양성반응을 보이는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 2A: 시험물질을 점적 후 24, 48 및 72시간에서의 평균 점수로서 계산된 수치가 1 이상(각막 혼탁 또는 홍채염)이거나 2이상(결막 충혈 또는 결막 부종)으로서 관찰기간 21일 이내에 완전히 회복되는 경우</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 2B: 구분 2A에서 열거된 양성반응이 7일의 관찰기간 내에 완전히 회복한다면, 경미한 눈 자극(구분 2B)으로 고려될 수 있음</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>
+                                    심한 눈 손상/눈 자극성 물질은 다음과 같은 단계적 접근법이 검토되어야한다.
+                                    <ol class="list-alpha">
+                                        <li>사람 또는 동물에 대한 경험으로부터 심한 눈 손상/눈 자극성이라는 근거가 있는 물질. 또는,</li>
+                                        <li>구조활성관계 또는 구조특성관계로부터 심한 눈 손상/눈 자극성이라는 근거가 있는 물질. 또는,</li>
+                                        <li>국제적으로 타당성이 검증된 시험관내(in vitro) 심한 눈 손상/눈 자극성 시험결과 양성인 물질. 또는,</li>
+                                        <li>피부 부식성(구분 1인) 물질 또는 수소이온농도(pH) 2 이하 또는 수소이온농도(pH) 11.5 이상인 물질(심한 눈 손상에만 한한다)</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-sensitization" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">호흡기 또는 피부 과민성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">호흡기 또는 피부 과민성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3">1<br>(호흡기 과민성 물질)</td>
+                                            <td class="align-l">① 사람에 대해 특이적인 호흡기 과민증을 유발할 수 있다는 증거가 있는 물질. 또는<br>② 적절한 동물 시험에서 양성의 결과가 도출된 경우</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1A: 인체에 높은 빈도로 호흡기 과민성이 발생하는 물질 또는 동물 및 다른 시험에 의해 인체에 높은 빈도의 호흡기 과민성을 일으킬 가능성이 있는 물질(반응의 강도도 또한 고려될 수 있음)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1B: 인체에 낮거나 중간 정도의 호흡기 과민성 발생 빈도를 나타내는 물질 또는 동물 또는 다른 시험에 의해 인체에 낮거나 중간 정도 빈도의 호흡기 과민성을 일으킬 가능성이 있는 물질(반응의 강도도 또한 고려될 수 있음)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">2<br>(피부 과민성 물질)</td>
+                                            <td class="align-l">① 다수의 사람에게 피부 접촉에 의해 과민증을 유발할 수 있다는 증거가 있는 물질. 또는<br>② 적절한 동물 시험에서 양성의 결과가 도출된 경우</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1A: 사람에게서 높은 빈도로 피부 과민성이 발생하거나 동물시험에서 사람에게 상당한 피부 과민성을 발생시킬 것으로 높게 추정되는 물질(반응의 강도도 또한 고려될 수 있음)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1B: 사람에게서 중간 또는 낮은 빈도로 피부 과민성을 발생하거나 동물시험에서 사람에게 피부 과민성을 발생시킬 가능성이 중간 또는 낮게 추정되는 물질(반응의 강도도 또한 고려될 수 있음)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-mutagenicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">생식세포 변이원성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">생식세포 변이원성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2">1</td>
+                                            <td class="align-l">구분 1A: 사람에 대한 역학조사연구에서 양성인 증거가 있는 물질로, 사람의 생식세포에 유전성 돌연변이를 일으키는 것으로 알려진 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1B: 다음에 해당되어 사람의 생식세포에 유전성 돌연변이를 일으키는 것으로 간주되는 물질<br>(ⅰ) 포유동물을 이용한 생체내(in vivo) 유전성 생식세포 변이원성시험에서 양성인 물질. 또는,<br>(ⅱ) 포유동물을 이용한 생체내(in vivo) 체세포 변이원성시험에서 양성이고, 생식세포에 돌연변이를 일으킬 수 있다는 증거가 있는 물질. 또는,<br>(ⅲ) 노출된 인간의 정자세포에서 이수체 발생 빈도의 증가와 같이, 사람의 생식세포에 변이원성 영향을 보여주는 시험에서 양성인 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">다음에 해당되어 사람의 생식세포에 유전성 돌연변이를 일으킬 가능성이 있는 물질<br>(ⅰ) 포유류를 이용한 생체내(in vivo) 체세포 변이원성시험에서 양성인 물질. 또는,<br>(ⅱ) 기타 시험동물을 이용한 생체내(in vivo) 체세포 유전독성시험에서 양성이고, 시험관내(in vitro) 변이원성 시험에서 의해 추가 입증된 물질. 또는,<br>(ⅲ) 포유류를 세포를 이용한 변이원성시험에서 양성이며, 알려진 생식세포 변이원성 물질과 화학적 구조활성관계를 갖는 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-carcinogenicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">발암성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">발암성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2">1</td>
+                                            <td class="align-l">구분 1A: 사람에게 발암성이 있다고 알려져 있는 물질로, 주로 사람에서 충분한 발암성 증거가 있는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1B: 사람에게 발암성이 있다고 추정되는 물질로, 주로 시험동물에서 발암성 증거가 충분한 물질이거나 시험동물과 사람 모두에서 제한된 발암성 증거가 있는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">사람에게 발암성이 의심되는 물질로, 주로 사람이나 시험동물에서 제한된 발암성 증거가 있지만 구분 1로 분류하기에는 증거가 충분하지 않은 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-reproductive-toxicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">생식독성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">생식독성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:140px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2">1</td>
+                                            <td class="align-l">구분 1A: 사람에게 생식기능, 생식능력이나 발육에 악영향을 주는 것으로 판단할 만한 사람에 대한 증거가 있는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-l">구분 1B: 사람에게 생식기능, 생식능력이나 발육에 악영향을 주는 것으로 추정할 만한 동물시험 증거가 있는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">사람에게 생식기능, 생식능력이나 발육에 악역향을 주는 것으로 의심할만한 사람 또는 동물시험 증거가 있는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td>추가 구분<br>(수유에 대한 또는<br>수유를 통한 영향)</td>
+                                            <td class="align-l">① 흡수, 대사, 분포 및 배설에 대한 연구에서, 해당 물질이 잠재적으로 유독한 수준으로 모유에 존재할 가능성을 보여 주는 물질 또는,<br>② 동물에 대한 1세대 또는 2세대 연구결과에서, 모유를 통해 전이되어 자손에게 유해영향을 주거나, 모유의 질에 유해영향을 준다는 명확한 증거가 있는 물질 또는,<br>③ 수유기간 동안 아기에게 유해성을 유발한다는 사람에 대한 증거가 있는 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-stot-single" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">특정 표적장기 독성(1회)</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">특정 표적장기 독성(1회) 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">① 사람에 대한 사례연구 또는 역학조사로부터 1회 노출에 의해 사람에게 중대한 독성을 일으킨다는 신뢰성 있고 양질의 증거가 있는 물질 또는,<br>② 실험동물을 이용한 적절한 시험으로부터 일반적으로 낮은 수준의 노출 농도에서 사람의 건강과 관련된 중대한 또는 강한 독성영향을 일으켰다는 소견에 기초하여, 1회 노출에 의해 사람에게 중대한 독성을 일으킬 가능성이 있다고 추정되는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">실험동물을 이용한 적절한 시험으로부터 상대적으로 보통 수준의 노출농도에서 사람의 건강과 관련된 중대한 독성 영향을 일으켰다는 소견에 기초하여, 1회 노출에 의해 사람의 건강에 유해를 일으킬 가능성이 있다고 추정되는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="align-l">노출 후에 짧은 기간 동안 사람의 기능을 유해하게 변화시키고, 구조 또는 기능에 중대한 변화를 남기지 않고 적당한 기간에 회복하는 영향으로, 마취 영향 또는 호흡기도 자극성을 일으키는 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-stot-repeated" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">특정 표적장기 독성(반복)</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">특정 표적장기 독성(반복) 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">① 사람에 대한 사례연구 또는 역학조사로부터 반복 노출에 의해 사람 에게 중대한 독성을 일으킨다는 신뢰성 있고 양질의 증거가 있는 물질 또는,<br>② 실험동물을 이용한 적절한 시험으로부터 일반적으로 낮은 수준의 노출농도에서 사람의 건강과 관련된 중대한 또는 강한 독성영향을 일으켰다는 소견에 기초하여, 반복 노출에 의해 사람에게 중대한 독성을 일으킬 가능성이 있다고 추정되는 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">실험동물을 이용한 적절한 시험으로부터 상대적으로 보통 수준의 노출농도에서 사람의 건강과 관련된 중대한 독성 영향을 일으켰다는 소견에 기초하여, 반복 노출에 의해 사람의 건강에 유해를 일으킬 가능성이 있다고 추정되는 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-aspiration" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">흡인 유해성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">흡인 유해성 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">사람에 흡인 독성을 일으키는 것으로 알려지거나 흡인 독성을 일으킬 것으로 간주되는 물질로, 다음 어느 하나에 해당하는 물질<br>(a) 사람에게 흡인 유해성을 일으키는 것으로 알려진 물질<br>(b) 동점도가 20.5㎟/s(40℃) 이하인 탄화수소</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">사람에 흡인 독성 유해성을 일으킬 우려가 있는 물질로, 구분1에 분류되지 않으면서 동점도가 14㎟/s(40℃) 이하인 물질로, 기존의 동물시험결과와 표면장력, 수용해도, 끓는점 및 휘발성으로 보아 흡인 유해성을 일으키는 것으로 추정되는 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <!-- // tab-content -->

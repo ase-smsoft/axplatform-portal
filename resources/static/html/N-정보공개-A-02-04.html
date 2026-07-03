@@ -85,7 +85,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content">
+                    <div class="tab-content" id="haz-acute-toxicity">
                         <div class="title-section-wrap">
                             <h3 class="title-section">급성독성</h3>
                         </div>
@@ -96,110 +96,112 @@
                                     각 노출경로에 대하여 '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 의 1.2 가목부터 바목까지에 따른 가교원리를 적용하여, 해당 혼합물을 급성독성 구분 1부터 구분 4까지로 분류한다.
                                     <p class="txt-caption">&lt;표 3.1.2&gt;</p>
                                     <div class="data-default">
-                                        <table>
-                                            <caption class="sr-only">노출경로별 구분 또는 시험적으로 얻어진 급성독성 범위와 변환된 급성독성 추정치</caption>
-                                            <colgroup>
-                                                <col style="width:120px;">
-                                                <col style="width:120px;">
-                                                <col>
-                                                <col style="width:200px;">
-                                            </colgroup>
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col" colspan="2">노출경로</th>
-                                                    <th scope="col">구분 또는 시험적으로 얻어진 급성독성 범위</th>
-                                                    <th scope="col">변환된 급성독성 추정치</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row" rowspan="4" colspan="2">경구<br>(mg/kg 체중)</th>
-                                                    <td>0 &lt; 구분 1 ≤ 5</td>
-                                                    <td>0.5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5 &lt; 구분 2 ≤ 50</td>
-                                                    <td>5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>50 &lt; 구분 3 ≤ 300</td>
-                                                    <td>100</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>300 &lt; 구분 4 ≤ 2000</td>
-                                                    <td>500</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" rowspan="4" colspan="2">경피<br>(mg/kg 체중)</th>
-                                                    <td>0 &lt; 구분 1 ≤ 50</td>
-                                                    <td>5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>50 &lt; 구분 2 ≤ 200</td>
-                                                    <td>50</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>200 &lt; 구분 3 ≤ 1000</td>
-                                                    <td>300</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000 &lt; 구분 4 ≤ 2000</td>
-                                                    <td>1100</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" rowspan="12">흡입</th>
-                                                    <th scope="row" rowspan="4">가스<br>(ppm)</th>
-                                                    <td>0 &lt; 구분 1 ≤ 100</td>
-                                                    <td>10</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>50 &lt; 구분 2 ≤ 500</td>
-                                                    <td>100</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>500 &lt; 구분 3 ≤ 2500</td>
-                                                    <td>700</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2500 &lt; 구분 4 ≤ 20000</td>
-                                                    <td>4500</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" rowspan="4">증기<br>(mg/L)</th>
-                                                    <td>0 &lt; 구분 1 ≤ 0.5</td>
-                                                    <td>0.05</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>50 &lt; 구분 2 ≤ 2.0</td>
-                                                    <td>0.5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>500 &lt; 구분 3 ≤ 10.0</td>
-                                                    <td>3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2500 &lt; 구분 4 ≤ 20.0</td>
-                                                    <td>11</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row" rowspan="4">분진/<br>미스트<br>(mg/L)</th>
-                                                    <td>0 &lt; 구분 1 ≤ 0.05</td>
-                                                    <td>0.005</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0.05 &lt; 구분 2 ≤ 0.5</td>
-                                                    <td>0.05</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0.5 &lt; 구분 3 ≤ 1.0</td>
-                                                    <td>0.5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1.0 &lt; 구분 4 ≤ 5.0</td>
-                                                    <td>1.5</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">노출경로별 구분 또는 시험적으로 얻어진 급성독성 범위와 변환된 급성독성 추정치</caption>
+                                                <colgroup>
+                                                    <col style="width:120px;">
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:300px">
+                                                    <col style="width:200px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" colspan="2">노출경로</th>
+                                                        <th scope="col">구분 또는 시험적으로 얻어진 급성독성 범위</th>
+                                                        <th scope="col">변환된 급성독성 추정치</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" rowspan="4" colspan="2">경구<br>(mg/kg 체중)</th>
+                                                        <td>0 &lt; 구분 1 ≤ 5</td>
+                                                        <td>0.5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5 &lt; 구분 2 ≤ 50</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50 &lt; 구분 3 ≤ 300</td>
+                                                        <td>100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>300 &lt; 구분 4 ≤ 2000</td>
+                                                        <td>500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="4" colspan="2">경피<br>(mg/kg 체중)</th>
+                                                        <td>0 &lt; 구분 1 ≤ 50</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50 &lt; 구분 2 ≤ 200</td>
+                                                        <td>50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>200 &lt; 구분 3 ≤ 1000</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1000 &lt; 구분 4 ≤ 2000</td>
+                                                        <td>1100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="12">흡입</th>
+                                                        <th scope="row" rowspan="4">가스<br>(ppm)</th>
+                                                        <td>0 &lt; 구분 1 ≤ 100</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50 &lt; 구분 2 ≤ 500</td>
+                                                        <td>100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>500 &lt; 구분 3 ≤ 2500</td>
+                                                        <td>700</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2500 &lt; 구분 4 ≤ 20000</td>
+                                                        <td>4500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="4">증기<br>(mg/L)</th>
+                                                        <td>0 &lt; 구분 1 ≤ 0.5</td>
+                                                        <td>0.05</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50 &lt; 구분 2 ≤ 2.0</td>
+                                                        <td>0.5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>500 &lt; 구분 3 ≤ 10.0</td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2500 &lt; 구분 4 ≤ 20.0</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="4">분진/<br>미스트<br>(mg/L)</th>
+                                                        <td>0 &lt; 구분 1 ≤ 0.05</td>
+                                                        <td>0.005</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>0.05 &lt; 구분 2 ≤ 0.5</td>
+                                                        <td>0.05</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>0.5 &lt; 구분 3 ≤ 1.0</td>
+                                                        <td>0.5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1.0 &lt; 구분 4 ≤ 5.0</td>
+                                                        <td>1.5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우
@@ -230,7 +232,7 @@
                                                     구성성분 중 급성독성을 모르는 성분의 총합이 10% 초과인 경우<br>
                                                     [공식 2]에 따라 혼합물의 ATE를 계산한 다음 단일물질의 분류기준에 따라 분류하되, 급성독성을 모르는 성분의 함량을 별도 표시한다.
                                                     <figure class="formula-box">
-                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA1IiBoZWlnaHQ9IjYzIiB2aWV3Qm94PSIwIDAgMzA1IDYzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwNC41IiBoZWlnaHQ9IjYzIiBmaWxsPSJ1cmwoI3BhdHRlcm4wXzUzODVfMTAyMzE2KSIvPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9InBhdHRlcm4wXzUzODVfMTAyMzE2IiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+Cjx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF81Mzg1XzEwMjMxNiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMjQ2MzA1IDAuMDExOTA0OCkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF81Mzg1XzEwMjMxNiIgd2lkdGg9IjQwNiIgaGVpZ2h0PSI4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFaWUFBQUJVQ0FJQUFBQXV6WWJLQUFBUFEwbEVRVlI0QWV5ZHNVOFUyeGZIaFI5Q1FBS0NNZkNMeGtLeHRZSEVVZ3NwYkUza0x6QnVaNnVsSmZRMmtGK3BEU1MycjhEaTEycXdzUlVzak9aQmpJc1NsSWp2UGQ5bjkrRGxNck16TzdzN3N6TUQzODE1MTNQUE9YUHZ1ZC9sZnZmY3UvanMvYVdYRUJBQ1FxQzBDUFNlOGw1N2UzdWZQbjE2Ly83OSt2cjZXNzJFZ0JBUUFzVkFBRWFDbDJBbk9NcGpySnA2U0dGZnZuelozTno4K2ZQbm1UTm5KaVltSmljbi82dVhFQkFDUWlCdkJDWW5KMkVrZUFsMmdxTmdxaHAxL2Y3dmdNS3c3dXpzakk2T2pveU1EQTRPbnE2Lyt2cjY2bitxS1J3Q1NrZ0luQkFFK3ZvT1dBaGVncDFHUjBkaEt2anFONE9kcWxFWXRkbjI5dmJ3OFBEQXdFRGYwZGQvOUJJQ1FrQUk1SWZBVVVMcWc2TmdLdmdLMWpJV3ExSFk3dTR1anY3K2ZwZG5iMit2MDZVSUFTRWdCUEpGb0xmM2tKRmdLdmdLMWpxa01QZ01VKy9SVjQ5ZVFrQUlwSXVBUm1zWGdhUGsxQXRmd1ZxSEZMYS92dyt4V1pCTllUNjFRa0FJQ0lHQ0lHRFVaRFFGWDhGYWxsanRJUG5yMXkvcjBCSkhLeEVDUWtBSUZBMEJuNTBjYTlVb2pFUjlIMTJKRUJBQ1FxQ3dDUGg4ZFVCaDVPcGI2YVltR2tnSUNBRWhrQjRDQWFZNnBMRDBwdEJJUWtBSUNJRXVJU0FLNnhMUW1rWUlDSUVzRUJDRlpZSHFNUmhUU3hBQzVVQkFGRmFPOTBsWkNnRWgwQkNCZGlqczdkdTMvNisvcXRWcXcwRTdOM1poaXM2VDFBaENRQWpramtBN0ZQYng0OGMvNnEvUG56K2ovNi9SQ3c2eXRWbkF5NWN2cll2OTRjT0h0TmIxMjcyOVBXZm5xZm9NZnpDRkh5TmRDQWlCR0FST29Lc2RDZ09tcTFldkxpd3MwSDcvL2gzZUNRc3hKaFlBUFZrM3BvWG1JRU1MdUhuejVyMTc5MHhYS3dTRWdCQ0lRcUJOQ25QRHdXSndHUUxqUEhqd0FPWDI3ZHQ0aDRhR2FCRWpMNm9xOUJpQnZDaTdZZ0xrRWdKQ1FBaUVFZWlVd3R5SWpvUHNndXpDaFF2bWV2WHFGY3FiTjI4b3NsQmlaSHg4UE1Zcmx4QVFBa0lnakVCSEZBWmIxYS8xYXcxRGMyK0ZCaE5SaUtIZ2hkYzRZM0lxSEJ3Y2ZQNzhPVWJDR2dwRjNQWHIxeHU2bWhvVklBU0V3SWxGb0NNS2c3TTQvWm1BSUp4bHVyVjRQM3o0QUowaG5ERTVja0praEVtNmo4RDI5bmJEU2VmbTVucDZldmpVV1ZwYUNnVEV1QUtSNm9JQUNEOTY5R2htWmdZOGtkbloyWGZ2M21HL2N1VUs4S0pJTWtLZ0l3cURsYmo4ZXZ6NE1TUkZEVVdYZ2dzZEMzYTZmUG5JaVpKQ0REcTdjZU1HN3lWWFl3U2NPM2N1by9WbzJEQUNMMTY4WUVlRjdleTMxNjlmYjJ4czhObkRmdk5aTE1ZVkhrY1d5QXVxR2hzYlcxNWUvbFYvM2IxN0Z3ejVHT0JUL05hdFc0SW9Pd1E2b2pEUzRxY2Z0cUxzNHEyaUMxdWhZNEdxNkZKMmNaYjA1ZG16WndUQWFIZ2xXU01BUS9HeEFUZWhCT1phV1ZuQk9EOC9mL255WlZ3b1dGQVFsQ2dYM3RUa1dBd0U5VU5lZkVpd0VmakFOakJaMmYzNzkrbUM1Tk9uVCtFMUxKS01FT2lVd3Jpbmg2MG9yRGdxY3A5RlN5R0dCYnRsak5FWElzMnV0Z3NJVEU5UHM3VWFiaUYyRnduNEJRTEJNQmZHR0JkZWlVT0F3eU9sRnNYWDJ0cWFNenJGc0tVY2N4WXBXU0RRSm9XNTMvYTZkdTBhYVhGUGI3ZjF0SHp6U1BIRktSSTdndUlMNTBxTVRZV04xL1QzTUpvT29vQVlCQ2dmOExMOWFFM1FxU2JRWTF4NEpRNEJPNTZ2cnE0Nmk2L3drU0QrOGdISlNHK1R3dUFYam9jY0hqbW5VSGxCWkpETyt2bzZMVG9XN0Ewekhob2FndEZvdzE3S04wNmdacWVJNDd4cHV0b3NFTENDcStISU1hNkc4U2ZUU0swS1VKd1dvZjZHQ0R4NThvUVk5eVBkTUthRXhzS2wzQTZGUVZKMk5yeDQ4U0lMb3JDNmMrZU9XV2pSby9qTGdvbmhFZlFZQ1V3UkV5bVhFTWdGQWE3d21aYzdMOXF3Y01hY21KamdnR2xoNFFCWjBrS2dIUXFEb2Fpa0VBNk1hZVVSR0tjTFV3Um1WRmNJSkVlQXN6YkNVVEdxQk9NckZFNlJ4TkFtSDFhUmJTRFFEb1cxTVkwZUVRSnBJVUNCMDlQdXkyNnZPcy9FTGcxajZJa0U0UzhPa2pFeG5hZWhFVUJBRkFZSVRlVVlCcml2LzhOcmkzR0ZnN3R2b2ZEaEJzcm1SZC9ZMktqL0psYmpCaS9YN2U2NEI2M1lneDIyMEdqOENJdUxpK1FHMDRuQzRvSHEzQ3NLNnh6RFVvN0FJWWk4L2EzSTlyYmZBNGh4OFVnUlpINSszaVU1TnpjWGt4SjB6S0lnRkxnTVRtR05NY0hKWFRaN1ZIeWxVaUZEU2pDalRvZ3NLbEwyemhFUWhYV09ZU2xIc09yQTMxMTh2Mlk3TThaVm5LVXVMeTlEU2VSRDJrbXV6T0V5aUl4NG43WHB0aWZRSWdOeTRSVitIUDRpTVRERWF4U1d5b3poaVdReEJFUmhoc1B4Yk5uZVhNb2dMSThXd1lLT3NNY2dMUGFiRlNZb3R0L2lYWGdMSWpDSVVSTDVMQ3dzdUhYUmRSSlFXREpQMlhvRHJqYTZuRS9ocHBtWkdUYzFaUmQzYmN4Q0NjYUEySm1PM0xEUWxXU0VnQ2dzSTJBTE1Td2tGYmdpd3VJeTR5dC9xb2tyVjJwL0QzbDZldHBSR0FFeExyd0ZFYWdCc1dUZ0RsUGlXOVlMNzhUSEpQUkNUeHhPd1kycCtXd0FSc2dSWG1NS0d3RTgrV0xkWldoR3Rha2pJQXBMSGRJeURjaHhESTZyVnF2c3QwRGVNYTVBWkk1ZGtvUktTQUJpaXI4VUl3YUJjU2lPVUZJUkRveFVncUFIaHRDWis1TEJCamVYcFdjV3RWa2dJQXJMQWxXTjJUMEVLSHhzTXM1eFhEK1pIdFZTRTdrcUtTcEc5cHdSYUhGNlVWaUxnQ204WUFoUTV0amRFM2x4cjg5cERpVktxSnNveEtLOHNwY1JBVkZZR2Q4MTVYd0VBVTV3VmxzbFBFNGVlVmlka2lNZ0NpdjVHMWptOUxrRmp4ZnV5Qk91aitNa0ZSYkJYSFZSaTZGSVRnZ0NvckJpdk5Fbk1ndHV3ZU9GTy9Ma3dIQzFiOEgrTDd1WlJlMHhSa0FVVnF3M043NHFPVGJlTEVEbkxNazlGN0xXNkg5QUdEVmpZU0dOU2xqMkFBS2lzQUFnT1hmanE1Smo0eldVbTlKSDhvTWtBMVlxRmU3eVcrSXZuaW9zcE9RbVNZS0FLQ3dKU29ySkJJR205Skg4SUFsL3JheXNOT1V2N3Z1NUxFdHZNUm9wZndSRVlmbS9COHFnUXdRV0ZoYU12eTdYL3ltVG1ORUkwMDFaREQ1bGRJbkN5dml1blZwYVdtTGZsakwxdEpPR2xmZ0trcnY4cHZ6RnpKdzB1U3hEYVZVRWVLdUlkUzFlRk5ZMXFOT2NpRTBiTmR6Y1hPMWZ0NDI1WnBxZG5lV09LVDRnYXZBb081T09qNDlIZWJPencxOU1EWDl4bDU5a0Z1THRkeStTQlBzeFdRUE9LbklCMEY5alNmVTJLS3lrS3owK2FmUGp6cDFPdy9WZ3A5QllYVjIxYXlZVXd0amUxcVcxdjJIREhSUGJQdURDaTUwaUJjSFZrbkE2WTVhV0h1azhtRnN0b0dBaExDckphRlJTZ0pPa1dBdU14aXdBR3pCYUZ6dGpnalBvSVNqWWdRTGRoTnpvQWl4NUJsd0VZQWR0SkJjQXllY1lpQ2lzWkc4aVArc3htNUFxZzEzRW5yRlYwVVh4L3dxMyswVjJ4Z200NkRMeS9QeThleHhMUXFsV3E3WkZFOFozSGdaeFVFNnlIRGdpeVdqd25WVlNyVlpoQUFVc1VWT0FjQ3FBZHgvQXFCV1Z6aTRLSzlsYlJpa1JzMmtwQ3Z3dHlnWmplWDQ4RzVMUGZJeGhGNXNjT3lOWUFIcGhCZjZhbVpsaFhSQnVmSklzaXBWU1JoSFAwbUxJS0dvY0FSNkZURUhzb3JDQ3ZCR0owcWhVS291TGkxR2hiRkcvNElLdHNMRFBMZDVhbzZld0M0djdmc0FuUVh1cWFLM3hFZVFTYzZObkxpTGhMMWpNbHRBcWhRbHd3NjNJclNpc3lPL09rZHdvS0NDZ0dIN0JoYmhuWUNYMHdLblF1cmFsSGJ0UjFIRElzaTZibk0xdmRNYm1SK2VhMmVJRFhRWkhjQkZqOFhTZGtDMTJ2Rmc0OGFFekJYb3F3ckdMaTZRMmhFTmY4Z1JZUWhjQUp4L0FDUU9JWFpJRUFWRllFcFFLRVVQUjRSZFpUWE15K2pCaUNnUWJ1eGtsc1gvNGdwTHQ2dGdOYW9CdTRCMmVSZWV3WmwwQ1hOY0dwTXBEV1Z0Ykl3REZDWnpJZ0FRekVXbHpUVWJtNkM2Z0ZBcVprM2J5Vk5zQVBBckE1Sk1xVWhSV2pwOEJPQUlxU1o0ckpJSTBMQ0t3STdpZ0dCT29paTRWSEhZMkxTMFR1WnR5WEZqbzRzSk9sOWFFVGM2emVHbk5ZaTJiMllJWjA0VHpMMHhuM2xLMDNRRThDc0JEaUtRMVEwQVUxZ3loQXZpcGFEaG9jS0NqWWtLNDMybWFGSHVER09NUkZGL0NMZzZQRnNrczZFd0hUMUZ6MlZNTnUrWWlEQVhDQ2xDWTJYRlJlYmx4NkpaRldESlFkQUh3emMxTk1Ba0RpRkdTRUFGUldFS2c4Z3lqSXJCeXlkb2s1UXk3Z293RHpJSUZDYnZnTHdRWEZSTnRnSGZZeno0TjRYWERZdWNvNUZ0NEhNRk9pK0MxTWRGTEpGMERmR0JnQUlqQ0FKWUlxOXhURllYbC9oWTBTWUR0eENuTUQycEtDcHpzRUVxaGNDUjJKT0NpOG1KOHJzWTRMYUt3b3h3SFdaZDRGQk1ZRUFwakVBUUxYYU0vbnFMcmk4OTlZYThmV1NpOXk0REhBRmdvV0FxYlRDRXByTEJvZFQweERuMXNmcU1ZTjdrUkV3VGhMQUdGUXhBV240Ym9tckEvVWVBZ1dpZE13ZVU5d3lJVUJYQ1RlemJRWmIvWnN5aVdGUmthaFJGcEEwS0ZITUhRWFF4NlRMWjRpeU1zQnpSc2FTNHJZRUdQV1VJbmdETmpBRURta2lSSFFCU1dIS3V1UnJLUnVQYXFWQ3JzSEZvM045OGVPb0lnd05sUjJBeFlFQlM2N0N0MGQzRUdzOUNGVm5CQlpPaE80QyttczY4TFVQd05iRjNid3p3SXUrR2xkUnhIZWxpWXk2aU5HS2JBU3d3S0xSYW1zMTJLbnFtNEZablMwbHlzbEtlQW1oWFJ1bWV6QnB6cEFnQzZxYVVrUVVBVWxnU2xIR0pnQWJ2NW92VVBraHNiRzFpYytKbEJFODd1RkhkeHRyeTg3SXdORmVNcFNNZVJFWU1IdXJqZ1J3akxIUzJaRkVyRlRyQUpWQWg1UVZ1a3l1TjRpYkhCTFNDakZnSmlYUXhPaTZDMEpIa0JEamhBNUFQWVV0b0tGb1hwWitBSUFseUh3VUhPRk9oU0wxU3JWWjlTMGJGZ1AzWHE0Q0VlZ1VGZ1RQcXJxNnNCTDBhSmowQVlRTjhydlNrQ29yQ21FQ21nSEFqQW02NFFLMGZHeWpJTkJFUmhhYUNvTVFxR2dIRVpiY0h5VWpycEl5QUtTeDlUalZnRUJPQXY2cklpWkZMd0hNcWVuaWlzN08rZzhoY0NKeG9CVWRpSmZ2dVAyZUpkMllXQ0hMUFZhVGtORVJDRk5ZUkZSaUVnQk1xQndBbWxzSEs4T2NwU0NBaUJaZ2lJd3BvaEpMOFFFQUlGUmtBVVZ1QTNSNmtKQVNIUURBRlJXRE9FNUM4T0FzcEVDSVFRRUlXRklKRkJDQWlCOGlBZ0NpdlBlNlZNaFlBUUNDRWdDZ3RCSW9NUUVBSnBJcER0V0ljVXBsOEZ6QlpwalM0RWhFQWFDQVNZNm9EQ0F0WTBKdElZUWtBSUNJRk1FUEQ1cWtaaFBUMDliaDdmNTR4U2hJQVFFQUs1SStDelUwL1BBV3ZWS0t5L3YzOS9mLytmK29zZ0pQZGN5NStBVmlBRWhFQ2FDTUJMU0oybC9vR3ZZQzBidlVaaGc0T0RQMzc4TUo5cmlaWUlBU0VnQklxQWdPTWxVK0FyV091UXdvYUhoekZCYkgvL2ZoSDNXOVdmUWtBSUNJR2NFZkFaQ2FhQ3IyQ3RRd3FEejhiR3huWjNkM0g4ZGZTVmMrS2FYZ2gwRndITlZqUUVqaExTWDNBVVRBVmZ3VnFIRklaMjl1elprWkdScjErLzd1enM3TzN0L2F5L2VMaitweG9oSUFTRVFENElPQmFDbDJBbk9BcW1ncTlnTFpQYVhaaHBXQ2NuSjArZlB2M3QyN2V0cmEzTnpjMC85UklDUWtBSTVJMEFYTFMxdFFVdndVNXdGRXhsbEdYdElZWFJwelk3Zi83OHBVdVhwcWFtcnVvbEJJU0FFQ2dHQWxOVFUvQVM3QVJId1ZTKy9Bc0FBUC8vN1pKR0NRQUFBQVpKUkVGVUF3RFVTaEpzWHFrUUZnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CjwvZGVmcz4KPC9zdmc+" alt="" />
+                                                        <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzA0IiBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgMzA0IDY0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjMwMy43NSIgaGVpZ2h0PSI2My43NSIgZmlsbD0idXJsKCNwYXR0ZXJuMF8xNzU3XzEwNzA5NCkiLz4KPGRlZnM+CjxwYXR0ZXJuIGlkPSJwYXR0ZXJuMF8xNzU3XzEwNzA5NCIgcGF0dGVybkNvbnRlbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgo8dXNlIHhsaW5rOmhyZWY9IiNpbWFnZTBfMTc1N18xMDcwOTQiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDI0NjkxNCAwLjAxMTc2NDcpIi8+CjwvcGF0dGVybj4KPGltYWdlIGlkPSJpbWFnZTBfMTc1N18xMDcwOTQiIHdpZHRoPSI0MDUiIGhlaWdodD0iODUiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBWlVBQUFCVkNBSUFBQUFPcHU1c0FBQVFBRWxFUVZSNEFlemRNYXhVVmJjSDhPL3hFQUlTRUl5QkY0a0ZZR3NEaWFVV1V0aWFTR09yM000V1MwdG9qYzI5dmxJYlNHeS9Bb3ZYYWpBeDJpbFlHTXlER0s5S1VDSis3K1A5N2wyNE9mZk1uRFBuenN5ZGUyWm1UVlkyYTYrMTl0cHJyM1AyZjliZWM0MTdIdVVuTTVBWnlBek1ad2IyL0tQeWVmRGd3VTgvL2ZURER6L2N2SG56dS94a0JqSURtWUYrWkFBaXdTWG9CS01xaVBXUEovajE2NisvM3JsejU2Ky8vbnI2NmFlUEh6OSs0c1NKLzhwUFppQXprQm5ZN1F5Y09IRUNJc0VsNkFTaklGV0JzTWY0UlhUdjNyMGpSNDRjUG56NHdJRURUMjErOXU3ZHUvbHZOdjNOUUVhV0dWanNET3pkK3hpRjRCSjBPbkxrQ0tTQ1Z3RmhHL2lsSlB2bGwxOE9IVHEwZi8vK3ZWcy8vN2tjSHd1Zlg1cmtFYzN2cWpQeXhjNUFlYXUzQXRKZXE0WlU4QXBxZ2JBTi9McC8vejdwdm4zN3lwZzllL1lVZmhrWWlaaGZtdVFCemUrcU0vTEZ6a0R0cmQ2ejV3a2lRU3A0QmJWa1lBTy9JSm4rbnEyZi8xaW1qMFRNTDAzeW9PWjMxUXNTZVM2aklRTzF0M29yT08yQlYxREwwQTM4ZXZqd0lVZ0xpeGhHa1pRWnlBeGtCdnFUZ1lDbWdDbDRCYlhFdG9GZmp4NDl3Z1V4Q2liYnpFQm1JRFBRcXd4VTBTbFFhd08vaEZoVjZDWmxCaklEbVlIZVpxRGcxV1A4RW1nUjRXZEhPVk5tSURPUUdkaE9CcXBJOVFTL3R1TWhiZnVTQVQ4a2U1emowZm56NS91eWpJd2pNekJXQmhLL3hrcGJid1lkUFhyMDBxVkxFUTcrMXExYjdnV2FpUGI2OWVzWEwxNE0rKysvL3o2WWJETURjNXFCeEsvNWUzQnFydmZlZTYvRWZmbnk1Yk5ueitxU1g3aHdBZE5FcDA2ZGV1MjExMVpYVndFWnNKc0dmalZOTmNmeUsxZXV6SEgwU3haNjR0ZjhQZkNWbFJXWVZZMzc2dFdyOElqa3l5Ky9yRUlieVZBQ1pGQ01DdVJwazZvWlVNL0tjRldTZkc4ek1BNStmZmZkZC8reitWbGZYOStoaGMxZ2loMktmS2ZkcWc3ZWZQUE4yaXdGajhnWlFERk1PM0ZpVkpaZ1E3T2tTcjEyN2RwUVZRcDdsWUZ4OE92SEgzLzg1K2JuNTU5L3h2LzNzQThBaW5XR3dlZWZmeDVkY3Q5djJ1aFdXNWJrOFdlMStNMFovbW1LcXMwdThrMmxpaU9iNi9Oang0NnRyYTNWd210UjFTeTdkKzByMEROb1Q0aEMzdkZpM2k1dFdsVDQwVEpRMEowN2Q4NGFFYzhCZVpOVUtKeHdOWWtIZ2Uwb3lhU3ZnUjJkb2lmTzV6Mk1jZkRMbWw5ODhVVVBXUHZISDM4QW5VRmlFeFFHZ1VvaEdkckN3QTgrK0VETHJiTHUxVmRmZmZ2dHQ0ZGE3b3J3czg4K3Mrc0dwN2F4RlR1dWs4UnNZMWNockVVMTZLZWpSQmh4MVRYVTNpbFNTVVVGZEVBbnBwMjRFbnlMRGVRNmZmcTBreW5QOFp1QWpXMWRuSnVpWldDN3ltOElvTlBzN1dhN3F4V2ViTzl1RERuN3lBeU1pVi9GTHdpRE9BamN2UHZ1dTVqWFgzK2Q5dURCZzFvVXlLV2V3amVSNmd3Q0d2aldXMit4Y1RiVjlvVHM4S2l0TUxXUWxFS0VycUlDTlRBa1lZTnBVb1hCZUswZEJVRmF4b0tHMEFxZ0NxWWhyTFZjd1pHYU1McXdHSEtaRGk2cmwyT0JWSDY3MU9YY1dOMnhpZWVtcWNmMk9kMkJ3aFBrZEgybXQ2bG5ZRkw4S2dFcG5aejRkTDN4MnVlZmYxNkx2dmppQyszWFgzOE5wREJOOU5KTEw2bTV0Q2RQbmd3UFRaWXpsdnNlRm84Q1pIQmUyNWpRaTY0TllneTI4QzBxMnJHSmM5VlF5M0JBQTBiRFFQVUVob0lmMm5JbDRFR1Yya3FSUlh2anhvMUJiYXgzRXZ5S3FJUTY2THcvRXVISmRuL2l5VWlHWm1BaS9MS3gxVXBCdkx1cndxdFdWRklZV3FDbXNBSk1CdzRjK1BUVFR3bVpEZExMTDc4Y2xaY3k3ZmJ0MjR3SGJYWklNb25iMklmMmVYR0NqeS90RmxVeEhvUGhmQ2ppVkYycGp3Sml3SkNEWGxYVmtZK1RjaW5sYXFNRU1BbDQ4V1lWRVNHK3QyU1ppVis5ZlRvbHNJbndDMkNwdVlKNEJGakJSMHNMakdBWmNyUjAwbXdISmtqMzBVY2Y4UVB2dFAybmx2ZTdSVFdEZFlFZVNHb2lZYWpDTU4xSjVXZ1VFQXdQZ3dOQjgxZGZmYVZBS3lvSDFRS1V4cnFiZDQxQVM0ajNmY2FuYnFHQ1gxekJTalphMmk1am1SbnViRnRHa1FRSkNRVWZMUVFQaGp6eTBIR0tHRldHUnpmYkhtWmdJdndDU2Q3VTk5OS9IMEtwb1hSQkQ1NkVYTmMyY0pBRVRMRHNsVmRlOFNxN0RtUHc3TFBQMW5MaGRLbFlZL0RPTys4WVV0TXVYdGYyYXljSm5HVFY1Y0JydDIvTFQreHo5MXhOb3pqODl0dHZhV0dCRnBFNGJXRVFxUEkxeGdsSVVxYTU5WGVlMWFVcVpLRDZLOENMdHN6VlpTd2IzcXlPWjA3S2o1Z3cxR2tYNG5BZUUxR2g0QlZURFBDR2p3eVBXZEs4WkdBaS9MSkliNE9kcHVCU2F1bUNLandKbk5KVmNFR2xLbjN5eVNjTXdCbHRJYU9jTGwxK0xRbDRXYmp0MTA2Z245bllaRy9idE1pdTd1NEVwaUNqbW9vdkFCR3FNQXZQOE10MGVOZ0JzOWpneFkvSDhCWVNQTUliQysrOEpINjNwVjFkWFZVd2Rod0xraGdieFpVcHJtMytsUmFmRVJVbVZMU2lpZ0R3VUpLcXl4U01rK1lvQTVQaWw0dDVVS1drY2tLTW55Q1ZZQ1Rra1FYQ0tyRU1lYlc5ZWZPbXJ1SkxGZWFPVEt1Yk5KZ0IyMzVRT0ZSaW40T0piWUVYUC9hOHRteDdmSTBjOEFFRXMySmpGdEFRK0lXbkJSUGFrQmhPV0hoZFkyR044TUNXYmlGbVJyV1BWWGtwMWd3dm8weU5OMG84UEd0MUVXK29PaStlWk9RVXhnYnh6RGo0Ykh1YmdUSHhxL3hWbDZMSjJvQ09BaXBhNktQc2NuZ2tSNWdxRFQwYnVyWm5hYmpTREgzenpUZkt1aENTOTVaYTBLUkZOY2x5N0NoN2RhUUg2T0NnTkJLOGJOR2FONUoyNTBESDBqZ0hCMkVKTlVRVmZNQUhTZEdTTXc0NUhwbVJGcm1UWWtrU0ZEWWtWQ0hSMXNiU2hoa1Y0a293bUJoU05XWkpWWkJPbDAyTURkNm9vT3Fva0VRTDdIZ0lQdHZlWm1CTS9BSXVUb1hPaklvbWxSY1VnempLS0MyZWhIem9tZzhlUEFqT3RGV3RBczFwb3BDdThnMlFWVzE2eU1lK3JlNTVMNzE5SXRRV0ZlM1l4TGxOMno1Y0d1MUo0RFZ5K3pHem1hdmVJdXlxcE1xRFJRY3hFcU1DQy9EaUVSV0dVSXN3SWNFalhjYXlKRG1scTR6aXlnVS9DUktKRmpGdUdjdEROVUpYV2pYajB1WEhwQndHOFYrNlZNV01WcGVxaEVjU1JGNDFDMkcyMDg3QXBQN0d3UzhJQldMUXlaTW56YStrZXVPTk4zU0Q4RTNnRmNiTURNRzNVRzJLRnN0ZFZIbnZ6ZTVGMXdiWnpMSEJXbFJoT1Y3THJVM2JNdFpHZGNoeXZUMFN2RGlwd1FHSkhXdmcwQ21BbDNKR0FNd00xQVpaZml3NWhBRUUvQlJ0OEFMam1iQ2tpTGVROEJETXlMR0c4QkRFbUU4Z0dGMXRCSUJCK0dLTU4ybkhLWXdONGp3V0c5MXMrNW1CY2ZBTFBLbWhrSFBpRHExcUJsTjBqTnlySHo4VXNnK0dCSSs4MzdhdWpXMkg2R0tVRlJqVW9xSWRtK3hKWk9zTzlXRExxV2lBVjBER1VKdXFrRDF2VlFuZTdUai9EbmRsbWN6aXg4UUNGa2FGMXBJWjY3S3haTU9Ca1p4Z2dwZ0JEdm5Sa3VneURsNDNxQXdwVE1nWnN5eGpDVTJodXNSUWlkQmhsamZkSU1iQ3dNTmZvM2pEQzA5T1dPSVJZVXQ0RElLTVlsWjFIdkpzKzVhQmNmQ3JiMnZZMFhpOHg3VWZDa25Lakk1cHdPTDA2ZE1BOSt6WnN3Vy9HTFNvYU1jbThCUjd1T2JCbHJaUmFXM3ltbXBvTnphNVBWL1Rrc1RQZ2pBTFhsc2FMQUJxbGxrc3dRRnRMQmx2WGhzK2RqdmpxcVZnVENUZ0VBcVNKUHhJbHlHY2xLUzFqelhLWEFCSVZHYkVGMWRVU0pBbW9qVmpMQUV2Zm1ZeE81dVJVN0JCYXRnQzFycEp2YzFBNHRla2p3WmtBRGdYZjJVZkZvOHRxcjl0dHYydlBXL24yOGJWa2JZbFFMbDA2Wks5V3BVMzhYREVGcVhsVFZzalF1aGdSZFlGQ0xpdEdaaUZGbGx5OEppd1lWemQrZENRR1craFpWWjRFb2hEeXdhUDJzY3lRSVpFVkFXU0NJUDQ4WjFCcTdVRVllRDU1ellNdEhoeVRKQWhES29oa1N2aU9PY0JuOVR6RENSKzlmd0JEUWtQWkZTbHdNdGhpckM2TTZzR2hRZGJOcWZpaGIyS3llNHRxbVJLQmlDWFpKWnVNbjNPUU9KWG41OU9ZMndLaEtJTE1ISm9jbHhxSjViQUM0VEYyTVN2eUVPdHJlYTJwbHJJcm04eXhiaDNJMTRlaGJ4dlJDdDE5SGE2eC9TWkVyLzYvSFE2eGVZRTVLQTBCam1MZFpvZ2pab3pNTzhheUFXbmxKeHgxK0V0VW52Q010OXp0Mi9mN2orVUozN04reHVZOFdjR3hzbUFJZ3R5dVVqMS9lZGFzQlRqN2loMUZla2ZmL3d4VUJ2SDlRekhKSDdOTU5rNVZXYWdIeGx3WmxSa0tidjgxakVZVVpSZENyRkJWZDhraVY5OWV5SVpUMlpneHpQZ2tzc2NUUmNJZnVDZUMvQ3loRW54aTR1a3pFQm1ZSTR5NEd6b2wyaUhSUFhYMExBLy9QQkRObGZtNGYrRG1mZzE5QW1tTURPd3NCbHdaMjl0N3JtMGcrUm9lZno0Y2VmS01CczA2SlVrOGF0WGp5T0RXZVFNZ0liNEc0VXgyamp4VFo0ZDEvYklDYkdwK0ZwYlczTjRaS09kZkxxZDlwRDR0ZE1aN3JmL2pHNkdHUUFaVG0weElmN1dyVnVQbWorMDdxZEtsUVJRWXVDRXJSOGNlV2pCSnRocUx1ZkhGaHNlZWtLSlh6MTVFQm5HVW1UZzh1WExhaDlMVll0ZHVIQUIwMFNuVHAzeU8rRHE2aW9nQTNZd3BjbHlXM0x6dHR1YjBYUmdMdkdyUFZHcHpRd3NZd2F1WHIwS0lLemNKWHFYT3laQUJsUFlqNFFlTmlNcDBMUEpiR1ZsQmNJcXZxTHVnMkpObGoyUlovM1Zrd2VSWVN4TEJnb2VXYkRmK0tBWXBwMlVRa1lOSzhIYXh3M1JxdW00Y3NrMXFBTmVnTlZjdElGZlUwSE13WW1tS0VuOG1tSXkwMVZtb0ZNR1lBUUswNDRYODNCbldtamlXbzJyYytmT0ZlaFVjQWxEU0lvdlVaSERPTmhLb3R0blN2enE4OVBKMkJZMkEwNlJNTUx5UUVuN1JSZ2I1TndIVmpDVGszbmRxWEVJczl6V256NTlXbVVIMUVCa09GZDhIVHQyclAvZ0pkckVMMGxJeWd6c1FnWkFSc3lxL0hGa0M3NnBoU1lGWDVwc3VzdWRFOTJwcmErdisvMFRscFZmUmNORHFNQmNkUHZjemp0KzlUbTNHVnRtb0MwREFDTE9hNHhjNUN1Q01FMEVjVlJNVGRxbGxTZCtMZTJqejRYdmZnWVVQbEZWZFR4RjduN0VQWXNnOGF0bkR5VERtWWNNdURacUo1ZEtIZGZoRkttMll1eDZTeFdHU2VxZWdjU3Y3cmxLeStsbllFNDl1alpxSjVkSzNaZm1MaitNKy8vM1ZoRm5mOXJFcnlIUG92MnJOYlZMbTRFaDc4bzBSSTZRN3JiUWpSczN1dnZyN1ZQb3ZvVEpMUk8vaHVTdy9hczF0VXViZ2ZLdWpNU083dWRIUGxkV1ZsemVid3U4ak9ydFV4RGJ6Q2p4YTJhcHpva1dKd01qc2FQNytSRjRYYnQyYlNSNHVlQjNRZGE3RE81MlFJbGZ1LzBFY3Y0bHpzQ1ZLMWNDdkU2ZE90V2VCbVo1T3phWW9zU3Z3WnpNdldSdGJjM0dtUHRsTFBvQ1FKSWZIRjNlandRdm1YREFkRUdHMlM0dDlzdVErTFhkOTJFTzdPMktwaWd2WExqUWZuZHovdng1ZHpjdE5neWFuRGZKVFhyczJMRW03WExLZ1plMEFDK1g5MTB5d0Q3K3pLS0xjZFZtcDE4R3E5akZoNXY0VlgzVzIrZjdOOEw3NUs1a2FGemt2c2F2WDc4ZTF6Y1ladlpQZExYeEg2bTR1N0d2YWlwYWNpVUFvdG9XT2ZpWVpWdERGdHZZVFpiSEpNa1MzbVdsYWlnUHJrdVpWdk5tRmcrOUpvd3VPWi9lQVU4V1ljZzlKbnlRMkhROWRISFdWQXpJdlFsb2R4OXU0cGRIc3pqa1pXcDV5MzJIZTAyOWxMRmdYY3pGaXhlMVFlWFB3ZmtocWFwMGViNTgrWElaVHRLUjF0ZlhZdzkwdEY5c002aWhocFZxQU5GbHBjQXVhcWp0MWw4ZW9rZldOSVduUDVXWFlYY2ZidUpYMC9PZFM3a3Y2cFpkNFN1M3VnZTh3UlpadGZmRyswWWxIRlRaUmVROGhBRSthWXdNQUs5ejU4N0p1VytDOXVFUzdpa29vTmhMZXdzU05mbFpocGNoOGF2cDZjK2YzQy94cTZ1clRYSGJBOVY2Q2xTUjJFaFYrOENtUVJWSitVR2dpb0RWc2ZQSnp6cnFBQ1BJMG5MREdDcVd3QXVFUllqYjF0eEFkd0FBQlFCSlJFRlV4YThsZVJrU3YrTDFtUHZXMXpYMGFRRVhLbFRXQ1pMd3RjTmdkR1BQRkdoVE1qaS9STmN1c3JzQ3krd3V2THZic0s5MU9VZFViTUpldDVCb3lXbEpIS2J3cHNBdlBEbHR1VHdhZzV6MXVpZEhlbWZ3TW9qSGd4dDh1T1F6bzhTdm1hVjZaeWZ5bFY0dHIwWk9GdGdScUZRekRtZ0xQUEtDK2puU2ZpalFadS9CR3FCakxONDVLTG9NU2pjY3F1OHdOMjdjWUlBcEJCQTVaR3dpWWJzYUV6bStHQ1F6WVFaa1ZVcTdPeG5qWldoNnVOMG5uWXBsNHRkVTByakxUZ0FFSE9rZUJBUkJRNytpeVJFVmZBbUNVN3BxTjNLN1FtdWljdjFNUmFKTFJhNnJEYktMaktYVmhpUmF1eVdNK1F4eTdBVnpvYzEyd2d6TTVtVm9lcmdUQnIvZDRZbGYyODFZNyt6Vk1tcDQ1emkxRW5Kdk1qSkVMeCtiQUJGTWxRWlZ6b3hoYVJhODZZQ1VhaXRHRGUyR2loa0dXdFh3SytSVWFxN2lSemRwOGd4NEhCN1RERjZHTzNmdWlIYnc0UkxPa2hLL1pwbnRIWm5MOTIwVVN0RjJLV1M4ZGtLcHdRb0pHbFFCTDBTbFZ0TFdRTWVHcVdJUWJYRkw3cFJSbFJpT3lMV0lObnppazZhU2dabTlEUHYzNy9mNEJoL3VWRmJSM1VuaVYvZGM5ZEhTKytyd1ZZMXNKQ0k0MENGRjBLQWxPYXFwMUZ6OHV3NXpTTVI0WlFzQVJaYzlKZ2o4d1M5T0VJbHVZSjlSdWxXcUF0K2d0bXFaZk1jTXpQaGxhSG00SFFPZTNDenhhL0ljN3BxSHRiVTFPei93cFFRUnFBUWRpcVRHT0YrUVZERklOOGdHd0FBZ2JTRlR1SzNuRnZuS0JVeGxiSzNyaFk2eG1JakthVFR3aTJVNGhJTk9OL2hpZzIrSmxqYXBTd2FrMnBPS3RCZDdqd3pma3Q1SlhnWXoxaDZ1dVdaTWlWOHpUdmgwcHZPbXV1cGFXVm54YW1xTFU3OFZGblJnVU9RWWJ4c0p3dWg2Y2ZIbHNneXM2TUlVS2lpR0x3UzhUQmUvRDJDcU95UzZzVWtNQkcyMDJnSnd3aU14VitBYUcxUFFzc0ZvU1V3WDJ3Qy90RlN5SGN5Mjh1QXBHT1Uxa0cxdEdidlRMNFBwYWcrM1REMHpKdkZyWnFtZTVrUWdJRzY3dE5YejQ2MWJ0MGdLVmFlRUVVVmVtSEpaZHZYcTFTSWN5Z1JJUVp5Q1JKelh1bFRBRVZxVkU2Vko0U2s1NHlBNENMbGdsbEFOcDJVVHpzTmdDVnZvSStjV3JrV1liZEZ1dlF3ZW5NZFhmYmpiQ25zcXhvbGZVMG5qc2poeEJRYUF5bXByWGQvRzYrdnJWVHpGazVCWGg5aWk0SkxrK3ZYck5TM2hjdEU4cjNidzRjNStOWWxmczg5NXpwZ1oySklCZ0Y1S3NDMks3SXpLUU9MWHFBeWxQak13d3d3RWtHbG5PT2NjVDVYNE5jY1BMME5meUF3QUx4WFpRaTV0Nm90NmdsKzdrN0twTHlnZFpnWXlBd3VkZ1NwU1BjYXZxbWloMTU2THl3ejBNUU5sQTJKUUgwUHNVMHdsUlJ2NHBWNHRzUlZGa1NTVEdjZ01aQWI2a0lFcU9nVnFiZURYdm4zN0hqNTgrTy9ORHd2VWgxZ3pobm5JUU1hWUdaaFJCdUFTMmtTcGY4TXJxR1hpRGZ3NmNPREFuMy8rR1lyU01sMGVrb2lrekVCbW9EOFpxSUZQd2FWZzRCWFVFdTBHZmgwNmRFZ2ZwUDNmM3g5R2Y3Tkw4YTlFSkdVR01nUDl5VUFOZDZxSUJLbmdGZFFTN1FaK1FiS2pSNC9ldjMrZjlGOWJQelV2aTlxVmlLVE13Qkptb0xkTExsQ3pGWkQrQmFNZ0ZieUNXb0xmd0MvL1BQUE1NNGNQSC83dHQ5L3UzYnYzNE1HRHZ6WS9SbTcrdS9pTmpDUmxCaklEL2NsQUFaMkNRbkFKT3NFb1NBV3ZvQlo2akY4NG9oTW5UanoxMUZPLy8vNzczYnQzNzl5NTg3LzV5UXhrQmpJRHU1MEJXSFQzN2wyNEJKMWdGS1NDVjBGUDhFdGZTZmJjYzgrOThNSUxaODZjZVRFL21ZSE1RR2FnSHhrNGMrWU1YSUpPTUFwU0ZkcUNYMFc2UEV5dU5ET1FHWmpmRFB3L0FBQUEvLzh0MkRUNEFBQUFCa2xFUVZRREFNRzdnQ1pZRnU1S0FBQUFBRWxGVGtTdVFtQ0MiLz4KPC9kZWZzPgo8L3N2Zz4=" alt="" />
                                                     </figure>
                                                     이 공식에서 Ci는 성분 i의 농도를, ATEi는 성분 i의 급성독성 추정치를, 그리고 Cunknown은 급성독성을 모르는 성분을 의미한다.
                                                 </li>
@@ -250,9 +252,1029 @@
                                 <li>「농약, 원제 및 농약활용기자재의 표시기준(농촌진흥청 고시)」에 따른 농약 및 농약원제는 급성독성 구분 5(경구, 경피)를 적용할 수 있다.</li>
                             </ol>
                         </div>
-                        
                     </div>
                     <!-- // tab-content -->
+                     
+                    <div class="tab-content" id="haz-skin-corrosion" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">피부 부식성/자극성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 피부 부식성 또는 자극성 자료가 있는 경우 단일물질의 분류기준과 같다.</li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 제1.2장의 가목부터 바목까지 따른 가교원리를 적용하여, 해당 혼합물을 피부 부식성(구분 1) 또는 피부 자극성(구분 2)으로 분류한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 구성성분에 대한 자료가 있는 경우
+                                    <ol class="list-alpha st2">
+                                        <li>
+                                            가산 방식을 적용할 수 있는 경우
+                                            <br>혼합물 중 피부 부식성(구분 1) 또는 피부 자극성(구분 2) 성분이 이들의 농도와 부식성 또는 자극성 강도에 비례하여 혼합물 전체의 부식성 또는 자극성에 기여하는 경우에, 혼합물의 분류기준은 아래 &lt;표 3.2.2(a)&gt;와 같다.
+                                            <p class="txt-caption">&lt;표 3.2.2(a)&gt;</p>
+                                            <div class="data-default">
+                                                <div class="scroll">
+                                                    <table>
+                                                        <caption class="sr-only">표 3.2.2(a) - 가산 방식이 적용되는 혼합물의 피부 부식성/자극성 구분별 분류기준</caption>
+                                                        <colgroup>
+                                                            <col style="width:160px;">
+                                                            <col style="width:auto;min-width:500px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">구분</th>
+                                                                <th scope="col">분류기준</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1 <br>(피부 부식성)</td>
+                                                                <td class="align-l">피부 부식성(구분 1)인 성분의 총 함량이 5% 이상인 혼합물</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2 <br>(피부 자극성)</td>
+                                                                <td class="align-l">
+                                                                    <ol class="list-decimal-circle">
+                                                                        <li>피부 부식성(구분 1)인 성분의 총 함량이 1% 이상 5% 미만인 혼합물 또는,</li>
+                                                                        <li>피부 자극성(구분 2)인 성분의 총 함량이 10% 이상인 혼합물 또는,</li>
+                                                                        <li>다음의 합이 10% 이상인 혼합물
+                                                                            <ol class="list-roman st2">
+                                                                                <li>피부 부식성(구분 1)인 성분의 총 함량(%)에 가중치 10을 곱한 값과</li>
+                                                                                <li>피부 자극성(구분 2)인 성분의 총 함량(%)</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                    </ol>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <p class="txt-exp-ps">주: 피부 부식성 구분 1의 소구분을 사용할 때 1A, 1B 또는 1C로 혼합물의 부식성을 분류하기 위해서는 소구분 1A, 1B 또는 1C로 분류된 모든 성분들의 합이 각각 5% 이상이어야 한다. 소구분 1A로 분류된 성분들의 합이 5% 미만이지만 소구분 1A, 1B로 분류된 성분들의 합이 5% 이상일 경우 이 혼합물은 소구분 1B로 분류되어진다. 이와 유사하게 구분 1A, 1B로 분류된 성분들의 합이 5% 미만이지만 소구분 1A, 1B, 1C로 분류된 성분들의 합이 5% 이상이면 이 혼합물의 경우는 소구분 1C로 분류되어질 수 있다. 혼합물에서 적어도 한 가지 이상의 성분이 소구분 없이 구분 1로 분류되는 경우에는 그 혼합물의 모든 성분들의 피부 부식성 합이 5% 이상이면 소구분 없이 구분 1로 분류되어야 한다.</p>
+                                        </li>
+                                        <li>
+                                            가산 방식을 적용할 수 없는 경우
+                                            <br>강산이나 강염기, 기타 무기염류, 알데히드류, 페놀류, 계면활성제 또는 이와 유사한 특징을 갖는 물질 중 &lt;표 3.2.2(a)&gt;의 가산 방식을 적용할 수 없는 성분을 함유한 혼합물은 &lt;표 3.2.2(b)&gt;에 따라 피부 부식성 또는 피부 자극성을 분류한다.
+                                            <p class="txt-caption">&lt;표 3.2.2(b)&gt;</p>
+                                            <div class="data-default">
+                                                <div class="scroll">
+                                                    <table>
+                                                        <caption class="sr-only">표 3.2.2(b) - 가산 방식이 적용되지 않는 혼합물의 피부 부식성/자극성 구분별 분류기준</caption>
+                                                        <colgroup>
+                                                            <col style="width:160px;">
+                                                            <col style="width:auto;min-width:500px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">구분</th>
+                                                                <th scope="col">분류기준</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1 <br>(피부 부식성)</td>
+                                                                <td class="align-l">
+                                                                    <ol class="list-decimal-circle">
+                                                                        <li>수소이온농도(pH) 2 이하인 성분의 함량이 1% 이상인 혼합물 또는,</li>
+                                                                        <li>수소이온농도(pH) 11.5 이상인 성분의 함량이 1% 이상인 혼합물 또는,</li>
+                                                                        <li>기타 가산 방식이 적용되지 않는 다른 피부 부식성(구분 1)인 성분의 함량이 1% 이상인 혼합물</li>
+                                                                    </ol>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2 <br>(피부 자극성)</td>
+                                                                <td class="align-l">산, 알칼리 등 가산 방식이 적용되지 않는 다른 피부 자극성(구분 2)인 성분의 함량이 3% 이상인 혼합물</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>피부 부식성 또는 피부 자극성 분류는 동물시험 자료 외에 단일물질의 피부 부식성/자극성 분류기준(표 참조)에 나타난 인체나 동물에 대한 경험, 수소이온농도(pH), 구조활성관계, 구조 특성관계나 in vitro 자료를 최대한 활용한다.</li>
+                                <li>수소이온농도(pH) 한계범위 이지만 피부 부식성이 아니라는 판단을 위해서는 완충력이나 시험관내 시험자료와 같은 추가 자료가 있어야 한다.</li>
+                                <li>국제적으로 승인되고 타당성이 검증된 시험관내 피부 부식성 시험방법으로는 OECD 430(피부 전기저항성시험)과 OECD 431(인체 피부 모델 시험), OECD 435(피부 부식성 평가를 위한 생체외 장벽막 시험)가 있다.</li>
+                                <li>&lt;표 3.2.1(a)&gt; 및 &lt;표 3.2.1(b)&gt;에 규정된 함량 한계를 초과하면서도 피부 부식성 또는 피부 자극성이 없다는 명백한 증거가 있는 경우는 해당 혼합물을 피부 부식성 또는 피부 자극성으로 분류하지 않아도 된다. 이 반대의 경우는 피부 부식성 또는 피부 자극성으로 분류한다.</li>
+                                <li>피부 부식성/자극성은 구분 1, 2를 원칙으로 하되, 필요에 따라 구분 1을 1A, 1B, 1C로 소구분하여 사용할 수 있다.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-eye-damage" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">심한 눈 손상/눈 자극성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 피부 부식성, 심한 눈 손상 또는 눈 자극성 자료가 있는 경우 단일물질의 분류기준과 같다.</li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 제1.2장의 가목부터 바목까지에 따른 가교원리를 적용하여, 해당 혼합물을 심한 눈 손상(구분 1) 또는 눈 자극성(구분 2)으로 분류한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 구성성분에 대한 자료가 있는 경우
+                                    <ol class="list-alpha st2">
+                                        <li>
+                                            가산 방식을 적용할 수 있는 경우
+                                            <br>혼합물 중 피부 부식성(구분 1), 심한 눈 손상(구분 1) 또는 눈 자극성(구분 2) 성분이 이들의 농도와 부식성 또는 자극성 강도에 비례하여 혼합물 전체의 부식성 또는 자극성에 기여하는 경우에, 혼합물의 분류기준은 아래 &lt;표 3.3.2(a)&gt;와 같다.
+                                            <p class="txt-caption">&lt;표 3.3.2(a)&gt;</p>
+                                            <div class="data-default">
+                                                <div class="scroll">
+                                                    <table>
+                                                        <caption class="sr-only">표 3.3.2(a) - 가산 방식이 적용되는 혼합물의 심한 눈 손상/눈 자극성 구분별 분류기준</caption>
+                                                        <colgroup>
+                                                            <col style="width:160px;">
+                                                            <col style="width:auto;min-width:500px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">구분</th>
+                                                                <th scope="col">분류기준</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1 <br>(심한 눈 손상)</td>
+                                                                <td class="align-l">
+                                                                    <ol class="list-decimal-circle">
+                                                                        <li>심한 눈 손상(구분 1) 또는 피부 부식성(구분 1)인 성분의 총 함량이 3% 이상인 혼합물 또는,</li>
+                                                                        <li>다음의 합이 3% 이상인 혼합물(주1)
+                                                                            <ol class="list-roman st2">
+                                                                                <li>피부 부식성(구분 1)인 성분의 함량(%)과</li>
+                                                                                <li>심한 눈 손상(구분 1)인 성분의 총 함량(%)</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                    </ol>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2 <br>(눈 자극성)</td>
+                                                                <td class="align-l">
+                                                                    <ol class="list-decimal-circle">
+                                                                        <li>심한 눈 손상(구분 1) 또는 피부 부식성(구분 1)인 성분의 총 함량이 1% 이상 3% 미만인 혼합물 또는,</li>
+                                                                        <li>눈 자극성(구분 2)인 성분의 총합이 10% 이상(주2)인 혼합물 또는,</li>
+                                                                        <li>다음의 합이 10% 이상인 혼합물
+                                                                            <ol class="list-roman st2">
+                                                                                <li>심한 눈 손상(구분 1)인 성분의 총 함량(%)에 가중치 10을 곱한 값과</li>
+                                                                                <li>눈 자극성(구분 2)인 성분의 총 함량(%) 또는,</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li>다음의 합이 1% 이상 3% 미만인 혼합물(주1)
+                                                                            <ol class="list-roman st2">
+                                                                                <li>심한 눈 손상(구분 1)인 성분의 총 함량(%)</li>
+                                                                                <li>피부 부식성(구분 1)인 성분의 총 함량(%) 또는,</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li>다음의 합이 10% 이상인 혼합물
+                                                                            <ol class="list-roman st2">
+                                                                                <li>피부 부식성(구분 1)인 성분의 총 함량(%)과 심한 눈 손상(구분 1)인 성분의 총 함량(%)의 합에 가중치 10을 곱한 값과 (주1)</li>
+                                                                                <li>눈 자극성(구분 2) 성분의 총 함량(%)</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                    </ol>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <p class="txt-exp-ps">주1: 어떤 물질이 피부 부식성(구분 1)과 심한 눈 손상(구분 1) 분류에 해당하는 경우 그 물질의 농도는 계산 시 한번만 적용한다.<br>
+                                            주2: 혼합물의 모든 구성성분들이 눈 구분 2B로 분류될 때 눈 구분 2B로 분류한다.</p>
+                                        </li>
+                                        <li>
+                                            가산 방식을 적용할 수 없는 경우
+                                            <br>강산이나 강염기, 기타 무기염류, 알데히드류, 페놀류 및 계면활성제 또는 이와 유사한 특징을 갖는 물질 중 &lt;표 3.3.2(a)&gt;의 가산 방식을 적용할 수 없는 성분을 함유한 혼합물은 &lt;표 3.3.2(b)&gt;에 따라 심한 눈 손상 또는 눈 자극성을 분류한다.
+                                            <p class="txt-caption">&lt;표 3.3.2(b)&gt;</p>
+                                            <div class="data-default">
+                                                <div class="scroll">
+                                                    <table>
+                                                        <caption class="sr-only">표 3.3.2(b) - 가산 방식이 적용되지 않는 혼합물의 심한 눈 손상/눈 자극성 구분별 분류기준</caption>
+                                                        <colgroup>
+                                                            <col style="width:160px;">
+                                                            <col style="width:auto;min-width:500px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">구분</th>
+                                                                <th scope="col">분류기준</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1 <br>(심한 눈 손상)</td>
+                                                                <td class="align-l">
+                                                                    <ol class="list-decimal-circle">
+                                                                        <li>수소이온농도(pH) 2 이하인 성분의 함량이 1% 이상인 혼합물</li>
+                                                                        <li>수소이온농도(pH) 11.5 이상인 성분의 함량이 1% 이상인 혼합물 또는</li>
+                                                                        <li>기타 가산 방식이 적용되지 않는 다른 심한 눈 손상(구분 1)인 성분의 함량이 1% 이상인 혼합물</li>
+                                                                    </ol>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2 <br>(눈 자극성)</td>
+                                                                <td class="align-l">산, 알칼리 등 가산 방식이 적용되지 않는 다른 눈 자극성(구분 2)인 성분의 함량이 3% 이상인 혼합물</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>기존의 사람 또는 동물로부터의 경험에 근거하여 피부 및 눈 모두에 영향을 줄 수 있는 심한 눈 손상, 부식성 및 자극성을 확인할 수 있다.</li>
+                                <li>피부 부식성 물질을 동물의 눈에 주입시키면 안 된다. 이와 같은 물질은 심한 눈 손상을 유발하는 것으로 간주한다(눈 구분 1)</li>
+                                <li>다른 관련 정보가 없다면, 토끼를 이용한 눈 자극성 시험을 수행하기 전에, 필수적으로 피부 부식성을 평가한다. 가능하다면, 타당성이 검증되어 승인된 in vitro 피부 부식성 시험을 통해 정보를 얻는다.</li>
+                                <li>만약 토끼 한 마리를 이용한 제한된 시험에서 심한 눈 손상이 나타난다면, 더 이상의 시험은 필요하지 않다(눈 구분 1).</li>
+                                <li>2마리의 동물(심한 영향을 평가하기 위하여 사용한 1마리 포함하여)을 이용한 자극성 시험에서, 일관되게 분명한 자극성 또는 분명한 비자극성 반응을 나타낸다면, 자극성 시험은 2마리만 사용해도 된다. 반응이 서로 다르거나 경계선상에 있는 경우에는, 세 번째 동물이 필요하다.</li>
+                                <li>국제적으로 승인되고 타당성이 검증된 시험관내 심한 눈 손상/눈 자극성 시험방법으로는 OECD 437(소 각막 혼탁도와 투과도 (BCOP)시험), OECD 438(닭 적출 안구(ICE)를 이용한 눈 자극시험) 및 OECD 460(눈 부식성 및 자극성 플루오레세인 누출시험)이 있다.</li>
+                                <li>심한 눈 손상/눈 자극성은 구분 1, 구분 2를 원칙으로 하되, 필요에 따라 구분 2를 구분 2A로 하고 추가구분 2B를 사용할 수 있다.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-sensitization" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">호흡기 또는 피부 과민성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 호흡기 또는 피부 과민성 자료가 있는 경우 단일물질의 분류기준과 같다.</li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 제1.2장의 가목, 나목, 마목 및 바목에 따른 가교원리를 적용하여, 해당 혼합물을 호흡기 과민성(구분 1) 또는 피부 과민성(구분 1)으로 분류한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나, 구성성분에 대한 자료가 있는 경우</li>
+                            </ol>
+                            <div class="data-default">
+                                <div class="scroll">
+                                    <table>
+                                        <caption class="sr-only">호흡기 또는 피부 과민성 구분별 분류기준</caption>
+                                        <colgroup>
+                                            <col style="width:160px;">
+                                            <col style="width:auto;min-width:500px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">분류기준</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1 <br>(호흡기 과민성)</td>
+                                                <td class="align-l">
+                                                    다음의 어느 하나에 해당하는 혼합물
+                                                    <ol class="list-decimal-circle">
+                                                        <li>호흡기 과민성(구분 1), 호흡기 과민성(구분 1B)인 성분의 함량이 0.2% 이상(기체)인 혼합물</li>
+                                                        <li>호흡기 과민성(구분 1), 호흡기 과민성(구분 1B)인 성분의 함량이 1.0% 이상(액체 또는 고체)인 혼합물</li>
+                                                        <li>호흡기 과민성(구분 1A) 성분의 함량이 0.1% 이상인 혼합물</li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2 <br>(피부 과민성)</td>
+                                                <td class="align-l">
+                                                    다음의 어느 하나에 해당하는 혼합물
+                                                    <ol class="list-decimal-circle">
+                                                        <li>피부 과민성(구분 1), 피부 과민성(구분 1B)인 성분의 함량이 1.0% 이상인 혼합물</li>
+                                                        <li>피부 과민성(구분 1A) 성분의 함량이 0.1% 이상인 혼합물</li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>물질이 사람에게 특이적 호흡기 과민성을 유발할 수 있다는 사람에 대한 증거에는, 다음과 같은 것이 있다.<br>
+                                    사용할 수 있다.
+                                    <ol class="list-alpha st2">
+                                        <li>아래와 같은 항목을 포함하여 그 밖의 뒷받침하는 증거에 의해 확인된, 임상 이력 및 물질의 노출과 관계된 적절한 폐 기능 검사로부터 얻은 데이터
+                                            <ul class="dot-list">
+                                                <li>in vivo 면역학적 시험(예, 피부단자시험)</li>
+                                                <li>in vitro 면역학적 시험(예, 혈청학적 분석)</li>
+                                                <li>반복 저 농도 자극, 약리학적 매개 작용과 같이, 면역학적 작용 기전이 아직 밝혀지지 않은 그 외의 특이적 과민 반응을 나타내는 시험</li>
+                                                <li>호흡기 과민성을 유발하는 것으로 알려진 물질과 관계있는 화학 구조</li>
+                                            </ul>
+                                        </li>
+                                        <li>특이적 과민 반응을 측정하기 위해 공인된 방법에 따라 실시된, 물질에 대한 기관지유발시험에서 양성 결과</li>
+                                    </ol>
+                                </li>
+                                <li>물질이 사람에 흡입되면 과민성을 유발할 수 있는지를 나타내는 적절한 동물 시험 자료에는, 다음과 같은 것이 있다.
+                                    <ol class="list-alpha st2">
+                                        <li>마우스를 이용한 면역글로불린 E (IgE) 및 그 외에 특이적 면역학적 지표의 측정</li>
+                                        <li>기니피그에서의 특이적 폐 반응</li>
+                                    </ol>
+                                </li>
+                                <li>물질을 피부 과민성 물질로 분류하는 증거에는, 다음과 같은 것이 있다.
+                                    <ol class="list-alpha st2">
+                                        <li>하나 이상의 피부과 병원에서 얻어진 패치시험에서 양성 데이터</li>
+                                        <li>대상물질로 인해 알레르기성 접촉 피부염이 생긴다는 역학 연구. 사례수가 적을지라도 특징적인 증상을 나타내는 노출 사례의 비율이 높은 경우에는 특히 주의하여 확인한다.</li>
+                                        <li>적절한 동물 시험에서 얻어진 양성 데이터</li>
+                                        <li>사람에 대한 실험적 연구에서 얻어진 양성 데이터</li>
+                                        <li>일반적으로 하나 이상의 피부과 병원에서 얻어진 알레르기성 접촉성 피부염에 대한 잘 보고된 사례</li>
+                                    </ol>
+                                </li>
+                                <li>앞에서 언급된 조건 중 어느 하나도 일치하지 않는다면, 그 물질은 접촉 과민성 물질로 분류할 필요가 없다. 그러나 아래에 기술된 접촉 과민성에 대한 두 가지 이상의 지표를 조합하면 결과가 달라질 수도 있다.
+                                    <ol class="list-alpha st2">
+                                        <li>알레르기성 접촉 피부염의 단발적 사례</li>
+                                        <li>제한적으로 검정된 역학조사. 예를 들어, 우연성, 치우침, 교란요인 등을 합리적인 확신을 갖고 제외할 수 없는 경우</li>
+                                        <li>기존의 지침에 따라 수행된 동물시험 자료로, 아래 (5)의 동물시험에서 기술한 양성의 판정기준을 충족하지는 못하지만, 의미가 있다고 생각할 수 있는 한계수준에는 충분히 가까운 경우</li>
+                                        <li>비 표준화된 방법으로부터 얻은 양성 데이터</li>
+                                        <li>구조 유사물질로부터 얻은 양성 결과</li>
+                                    </ol>
+                                </li>
+                                <li>피부 과민성에 대하여 항원보강제를 이용하는 형태의 시험이 실시되는 경우, 적어도 30% 이상의 동물에서 반응이 있으면 양성으로 판정한다. 항원보강제를 이용하지 않는 시험의 경우에는, 적어도 15% 이상의 동물에서 반응이 있으면 양성으로 판정한다. 국소림프절시험(Local Lymph Node Assay)에서는 자극지수(SI)가 3이상이면 양성으로 판정한다. 피부 과민성 시험법은 OECD 지침서 406 (the Guinea Pig Maximization test and the Buehler guinea pig test) 및 지침서 429 (Local Lymph Node Assay)에 기술되어 있다. 그 밖에 잘 검증되어 과학적 타당성을 갖는 다른 방법도 사용할 수 있다.</li>
+                                <li>피부 과민성 소구분 1A에 대한 동물 시험 결과
+                                    <ol class="list-alpha st2">
+                                        <li>국소림프절시험: EC3값 ≤ 2%</li>
+                                        <li>기니피그 극대화 시험: 피내 유도 투여량이 0.1% 이하에서 30% 이상 반응 또는 피내 유도 투여량이 0.1% 초과 1% 이하에서 60% 이상 반응</li>
+                                        <li>뷜러(Buehler) 시험: 국소 유도 투여량이 0.2% 이하에서 15% 이상 반응 또는 0.2% 초과 20% 이하에서 60% 이상 반응</li>
+                                    </ol>
+                                </li>
+                                <li>피부 과민성 소구분 1B에 대한 동물 시험 결과
+                                    <ol class="list-alpha st2">
+                                        <li>국소림프절시험: EC3값 &gt; 2%</li>
+                                        <li>기니피그 극대화 시험: 피내 유도 투여량이 0.1% 초과 1% 이하에서 30% 이상 60% 미만 반응 또는 피내 유도 투여량이 1% 초과에서 30% 이상 반응</li>
+                                        <li>뷜러(Buehler) 시험: 국소 유도 투여량이 0.2% 초과 20% 이하에서 15% 이상 60% 미만 반응 또는 국소유도 투여량이 20% 초과에서 15% 이상 반응</li>
+                                    </ol>
+                                </li>
+                                <li>호흡기 과민성 및 피부 과민성은 구분 1을 원칙으로 하되, 필요에 따라 구분 1A, 1B로 소구분하여 사용할 수 있다.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-mutagenicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">생식세포 변이원성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물의 구성성분에 대한 생식세포 변이원성 자료가 있는 경우<br>
+                                    생식세포 변이원성 구분 1 또는 구분 2에 해당하는 성분이 혼합물에 존재하는 경우는, 우선적으로 &lt;표 3.5.2&gt; 에 따라 해당 혼합물을 생식세포 변이원성으로 분류한다.
+                                    <p class="txt-caption">&lt;표 3.5.2&gt;</p>
+                                    <div class="data-default">
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">표 3.5.2 - 생식세포 변이원성 구분별 분류기준</caption>
+                                                <colgroup>
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:500px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">분류기준</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="3">1</td>
+                                                        <td class="align-l">생식세포 변이원성(구분 1)인 성분의 함량이 0.1% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-l">구분 1A: 생식세포 변이원성(구분 1A)인 성분의 함량이 0.1% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-l">구분 1B: 생식세포 변이원성(구분 1B)인 성분의 함량이 0.1% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td class="align-l">생식세포 변이원성(구분 2)인 성분의 함량이 1.0% 이상인 혼합물</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>혼합물 자체에 대한 생식세포 변이원성 자료가 있는 경우<br>
+                                    (1)에 따라 해당 혼합물이 생식세포 변이원성으로 분류되지 않는 경우에 한하여 단일물질의 생식세포 변이원성 분류기준 표에 의하여 분류한다. 다만, 해당 혼합물을 생식세포 변이원성으로 분류하지 않거나 (1)에서의 구분에 비해 낮은 구분으로 분류하는 경우에는, 해당 시험방법의 적절성, 민감성 등에 대하여 충분한 증거가 있어야 한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    (1) 및 (2)을 순차적으로 적용한 결과 해당 혼합물이 생식세포 변이원성으로 분류되지 않는 경우에 한하여, '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 1.2장의 가목, 나목 및 마목에 따른 가교원리를 적용하여 구분 1 및 구분 2로 분류한다.
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>돌연변이란 세포내 유전물질의 양 또는 구조에 영구적인 변화를 의미한다. "돌연변이"란 용어는 표현형 수준에서 명백한 유전성 유전변화, 또는 근원적인 DNA 변이 (예. 특정염기쌍 변화 및 염색체 전좌) 모두에 적용된다. "변이원성" 및 "변이원성물질"이란 용어는 세포 또는 생물체 집단에 돌연변이 발생을 증가시키는 물질에 사용된다.</li>
+                                <li>보다 일반적인 용어인 "유전독성물질" 및 "유전독성"이란 용어는, 정상적인 복제과정을 방해하여 DNA를 손상시키거나 비 생리적인 방법(일시적으로)으로 DNA 복제를 변화시키는 것을 포함해서, DNA의 구조, 정보내용 또는 분리를 변화시키는 물질 또는 과정에 적용된다. 일반적으로 유전독성시험 결과는 변이원성 작용에 대한 지표로 이용된다.</li>
+                                <li>생식세포 변이원성은 주로 자손에게 유전될 수 있는 사람의 생식세포에 돌연변이를 일으킬 수 있는 화학물질과 관계된다. 그러나 시험관내 변이원성/유전독성시험 및 생체내(in vivo) 포유류 체세포를 이용한 시험도, 물질과 혼합물을 생식세포 변이원성으로 분류할 때 고려된다.</li>
+                                <li>사람의 생식세포에 대한 유전적 영향은, 잘 수행되고 충분히 검증된 시험에 근거하여 분류되며, OECD 시험 지침서에서 정한 방법이 선호된다.</li>
+                                <li>포유동물을 이용한 유전성 생식세포 변이원성시험의 예는 아래와 같다.
+                                    <ol class="list-alpha st2">
+                                        <li>설치류 우성치사 돌연변이시험(OECD 478)</li>
+                                        <li>마우스 유전성 전좌시험(OECD 485)</li>
+                                        <li>마우스 특정 유전자 전좌시험</li>
+                                    </ol>
+                                </li>
+                                <li>포유동물을 이용한 체세포 변이원성시험의 예는 아래와 같다.
+                                    <ol class="list-alpha st2">
+                                        <li>포유류 골수 염색체이상시험(OECD 475)</li>
+                                        <li>포유류 적혈구 소핵시험(OECD 474)</li>
+                                    </ol>
+                                </li>
+                                <li>생식세포 변이원성/유전독성 시험의 예는 아래와 같다.
+                                    <ul class="dot-list">
+                                        <li>변이원성시험
+                                            <ol class="list-alpha st2">
+                                                <li>포유류 정원세포(spermatogonial) 염색체이상시험(OECD 483)</li>
+                                                <li>정자세포(spermatid) 소핵시험</li>
+                                            </ol>
+                                        </li>
+                                        <li>유전독성시험
+                                            <ol class="list-alpha st2">
+                                                <li>정원세포에서의 자매염색분체교환시험</li>
+                                                <li>고환세포에서의 UDS 시험</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>체세포 유전독성시험의 예는 아래와 같다.
+                                    <ol class="list-alpha st2">
+                                        <li>생체내(in vivo) 간 UDS시험(OECD 486)</li>
+                                        <li>포유류 골수 자매염색분체교환(SCE) 시험</li>
+                                    </ol>
+                                </li>
+                                <li>시험관내(in vitro) 변이원성시험의 예는 아래와 같다.
+                                    <ol class="list-alpha st2">
+                                        <li>시험관내 포유류 염색체이상시험(OECD 473)</li>
+                                        <li>시험관내 포유류세포 유전자돌연변이시험(OECD 476)</li>
+                                        <li>박테리아 복귀돌연변이시험(OECD 471)</li>
+                                    </ol>
+                                </li>
+                                <li>생식세포 변이원성은 구분 1A, 구분 1B, 구분 2를 원칙으로 하되, 구분 1A, 1B의 소구분이 어려운 경우에 구분 1로 통합 적용할 수 있다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-carcinogenicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">발암성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물의 구성성분에 대한 발암성 자료가 있는 경우<br>
+                                    발암성 구분 1 또는 구분 2에 해당하는 성분이 혼합물에 존재하는 경우는, 우선적으로 &lt;표 3.6.2&gt;에 따라 해당 혼합물을 발암성으로 분류한다.
+                                    <p class="txt-caption">&lt;표 3.6.2&gt;</p>
+                                    <div class="data-default">
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">표 3.6.2 - 발암성 구분별 분류기준</caption>
+                                                <colgroup>
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:500px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">분류기준</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="3">1</td>
+                                                        <td class="align-l">발암성(구분 1)인 성분의 함량이 0.1% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-l">구분 1A: 발암성(구분 1A)인 성분의 함량이 0.1% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-l">구분 1B: 발암성(구분 1B)인 성분의 함량이 0.1% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td class="align-l">발암성(구분 2)인 성분의 함량이 1.0% 이상인 혼합물</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>혼합물 자체에 대한 발암성 자료가 있는 경우<br>
+                                    (1)에 따라 해당 혼합물이 발암성으로 분류되지 않는 경우에 한하여 단일물질의 발암성 분류기준 표에 의하여 분류한다. 다만, 해당 혼합물을 발암성으로 분류하지 않거나 (1)에서의 구분에 비해 낮은 구분으로 분류하는 경우에는, 해당 시험방법의 적절성, 민감성 등에 대하여 충분한 증거가 있어야 한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    (1) 및 (2)을 순차적으로 적용한 결과 해당 혼합물이 발암성으로 분류되지 않는 경우에 한하여, '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 1.2장의 가목, 나목 및 마목에 따른 가교원리를 적용하여 구분 1 및 구분 2로 분류한다.
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>발암성 물질의 분류는 두 종류의 상호 관련된 판단, 즉 증거의 세기에 대한 평가와 증거의 가중치 결정이 필요하다.</li>
+                                <li>증거의 세기는, 사람 및 동물 연구에서 종양수의 계측 및 그 통계적 유의 수준에 의해 결정된다.
+                                    <ol class="list-alpha st2">
+                                        <li>사람에게 충분한 증거란 사람에서의 노출과 암 발생과의 인과관계를 증명하는 것이며, 동물에 대한 충분한 증거란 물질과 종양 발생률 증가 사이에 인과관계를 보이는 것이다.</li>
+                                        <li>사람에게 제한된 증거란 노출과 암 사이에 양성의 관계가 나타나지만 인과관계를 증명할 수 없는 경우이며, 동물에 대한 제한된 증거란 제공된 데이터가 발암성을 암시하지만 증거가 충분하지 않은 경우이다.</li>
+                                    </ol>
+                                </li>
+                                <li>추가 고려 사항(증거의 가중치): 물질이 사람에게 발암 유해성을 나타내는 전체적인 가능성에 영향을 주는 다른 많은 요인을 고려한다.
+                                    <ol class="list-alpha st2">
+                                        <li>전체적인 우려 수준을 평가할 때에 고려될 수 있는 중요한 요인은 아래와 같다.
+                                            <ul class="dot-list">
+                                                <li>종양의 종류 및 자연발생 빈도</li>
+                                                <li>여러 부위에 있어서의 반응</li>
+                                                <li>병으로 인한 생체 변화로부터 악성 종양으로의 진행</li>
+                                                <li>단축된 종양 발생 잠복 기간</li>
+                                            </ul>
+                                        </li>
+                                        <li>우려 수준을 증가시키거나 감소시킬 수 있는 추가 요인은 아래와 같다.
+                                            <ul class="dot-list">
+                                                <li>반응이 암수 한쪽에서 나타나는 것인지 양쪽 모두에서 나타나는지</li>
+                                                <li>반응이 단일 종에서 나타나는지 몇 개의 종에서 나타나는지</li>
+                                                <li>발암성의 명확한 증거가 있는 화학물질과 구조적으로 유사한지 아닌지</li>
+                                                <li>노출 경로</li>
+                                                <li>시험 동물과 사람 사이의 흡수, 분포, 대사 및 배설의 비교</li>
+                                                <li>시험 용량에서 과독성에 의한 교란요인이 있을 가능성</li>
+                                                <li>변이원성, 성장 자극을 수반한 세포 독성, 유사분열 유발성, 면역 억제 등의 작용 원리 및 사람에게 관련성</li>
+                                            </ul>
+                                        </li>
+                                        <li>생체내에서 변이원성에 대한 증거는 화학물질이 발암성을 가질 가능성을 나타낸다.</li>
+                                        <li>발암성 시험을 실시하지 않았지만, 구조 유사체에 대한 종양 데이터와 함께, 공통의 주요 대사산물 생성 등과 같은 그 외의 중요한 요인을 검토하여 얻은 실질적인 증거에 근거해서 구분 1 또는 구분 2로 분류되는 화학물질도 있다(예, 벤지딘계 염료).</li>
+                                    </ol>
+                                </li>
+                                <li>발암성의 구분은 구분 1A, 구분 1B, 구분 2를 원칙으로 하되, 구분 1A, 1B의 소구분이 어려운 경우에 구분 1로 통합 적용할 수 있다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-reproductive-toxicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">생식독성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물의 구성성분에 대한 생식독성 자료가 있는 경우<br>
+                                    생식독성 구분 1, 구분 2 또는 추가구분에 해당하는 성분이 혼합물에 존재하는 경우는, 우선적으로 &lt;표 3.7.2&gt;에 따라 해당 혼합물을 생식독성으로 분류한다.
+                                    <p class="txt-caption">&lt;표 3.7.2&gt;</p>
+                                    <div class="data-default">
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">표 3.7.2 - 생식독성 구분별 분류기준</caption>
+                                                <colgroup>
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:500px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">분류기준</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="3">1</td>
+                                                        <td class="align-l">생식독성(구분 1)인 성분의 함량이 0.3% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-l">구분 1A: 생식독성(구분 1A)인 성분의 함량이 0.3% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-l">구분 1B: 생식독성(구분 1B)인 성분의 함량이 0.3% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td class="align-l">생식독성(구분 2)인 성분의 함량이 3.0% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>추가 구분</td>
+                                                        <td class="align-l">생식독성(추가 구분)인 성분의 함량이 0.3% 이상인 혼합물</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>혼합물 자체에 대한 생식독성 자료가 있는 경우<br>
+                                    (1)에 따라 해당 혼합물이 생식독성으로 분류되지 않는 경우에 한하여 단일물질의 생식독성 분류기준 표에 의하여 분류한다. 다만, 해당 혼합물을 생식독성으로 분류하지 않거나 (1)에서의 구분에 비해 낮은 구분으로 분류하는 경우에는, 해당 시험방법의 적절성, 민감성 등에 대하여 충분한 증거가 있어야 한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    (1) 및 (2)을 순차적으로 적용한 결과 해당 혼합물이 생식독성으로 분류되지 않는 경우에 한하여, '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 1.2장의 가목, 나목 및 마목에 따른 가교원리를 적용하여 구분 1, 구분 2 또는 추가 구분으로 분류한다.
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>생식기능 및 생식 능력에 대한 유해영향
+                                    <ol class="list-alpha st2">
+                                        <li>생식기능 또는 생식능력을 저해하는 화학물질의 모든 영향이 포함된다. 여기에는 암수 생식기관의 변화, 생식가능 연령의 개시시기, 생식체의 생성 및 이동, 생식주기의 정상도, 성적 행동, 생식능력, 분만, 임신결과, 생식기능의 조기 노화, 또는 정상적인 생식 계통에 의존하는 다른 기능의 변화 등이 포함되지만, 반드시 이것에 한정되는 것은 아니다.</li>
+                                        <li>수유에 대한 또는 수유를 통한 유해영향도 생식독성에 포함할 수 있지만, 분류의 목적상, 이와 같은 영향은 별도로 취급하고 있다. 왜냐하면, 수유에 유해영향을 미치는 화학물질을 분류하는 것은, 수유 중인 어머니에 대해 특별한 유해성을 경고하기 위해서도 바람직하기 때문이다.</li>
+                                    </ol>
+                                </li>
+                                <li>자손 발육에 대한 유해영향<br>
+                                    광의의 발육독성은 태반, 태아 또는 생후 태자의 정상적인 발육을 방해하는 모든 영향이 포함된다. 그것은 수태 전에 어느 한쪽 부모의 노출, 출생 전에 발육 중인 태아의 노출, 또는 출생 후에 성 성숙기까지의 노출에 의하는 것이다. 다만, 발육독성의 분류는 임신 여성 및 생식능력이 있는 남녀에게 유해성을 경고하는 것이 제일의 목적이라고 생각할 수 있다. 따라서 분류의 목적상, 발육독성은 본질적으로 임신 중 또는 부모의 노출에 의해 유발되는 유해영향을 의미한다. 이러한 영향은 그 생명체의 일생 중 어떠한 시점에서도 발현될 수 있다. 발육독성의 발현에는 주로 (1)발생 중 생명체의 사망, (2)구조 이상, (3)성장 이상 및 (4)기능결핍이 포함된다.
+                                </li>
+                                <li>수유에 대한 또는 수유를 통한 영향<br>
+                                    많은 물질의 경우, 수유를 통해 자손에게 유해영향을 일으킬 가능성에 대한 정보가 없다고 인정되고 있다. 여성에 의해 흡수되어 수유를 방해하는 물질, 또는 모유를 먹는 아이의 건강에 우려를 야기할 수 있는 충분한 양으로 모유에 존재하는 물질(대사물 포함)이 포함된다.
+                                </li>
+                                <li>물질을 구분 1로 분류하는 것은, 사람에 대한 증거 또는 동물실험에 대한 자료에 기초한다.
+                                    <ol class="list-alpha st2">
+                                        <li>구분 1로 분류하는 주된 근거가 사람에 대한 증거인 경우에는, 반드시 사람의 생식에 유해영향을 나타내는 신뢰성 있는 증거가 있어야 한다. 사람에 대한 연구로부터 얻은 자료가 엄밀하지 않은 경우에는, 실험동물 연구로부터 얻은 충분한 자료로 보충해야 한다.</li>
+                                        <li>구분 1로 분류하는 주된 근거가 동물실험에 대한 자료인 경우에는, 동물실험으로부터 얻은 자료는 생식기능과 생식능력 또는 발육독성에 대한 명백한 증거가 있어야 한다. 그러나 사람에 대한 영향과의 연관성에 대해 의문을 야기하는 작용원리에 관한 정보가 있는 경우에는, 구분 2로 분류하는 것이 보다 적절하다.</li>
+                                    </ol>
+                                </li>
+                                <li>물질을 구분 2로 분류하는 것은, 가능한 다른 보충정보를 포함하여 사람 또는 실험동물로부터 물질이 생식기능과 생식능력 또는 발육에 유해영향을 일으킨다는 정보가 있지만, 구분 1로 분류하기에는 증거가 충분하지 않은 경우이다.</li>
+                                <li>생식에 대한 유해영향이 단지 다른 독성영향으로부터 발생된 2차적인 비 특이적 영향이라면, 화학물질은 생식성물질로 분류하지 말아야한다.</li>
+                                <li>발육 중의 자손에 대한 독성영향을 평가할 때에는, 모체에 대한 독성영향의 가능성을 고려한다.</li>
+                                <li>원칙적으로 동물시험에서 매우 높은 용량 수준(예를 들면, 쇠약, 심한 식욕부진, 높은 사망률을 일으키는 용량)에서만 생식에 대한 유해영향이 관찰되는 경우, 동물보다 사람이 민감하기 때문에 분류하는 것이 적절하다는 것을 입증하는 그 밖에 정보가 입수되지 않는다면, 분류의 근거가 되지 않는다.</li>
+                                <li>국제적으로 승인되고 타당성이 검증된 생식독성 시험방법으로는 OECD 414(발달 독성 시험), OECD 415(1세대 생식독성 시험), 416(2세대 생식독성 시험), 443(확장 1세대 생식독성 시험) 스크리닝 테스트로는 OECD 421(생식/발달 독성 선별 시험) 및 422(반복투여 독성시험과 생식/발달 독성 선별 시험을 조합한 시험)이 있다. 선별시험의 경우 완전한 연구를 통한 것보다 신뢰도가 떨어진다는 것을 인식해야 한다.</li>
+                                <li>생식독성의 구분은 구분 1A, 구분 1B, 구분 2, 추가 구분(수유독성)을 원칙으로 하되, 구분 1A, 1B의 소구분이 어려운 경우 구분 1로 통합 적용할 수 있다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-stot-single" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">특정 표적장기 독성(1회)</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 특정 표적장기 독성-1회 노출 자료가 있는 경우<br>
+                                    단일물질의 특정 표적장기 독성물질(1회 노출) 분류기준 표와 같다. 다만 혼합물에 대한 특정 표적장기 독성-1회 노출을 평가함에 있어 투여수준, 시험기간이나 관찰결과에 유의한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 제1.2장의 가목부터 바목까지에 따른 가교원리를 적용하여, 해당 혼합물을 특정 표적장기 독성-1회 노출 구분 1부터 구분 3까지로 분류한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 구성성분에 대한 자료가 있는 경우
+                                    <p class="txt-caption">&lt;표 3.8.2&gt;</p>
+                                    <div class="data-default">
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">표 3.8.2 - 특정 표적장기 독성(1회) 구분별 분류기준</caption>
+                                                <colgroup>
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:500px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">분류기준</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td class="align-l">특정 표적장기 독성-1회 노출(구분 1)인 성분의 함량이 10% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td class="align-l">
+                                                            <ol class="list-decimal-circle">
+                                                                <li>특정 표적장기 독성-1회 노출(구분 1)인 성분의 함량이 1.0% 이상 10% 미만인 혼합물 또는,</li>
+                                                                <li>특정 표적장기 독성-1회 노출(구분 2)인 성분의 함량이 10% 이상인 혼합물</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td class="align-l">특정 표적장기 독성-1회 노출(구분 3)인 성분의 함량이 20% 이상인 혼합물</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>물질에 대한 1회 노출로, 사람에게 일관성 있고 확인할 수 있는 독성영향이 일어나거나, 실험동물에서 조직/장기의 기능 또는 형태에 영향을 주는 독성학적으로 의미 있는 변화가 나타나거나, 또는 생물의 생화학적 또는 혈액학적 항목에 중대한 변화가 나타나고 이러한 변화가 사람의 건강과 관련 있다는 신뢰성 있는 증거를 입수할 수 있는지에 따라 분류가 결정된다.</li>
+                                <li>반복 노출에 의한 특정 표적장기 독성의 분류는 표적장기 독성-반복 노출(9)에서 다루기 때문에, 본 장에서는 제외되어 있다. 그 밖에 아래에 기재된 독성 영향은 별도로 평가되며, 결과적으로 여기에서 포함되지 않는다.
+                                    <ol class="list-alpha st2">
+                                        <li>급성독성(1)</li>
+                                        <li>피부 부식성/자극성(2)</li>
+                                        <li>심한 눈 손상/눈 자극성(3)</li>
+                                        <li>호흡기 또는 피부 과민성(4)</li>
+                                        <li>생식세포 변이원성(5)</li>
+                                        <li>발암성(6)</li>
+                                        <li>생식 독성(7)</li>
+                                        <li>흡인유해성(10)</li>
+                                    </ol>
+                                </li>
+                                <li>예외적으로 사람에 대한 표적장기 독성의 증거가 있는 어떤 물질은, 전문가적인 판단에 기초하여 구분 2로 분류하는 것이 타당한 경우가 있다.
+                                    <ol class="list-alpha st2">
+                                        <li>사람에 대한 증거의 가중치가 구분 1의 분류를 정당화하기에 불충실한 경우 또는,</li>
+                                        <li>영향의 성질 또는 심각성에 근거하는 경우</li>
+                                    </ol>
+                                    사람에서의 용량/농도 수준은, 일반적으로 분류하는데 고려하지 않아야 하며, 동물시험에서 얻은 증거가 구분 2의 분류와 일치해야 한다. 다시 말해서, 화학물질에 대해 구분 1의 분류를 정당화하는 동물 자료가 입수된다면, 이 물질은 구분 1로 분류한다.
+                                </li>
+                                <li>구분 1과 2로 분류하게 하는 영향<br>
+                                    실험동물을 이용한 적절한 시험으로부터 얻은 증거는 임상소견, 육안 및 현미경에 의한 병리학적 검사의 형태를 가지기 때문에 보다 상세한 정보를 제공할 수 있으며, 생명을 위협하지는 않지만 기능적인 장애를 일으킬 수 있는 유해성도 자주 나타날 수 있다. 따라서 입수된 모든 증거와 사람의 건강에 대한 관련성을 분류과정에서 고려할 필요가 있다. 사람 또는 실험동물에서 관련성이 있는 독성영향에 대한 예는 아래와 같다.
+                                    <ol class="list-alpha st2">
+                                        <li>1회 노출에 기인한 사망률</li>
+                                        <li>중추신경계 억제의 징후 및 특수 감각기관(예를 들면, 시각, 청각 및 후각)에 대한 영향과 같이 일시적이지 않은 호흡기계, 중추 또는 말초신경계, 다른 기관 또는 그 밖에 기관계의 중대한 기능변화</li>
+                                        <li>임상생화학검사, 혈액검사 또는 소변검사의 지표에 있어서 일관되고 중대한 유해영향</li>
+                                        <li>부검에서 관찰되거나, 현미경검사에서 관찰 또는 확인된 중대한 기관 손상</li>
+                                        <li>재생 능력이 있는 생체 기관에 나타나는 다발성 또는 광범위 괴사, 섬유종 또는 육아종 형성</li>
+                                        <li>잠재적으로 가역적이지만, 기관의 뚜렷한 기능장애에 대한 명확한 증거를 제공하는 형태변화</li>
+                                        <li>재생이 불가능한 생체 기관에서의 분명한 세포사망(세포변성 및 세포수의 감소 포함)의 증거</li>
+                                    </ol>
+                                </li>
+                                <li>구분 1과 2로 분류하지 말아야 하는 영향
+                                    <ol class="list-alpha st2">
+                                        <li>그 자체로는 "중대한" 독성을 의미하지 않는 임상소견, 또는 체중 증가량, 음식소비량 또는 물소비량 등의 작은 변화</li>
+                                        <li>임상생화학검사, 혈액검사 또는 소변검사의 지표에서의 작은 변화, 또는 이러한 변화 또는 영향이 분명치 않거나 독성학적으로 의미가 거의 없는 경우</li>
+                                        <li>기관의 기능장애에 대한 증거가 없는 기관중량의 변화</li>
+                                        <li>독성학적으로 중요하다고 생각되지 않는 적응 반응</li>
+                                        <li>사람의 건강과 관련성이 없는 물질이 유발하는 종 특이적 작용원리</li>
+                                    </ol>
+                                </li>
+                                <li>실험동물을 이용하여 실시한 시험에서 얻어진 결과에 기초하여 분류하는 경우에 참고가 될 수 있는 용량(기준 값)
+                                    <p class="txt-caption">&lt;표 3.8.4&gt;</p>
+                                    <div class="data-default">
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">표 3.8.4 - 노출경로별 특정 표적장기 독성(1회) 분류기준 값</caption>
+                                                <colgroup>
+                                                    <col style="width:200px;">
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:200px">
+                                                    <col style="width:auto;min-width:200px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" rowspan="2">노출경로</th>
+                                                        <th scope="col" rowspan="2">단위</th>
+                                                        <th scope="colgroup" colspan="2">기준값의 범위</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">구분 1</th>
+                                                        <th scope="col">구분 2</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">경구(흰쥐)</th>
+                                                        <td>mg/kg 체중</td>
+                                                        <td>용량 ≤ 300</td>
+                                                        <td>300 &lt; 용량 ≤ 2000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">경피(흰쥐 또는 토끼)</th>
+                                                        <td>mg/kg 체중</td>
+                                                        <td>용량 ≤ 1000</td>
+                                                        <td>1000 &lt; 용량 ≤ 2000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">흡입(흰쥐) 가스</th>
+                                                        <td>ppm/4h</td>
+                                                        <td>농도 ≤ 2500</td>
+                                                        <td>2500 &lt; 농도 ≤ 20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">흡입(흰쥐) 증기</th>
+                                                        <td>mg/L/4h</td>
+                                                        <td>농도 ≤ 10</td>
+                                                        <td>10 &lt; 농도 ≤ 20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">흡입(흰쥐) 분진/미스트/흄</th>
+                                                        <td>mg/L/4h</td>
+                                                        <td>농도 ≤ 1.0</td>
+                                                        <td>1.0 &lt; 농도 ≤ 5.0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <ol class="list-alpha st2">
+                                        <li>&lt;표 3.8.4&gt;는 급성독성 시험에 적용될 수 있는 중대한 비치사적인 독성영향을 일으키는 1회 노출에 대한 기준값이다. 구분 3에 대한 기준 값은 별도로 갖는다.</li>
+                                        <li>위의 &lt;표 3.8.4&gt;에 나타낸 기준값(또는 범위)은 참고 목적만을 위한 것이다. 즉, 증거의 가중치의 일부로서 분류의 결정을 도와주기 위한 것이며, 엄밀한 분류기준이나 한계 값으로 사용하기 위한 것은 아니다.</li>
+                                    </ol>
+                                </li>
+                                <li>구분 3(호흡기도 자극성)에 대한 기준
+                                    <ol class="list-alpha st2">
+                                        <li>기침, 고통, 질식 및 호흡 곤란과 같은 증상을 수반하며 기능을 손상시키는 호흡 자극영향(국소적인 홍반, 부종, 가려움증 또는 고통에 의해 특정 지어지는)이 포함된다.</li>
+                                        <li>주관적인 사람의 관찰은 명확한 호흡기도 자극성(respiratory tract irritation, RTI)의 객관적인 측정에 의해 지지될 수 있다. (예, 전기생리학적 반응, 비강 또는 기관지 폐포 세척액에서 염증에 관한 생물학적 지표)</li>
+                                        <li>사람에서 관찰된 증상은, 격리된 특이반응 또는 과민성 기도를 가진 개인에서만 유발되는 반응이기 보다, 오히려 노출된 모집단에서 생기는 전형적인 증상이어야 한다. "자극성"이란 용어는 냄새, 불쾌한 느낌, 간지러운 느낌, 건조와 같은 감각을 포함하며, 일반적으로 호흡기도 자극성 분류 범위 밖에 있는 광범위한 감각을 표현하는데 사용되기 때문에, 단순히 "자극성"이라는 모호한 보고는 배제한다.</li>
+                                        <li>명확하게 RTI를 다루는 검증된 동물시험은 현재는 없으나, 1회 또는 반복 흡입독성 시험으로부터 유용한 정보를 얻을 수 있다. 이러한 동물시험은 증거의 가중치의 일부분으로서 사용된다.</li>
+                                        <li>이 특별한 분류는 호흡기계를 포함한 더 심한 장기 영향이 관찰되지 않는 경우에만 적용된다.</li>
+                                    </ol>
+                                </li>
+                                <li>구분 3(마취 영향)에 대한 기준
+                                    <ol class="list-alpha st2">
+                                        <li>졸음, 혼수, 민첩성 감소, 반사 소실, 협조 결여 및 현기증과 같은 마취 영향을 포함한 중추 신경계의 저하를 포함한다. 이러한 영향은 심한 두통 또는 메스꺼움이 나타나, 판단력 저하, 현기증, 흥분성, 피로감, 기억기능 장애, 지각과 협조 결핍, 반응시간의 연장 또는 수면장애를 일으킬 수 있다.</li>
+                                        <li>동물시험에서 관찰되는 마취 영향은 졸음증, 협조 정위반사(coordination righting reflex) 결여, 혼수 및 운동 실조를 포함한다. 이러한 영향이 본질적으로 일시적이지 않다면, 구분 1 또는 2로 분류된다.</li>
+                                    </ol>
+                                </li>
+                                <li>구분 3의 성분을 포함하는 혼합물의 독성을 외삽할 때, 주의가 필요하다. 20%의 한계농도가 제안되어 왔지만, 구분 3의 성분에 따라서는 이 한계농도가 높아지거나 낮아질 수 있다는 것을 인식하여야 한다. 즉, 호흡기도 자극성과 같은 영향은 어떤 농도 이하에서는 일어나지 않을 수 있으며, 반면에 마취 영향과 같은 다른 영향은 20% 값 이하에서도 일어날 수 있다.</li>
+                                <li>만일 구분 3의 성분에 대해서 가산방식(additivity approach)을 사용하는 경우, 혼합물의 "관련성분"은 호흡기도 자극성 또는 마취 영향에 대하여 혼합물을 분류할 때, 1% 미만의 농도에서 존재하는 성분이 여전히 관련이 있다고 의심할만한 이유가 있지 않는 한, 1% 이상의 농도(고체, 액체, 분진, 미스트와 증기에 대해 w/w, 가스에 대해 v/v 퍼센트 농도)에서 존재하는 성분을 말한다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-stot-repeated" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">특정 표적장기 독성(반복)</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 특정 표적장기 독성-반복 노출 자료가 있는 경우<br>
+                                    단일물질의 특정 표적장기 독성-반복 노출 분류기준 표와 같다. 다만 혼합물에 대한 특정 표적장기 독성-반복 노출을 평가함에 있어 투여수준, 시험기간이나 관찰결과에 유의한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    '화학물질의 분류 및 표시 등에 관한 규정 [별표1]' 제1.2장의 가목부터 바목까지에 따른 가교원리를 적용하여, 해당 혼합물을 특정 표적장기 독성-반복 노출 구분 1 및 구분 2로 분류한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 구성성분에 대한 자료가 있는 경우
+                                    <p class="txt-caption">&lt;표 3.9.2&gt;</p>
+                                    <div class="data-default">
+                                        <div class="scroll">
+                                            <table>
+                                                <caption class="sr-only">표 3.9.2 - 특정 표적장기 독성-반복 노출 구분별 분류기준</caption>
+                                                <colgroup>
+                                                    <col style="width:120px;">
+                                                    <col style="width:auto;min-width:500px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">분류기준</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td class="align-l">특정 표적장기 독성-반복 노출(구분 1)인 성분의 함량이 10% 이상인 혼합물</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td class="align-l">특정 표적장기 독성-반복 노출(구분 1)인 성분의 함량이 1.0% 이상 10% 미만인 혼합물 또는,<br>특정 표적장기 독성-반복 노출(구분 2)인 성분의 함량이 10% 이상인 혼합물</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>물질에 대한 반복 노출로, 사람에게 일관성 있고 확인할 수 있는 독성영향이 일어나거나, 실험동물에서 조직/장기의 기능 또는 형태에 영향을 주는 독성학적으로 의미 있는 변화가 나타나거나, 또는 그 생물의 생화학적 또는 혈액학적 항목에 중대한 변화가 나타나고 이러한 변화가 사람의 건강과 관련 있다는 신뢰성 있는 증거를 입수할 수 있는지에 따라 분류가 결정된다.</li>
+                                <li>1회 노출 후에 관찰되는 비치사적 독성영향의 분류는 특정 표적장기 독성-1회 노출(8)에서 다루기 때문에, 여기에는 포함되지 않는다.</li>
+                                <li>구분 1과 2로 분류하는 경우 영향<br>
+                                    실험동물을 이용한 적절한 시험으로부터 얻은 증거는 임상소견, 혈액검사, 임상화학검사, 육안 및 현미경에 의한 병리학적 검사의 형태를 가지기 때문에 보다 상세한 정보를 제공할 수 있으므로, 생명을 위협하는지는 않지만 기능적인 장애를 일으킬 수 있는 유해성도 자주 나타날 수 있다. 따라서 입수된 모든 증거와 사람의 건강에 대한 관련성을 분류과정에서 고려할 필요가 있다. 사람 또는 실험동물에서 관련성이 있는 독성영향에 대한 예는 아래와 같다.
+                                    <ol class="list-alpha st2">
+                                        <li>반복 또는 장기간의 노출에 기인한 사망률. 비교적 낮은 용량/농도에서도, 물질 또는 그 대사산물의 축적으로 인해, 또는 반복 노출에 의한 해독과정의 손실로 인해, 반복 노출에 기인한 이환 또는 사망이 일어날 수 있다.</li>
+                                        <li>중추신경계 억제의 징후 및 특수 감각기관(예를 들면, 시각, 청각 및 후각)에 대한 영향과 같이 중추 또는 말초신경계, 또는 다른 기관계의 중대한 기능변화</li>
+                                        <li>임상생화학검사, 혈액검사 또는 소변검사의 지표에 있어서 일관되고 중대한 유해영향</li>
+                                        <li>부검에서 관찰되거나, 그 후에 현미경검사에서 관찰 또는 확인된 중대한 기관 손상</li>
+                                        <li>재생 능력이 있는 생체 기관에 나타나는 다발성 또는 광범위 괴사, 섬유종 또는 육아종 형성</li>
+                                        <li>잠재적으로 가역적이지만, 기관의 뚜렷한 기능장애에 대한 명확한 증거를 제공하는 형태변화(예를 들면, 간에서 심한 지방변성)</li>
+                                        <li>재생이 불가능한 생체 기관에서의 분명한 세포사망(세포변성 및 세포수의 감소 포함)의 증거</li>
+                                    </ol>
+                                </li>
+                                <li>구분 1과 2로 분류하지 말아야 하는 영향
+                                    <ol class="list-alpha st2">
+                                        <li>그 자체로는 "중대한" 독성을 의미하지 않는 임상소견, 또는 체중 증가률, 음식소비량 또는 물소비량의 작은 변화</li>
+                                        <li>임상화학검사, 혈액검사 또는 소변검사의 지표에서의 작은 변화, 또는 이러한 변화 또는 영향이 분명히 않거나 독성학적으로 의미가 거의 없는 경우</li>
+                                        <li>기관의 기능장애에 대한 증거가 없는 기관중량의 변화</li>
+                                        <li>독성학적으로 중요하다고 생각되지 않는 적응 반응</li>
+                                        <li>사람의 건강과 관련성이 없는 물질이 유발하는 종 특이적 독성 작용원리</li>
+                                    </ol>
+                                </li>
+                                <li>실험동물을 이용하여 실시한 시험에서 얻어진 결과에 기초하여 분류하는 경우에 참고가 될 수 있는 용량(기준값)
+                                    <ol class="list-alpha st2">
+                                        <li>&lt;표 3.9.4&gt;는 90일 반복독성 시험에 적용될 수 있는 중대한 독성영향을 일으키는 반복 노출에 대한 기준 값이다. 90일 시험이 아닌 28일 시험자료가 있는 경우에는 아래의 기준값을 3배하여 사용한다.
+                                            <p class="txt-caption">&lt;표 3.9.4&gt;</p>
+                                            <div class="data-default">
+                                                <div class="scroll">
+                                                    <table>
+                                                        <caption class="sr-only">표 3.9.4 - 노출경로별 구분 1, 구분 2 기준값의 범위</caption>
+                                                        <colgroup>
+                                                            <col style="width:auto;min-width:200px">
+                                                            <col style="width:auto;min-width:200px">
+                                                            <col style="width:auto;min-width:200px">
+                                                            <col style="width:auto;min-width:200px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" rowspan="2">노출경로</th>
+                                                                <th scope="col" rowspan="2">단위</th>
+                                                                <th scope="col" colspan="2">기준값의 범위</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="col">구분 1</th>
+                                                                <th scope="col">구분 2</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>경구(쥐)</td>
+                                                                <td>mg/kg 체중/일</td>
+                                                                <td>용량 ≤ 10</td>
+                                                                <td>10 &lt; 용량 ≤ 100</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>경피(쥐 또는 토끼)</td>
+                                                                <td>mg/kg 체중/일</td>
+                                                                <td>용량 ≤ 20</td>
+                                                                <td>20 &lt; 용량 ≤ 200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>가스 흡입(쥐)</td>
+                                                                <td>ppmV/6h/일</td>
+                                                                <td>농도 ≤ 50</td>
+                                                                <td>50 &lt; 농도 ≤ 250</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>증기 흡입(쥐)</td>
+                                                                <td>mg/L/6h/일</td>
+                                                                <td>농도 ≤ 0.2</td>
+                                                                <td>0.2 &lt; 농도 ≤ 1.0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>분진/미스트/흄 흡입(쥐)</td>
+                                                                <td>mg/L/6h/일</td>
+                                                                <td>농도 ≤ 0.02</td>
+                                                                <td>0.02 &lt; 농도 ≤ 0.2</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>&lt;표 3.9.4&gt;에 나타낸 기준값(또는 범위)은, 참고 목적만을 위한 것이다. 즉, 증거의 가중치의 일부로서 분류의 결정을 도와주기 위한 것이며, 엄밀한 분류기준이나 한계 값으로 사용하기 위한 것은 아니다.</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- // tab-content --> 
+
+                    <div class="tab-content" id="haz-aspiration" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">흡인 유해성</h3>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <ol class="list-decimal">
+                                <li>혼합물 자체에 대한 흡인 유해성 자료가 있는 경우<br>
+                                    단일물질의 흡인 유해성 분류기준 표와 같다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 가교원리를 적용할 수 있는 경우<br>
+                                    [별표1] 제1.2장의 가목부터 마목까지의 따른 가교원리를 적용하여, 해당 혼합물을 흡인 유해성 구분 1 및 구분 2로 분류한다.
+                                </li>
+                                <li>혼합물 자체에 대한 자료는 없으나 구성성분에 대한 자료가 있는 경우</li>
+                            </ol>
+
+                            <div class="data-default">
+                                <div class="scroll">
+                                    <table>
+                                        <caption class="sr-only">흡인 유해성 구분별 분류기준</caption>
+                                        <colgroup>
+                                            <col style="width:120px;">
+                                            <col style="width:auto;min-width:500px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">분류기준</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="align-l">흡인 유해성(구분 1)인 모든 구성성분의 농도의 합이 10% 이상 이고, 동점도가 20.5㎟/s(40℃) 이하인 혼합물(두 층 또는 그 이상으로 명백하게 분리되는 혼합물의 경우, 그 중에 한 층이 해당되는 혼합물을 포함한다)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="align-l">흡인 유해성(구분 2)인 모든 구성성분의 농도의 합이 10% 이상 이고, 동점도가 14㎟/s(40℃) 이하인 혼합물(두 층 또는 그 이상으로 분명하게 분리되는 혼합물의 경우, 그 중에 한 층이 해당되는 혼합물을 포함한다)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>                            
+
+                            <p class="tit-exp"><strong>분류기준에 관한 추가 사항</strong></p>
+                            <ol class="list-decimal">
+                                <li>분류기준의 주요 요소는 물질의 동점도(Kinematic viscosity)로 나타낸다. 동적점도(Dynamic viscosity)와 동점도 사이의 변환 식은 다음과 같다.
+                                    <p class="txt-formula">동적점도(mPa·s)/밀도(g/cm²) = 동점도(㎟/s)</p>
+                                </li>
+                                <li>에어로졸/미스트 제품의 분류<br>
+                                    에어로졸 및 미스트 제품은 보통 자기가압식 용기, 방아쇠형(trigger) 분무기 및 펌프 분무기와 같은 용기로부터 분무된다. 이러한 제품을 분류하는 열쇠는, 제품이 입안에 고여 흡인될 수 있는가의 여부이다. 가압 용기로부터 나오는 미스트 또는 에어로졸이 미세하다면, 입안에 고이지 않을지도 모른다. 반면, 가압 용기가 흐름형식으로 분사된다면, 입안에 고여 흡인될 수 있다. 보통, 방아쇠형 분무기 및 펌프 분무기에 의해 생성되는 미스트는 거친 입자이기 때문에, 입안에 고여 흡인되는 경우가 있다.
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                    <!-- // tab-content -->
+
 
                 </div>
                 <!-- // tab-content -->

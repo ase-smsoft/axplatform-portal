@@ -91,54 +91,637 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content">
+                    <div class="tab-content" id="haz-explosive">
                         <div class="title-section-wrap">
                             <h3 class="title-section">폭발성 물질</h3>
                         </div>
                         <div class="data-default">
-                            <table>
-                                <caption class="sr-only">폭발성 물질 구분별 분류기준</caption>
-                                <colgroup>
-                                    <col style="width:200px;">
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">구분</th>
-                                        <th scope="col">분류기준</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1 (불안정한 폭발성 물질)</td>
-                                        <td class="align-l">일반적인 취급, 운송, 사용에 있어서 열적으로 불안정하거나 너무 민감한 폭발성 물질</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2 (등급 1.1)</td>
-                                        <td class="align-l">대폭발 위험성이 있는 물질, 혼합물과 제품</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 (등급 1.2)</td>
-                                        <td class="align-l">대폭발 위험성은 없으나 분출 위험성(projection hazard)이 있는 물질, 혼합물과 제품</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4 (등급 1.3)</td>
-                                        <td class="align-l">대폭발 위험성은 없으나, 화재 위험성이 있고, 약한 폭풍 위험성(blast hazard) 또는 약한 분출 위험성이 있는 다음과 같은 물질, 혼합물과 제품<br>① 대량의 복사열을 발산하면서 연소하는 것. 또는<br>② 약한 폭풍 또는 약한 분출의 효과를 일으키면서 순차적으로 연소하는 것.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5 (등급 1.4)</td>
-                                        <td class="align-l">심각한 위험성은 없으나, 다음과 같이 발화 또는 기폭에 의해 약간의 위험성이 있는 물질, 혼합물과 제품<br>① 영향은 주로 포장품에 국한되고, 주의할 정도의 크기 또는 범위의 파편의 분출은 일어나지 않음. 그리고<br>② 외부 화재에 의해 포장품의 거의 모든 내용물이 실질적으로 동시에 폭발을 일으키지 않아야 함.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6 (등급 1.5)</td>
-                                        <td class="align-l">대폭발 위험성은 있지만 매우 둔감하여 정상적인 상태에서는 기폭의 가능성 또는 연소가 폭굉으로 전이될 가능성이 거의 없는 물질과 혼합물</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7 (등급 1.6)</td>
-                                        <td class="align-l">극히 둔감한 물질 또는 혼합물만을 포함하여 대폭발 위험성이 없으며, 우발적인 기폭 또는 전파의 가능성이 거의 없는 제품</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">폭발성 물질 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:200px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 <br>(불안정한 폭발성 물질)</td>
+                                            <td class="align-l">일반적인 취급, 운송, 사용에 있어서 열적으로 불안정하거나 너무 민감한 폭발성 물질</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2 <br>(등급 1.1)</td>
+                                            <td class="align-l">대폭발 위험성이 있는 물질, 혼합물과 제품</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 <br>(등급 1.2)</td>
+                                            <td class="align-l">대폭발 위험성은 없으나 분출 위험성(projection hazard)이 있는 물질, 혼합물과 제품</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4 <br>(등급 1.3)</td>
+                                            <td class="align-l">대폭발 위험성은 없으나, 화재 위험성이 있고, 약한 폭풍 위험성(blast hazard) 또는 약한 분출 위험성이 있는 다음과 같은 물질, 혼합물과 제품<br>① 대량의 복사열을 발산하면서 연소하는 것. 또는<br>② 약한 폭풍 또는 약한 분출의 효과를 일으키면서 순차적으로 연소하는 것.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 <br>(등급 1.4)</td>
+                                            <td class="align-l">심각한 위험성은 없으나, 다음과 같이 발화 또는 기폭에 의해 약간의 위험성이 있는 물질, 혼합물과 제품<br>① 영향은 주로 포장품에 국한되고, 주의할 정도의 크기 또는 범위의 파편의 분출은 일어나지 않음. 그리고<br>② 외부 화재에 의해 포장품의 거의 모든 내용물이 실질적으로 동시에 폭발을 일으키지 않아야 함.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6 <br>(등급 1.5)</td>
+                                            <td class="align-l">대폭발 위험성은 있지만 매우 둔감하여 정상적인 상태에서는 기폭의 가능성 또는 연소가 폭굉으로 전이될 가능성이 거의 없는 물질과 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7 <br>(등급 1.6)</td>
+                                            <td class="align-l">극히 둔감한 물질 또는 혼합물만을 포함하여 대폭발 위험성이 없으며, 우발적인 기폭 또는 전파의 가능성이 거의 없는 제품</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-flammable-gas" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">인화성가스</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">인화성가스 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:200px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">20℃, 표준압력 101.3 kPa에서 다음에 해당하는 가스<br>① 공기중에서 13%(부피비) 이하의 혼합물일 때 연소할 수 있는 가스 또는,<br>② 연소하한값과 상관없이 공기중의 연소범위(연소상한값·연소하한값)가 12% 이상인 가스</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">구분 1에 해당하지 않으면서, 20℃, 표준압력 101.3 kPa에서 공기와 혼합하여 인화 범위를 가지는 가스</td>
+                                        </tr>
+                                        <tr>
+                                            <td>자연발화성 가스</td>
+                                            <td class="align-l">54 ℃ 이하 공기 중에서 자연발화하는 인화성 가스</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-aerosol" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">에어로졸</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">에어로졸 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">① 인화성 성분의 함량이 85%(중량비) 이상이며 연소열이 30kJ/g 이상인 에어로졸 또는,<br>② 착화거리시험(ignition distance test)에서, 75cm 이상의 거리에서 착화하는 스프레이 에어로졸 또는,<br>③ 폼(foam) 시험에서, 다음에 해당하는 폼 에어로졸<br>(ⅰ) 불꽃의 높이 20cm 이상 및 불꽃 지속 시간 2초 이상 또는,<br>(ⅱ) 불꽃의 높이 4cm 이상 및 불꽃 지속 시간 7초 이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">① 구분 1에 해당하지 않으면서, 연소열이 20kJ/g 이상인 스프레이 에어로졸 또는,<br>② 구분 1에 해당하지 않으면서, 연소열이 20kJ/g 미만으로, 다음에 해당하는 스프레이 에어로졸 또는,<br>(ⅰ) 착화거리 시험에서, 15cm 이상의 거리에서 착화 또는,<br>(ⅱ) 밀폐공간 착화시험에서, 착화시간 환산 300초/㎥ 이하이거나 폭연밀도 300g/㎥ 이하<br>③ 구분 1에 해당하지 않으면서, 폼 시험에서 불꽃의 높이 4cm 이상 및 불꽃 지속 시간 2초 이상인 폼 에어로졸</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="align-l">① 인화성 성분의 함량이 1%(중량비) 이하이면서 연소열이 20kJ/g 미만인 에어로졸. 또는,<br>② 구분 1과 2에 해당하지 않는 스프레이 에어로졸. 또는,<br>③ 구분 1과 2에 해당하지 않는 폼 에어로졸</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-oxidizing-gas" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">산화성가스</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">산화성가스 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">일반적으로 산소를 발생시켜 다른 물질의 연소가 더 잘 되도록 하거나 기여하는 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-pressurized-gas" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">고압가스</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">고압가스 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:150px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1<br>(압축가스)</td>
+                                            <td class="align-l">가압하여 용기에 충전했을 때, -50℃에서 완전히 가스상인 가스 (임계온도 -50℃ 이하의 모든 가스를 포함)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2<br>(액화가스)</td>
+                                            <td class="align-l">가압하여 용기에 충전했을 때, -50℃ 초과 온도에서 부분적으로 액체인 가스로, 다음과 같이 구분한다.<br>① 고압액화가스: 임계온도가 -50℃에서 +65℃인 가스<br>② 저압액화가스: 임계온도가 +65℃를 초과하는 가스</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3<br>(냉동 액화가스)</td>
+                                            <td class="align-l">용기에 충전한 가스가 자체의 낮은 온도 때문에 부분적으로 액체인 가스</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4<br>(용해가스)</td>
+                                            <td class="align-l">가압하여 용기에 충전한 가스가 액상 용매에 용해된 가스</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-flammable-liquid" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">인화성액체</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">인화성액체 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">인화점이 23℃ 미만이고 초기끓는점이 35℃ 이하인 액체</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">인화점이 23℃ 미만이고 초기끓는점이 35℃ 이하인 액체</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="align-l">인화점이 23℃ 이상 60℃ 이하인 액체</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp-ps">* 위험물의 분류 및 표기에 관한 기준(소방청 고시)에 따라 인화점이 60℃를 초과하고, 93℃ 이하인 인화성 액체는 구분 4로 적용할 수 있다.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-flammable-solid" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">인화성고체</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">인화성고체 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">연소속도 시험에서, 다음에 해당하는 물질 또는 혼합물<br>① 금속분말이외의 물질 또는 혼합물: 습윤 부분이 연소를 중지시키지 못하고, 연소시간이 45초 미만이거나 연소속도가 2.2mm/초를 초과함.<br>② 금속분말: 연소시간이 5분 이하</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">연소속도 시험에서, 다음에 해당하는 물질 또는 혼합물<br>① 금속분말이외의 물질 또는 혼합물: 습윤 부분이 4분 이상 연소를 중지시키고, 연소시간이 45초 미만이거나 연소속도가 2.2mm/초를 초과함.<br>② 금속분말: 연소시간이 5분 초과 10분 이하</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-self-reactive" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">자기반응성 물질 및 혼합물</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">자기반응성 물질 및 혼합물 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:150px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1<br>(형식 A)</td>
+                                            <td class="align-l">포장된 상태에서 폭굉하거나 급속히 폭연하는 자기반응성 물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2<br>(형식 B)</td>
+                                            <td class="align-l">폭발성을 가지며, 포장된 상태에서 폭굉도 급속한 폭연도 하지 않으나, 그 포장물 내에서 열 폭발을 일으키는 경향을 가지는 자기반응성 물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3<br>(형식 C)</td>
+                                            <td class="align-l">폭발성을 가지며, 포장된 상태에서 폭굉도 급속한 폭연도 열폭발도 일으키지 않는 자기반응성 물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4<br>(형식 D)</td>
+                                            <td class="align-l">실험실 시험에서 다음의 성질과 상태를 나타내는 자기반응성물질 또는 혼합물<br>① 폭굉이 부분적이며, 급속히 폭연하지 않고 밀폐상태에서 가열하면 격렬한 반응을 일으키지 않음. 또는,<br>② 전혀 폭굉하지 않고, 완만하게 폭연하며 밀폐상태에서 가열하면 격렬한 반응을 일으키지 않음. 또는,<br>③ 전혀 폭굉 또는 폭연하지 않고, 밀폐상태에서 가열하면 중간 정도의 반응을 일으킴.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5<br>(형식 E)</td>
+                                            <td class="align-l">실험실 시험에서 전혀 폭굉도 폭연도 하지 않고, 밀폐상태에서 가열하면 반응이 약하거나 없다고 판단되는 자기반응성 물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6<br>(형식 F)</td>
+                                            <td class="align-l">실험실 시험에서, 공동상태(cavitated state) 하에서 폭굉하지 않거나 전혀 폭연하지 않고, 밀폐상태에서 가열하면 반응이 약하거나 없는 또는 폭발력이 약하거나 없다고 판단되는 자기반응성물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7<br>(형식 G)</td>
+                                            <td class="align-l">실험실 시험에서, 공동상태에서 폭굉하지 않거나 전혀 폭연하지 않고, 밀폐상태에서 가열하면 반응이 없거나 폭발력이 없다고 판단되는 자기반응성 물질 또는 혼합물. 다만, 열적으로 안정하고(50kg 포장물의 경우 SADT가 60℃에서 75℃ 사이), 액체 혼합물의 경우에는 끓는점이 150℃ 이상인 희석제로 둔화된 경우에만 해당한다. 혼합물이 열적으로 안정하지 않거나 끓는점이 150℃ 미만인 희석제로 둔화된 경우에는, 그 혼합물은 자기반응성 물질 형식 F로 해야 한다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-pyrophoric-liquid" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">자연발화성 액체</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">자연발화성 액체 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">① 불활성 담체에 가해 공기에 접촉시키면 5분 이내에 발화하는 액체 또는,<br>② 공기에 접촉시키면 5분 이내에 여과지를 발화 또는 탄화시키는 액체</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-pyrophoric-solid" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">자연발화성 고체</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">자연발화성 고체 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">공기와 접촉하면 5분 안에 발화하는 고체</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-self-heating" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">자기발열성 물질 및 혼합물</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">자기발열성 물질 및 혼합물 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">140℃에서 25 mm 시료큐브(정방형용기)를 이용한 시험에서 양성인 경우</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">① 140℃에서 100 mm 시료큐브를 이용한 시험에서 양성이고 140℃에서 25 mm 시료큐브를 이용한 시험에서 음성이며, 해당 물질 또는 혼합물의 포장이 3 ㎥을 초과할 경우 또는,<br>② 140℃에서 100 mm 시료큐브를 이용한 시험에서 양성이고 140℃에서 25 mm 시료큐브를 이용한 시험에서 음성이며, 120℃에서 100 mm 시료큐브를 이용한 시험에서 양성이고, 해당 물질 또는 혼합물의 포장이 450L를 초과할 경우. 또는,<br>③ 140℃에서 100 mm 시료큐브를 이용한 시험에서 양성이고 140℃에서 25 mm 시료큐브를 이용한 시험에서 음성이며, 100℃에서 100 mm 시료큐브를 이용한 시험에서 양성인 경우</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-water-reactive" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">물반응성 물질 및 혼합물</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">물반응성 물질 및 혼합물 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">상온에서 물과 격렬하게 반응하여 자연 발화하는 가스를 일으키는 경향이 전반적으로 인정되거나, 상온에서 물과 쉽게 반응했을 때의 인화성가스의 발생 속도가 1분간 물질 1kg에 대해 10L 이상인 물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">상온에서 물과 쉽게 반응했을 때의 인화성 가스의 최대 발생 속도가 1시간당 물질 1kg에 대해 20L 이상이며, 구분 1에 해당하지 않는 물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="align-l">상온에서 물과 천천히 반응했을 때의 인화성 가스의 최대 발생 속도가 1 시간당 물질 1kg에 대해 1L 초과이며, 구분 1 및 구분 2에 해당하지 않는 물질 또는 혼합물</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-oxidizing-liquid" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">산화성액체</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">산화성액체 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">물질(또는 혼합물)과 셀룰로오스의 중량비 1:1 혼합물로서 시험한 경우에, 자연 발화하거나, 그 평균 압력상승 시간이 50% 과염소산과 셀룰로오스의 중량비 1:1 혼합물의 평균 압력상승 시간 미만인 물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l">물질(또는 혼합물)과 셀룰로오스의 중량비 1:1 혼합물로서 시험한 경우에, 그 평균 압력상승 시간이 염소산나트륨 40% 수용액과 셀룰로오스의 중량비 1:1 혼합물의 평균 압력 상승시간 이하이며, 구분 1에 해당하지 않는 물질 또는 혼합물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="align-l">물질(또는 혼합물)과 셀룰로오스의 중량비 1:1 혼합물로서 시험한 경우에, 그 평균 압력 상승시간이 질산 65% 수용액과 셀룰로오스의 중량비 1:1 혼합물의 평균 압력 상승시간 이하이며, 구분 1 및 2에 해당하지 않는 물질 또는 혼합물</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-oxidizing-solid" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">산화성고체</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">산화성고체 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l tbl-detail-cell">
+                                                <p>(O.1 시험) 물질(또는 혼합물)과 셀룰로오스의 중량비 4:1 또는 1:1 혼합물로서 시험한 경우에, 그 평균 연소시간이 브롬산칼륨과 셀룰로오스의 중량비 3:2 혼합물의 평균 연소시간 미만인 물질 또는 혼합물</p>
+                                                <p>(O.3 시험) 물질(또는 혼합물)과 셀룰로오스의 중량비 4:1 또는 1:1의 혼합물을 시험한 경우에, 그 평균 연소속도가 과산화칼슘과 셀룰로오스의 중량비 3:1 혼합물의 평균 연소속도 초과인 물질 또는 혼합물</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="align-l tbl-detail-cell">
+                                                <p>(O.1 시험) 물질(또는 혼합물)과 셀룰로오스의 중량비 4:1 또는 1:1 혼합물로서 시험한 경우에, 그 평균 연소시간이 브롬산칼륨과 셀룰로오스의 중량비 2:3 혼합물의 평균 연소시간 이하이며, 구분 1에 해당하지 않는 물질 또는 혼합물</p>
+                                                <p>(O.3 시험) 물질(또는 혼합물)과 셀룰로오스의 중량비 4:1 또는 1:1의 혼합물을 시험한 경우에, 그 평균 연소속도가 과산화칼슘과 셀룰로오스의 중량비 1:1 혼합물의 평균 연소 속도 이상이고, 구분 1의 판정 기준에 적합하지 않는 물질 또는 혼합물</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="align-l tbl-detail-cell">
+                                                <p>(O.1 시험) 물질(또는 혼합물)과 셀룰로오스의 중량비 4:1 또는 1:1 혼합물로서 시험한 경우에, 그 평균 연소시간이 브롬산칼륨과 셀룰로오스의 중량비 3:7 혼합물의 평균 연소시간 이하이며, 구분 1 및 2에 해당하지 않는 물질 또는 혼합물</p>
+                                                <p>(O.3 시험) 물질(또는 혼합물)과 셀룰로오스의 중량비 4:1 또는 1:1 혼합물을 시험한 경우에, 그 평균 연소속도가 과산화칼슘과 셀룰로오스의 중량비 1:2 혼합물의 평균 연소 속도 이상이고, 구분 1 및 2의 판정 기준에 적합하지 않는 물질 또는 혼합물</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-organic-peroxide" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">유기과산화물</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">유기과산화물 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1<br>(형식 A)</td>
+                                            <td class="align-l">포장된 상태에서 폭굉하거나 급속히 폭연하는 유기과산화물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2<br>(형식 B)</td>
+                                            <td class="align-l">폭발성을 가지며, 포장된 상태에서 폭굉도 급속한 폭연도 하지 않으나, 그 포장물 내에서 열 폭발을 일으키는 경향을 가지는 유기과산화물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3<br>(형식 C)</td>
+                                            <td class="align-l">폭발성을 가지며, 포장된 상태에서 폭굉도 급속한 폭연도 열폭발도 일으키지 않는 유기과산화물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4<br>(형식 D)</td>
+                                            <td class="align-l">실험실 시험에서 다음의 성질과 상태를 나타내는 유기과산화물<br>① 폭굉이 부분적이며, 급속히 폭연하지 않고 밀폐상태에서 가열하면 격렬한 반응을 일으키지 않음. 또는,<br>② 전혀 폭굉하지 않고, 완만하게 폭연하며 밀폐상태에서 가열하면 격렬한 반응을 일으키지 않음. 또는,<br>③ 전혀 폭굉 또는 폭연하지 않고, 밀폐상태에서 가열하면 중간 정도의 반응을 일으킴.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5<br>(형식 E)</td>
+                                            <td class="align-l">실험실 시험에서 전혀 폭굉도 폭연도 하지 않고, 밀폐상태에서 가열하면 반응이 약하거나 없다고 판단되는 유기과산화물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6<br>(형식 F)</td>
+                                            <td class="align-l">실험실 시험에서, 공동상태 하에서 폭굉하지 않거나 전혀 폭연하지 않고, 밀폐상태에서 가열하면 반응이 약하거나 없는 또는 폭발력이 약하거나 없다고 판단되는 유기과산화물</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7<br>(형식 G)</td>
+                                            <td class="align-l">실험실 시험에서, 공동상태 하에서 폭굉하지 않거나 전혀 폭연하지 않고, 밀폐상태에서 가열하면 반응이 없거나 폭발력이 없다고 판단되는 유기과산화물. 다만, 열적으로 안정하고(50kg 포장물의 경우 SADT가 60℃ 이상), 액체 혼합물의 경우에는 끓는점이 150℃ 이상인 희석제로 둔화된 경우에만 해당한다. 만약 유기과산화물이 열적으로 안정하지 않거나 끓는점이 150℃ 미만의 희석제로 둔화된 경우에는, 그 유기과산화물은 유기과산화물 형식 F로 해야 한다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-metal-corrosive" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">금속부식성 물질</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">금속부식성 물질 구분별 분류기준</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:auto;min-width:500px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">분류기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="align-l">강철 및 알루미늄 모두에서 시험된 경우, 두 재질 중 어느 하나의 표면 부식속도가 55℃에서 1년간 6.25 mm를 넘는 물질</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp-ps">* 금속부식성 물질이 아니라는 증거가 없는 경우 피부부식성 물질 구분 1은 금속부식성 물질 구분 1(H290)로 분류할 수 있다. 단, 액체인 경우에 한한다.</p>
                         </div>
                     </div>
                     <!-- // tab-content -->
