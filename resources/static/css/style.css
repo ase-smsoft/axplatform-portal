@@ -545,13 +545,13 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 /* ===========================================
     main visual (메인 비주얼 슬라이더)
 =========================================== */
-.main-visual{position:relative; width:100%; height:424px; padding:60px 0 80px;border-radius:0 0 120px 120px; background:url('../images/common/bg-main-visual.jpg') no-repeat 50% 50%;background-size:cover;}
+.main-visual{position:relative; width:100%; padding:50px 0 60px;border-radius:0 0 120px 120px; background:url('../images/common/bg-main-visual.jpg') no-repeat 50% 50%;background-size:cover;}
 .main-visual::before{left:0;}
 .main-visual::after{right:0; transform:scaleX(-1);}
 .main-visual-inner{position:relative; display:flex; align-items:center; gap:48px; z-index:1;}
 .main-visual-left{flex:1; min-width:0;}
 .main-visual-left .visual-desc{margin:0 0 12px; font-family:'Jalnan Gothic', 'Pretendard GOV', sans-serif;font-size:18px; color:#212529; line-height:1.5;}
-.main-visual-left .visual-title{margin:0 0 32px; font-family:'Jalnan Gothic', 'Pretendard GOV', sans-serif; font-size:44px; font-weight:400; color:#212529; line-height:1.25; letter-spacing:-0.02em;}
+.main-visual-left .visual-title{margin:0 0 24px; font-family:'Jalnan Gothic', 'Pretendard GOV', sans-serif; font-size:52px; font-weight:400; color:#212529; line-height:1.25; letter-spacing:-0.02em;}
 .main-visual-left .visual-title strong{font-weight:400; color:#1f4fc7;}
 
 .main-search{display:flex;align-items:center;gap:8px;}
@@ -604,12 +604,13 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 /* ===========================================
     main sections (메인 콘텐츠 영역)
 =========================================== */
-.main-section{padding:80px 0;}
-.main-section.main-section--gray{padding-top:80px !important;}
-.main-section:not(.main-section--gray) + .main-section{padding-top: 0;}
+.main-section{padding:60px 0;}
+.main-section:last-child{padding-top:80px;}
+.main-section.main-section--gray{padding-top:60px !important;}
+.main-section:not(.main-section--gray) + .main-section{padding-top: 20px;}
 .main-section--gray{background:#F4F6FA;}
 .main-grid{display:grid; gap:48px; align-items:start;}
-.main-grid--laws{grid-template-columns: 1fr 420px;}
+.main-grid--laws{grid-template-columns: 1fr 420px;display:flex;}
 .main-grid--promo{grid-template-columns: 1fr 412px;}
 .main-grid--board{grid-template-columns: 1fr 1fr;}
 .main-grid--board .board-area{min-width: 0;}
@@ -642,18 +643,18 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 .main-tabs .tab:hover { background-color: #f5f8ff; border-color: #0056d0; color: #0056d0;  }
 
 /* 화학 3법 카드 */
-.laws-area{display:flex;flex-direction: column;height:100%;}
+.laws-area{display:flex;flex-direction: column;height:100%;flex:1;}
 .laws-list {flex:1; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.laws-list .law-card { position: relative; padding:32px 20px; border-radius: 12px; min-height: 260px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
+.laws-list .law-card { position: relative; padding:32px;height:385px; border-radius: 12px; min-height: 260px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
 .laws-list .law-card:hover { transform: translateY(-4px); box-shadow: 0 6px 8px rgba(24, 36, 70, 0.1); }
 .laws-list .law-card--blue { background: linear-gradient(180deg, #e8f0fe 0%, #f5f8fd 100%); }
 .laws-list .law-card--green { background: linear-gradient(180deg, #e7f5ee 0%, #f4faf6 100%); }
 .laws-list .law-card--purple { background: linear-gradient(180deg, #efe9fb 0%, #f8f5fd 100%); }
-.laws-list .law-icon { width: 120px; height: 120px; margin-bottom: 32px; display: flex; align-items: center; justify-content: center; }
+.laws-list .law-icon { width: 120px; height: 120px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; }
 .laws-list .law-icon img { max-width: 100%; max-height: 100%; object-fit: contain; }
-.laws-list .law-sub { display: block; font-size: 14px; color: #343A40; margin-bottom: 8px; font-weight:500;}
-.laws-list .law-name { display: block; font-size: 24px; font-weight: 700; line-height: 1.2; margin-bottom: 24px; }
-.laws-list .law-card--blue .law-name { color: #2864DA; }
+.laws-list .law-sub { display: block; font-size: 16px; color: #343A40; margin-bottom: 12px; font-weight:500;}
+.laws-list .law-name { display: block; font-size: 24px; font-weight: 700; line-height: 1.2;margin-bottom:2px;}
+.laws-list .law-card--blue .law-name { color: #2864DA; a}
 .laws-list .law-card--green .law-name { color: #01875F; }
 .laws-list .law-card--purple .law-name { color: #8255DB; }
 .laws-list .law-desc { margin: 0; font-size: 16px; color: #495057; line-height: 1.5; }
@@ -662,23 +663,23 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
   .laws-list .law-card{padding:32px; min-height:auto;}
   .laws-list .law-icon { width: 80px; height: 80px;}
   .laws-list .law-sub{font-size:15px;margin-bottom:8px;}
-  .laws-list .law-name{font-size:24px;margin-bottom:24px;}
+  .laws-list .law-name{font-size:24px;}
   .laws-list .law-desc{font-size:16px;}
 }
 
 /* 자주찾는 메뉴 */
-.quick-area{width:440px;}
-.quick-list{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2, 1fr); border:1px solid #e3e8ef; border-radius:12px; overflow:hidden; background:#fff;}
+.quick-area{width:300px;}
+.quick-list{list-style:none; margin:0; padding:0; height:385px; display:grid; grid-template-columns:repeat(2, 1fr); grid-template-rows:repeat(2, 1fr); border:1px solid #e3e8ef; border-radius:12px; overflow:hidden; background:#fff;}
 .quick-list li{border-right:1px solid #eef1f5; border-bottom:1px solid #eef1f5;}
 .quick-list li:nth-child(2n){border-right:0;}
 .quick-list li:nth-last-child(-n+2){border-bottom:0;}
-.quick-list li a{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:24px 12px; min-height:96px; text-decoration:none; color:#212529; transition:background .15s;}
+.quick-list li a{display:flex; height:100%; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:24px 12px; min-height:96px; text-decoration:none; color:#212529; transition:background .15s;}
 .quick-list li a:hover{background:#f5f8fd;}
-.quick-name{font-size:14px; font-weight:500; color:#1d1d1d;}
+.quick-name{font-size:14px; font-weight:500; color:#1d1d1d;text-align:center;}
 .quick-list li a svg{width:40px; height:40px; flex-shrink:0;}
 @media all and (max-width:1024px){
   .quick-area{width:100%;}
-  .quick-list{grid-template-columns:repeat(2, 1fr);}
+  .quick-list{height:auto;}
   .quick-list li a{padding:24px 12px; min-height:auto; gap:10px;}
   .quick-name{font-size:15px;}
   .quick-list li a svg{width:40px; height:40px;}
@@ -702,7 +703,7 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 /* 정책홍보 */
 .promo-area{overflow: hidden;}
 .promo-slider{position:relative;}
-.promo-track-wrap{overflow:hidden;}
+.promo-track-wrap{overflow:hidden;padding-bottom:1px;}
 .promo-list > .promo-card{flex: 0 0 calc((100% - 32px) / 3) !important;}
 /* Swiper: spaceBetween·슬라이드 폭은 Swiper가 담당 — flex/gap 이중 적용 방지 */
 .promo-track-wrap.promo-swiper .swiper-wrapper.promo-list{gap:0; transition:none; will-change:auto;}
@@ -751,11 +752,11 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 .info-area .slider-arrows{top:5px;}
 .info-area .info-list-wrap{overflow:hidden;margin-top:20px;}
 .info-area .info-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px; transition:transform .4s cubic-bezier(.4,0,.2,1); will-change:transform;}
-.info-area .info-list li a{display:flex; align-items:center; gap:8px; padding:24px 16px; min-height:83px; background:#fff; border:1px solid #CED4DA; border-radius:12px; text-decoration:none; color:#1D1D1D; font-weight:700; font-size:17px; line-height:1.5; transition:all .15s;}
+.info-area .info-list li a{display:flex; align-items:center; gap:8px; padding:24px 16px; min-height:80px; background:#fff; border:1px solid #CED4DA; border-radius:12px; text-decoration:none; color:#1D1D1D; font-weight:700; font-size:17px; line-height:1.5; transition:all .15s;}
 .info-area .info-ico{display:inline-flex; width:32px; height:32px; flex-shrink:0; align-items:center; justify-content:center; color:#9398A4;}
 .info-area .info-ico svg{width:32px; height:32px; display:block;}
 @media all and (min-width:1025px){
-  .info-area .info-list-wrap{max-height:calc(83px * 4 + 10px * 3);padding:1px;}
+  .info-area .info-list-wrap{max-height:calc(83px * 4 + 8px * 3);padding:1px;}
   .info-area .info-list li:hover a{border:1px solid #3A7EF8;outline:1px solid #3A7EF8; box-shadow:0 0 4px rgba(58, 126, 248, 0.3);color:#3A7EF8;}
   .info-area .info-list li:hover .info-ico{color: #246BEB;}
 }
