@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">표시사항</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-physical">물리적위험성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-health">건강유해성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-env">환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-acute-toxicity">급성독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-skin-corrosion">피부 부식성/자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-eye-damage">심한 눈 손상/눈 자극성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-respiratory-sensitization">호흡기 또는 피부 과민성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-germ-cell-mutagenicity">생식세포 변이원성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-carcinogenicity">발암성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-reproductive-toxicity">생식독성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-organ-toxicity-single">특정 표적장기 독성(1회)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-organ-toxicity-repeated">특정 표적장기 독성(반복)</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="haz-aspiration-hazard">흡인 유해성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="haz-acute-toxicity">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">급성독성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">급성독성 구분별 그림문자, 운송 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:70px;">
+                                        <col style="min-width:190px;">
+                                        <col style="min-width:190px;">
+                                        <col style="min-width:190px;">
+                                        <col style="min-width:190px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2"></th>
+                                            <th scope="col">구분 1</th>
+                                            <th scope="col">구분 2</th>
+                                            <th scope="col">구분 3</th>
+                                            <th scope="col">구분 4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs06.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs06.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs06.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs07.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" rowspan="2">운송 그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs28.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs28.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs28.png" alt="" class="ghs"></td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">*UN Model Regulation: 가스의 경우 숫자 6을 2로 바꾼다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>위험</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">유해·위험문구</td>
+                                            <td>경구</td>
+                                            <td>삼키면 치명적임<br>(H300)</td>
+                                            <td>삼키면 치명적임<br>(H300)</td>
+                                            <td>삼키면 유독함<br>(H301)</td>
+                                            <td>삼키면 유해함<br>(H302)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>경피</td>
+                                            <td>피부와 접촉하면 치명적임<br>(H310)</td>
+                                            <td>피부와 접촉하면 치명적임<br>(H310)</td>
+                                            <td>피부와 접촉하면 유독함<br>(H311)</td>
+                                            <td>피부와 접촉하면 유해함<br>(H312)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>흡입</td>
+                                            <td>흡입하면 치명적임<br>(H330)</td>
+                                            <td>흡입하면 치명적임<br>(H330)</td>
+                                            <td>흡입하면 유독함<br>(H331)</td>
+                                            <td>흡입하면 유해함<br>(H332)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방조치문구<br>(경구)</td>
+                                            <td>예방</td>
+                                            <td>P264<br>P270</td>
+                                            <td>삼P264<br>P270</td>
+                                            <td>P264<br>P270</td>
+                                            <td>P264<br>P270</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P301+P310<br>P321<br>P330</td>
+                                            <td>P301+P310<br>P321<br>P330</td>
+                                            <td>P301+P310<br>P321<br>P330</td>
+                                            <td>P301+P312<br>P330</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방조치문구<br>(경피)</td>
+                                            <td>예방</td>
+                                            <td>P262<br>P264<br>P270<br>P280</td>
+                                            <td>P262<br>P264<br>P270<br>P280</td>
+                                            <td>P280</td>
+                                            <td>P280</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P302+P352<br>P310<br>P321<br>P361+P364</td>
+                                            <td>P302+P352<br>P310<br>P321<br>P361+P364</td>
+                                            <td>P302+P352<br>P312<br>P321<br>P361+P364</td>
+                                            <td>P302+P352<br>P312<br>P321<br>P362+P364</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방조치문구<br>(흡입)</td>
+                                            <td>예방</td>
+                                            <td>P260<br>P271<br>P284</td>
+                                            <td>P260<br>P271<br>P284</td>
+                                            <td>P261<br>P271</td>
+                                            <td>P261<br>P271</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P304+P340<br>P310<br>P320</td>
+                                            <td>P304+P340<br>P310<br>P320</td>
+                                            <td>P304+P340<br>P311<br>P321</td>
+                                            <td>P304+P340<br>P312</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P403+P233<br>P405</td>
+                                            <td>P403+P233<br>P405</td>
+                                            <td>P403+P233<br>P405</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>없음</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-skin-corrosion" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">피부 부식성/자극성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">피부 부식성/자극성 구분별 그림문자, 운송 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:240px;">
+                                        <col style="min-width:240px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2"></th>
+                                            <th scope="col">구분 1 (1A, 1B, 1C)</th>
+                                            <th scope="col">구분 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs05.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs07.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">운송 그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs29.png" alt="" class="ghs"></td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>피부에 심한 화상과 눈에 손상을 일으킴<br>(H314)</td>
+                                            <td>피부에 자극을 일으킴<br>(H315)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P260<br>P264<br>P280</td>
+                                            <td>P264<br>P280</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P301+P330+P331<br>P303+P361+P353<br>P363<br>P304+P340<br>P310<br>P321<br>P305+P351+P338</td>
+                                            <td>P302+P352<br>P321<br>P332+P313<br>P362+P364</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P405</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>없음</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-eye-damage" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">심한 눈 손상/눈 자극성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">심한 눈 손상/눈 자극성 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:240px;">
+                                        <col style="min-width:240px;">
+                                        <col style="min-width:240px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2" rowspan="2"></th>
+                                            <th scope="col" rowspan="2">구분 1</th>
+                                            <th scope="col" colspan="2">구분 2</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">구분 2A</th>
+                                            <th scope="col">구분 2B</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs05.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs07.png" alt="" class="ghs"></td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>눈에 심한 손상을 일으킴<br>(H318)</td>
+                                            <td>눈에 심한 자극을 일으킴<br>(H319)</td>
+                                            <td>눈에 자극을 일으킴<br>(H320)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P280</td>
+                                            <td>P264<br>P280</td>
+                                            <td>P264</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P305+P351+P338<br>P310</td>
+                                            <td>P305+P351+P338<br>P337+P313</td>
+                                            <td>P305+P351+P338<br>P337+P313</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            <p class="txt-caption" style="margin-top:16px">공통1: 구분 1, 2로 구분한 경우 구분 2의 그림문자, 신호어, 유해·위험문구, 예방조치문구는 구분 2A를 따른다.<br>공통2: H314 문구 “피부에 심한 화상과 눈에 손상을 일으킴”이 할당되면, H318 문구 “눈에 심한 손상을 일으킴”은 생략될 수 있다.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-respiratory-sensitization" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">호흡기 또는 피부 과민성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">호흡기 또는 피부 과민성 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:240px;">
+                                        <col style="min-width:240px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2"></th>
+                                            <th scope="col">호흡기 과민성<br>구분 1 (1A. 1B)</th>
+                                            <th scope="col">피부 과민성<br>구분 1 (1A, 1B)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs07.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>흡입 시 알레르기성 반응, 천식 또는<br>호흡 곤란 등을 일으킬 수 있음<br>(H334)</td>
+                                            <td>알레르기성 피부 반응을 일으킬 수 있음<br>(H317)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P261<br>P284</td>
+                                            <td>P261<br>P272<br>P280</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P304+P340<br>P342+P311</td>
+                                            <td>P302+P352<br>P333+P313<br>P321<br>P362+P364</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-germ-cell-mutagenicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">생식세포 변이원성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">생식세포 변이원성 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2" rowspan="2"></th>
+                                            <th scope="col" colspan="2">구분 1</th>
+                                            <th scope="col" rowspan="2">구분 2</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">구분 1A</th>
+                                            <th scope="col">구분 1B</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>유전적인 결함을 일으킬 수 있음<br>(주1) (H340)</td>
+                                            <td>유전적인 결함을 일으킬 수 있음<br>(주1) (H340)</td>
+                                            <td>유전적인 결함을 일으킬 것으로 의심됨<br>(주1) (H341)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P308+P313</td>
+                                            <td>P308+P313</td>
+                                            <td>P308+P313</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp-ps">(주1): 유전적인 결함을 일으키는 노출 경로를 기재한다. 단, 다른 노출 경로에 의해 유전적인 결함을 일으키지 않는다는 결정적인 증거가 있는 경우에 한한다.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-carcinogenicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">발암성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">발암성 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2" rowspan="2"></th>
+                                            <th scope="col" colspan="2">구분 1</th>
+                                            <th scope="col" rowspan="2">구분 2</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">구분 1A</th>
+                                            <th scope="col">구분 1B</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>암을 일으킬 수 있음 (주2)<br>(H350)</td>
+                                            <td>암을 일으킬 수 있음 (주2)<br>(H350)</td>
+                                            <td>암을 일으킬 것으로 의심됨 (주2)<br>(H351)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P308+P313</td>
+                                            <td>P308+P313</td>
+                                            <td>P308+P313</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp-ps">
+                                (주2): 암을 일으키는 노출 경로를 기재한다. 단, 다른 노출경로에 의해 암을 일으키지 않는다는 결정적인 증거가 있는 경우에 한한다.
+                                <br>
+                                공통2: H314 문구 “피부에 심한 화상과 눈에 손상을 일으킴”이 할당되면, H318 문구 “눈에 심한 손상을 일으킴”은 생략될 수 있다.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-reproductive-toxicity" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">생식독성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">생식독성 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2" rowspan="2"></th>
+                                            <th scope="col" colspan="2">구분 1</th>
+                                            <th scope="col" rowspan="2">구분 2</th>
+                                            <th scope="col" rowspan="2">추가구분</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">구분 1A</th>
+                                            <th scope="col">구분 1B</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>태아 또는 생식능력에<br>손상을 일으킬 수 있음<br>(주3) (주4)<br>(H360)</td>
+                                            <td>태아 또는 생식능력에<br>손상을 일으킬 수 있음<br>(주3) (주4)<br>(H360)</td>
+                                            <td>태아 또는 생식능력에<br>손상을 일으킬 것으로 의심됨<br>(주3) (주4)<br>(H361)</td>
+                                            <td>모유를 먹는 아이에게<br>유해할 수 있음<br>(H362)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                            <td>P201<br>P202<br>P280</td>
+                                            <td>P201<br>P260<br>P263<br>P264<br>P270</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P308+P313</td>
+                                            <td>P308+P313</td>
+                                            <td>P308+P313</td>
+                                            <td>P308+P313</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>없음</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp-ps">(주3): 알려진 특정한 영향을 명시한다.<br>(주4): 생식독성을 일으키는 노출 경로를 기재한다. 단, 다른 노출경로에 의해 생식독성을 일으키지 않는다는 결정적인 증거가 있는 경우에 한한다.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-organ-toxicity-single" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">특정 표적장기 독성(1회)</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">특정 표적장기 독성(1회) 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2" rowspan="2"></th>
+                                            <th scope="col" rowspan="2">구분 1</th>
+                                            <th scope="col" rowspan="2">구분 2</th>
+                                            <th scope="col" colspan="2">구분 3</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">호흡기자극</th>
+                                            <th scope="col">마취영향</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs07.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs07.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                            <td>경고</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>장기(주5)에 손상을 일으킴<br>(주6) (H370)</td>
+                                            <td>장기(주5)에 손상을 일으킬 수 있음 (주6) (H371)</td>
+                                            <td>호흡기 자극을 일으킬 수 있음 (H335)</td>
+                                            <td>졸음 또는 현기증을 일으킬 수 있음 (H336)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P260<br>P264<br>P270</td>
+                                            <td>P260<br>P264<br>P270</td>
+                                            <td>P261<br>P271</td>
+                                            <td>P261<br>P271</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P308+P311<br>P321</td>
+                                            <td>P308+P311</td>
+                                            <td>P304+P340<br>P312</td>
+                                            <td>P304+P340<br>P312</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                            <td>P403+P233<br>P405</td>
+                                            <td>P403+P233<br>P405</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp-ps">(주5): 영향을 받는 것으로 알려진 모든 장기를 명시한다.<br>(주6): 특정 표적장기 독성(1회)을 일으키는 노출 경로를 기재. 단, 다른 노출경로에 의해 특정 표적장기 독성(1회)을 일으키지 않는다는 결정적인 증거가 있는 경우에 한한다.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-organ-toxicity-repeated" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">특정 표적장기 독성(반복)</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">특정 표적장기 독성(반복) 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2"></th>
+                                            <th scope="col">구분 1</th>
+                                            <th scope="col">구분 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>장기간 또는 반복 노출되면 장기(주5)에<br>손상을 일으킴 (주7) (H372)</td>
+                                            <td>장기간 또는 반복 노출되면 장기(주5)에<br>손상을 일으킬 수 있음 (주7) (H373)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P260<br>P264<br>P270</td>
+                                            <td>P260</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P314</td>
+                                            <td>P314</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="txt-exp-wrap">
+                            <p class="txt-exp-ps">(주5): 영향을 받는 것으로 알려진 모든 장기를 명시한다.<br>(주7): 특정 표적장기 독성(반복)을 일으키는 노출 경로를 기재한다. 단, 다른 노출경로에 의해 특정 표적장기 독성(반복)을 일으키지 않는다는 결정적인 증거가 있는 경우에 한한다.</p>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="haz-aspiration-hazard" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">흡인 유해성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">흡인 유해성 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:180px;">
+                                        <col style="min-width:180px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2"></th>
+                                            <th scope="col">구분 1</th>
+                                            <th scope="col">구분 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs08.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>위험</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>삼켜서 기도로 유입되면 치명적일 수 있음<br>(H304)</td>
+                                            <td>삼켜서 기도로 유입되면 유해할 수 있음<br>(H305)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P301+P310<br>P331</td>
+                                            <td>P301+P310<br>P331</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P405</td>
+                                            <td>P405</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

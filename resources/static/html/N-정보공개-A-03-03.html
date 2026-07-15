@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title>대국민</title>
+
+<link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script src="../script/jquery-ui.js"></script>
+<script src="../script/pub-ui.js"></script>
+
+<script type="text/javascript" src="../../SBGrid3/license.js"></script>
+<script type="text/javascript" src="../../SBGrid3/sbgrid3.js"></script>
+<link rel="stylesheet" href="../../SBGrid3/css/sbgrid3.css">
+<link rel="stylesheet" href="../../SBGrid3/css/admin_sbgrid.css">
+
+<link type="text/css" rel="stylesheet" href="../script/swiper10.3.1/swiper-bundle.min.css">
+<script src="../script/swiper10.3.1/swiper-bundle.min.js"></script>
+<script src="../script/jquery-swiper.js"></script>
+
+<script src="../script/zoom/zoomsl.js"></script>
+</head> 
+<body>
+
+    <dl class="skipLink">
+        <dt>바로가기 메뉴</dt>	
+        <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+        <dd><a href="#content">본문 바로가기</a></dd>
+    </dl>
+    <div class="wrap">
+        <script>
+            $.ajax({url:"common/header.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('afterbegin', data);
+                drowmDown();
+            }});
+        </script>
+                
+        <div class="container" id="content">
+            <script>
+                $.ajax({url:"common/lnb.txt", dataType:"text", success:function(data){
+                    document.querySelector('.container').insertAdjacentHTML('afterbegin', data);
+                    lnbMenu();
+                }});
+            </script>
+            <div class="contents">
+                <ol class="breadcrumb">
+                    <li><a href="/" aria-label="홈으로 이동"><i class="ico-home"></i><span>홈</span></a></li>
+                    <li><a href="javascript:;"><span>1DEPTH</span></a></li>
+                    <li><a href="javascript:;"><span>2DEPTH</span></a></li>
+                    <li><a href="javascript:"><span>CURRENT</span></a></li>
+                </ol>
+                <div class="title-main-wrap">
+                    <h2 class="title-main">표시사항</h2>
+                    <p class="txt-sub">유해화학물질 분류 기준 및 표시, 위험 또는 예방 조치에 관한 문구를 지원합니다.</p>
+                </div>
+
+                <!-- 탭 -->
+                <div class="tab-type1">
+                    <ul>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-physical">물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" data-tab-id="tab-health">건강유해성</a></li>
+                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-env">환경유해성</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-type3">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0);" data-tab-id="env-aquatic-hazard">수생환경 유해성</a></li>
+                            <li><a href="javascript:void(0);" data-tab-id="env-ozone-hazard">오존층 유해성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="env-aquatic-hazard">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">수생환경 유해성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">수생환경 유해성 구분별 그림문자, 운송 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:144px;">
+                                        <col style="min-width:144px;">
+                                        <col style="min-width:144px;">
+                                        <col style="min-width:144px;">
+                                        <col style="min-width:144px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2" rowspan="2"></th>
+                                            <th scope="col">급성</th>
+                                            <th scope="col" colspan="4">만성</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">구분 1</th>
+                                            <th scope="col">구분 1</th>
+                                            <th scope="col">구분 2</th>
+                                            <th scope="col">구분 3</th>
+                                            <th scope="col">구분 4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs09.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs09.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs09.png" alt="" class="ghs"></td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">운송 그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs10.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs10.png" alt="" class="ghs"></td>
+                                            <td><img src="../images/content/pictogram/ghs10.png" alt="" class="ghs"></td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>경고</td>
+                                            <td>경고</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>수생생물에 매우<br>유독함<br>(H400)</td>
+                                            <td>장기적 영향에 의해<br>수생생물에 매우<br>유독함 (H410)</td>
+                                            <td>장기적 영향에 의해<br>수생생물에 유독함<br>(H411)</td>
+                                            <td>장기적 영향에 의해<br>수생생물에 유해함<br>(H412)</td>
+                                            <td>장기적 영향에 의해<br>수생생물에 유해의 우려가 있음<br>(H413)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>P273</td>
+                                            <td>P273</td>
+                                            <td>P273</td>
+                                            <td>P273</td>
+                                            <td>P273</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>P391</td>
+                                            <td>P391</td>
+                                            <td>P391</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>폐기</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                            <td>P501</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                    <div class="tab-content" id="env-ozone-hazard" style="display: none;">
+                        <div class="title-section-wrap">
+                            <h3 class="title-section">오존층 유해성</h3>
+                        </div>
+                        <div class="data-default">
+                            <div class="scroll">
+                                <table>
+                                    <caption class="sr-only">오존층 유해성 구분별 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <colgroup>
+                                        <col style="width:80px;">
+                                        <col style="width:80px;">
+                                        <col style="min-width:180px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2"></th>
+                                            <th scope="col">구분 1</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">그림문자</td>
+                                            <td><img src="../images/content/pictogram/ghs07.png" alt="" class="ghs"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">신호어</td>
+                                            <td>경고</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">유해·위험문구</td>
+                                            <td>대기 상층부의 오존층을 파괴하여 공공의 건강 및 환경에 유해함<br>(H420)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">예방<br>조치<br>문구</td>
+                                            <td>예방</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대응</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td>저장</td>
+                                            <td>P502</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // tab-content -->
+
+                </div>
+                <!-- // tab-content -->
+
+                
+            </div>
+        </div>
+        <script>
+            $.ajax({url:"common/footer.txt", dataType:"text", success:function(data){
+                document.querySelector('.wrap').insertAdjacentHTML('beforeend', data);
+                footerSite();
+            }});
+        </script>
+    </div>
+
+
+    
+
+</body>
+</html>

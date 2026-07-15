@@ -159,17 +159,6 @@ select.xsm.no-line{height:32px;min-height: 32px; padding-right:30px;padding-left
 *+ .txt-caption{margin-top:20px;}
 .txt-caption + *{margin-top:16px;}
 li .txt-caption{margin-top:20px;}
-/* .txt-data-info{font-size:16px; color:#343A40;margin-top:16px;}
-.txt-data-info .link{text-decoration: underline;vertical-align:baseline;} */
-/* * + .txt-info,
-* + .txt-error{margin-top:12px;}
-.txt-info,
-.txt-error{font-size:15px; position:relative;padding-left:24px;font-weight:400;line-height:1.2; color:#555555;}
-.txt-error{color:#EB003B;}
-.txt-info:before,
-.txt-error:before{content:'';display:block;position:absolute;top:-1px;left:0;width: 20px;height:20px;background-size:auto 100% !important;}
-.txt-info:before{background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1.875C14.4873 1.875 18.125 5.51269 18.125 10C18.125 14.4873 14.4873 18.125 10 18.125C5.51269 18.125 1.875 14.4873 1.875 10C1.875 5.51269 5.51269 1.875 10 1.875ZM10 12.167C9.53976 12.167 9.16699 12.5398 9.16699 13C9.16699 13.4602 9.53976 13.833 10 13.833H10.0078C10.4679 13.8328 10.8408 13.4601 10.8408 13C10.8408 12.5399 10.4679 12.1672 10.0078 12.167H10ZM10.0078 6.16699C9.54757 6.16699 9.17383 6.53976 9.17383 7V10C9.17387 10.4602 9.5476 10.833 10.0078 10.833C10.4679 10.8328 10.8408 10.4601 10.8408 10V7C10.8408 6.53987 10.4679 6.16716 10.0078 6.16699Z' fill='%231D1D1D'/%3E%3C/svg%3E") no-repeat 50% 50%;}
-.txt-error:before{background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' transform='translate(2 2)' fill='white'/%3E%3Crect width='16' height='16' rx='8' transform='matrix(1 0 0 -1 2 18)' fill='%23D50136'/%3E%3Crect x='9.09961' y='5.84961' width='1.8' height='5.5' fill='white'/%3E%3Crect x='9.09961' y='12.3496' width='1.8' height='1.8' fill='white'/%3E%3C/svg%3E") no-repeat 50% 50%;} */
 
 .input-addr{width:100%;}
 .input-addr .addr-code{display:inline-flex;align-items:center;gap:8px;}
@@ -280,9 +269,6 @@ html .ui-datepicker.month .ui-datepicker-buttonpane{margin-top:0;border-top:none
     .mo-w-full{width:100% !important;}
 }
 
-/* * + .txt-reference{margin-top:20px;}
-.txt-reference{font-size:15px; color:#1D1D1D;display: flex;gap:4px;}
-.txt-reference:before{content:'※';display:inline-block;} */
 
 /* ico */
 [class*=ico-]{display:inline-block;background-position:50% 50% !important;background-repeat:no-repeat !important;background-size:100% 100% !important;width: 20px;height:20px;min-width: 20px;}
@@ -296,18 +282,6 @@ html .ui-datepicker.month .ui-datepicker-buttonpane{margin-top:0;border-top:none
 .ico-speaker{width: 22px;height:22px;background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 5L6 9H2V15H6L11 19V5Z' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.54 8.46094C16.4774 9.39858 17.004 10.6701 17.004 11.9959C17.004 13.3218 16.4774 14.5933 15.54 15.5309' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
 
 
-/* btn */
-/* .page-menu-wrap{display:flex;align-items:center;margin-top:16px;}
-.page-menu-wrap .right{margin-left:auto;display:flex;align-items:center;gap:16px;}
-.page-menu-wrap [class*=btn-]{min-width: 117px;} */
-
-/* [class*=btn-] i:last-child{margin-left:4px;}
-[class*=btn-] i:first-child{margin-right:4px;} */
-/* .detail-button-group{display:flex;align-items:center;gap:16px;}
-.detail-button-group .btn{margin:0 !important;}
-.detail-button-group .left-group{display:flex;align-items:center;gap:8px;}
-.detail-button-group .right-group{display:flex;align-items:center;gap:8px;margin-left:auto;}
-.detail-button-group:after{display:none;} */
 
 [class*=btn-] i:only-child{margin:0;}
 .btn-menu,
@@ -451,13 +425,6 @@ html .ui-datepicker.month .ui-datepicker-buttonpane{margin-top:0;border-top:none
 .selected-cond .selected .btn-del{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;padding:0;border:0;background:transparent;cursor:pointer;}
 .selected-cond .selected .ico-system-danger{display:block;width:20px;height:20px;}
 
-/* .data-detail{border-top:1px solid #212529;}
-.data-detail dl{margin:0;display:flex;align-items:stretch;height:72px;border-bottom:1px solid #E9ECEF;}
-.data-detail dt{width:140px; padding:8px 16px;font-weight:700;color:#1D1D1D;font-size:15px;display:flex;align-items:center; background:#F1F3F5;}
-.data-detail dt label{display:inline-block;cursor:pointer;}
-.data-detail dd{flex:1;padding:8px 16px;flex:1;min-width:0;display:flex;align-items:center;}
-.data-detail dd > input:only-child{width:100%;} */
-
 /* Mobile */
 @media all and (max-width:1024px){
     .detail-search-wrap .ds-toggle{gap:8px;padding:8px 0;font-size:16px;}
@@ -466,10 +433,6 @@ html .ui-datepicker.month .ui-datepicker-buttonpane{margin-top:0;border-top:none
     .detail-search-wrap .ds-btn-wrap{gap:8px;margin-top:24px;gap:12px;}
     .detail-search-wrap .ds-btn-wrap > *{flex: 1;}
 
-    /* .data-detail{display:block;}
-    .data-detail dl{height:auto;flex-direction: column;}
-    .data-detail dt{width:140px;height:40px; padding:8px 16px;font-size:15px;width:100%;border-bottom:1px solid #E9ECEF;}
-    .data-detail dd{padding:12px 16px;} */
 }
 
 * + .data-util{margin-top:60px;}
