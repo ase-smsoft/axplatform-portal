@@ -31,7 +31,7 @@
   .snb-content-wrap .snb-content{flex:1;}
   .snb-menu { width: 256px;display:block !important;}
   .snb-menu > li > a:hover{background:#f9f9f9;}
-  .snb-menu > .has-menu .lnb-sub li a:hover{tex화학물질 통합조회 나노물질 상세t-decoration: underline;}
+  .snb-menu > .has-menu .lnb-sub li a:hover{text-decoration: underline;}
 
   .mo-snb-menu-btn{display:none;}
 }
