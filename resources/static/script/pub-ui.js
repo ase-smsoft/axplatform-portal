@@ -952,6 +952,22 @@ document.addEventListener('click', function (e) {
 });
 
 
+// 본문 바로가기 클릭 시 #content 내부 첫 포커스 가능 요소로 이동
+function skipToContent(){
+  $(document).on('click', '.skipLink a[href="#content"]', function(e){
+    var $target = $('#content');
+    if(!$target.length) return;
+    e.preventDefault();
+
+    var $focusTarget = $target.find('a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])').filter(':visible').first();
+    if(!$focusTarget.length) $focusTarget = $target;
+    if(!$focusTarget.is('[tabindex]')) $focusTarget.attr('tabindex', '-1');
+
+    $focusTarget[0].scrollIntoView();
+    $focusTarget.trigger('focus');
+  });
+}
+
 // ready
 $(function(){
   function tryGnbMenu() {
@@ -968,6 +984,7 @@ $(function(){
   lnbMenu();
   snbMenu();
   dsToggle();
+  skipToContent();
   dataToggle();
   tabEvt();
   inputDel();

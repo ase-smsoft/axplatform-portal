@@ -184,7 +184,7 @@
           </li>
         </ul>
         <div class="side-menu">
-          <a href="javascript:void(0);">민원서비스 <i class="ico-outer-link"></i></a>
+          <a href="javascript:void(0);" target="_blank">민원서비스 <i class="ico-outer-link"></i></a>
         </div>
       </div>
     </div>

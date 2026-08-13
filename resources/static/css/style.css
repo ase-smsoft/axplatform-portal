@@ -505,7 +505,7 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 .no-data p{font-size: 14px;color: #212529;text-align:center;}
 
 .link-go { display: inline-flex; align-items: center; gap: 4px; font-size: 15px;font-weight: 600; padding-top:24px; margin-top:auto; color: #212529; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
-.link-go:first-child{margin-top:px;padding-top:0;}
+.link-go:first-child{margin-top:0;padding-top:0;}
 .link-go svg { width: 16px; height: 16px; fill: currentColor; }
 
 .video-card-list { display: flex; flex-direction: column; gap: 24px; padding: 0; margin: 0; list-style: none; }
@@ -633,7 +633,7 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 /* 화학 3법 카드 */
 .laws-area{display:flex;flex-direction: column;height:100%;flex:1;}
 .laws-list {flex:1; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.laws-list .law-card { position: relative; padding:32px;height:385px; border-radius: 12px; min-height: 260px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
+.laws-list .law-card a{ position: relative; padding:32px;height:385px; border-radius: 12px; min-height: 260px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
 .laws-list .law-card:hover { transform: translateY(-4px); box-shadow: 0 6px 8px rgba(24, 36, 70, 0.1); }
 .laws-list .law-card--blue { background: linear-gradient(180deg, #e8f0fe 0%, #f5f8fd 100%); }
 .laws-list .law-card--green { background: linear-gradient(180deg, #e7f5ee 0%, #f4faf6 100%); }
@@ -956,9 +956,8 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 .chatbot-check{display:inline-flex; align-items:center; gap:8px; cursor:pointer;}
 .chatbot-check-input{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
 .chatbot-check-box{position:relative; flex-shrink:0; width:20px; height:20px; background:#fff; border:1px solid #adb5bd; border-radius:4px; transition:background .15s, border-color .15s;}
-.chatbot-check-box::after{content:""; position:absolute; inset:20%; background:transparent; -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none'><path d='M2.5 6.2 4.9 8.6 9.5 4' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain; mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none'><path d='M2.5 6.2 4.9 8.6 9.5 4' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;}
+.chatbot-check-box::after{content:""; position:absolute;width: 100%;height:100%;background: url("data:image/svg+xml,%3Csvg width='39' height='27' viewBox='0 0 39 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M34.4432 0.0912349C34.2722 0.143326 33.9373 0.284718 33.6991 0.405396C33.4607 0.526199 31.366 2.51594 25.3775 8.49368C19.3889 14.4714 14.4617 19.3874 14.428 19.4181C14.3944 19.4488 12.2617 17.3725 9.68878 14.8043C4.56298 9.68794 4.49427 9.63374 3.11806 9.6289C1.71457 9.62394 0.561859 10.4663 0.170925 11.7828C-0.0600134 12.5605 -0.058401 12.7721 0.184692 13.6035C0.373958 14.2508 0.6204 14.5164 6.47908 20.3891C10.503 24.4225 12.748 26.5842 13.0808 26.7455C13.8333 27.1104 15.0144 27.0797 15.8284 26.6741C16.3335 26.4223 18.9392 23.8705 28.6447 14.1224C37.2748 5.45464 37.8935 4.7404 38.0553 4.38456C38.5742 3.2419 38.2113 1.5937 37.256 0.755029C36.5499 0.135017 35.2824 -0.164013 34.4432 0.0912349Z' fill='white'/%3E%3C/svg%3E") no-repeat 50% 50%;background-size: auto 8px;}
 .chatbot-check-input:checked + .chatbot-check-box{background:#1c4cbf; border-color:#1c4cbf;}
-.chatbot-check-input:checked + .chatbot-check-box::after{background:#fff;}
 .chatbot-check-input:focus-visible + .chatbot-check-box{outline:2px solid #0056d0; outline-offset:2px;}
 .chatbot-check-text{font-size:14px; line-height:1.5; color:#343a40;}
 
@@ -1736,12 +1735,15 @@ table .btn-view.st2{  width: 26px; height: 26px; vertical-align: middle; margin-
 .forum-topic-nav + .contact-info-bar{margin-top:0;}
 .nav-title{margin:0;font-size:20px;font-weight:700;line-height:1.5;color:#1d1d1d;}
 .nav-list{display:flex;flex-wrap:wrap;gap:12px 24px;margin:0;padding:0;list-style:none;}
-.nav-list.st3{flex-wrap:nowrap;}
-.nav-list.st3 .nav-item{flex:1;width:auto;min-width:0;}
 .nav-item{position:relative;display:flex;align-items:flex-start;gap:8px;width:calc((100% - 72px) / 4);min-width:187px;}
 .nav-item::before{content:'';flex:none;width:24px;height:24px;background:radial-gradient(circle,#343a40 2px,transparent 2px);background-position:center;background-repeat:no-repeat;}
 .nav-link{flex:1;min-width:0;font-size:17px;font-weight:400;line-height:1.5;color:#343a40;text-decoration:none;word-break:keep-all;}
 .nav-item.is-active .nav-link{font-weight:700;text-decoration:underline;text-underline-offset:2px;}
+
+@media all and (min-width:1025px){
+  .nav-list.st3{flex-wrap:nowrap;}
+  .nav-list.st3 .nav-item{flex:1;width:auto;min-width:0;}
+}
 
 @media all and (max-width:1024px){
   .nav-item{width:calc((100% - 24px) / 2);}
