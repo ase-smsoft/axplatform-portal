@@ -26,7 +26,7 @@
     .container > .lnb-wrap ~ .contents{padding-left:30px;}
 
     .lnb-wrap .lnb { background: white; width: 100%; max-width: 300px; display: flex; flex-direction: column; gap: 16px; }
-    .lnb-wrap .lnb .lnb-title { height: 140px; background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(188.266deg, rgb(62, 119, 255) 19.889%, rgb(3, 59, 192) 129.46%); border-radius: 8px 8px 0 0; display: flex; align-items: center; justify-content: center; padding: 40px 24px; }
+    .lnb-wrap .lnb .lnb-title { height: 140px; background: #052b87; border-radius: 8px 8px 0 0; display: flex; align-items: center; justify-content: center; padding: 40px 24px; }
     .lnb-wrap .lnb .lnb-title h2 { font-family: 'Gmarket Sans'; font-weight: bold; font-size: 28px; color: white; text-align: center;line-height: 1.2; margin: 0; border-bottom:1px solid #fff;}
     .lnb-wrap .lnb .lnb-menu { list-style: none; display: flex; flex-direction: column; margin: 0; padding: 0; }
     .lnb-wrap .lnb .lnb-menu > li { position: relative; border-bottom: 1px dashed #e9ecef; }
@@ -49,7 +49,7 @@
     .lnb-wrap .lnb .lnb-menu > li .lnb-sub > li.active > a:before { background: #245892; }
     .lnb-wrap .lnb .lnb-menu > li:not(.on) .lnb-sub { display: none; } 
     
-    .header{position:fixed;top:0;left:0;width:100%; height:160px;;display:flex;flex-direction: column;z-index: 80;}
+    .header{position:fixed;top:0;left:0;width:100%; height:160px;;display:flex;flex-direction: column;z-index: 80;background:#fff;}
     .header-menu {flex:1; position:relative; width: var(--min-width);margin:0 auto; display: flex; align-items: center; justify-content: space-between; padding: 20px 0; background-color: #fff; }
     .header-menu .logo { flex-shrink: 0; }
     .header-menu .logo a { display: block; text-decoration: none; }
@@ -114,7 +114,7 @@
     .footer .footer-site .site-item .site-toggle .ico-plus::after { left: 50%; top: 50%; transform: translate(-50%, -50%); width: 1.4px; height: 11px; }
     .footer .footer-site .site-item .site-toggle.on{background:#CDD7E4;}
 
-    .footer .site-panel {display:none; position:absolute;bottom:100%;left:0;width:100%; background-color: #eef2f7; border-radius: 12px 12px 0 0; padding: 60px; max-width: 100%; box-sizing: border-box;z-index: 10;}
+    .footer .site-panel {display:none; position:absolute;bottom:100%;left:0;width:100%; background-color: #eef2f7; border-radius: 12px 12px 0 0; padding: 60px; max-width: 100%; box-sizing: border-box;z-index: 90;}
     .footer .site-panel .site-panel-header { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-bottom: 48px; }
     .footer .site-panel .site-panel-header strong {  font-weight: bold; font-size: 24px; line-height: 1.5; color: #1e2124; }
     .footer .site-panel .site-panel-header .btn-close { width: 32px; height: 32px; background: transparent; border: none; cursor: pointer; position: relative; padding: 0; }

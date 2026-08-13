@@ -59,33 +59,33 @@
 
                 <!-- 탭 -->
                 <div class="tab-type1">
-                    <ul>
-                        <li class="on"><a href="javascript:void(0);" data-tab-id="tab-physical">물리적위험성</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-health">건강유해성</a></li>
-                        <li><a href="javascript:void(0);" data-tab-id="tab-env">환경유해성</a></li>
+                    <ul role="tablist">
+                        <li class="on"><a href="javascript:void(0);" role="tab" data-tab-id="tab-physical" aria-selected="true">물리적위험성</a></li>
+                        <li><a href="javascript:void(0);" role="tab" data-tab-id="tab-health" aria-selected="false">건강유해성</a></li>
+                        <li><a href="javascript:void(0);" role="tab" data-tab-id="tab-env" aria-selected="false">환경유해성</a></li>
                     </ul>
                 </div>
 
 
                 <div class="tab-content">
                     <div class="tab-type3">
-                        <ul>
-                            <li class="on"><a href="javascript:void(0);" data-tab-id="haz-explosive">폭발성 물질</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-gas">인화성가스</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-aerosol">에어로졸</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-gas">산화성가스</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-pressurized-gas">고압가스</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-liquid">인화성액체</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-flammable-solid">인화성고체</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-self-reactive">자기반응성 물질 및 혼합물</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-pyrophoric-liquid">자연발화성 액체</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-pyrophoric-solid">자연발화성 고체</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-self-heating">자기발열성 물질 및 혼합물</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-water-reactive">물반응성 물질 및 혼합물</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-liquid">산화성액체</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-oxidizing-solid">산화성고체</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-organic-peroxide">유기과산화물</a></li>
-                            <li><a href="javascript:void(0);" data-tab-id="haz-metal-corrosive">금속부식성 물질</a></li>
+                        <ul role="tablist">
+                            <li class="on"><a href="javascript:void(0);" role="tab" data-tab-id="haz-explosive" aria-selected="true">폭발성 물질</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-flammable-gas" aria-selected="false">인화성가스</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-aerosol" aria-selected="false">에어로졸</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-oxidizing-gas" aria-selected="false">산화성가스</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-pressurized-gas" aria-selected="false">고압가스</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-flammable-liquid" aria-selected="false">인화성액체</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-flammable-solid" aria-selected="false">인화성고체</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-self-reactive" aria-selected="false">자기반응성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-pyrophoric-liquid" aria-selected="false">자연발화성 액체</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-pyrophoric-solid" aria-selected="false">자연발화성 고체</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-self-heating" aria-selected="false">자기발열성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-water-reactive" aria-selected="false">물반응성 물질 및 혼합물</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-oxidizing-liquid" aria-selected="false">산화성액체</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-oxidizing-solid" aria-selected="false">산화성고체</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-organic-peroxide" aria-selected="false">유기과산화물</a></li>
+                            <li><a href="javascript:void(0);" role="tab" data-tab-id="haz-metal-corrosive" aria-selected="false">금속부식성 물질</a></li>
                         </ul>
                     </div>
 
@@ -96,7 +96,7 @@
                         <div class="data-default">
                             <div class="scroll">
                                 <table>
-                                    <caption class="sr-only">폭발성 물질 구분별 그림문자, 운송 그림문자, 신호어, 유해·위험문구 및 예방조치문구</caption>
+                                    <caption class="sr-only">폭발성 물질 구분별 그림문자, 운송 그림문자, 신호어, 유해·위험문구 및 예방조치문구를 등급별로구분</caption>
                                     <colgroup>
                                         <col style="width:80px;">
                                         <col style="width:60px;">

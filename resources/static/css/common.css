@@ -153,7 +153,8 @@ input.error{border-color: #D50136 !important;border-width: 1.5px;}
 select.no-line{border:none;}
 select.xsm.no-line{height:32px;min-height: 32px; padding-right:30px;padding-left:10px;min-width: 80px; background-position:  right 0 top 50% ;}
 
-.txt-require{font-weight:700;font-size:15px; color:#555555;}
+.txt-require{font-size:15px; color:#555555;display:flex;align-items:center;gap:4px;}
+.txt-require:before{content:'*';display:inline;}
 
 .txt-caption{font-size:14px; color:#495057;}
 *+ .txt-caption{margin-top:20px;}

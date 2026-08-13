@@ -4,21 +4,21 @@
             <h2>타이틀</h2>
         </div>
         <ul class="lnb-menu">
-            <li class="on">
-                <a href="javascript:void(0);">메뉴 타이틀</a>
+            <li class="has-menu on">
+                <a href="javascript:void(0);" title="펼침" aria-expanded="true">메뉴 타이틀</a>
                 <ul class="lnb-sub">
-                    <li class="active"><a href="javascript:void(0);">서브메뉴</a></li>
                     <li><a href="javascript:void(0);">서브메뉴</a></li>
-                    <li><a href="javascript:void(0);">서브메뉴</a>
+                    <li><a href="javascript:void(0);">서브메뉴</a></li>
+                    <li class="active"><a href="javascript:void(0);" title="현재 페이지" aria-current="page">서브메뉴</a>
                         <ul>
-                            <li class="active"><a href="javascript:void(0);">서브메뉴</a></li>
+                            <li class="active"><a href="javascript:void(0);" title="현재 페이지" aria-current="page">서브메뉴</a></li>
                             <li><a href="javascript:void(0);">서브메뉴</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="javascript:void(0);">메뉴 타이틀(서브있음)</a>
+            <li class="has-menu">
+                <a href="javascript:void(0);" title="접힘" aria-expanded="false">메뉴 타이틀(서브있음)</a>
                 <ul class="lnb-sub">
                     <li><a href="javascript:void(0);">서브메뉴</a></li>
                     <li><a href="javascript:void(0);">서브메뉴</a></li>

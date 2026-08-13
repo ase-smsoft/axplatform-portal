@@ -263,22 +263,26 @@ function lnbMenu(){
 
   $(document).off('click.lnbMenu').on('click.lnbMenu', '.lnb-menu > li > a', function(e){
     e.preventDefault();
-    var $li = $(this).parent();
+    var $a = $(this);
+    var $li = $a.parent();
     var $sub = $li.find('.lnb-sub');
     if($sub.length){
       if($li.hasClass('on')){
         $sub.stop(true, false).slideUp(300, function(){
           $li.removeClass('on');
         });
+        $a.attr('aria-expanded', 'false').attr('title', '접힘');
       }else{
         $('.lnb-menu > li.on').each(function(){
           var $otherLi = $(this);
           $otherLi.find('.lnb-sub').stop(true, false).slideUp(300, function(){
             $otherLi.removeClass('on');
           });
+          $otherLi.children('a').attr('aria-expanded', 'false').attr('title', '접힘');
         });
         $li.addClass('on');
         $sub.stop(true, false).slideDown(300);
+        $a.attr('aria-expanded', 'true').attr('title', '펼침');
       }
     }
   });
@@ -409,7 +413,9 @@ function dataToggle(){
     var $target = $('#' + targetId);
     if(!$target.length) return;
 
-    $btn.toggleClass('on');
+    var isOn = $btn.toggleClass('on').hasClass('on');
+    if($btn.is('[aria-expanded]')) $btn.attr('aria-expanded', isOn ? 'true' : 'false');
+    if($btn.is('[title]')) $btn.attr('title', isOn ? '펼침' : '접힘');
     $target.stop(true, false).slideToggle(250);
   });
 }
@@ -571,11 +577,28 @@ function dsToggle(){
       tabs = [];
       tabs.push(tabid);
 
-      $(this).parents('li').addClass('on');
-      $(this).parents('li').siblings().find('[data-tab-id]').each(function(){
-        $(this).parents('li').removeClass('on');
-        tabs.push($(this).data('tab-id'));
-      });
+      let $li = $(this).parents('li').first();
+      if($li.length){
+        let $group = $li.siblings().addBack();
+        let activeClass = $group.is('.is-active') ? 'is-active' : 'on';
+        $group.removeClass(activeClass);
+        $li.addClass(activeClass);
+        if($(this).is('[aria-selected]')) $(this).attr('aria-selected', 'true');
+        $li.siblings().find('[data-tab-id]').each(function(){
+          if($(this).is('[aria-selected]')) $(this).attr('aria-selected', 'false');
+          tabs.push($(this).data('tab-id'));
+        });
+      }else{
+        let $group = $(this).siblings('[data-tab-id]').addBack();
+        let activeClass = $group.is('.is-active') ? 'is-active' : 'on';
+        $group.removeClass(activeClass);
+        $(this).addClass(activeClass);
+        if($(this).is('[aria-selected]')) $(this).attr('aria-selected', 'true');
+        $(this).siblings('[data-tab-id]').each(function(){
+          if($(this).is('[aria-selected]')) $(this).attr('aria-selected', 'false');
+          tabs.push($(this).data('tab-id'));
+        });
+      }
 
       tabs.forEach(function(v){
         $('#'+v).hide();

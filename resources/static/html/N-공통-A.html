@@ -104,21 +104,89 @@
                                 <a href="#" class="btn-more">더보기 <svg class="ico-plus" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-plus"></use></svg></a>
                             </div>
                             <div class="board-list-box">
-                                <div class="main-tabs">
-                                    <button type="button" class="tab is-active">전체</button>
-                                    <button type="button" class="tab">지원사업</button>
-                                    <button type="button" class="tab">교육</button>
-                                </div>
-                                <ul class="board-list">
-                                    <li><span class="board-badge bg-gray">지원사업</span><a href="#" class="board-title">등록 전과정 컨설팅 지원</a><span class="board-date">2025-10-17</span></li>
-                                    <li><span class="board-badge bg-gray">지원사업</span><a href="#" class="board-title">2026년 신규화학물질 신고 무상 컨설팅 지원</a><span class="board-date">2025-10-17</span></li>
-                                    <li><span class="board-badge bg-blue">교육</span><a href="#" class="board-title">위해성자료 작성지원그램(K-Chesar) 동영상 교육자 프로그램(K-Chesar) 동영상 교육자료…</a>
-                                        <svg class="ico-note" width="24" height="24" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-note"></use></svg>
-                                        <span class="board-date">2025-10-17</span></li>
-                                    <li><span class="board-badge bg-blue">교육</span><a href="#" class="board-title">화평법 등록이행 교육 (위해성자료 작성 전문과정) 교육…</a><span class="board-date">2025-10-17</span></li>
-                                    <li><span class="board-badge bg-blue">교육</span><a href="#" class="board-title">취약시설 특별 안전교육 지원사업</a><span class="board-date">2025-10-17</span></li>
-                                </ul>
-                            </div>
+                        <div class="main-tabs" role="tablist">
+                            <button type="button" class="tab  is-active" data-tab-id="sprtbiz-tab-0" role="tab" aria-selected="true">전체</button>
+                            <button type="button" class="tab" data-tab-id="sprtbiz-tab-1" role="tab" aria-selected="false">지원사업</button>
+                            <button type="button" class="tab" data-tab-id="sprtbiz-tab-2" role="tab" aria-selected="false">교육</button>
+                        </div>
+                        <div class="tab-content" id="sprtbiz-tab-0">
+                            <ul class="board-list">
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=26" class="board-title">2026년 생활화학제품 안전관리 컨설팅 지원사업</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=16" class="board-title">2026년 신규화학물질 신고 무상 컨설팅 지원사업</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=15" class="board-title">2026년 중소기업 살생물제품(I·Ⅱ·Ⅲ그룹) 승인 전과정 컨설팅 지원사업</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=25" class="board-title">2026 살생물제 중대재해처벌법 제도이행 지원</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=23" class="board-title">2026년 상생협력 실증 프로그램 사업</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="sprtbiz-tab-1" style="display:none">
+                            <ul class="board-list">
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=26" class="board-title">2026년 생활화학제품 안전관리 컨설팅 지원사업</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=16" class="board-title">2026년 신규화학물질 신고 무상 컨설팅 지원사업</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=15" class="board-title">2026년 중소기업 살생물제품(I·Ⅱ·Ⅲ그룹) 승인 전과정 컨설팅 지원사업</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=25" class="board-title">2026 살생물제 중대재해처벌법 제도이행 지원</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">지원사업</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=23" class="board-title">2026년 상생협력 실증 프로그램 사업</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="sprtbiz-tab-2" style="display:none">
+                            <ul class="board-list">
+                                <li>
+                                    <span class="board-badge bg-green">교육</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=20" class="board-title">화학물질 안전관리 특성화대학원</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">교육</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=19" class="board-title">「2026년 화학물질 안전관리 전문인력 양성사업」</a>
+                                    <span class="board-date">2026-06-30</span>
+                                </li>
+                                <li>
+                                    <span class="board-badge bg-green">교육</span>
+                                    <a href="/kreach/sprtBiz/view.do?sprtBizSn=7" class="board-title">취약시설 특별 안전교육 지원</a>
+                                    <span class="board-date">2026-06-28</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                         </div>
                         <div class="board-area">
                             <div class="main-head">
@@ -128,21 +196,78 @@
                                 <a href="#" class="btn-more">더보기 <svg class="ico-plus" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-plus"></use></svg></a>
                             </div>
                             <div class="board-list-box">
-                                <div class="main-tabs">
-                                    <button type="button" class="tab is-active">전체</button>
-                                    <button type="button" class="tab">kreach</button>
-                                    <button type="button" class="tab">산업계도움센터</button>
-                                    <button type="button" class="tab">화학물질종합정보시스템</button>
-                                    <button type="button" class="tab">k-chesar</button>
-                                    <button type="button" class="tab">초록누리</button>
+                                <div class="main-tabs" role="tablist">
+                                    <button type="button" class="tab is-active" data-tab-id="notice-tab-0" role="tab" aria-selected="true">전체</button>
+                                    <button type="button" class="tab" data-tab-id="notice-tab-1" role="tab" aria-selected="false">K-REACH</button>
+                                    <button type="button" class="tab" data-tab-id="notice-tab-2" role="tab" aria-selected="false">화학물질</button>
+                                    <button type="button" class="tab" data-tab-id="notice-tab-3" role="tab" aria-selected="false">K-CHESAR</button>
+                                    <button type="button" class="tab" data-tab-id="notice-tab-4" role="tab" aria-selected="false">초록누리</button>
                                 </div>
-                                <ul class="board-list">
-                                    <li><span class="board-badge bg-blue">kreach</span><a href="#" class="board-title">2026-02-20 오후 시스템 점검 안내</a><span class="board-date">2025-10-17</span></li>
-                                    <li><span class="board-badge bg-pink">산업계</span><a href="#" class="board-title">[영문] 안전확인대상생활화학제품 지정 및 안전·표시기준 영…</a><span class="board-date">2025-10-17</span></li>
-                                    <li><span class="board-badge bg-orange">화학물질</span><a href="#" class="board-title">국가정보자원관리원 화재 관련 서비스</a><span class="board-date">2025-10-17</span></li>
-                                    <li><span class="board-badge bg-purple">k-chesar</span><i class="ico-speaker"></i><a href="#" class="board-title">2026년도 안전확인신고제도</a><span class="board-date">2025-10-17</span></li>
-                                    <li><span class="board-badge bg-green">초록누리</span><i class="ico-speaker"></i><a href="#" class="board-title">생활화학제품 등의 표시·광고에 관한 규정 시행 안내</a><span class="board-date">2025-10-17</span></li>
-                                </ul>
+                                <div class="-tabcontent" id="notice-tab-0" >
+                                    <ul class="board-list">
+                                        <li><span class="board-badge bg-blue">kreach</span><a href="#" class="board-title">2026-02-20 오후 시스템 점검 안내</a><span class="board-date">2025-10-17</span></li>
+                                        <li><span class="board-badge bg-pink">산업계</span><a href="#" class="board-title">[영문] 안전확인대상생활화학제품 지정 및 안전·표시기준 영…</a><span class="board-date">2025-10-17</span></li>
+                                        <li><span class="board-badge bg-orange">화학물질</span><a href="#" class="board-title">국가정보자원관리원 화재 관련 서비스</a><span class="board-date">2025-10-17</span></li>
+                                        <li><span class="board-badge bg-purple">k-chesar</span><i class="ico-speaker" title="공지사항"></i><a href="#" class="board-title">2026년도 안전확인신고제도</a><span class="board-date">2025-10-17</span></li>
+                                        <li><span class="board-badge bg-green">초록누리</span><i class="ico-speaker" title="공지사항"></i><a href="#" class="board-title">생활화학제품 등의 표시·광고에 관한 규정 시행 안내</a><span class="board-date">2025-10-17</span></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="notice-tab-1" style="display:none">
+                                    <ul class="board-list">
+                                        <li>
+                                            <span class="board-badge bg-blue">K-REACH</span>
+                                            <i class="ico-speaker" title="공지사항"></i>
+                                            <a href="/kreach/board/menuTab/view.do?menuId=MNU0080343&amp;pstSn=105" class="board-title">정부 소유 유해성 시험자료 사용 승인 신청 매뉴얼 및 시험자료 목록 안내</a>
+                                            <span class="board-date">2026-06-22</span>
+                                        </li>
+                                        <li>
+                                            <span class="board-badge bg-blue">K-REACH</span>
+                                            <i class="ico-speaker" title="공지사항"></i>
+                                            <a href="/kreach/board/menuTab/view.do?menuId=MNU0080343&amp;pstSn=104" class="board-title">정부 소유 유해성 시험자료 사용 승인 신청 매뉴얼 및 시험자료 목록 안내</a>
+                                            <span class="board-date">2026-06-22</span>
+                                        </li>
+                                        <li>
+                                            <span class="board-badge bg-blue">K-REACH</span>
+                                            
+                                            <a href="/kreach/board/menuTab/view.do?menuId=MNU0080343&amp;pstSn=133" class="board-title">123</a>
+                                            <span class="board-date">2026-07-01</span>
+                                        </li>
+                                        <li>
+                                            <span class="board-badge bg-blue">K-REACH</span>
+                                            
+                                            <a href="/kreach/board/menuTab/view.do?menuId=MNU0080343&amp;pstSn=122" class="board-title">[점검] 시스템 점검 안내('26.6.15.(월) 18:00 ~ 20:00)</a>
+                                            <span class="board-date">2026-06-26</span>
+                                        </li>
+                                        <li>
+                                            <span class="board-badge bg-blue">K-REACH</span>
+                                            
+                                            <a href="/kreach/board/menuTab/view.do?menuId=MNU0080343&amp;pstSn=121" class="board-title">[부재] '26.6.12.(금) 한국환경공단 부재 알림</a>
+                                            <span class="board-date">2026-06-26</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="notice-tab-2" style="display:none">
+                                    <ul class="board-list">
+                                        <li>
+                                            <span class="board-badge bg-orange">화학물질</span>
+                                            
+                                            <a href="/kreach/board/menuTab/view.do?menuId=MNU0080343&amp;pstSn=116" class="board-title">화학물질종합정보시스템 지도서비스 제한 안내(12.5. 18:00 ~ 12.6. 9:00)</a>
+                                            <span class="board-date">2026-06-26</span>
+                                        </li>
+                                        <li>
+                                            <span class="board-badge bg-orange">화학물질</span>
+                                            
+                                            <a href="/kreach/board/menuTab/view.do?menuId=MNU0080343&amp;pstSn=115" class="board-title">국가정보자원관리원 화재 관련 서비스 재개 일정 안내</a>
+                                            <span class="board-date">2026-06-26</span>
+                                        </li>
+                                        <li>
+                                            <span class="board-badge bg-orange">화학물질</span>
+                                            
+                                            <a href="/kreach/board/menuTab/view.do?menuId=MNU0080343&amp;pstSn=114" class="board-title">화학물질종합정보시스템 서비스 일시중단 안내(9.25)</a>
+                                            <span class="board-date">2026-06-26</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -529,6 +654,18 @@
         $slider.on('mouseenter', function(){ if(playing) clearInterval(timer); });
         $slider.on('mouseleave', function(){ if(playing) play(); });
 
+        // 키보드 포커스가 비활성 슬라이드의 링크로 이동하면 해당 슬라이드를 화면에 노출
+        $slider.on('focusin', '.slider-item a', function(){
+            var idx = $items.index($(this).closest('.slider-item'));
+            if(idx !== -1 && idx !== current) go(idx);
+            if(playing) clearInterval(timer);
+        });
+        $slider.on('focusout', '.slider-item a', function(){
+            setTimeout(function(){
+                if(playing && !$.contains($slider[0], document.activeElement)) play();
+            }, 0);
+        });
+
         go(0);
         play();
     })();
@@ -760,6 +897,45 @@
 
     <!-- 공동활용플랫폼 AI 챗봇 패널 -->
     <aside class="chatbot-panel" id="chatbotPanel" aria-label="공동활용플랫폼 AI 챗봇" hidden>
+
+        <!-- 첫 진입 가이드 팝업 (2단계: 글씨 크기 → 가이드 버튼) -->
+        <div class="chatbot-guide" id="chatbotGuide" data-step="1" hidden>
+            <div class="chatbot-guide-dim" aria-hidden="true"></div>
+            <span class="chatbot-guide-spot chatbot-guide-spot--resize" aria-hidden="true"></span>
+            <span class="chatbot-guide-spot chatbot-guide-spot--help" aria-hidden="true"></span>
+
+            <div class="chatbot-guide-tip chatbot-guide-tip--resize" data-step="1" role="dialog" aria-labelledby="chatbotGuideTitle1">
+                <span class="chatbot-guide-arrow" aria-hidden="true"></span>
+                <div class="chatbot-guide-tip-inner">
+                    <div class="chatbot-guide-text">
+                        <strong id="chatbotGuideTitle1">글씨 크기 선택</strong>
+                        <span>크기를 조절할 수 있습니다.</span>
+                    </div>
+                    <button type="button" class="chatbot-guide-x" data-action="next-guide" aria-label="다음 가이드">
+                        <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="chatbot-guide-tip chatbot-guide-tip--help" data-step="2" role="dialog" aria-labelledby="chatbotGuideTitle2">
+                <span class="chatbot-guide-arrow" aria-hidden="true"></span>
+                <div class="chatbot-guide-tip-inner">
+                    <div class="chatbot-guide-text">
+                        <strong id="chatbotGuideTitle2">가이드 버튼</strong>
+                        <span>클릭 시 가이드가 제공됩니다.</span>
+                    </div>
+                    <button type="button" class="chatbot-guide-x" data-action="next-guide" aria-label="가이드 닫기">
+                        <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="chatbot-guide-action" data-action="next-guide" aria-label="다음 가이드">
+                <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
+            </button>
+        </div>
+
+
         <div class="chatbot-header">
             <h2 class="chatbot-logo">
                 <img src="../images/common/logo.svg" alt="기후에너지환경부 화학물질정보 공동활용 플랫폼">
@@ -893,42 +1069,8 @@
             <p class="chatbot-disclaimer">AI의 답변은 부정확한 정보를 포함 할 수 있습니다.</p>
         </div>
 
-        <!-- 첫 진입 가이드 팝업 (2단계: 글씨 크기 → 가이드 버튼) -->
-        <div class="chatbot-guide" id="chatbotGuide" data-step="1" hidden>
-            <div class="chatbot-guide-dim" aria-hidden="true"></div>
-            <span class="chatbot-guide-spot chatbot-guide-spot--resize" aria-hidden="true"></span>
-            <span class="chatbot-guide-spot chatbot-guide-spot--help" aria-hidden="true"></span>
-
-            <div class="chatbot-guide-tip chatbot-guide-tip--resize" data-step="1" role="dialog" aria-labelledby="chatbotGuideTitle1">
-                <span class="chatbot-guide-arrow" aria-hidden="true"></span>
-                <div class="chatbot-guide-tip-inner">
-                    <div class="chatbot-guide-text">
-                        <strong id="chatbotGuideTitle1">글씨 크기 선택</strong>
-                        <span>크기를 조절할 수 있습니다.</span>
-                    </div>
-                    <button type="button" class="chatbot-guide-x" data-action="next-guide" aria-label="다음 가이드">
-                        <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
-                    </button>
-                </div>
-            </div>
-
-            <div class="chatbot-guide-tip chatbot-guide-tip--help" data-step="2" role="dialog" aria-labelledby="chatbotGuideTitle2">
-                <span class="chatbot-guide-arrow" aria-hidden="true"></span>
-                <div class="chatbot-guide-tip-inner">
-                    <div class="chatbot-guide-text">
-                        <strong id="chatbotGuideTitle2">가이드 버튼</strong>
-                        <span>클릭 시 가이드가 제공됩니다.</span>
-                    </div>
-                    <button type="button" class="chatbot-guide-x" data-action="next-guide" aria-label="가이드 닫기">
-                        <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
-                    </button>
-                </div>
-            </div>
-
-            <button type="button" class="chatbot-guide-action" data-action="next-guide" aria-label="다음 가이드">
-                <svg class="ico-close" aria-hidden="true" focusable="false"><use href="../images/common/simbol.svg#ico-close"></use></svg>
-            </button>
-        </div>
+        <!-- 챗봇 콘텐츠 마지막 포커스: 평소엔 숨겨져 있다가 탭 포커스 시에만 노출되는 닫기 버튼 -->
+        <button type="button" class="chatbot-close chatbot-end-close">챗봇닫기</button>
 
         <!-- 피드백 사유 팝업(바텀 시트) -->
         <div class="chatbot-dim" data-action="close-feedback" hidden></div>
@@ -1004,6 +1146,7 @@
                 </div>
             </div>
         </div>
+
     </aside>
 
     <script>
@@ -1016,9 +1159,17 @@
         function setChatbotOpen(open){
             $panel.prop('hidden', !open);
             $('body').toggleClass('mo-hidden', !!open);
-            if(open && !chatbotGuideShown){
-                chatbotGuideShown = true;
-                openChatbotGuide();
+            if(open){
+                if(!chatbotGuideShown){
+                    chatbotGuideShown = true;
+                    openChatbotGuide();
+                }
+                setTimeout(function(){
+                    $panel.find('a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])')
+                        .filter(':visible')
+                        .first()
+                        .trigger('focus');
+                }, 0);
             }
         }
         function openChatbotGuide(){
