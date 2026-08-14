@@ -570,12 +570,22 @@ function dsToggle(){
 
   function tabEvt(){
     let tabs = [];
+
+    // role="tab" 요소는 roving tabindex로 관리: 활성 탭만 일반 Tab 키로 도달 가능하게 하고
+    // 나머지는 tabindex="-1"로 빼서, Enter를 누르지 않은 채 Tab만 눌렀을 때 보이지 않는 패널의
+    // 탭으로 잘못 진입하거나 포커스가 패널↔탭 사이를 도돌이표처럼 맴도는 것을 막는다.
+    $('[role="tab"]').each(function(){
+      if(!$(this).is('[aria-selected="true"]')) $(this).attr('tabindex', '-1');
+    });
+
     $('[data-tab-id]').on('click', function(e){
       e.stopPropagation();
       let tabid = $(this).data('tab-id');
 
       tabs = [];
       tabs.push(tabid);
+
+      if($(this).is('[role="tab"]')) $(this).attr('tabindex', '0');
 
       let $li = $(this).parents('li').first();
       if($li.length){
@@ -586,6 +596,7 @@ function dsToggle(){
         if($(this).is('[aria-selected]')) $(this).attr('aria-selected', 'true');
         $li.siblings().find('[data-tab-id]').each(function(){
           if($(this).is('[aria-selected]')) $(this).attr('aria-selected', 'false');
+          if($(this).is('[role="tab"]')) $(this).attr('tabindex', '-1');
           tabs.push($(this).data('tab-id'));
         });
       }else{
@@ -596,6 +607,7 @@ function dsToggle(){
         if($(this).is('[aria-selected]')) $(this).attr('aria-selected', 'true');
         $(this).siblings('[data-tab-id]').each(function(){
           if($(this).is('[aria-selected]')) $(this).attr('aria-selected', 'false');
+          if($(this).is('[role="tab"]')) $(this).attr('tabindex', '-1');
           tabs.push($(this).data('tab-id'));
         });
       }
@@ -611,6 +623,78 @@ function dsToggle(){
       }
     })
 
+  }
+
+  // [data-tab-id] 탭에서 Enter로 활성화 시 해당 .tab-content 내부 첫 포커스로 이동,
+  // 그 영역의 마지막 포커스에서 Tab으로 빠져나갈 때 다음 탭으로 이동(마지막 탭이면 그대로 통과)
+  function tabPanelFocusFlow(){
+    var focusableSel = 'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+    function getTabGroup($tab){
+      var $li = $tab.parents('li').first();
+      if($li.length){
+        return $li.parent().children('li').find('[data-tab-id]');
+      }
+      return $tab.parent().children('[data-tab-id]');
+    }
+
+    // 버튼/링크에서 Enter를 누르면 브라우저는 keydown → click → keyup 순으로 이벤트를 발생시킨다.
+    // keyup 시점에는 이미 click(=tabEvt의 show/hide 처리)이 끝난 뒤이므로, 마우스 클릭과 섞이지
+    // 않으면서도 별도 타이밍 추정(setTimeout) 없이 안전하게 패널 내부로 포커스를 옮길 수 있다.
+    $('[data-tab-id]').on('keyup', function(e){
+      if(e.key !== 'Enter') return;
+      var tabid = $(this).data('tab-id');
+      if(!tabid) return;
+      var $panel = $('#' + tabid);
+      if(!$panel.length) return;
+
+      var $target = $panel.find(focusableSel).filter(':visible').first();
+      if($target.length) $target.trigger('focus');
+    });
+
+    $(document).on('keydown', '.tab-content', function(e){
+      if(e.key !== 'Tab') return;
+      var $panel = $(this);
+      if($panel.css('display') === 'none') return;
+
+      var $focusables = $panel.find(focusableSel).filter(':visible');
+      if(!$focusables.length) return;
+
+      var $currentTab = $('[data-tab-id="' + $panel.attr('id') + '"]');
+      if(!$currentTab.length) return;
+      var $tabGroup = getTabGroup($currentTab);
+      var idx = $tabGroup.index($currentTab);
+
+      if(!e.shiftKey){
+        // 정방향: 패널 마지막 요소에서 Tab → 다음 탭
+        if(e.target !== $focusables.last()[0]) return;
+        var $nextTab = $tabGroup.eq(idx + 1);
+        if(!$nextTab.length) return;
+
+        e.preventDefault();
+        // 포커스만 옮기면 패널은 그대로 이전 탭 것이라, Enter를 안 누르고 계속 Tab만 누를 경우
+        // 같은 패널로 되돌아와 도돌이표가 된다. 다음 탭을 함께 활성화해 포커스 위치와 화면에
+        // 보이는 패널을 항상 일치시켜 둔다(같은 탭에서 다시 Enter를 눌러도 동일 패널이 재표시될
+        // 뿐이라 문제 없음).
+        $nextTab.trigger('click');
+        $nextTab.trigger('focus');
+      } else {
+        // 역방향: 패널 첫 요소에서 Shift+Tab → 이전 탭을 활성화하고 그 패널의 마지막 요소로 이동
+        if(e.target !== $focusables.first()[0]) return;
+        // jQuery의 .eq(-1)은 "없음"이 아니라 "마지막 요소"를 가리키므로, idx가 0일 때
+        // .eq(idx-1)을 그대로 쓰면 첫 탭인데도 마지막 탭으로 잘못 순환(wrap)한다.
+        if(idx <= 0) return; // 첫 탭이면 기본 동작(탭 버튼으로 이동)에 맡김
+        var $prevTab = $tabGroup.eq(idx - 1);
+        if(!$prevTab.length) return;
+
+        e.preventDefault();
+        $prevTab.trigger('click');
+        var $prevPanel = $('#' + $prevTab.data('tab-id'));
+        var $prevTarget = $prevPanel.find(focusableSel).filter(':visible').last();
+        if($prevTarget.length) $prevTarget.trigger('focus');
+        else $prevTab.trigger('focus');
+      }
+    });
   }
 
 
@@ -987,6 +1071,7 @@ $(function(){
   skipToContent();
   dataToggle();
   tabEvt();
+  tabPanelFocusFlow();
   inputDel();
   datepicker();
   initTooltip();
