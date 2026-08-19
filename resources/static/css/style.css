@@ -642,7 +642,7 @@ body .data-default .scroll::-webkit-scrollbar{-webkit-appearance:none;width:8px;
 .laws-list .law-icon img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .laws-list .law-sub { display: block; font-size: 16px; color: #343A40; margin-bottom: 12px; font-weight:500;}
 .laws-list .law-name { display: block; font-size: 24px; font-weight: 700; line-height: 1.2;margin-bottom:2px;}
-.laws-list .law-card--blue .law-name { color: #2864DA; a}
+.laws-list .law-card--blue .law-name { color: #2864DA;}
 .laws-list .law-card--green .law-name { color: #01875F; }
 .laws-list .law-card--purple .law-name { color: #8255DB; }
 .laws-list .law-desc { margin: 0; font-size: 16px; color: #495057; line-height: 1.5; }
